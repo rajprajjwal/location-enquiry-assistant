@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+.DS_Store
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*API_KEY*
+*api_key*
+TRACKB_API_KEY
+# Generated scratch (reports and gold JSON are committed)
+.pytest_cache/

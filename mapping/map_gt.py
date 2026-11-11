@@ -1,0 +1,674 @@
+"""Mechanical GT v2.2 → schema mapper. Read-only on the GT file."""
+
+from __future__ import annotations
+
+import json
+import math
+import re
+from pathlib import Path
+from typing import Any
+
+import pandas as pd
+
+REPO = Path(__file__).resolve().parents[1]
+VOCAB_PATH = REPO / "vocab" / "controlled-vocabulary.json"
+DEFAULT_GT = Path("/workspace/capstone-trackb/data/gt_v2_2.xlsx")
+
+# Approved re-label of the 11 api_probe records (v2.3 change list; not written into GT).
+API_PROBE_PROPOSED_TOOLS: dict[str, list[str]] = {
+    "GT-LBS-DIR-002": ["doc_search", "update_record"],
+    "GT-LBS-DIR-004": ["doc_search"],
+    "GT-LBS-DIR-042": ["doc_search"],
+    "GT-LBS-DIR-064": ["doc_search"],
+    "GT-LBS-DIR-083": ["doc_search", "escalate_ticket"],
+    "GT-LBS-DM-004": ["doc_search"],
+    "GT-LBS-DM-084": ["escalate_ticket"],
+    "GT-LBS-AC-004": ["doc_search"],
+    "GT-LBS-AC-087": ["escalate_ticket"],
+    "GT-LBS-RG-001": ["doc_search"],  # FROZEN
+    "GT-LBS-RG-085": ["escalate_ticket"],
+}
+
+TOOL_ORDER = ["doc_search", "calculator", "update_record", "escalate_ticket"]
+
+COMPARE_INTENTS = {"pricing_comparison", "capability_match", "coverage_limits"}
+COMPARE_BUCKETS = {
+    "pricecompare",
+    "capabilitycompare",
+    "coveragecompare",
+    "limitscompare",
+}
+
+PROVIDER_ALIASES = {
+    "google": "Google Maps Platform",
+    "google maps": "Google Maps Platform",
+    "google maps platform": "Google Maps Platform",
+    "ola": "Ola Maps",
+    "ola maps": "Ola Maps",
+    "mapbox": "Mapbox",
+    "nominatim": "OSM Nominatim",
+    "osm nominatim": "OSM Nominatim",
+    "osm": "OSM Nominatim",
+    "osrm": "OSRM",
+    "osrm (openstreetmap)": "OSRM",
+    "mappls": "Mappls (MapmyIndia)",
+    "mapmyindia": "Mappls (MapmyIndia)",
+    "mappls (mapmyindia)": "Mappls (MapmyIndia)",
+}
+
+
+def load_vocab(path: Path = VOCAB_PATH) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def approx_output_tokens(text: str) -> int:
+    """PROPOSED offline approximation: ceil(Unicode character count / 4).
+
+    This is not the Qwen/Qwen3-8B tokenizer. No tokenizer was available
+    offline. Official counts are those returned by the hosted endpoint
+    usage field and are not computed here (the endpoint is not called).
+    """
+    n = len(text or "")
+    return math.ceil(n / 4) if n else 0
+
+
+def parse_escalation(raw: Any) -> dict:
+    out = {
+        "should_escalate": None,
+        "severity": None,
+        "owner": None,
+        "reason": None,
+    }
+    for part in str(raw or "").split(";"):
+        part = part.strip()
+        if "=" not in part:
+            continue
+        k, v = part.split("=", 1)
+        out[k.strip()] = v.strip()
+    flag = out["should_escalate"]
+    if flag is not None:
+        out["should_escalate"] = str(flag).strip().lower() == "true"
+    return out
+
+
+def split_csv(value: Any) -> list[str]:
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return []
+    return [p.strip() for p in str(value).split(",") if p.strip()]
+
+
+def canon_providers(raw: Any, vocab: dict) -> tuple[list[str], list[str]]:
+    merges = vocab["provider_merges"]
+    allowed = set(vocab["providers"])
+    out: list[str] = []
+    unknown: list[str] = []
+    for part in split_csv(raw):
+        part = merges.get(part, part)
+        if part not in allowed:
+            unknown.append(part)
+            continue
+        if part not in out:
+            out.append(part)
+    return out, unknown
+
+
+def mapped_tools(record_id: str, raw: Any, vocab: dict) -> tuple[list[str], list[str], list[str]]:
+    allowed = set(vocab["tools"])
+    dropped = set(vocab["tools_dropped"])
+    raw_list = split_csv(raw)
+    warnings: list[str] = []
+    if "api_probe" in raw_list and record_id in API_PROBE_PROPOSED_TOOLS:
+        mapped = list(API_PROBE_PROPOSED_TOOLS[record_id])
+    else:
+        mapped = [t for t in raw_list if t not in dropped]
+        if "api_probe" in raw_list:
+            warnings.append("api_probe_present_without_proposed_relabel")
+    unknown = [t for t in mapped if t not in allowed]
+    mapped = [t for t in TOOL_ORDER if t in mapped]
+    return mapped, raw_list, unknown + warnings
+
+
+def parse_clarifying(raw: Any) -> dict:
+    if raw is None or (isinstance(raw, float) and pd.isna(raw)) or not str(raw).strip():
+        return {"needed": False, "questions": []}
+    questions = []
+    for line in str(raw).splitlines():
+        line = line.strip()
+        if line.startswith("- "):
+            line = line[2:].strip()
+        elif line.startswith("-"):
+            line = line[1:].strip()
+        if line:
+            questions.append({"text": line, "field": None})
+    return {"needed": bool(questions), "questions": questions}
+
+
+def parse_citations_from_sheet(record_id: str, cites: pd.DataFrame | None) -> list[dict]:
+    if cites is None or cites.empty:
+        return []
+    rows = cites[cites["id"] == record_id]
+    items = []
+    for _, r in rows.iterrows():
+        qos = r.get("quote_or_summary")
+        if pd.isna(qos) if not isinstance(qos, str) else False:
+            qos = None
+        if qos not in ("verbatim", "summary"):
+            qos = None
+        url = "" if pd.isna(r.get("doc_url")) else str(r.get("doc_url"))
+        span = "" if pd.isna(r.get("span")) else str(r.get("span"))
+        claim = "" if pd.isna(r.get("supports_claim")) else str(r.get("supports_claim"))
+        if not url and not span:
+            continue
+        items.append(
+            {
+                "url": url or "unknown",
+                "span": span or url or "see source",
+                "supports_claim": claim or "supporting span",
+                "quote_or_summary": qos,
+            }
+        )
+    return items
+
+
+CITATION_LINE = re.compile(
+    r"\[(\d+)\]\s+(\S+)\s+\|\s+(.*?)\s+\|\s+supports:\s+(.*?)(?:\s*\((verbatim|summary)\))?\s*$",
+    re.I,
+)
+
+
+def parse_citations_from_text(raw: Any) -> list[dict]:
+    if raw is None or (isinstance(raw, float) and pd.isna(raw)):
+        return []
+    items = []
+    for line in str(raw).splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        m = CITATION_LINE.search(line)
+        if not m:
+            # looser split on pipes after the leading [n] url
+            m2 = re.match(r"\[\d+\]\s+(\S+)\s+\|\s+(.*)$", line)
+            if not m2:
+                continue
+            url = m2.group(1)
+            rest = m2.group(2)
+            parts = [p.strip() for p in rest.split("|")]
+            span = parts[0] if parts else ""
+            claim = parts[1] if len(parts) > 1 else ""
+            qos = None
+            if "verbatim" in claim.lower():
+                qos = "verbatim"
+            elif "summary" in claim.lower():
+                qos = "summary"
+            claim = re.sub(r"\s*\((verbatim|summary)\)\s*$", "", claim, flags=re.I)
+            if claim.lower().startswith("supports:"):
+                claim = claim.split(":", 1)[1].strip()
+            items.append(
+                {
+                    "url": url,
+                    "span": span or url,
+                    "supports_claim": claim or "supporting span",
+                    "quote_or_summary": qos,
+                }
+            )
+            continue
+        items.append(
+            {
+                "url": m.group(2),
+                "span": m.group(3).strip() or m.group(2),
+                "supports_claim": (m.group(4) or "supporting span").strip(),
+                "quote_or_summary": (m.group(5) or "").lower() or None,
+            }
+        )
+    return items
+
+
+def parse_update_proposal(trace: Any, answer: Any) -> dict | None:
+    text = str(trace or "")
+    m = re.search(r"update_record\s+(\{.*?\})\s*->", text, re.S)
+    if m:
+        try:
+            obj = json.loads(m.group(1))
+            fields = obj.get("fields") or {}
+            return {
+                "record_id": str(obj.get("record_id") or "").strip(),
+                "mode": obj.get("mode") or "propose",
+                "fields": fields,
+            }
+        except json.JSONDecodeError:
+            pass
+    # Fallback: "Proposed sandbox update for TKT-123 (...): k=v; k=v."
+    ans = str(answer or "")
+    m2 = re.search(
+        r"Proposed sandbox update for\s+(\S+)\s+\([^)]*\):\s*(.+)$",
+        ans,
+        re.I | re.S,
+    )
+    if not m2:
+        return None
+    record_id = m2.group(1).rstrip(".")
+    fields = {}
+    for part in re.split(r";", m2.group(2)):
+        part = part.strip().rstrip(".")
+        if "=" in part:
+            k, v = part.split("=", 1)
+            fields[k.strip()] = v.strip()
+    return {"record_id": record_id, "mode": "propose", "fields": fields}
+
+
+def parse_escalate_payload(trace: Any) -> dict | None:
+    text = str(trace or "")
+    m = re.search(r"escalate_ticket\s+(\{.*?\})\s*->", text, re.S)
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(1))
+    except json.JSONDecodeError:
+        return None
+
+
+def _parse_volume_number(raw: str) -> float | None:
+    s = raw.replace(",", "").strip()
+    m = re.match(r"^([\d.]+)\s*M$", s, re.I)
+    if m:
+        return float(m.group(1)) * 1_000_000
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+VOLUME_PATTERNS = [
+    re.compile(
+        r"((?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?:\s*[Mm](?:illion)?)?)\s+"
+        r"(?:Directions|Distance Matrix|Autocomplete|Reverse Geocode\w*|)\s*"
+        r"requests a month",
+        re.I,
+    ),
+    re.compile(
+        r"((?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?:\s*[Mm](?:illion)?)?)\s*"
+        r"(?:calls|requests|queries|transactions)\s*(?:per|/)\s*month",
+        re.I,
+    ),
+    re.compile(r"((?:\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)[Mm])\s*/\s*month", re.I),
+    re.compile(r"((?:\d{1,3}(?:,\d{3})+|\d+))\s*/\s*month", re.I),
+]
+
+
+def extract_qualification(question: str, api: str, vocab: dict) -> dict:
+    q = question or ""
+    use_case = None
+    m = re.search(r"\bWe are an?\s+([^.?\n]{3,80})", q)
+    if m:
+        use_case = m.group(1).strip().rstrip(",")
+    if use_case is None:
+        m = re.search(
+            r"\bOur\s+((?:commercial\s+)?(?:delivery|logistics|ride[- ]?hailing|"
+            r"navigation|fleet|dispatch)[^.,?\n]{0,60})",
+            q,
+            re.I,
+        )
+        if m:
+            use_case = m.group(0)[4:].strip()  # drop 'Our '
+
+    region = None
+    if re.search(r"\b(?:in|across|for|throughout|across)\s+India\b", q, re.I):
+        region = "India"
+    elif re.search(r"\bIndian\s+(?:cities|city|market|price|pricing)\b", q, re.I):
+        region = "India"
+    elif re.search(r"\bIndia(?:n)?\s+price list\b", q, re.I):
+        region = "India"
+
+    monthly_volume = None
+    for pat in VOLUME_PATTERNS:
+        vm = pat.search(q)
+        if vm:
+            raw = vm.group(0).strip()
+            num_raw = vm.group(1).replace(" ", "")
+            monthly_volume = {
+                "raw": raw,
+                "requests_per_month": _parse_volume_number(num_raw),
+                "unit": "requests_per_month",
+            }
+            break
+
+    current_provider = None
+    pm = re.search(
+        r"\b(?:our|we use(?: the)?|we(?:'re| are) (?:on|using))\s+"
+        r"(Google(?:\s+Maps(?:\s+Platform)?)?|Ola(?:\s+Maps)?|Mapbox|"
+        r"Mappls(?:\s+\(MapmyIndia\))?|MapmyIndia|OSRM|Nominatim|OSM Nominatim)"
+        r"(?:\s+API|\s+Directions|\s+account|\s+project|\s+key|\s+response)?",
+        q,
+        re.I,
+    )
+    if pm:
+        key = re.sub(r"\s+", " ", pm.group(1).strip().lower())
+        current_provider = PROVIDER_ALIASES.get(key)
+
+    timeline = None
+    tm = re.search(
+        r"\b(?:by|before|go[- ]live(?: by)?|needed by|deadline(?: of)?)\s+"
+        r"([A-Za-z0-9][^.,?\n]{1,40})",
+        q,
+        re.I,
+    )
+    if tm:
+        timeline = tm.group(0).strip()
+    else:
+        tm = re.search(
+            r"\b(this (?:quarter|month|week)|next (?:quarter|month)|ASAP|"
+            r"immediately|Q[1-4]\s*\d{4})\b",
+            q,
+            re.I,
+        )
+        if tm:
+            timeline = tm.group(1).strip()
+
+    budget = None
+    bm = re.search(
+        r"\b(?:budget(?:\s+of)?|we can spend|no more than|under)\s+"
+        r"(₹\s*[\d,.]+|USD\s*[\d,.]+|\$\s*[\d,.]+|[₹$][\d,.]+)",
+        q,
+        re.I,
+    )
+    if bm:
+        budget = bm.group(0).strip()
+
+    technical_constraints = None
+    cm = re.search(
+        r"\b(\d+\s+requests per second|\d+\s+rps|self-host(?:ed|ing)?|"
+        r"on-prem(?:ise)?|no live traffic|without traffic)\b",
+        q,
+        re.I,
+    )
+    if cm:
+        technical_constraints = cm.group(0).strip()
+
+    decision_maker = None
+
+    use_case_api = {"api": api, "use_case": use_case}
+    required = vocab["qualification_required_fields"]
+    values = {
+        "use_case_api": use_case_api,
+        "region": region,
+        "monthly_volume": monthly_volume,
+        "current_provider": current_provider,
+        "timeline": timeline,
+        "budget": budget,
+        "technical_constraints": technical_constraints,
+        "decision_maker": decision_maker,
+    }
+    missing = [f for f in required if values[f] is None]
+    values["missing_required_fields"] = missing
+    values["complete"] = len(missing) == 0
+    return values
+
+
+def comparison_dimensions(intent: str, sub_intent: str, bucket: str) -> list[str]:
+    dims: list[str] = []
+
+    def add(d: str) -> None:
+        if d not in dims:
+            dims.append(d)
+
+    if intent in {"pricing_quote", "pricing_comparison"} or bucket == "pricecompare":
+        add("pricing")
+    if intent in {"capability_match", "sales_qualification"} or bucket == "capabilitycompare":
+        add("capabilities")
+    if intent == "coverage_limits" or bucket in {"coveragecompare", "limitscompare"}:
+        if sub_intent == "limits_question" or bucket == "limitscompare":
+            add("limits")
+        if sub_intent == "coverage_question" or bucket == "coveragecompare":
+            add("coverage")
+        if sub_intent == "performance_question":
+            add("limits")
+        if intent == "coverage_limits" and not dims:
+            add("coverage")
+            add("limits")
+    if bucket == "capabilitycompare" and not dims:
+        add("capabilities")
+    if not dims:
+        add("capabilities")
+    return dims
+
+
+def map_record(row: pd.Series, vocab: dict, cites: pd.DataFrame | None) -> tuple[dict, list[str]]:
+    issues: list[str] = []
+    rid = str(row["id"])
+    intent = str(row["intent"])
+    sub_intent = str(row["sub_intent"])
+    api = str(row["api"])
+    team = str(row["primary_team"])
+    bucket = str(row["bucket"])
+    question = "" if pd.isna(row.get("question")) else str(row.get("question"))
+    answer = "" if pd.isna(row.get("reference_answer")) else str(row.get("reference_answer"))
+    if not answer.strip():
+        issues.append("empty_reference_answer")
+        answer = "(empty gold reference_answer)"
+
+    # Intent mapping check
+    expected_intent = None
+    for parent, kids in vocab["intent_to_sub_intents"].items():
+        if sub_intent in kids:
+            expected_intent = parent
+            break
+    if expected_intent is None:
+        issues.append(f"unmapped_sub_intent:{sub_intent}")
+    elif expected_intent != intent:
+        issues.append(f"intent_mismatch:gt={intent},from_sub={expected_intent}")
+
+    providers, unknown_p = canon_providers(row.get("service_providers"), vocab)
+    if unknown_p:
+        issues.append("unknown_providers:" + ",".join(unknown_p))
+
+    tools, tools_raw, tool_issues = mapped_tools(rid, row.get("expected_tools"), vocab)
+    issues.extend([f"tools:{t}" for t in tool_issues])
+
+    esc = parse_escalation(row.get("escalation"))
+    if esc["owner"] not in vocab["owners"]:
+        issues.append(f"unknown_owner:{esc['owner']}")
+    if esc["severity"] not in vocab["severities"]:
+        issues.append(f"unknown_severity:{esc['severity']}")
+    if esc["should_escalate"] is None:
+        issues.append("missing_should_escalate")
+        esc["should_escalate"] = False
+    if not esc["reason"]:
+        issues.append("missing_escalation_reason")
+        esc["reason"] = "No reason recorded in GT escalation field."
+    if esc["owner"] is None:
+        esc["owner"] = "Support L1" if team == "Support" else "Account team (Sales)"
+    if esc["severity"] is None:
+        esc["severity"] = "SEV4"
+
+    citations = parse_citations_from_sheet(rid, cites)
+    if not citations:
+        citations = parse_citations_from_text(row.get("cited_doc_spans"))
+
+    clarifying = parse_clarifying(row.get("gold_clarifying_questions"))
+    qualification = extract_qualification(question, api, vocab)
+
+    proposal = parse_update_proposal(row.get("gold_tool_trace"), answer)
+    update_applicable = "update_record" in tools or proposal is not None
+    if "update_record" in tools and proposal is None:
+        issues.append("update_record_expected_but_unparsed")
+        update_applicable = False
+    if update_applicable and proposal:
+        # Normalise provider label inside fields
+        if "providers" in proposal["fields"]:
+            merged, unk = canon_providers(proposal["fields"]["providers"], vocab)
+            if merged:
+                proposal["fields"]["providers"] = ", ".join(merged)
+            if unk:
+                issues.append("update_providers_unknown:" + ",".join(unk))
+        if proposal.get("mode") != "propose":
+            issues.append(f"update_mode:{proposal.get('mode')}")
+            proposal["mode"] = "propose"
+        if not proposal.get("record_id"):
+            issues.append("update_missing_record_id")
+            update_applicable = False
+            proposal = None
+
+    if update_applicable and proposal:
+        record_update = {
+            "applicable": True,
+            "requires_human_approval": True,
+            "approval_status": "pending",
+            "executed": False,
+            "proposal": proposal,
+        }
+    else:
+        record_update = {
+            "applicable": False,
+            "requires_human_approval": False,
+            "approval_status": "not_applicable",
+            "executed": False,
+            "proposal": None,
+        }
+
+    compare_applicable = (
+        intent in COMPARE_INTENTS
+        or bucket in COMPARE_BUCKETS
+        or (len(providers) >= 2 and intent in {"pricing_quote", "sales_qualification"})
+    )
+    if compare_applicable:
+        comparison = {
+            "applicable": True,
+            "providers": providers or [],
+            "dimensions": comparison_dimensions(intent, sub_intent, bucket),
+            "equivalent_requirements": {
+                "api": api,
+                "region": qualification.get("region"),
+                "monthly_volume_raw": (
+                    qualification["monthly_volume"]["raw"]
+                    if qualification.get("monthly_volume")
+                    else None
+                ),
+            },
+            "assumptions": [],
+            "source_urls": list(dict.fromkeys(c["url"] for c in citations if c.get("url"))),
+            "notes": None,
+        }
+        if not comparison["providers"]:
+            issues.append("comparison_applicable_without_providers")
+            comparison["applicable"] = False
+            comparison["providers"] = []
+            comparison["dimensions"] = []
+    else:
+        comparison = {
+            "applicable": False,
+            "providers": [],
+            "dimensions": [],
+            "equivalent_requirements": None,
+            "assumptions": [],
+            "source_urls": [],
+            "notes": None,
+        }
+
+    if esc["should_escalate"] or "escalate_ticket" in tools:
+        action_type = "propose_escalation"
+        requires_approval = True
+        approval_status = "pending"
+        payload = parse_escalate_payload(row.get("gold_tool_trace"))
+        aliases = vocab.get("owner_role_aliases", {})
+        esc_block = {
+            "severity": esc["severity"],
+            "owner": esc["owner"],
+            "summary": None,
+        }
+        if payload:
+            if payload.get("severity"):
+                esc_block["severity"] = payload["severity"]
+            if payload.get("owner_role"):
+                esc_block["owner"] = aliases.get(payload["owner_role"], esc["owner"])
+            if payload.get("summary"):
+                esc_block["summary"] = payload["summary"]
+        description = esc["reason"]
+        next_action = {
+            "action_type": action_type,
+            "description": description,
+            "requires_human_approval": requires_approval,
+            "approval_status": approval_status,
+            "executed": False,
+            "escalation": esc_block,
+        }
+    elif update_applicable:
+        next_action = {
+            "action_type": "propose_record_update",
+            "description": (
+                f"Propose a sandbox update for {proposal['record_id']} "
+                "and hold it for human approval."
+            ),
+            "requires_human_approval": True,
+            "approval_status": "pending",
+            "executed": False,
+            "escalation": None,
+        }
+    else:
+        next_action = {
+            "action_type": "answer_directly",
+            "description": "Deliver the grounded draft reply.",
+            "requires_human_approval": False,
+            "approval_status": "not_applicable",
+            "executed": False,
+            "escalation": None,
+        }
+
+    envelope = {
+        "schema_version": "1.0.0",
+        "record_id": rid,
+        "intent": intent,
+        "sub_intent": sub_intent,
+        "api": api,
+        "team": team,
+        "bucket": bucket,
+        "tools_expected": tools,
+        "tools_raw_gt": tools_raw,
+        "step_count_limit": 10,
+        "output_token_budget": 1024,
+        "approx_output_tokens": approx_output_tokens(answer),
+        "split": str(row.get("split")),
+        "frozen_core": bool(row.get("frozen_core")),
+        "outputs": {
+            "response_draft": {
+                "draft_text": answer,
+                "citations": citations,
+                "is_refusal": False,
+                "refusal": None,
+            },
+            "clarifying_questions": clarifying,
+            "qualification_details": qualification,
+            "proposed_record_update": record_update,
+            "comparison": comparison,
+            "responsible_role": {
+                "owner": esc["owner"],
+                "team": team,
+                "should_escalate": bool(esc["should_escalate"]),
+                "severity": esc["severity"],
+                "reason": esc["reason"],
+            },
+            "next_action": next_action,
+        },
+    }
+    return envelope, issues
+
+
+def load_gt(path: Path = DEFAULT_GT) -> tuple[pd.DataFrame, pd.DataFrame]:
+    data = pd.read_excel(path, sheet_name="Data")
+    try:
+        cites = pd.read_excel(path, sheet_name="citations")
+    except ValueError:
+        cites = pd.DataFrame()
+    return data, cites
+
+
+def map_all(gt_path: Path = DEFAULT_GT, vocab: dict | None = None) -> tuple[list[dict], list[dict]]:
+    vocab = vocab or load_vocab()
+    data, cites = load_gt(gt_path)
+    envelopes = []
+    issue_rows = []
+    for _, row in data.iterrows():
+        env, issues = map_record(row, vocab, cites)
+        envelopes.append(env)
+        for iss in issues:
+            issue_rows.append({"record_id": env["record_id"], "issue": iss})
+    return envelopes, issue_rows
