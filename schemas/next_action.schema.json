@@ -69,7 +69,6 @@
           "enum": [
             "Support L1",
             "Support L2",
-            "Support",
             "Account team (Sales)",
             "Maps engineering"
           ]

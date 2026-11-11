@@ -6,18 +6,20 @@ This repository holds design artefacts only: the task spec, versioned JSON Schem
 
 ## Why the repo lives in this subfolder
 
-The repository root is `/workspace/capstone-trackb/repo/`, not `/workspace/capstone-trackb/`. The parent tree contains `inputs/` (activities, the Track-B PDF, the Learner Guide, a CA certificate) and `data/` (GT workbooks, including `gt_v2_3.xlsx` and the unchanged `gt_v2_2.xlsx`). Those files are the read-only sources for this work and must not be versioned here. Secrets, keys and certificates are also kept out. The GT file is never copied into this repository.
+The repository root is `/workspace/capstone-trackb/repo/`, not `/workspace/capstone-trackb/`. The parent tree contains `inputs/` (activities, the Track-B PDF, the Learner Guide, a CA certificate) and `data/` (GT workbooks, including `gt_v2_4.xlsx` and the earlier unchanged `gt_v2_3.xlsx` and `gt_v2_2.xlsx`). Those files are the read-only sources for this work and must not be versioned here. Secrets, keys and certificates are also kept out. The GT file is never copied into this repository.
 
 ## Source of truth (outside the repo, read only)
 
-- GT: `/workspace/capstone-trackb/data/gt_v2_3.xlsx`
+- GT: `/workspace/capstone-trackb/data/gt_v2_4.xlsx` (CSV companion: `/workspace/capstone-trackb/data/gt_v2_4.csv`)
 - Activities, brief, Track-B PDF, Learner Guide: `/workspace/capstone-trackb/inputs/`
 
 ## Contents
 
-- `spec/spec.md` — task specification (sign-off unsigned)
+- `spec/spec.md` — task specification (sign-off unsigned / pending)
 - `schemas/` — versioned JSON Schemas for the seven outputs and the envelope (`x-spec-version` 1.0.0)
-- `vocab/` — controlled vocabulary and a diff against GT v2.3
+- `vocab/controlled-vocabulary.json` — controlled vocabulary bound to GT v2.4
+- `vocab/vocab-diff-gt-v2_4.md` and `vocab/vocab-diff-gt-v2_4.json` — current vocabulary diff against GT v2.4
+- `vocab/vocab-diff-gt-v2_3.md` and `vocab/vocab-diff-gt-v2_3.json` — kept as history (the v2.3 diff)
 - `mapping/` — mapper, mapping notes, and generated gold envelopes (all 521 and the 80 frozen records)
 - `validator/validate_spec.py` — schema, vocabulary, approval, required-field and token-budget checks
 - `validator/validator-report.md` — last validator run
@@ -31,7 +33,7 @@ cd /workspace/capstone-trackb/repo
 .venv/bin/python validator/validate_spec.py
 ```
 
-The default run reads GT v2.3 and writes the report, gold outputs and vocabulary diff inside this repository, which is the layout that gets committed. To run without writing inside the repo:
+The default run reads GT v2.4 and writes the report, gold outputs and vocabulary diff inside this repository, which is the layout that gets committed. To run without writing inside the repo:
 
 ```bash
 .venv/bin/python validator/validate_spec.py --out-dir /tmp/c1-validate-out

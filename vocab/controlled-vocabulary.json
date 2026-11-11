@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "source": "C1 task spec, bound to GT v2.3 labels after Shahid's approved decisions",
-  "gt_source": "/workspace/capstone-trackb/data/gt_v2_3.xlsx",
+  "source": "C1 task spec, bound to GT v2.4 labels after Shahid's approved decisions",
+  "gt_source": "/workspace/capstone-trackb/data/gt_v2_4.xlsx",
   "intents": [
     "pricing_quote",
     "pricing_comparison",
@@ -128,7 +128,6 @@
   "owners": [
     "Support L1",
     "Support L2",
-    "Support",
     "Account team (Sales)",
     "Maps engineering"
   ],

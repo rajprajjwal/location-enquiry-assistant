@@ -1,7 +1,7 @@
 # C1 validator report
 
-Generated: 2026-11-11T21:15:30+05:30
-GT source (read only): `/workspace/capstone-trackb/data/gt_v2_3.xlsx`.
+Generated: 2026-11-11T21:23:54+05:30
+GT source (read only): `/workspace/capstone-trackb/data/gt_v2_4.xlsx`.
 Schemas: `schemas/*.schema.json` version 1.0.0.
 Vocabulary: `vocab/controlled-vocabulary.json` version 1.0.0.
 
@@ -39,9 +39,9 @@ Row 3 acceptance criterion: 100% of frozen gold expected outputs validate with 0
 
 None.
 
-## Token budget (PROPOSED approximation)
+## Token budget (APPROVED interim method)
 
-Token counts use a **PROPOSED** offline approximation: `ceil(Unicode character count / 4)` applied to `response_draft.draft_text`. No Qwen/Qwen3-8B tokenizer, tiktoken, or Hugging Face tokenizer was available offline, and the hosted inference endpoint was not called. Official token counts are those returned by the endpoint `usage` field.
+Token counts use the **APPROVED** interim method: `ceil(Unicode character count / 4)` applied to `response_draft.draft_text`. No Qwen/Qwen3-8B tokenizer, tiktoken, or Hugging Face tokenizer was available offline, and the hosted inference endpoint was not called. Official token counts will be measured with the endpoint `usage` field in C10/eval. The hosted inference endpoint is not called from this activity.
 
 - All mapped drafts: n=521, min=15, median=90, max=408
 - Frozen drafts: n=80, min=20, median=117, max=408

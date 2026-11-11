@@ -17,6 +17,8 @@
     "tools_expected",
     "step_count_limit",
     "output_token_budget",
+    "self_review_date",
+    "self_review_evidence",
     "outputs"
   ],
   "properties": {
@@ -126,7 +128,7 @@
       "items": {
         "type": "string"
       },
-      "description": "Unmodified expected_tools tokens from GT v2.3."
+      "description": "Unmodified expected_tools tokens from GT v2.4."
     },
     "step_count_limit": {
       "type": "integer",
@@ -185,6 +187,20 @@
           "$ref": "https://capstone.local/lbs-copilot/schemas/next_action/v1.0.0"
         }
       }
+    },
+    "self_review_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Date of the recorded second-pass self-review. Null or blank until the review happens."
+    },
+    "self_review_evidence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Evidence pointer for the recorded second-pass self-review. Null or blank until the review happens."
     }
   }
 }

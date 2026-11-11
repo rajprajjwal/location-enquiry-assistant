@@ -1,4 +1,4 @@
-"""Mechanical GT v2.3 → schema mapper. Read-only on the GT file."""
+"""Mechanical GT v2.4 → schema mapper. Read-only on the GT file."""
 
 from __future__ import annotations
 
@@ -12,11 +12,13 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parents[1]
 VOCAB_PATH = REPO / "vocab" / "controlled-vocabulary.json"
-DEFAULT_GT = Path("/workspace/capstone-trackb/data/gt_v2_3.xlsx")
+DEFAULT_GT = Path("/workspace/capstone-trackb/data/gt_v2_4.xlsx")
 
-# v2.3 already applied the approved tool re-labels and provider-label merge
-# in the GT workbook. The mapper copies expected_tools and service_providers
-# as they stand and does not re-apply those transforms.
+# v2.3 applied the approved tool re-labels and provider-label merge in the
+# GT workbook. v2.4 keeps those values, relabels the remaining bare Support
+# owners, fills the two previously empty tool traces, and adds blank
+# self-review columns. The mapper copies expected_tools, service_providers,
+# owners and self-review fields as they stand.
 
 TOOL_ORDER = ["doc_search", "calculator", "update_record", "escalate_ticket"]
 
@@ -51,11 +53,11 @@ def load_vocab(path: Path = VOCAB_PATH) -> dict:
 
 
 def approx_output_tokens(text: str) -> int:
-    """PROPOSED offline approximation: ceil(Unicode character count / 4).
+    """APPROVED interim method: ceil(Unicode character count / 4).
 
-    This is not the Qwen/Qwen3-8B tokenizer. No tokenizer was available
-    offline. Official counts are those returned by the hosted endpoint
-    usage field and are not computed here (the endpoint is not called).
+    This is not the Qwen/Qwen3-8B tokenizer. Official counts will be
+    measured with the hosted endpoint usage field in C10/eval. The
+    endpoint is not called from this activity.
     """
     n = len(text or "")
     return math.ceil(n / 4) if n else 0
@@ -86,6 +88,12 @@ def as_text(raw: Any) -> str:
     if raw is None or (isinstance(raw, float) and pd.isna(raw)) or (isinstance(raw, str) is False and pd.isna(raw)):
         return ""
     return str(raw)
+
+
+def optional_blank(raw: Any) -> str | None:
+    """Copy a GT self-review field; blank/NaN becomes None, which is allowed until review."""
+    value = as_text(raw).strip()
+    return value or None
 
 
 def split_csv(value: Any) -> list[str]:
@@ -617,6 +625,8 @@ def map_record(row: pd.Series, vocab: dict, cites: pd.DataFrame | None) -> tuple
         "approx_output_tokens": approx_output_tokens(answer),
         "split": str(row.get("split")),
         "frozen_core": bool(row.get("frozen_core")),
+        "self_review_date": optional_blank(row.get("self_review_date")),
+        "self_review_evidence": optional_blank(row.get("self_review_evidence")),
         "outputs": {
             "response_draft": {
                 "draft_text": answer,

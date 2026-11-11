@@ -1,10 +1,10 @@
-# GT v2.3 to schema mapping
+# GT v2.4 to schema mapping
 
-The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_3.xlsx` and builds one envelope per record. The GT file is never modified. The v2.3 workbook already contains the approved tool re-labels and the canonical provider labels, so the mapper copies `expected_tools` and `service_providers` as they stand.
+The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_4.xlsx` and builds one envelope per record. The GT file is never modified. The v2.4 workbook already contains the approved tool re-labels and the canonical provider labels, so the mapper copies `expected_tools` and `service_providers` as they stand.
 
 ## Field mapping
 
-| Schema output | GT v2.3 source | Rule |
+| Schema output | GT v2.4 source | Rule |
 |---------------|----------------|------|
 | `record_id`, `intent`, `sub_intent`, `api`, `team`, `bucket`, `split`, `frozen_core` | same-named Data columns (`team` ← `primary_team`) | copied; must already match the controlled vocabulary |
 | `tools_expected` | `expected_tools` | split on commas; tokens must be in the registered tool list |
@@ -17,7 +17,8 @@ The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_3
 | `comparison` | `intent`, `bucket`, `service_providers`, citations | applicable for comparison intents/buckets, or pricing/sales records with two or more providers |
 | `responsible_role` | `escalation`, `primary_team` | parsed `should_escalate`, `severity`, `owner`, `reason` |
 | `next_action` | escalation + tools | `propose_escalation` if escalate; else `propose_record_update` if a gold update exists; else `answer_directly`. Consequential actions stay unexecuted and pending approval |
-| `approx_output_tokens` | `reference_answer` | PROPOSED `ceil(chars/4)` |
+| `approx_output_tokens` | `reference_answer` | APPROVED interim `ceil(chars/4)`; to be measured with the endpoint `usage` field in C10/eval |
+| `self_review_date`, `self_review_evidence` | same-named Data columns | copied; blank or null is allowed until the review happens |
 
 ## Counts
 
@@ -32,6 +33,7 @@ The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_3
 - `mapping/gold_outputs_all.jsonl`
 - `mapping/gold_outputs_frozen.jsonl`
 - `mapping/mapping_issues.json`
-- `vocab/vocab-diff-gt-v2_3.md`
+- `vocab/vocab-diff-gt-v2_4.md`
 - `validator/validator-report.md`
+- Historical vocabulary diffs kept in the repo: `vocab/vocab-diff-gt-v2_3.md`, `vocab/vocab-diff-gt-v2_3.json`.
 
