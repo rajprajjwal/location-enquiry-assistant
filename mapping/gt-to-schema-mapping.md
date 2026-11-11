@@ -1,13 +1,13 @@
-# GT v2.2 to schema mapping
+# GT v2.3 to schema mapping
 
-The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_2.xlsx` and builds one envelope per record. The GT file is never modified. Approved transforms applied only in the mapped output are: drop `api_probe` (with the 11-record re-label list), and merge `OSRM (OpenStreetMap)` into `OSRM`.
+The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_3.xlsx` and builds one envelope per record. The GT file is never modified. The v2.3 workbook already contains the approved tool re-labels and the canonical provider labels, so the mapper copies `expected_tools` and `service_providers` as they stand.
 
 ## Field mapping
 
-| Schema output | GT v2.2 source | Rule |
+| Schema output | GT v2.3 source | Rule |
 |---------------|----------------|------|
 | `record_id`, `intent`, `sub_intent`, `api`, `team`, `bucket`, `split`, `frozen_core` | same-named Data columns (`team` ← `primary_team`) | copied; must already match the controlled vocabulary |
-| `tools_expected` | `expected_tools` | split on commas; drop `api_probe`; for the 11 listed ids, use the approved replacement tool list |
+| `tools_expected` | `expected_tools` | split on commas; tokens must be in the registered tool list |
 | `tools_raw_gt` | `expected_tools` | unmodified tokens, for traceability |
 | `response_draft.draft_text` | `reference_answer` | copied verbatim |
 | `response_draft.citations` | citations sheet (fallback: `cited_doc_spans`) | one object per span |
@@ -32,6 +32,6 @@ The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_2
 - `mapping/gold_outputs_all.jsonl`
 - `mapping/gold_outputs_frozen.jsonl`
 - `mapping/mapping_issues.json`
-- `vocab/vocab-diff-gt-v2_2.md`
+- `vocab/vocab-diff-gt-v2_3.md`
 - `validator/validator-report.md`
 

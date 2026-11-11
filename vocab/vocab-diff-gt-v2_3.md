@@ -1,9 +1,11 @@
-# Vocabulary diff against GT v2.2
+# Vocabulary diff against GT v2.3
 
-Source of truth: `/workspace/capstone-trackb/data/gt_v2_2.xlsx`, sheet `Data` (521 records).
+Source of truth: `/workspace/capstone-trackb/data/gt_v2_3.xlsx`, sheet `Data` (521 records).
 Controlled vocabulary: `vocab/controlled-vocabulary.json` version 1.0.0.
 
 This is a read-only comparison. The GT file was not modified.
+
+Vocabulary differences: **0** (merges still present in GT, dropped labels still present in GT, or new GT labels not in the vocabulary).
 
 ## Matches (same label in GT and the vocabulary)
 
@@ -19,12 +21,12 @@ This is a read-only comparison. The GT file was not modified.
 
 ## Merged (GT label → vocabulary label)
 
-- `OSRM (OpenStreetMap)` → `OSRM` on **16** records.
+- None.
 
 ## Dropped (present in GT, retired from the copilot vocabulary)
 
-- `api_probe` is dropped as a copilot tool. It remains on **11** GT v2.2 records in `expected_tools` and is listed in the v2.3 change list.
+- None.
 
-## New in GT v2.2 and not in the vocabulary
+## New in GT v2.3 and not in the vocabulary
 
-- None. Every distinct GT v2.2 intent, sub_intent, bucket, API, team, owner and severity value is accounted for. The only provider label outside the six canonical names is the merged `OSRM (OpenStreetMap)`.
+- None. Every distinct GT v2.3 intent, sub_intent, bucket, API, team, owner, severity, provider and tool value is accounted for. There are 0 vocabulary differences.

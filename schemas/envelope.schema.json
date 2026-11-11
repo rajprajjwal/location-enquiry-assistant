@@ -126,7 +126,7 @@
       "items": {
         "type": "string"
       },
-      "description": "Unmodified expected_tools tokens from GT v2.2, including dropped api_probe if present."
+      "description": "Unmodified expected_tools tokens from GT v2.3."
     },
     "step_count_limit": {
       "type": "integer",

@@ -1,11 +1,12 @@
 # GT change list for v2.3
 
-**Status:** Proposed only. Do not apply in this activity.  
-**Apply later by:** Knowledge & Validation Engineer.  
-**Base file:** `/workspace/capstone-trackb/data/gt_v2_2.xlsx` (read only here; SHA-256 `2e3f3a2ff84144ff8444aa850e493629fec6ec0a45adc9678fb374ee46d900fe` at the time this list was written).  
-**v2.2 stays untouched** until a later, approved v2.3 build.
+**Status:** APPLIED in GT v2.3.  
+**Applied file:** `/workspace/capstone-trackb/data/gt_v2_3.xlsx` (SHA-256 `cc5fba4f448ccc4cce802aa11a642ccabcaf51df31faa8df3e162b1dfec804e8`).  
+**v2.2 left unchanged:** `/workspace/capstone-trackb/data/gt_v2_2.xlsx` (SHA-256 `2e3f3a2ff84144ff8444aa850e493629fec6ec0a45adc9678fb374ee46d900fe`).
 
-This list is derived from the Data sheet of GT v2.2 and from Shahid’s approved decisions. Judgements for tool re-labels use each record’s `question`, `gold_tool_trace` and `reference_answer`.
+The sections below are kept as history. They are the proposal that was applied to produce v2.3, not a new edit list.
+
+**Historical base (when this list was written):** `/workspace/capstone-trackb/data/gt_v2_2.xlsx` (SHA-256 `2e3f3a2ff84144ff8444aa850e493629fec6ec0a45adc9678fb374ee46d900fe`). This list was derived from the Data sheet of GT v2.2 and from Shahid’s approved decisions. Judgements for tool re-labels used each record’s `question`, `gold_tool_trace` and `reference_answer`.
 
 ---
 

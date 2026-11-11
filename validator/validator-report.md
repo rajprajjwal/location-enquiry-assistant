@@ -1,7 +1,7 @@
 # C1 validator report
 
-Generated: 2026-11-11T20:38:03+05:30
-GT source (read only): `/workspace/capstone-trackb/data/gt_v2_2.xlsx`.
+Generated: 2026-11-11T21:15:30+05:30
+GT source (read only): `/workspace/capstone-trackb/data/gt_v2_3.xlsx`.
 Schemas: `schemas/*.schema.json` version 1.0.0.
 Vocabulary: `vocab/controlled-vocabulary.json` version 1.0.0.
 
@@ -46,6 +46,13 @@ Token counts use a **PROPOSED** offline approximation: `ceil(Unicode character c
 - All mapped drafts: n=521, min=15, median=90, max=408
 - Frozen drafts: n=80, min=20, median=117, max=408
 - Over 1,024 approx tokens: **0**
+
+## Vocabulary differences
+
+- Merges still present in GT: 0.
+- Dropped labels still present in GT: 0.
+- New GT labels not in the vocabulary: 0.
+- Vocabulary differences: **0**.
 
 ## Approval-boundary rule
 

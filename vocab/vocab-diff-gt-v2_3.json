@@ -94,14 +94,10 @@
     ]
   },
   "merges": {
-    "providers": {
-      "OSRM (OpenStreetMap)": "OSRM"
-    }
+    "providers": {}
   },
   "dropped": {
-    "tools": [
-      "api_probe"
-    ]
+    "tools": []
   },
   "new_in_gt": {},
   "notes": []

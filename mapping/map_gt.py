@@ -1,4 +1,4 @@
-"""Mechanical GT v2.2 → schema mapper. Read-only on the GT file."""
+"""Mechanical GT v2.3 → schema mapper. Read-only on the GT file."""
 
 from __future__ import annotations
 
@@ -12,22 +12,11 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parents[1]
 VOCAB_PATH = REPO / "vocab" / "controlled-vocabulary.json"
-DEFAULT_GT = Path("/workspace/capstone-trackb/data/gt_v2_2.xlsx")
+DEFAULT_GT = Path("/workspace/capstone-trackb/data/gt_v2_3.xlsx")
 
-# Approved re-label of the 11 api_probe records (v2.3 change list; not written into GT).
-API_PROBE_PROPOSED_TOOLS: dict[str, list[str]] = {
-    "GT-LBS-DIR-002": ["doc_search", "update_record"],
-    "GT-LBS-DIR-004": ["doc_search"],
-    "GT-LBS-DIR-042": ["doc_search"],
-    "GT-LBS-DIR-064": ["doc_search"],
-    "GT-LBS-DIR-083": ["doc_search", "escalate_ticket"],
-    "GT-LBS-DM-004": ["doc_search"],
-    "GT-LBS-DM-084": ["escalate_ticket"],
-    "GT-LBS-AC-004": ["doc_search"],
-    "GT-LBS-AC-087": ["escalate_ticket"],
-    "GT-LBS-RG-001": ["doc_search"],  # FROZEN
-    "GT-LBS-RG-085": ["escalate_ticket"],
-}
+# v2.3 already applied the approved tool re-labels and provider-label merge
+# in the GT workbook. The mapper copies expected_tools and service_providers
+# as they stand and does not re-apply those transforms.
 
 TOOL_ORDER = ["doc_search", "calculator", "update_record", "escalate_ticket"]
 
@@ -91,6 +80,14 @@ def parse_escalation(raw: Any) -> dict:
     return out
 
 
+
+def as_text(raw: Any) -> str:
+    """Return a string, treating null/NaN as empty. Does not invent content."""
+    if raw is None or (isinstance(raw, float) and pd.isna(raw)) or (isinstance(raw, str) is False and pd.isna(raw)):
+        return ""
+    return str(raw)
+
+
 def split_csv(value: Any) -> list[str]:
     if value is None or (isinstance(value, float) and pd.isna(value)):
         return []
@@ -98,7 +95,7 @@ def split_csv(value: Any) -> list[str]:
 
 
 def canon_providers(raw: Any, vocab: dict) -> tuple[list[str], list[str]]:
-    merges = vocab["provider_merges"]
+    merges = vocab.get("provider_merges") or {}
     allowed = set(vocab["providers"])
     out: list[str] = []
     unknown: list[str] = []
@@ -114,18 +111,10 @@ def canon_providers(raw: Any, vocab: dict) -> tuple[list[str], list[str]]:
 
 def mapped_tools(record_id: str, raw: Any, vocab: dict) -> tuple[list[str], list[str], list[str]]:
     allowed = set(vocab["tools"])
-    dropped = set(vocab["tools_dropped"])
     raw_list = split_csv(raw)
-    warnings: list[str] = []
-    if "api_probe" in raw_list and record_id in API_PROBE_PROPOSED_TOOLS:
-        mapped = list(API_PROBE_PROPOSED_TOOLS[record_id])
-    else:
-        mapped = [t for t in raw_list if t not in dropped]
-        if "api_probe" in raw_list:
-            warnings.append("api_probe_present_without_proposed_relabel")
-    unknown = [t for t in mapped if t not in allowed]
-    mapped = [t for t in TOOL_ORDER if t in mapped]
-    return mapped, raw_list, unknown + warnings
+    unknown = [t for t in raw_list if t not in allowed]
+    mapped = [t for t in TOOL_ORDER if t in raw_list]
+    return mapped, raw_list, unknown
 
 
 def parse_clarifying(raw: Any) -> dict:
@@ -224,7 +213,7 @@ def parse_citations_from_text(raw: Any) -> list[dict]:
 
 
 def parse_update_proposal(trace: Any, answer: Any) -> dict | None:
-    text = str(trace or "")
+    text = as_text(trace)
     m = re.search(r"update_record\s+(\{.*?\})\s*->", text, re.S)
     if m:
         try:
@@ -238,7 +227,7 @@ def parse_update_proposal(trace: Any, answer: Any) -> dict | None:
         except json.JSONDecodeError:
             pass
     # Fallback: "Proposed sandbox update for TKT-123 (...): k=v; k=v."
-    ans = str(answer or "")
+    ans = as_text(answer)
     m2 = re.search(
         r"Proposed sandbox update for\s+(\S+)\s+\([^)]*\):\s*(.+)$",
         ans,
@@ -257,7 +246,7 @@ def parse_update_proposal(trace: Any, answer: Any) -> dict | None:
 
 
 def parse_escalate_payload(trace: Any) -> dict | None:
-    text = str(trace or "")
+    text = as_text(trace)
     m = re.search(r"escalate_ticket\s+(\{.*?\})\s*->", text, re.S)
     if not m:
         return None

@@ -1,27 +1,27 @@
 # Location Services Sales and Support Copilot — Track-B C1 artefacts
 
-Local git repository for the C1 task specification of Shahid’s Track-B capstone. There is no remote and nothing has been pushed.
+Local git repository for the C1 task specification of Shahid’s Track-B capstone. An origin remote may already be configured; this activity does not add remotes and does not push.
 
 This repository holds design artefacts only: the task spec, versioned JSON Schemas, the controlled vocabulary, a mechanical GT-to-schema mapping, and a validator. It is not the application.
 
 ## Why the repo lives in this subfolder
 
-The repository root is `/workspace/capstone-trackb/repo/`, not `/workspace/capstone-trackb/`. The parent tree contains `inputs/` (activities, the Track-B PDF, the Learner Guide, a CA certificate) and `data/` (GT workbooks, including `gt_v2_2.xlsx`). Those files are the read-only sources for this work and must not be versioned here. Secrets, keys and certificates are also kept out. The GT file is never copied into this repository.
+The repository root is `/workspace/capstone-trackb/repo/`, not `/workspace/capstone-trackb/`. The parent tree contains `inputs/` (activities, the Track-B PDF, the Learner Guide, a CA certificate) and `data/` (GT workbooks, including `gt_v2_3.xlsx` and the unchanged `gt_v2_2.xlsx`). Those files are the read-only sources for this work and must not be versioned here. Secrets, keys and certificates are also kept out. The GT file is never copied into this repository.
 
 ## Source of truth (outside the repo, read only)
 
-- GT: `/workspace/capstone-trackb/data/gt_v2_2.xlsx`
+- GT: `/workspace/capstone-trackb/data/gt_v2_3.xlsx`
 - Activities, brief, Track-B PDF, Learner Guide: `/workspace/capstone-trackb/inputs/`
 
 ## Contents
 
 - `spec/spec.md` — task specification (sign-off unsigned)
 - `schemas/` — versioned JSON Schemas for the seven outputs and the envelope (`x-spec-version` 1.0.0)
-- `vocab/` — controlled vocabulary and a diff against GT v2.2
+- `vocab/` — controlled vocabulary and a diff against GT v2.3
 - `mapping/` — mapper, mapping notes, and generated gold envelopes (all 521 and the 80 frozen records)
 - `validator/validate_spec.py` — schema, vocabulary, approval, required-field and token-budget checks
 - `validator/validator-report.md` — last validator run
-- `gt-change-list-v2_3.md` — proposed GT v2.3 changes, for the Knowledge & Validation Engineer
+- `gt-change-list-v2_3.md` — the v2.3 change list, marked APPLIED and kept as history
 - `review-log.md` — reviewer policy and pending sign-off
 
 ## Run the validator
@@ -29,6 +29,12 @@ The repository root is `/workspace/capstone-trackb/repo/`, not `/workspace/capst
 ```bash
 cd /workspace/capstone-trackb/repo
 .venv/bin/python validator/validate_spec.py
+```
+
+The default run reads GT v2.3 and writes the report, gold outputs and vocabulary diff inside this repository, which is the layout that gets committed. To run without writing inside the repo:
+
+```bash
+.venv/bin/python validator/validate_spec.py --out-dir /tmp/c1-validate-out
 ```
 
 The virtualenv is not committed. Recreate it with:
