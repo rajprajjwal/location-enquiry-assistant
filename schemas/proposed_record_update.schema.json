@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://capstone.local/lbs-copilot/schemas/proposed_record_update/v1.0.0",
   "title": "ProposedRecordUpdate",
+  "$comment": "Purpose: a sandbox CRM/ticket update proposal. Use case: output 4 of 7, filled when update_record is expected. Example: requires applicable, requires_human_approval, approval_status, executed and proposal; gold keeps executed=false, approval_status=pending.",
   "x-spec-version": "1.0.0",
   "x-output": "proposed_record_update",
   "description": "Sandbox record-update proposal. Nothing is written unless approval_status is approved. The validator rejects executed=true without approval.",

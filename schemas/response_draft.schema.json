@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://capstone.local/lbs-copilot/schemas/response_draft/v1.0.0",
   "title": "ResponseDraft",
+  "$comment": "Purpose: the drafted reply with citations. Use case: output 1 of 7; gold draft_text is the GT reference_answer. Example: each citation needs url, span and supports_claim; is_refusal=true requires a refusal object.",
   "x-spec-version": "1.0.0",
   "x-output": "response_draft",
   "type": "object",

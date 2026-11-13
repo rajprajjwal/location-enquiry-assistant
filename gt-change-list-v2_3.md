@@ -1,5 +1,9 @@
 # GT change list for v2.3
 
+> **About this file.** Purpose: the GT change list that produced GT v2.3, kept as history (status APPLIED).
+> Use case: traceability for why GT labels changed between v2.2 and v2.3; not a pending edit list.
+> Example: section (a) re-labels the 11 `api_probe` records, e.g. GT-LBS-DIR-004 → `doc_search`.
+
 **Status:** APPLIED in GT v2.3.  
 **Applied file:** `/workspace/capstone-trackb/data/gt_v2_3.xlsx` (SHA-256 `cc5fba4f448ccc4cce802aa11a642ccabcaf51df31faa8df3e162b1dfec804e8`).  
 **v2.2 left unchanged:** `/workspace/capstone-trackb/data/gt_v2_2.xlsx` (SHA-256 `2e3f3a2ff84144ff8444aa850e493629fec6ec0a45adc9678fb374ee46d900fe`).

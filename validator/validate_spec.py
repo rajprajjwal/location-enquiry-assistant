@@ -2,6 +2,17 @@
 """Validate C1 task-spec artefacts and mapped GT gold outputs.
 
 Reads GT v2.4 in place and never writes to it.
+
+Purpose: check the 8 schemas, map all GT records with ``mapping/map_gt.py``
+and test every envelope against the schemas, the human-approval rule,
+required qualification fields and the 1,024-token output budget.
+Use case: the C1 acceptance check; rerun after any GT, schema or vocabulary
+change. It regenerates the gold JSONL files, ``mapping_issues.json``,
+``gt-to-schema-mapping.md``, the v2.4 vocab diff and ``validator-report.md``
+under the repo root, or under ``--out-dir`` when given.
+Example: ``.venv/bin/python3 validator/validate_spec.py --out-dir /tmp/c1``
+reports "All records: 521/521 pass" and "80/80 pass"; a copy of
+GT-LBS-DIR-002 mutated to ``executed=true`` while ``pending`` is rejected.
 """
 
 from __future__ import annotations

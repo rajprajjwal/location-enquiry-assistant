@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://capstone.local/lbs-copilot/schemas/comparison/v1.0.0",
   "title": "Comparison",
+  "$comment": "Purpose: a side-by-side provider comparison. Use case: output 5 of 7, filled for comparison intents. Example: applicable=true requires at least one provider (one of the 6 canonical names, e.g. \"Ola Maps\") and one dimension (pricing, capabilities, coverage, limits).",
   "x-spec-version": "1.0.0",
   "x-output": "comparison",
   "type": "object",

@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://capstone.local/lbs-copilot/schemas/qualification_details/v1.0.0",
   "title": "QualificationDetails",
+  "$comment": "Purpose: sales qualification facts pulled from the query. Use case: output 3 of 7. Example: required fields use_case_api, region, monthly_volume, current_provider, timeline; gaps go in missing_required_fields.",
   "x-spec-version": "1.0.0",
   "x-output": "qualification_details",
   "type": "object",

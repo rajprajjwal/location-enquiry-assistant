@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://capstone.local/lbs-copilot/schemas/envelope/v1.0.0",
   "title": "CopilotOutputEnvelope",
+  "$comment": "Purpose: wrapper for one copilot answer holding all 7 outputs plus record metadata. Use case: each line of mapping/gold_outputs_*.jsonl is one envelope. Example: step_count_limit=10 and output_token_budget=1024; self_review_date/self_review_evidence may be null.",
   "x-spec-version": "1.0.0",
   "x-output": "envelope",
   "type": "object",

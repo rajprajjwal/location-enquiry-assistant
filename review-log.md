@@ -1,5 +1,9 @@
 # Review log — C1 task specification
 
+> **About this file.** Purpose: record of the reviewer policy, spec review, resolved decisions and gold-record reviews.
+> Use case: evidence for acceptance criterion 2 ("Shahid reviews and signs off"); sign-off is still pending.
+> Example: the 244 `review_priority=high` records need a second self-review recorded in `self_review_date` / `self_review_evidence`.
+
 **Document under review:** `spec/spec.md` (schema version 1.0.0) and the schemas, vocabulary, mapping and validator that accompany it.  
 **Reviewer policy:** Shahid reviews and signs off.  
 **Sign-off:** pending. The sign-off block in `spec/spec.md` is left unsigned.

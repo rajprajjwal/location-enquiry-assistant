@@ -1,3 +1,6 @@
+# Purpose: keep local env, caches and secrets out of git.
+# Use case: blocks keys/certs (e.g. *.crt, *.pem, .env, TRACKB_API_KEY) and the .venv/.
+# Example: .venv/ and __pycache__/ below are never committed.
 .venv/
 __pycache__/
 *.py[cod]

@@ -1,5 +1,9 @@
 # Task specification: Location Services Sales and Support Copilot
 
+> **About this file.** Purpose: the C1 task spec; it fixes the 8 intents, 4 tools, 7 outputs, refusal policy and thresholds for the copilot.
+> Use case: the contract the schemas, gold outputs, later runtime and eval are checked against; awaits Shahid's sign-off.
+> Example: section 9 sets a step limit of at most 10 steps per query (`step_count_limit=10`).
+
 **Document:** C1 task spec, interpretation and qualification  
 **Schema version:** 1.0.0  
 **Track:** Track-B “Multi-Agent Operations Copilot: An Agentic System Built Entirely on a Hosted ≤8B Inference API”  

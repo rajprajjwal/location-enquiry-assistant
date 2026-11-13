@@ -1,5 +1,9 @@
 # Location Services Sales and Support Copilot — Track-B C1 artefacts
 
+> **About this file.** Purpose: entry point for the repo; explains what it holds and where the read-only sources live.
+> Use case: read first before touching the spec, schemas, mapping or validator.
+> Example: the GT source of truth is `/workspace/capstone-trackb/data/gt_v2_4.xlsx`, kept outside the repo.
+
 Local git repository for the C1 task specification of Shahid’s Track-B capstone. An origin remote may already be configured; this activity does not add remotes and does not push.
 
 This repository holds design artefacts only: the task spec, versioned JSON Schemas, the controlled vocabulary, a mechanical GT-to-schema mapping, and a validator. It is not the application.

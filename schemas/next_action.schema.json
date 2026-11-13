@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://capstone.local/lbs-copilot/schemas/next_action/v1.0.0",
   "title": "NextAction",
+  "$comment": "Purpose: the recommended next step. Use case: output 7 of 7. Example: requires action_type, requires_human_approval, approval_status and executed; propose_record_update and propose_escalation are proposals only.",
   "x-spec-version": "1.0.0",
   "x-output": "next_action",
   "description": "Recommended next action. propose_record_update and propose_escalation are proposals only and must not be executed without approval.",
