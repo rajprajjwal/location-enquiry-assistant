@@ -239,7 +239,8 @@ def validate_interpretation_output(obj: dict) -> list[str]:
     order: ``API_MISMATCH`` (null ``api`` with null ``use_case_api`` agrees),
     ``MISSING_FIELDS_MISMATCH``, ``ABSTAIN_REQUIRED_FIELDS`` (abstain false
     requires intent, api and team in the vocabulary), then
-    ``ABSTAIN_REASON_REQUIRED`` (abstain true requires a non-empty reason).
+    ``ABSTAIN_REASON_REQUIRED`` (abstain true requires a non-empty reason),
+    then ``ABSTAIN_REASON_FORBIDDEN`` (abstain false requires a null reason).
     """
     errors = _schema_errors(obj, _output_validator())
     if not isinstance(obj, dict):
@@ -252,6 +253,7 @@ def validate_interpretation_output(obj: dict) -> list[str]:
     errors.extend(_format(_missing_list_mismatch(obj)))
     errors.extend(_format(_abstain_required_fields(obj)))
     errors.extend(_format(_abstain_reason_required(obj)))
+    errors.extend(_format(_abstain_reason_forbidden(obj)))
     return errors
 
 
@@ -373,6 +375,27 @@ def _abstain_reason_required(obj: dict) -> list[tuple[str, str, str]]:
             "/abstain_reason",
             "ABSTAIN_REASON_REQUIRED",
             "abstain=true requires a non-empty abstain_reason; "
+            f"abstain_reason={_fmt(reason)}",
+        )
+    ]
+
+
+def _abstain_reason_forbidden(obj: dict) -> list[tuple[str, str, str]]:
+    """abstain false requires abstain_reason to be JSON null.
+
+    The key is in the schema required list, so a missing key is not null.
+    Values are not trimmed.
+    """
+    if obj.get("abstain") is not False:
+        return []
+    reason = obj.get("abstain_reason", _ABSENT)
+    if reason is None:
+        return []
+    return [
+        (
+            "/abstain_reason",
+            "ABSTAIN_REASON_FORBIDDEN",
+            "abstain=false requires abstain_reason null; "
             f"abstain_reason={_fmt(reason)}",
         )
     ]

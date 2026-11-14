@@ -150,12 +150,16 @@ runs the two qualification consistency checks under that prefix, then:
    controlled vocabulary. No `unknown` label was added.
 6. `ABSTAIN_REASON_REQUIRED` at `/abstain_reason` when `abstain` is true
    and the reason is missing, null, empty, or whitespace-only.
+7. `ABSTAIN_REASON_FORBIDDEN` at `/abstain_reason` when `abstain` is
+   false and the reason is not null. The key is required, so a missing
+   key is rejected. The value is not trimmed.
 
 `abstain_reason` is an enum. v0.2.0 adds `no_rule_match` to
 `model_unavailable`, `invalid_after_repair`, and `budget_exceeded`
-(and null). `abstain=false` may still use null. A non-empty string that
-is not one of those four is an `ENUM` error. Identical schema errors
-are reported once.
+(and null). When `abstain` is false the value must be null. A non-empty
+string that is not one of those four is an `ENUM` error. A recognised
+reason with surrounding spaces stays an `ENUM` error; it is not trimmed.
+Identical schema errors are reported once.
 
 Schema rule codes are the JSON Schema keyword: `TYPE`, `ENUM`,
 `REQUIRED`, `ADDITIONAL_PROPERTIES`, `MIN_LENGTH`, `MINIMUM`, `MAXIMUM`,

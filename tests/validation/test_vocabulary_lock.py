@@ -77,6 +77,9 @@ def test_interpretation_output_enums_match_vocab() -> None:
     assert closed["intent"]["enum"] == raw["intents"]
     assert closed["api"]["enum"] == raw["apis"]
     assert closed["team"]["enum"] == raw["teams"]
+    assert "abstain_reason" in schema["required"]
+    assert "abstain_reason" in schema["allOf"][0]["then"]["required"]
+    assert closed["abstain_reason"] == {"const": None}
     reasons = props["abstain_reason"]["enum"]
     assert reasons[-1] is None
     assert "no_rule_match" in reasons[:-1]

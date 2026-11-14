@@ -73,7 +73,7 @@ v0.2.0 makes `intent`, `api` and `team` nullable. There is no `unknown` vocabula
 Contract rules:
 - `qualification_details` has all 10 required keys of the schema. `use_case_api.api` equals the top-level `api`, including when both are null. A null `api` requires `use_case_api` null; that null is a missing required field, so `complete` is false.
 - When `abstain` is false, `intent`, `api` and `team` are non-null vocabulary values.
-- When `abstain` is true, each of `intent`, `api` and `team` may be null. `abstain_reason` is required and is one of the four reason strings (non-empty; whitespace-only is invalid). `no_rule_match` is the reason when no rule matched. `abstain=false` may still carry `abstain_reason` null.
+- When `abstain` is true, each of `intent`, `api` and `team` may be null. `abstain_reason` is required and is one of the four reason strings (non-empty; whitespace-only is invalid). `no_rule_match` is the reason when no rule matched. `abstain=false` requires `abstain_reason` null; the key stays required, so omitting it is invalid.
 - `missing_required_fields` = the required fields (`use_case_api, region, monthly_volume, current_provider, timeline`) whose value is null after the history and known-facts merge, in vocabulary order. `complete = (len(missing) == 0)`. Both are computed by code only.
 - `confidence` is the model's self-reported value, or null. It is diagnostic only and never used for scoring. `abstain=true` outputs are still scored (no free passes).
 - Token counts use `ceil(chars/4)` (`mapping/map_gt.py::approx_output_tokens`) until Activity 8 or Activity 20 starts.

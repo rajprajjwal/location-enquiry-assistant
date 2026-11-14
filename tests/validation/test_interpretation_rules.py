@@ -569,6 +569,35 @@ def test_abstain_true_rejects_missing_null_empty_or_whitespace_reason() -> None:
         assert validate_interpretation_output(obj) == []
 
 
+def test_abstain_false_requires_null_reason() -> None:
+    # abstain_reason is on the schema required list, so the key must be
+    # present. A null value passes. A missing key is rejected.
+    assert validate_interpretation_output(valid_output()) == []
+
+    reasons = (
+        "model_unavailable",
+        "invalid_after_repair",
+        "budget_exceeded",
+        "no_rule_match",
+    )
+    for reason in reasons:
+        obj = valid_output()
+        obj["abstain_reason"] = reason
+        assert validate_interpretation_output(obj) == [
+            "/abstain_reason: CONST: None was expected",
+            "/abstain_reason: ABSTAIN_REASON_FORBIDDEN: abstain=false requires "
+            f'abstain_reason null; abstain_reason="{reason}"',
+        ], reason
+
+    absent = valid_output()
+    del absent["abstain_reason"]
+    assert validate_interpretation_output(absent) == [
+        "/abstain_reason: REQUIRED: 'abstain_reason' is a required property",
+        "/abstain_reason: ABSTAIN_REASON_FORBIDDEN: abstain=false requires "
+        "abstain_reason null; abstain_reason=<absent>",
+    ]
+
+
 def test_copying_a_valid_qualification_does_not_share_missing_list_edits() -> None:
     original = valid_qual()
     copied = copy.deepcopy(original)
