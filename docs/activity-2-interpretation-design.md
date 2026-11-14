@@ -4,7 +4,7 @@
 > Use case: the implementers build and score against this; it is design only and adds no code.
 > Example: for `GT-LBS-DIR-011` the step must return `intent=pricing_comparison`, `api=directions`, `team=Sales`, `region="India"`.
 
-**Status:** draft for Shahid's review · **Date:** 2026-11-14 (IST) · **Repo base:** `3b48db9` (tag `eval-freeze-v1`, GT v2.5)
+**Status:** draft for Shahid's review; decisions in §6.2, §6.4 and §7 approved 2026-11-14 23:37 IST · **Date:** 2026-11-14 (IST) · **Frozen gold:** tag `eval-freeze-v2` (GT v2.5; supersedes `eval-freeze-v1` at `3b48db9`)
 **Author:** Capstone Architect · **Decisions in force (Shahid, 2026-11-14 23:21 IST):** the VM07 Qwen3-8B endpoint is approved for Activity 2 development and scoring by the implementers; code lives in this repo; hybrid design (model output + deterministic rule checks).
 
 Activity 2 text (activities file): *"Build the interpretation step. From the query and history it outputs intent, API, team and a filled qualification object, and it lists which required fields are missing."*
@@ -175,7 +175,7 @@ Each call is far below the 8,192 combined limit. The client rejects any call who
 
 ## 6. Metrics (exact, reproducible)
 
-Scope: the 80 records of `mapping/gold_outputs_frozen.jsonl` (sha256 `87c255fe…0604`, per `eval/freeze-manifest.json`). Gold labels come from that file: `intent`, `api`, `team`, `outputs.qualification_details`.
+Scope: the 80 records of `mapping/gold_outputs_frozen.jsonl` (sha256 `151f87f5…9123` at `eval-freeze-v2`, per `eval/freeze-manifest.json`). Gold labels come from that file: `intent`, `api`, `team`, `outputs.qualification_details`.
 
 ### 6.1 Intent and API accuracy
 `accuracy = (# records with pred == gold, exact string) / 80`. An abstained or null prediction counts as wrong. Team accuracy is reported too (diagnostic; it has no Activity 2 threshold).
@@ -199,30 +199,20 @@ Normalisation `norm()` (before `match`):
 - **provider:** `PROVIDER_ALIASES` (case-folded) → one of the 6 canonical names. Unknown → text.
 - **match for free-text slots** (`timeline`, `budget`, `technical_constraints`, `decision_maker`): normalised equality, or one normalised string is a substring of the other with the shorter one ≥ 3 characters.
 
-Also reported: per-slot P/R/F1, and micro-F1 **excluding** `use_case_api`. In the frozen gold every record has a non-null `use_case_api`, so 80 of the 116 non-null gold slots are API-derived and the headline F1 is dominated by API accuracy. Shahid should confirm which number is the Activity 2 gate (proposed: the headline, with the excl-API value shown beside it).
+Also reported: per-slot P/R/F1, and micro-F1 **excluding** `use_case_api`. In the frozen gold every record has a non-null `use_case_api`, so 80 of the 119 non-null gold slots (eval-freeze-v2) are API-derived and the headline F1 is dominated by API accuracy. **APPROVED (Shahid, 2026-11-14 23:37 IST):** the Activity 2 gate is the full (headline) qualification F1; F1 excluding `use_case_api` is always reported alongside.
 
 ### 6.3 Missing-field recall (precision diagnostic)
-Per record, `G` = gold `missing_required_fields` and `P` = predicted. `recall = Σ|G∩P| / Σ|G|`, `precision = Σ|G∩P| / Σ|P|` (micro, 80 records). Frozen gold has 287 missing entries (monthly_volume 76, current_provider 73, timeline 72, region 66), so recall mainly penalises **over-extraction** (inventing a value).
+Per record, `G` = gold `missing_required_fields` and `P` = predicted. `recall = Σ|G∩P| / Σ|G|`, `precision = Σ|G∩P| / Σ|P|` (micro, 80 records). Frozen gold (eval-freeze-v2) has 284 missing entries (timeline 80, current_provider 75, region 66, monthly_volume 63), so recall mainly penalises **over-extraction** (inventing a value).
 
-### 6.4 Gold-quality risk (needs Shahid's spot-check before scoring)
-The qualification gold is regex output from `mapping/map_gt.py::extract_qualification`, run over the whole `question` text, assistant lines included. Frozen findings:
-- **Timeline:** all 8 non-null `timeline` values look spurious:
-  - `"Before I answer"` from assistant turns: GT-LBS-DIR-020, GT-LBS-DIR-021, GT-LBS-RG-001;
-  - `"by default"`: GT-LBS-AC-215;
-  - `"by place type"`: GT-LBS-AC-230;
-  - `"before recommending a provider"`: GT-LBS-RG-225;
-  - `"before recommending Google"`: GT-LBS-AC-231;
-  - `"by our reverse-geocoding service may have be"`: GT-LBS-RG-231.
+### 6.4 Gold-quality risk — RESOLVED by the mapper fix (eval-freeze-v2)
+The `eval-freeze-v1` qualification gold was regex output from `mapping/map_gt.py::extract_qualification` over the whole `question` text, assistant lines included. It had spurious timelines (e.g. `"Before I answer"` on GT-LBS-DIR-020, GT-LBS-DIR-021 and GT-LBS-RG-001; 61 bad timelines in all), missed volumes (44, e.g. GT-LBS-DM-026 "20,000 per month") and 23 doubtful current providers.
 
-  Across all 532 records, 50 gold timelines are `"Before I answer"`.
-- **Missed volume:** GT-LBS-DM-026 ("20,000 per month in India") has `monthly_volume=null`, so a correct extraction is scored as an FP and lowers missing-field recall.
-- **decision_maker** is never extracted (always null), and `budget` is null on all 80 frozen records.
+**Resolution (option A, approved 2026-11-14 23:37 IST):** the mapper now reads `[user]` turns only and uses stricter `timeline`, `monthly_volume` and `current_provider` rules. The rules are documented in `mapping/gt-to-schema-mapping.md` and spec section 12. The gold was regenerated and re-frozen as `eval-freeze-v2`. Effect on the frozen 80:
+- 8 timelines → null;
+- 13 volumes filled;
+- `current_provider` changed on 4 records (GT-LBS-AC-081, GT-LBS-AC-210 and GT-LBS-DM-094 → null; GT-LBS-AC-234 → Ola Maps).
 
-A correct system can therefore fail the F1 or recall gates because of the gold itself. **Recommendation:** Shahid spot-checks every frozen record with a non-null qualification value, plus a sample of the null ones. Then pick one fix and finish it **before the first agent-code commit**, because both change frozen evidence:
-- (A) correct the mapper (user turns only; stricter timeline pattern) and regenerate the gold → the frozen jsonl sha changes → new manifest and tag `eval-freeze-v2`;
-- (B) a reviewed overlay `eval/activity2_qualification_gold.json`, hashed into the manifest and tagged.
-
-Scoring against the uncorrected gold is allowed only if it is labelled as such.
+`budget` and `decision_maker` remain null on all 80. Shahid may still spot-check; the rule-boundary cases marked "needs Shahid" are listed in the review-log entry of 2026-11-14. Any further change to the frozen gold needs a new freeze tag.
 
 ### 6.5 Scoring CLI contract (`eval/score_activity2.py`)
 ```
@@ -247,7 +237,7 @@ Scoring against the uncorrected gold is allowed only if it is labelled as such.
 GT v2.5: 532 records = 80 frozen (eval) + 349 non-frozen eval + 103 holdout. The frozen set spans 73 template families.
 
 - **Few-shot and tuning pool:** `split=eval AND frozen_core=False AND template_family ∉ frozen families` → **317 records**, covering all 8 intents (smallest is human_handoff, 10), all 4 APIs (77–83 each) and both teams (Sales 145 / Support 172). 31 of them use the `[user]/[assistant]` history format. Rule-table and prompt tuning use this pool only.
-- **Holdout (103):** **not** used for tuning. This deviates from the "holdout or non-frozen eval" wording I was given, because Activity 22 requires the holdout to be "run exactly once, at the end". Shahid to confirm.
+- **Holdout (103):** **never** used for tuning or few-shot; it is kept for the end (Activity 22: "run exactly once, at the end"). **APPROVED (Shahid, 2026-11-14 23:37 IST).**
 - **Frozen 80:** score only at named milestones (prompt version freeze, before handoff, final). Never inspected per record for prompt edits; per-record outputs go to the run folder, not into prompts.
 - **Proof of no leakage** (automated test plus a line in each run's `scores.json`):
   - `fewshot_ids.json` is committed with each prompt version; a test asserts `fewshot_ids ∩ manifest.frozen_record_ids = ∅` and that no few-shot family is a frozen family;
@@ -290,7 +280,7 @@ Owner mapping (assumed; not defined in the repo): Forge = Application Engineer, 
     - qualification field-level F1 ≥ 0.85;
     - missing-field recall ≥ 0.85.
 
-    Reported with the gold version used (§6.4).
+    Scored against the `eval-freeze-v2` gold (§6.4).
 13. [Assay] Determinism:
     - (a) the scorer gives byte-identical `scores.json` on rerun;
     - (b) replaying recorded model responses gives byte-identical `predictions.jsonl`;
@@ -302,25 +292,25 @@ Owner mapping (assumed; not defined in the repo): Forge = Application Engineer, 
 | Owner | Delivers | Proposed paths |
 |---|---|---|
 | Capstone Architect | This contract; answers to interface questions; no code | `docs/activity-2-interpretation-design.md` |
-| Knowledge & Validation Engineer | Pydantic models generated from `schemas/` (incl. the two wrappers in §2); shared rule functions; GT adapter / history lookup; scorer; leakage tests; gold fix A/B after Shahid's spot-check | `copilot/models/` (generated), `copilot/interpret/gt_adapter.py`, `eval/score_activity2.py`, `tests/eval/` |
+| Knowledge & Validation Engineer | Pydantic models generated from `schemas/` (incl. the two wrappers in §2); shared rule functions; GT adapter / history lookup; scorer; leakage tests; any follow-up to Shahid's optional gold spot-check | `copilot/models/` (generated), `copilot/interpret/gt_adapter.py`, `eval/score_activity2.py`, `tests/eval/` |
 | Application Engineer | Interpretation module, rules, prompts, post-check, repair/fallback; thin endpoint client; tracing fields; batch runner with response recording | `copilot/interpret/{__init__,interpret,rules,postcheck,models}.py`, `copilot/interpret/prompts/interp-v1.txt`, `copilot/interpret/fewshot_ids.json`, `copilot/llm/client.py`, `copilot/interpret/run_batch.py`, `tests/interpret/` |
 | QA & Evaluation Engineer | Independent frozen-80 scoring at milestones, determinism checks, report | `runs/activity2/<run_id>/` (decide whether committed or archived) |
 
 Handoff order:
-1. Shahid decides the open points in §10.
+1. Shahid reviews the remaining open points in §10 (gold fix, holdout and F1 gate are decided).
 2. Knowledge & Validation Engineer: models, adapter, scorer (tests 1, 2, 8–10).
 3. Application Engineer: client and module (tests 3–7).
 4. Tuning on the 317-record pool.
 5. QA & Evaluation Engineer frozen run (tests 11–14).
 
-Agent code must not be committed before the `eval-freeze-v1` tag (already satisfied), and not before any re-freeze from §6.4 if Shahid picks option A or B.
+Agent code must not be committed before the `eval-freeze-v2` tag (the re-freeze from §6.4).
 
 ## 10. Open risks and assumptions
 
-1. **Qualification gold defects (§6.4):** this can fail the F1/recall gates independently of model quality. Shahid's spot-check and a fix decision are needed before agent code.
+1. **Qualification gold defects (§6.4):** RESOLVED by the mapper fix and `eval-freeze-v2`. The gold is still rule-derived: Shahid may spot-check, and the rule-boundary provider cases are flagged "needs Shahid".
 2. **Thinking mode, JSON mode, seed and temperature-0 determinism on VM07 are undocumented** in the Learner Guide. Assumed controllable; verify once and record.
-3. **Holdout use for tuning** conflicts with Activity 22's "run exactly once"; this contract excludes the holdout from tuning pending confirmation.
-4. **Headline F1 includes `use_case_api`**, which is always present in the gold and tied to API accuracy; confirm the gate definition (§6.2).
+3. **Holdout use for tuning:** DECIDED. The holdout is never used for tuning (§7).
+4. **Headline F1 includes `use_case_api`:** DECIDED. The gate is the full F1, with F1 excluding `use_case_api` reported alongside (§6.2).
 5. **No history column and no state store in GT:** history comes only from 52 inline `[user]/[assistant]` questions (5 frozen), and `known_facts` is untested by the frozen set. Activity 13 must cover it.
 6. **Free-text match rule** (substring, ≥3 chars) is a proposed convention, not a defined threshold. It may be generous; per-slot reporting makes this visible.
 7. **Rate limits:** 1 active request per key and 60/min. A frozen run is ≤160 calls, sequential, so batch runs must queue and must not share the key concurrently with other team runs.

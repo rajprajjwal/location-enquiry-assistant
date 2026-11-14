@@ -1,9 +1,15 @@
 {
   "manifest": "Activity 4 frozen core eval set",
+  "manifest_version": 2,
   "gt_version": "v2.5",
   "date_ist": "2026-11-14",
   "timezone": "Asia/Calcutta (IST, UTC+05:30)",
-  "git_tag": "eval-freeze-v1",
+  "git_tag": "eval-freeze-v2",
+  "supersedes": {
+    "tag": "eval-freeze-v1",
+    "commit": "3b48db9c483e1be04f039800cc6de26b21069689",
+    "reason": "Qualification gold corrected: mapping/map_gt.py now extracts qualification_details from [user] turns only, with stricter timeline, monthly_volume and current_provider rules (approved by Shahid 2026-11-14 23:37 IST). Frozen membership, GT files and counts are unchanged; only the frozen jsonl content and hash changed."
+  },
   "sources": {
     "gt_v2_5.csv": {
       "path": "/workspace/capstone-trackb/data/gt_v2_5.csv",
@@ -18,7 +24,7 @@
   },
   "frozen_file": {
     "path": "mapping/gold_outputs_frozen.jsonl",
-    "sha256": "87c255fe402b68303e95205882d9596efd4e51391d395d3d86aaf129333a0604",
+    "sha256": "151f87f56ae91fbbb9c8977e09c0151efb1c14cd500877354bb3826a1f349123",
     "records": 80
   },
   "frozen_record_ids": [
@@ -217,5 +223,18 @@
     }
   },
   "activity_4_counts_pass": true,
-  "note": "Raw GT files (data/) are excluded from git and bound to this manifest by SHA-256 only. The freeze is the annotated tag eval-freeze-v1 plus the SHA-256 of mapping/gold_outputs_frozen.jsonl; the tag must predate the first agent-code commit."
+  "note": "Raw GT files (data/) are excluded from git and bound to this manifest by SHA-256 only. The freeze is the annotated tag eval-freeze-v2 plus the SHA-256 of mapping/gold_outputs_frozen.jsonl; the tag must predate the first agent-code commit. eval-freeze-v1 is kept unchanged as history.",
+  "history": [
+    {
+      "manifest_version": 1,
+      "git_tag": "eval-freeze-v1",
+      "commit": "3b48db9c483e1be04f039800cc6de26b21069689",
+      "date_ist": "2026-11-14",
+      "manifest_sha256": "81f44d3cbba75d346e46a0ddfdd4efaeb0932dbad5aaf3c2342f1edbf1275802",
+      "frozen_file_sha256": "87c255fe402b68303e95205882d9596efd4e51391d395d3d86aaf129333a0604",
+      "gt_v2_5_csv_sha256": "cb95d55457720dfbe97ca7eb0fb4b3970d3033b839c3ccf9dedec754850f7c5d",
+      "gt_v2_5_xlsx_sha256": "44f7ed7302f06e772e6c77630eed6dc8268e4620b3366ef0e242e9b0e9131fda",
+      "frozen_records": 80
+    }
+  ]
 }

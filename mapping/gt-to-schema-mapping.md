@@ -12,13 +12,21 @@ The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_5
 | `response_draft.draft_text` | `reference_answer` | copied verbatim |
 | `response_draft.citations` | citations sheet (fallback: `cited_doc_spans`) | one object per span |
 | `clarifying_questions` | `gold_clarifying_questions` | one question per bullet line; empty if the cell is blank |
-| `qualification_details` | `question` + `api` | conservative regex extraction; `use_case_api.api` is always the record's `api`; missing required fields are listed |
+| `qualification_details` | `question` (user turns only) + `api` | conservative regex extraction; `use_case_api.api` is always the record's `api`; missing required fields are computed from the extracted values |
 | `proposed_record_update` | `gold_tool_trace` (`update_record` JSON); fallback `reference_answer` | `mode` is `propose`; `executed=false`; `approval_status=pending`; `requires_human_approval=true` |
 | `comparison` | `intent`, `bucket`, `service_providers`, citations | applicable for comparison intents/buckets, or pricing/sales records with two or more providers |
 | `responsible_role` | `escalation`, `primary_team` | parsed `should_escalate`, `severity`, `owner`, `reason` |
 | `next_action` | escalation + tools | `propose_escalation` if escalate; else `propose_record_update` if a gold update exists; else `answer_directly`. Consequential actions stay unexecuted and pending approval |
 | `approx_output_tokens` | `reference_answer` | APPROVED interim `ceil(chars/4)`; to be measured with the endpoint `usage` field in C10/eval |
 | `self_review_date`, `self_review_evidence` | same-named Data columns | copied; blank or null is allowed until the review happens |
+
+## Qualification extraction rules (eval-freeze-v2)
+
+- Source text: `[user]` turns only; `[assistant]` lines are never mined. Untagged questions are treated as user text.
+- `timeline`: set only for a real time expression after by/before/within/until/in (Q1–Q4, next/this week/month/quarter/year, N days/weeks/months, a month name or year, end of month/quarter/year), a launch/go-live/start/migration phrase followed by such an expression, or a standalone "next month"-type phrase. A bare "in <month/year>" is not a timeline. Otherwise null.
+- `monthly_volume`: "N [API word] <unit> a month / per month / monthly / each month / /month", or "N a month / per month"; N accepts commas, decimals, k, M, million, lakh, crore. `requests_per_month` is an integer; `unit` is `<unit>_per_month` (requests, calls, lookups, sessions, elements, searches, queries, transactions) or `per_month` when no unit is stated.
+- `current_provider`: set only with a current-use cue (currently …, we use / we're on …, our <provider> …, migrating/switching from …, existing <provider>, we are a <provider> customer). Questions such as "can/should we use <provider>" are evaluation, not current use. Aliases map to the six canonical names (Google, Google Maps → Google Maps Platform; Nominatim, OpenStreetMap, OSM → OSM Nominatim; MapmyIndia → Mappls (MapmyIndia)).
+- `missing_required_fields` and `complete` are recomputed from these values.
 
 ## Counts
 

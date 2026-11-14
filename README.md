@@ -25,7 +25,7 @@ The repository root is `/workspace/capstone-trackb/repo/`, not `/workspace/capst
 - `vocab/vocab-diff-gt-v2_5.md` and `vocab/vocab-diff-gt-v2_5.json` — current vocabulary diff against GT v2.5
 - `vocab/vocab-diff-gt-v2_4.*` and `vocab/vocab-diff-gt-v2_3.*` — kept as history (the v2.4 and v2.3 diffs)
 - `mapping/` — mapper, mapping notes, and generated gold envelopes (all 532 and the 80 frozen records)
-- `eval/freeze-manifest.json` — Activity 4 freeze manifest (GT v2.5 hashes, frozen IDs, counts vs thresholds); tagged `eval-freeze-v1`
+- `eval/freeze-manifest.json` — Activity 4 freeze manifest (GT v2.5 hashes, frozen IDs, counts vs thresholds); tagged `eval-freeze-v2` (supersedes `eval-freeze-v1`)
 - `validator/validate_spec.py` — schema, vocabulary, approval, required-field and token-budget checks
 - `validator/validator-report.md` — last validator run
 - `gt-change-list-v2_3.md` — the v2.3 change list, marked APPLIED and kept as history

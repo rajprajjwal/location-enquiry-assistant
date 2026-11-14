@@ -29,6 +29,9 @@ DEFAULT_GT = Path("/workspace/capstone-trackb/data/gt_v2_5.xlsx")
 # self-review columns. The mapper copies expected_tools, service_providers,
 # owners and self-review fields as they stand. v2.5 adds 11 eval records and
 # swaps 16 frozen-core members (frozen size stays 80) with the same columns.
+# eval-freeze-v2: qualification extraction reads [user] turns only and uses
+# stricter timeline, monthly_volume and current_provider rules (see
+# user_text, extract_timeline, extract_monthly_volume, extract_current_provider).
 
 TOOL_ORDER = ["doc_search", "calculator", "update_record", "escalate_ticket"]
 
@@ -274,36 +277,200 @@ def parse_escalate_payload(trace: Any) -> dict | None:
         return None
 
 
-def _parse_volume_number(raw: str) -> float | None:
-    s = raw.replace(",", "").strip()
-    m = re.match(r"^([\d.]+)\s*M$", s, re.I)
-    if m:
-        return float(m.group(1)) * 1_000_000
-    try:
-        return float(s)
-    except ValueError:
+_TURN_TAG = re.compile(r"^\s*\[(user|assistant)\]\s*", re.I)
+
+
+def user_text(question: str) -> str:
+    """Return only the user-authored text of a GT question.
+
+    Questions with ``[user]`` / ``[assistant]`` line tags keep only the user
+    turns (continuation lines belong to the preceding turn). Untagged
+    questions are treated as user text in full.
+    """
+    q = question or ""
+    lines = q.splitlines()
+    if not any(_TURN_TAG.match(line) for line in lines):
+        return q
+    keep: list[str] = []
+    role = "user"
+    for line in lines:
+        m = _TURN_TAG.match(line)
+        if m:
+            role = m.group(1).lower()
+            line = line[m.end():]
+        if role == "user":
+            keep.append(line)
+    return "\n".join(keep)
+
+
+_MULTIPLIERS = {
+    "k": 1_000,
+    "thousand": 1_000,
+    "m": 1_000_000,
+    "mn": 1_000_000,
+    "million": 1_000_000,
+    "lakh": 100_000,
+    "lakhs": 100_000,
+    "lac": 100_000,
+    "crore": 10_000_000,
+    "crores": 10_000_000,
+}
+
+
+def _parse_volume_number(raw: str) -> int | None:
+    """Parse '1,500,000', '50M', '2.5 lakh', '1 crore', '200k' into an integer."""
+    s = raw.replace(",", "").strip().lower()
+    m = re.match(r"^(\d+(?:\.\d+)?)\s*([a-z]+)?$", s)
+    if not m:
         return None
+    value = float(m.group(1))
+    suffix = m.group(2)
+    if suffix:
+        if suffix not in _MULTIPLIERS:
+            return None
+        value *= _MULTIPLIERS[suffix]
+    return int(round(value))
 
 
+_VOLUME_NUMBER = (
+    r"(?P<num>(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?"
+    r"(?:\s*(?:k|thousand|M|mn|million|lakhs?|lac|crores?)\b)?)"
+)
+_VOLUME_UNITS = (
+    r"(?P<unit>requests|request|calls|call|lookups|lookup|sessions|session|elements|"
+    r"element|searches|search|queries|query|transactions|transaction)"
+)
+_VOLUME_API_WORDS = (
+    r"(?:(?:API|Directions|Distance Matrix|Autocomplete|Place Autocomplete|"
+    r"Reverse[- ]Geocod\w*|Geocoding|routing|matrix)\s+)?"
+)
+_VOLUME_PER = r"(?:a\s+month|per\s+month|monthly|each\s+month|every\s+month|/\s*month|/\s*mo\b)"
 VOLUME_PATTERNS = [
+    # "2,000,000 Directions requests a month", "200,000 sessions a month"
+    re.compile(_VOLUME_NUMBER + r"\s+" + _VOLUME_API_WORDS + _VOLUME_UNITS + r"\s*" + _VOLUME_PER, re.I),
+    # "20,000 per month", "300,000 a month", "50M/month"
+    re.compile(_VOLUME_NUMBER + r"\s*" + _VOLUME_PER, re.I),
+]
+
+_UNIT_CANON = {
+    "request": "requests", "call": "calls", "lookup": "lookups", "session": "sessions",
+    "element": "elements", "search": "searches", "query": "queries",
+    "transaction": "transactions",
+}
+
+
+def extract_monthly_volume(text: str) -> dict | None:
+    for pat in VOLUME_PATTERNS:
+        vm = pat.search(text)
+        if not vm:
+            continue
+        n = _parse_volume_number(vm.group("num"))
+        if n is None:
+            continue
+        unit_word = (vm.groupdict().get("unit") or "").lower()
+        unit_word = _UNIT_CANON.get(unit_word, unit_word)
+        return {
+            "raw": vm.group(0).strip(),
+            "requests_per_month": n,
+            "unit": f"{unit_word}_per_month" if unit_word else "per_month",
+        }
+    return None
+
+
+_MONTHS = (
+    r"(?:January|February|March|April|May|June|July|August|September|October|"
+    r"November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)"
+)
+_TIME_EXPR = (
+    r"(?:(?:the\s+)?end\s+of\s+(?:the\s+)?(?:month|quarter|year|" + _MONTHS + r"(?:\s+20\d\d)?|Q[1-4](?:\s+20\d\d)?)"
+    r"|Q[1-4](?:\s*(?:FY)?\s*20\d\d)?"
+    r"|(?:next|this)\s+(?:week|month|quarter|year)"
+    r"|\d+\s+(?:days?|weeks?|months?|years?)"
+    r"|" + _MONTHS + r"(?:\s+\d{1,2})?(?:,?\s+20\d\d)?"
+    r"|\d{1,2}\s+" + _MONTHS + r"(?:\s+20\d\d)?"
+    r"|20\d\d)"
+)
+TIMELINE_PATTERNS = [
+    # deadline preposition + time expression: "by Q3", "within 2 months", "before March 2027"
     re.compile(
-        r"((?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?:\s*[Mm](?:illion)?)?)\s+"
-        r"(?:Directions|Distance Matrix|Autocomplete|Reverse Geocode\w*|)\s*"
-        r"requests a month",
+        r"\b(?:by|before|within|until|no\s+later\s+than|in)\s+" + _TIME_EXPR + r"\b",
         re.I,
     ),
+    # launch / go-live / start / deadline phrasing followed by a time expression
     re.compile(
-        r"((?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?:\s*[Mm](?:illion)?)?)\s*"
-        r"(?:calls|requests|queries|transactions)\s*(?:per|/)\s*month",
+        r"\b(?:launch\w*|go(?:ing)?[- ]live|go[- ]live|start\w*|deadline|rollout|roll\s+out|migrat\w*|switch\w*)"
+        r"[^.?!\n]{0,40}?\b(?P<t>(?:(?:by|before|within|in|on|for)\s+)?(?:(?:the\s+)?end\s+of\s+(?:the\s+)?(?:month|quarter|year)|Q[1-4](?:\s*20\d\d)?|(?:next|this)\s+(?:week|month|quarter|year)|\d+\s+(?:days?|weeks?|months?)))\b",
         re.I,
     ),
-    re.compile(r"((?:\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)[Mm])\s*/\s*month", re.I),
-    re.compile(r"((?:\d{1,3}(?:,\d{3})+|\d+))\s*/\s*month", re.I),
+    # standalone relative time
+    re.compile(r"\b(?:next\s+(?:week|month|quarter|year)|ASAP|as\s+soon\s+as\s+possible)\b", re.I),
+]
+# "in <Month> <year>" is only a timeline when attached to the user's own plan,
+# not to a vendor change ("pricing is changing in September 2026").
+_TIMELINE_EXCLUDE = re.compile(r"\b(?:pricing|price|prices|policy|terms)\b[^.?!\n]{0,40}$", re.I)
+
+
+def extract_timeline(text: str) -> str | None:
+    for pat in TIMELINE_PATTERNS:
+        for m in pat.finditer(text):
+            prefix = text[max(0, m.start() - 60):m.start()]
+            if m.group(0).lower().startswith("in ") and _TIMELINE_EXCLUDE.search(prefix):
+                continue
+            # a bare "in <year>" or "in <month>" is too weak; require by/before/within/until or a plan word
+            if re.match(r"(?i)in\s+(?:" + _MONTHS + r"|20\d\d)", m.group(0)):
+                continue
+            value = m.groupdict().get("t") or m.group(0)
+            return value.strip()
+    return None
+
+
+_PROVIDER_NAME = (
+    r"(?P<prov>Google\s+Maps\s+Platform|Google\s+Maps|Google|Ola\s+Maps|Ola|Mapbox|"
+    r"Mappls\s*\(MapmyIndia\)|Mappls|MapmyIndia|OSRM|OSM\s+Nominatim|Nominatim|"
+    r"OpenStreetMap|OSM)"
+)
+_PROVIDER_ALIAS_EXTRA = {"openstreetmap": "OSM Nominatim"}
+# Current-use cues. A provider that is only being evaluated or quoted is not current.
+CURRENT_PROVIDER_CUES = [
+    ("currently", re.compile(r"\bcurrently\s+(?:use|using|on|run(?:ning)?\s+on|pay(?:ing)?\s+for)?\s*(?:the\s+)?" + _PROVIDER_NAME + r"(?:'s)?\b", re.I)),
+    ("we use", re.compile(r"\bwe(?:'re|\s+are)?\s+(?:use|using|run\s+on|running\s+on|rely\s+on|pay\s+for|on)\s+(?:the\s+)?" + _PROVIDER_NAME + r"(?:'s)?\b", re.I)),
+    ("migrating/switching from", re.compile(r"\b(?:migrat\w*|switch\w*|mov\w*)\s+(?:away\s+)?(?:off|from)\s+(?:the\s+)?" + _PROVIDER_NAME + r"\b", re.I)),
+    ("existing", re.compile(r"\bexisting\s+" + _PROVIDER_NAME + r"\b", re.I)),
+    ("our <provider> ...", re.compile(r"\bour\s+" + _PROVIDER_NAME + r"(?:'s)?\b", re.I)),
+    ("<provider> customer", re.compile(r"\bwe(?:'re|\s+are)\s+an?\s+(?:[\w-]+\s+){0,3}" + _PROVIDER_NAME + r"\s+customer\b", re.I)),
 ]
 
 
+def _canon_provider(name: str) -> str | None:
+    key = re.sub(r"\s+", " ", name.strip().lower())
+    return PROVIDER_ALIASES.get(key) or _PROVIDER_ALIAS_EXTRA.get(key)
+
+
+# "Can we use X?", "should we use X", "whether we use X" ask about a provider
+# under evaluation; they are not current use.
+_EVALUATION_PREFIX = re.compile(
+    r"\b(?:can|could|should|would|shall|may|might|do|does|did|if|whether|to|why\s+not)\s+$", re.I
+)
+
+
+def extract_current_provider(text: str) -> tuple[str | None, str | None]:
+    """Return (canonical provider, cue name) for the earliest current-use cue, else (None, None)."""
+    best: tuple[int, str, str] | None = None
+    for cue, pat in CURRENT_PROVIDER_CUES:
+        for m in pat.finditer(text):
+            if _EVALUATION_PREFIX.search(text[max(0, m.start() - 20):m.start()]):
+                continue
+            prov = _canon_provider(m.group("prov"))
+            if prov and (best is None or m.start() < best[0]):
+                best = (m.start(), prov, cue)
+    if best is None:
+        return None, None
+    return best[1], best[2]
+
+
 def extract_qualification(question: str, api: str, vocab: dict) -> dict:
-    q = question or ""
+    # User turns only: assistant lines in history-format questions are never mined.
+    q = user_text(question or "")
     use_case = None
     m = re.search(r"\bWe are an?\s+([^.?\n]{3,80})", q)
     if m:
@@ -326,50 +493,11 @@ def extract_qualification(question: str, api: str, vocab: dict) -> dict:
     elif re.search(r"\bIndia(?:n)?\s+price list\b", q, re.I):
         region = "India"
 
-    monthly_volume = None
-    for pat in VOLUME_PATTERNS:
-        vm = pat.search(q)
-        if vm:
-            raw = vm.group(0).strip()
-            num_raw = vm.group(1).replace(" ", "")
-            monthly_volume = {
-                "raw": raw,
-                "requests_per_month": _parse_volume_number(num_raw),
-                "unit": "requests_per_month",
-            }
-            break
+    monthly_volume = extract_monthly_volume(q)
 
-    current_provider = None
-    pm = re.search(
-        r"\b(?:our|we use(?: the)?|we(?:'re| are) (?:on|using))\s+"
-        r"(Google(?:\s+Maps(?:\s+Platform)?)?|Ola(?:\s+Maps)?|Mapbox|"
-        r"Mappls(?:\s+\(MapmyIndia\))?|MapmyIndia|OSRM|Nominatim|OSM Nominatim)"
-        r"(?:\s+API|\s+Directions|\s+account|\s+project|\s+key|\s+response)?",
-        q,
-        re.I,
-    )
-    if pm:
-        key = re.sub(r"\s+", " ", pm.group(1).strip().lower())
-        current_provider = PROVIDER_ALIASES.get(key)
+    current_provider, _cue = extract_current_provider(q)
 
-    timeline = None
-    tm = re.search(
-        r"\b(?:by|before|go[- ]live(?: by)?|needed by|deadline(?: of)?)\s+"
-        r"([A-Za-z0-9][^.,?\n]{1,40})",
-        q,
-        re.I,
-    )
-    if tm:
-        timeline = tm.group(0).strip()
-    else:
-        tm = re.search(
-            r"\b(this (?:quarter|month|week)|next (?:quarter|month)|ASAP|"
-            r"immediately|Q[1-4]\s*\d{4})\b",
-            q,
-            re.I,
-        )
-        if tm:
-            timeline = tm.group(1).strip()
+    timeline = extract_timeline(q)
 
     budget = None
     bm = re.search(

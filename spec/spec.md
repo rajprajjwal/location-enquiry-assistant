@@ -254,7 +254,16 @@ Track-B requires an evaluation set of 60–100 realistic queries with gold answe
 
 - All 80 frozen records are `split=eval` and `verification_status=verified_live`. Frozen count per scored intent: **10 each**; every intent × API cell has at least 2 records.
 - The `docs` bucket now has 5 `verified_live` records and `interpretation` has 5 (both were the blockers in v2.4).
-- The frozen IDs, counts, thresholds and file hashes are recorded in `eval/freeze-manifest.json`. The freeze itself is the annotated git tag `eval-freeze-v1`; the Activity 4 timing condition (tag commit earlier than the first agent-code commit) holds while the repository contains no agent code.
+- The frozen IDs, counts, thresholds and file hashes are recorded in `eval/freeze-manifest.json`. The freeze itself is the annotated git tag `eval-freeze-v2` (2026-11-14), which supersedes `eval-freeze-v1` after the qualification gold correction below; the Activity 4 timing condition (tag commit earlier than the first agent-code commit) holds while the repository contains no agent code.
+
+**Qualification gold correction (eval-freeze-v2, approved by Shahid 2026-11-14 23:37 IST).** Frozen membership and the counts above are unchanged; only the mapper-derived `qualification_details` changed. `mapping/map_gt.py` now extracts qualification from `[user]` turns only (untagged questions count as user text) and applies these rules, also documented in `mapping/gt-to-schema-mapping.md`:
+
+- `timeline` is set only for a real time expression (by/before/within/until + Q1–Q4, next/this month/quarter/year, N days/weeks/months, a month name or year; a launch/go-live/start/migration phrase followed by such an expression). Otherwise it is null.
+- `monthly_volume` is set for "N [unit] a month / per month / monthly / /month", with lakh, crore, k and M; `requests_per_month` is an integer.
+- `current_provider` is set only with a current-use cue (currently, we use / we're on, our <provider> …, migrating/switching from, existing <provider>). A provider that is only evaluated or quoted is not current.
+- `missing_required_fields` and `complete` are recomputed from these values.
+
+Frozen effect: 8 spurious timelines removed, 13 volumes filled, and `current_provider` changed on 4 records. The rule-boundary provider cases flagged "needs Shahid" are listed in `review-log.md` (2026-11-14 entry). The GT files were not edited.
 
 **Superseded:** the GT v2.4 “Frozen-80 bucket imbalance” (**ACCEPTED known limitation**: `docs` 0 and `interpretation` 1 `verified_live` records) is **superseded by GT v2.5** and no longer applies.
 
