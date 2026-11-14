@@ -63,9 +63,23 @@ def test_interpretation_output_enums_match_vocab() -> None:
     raw = _load("vocab/controlled-vocabulary.json")
     schema = _load("contracts/interpretation/interpretation_output.schema.json")
     props = schema["properties"]
-    assert props["intent"]["enum"] == raw["intents"]
-    assert props["api"]["enum"] == raw["apis"]
-    assert props["team"]["enum"] == raw["teams"]
+    assert schema["x-spec-version"] == "0.2.0"
+    assert props["intent"]["enum"][:-1] == raw["intents"]
+    assert props["intent"]["enum"][-1] is None
+    assert props["api"]["enum"][:-1] == raw["apis"]
+    assert props["api"]["enum"][-1] is None
+    assert props["team"]["enum"][:-1] == raw["teams"]
+    assert props["team"]["enum"][-1] is None
+    assert "unknown" not in props["intent"]["enum"]
+    assert "unknown" not in props["api"]["enum"]
+    assert "unknown" not in props["team"]["enum"]
+    closed = schema["allOf"][0]["then"]["properties"]
+    assert closed["intent"]["enum"] == raw["intents"]
+    assert closed["api"]["enum"] == raw["apis"]
+    assert closed["team"]["enum"] == raw["teams"]
+    reasons = props["abstain_reason"]["enum"]
+    assert reasons[-1] is None
+    assert "no_rule_match" in reasons[:-1]
     assert props["sub_intent"]["enum"][:-1] == raw["sub_intents"]
     assert props["sub_intent"]["enum"][-1] is None
     assert props["missing_required_fields"]["items"]["enum"] == raw[

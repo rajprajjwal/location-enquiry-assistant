@@ -102,6 +102,18 @@ def test_input_models_reject_empty_text_and_isolate_defaults() -> None:
     assert first.model_dump()["query"] == "Price directions in India"
 
 
+def test_interpretation_output_accepts_null_classification_when_abstaining() -> None:
+    from tests.validation.test_interpretation_rules import _abstain_output
+
+    model = InterpretationOutput.model_validate(_abstain_output())
+    assert model.abstain is True
+    assert model.intent is None
+    assert model.api is None
+    assert model.team is None
+    assert model.abstain_reason == "no_rule_match"
+    assert model.qualification_details.use_case_api is None
+
+
 def test_interpretation_output_round_trip() -> None:
     model = InterpretationOutput.model_validate(valid_output())
     dumped = model.model_dump(mode="json")

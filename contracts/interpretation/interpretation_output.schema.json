@@ -1,9 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://capstone.local/lbs-copilot/contracts/interpretation_output/v0.1.0",
+  "$id": "https://capstone.local/lbs-copilot/contracts/interpretation_output/v0.2.0",
   "title": "InterpretationOutput",
-  "$comment": "Purpose: interpretation_output v0.1.0, the structured result of the interpretation step. Use case: validated model output before scoring. Example: intent pricing_comparison, api directions, team Sales, qualification_details.region India. qualification_details is the v1.0.0 schema by $id. Not placed under schemas/ so validator/validate_spec.py does not count it.",
-  "x-spec-version": "0.1.0",
+  "$comment": "Purpose: interpretation_output v0.2.0. Use case: validated model output before scoring. Example: abstain false keeps intent, api and team in the vocabulary; abstain true may leave them null with abstain_reason no_rule_match and use_case_api null. qualification_details is the v1.0.0 schema by $id. Not placed under schemas/ so validator/validate_spec.py does not count it.",
+  "x-spec-version": "0.2.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -21,7 +21,7 @@
   ],
   "properties": {
     "intent": {
-      "type": "string",
+      "type": ["string", "null"],
       "enum": [
         "pricing_quote",
         "pricing_comparison",
@@ -30,7 +30,8 @@
         "coverage_limits",
         "docs_how_to",
         "troubleshooting",
-        "human_handoff"
+        "human_handoff",
+        null
       ]
     },
     "sub_intent": {
@@ -71,17 +72,18 @@
       ]
     },
     "api": {
-      "type": "string",
+      "type": ["string", "null"],
       "enum": [
         "directions",
         "distance_matrix",
         "autocomplete",
-        "reverse_geocode"
+        "reverse_geocode",
+        null
       ]
     },
     "team": {
-      "type": "string",
-      "enum": ["Sales", "Support"]
+      "type": ["string", "null"],
+      "enum": ["Sales", "Support", null]
     },
     "qualification_details": {
       "$ref": "https://capstone.local/lbs-copilot/schemas/qualification_details/v1.0.0"
@@ -135,7 +137,13 @@
     },
     "abstain_reason": {
       "type": ["string", "null"],
-      "enum": ["model_unavailable", "invalid_after_repair", "budget_exceeded", null]
+      "enum": [
+        "model_unavailable",
+        "invalid_after_repair",
+        "budget_exceeded",
+        "no_rule_match",
+        null
+      ]
     },
     "trace": {
       "title": "Trace",
@@ -181,5 +189,73 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "abstain": {
+            "const": false
+          }
+        },
+        "required": ["abstain"]
+      },
+      "then": {
+        "properties": {
+          "intent": {
+            "type": "string",
+            "enum": [
+              "pricing_quote",
+              "pricing_comparison",
+              "sales_qualification",
+              "capability_match",
+              "coverage_limits",
+              "docs_how_to",
+              "troubleshooting",
+              "human_handoff"
+            ]
+          },
+          "api": {
+            "type": "string",
+            "enum": [
+              "directions",
+              "distance_matrix",
+              "autocomplete",
+              "reverse_geocode"
+            ]
+          },
+          "team": {
+            "type": "string",
+            "enum": ["Sales", "Support"]
+          }
+        },
+        "required": ["intent", "api", "team"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "abstain": {
+            "const": true
+          }
+        },
+        "required": ["abstain"]
+      },
+      "then": {
+        "properties": {
+          "abstain_reason": {
+            "type": "string",
+            "minLength": 1,
+            "enum": [
+              "model_unavailable",
+              "invalid_after_repair",
+              "budget_exceeded",
+              "no_rule_match"
+            ]
+          }
+        },
+        "required": ["abstain_reason"]
+      }
+    }
+  ]
 }

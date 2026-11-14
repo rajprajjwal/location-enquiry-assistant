@@ -1,6 +1,6 @@
 """Pydantic models for the interpretation step.
 
-Purpose: re-export the generated v0.1.0 models.
+Purpose: re-export the generated interpretation models (output contract v0.2.0).
 Use case: ``from copilot.models import InterpretationInput, InterpretationOutput``.
 Example: ``QualificationDetails`` is generated from
 ``schemas/qualification_details.schema.json``.

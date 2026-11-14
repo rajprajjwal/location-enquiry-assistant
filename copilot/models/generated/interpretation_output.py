@@ -24,16 +24,19 @@ class InterpretationOutput(BaseModel):
     model_config = ConfigDict(
         extra='forbid',
     )
-    intent: Literal[
-        'pricing_quote',
-        'pricing_comparison',
-        'sales_qualification',
-        'capability_match',
-        'coverage_limits',
-        'docs_how_to',
-        'troubleshooting',
-        'human_handoff',
-    ]
+    intent: (
+        Literal[
+            'pricing_quote',
+            'pricing_comparison',
+            'sales_qualification',
+            'capability_match',
+            'coverage_limits',
+            'docs_how_to',
+            'troubleshooting',
+            'human_handoff',
+        ]
+        | None
+    )
     sub_intent: (
         Literal[
             'pricing_quote',
@@ -70,8 +73,11 @@ class InterpretationOutput(BaseModel):
         ]
         | None
     )
-    api: Literal['directions', 'distance_matrix', 'autocomplete', 'reverse_geocode']
-    team: Literal['Sales', 'Support']
+    api: (
+        Literal['directions', 'distance_matrix', 'autocomplete', 'reverse_geocode']
+        | None
+    )
+    team: Literal['Sales', 'Support'] | None
     qualification_details: qualification_details_1.QualificationDetails
     missing_required_fields: list[
         Literal[
@@ -82,7 +88,13 @@ class InterpretationOutput(BaseModel):
     confidence: Confidence = Field(..., title='Confidence')
     abstain: bool
     abstain_reason: (
-        Literal['model_unavailable', 'invalid_after_repair', 'budget_exceeded'] | None
+        Literal[
+            'model_unavailable',
+            'invalid_after_repair',
+            'budget_exceeded',
+            'no_rule_match',
+        ]
+        | None
     )
     trace: Trace = Field(..., title='Trace')
 

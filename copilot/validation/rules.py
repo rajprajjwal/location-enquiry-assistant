@@ -91,7 +91,6 @@ _SCHEMA_CODES = {
 UNKNOWN_UNENFORCED: tuple[str, ...] = (
     "coordinate semantics: latitude/longitude range, precision, and whether a point lies in a region are not defined on qualification_details or the interpretation contract",
     "scoring null-likes (empty string, whitespace, 'n/a', 'unknown', 'none') are defined for the scorer norm(), not for missing-field computation; only JSON null counts as missing",
-    "abstain versus abstain_reason pairing is not stated as a validation failure",
     "field_provenance keys are not restricted to qualification field names",
     "trace count fields have no stated minimum; negative integers are accepted",
     "trace.model and trace.prompt_version are examples, not consts; any string is accepted",
@@ -236,11 +235,11 @@ def validate_qualification(qual: dict) -> list[str]:
 def validate_interpretation_output(obj: dict) -> list[str]:
     """Schema-check an interpretation output plus the shared qual checks.
 
-    After the qualification consistency checks, two output checks run, in
-    this order: ``use_case_api.api`` equals top-level ``api``
-    (``API_MISMATCH``), then top-level ``missing_required_fields`` equals
-    ``qualification_details.missing_required_fields``
-    (``MISSING_FIELDS_MISMATCH``).
+    After the qualification consistency checks, output checks run in this
+    order: ``API_MISMATCH`` (null ``api`` with null ``use_case_api`` agrees),
+    ``MISSING_FIELDS_MISMATCH``, ``ABSTAIN_REQUIRED_FIELDS`` (abstain false
+    requires intent, api and team in the vocabulary), then
+    ``ABSTAIN_REASON_REQUIRED`` (abstain true requires a non-empty reason).
     """
     errors = _schema_errors(obj, _output_validator())
     if not isinstance(obj, dict):
@@ -251,6 +250,8 @@ def validate_interpretation_output(obj: dict) -> list[str]:
             errors.append(f"{_prefix('/qualification_details', pointer)}: {code}: {detail}")
     errors.extend(_format(_api_mismatch(obj)))
     errors.extend(_format(_missing_list_mismatch(obj)))
+    errors.extend(_format(_abstain_required_fields(obj)))
+    errors.extend(_format(_abstain_reason_required(obj)))
     return errors
 
 
@@ -292,6 +293,10 @@ def _api_mismatch(obj: dict) -> list[tuple[str, str, str]]:
             )
         ]
     use_case_api = qual.get("use_case_api", _ABSENT)
+    # v0.2.0: a null api is consistent with a null use_case_api. That null
+    # counts as missing via compute_missing_required_fields; it is not a mismatch.
+    if use_case_api is None and top is None:
+        return []
     if not isinstance(use_case_api, dict):
         return [
             (
@@ -331,12 +336,58 @@ def _missing_list_mismatch(obj: dict) -> list[tuple[str, str, str]]:
     ]
 
 
+_ABSTAIN_VALUE_FIELDS = ("intent", "api", "team")
+
+
+def _abstain_required_fields(obj: dict) -> list[tuple[str, str, str]]:
+    """abstain false requires intent, api and team to be vocabulary values."""
+    if obj.get("abstain") is not False:
+        return []
+    vocab = load_vocab()
+    tables = {"intent": vocab.intents, "api": vocab.apis, "team": vocab.teams}
+    rows: list[tuple[str, str, str]] = []
+    for field in _ABSTAIN_VALUE_FIELDS:
+        value = obj.get(field, _ABSENT)
+        if isinstance(value, str) and value in tables[field]:
+            continue
+        rows.append(
+            (
+                f"/{field}",
+                "ABSTAIN_REQUIRED_FIELDS",
+                f"abstain=false requires {field} in the controlled vocabulary; "
+                f"{field}={_fmt(value)}",
+            )
+        )
+    return rows
+
+
+def _abstain_reason_required(obj: dict) -> list[tuple[str, str, str]]:
+    """abstain true requires a reason string that is not empty or whitespace."""
+    if obj.get("abstain") is not True:
+        return []
+    reason = obj.get("abstain_reason", _ABSENT)
+    if isinstance(reason, str) and reason.strip():
+        return []
+    return [
+        (
+            "/abstain_reason",
+            "ABSTAIN_REASON_REQUIRED",
+            "abstain=true requires a non-empty abstain_reason; "
+            f"abstain_reason={_fmt(reason)}",
+        )
+    ]
+
+
 def _schema_errors(instance: object, validator: Draft202012Validator) -> list[str]:
     rows: list[tuple[str, str, str]] = []
     for error in validator.iter_errors(instance):
         rows.append((_pointer(error), _schema_code(error.validator), error.message))
     rows.sort()
-    return _format(rows)
+    unique: list[tuple[str, str, str]] = []
+    for row in rows:
+        if not unique or unique[-1] != row:
+            unique.append(row)
+    return _format(unique)
 
 
 def _schema_code(keyword: object) -> str:
