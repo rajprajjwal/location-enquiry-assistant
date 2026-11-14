@@ -1,6 +1,10 @@
-# Purpose: Python packages needed by mapping/map_gt.py and validator/validate_spec.py.
-# Use case: pip install -r requirements.txt into .venv before running the validator.
-# Example: jsonschema validates envelopes; pandas + openpyxl read gt_v2_5.xlsx.
-jsonschema>=4.0
+# Purpose: Python packages needed by mapping/map_gt.py, validator/validate_spec.py,
+# the interpretation step, and its tests.
+# Use case: pip install -r requirements.txt into .venv before running the validator or pytest.
+# Example: jsonschema validates envelopes; the pinned openai SDK is the VM07 client.
+# Pinned: interpretation repair text uses jsonschema 4.26 messages (INTERFACE.md).
+jsonschema==4.26.0
 openpyxl>=3.0
 pandas>=2.0
+openai==1.58.1
+pytest==8.3.5
