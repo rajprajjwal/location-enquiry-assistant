@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://capstone.local/lbs-copilot/contracts/interpretation_output/v0.1.0",
+  "title": "InterpretationOutput",
+  "$comment": "Purpose: interpretation_output v0.1.0, the structured result of the interpretation step. Use case: validated model output before scoring. Example: intent pricing_comparison, api directions, team Sales, qualification_details.region India. qualification_details is the v1.0.0 schema by $id. Not placed under schemas/ so validator/validate_spec.py does not count it.",
+  "x-spec-version": "0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "intent",
+    "sub_intent",
+    "api",
+    "team",
+    "qualification_details",
+    "missing_required_fields",
+    "field_provenance",
+    "confidence",
+    "abstain",
+    "abstain_reason",
+    "trace"
+  ],
+  "properties": {
+    "intent": {
+      "type": "string",
+      "enum": [
+        "pricing_quote",
+        "pricing_comparison",
+        "sales_qualification",
+        "capability_match",
+        "coverage_limits",
+        "docs_how_to",
+        "troubleshooting",
+        "human_handoff"
+      ]
+    },
+    "sub_intent": {
+      "type": ["string", "null"],
+      "enum": [
+        "pricing_quote",
+        "pricing_estimate",
+        "free_tier_question",
+        "billing_question",
+        "pricing_comparison",
+        "competitive_comparison",
+        "discovery_qualification",
+        "capability_fit",
+        "licensing_fit",
+        "solution_design",
+        "capability_question",
+        "capability_matching",
+        "coverage_question",
+        "limits_question",
+        "performance_question",
+        "parameter_question",
+        "response_fields",
+        "integration_question",
+        "migration_question",
+        "policy_question",
+        "error_resolution",
+        "parameter_troubleshooting",
+        "accuracy_question",
+        "coverage_error",
+        "production_incident",
+        "security_incident",
+        "data_quality",
+        "accuracy_regression",
+        "billing_incident",
+        "contract_request",
+        "billing_dispute",
+        null
+      ]
+    },
+    "api": {
+      "type": "string",
+      "enum": [
+        "directions",
+        "distance_matrix",
+        "autocomplete",
+        "reverse_geocode"
+      ]
+    },
+    "team": {
+      "type": "string",
+      "enum": ["Sales", "Support"]
+    },
+    "qualification_details": {
+      "$ref": "https://capstone.local/lbs-copilot/schemas/qualification_details/v1.0.0"
+    },
+    "missing_required_fields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "use_case_api",
+          "region",
+          "monthly_volume",
+          "current_provider",
+          "timeline"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "enum": ["rule", "model", "history", "state"]
+      }
+    },
+    "confidence": {
+      "title": "Confidence",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intent", "api", "team"],
+      "properties": {
+        "intent": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "api": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "team": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "abstain": {
+      "type": "boolean"
+    },
+    "abstain_reason": {
+      "type": ["string", "null"],
+      "enum": ["model_unavailable", "invalid_after_repair", "budget_exceeded", null]
+    },
+    "trace": {
+      "title": "Trace",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model",
+        "prompt_version",
+        "approx_input_tokens",
+        "approx_output_tokens",
+        "latency_ms",
+        "repair_attempts",
+        "model_calls",
+        "rule_model_disagreements"
+      ],
+      "properties": {
+        "model": {
+          "type": "string"
+        },
+        "prompt_version": {
+          "type": "string"
+        },
+        "approx_input_tokens": {
+          "type": "integer"
+        },
+        "approx_output_tokens": {
+          "type": "integer"
+        },
+        "latency_ms": {
+          "type": "integer"
+        },
+        "repair_attempts": {
+          "type": "integer"
+        },
+        "model_calls": {
+          "type": "integer"
+        },
+        "rule_model_disagreements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
