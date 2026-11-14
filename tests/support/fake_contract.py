@@ -6,8 +6,10 @@ Example: ``normalize_enum("api", "Directions")`` is ``"directions"``.
 
 This is not production code and it is not a copy of ``copilot/validation/rules.py``.
 It reads ``vocab/controlled-vocabulary.json`` and
-``schemas/qualification_details.schema.json``, and it checks the v0.1.0
-wrapper shape described in INTERFACE.md. Do not import it from ``copilot/``.
+``schemas/qualification_details.schema.json``, and it checks the v0.2.0
+wrapper shape: ``intent``, ``api`` and ``team`` may be JSON null, and a null
+``api`` with a null ``use_case_api`` is consistent. Do not import it from
+``copilot/``.
 """
 
 from __future__ import annotations
@@ -217,7 +219,7 @@ def _output_schema() -> dict:
     sub_enum: list[Any] = list(vocab.sub_intents) + [None]
     return {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://capstone.local/lbs-copilot/contracts/interpretation_output/v0.1.0",
+        "$id": "https://capstone.local/lbs-copilot/contracts/interpretation_output/v0.2.0",
         "type": "object",
         "additionalProperties": False,
         "required": [
@@ -234,10 +236,10 @@ def _output_schema() -> dict:
             "trace",
         ],
         "properties": {
-            "intent": {"type": "string", "enum": list(vocab.intents)},
+            "intent": {"type": ["string", "null"], "enum": list(vocab.intents) + [None]},
             "sub_intent": {"type": ["string", "null"], "enum": sub_enum},
-            "api": {"type": "string", "enum": list(vocab.apis)},
-            "team": {"type": "string", "enum": list(vocab.teams)},
+            "api": {"type": ["string", "null"], "enum": list(vocab.apis) + [None]},
+            "team": {"type": ["string", "null"], "enum": list(vocab.teams) + [None]},
             "qualification_details": {"$ref": qual_id},
             "missing_required_fields": {
                 "type": "array",
@@ -264,7 +266,13 @@ def _output_schema() -> dict:
             "abstain": {"type": "boolean"},
             "abstain_reason": {
                 "type": ["string", "null"],
-                "enum": ["model_unavailable", "invalid_after_repair", "budget_exceeded", None],
+                "enum": [
+                    "model_unavailable",
+                    "invalid_after_repair",
+                    "budget_exceeded",
+                    "no_rule_match",
+                    None,
+                ],
             },
             "trace": {
                 "type": "object",
@@ -318,6 +326,9 @@ def _api_mismatch(obj: dict) -> list[tuple[str, str, str]]:
     if not isinstance(qual, dict):
         return [(pointer, "API_MISMATCH", f"qualification_details={_fmt(qual)} api={_fmt(top)}")]
     use_case_api = qual.get("use_case_api", _ABSENT)
+    # v0.2.0: a null api and a null use_case_api are the same fact.
+    if use_case_api is None and top is None:
+        return []
     if not isinstance(use_case_api, dict):
         return [(pointer, "API_MISMATCH", f"use_case_api={_fmt(use_case_api)} api={_fmt(top)}")]
     got = use_case_api.get("api", _ABSENT)

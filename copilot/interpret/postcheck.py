@@ -12,10 +12,10 @@ the JSON object only.
 are set to null and logged. The shared validator treats that mismatch as
 schema-valid, so this module does the check itself.
 
-``intent``, ``api`` and ``team`` cannot be JSON null on
-``InterpretationOutput``. When the rules-only path still has no vocabulary
-value, the first vocabulary entry is written and ``abstain`` stays true.
-That stand-in is not a rule hit and is not a tuned keyword.
+On the rules-only path (interpretation_output v0.2.0), each of ``intent``,
+``api`` and ``team`` that the rules do not support is JSON null. ``abstain``
+is true and ``abstain_reason`` is the caller’s reason. ``use_case_api`` is
+null when ``api`` is null. This module does not substitute a vocabulary entry.
 """
 
 from __future__ import annotations
@@ -373,7 +373,6 @@ def _resolve(
     history: list,
     known_facts: list,
     model: dict | None,
-    impute: bool,
     abstain: bool,
     abstain_reason: str | None,
     trace: dict | None,
@@ -420,6 +419,8 @@ def _resolve(
         api = rule_api
         current_hit = any(hit["api"] == rule_api for hit in turns[-1]["api_hits"])
         api_provenance = "rule" if current_hit else "history"
+    elif model is None:
+        api = None
     elif model_api:
         api = model_api
         api_provenance = "model"
@@ -431,9 +432,6 @@ def _resolve(
         if known_api and isinstance(known_api[0], dict) and known_api[0].get("api"):
             api = known_api[0]["api"]
             api_provenance = known_api[1]
-        elif impute:
-            api = vocab.apis[0]
-            api_provenance = None
         else:
             api = None
 
@@ -446,17 +444,14 @@ def _resolve(
     )
     if rule_intent and model_intent and rule_intent != model_intent:
         disagreements.append("intent")
-    if model is not None:
-        if model_intent:
-            intent = model_intent
-        elif isinstance(model_intent_raw, str) and model_intent_raw != "":
-            intent = model_intent_raw
-        elif impute:
-            intent = rule_intent or vocab.intents[0]
-        else:
-            intent = None
+    if model is None:
+        intent = rule_intent
+    elif model_intent:
+        intent = model_intent
+    elif isinstance(model_intent_raw, str) and model_intent_raw != "":
+        intent = model_intent_raw
     else:
-        intent = rule_intent or (vocab.intents[0] if impute else None)
+        intent = None
 
     rule_team = _latest(turns, "team")
     model_team_raw = model.get("team") if isinstance(model, dict) else None
@@ -465,17 +460,14 @@ def _resolve(
     )
     if rule_team and model_team and rule_team != model_team:
         disagreements.append("team")
-    if model is not None:
-        if model_team:
-            team = model_team
-        elif isinstance(model_team_raw, str) and model_team_raw != "":
-            team = model_team_raw
-        elif impute:
-            team = rule_team or vocab.teams[0]
-        else:
-            team = None
+    if model is None:
+        team = rule_team
+    elif model_team:
+        team = model_team
+    elif isinstance(model_team_raw, str) and model_team_raw != "":
+        team = model_team_raw
     else:
-        team = rule_team or (vocab.teams[0] if impute else None)
+        team = None
 
     use_case = resolved.get("use_case") if isinstance(resolved.get("use_case"), str) else None
     if not use_case:
@@ -520,7 +512,7 @@ def _resolve(
         "qualification_details": qual,
         "missing_required_fields": list(qual["missing_required_fields"]),
         "field_provenance": provenance,
-        "confidence": _confidence(model) if model is not None and not impute else {
+        "confidence": _confidence(model) if model is not None else {
             "intent": None,
             "api": None,
             "team": None,
@@ -562,7 +554,6 @@ def postcheck(
         history=history or [],
         known_facts=known_facts or [],
         model=parsed,
-        impute=False,
         abstain=False,
         abstain_reason=None,
         trace=trace,
@@ -579,13 +570,12 @@ def rules_only(
     abstain_reason: str,
     trace: dict | None = None,
 ) -> dict:
-    """Rules, history and known facts only, with vocabulary stand-ins so the object validates."""
+    """Rules, history and known facts only. Unsupported intent, api and team stay null."""
     resolved = _resolve(
         query=query,
         history=history or [],
         known_facts=known_facts or [],
         model=None,
-        impute=True,
         abstain=True,
         abstain_reason=abstain_reason,
         trace=trace,

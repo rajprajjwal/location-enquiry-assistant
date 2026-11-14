@@ -22,8 +22,38 @@ def test_timeout_abstains_with_a_schema_valid_output() -> None:
     assert body["abstain"] is True
     assert body["abstain_reason"] == "model_unavailable"
     assert body["api"] == "directions"
+    assert body["intent"] is None
+    assert body["team"] is None
+    assert body["qualification_details"]["use_case_api"]["api"] == "directions"
     assert body["trace"]["model_calls"] == 1
     assert body["trace"]["repair_attempts"] == 0
+
+
+def test_fallback_with_no_rule_match_nulls_intent_api_and_team() -> None:
+    client = ScriptedClient([LLMError("timeout")])
+    body = _body(interpret({"query": "hello there"}, client=client))
+    assert body["abstain"] is True
+    assert body["abstain_reason"] == "model_unavailable"
+    assert body["intent"] is None
+    assert body["api"] is None
+    assert body["team"] is None
+    assert body["qualification_details"]["use_case_api"] is None
+    assert "use_case_api" in body["missing_required_fields"]
+
+
+def test_fallback_with_one_api_keyword_keeps_only_that_api() -> None:
+    client = ScriptedClient([LLMError("timeout")])
+    body = _body(interpret({"query": "Need the distance matrix price"}, client=client))
+    assert body["abstain"] is True
+    assert body["abstain_reason"] == "model_unavailable"
+    assert body["api"] == "distance_matrix"
+    assert body["intent"] is None
+    assert body["team"] is None
+    assert body["qualification_details"]["use_case_api"] == {
+        "api": "distance_matrix",
+        "use_case": None,
+    }
+    assert "use_case_api" not in body["missing_required_fields"]
 
 
 def test_503_does_not_loop_inside_interpret() -> None:
@@ -44,6 +74,9 @@ def test_invalid_json_twice_stops_after_two_calls() -> None:
     assert client.calls[0]["max_tokens"] == 512
     assert body["abstain"] is True
     assert body["abstain_reason"] == "invalid_after_repair"
+    assert body["intent"] is None
+    assert body["api"] is None
+    assert body["team"] is None
     assert body["trace"]["model_calls"] == 2
     assert body["trace"]["repair_attempts"] == 1
 

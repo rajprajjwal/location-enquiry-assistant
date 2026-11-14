@@ -1,5 +1,5 @@
 prompt_version: interp-v1
-contract: interpretation_output v0.1.0
+contract: interpretation_output v0.2.0
 thinking: UNVERIFIED against the endpoint (design section 4). Default disable method is chat_template_kwargs enable_thinking=false. Alternative method is the /no_think switch. The post-check strips think blocks either way.
 few_shot: none. The section 7 pool cannot be built from tracked files. mapping/gold_outputs_all.jsonl has split and frozen_core but not question text or template_family, and the raw GT workbook is not in this repo.
 

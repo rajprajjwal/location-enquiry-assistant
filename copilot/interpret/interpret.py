@@ -139,7 +139,7 @@ def _publish(payload: dict):
     errors = seam.validate_interpretation_output(obj.model_dump(mode="json"))
     if errors:
         raise RuntimeError(
-            "interpretation output failed validation: " + "; ".join(errors)
+            "validator rejected interpretation output: " + "; ".join(errors)
         )
     return obj
 
