@@ -129,7 +129,7 @@
       "items": {
         "type": "string"
       },
-      "description": "Unmodified expected_tools tokens from GT v2.4."
+      "description": "Unmodified expected_tools tokens from GT v2.5."
     },
     "step_count_limit": {
       "type": "integer",

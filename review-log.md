@@ -2,7 +2,7 @@
 
 > **About this file.** Purpose: record of the reviewer policy, spec review, resolved decisions and gold-record reviews.
 > Use case: evidence for acceptance criterion 2 ("Shahid reviews and signs off"); sign-off is still pending.
-> Example: the 244 `review_priority=high` records need a second self-review recorded in `self_review_date` / `self_review_evidence`.
+> Example: the 246 `review_priority=high` records (GT v2.5) need a second self-review recorded in `self_review_date` / `self_review_evidence`.
 
 **Document under review:** `spec/spec.md` (schema version 1.0.0) and the schemas, vocabulary, mapping and validator that accompany it.  
 **Reviewer policy:** Shahid reviews and signs off.  
@@ -12,14 +12,14 @@
 
 Criterion 2 of the row 3 acceptance criteria is amended to: **“Shahid reviews and signs off.”**
 
-The 244 records that were `needs_two_reviewers=true` in v2.2 (45 of them frozen) have `review_priority=high` in v2.3 and v2.4; the other 277 are `standard`.
+The 244 records that were `needs_two_reviewers=true` in v2.2 (45 of them frozen) have `review_priority=high` in v2.3 and v2.4; the other 277 are `standard`. GT v2.5 adds 11 records under the same rule (2 `high`, 9 `standard`), giving 246 `high` and 286 `standard`.
 
-- `high` records require a mandatory second-pass self-review by Shahid, with recorded evidence, in addition to the first pass. That second pass is recorded on the record through `self_review_date` and `self_review_evidence`. Both fields may be blank until the review happens. In GT v2.4 they are blank on all 521 records.
+- `high` records require a mandatory second-pass self-review by Shahid, with recorded evidence, in addition to the first pass. That second pass is recorded on the record through `self_review_date` and `self_review_evidence`. Both fields may be blank until the review happens. In GT v2.5 they are blank on all 532 records.
 - `standard` records require a single recorded review by Shahid.
 - Evidence for a `high` second pass: prices and limits checked against the cited official span; escalation decision, owner and severity checked; policy or licensing claims checked; a short note of what was checked and the outcome.
 - `review_status` stays `pending` on a record until the required passes are complete. Unvalidated records do not count as confirmed gold.
 
-No gold-record review pass has been completed in this activity. All 521 v2.4 records remain `review_status=pending`, and the self-review fields remain blank.
+No gold-record review pass has been completed in this activity. All 532 v2.5 records remain `review_status=pending`, and the self-review fields remain blank.
 
 ## Spec review
 
@@ -28,6 +28,7 @@ No gold-record review pass has been completed in this activity. All 521 v2.4 rec
 | 2026-11-11 | Capstone Architect (draft) | n/a — author, not sign-off | C1 spec, schemas, vocabulary, mapping, validator, v2.3 change list | Draft complete; submitted for Shahid’s review and sign-off | `spec/spec.md`; `validator/validator-report.md` (80/80 frozen gold outputs validate, 0 schema errors); original vocab diff was `vocab/vocab-diff-gt-v2_2.md` |
 | 2026-11-11 | Capstone Architect (repo update) | n/a — author, not sign-off | Point the C1 artefacts at GT v2.3 after the change list was applied | Mapping, vocabulary diff and validator regenerated against v2.3; change list marked APPLIED and kept as history | `validator/validator-report.md`; `vocab/vocab-diff-gt-v2_3.md`; `gt-change-list-v2_3.md` |
 | 2026-11-11 | Capstone Architect (repo update) | n/a — author, not sign-off | Point the C1 artefacts at GT v2.4 and apply Shahid’s approved decisions | Mapping, vocabulary diff and validator regenerated against v2.4; decisions 1–7 recorded as resolved; sign-off still pending | `validator/validator-report.md`; `vocab/vocab-diff-gt-v2_4.md`; `spec/spec.md` section 16 |
+| 2026-11-14 | Capstone Architect (repo update) | n/a — author, not sign-off | Sync to GT v2.5 and add the Activity 4 freeze manifest | Mapping (532 records), vocabulary diff and validator regenerated against v2.5 (532/532 and 80/80 pass, 0 vocabulary differences); the frozen-80 bucket imbalance is superseded (every bucket ≥ 5); `eval/freeze-manifest.json` added and tagged `eval-freeze-v1`. Open: Activity 5 reviews pending, cosine dedupe not re-run, full split 429/103, Activity 3 κ not evidenced. Sign-off still pending | `validator/validator-report.md`; `vocab/vocab-diff-gt-v2_5.md`; `eval/freeze-manifest.json`; `spec/spec.md` section 12 |
 | — | Shahid Kamal | 1 (spec) | C1 task spec and schemas | Pending | |
 | — | Shahid Kamal | 2 (self-review of the spec, because the document itself defines pricing, policy and escalation rules) | Same | Pending; to be recorded through `self_review_date` and `self_review_evidence` when it happens | |
 
@@ -37,7 +38,7 @@ The spec-review table is unchanged in structure (no new column was added). Self-
 
 1. **Criterion 2 wording — resolved.** Amended to “Shahid reviews and signs off.” Sign-off stays pending and unsigned.
 2. **Token method — resolved.** `ceil(chars/4)` is the approved interim method; official measurement will use the endpoint `usage` field in C10/eval.
-3. **Frozen-80 bucket imbalance — resolved as an accepted known limitation.** `docs` has 0 `verified_live` records; `interpretation` has 1.
+3. **Frozen-80 bucket imbalance — resolved as an accepted known limitation (v2.4); superseded by GT v2.5.** In v2.4 `docs` had 0 `verified_live` records and `interpretation` had 1; GT v2.5 swaps 16 frozen members and every bucket now has at least 5.
 4. **Bare `Support` owner label — resolved.** Removed from the vocabulary. GT v2.4 uses `Support L2` on `GT-LBS-DIR-222` and `GT-LBS-RG-232`.
 5. **Self-review columns — resolved.** `self_review_date` and `self_review_evidence` are in the GT, the envelope, the mapper and the spec. Blank is allowed until the review happens.
 6. **Empty tool traces on DIR-042 and DIR-064 — resolved in GT v2.4.** Each now has one `doc_search` step.

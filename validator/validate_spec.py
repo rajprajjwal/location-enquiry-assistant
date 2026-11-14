@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """Validate C1 task-spec artefacts and mapped GT gold outputs.
 
-Reads GT v2.4 in place and never writes to it.
+Reads GT v2.5 in place and never writes to it.
 
 Purpose: check the 8 schemas, map all GT records with ``mapping/map_gt.py``
 and test every envelope against the schemas, the human-approval rule,
 required qualification fields and the 1,024-token output budget.
 Use case: the C1 acceptance check; rerun after any GT, schema or vocabulary
 change. It regenerates the gold JSONL files, ``mapping_issues.json``,
-``gt-to-schema-mapping.md``, the v2.4 vocab diff and ``validator-report.md``
+``gt-to-schema-mapping.md``, the v2.5 vocab diff and ``validator-report.md``
 under the repo root, or under ``--out-dir`` when given.
 Example: ``.venv/bin/python3 validator/validate_spec.py --out-dir /tmp/c1``
-reports "All records: 521/521 pass" and "80/80 pass"; a copy of
+reports "All records: 532/532 pass" and "80/80 pass"; a copy of
 GT-LBS-DIR-002 mutated to ``executed=true`` while ``pending`` is rejected.
 """
 
@@ -160,7 +160,7 @@ def vocab_diff(data: pd.DataFrame, vocab: dict) -> dict:
         if new:
             report["new_in_gt"][col] = new
         if missing:
-            report["notes"].append(f"{col}: vocab labels not observed in GT v2.4 Data: {missing}")
+            report["notes"].append(f"{col}: vocab labels not observed in GT v2.5 Data: {missing}")
 
     # providers (parsed)
     merges = vocab.get("provider_merges") or {}
@@ -216,7 +216,7 @@ def vocab_diff(data: pd.DataFrame, vocab: dict) -> dict:
         report["new_in_gt"]["sub_intent_unmapped"] = sorted(gt_subs - map_subs)
     if map_subs - gt_subs:
         report["notes"].append(
-            "Approved sub_intent labels not observed in GT v2.4: "
+            "Approved sub_intent labels not observed in GT v2.5: "
             + ", ".join(sorted(map_subs - gt_subs))
         )
     return report
@@ -234,9 +234,9 @@ def diff_count(diff: dict) -> int:
 
 def render_vocab_diff_md(diff: dict, data: pd.DataFrame, vocab: dict) -> str:
     lines = [
-        "# Vocabulary diff against GT v2.4",
+        "# Vocabulary diff against GT v2.5",
         "",
-        "Source of truth: `/workspace/capstone-trackb/data/gt_v2_4.xlsx`, sheet `Data` (521 records).",
+        f"Source of truth: `/workspace/capstone-trackb/data/gt_v2_5.xlsx`, sheet `Data` ({len(data)} records).",
         "Controlled vocabulary: `vocab/controlled-vocabulary.json` version "
         + vocab["version"]
         + ".",
@@ -268,12 +268,12 @@ def render_vocab_diff_md(diff: dict, data: pd.DataFrame, vocab: dict) -> str:
         for t in diff["dropped"]["tools"]:
             n = int(data["expected_tools"].astype(str).str.contains(t, regex=False).sum())
             lines.append(
-                f"- `{t}` is dropped as a copilot tool. It remains on **{n}** GT v2.4 "
+                f"- `{t}` is dropped as a copilot tool. It remains on **{n}** GT v2.5 "
                 "records in `expected_tools`."
             )
     else:
         lines.append("- None.")
-    lines += ["", "## New in GT v2.4 and not in the vocabulary", ""]
+    lines += ["", "## New in GT v2.5 and not in the vocabulary", ""]
     if diff["new_in_gt"]:
         for col, vals in diff["new_in_gt"].items():
             lines.append(f"- **{col}**: " + ", ".join(f"`{v}`" for v in vals))
@@ -284,7 +284,7 @@ def render_vocab_diff_md(diff: dict, data: pd.DataFrame, vocab: dict) -> str:
         )
     else:
         lines.append(
-            "- None. Every distinct GT v2.4 intent, sub_intent, bucket, API, team, "
+            "- None. Every distinct GT v2.5 intent, sub_intent, bucket, API, team, "
             "owner, severity, provider and tool value is accounted for. There are "
             "0 vocabulary differences."
         )
@@ -362,7 +362,7 @@ def render_report(
 
     lines += [
         "",
-        "## Mapping of all 521 records",
+        f"## Mapping of all {all_n} records",
         "",
         f"Mapped **{all_n}** records from sheet `Data`.",
         f"Mapping-time warnings (non-fatal unless they also fail schema/approval/token checks): "
@@ -464,7 +464,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         nargs="?",
         type=Path,
         default=None,
-        help="Path to the GT workbook (default: GT v2.4).",
+        help="Path to the GT workbook (default: GT v2.5).",
     )
     parser.add_argument(
         "--out-dir",
@@ -546,8 +546,8 @@ def main(argv: list[str] | None = None) -> int:
     # Vocab diff
     diff = vocab_diff(data, vocab)
     diff_md = render_vocab_diff_md(diff, data, vocab)
-    vocab_diff_md_path = vocab_dir / "vocab-diff-gt-v2_4.md"
-    vocab_diff_json_path = vocab_dir / "vocab-diff-gt-v2_4.json"
+    vocab_diff_md_path = vocab_dir / "vocab-diff-gt-v2_5.md"
+    vocab_diff_json_path = vocab_dir / "vocab-diff-gt-v2_5.json"
     vocab_diff_md_path.write_text(diff_md, encoding="utf-8")
     vocab_diff_json_path.write_text(
         json.dumps(diff, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
@@ -626,16 +626,16 @@ def main(argv: list[str] | None = None) -> int:
             return str(path)
 
     mapping_md = [
-        "# GT v2.4 to schema mapping",
+        "# GT v2.5 to schema mapping",
         "",
-        "The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_4.xlsx` "
-        "and builds one envelope per record. The GT file is never modified. The v2.4 workbook "
+        "The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_5.xlsx` "
+        "and builds one envelope per record. The GT file is never modified. The v2.5 workbook "
         "already contains the approved tool re-labels and the canonical provider labels, so "
         "the mapper copies `expected_tools` and `service_providers` as they stand.",
         "",
         "## Field mapping",
         "",
-        "| Schema output | GT v2.4 source | Rule |",
+        "| Schema output | GT v2.5 source | Rule |",
         "|---------------|----------------|------|",
         "| `record_id`, `intent`, `sub_intent`, `api`, `team`, `bucket`, `split`, `frozen_core` | same-named Data columns (`team` ← `primary_team`) | copied; must already match the controlled vocabulary |",
         "| `tools_expected` | `expected_tools` | split on commas; tokens must be in the registered tool list |",
@@ -668,7 +668,7 @@ def main(argv: list[str] | None = None) -> int:
         f"- `{_rel(issues_path)}`",
         f"- `{_rel(vocab_diff_md_path)}`",
         f"- `{_rel(report_path)}`",
-        "- Historical vocabulary diffs kept in the repo: `vocab/vocab-diff-gt-v2_3.md`, `vocab/vocab-diff-gt-v2_3.json`.",
+        "- Historical vocabulary diffs kept in the repo: `vocab/vocab-diff-gt-v2_4.md`, `vocab/vocab-diff-gt-v2_4.json`, `vocab/vocab-diff-gt-v2_3.md`, `vocab/vocab-diff-gt-v2_3.json`.",
         "",
     ]
     (mapping_dir / "gt-to-schema-mapping.md").write_text("\n".join(mapping_md) + "\n", encoding="utf-8")

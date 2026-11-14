@@ -9,7 +9,7 @@
 **Track:** Track-B “Multi-Agent Operations Copilot: An Agentic System Built Entirely on a Hosted ≤8B Inference API”  
 **Domain:** Location Services Sales and Support Copilot  
 **Status:** Written; pending Shahid’s sign-off (unsigned)  
-**GT source of truth (read only):** `/workspace/capstone-trackb/data/gt_v2_4.xlsx` (521 records, sheet `Data`; SHA-256 `a9751bc119213d94f76ec215e4aa4a0289b9f909367882b260e7cd34fa6f1a2b`). Companion CSV: `/workspace/capstone-trackb/data/gt_v2_4.csv` (SHA-256 `497f253987c4c939401e0c363386d4f4ccfd0b0e04c1baf72cdd975b3977e6b9`).  
+**GT source of truth (read only):** `/workspace/capstone-trackb/data/gt_v2_5.xlsx` (532 records, sheet `Data`; SHA-256 `44f7ed7302f06e772e6c77630eed6dc8268e4620b3366ef0e242e9b0e9131fda`). Companion CSV: `/workspace/capstone-trackb/data/gt_v2_5.csv` (SHA-256 `cb95d55457720dfbe97ca7eb0fb4b3970d3033b839c3ccf9dedec754850f7c5d`). Previous source of truth: GT v2.4 (`gt_v2_4.xlsx`, 521 records, SHA-256 `a9751bc119213d94f76ec215e4aa4a0289b9f909367882b260e7cd34fa6f1a2b`), kept unchanged as history.  
 **Inference model (from the Learner Guide):** `Qwen/Qwen3-8B` — combined input and output 8,192 tokens; output 512 tokens by default and 1,024 maximum per call. Embeddings are not provided on the hosted endpoint.
 
 This specification is a design artefact. It does not implement the application. It freezes what the copilot does, what a correct output looks like, when to refuse, and the schemas against which gold and later system outputs are validated.
@@ -26,7 +26,7 @@ The copilot helps sales and support staff interpret location-services enquiries,
 
 **Providers the copilot may compare (exactly six):** Google Maps Platform, Ola Maps, Mapbox, OSM Nominatim, OSRM, Mappls (MapmyIndia). The former GT label `OSRM (OpenStreetMap)` was merged into `OSRM` in v2.3 (16 records; see the applied change list). Comparisons are limited to selected, verifiable sources. Exhaustive coverage of every provider, geography, product, contract price or undocumented capability is out of scope.
 
-**Scenario buckets (10, as in GT v2.4):** qualification, interpretation, docs, history, updates, pricecompare, capabilitycompare, coveragecompare, limitscompare, ownership.
+**Scenario buckets (10, as in GT v2.5):** qualification, interpretation, docs, history, updates, pricecompare, capabilitycompare, coveragecompare, limitscompare, ownership.
 
 **Out of scope (brief):** dedicated multilingual or multimodal inputs; forward geocoding, place details, nearby search, map rendering, navigation SDKs, geofencing, and fleet or route optimization; live production record writes, real ticket handoffs, sending external messages, autonomous follow-ups and production SLAs; unverified ground truth used as confirmed gold.
 
@@ -34,19 +34,19 @@ The copilot helps sales and support staff interpret location-services enquiries,
 
 ## 2. Intents
 
-The copilot scores **8 intents**. The original **31 GT labels** are retained as `sub_intent` (an unscored detail label). Intent is separate from the escalation decision: a `human_handoff` record may still have `should_escalate=false` (in v2.4 this occurs for both `billing_dispute` records).
+The copilot scores **8 intents**. The original **31 GT labels** are retained as `sub_intent` (an unscored detail label). Intent is separate from the escalation decision: a `human_handoff` record may still have `should_escalate=false` (in v2.5 this occurs for both `billing_dispute` records).
 
-Every v2.4 `sub_intent` value maps to exactly one scored intent. No v2.4 intent or sub_intent label is unmapped or new relative to this table.
+Every v2.5 `sub_intent` value maps to exactly one scored intent. No v2.5 intent or sub_intent label is unmapped or new relative to this table.
 
-| Scored intent | sub_intent labels | v2.4 records |
+| Scored intent | sub_intent labels | v2.5 records |
 |---|---|---|
-| `pricing_quote` | `pricing_quote`, `pricing_estimate`, `free_tier_question`, `billing_question` | 86 |
+| `pricing_quote` | `pricing_quote`, `pricing_estimate`, `free_tier_question`, `billing_question` | 88 |
 | `pricing_comparison` | `pricing_comparison`, `competitive_comparison` | 62 |
 | `sales_qualification` | `discovery_qualification`, `capability_fit`, `licensing_fit`, `solution_design` | 30 |
 | `capability_match` | `capability_question`, `capability_matching` | 41 |
 | `coverage_limits` | `coverage_question`, `limits_question`, `performance_question` | 81 |
-| `docs_how_to` | `parameter_question`, `response_fields`, `integration_question`, `migration_question`, `policy_question` | 93 |
-| `troubleshooting` | `error_resolution`, `parameter_troubleshooting`, `accuracy_question`, `coverage_error` | 104 |
+| `docs_how_to` | `parameter_question`, `response_fields`, `integration_question`, `migration_question`, `policy_question` | 98 |
+| `troubleshooting` | `error_resolution`, `parameter_troubleshooting`, `accuracy_question`, `coverage_error` | 108 |
 | `human_handoff` | `production_incident`, `security_incident`, `data_quality`, `accuracy_regression`, `billing_incident`, `contract_request`, `billing_dispute` | 24 |
 
 ### 2.1 Required information per intent
@@ -167,7 +167,7 @@ These are application roles for the later planner→executor→critic loop, not 
 - Spans are marked `verbatim` or `summary` when that distinction is known, matching the GT citations sheet.
 - Do not invent URLs or quote text that was not retrieved.
 - Each run must be traceable to a record id (when scoring), the tools actually proposed or called, the citations used, and — in later activities — a trace in LangSmith, Langfuse or OpenTelemetry. This spec only requires the fields that the envelope already stores.
-- Unvalidated or unresolved records do not count as confirmed gold (brief). All 521 v2.4 records currently have `review_status=pending`. The fields `self_review_date` and `self_review_evidence` are present on every record and are blank until the review happens.
+- Unvalidated or unresolved records do not count as confirmed gold (brief). All 532 v2.5 records currently have `review_status=pending`. The fields `self_review_date` and `self_review_evidence` are present on every record and are blank until the review happens.
 
 ---
 
@@ -185,7 +185,7 @@ These are application roles for the later planner→executor→critic loop, not 
 - **Step limit:** at most 10 steps per query (Track-B guardrail; brief component 10). The envelope records `step_count_limit=10`.
 - **Output token budget:** at most 1,024 tokens per model call (Learner Guide maximum). The envelope records `output_token_budget=1024`. The default output length on the endpoint is 512 tokens; callers may raise `max_tokens` up to 1,024.
 - **Combined context:** input plus output must stay within 8,192 tokens (Learner Guide).
-- **Token counting (APPROVED interim method):** the validator uses `ceil(Unicode character count / 4)` on `response_draft.draft_text`. This is the approved interim method until official counts are measured with the hosted endpoint `usage` field in C10/eval. The endpoint is not called from this activity. Under the interim method, all 521 mapped drafts are at or below 408 tokens, and all 80 frozen drafts are at or below 408 tokens, so none exceed 1,024.
+- **Token counting (APPROVED interim method):** the validator uses `ceil(Unicode character count / 4)` on `response_draft.draft_text`. This is the approved interim method until official counts are measured with the hosted endpoint `usage` field in C10/eval. The endpoint is not called from this activity. Under the interim method, all 532 mapped GT v2.5 drafts are at or below 408 tokens, and all 80 frozen drafts are at or below 408 tokens, so none exceed 1,024.
 
 ---
 
@@ -197,7 +197,7 @@ These are application roles for the later planner→executor→critic loop, not 
 
 1. GT v2.3 has retired the boolean `needs_two_reviewers`.
 2. It replaces that flag with `review_priority`: `high` or `standard`. The 244 v2.2 records that were `needs_two_reviewers=true` (45 of them frozen) are `high` in v2.3; the other 277 are `standard`. That flag was defined in the v2.2 attribute details as: pricing, billing/contract, policy/licensing and escalation/ownership items, or any answer that states a price.
-3. Every `high` record requires a **mandatory second-pass self-review by Shahid**, with recorded evidence, in addition to the first pass. Evidence includes: prices and limits checked against the cited official span; escalation decision, owner and severity checked against the rules; policy or licensing claims checked against the cited policy page; a short note of what was checked and the outcome. That second pass is recorded on the record through `self_review_date` and `self_review_evidence`. Both fields may be blank until the review happens; in GT v2.4 they are blank on all 521 records.
+3. Every `high` record requires a **mandatory second-pass self-review by Shahid**, with recorded evidence, in addition to the first pass. Evidence includes: prices and limits checked against the cited official span; escalation decision, owner and severity checked against the rules; policy or licensing claims checked against the cited policy page; a short note of what was checked and the outcome. That second pass is recorded on the record through `self_review_date` and `self_review_evidence`. Both fields may be blank until the review happens; in GT v2.5 they are blank on all 532 records. GT v2.5 has 246 `high` and 286 `standard` records (the 11 records added in v2.5 follow the same rule: 2 `high`, 9 `standard`).
 4. The first pass and the sign-off decision are logged in `review-log.md` (reviewer, timestamp, pass number, evidence pointer, decision). `review_status` stays `pending` until the required passes are complete.
 5. `standard` records require a single recorded review by Shahid.
 6. No record is treated as confirmed gold until its required review passes are complete (brief: unvalidated records do not count as confirmed gold).
@@ -227,59 +227,65 @@ Thresholds used by this activity are those that row 3, Track-B, the brief, or th
 | Output tokens per model call | ≤ 1,024 (default 512) | Defined | Learner Guide |
 | Combined input and output tokens | ≤ 8,192 | Defined | Learner Guide |
 | Tokeniser used by the validator | `ceil(chars / 4)` on the draft text | **APPROVED interim** | Official measurement will use the endpoint `usage` field in C10/eval |
-| Frozen-80 bucket imbalance | `docs` has 0 `verified_live` records; `interpretation` has 1 | **ACCEPTED known limitation** | Membership is unchanged in v2.4; see section 12 |
+| Frozen-80 bucket imbalance | `docs` had 0 `verified_live` records; `interpretation` had 1 (GT v2.4) | ~~ACCEPTED known limitation~~ **SUPERSEDED by GT v2.5** | Resolved by 16 frozen swaps in v2.5; see section 12 |
+| Frozen-set composition (Activity 4) | 60–100 queries; each bucket ≥ 5; each API ≥ 15%; each team 40–60% | **PASS on GT v2.5** | Activities file, Activity 4; `eval/freeze-manifest.json` |
 
 Later-row scoring thresholds (for example intent accuracy ≥ 90% in row 4, Cohen’s κ ≥ 0.70 in row 5, each bucket ≥ 5 in row 6) are not adopted or altered here. They remain as written in the activities file, subject to the row 1 note that numbers not fixed by Track-B are proposed targets for the team to confirm.
 
 ---
 
-## 12. Frozen eval set (v2.4; membership unchanged; bucket imbalance accepted)
+## 12. Frozen eval set (v2.5; bucket imbalance resolved)
 
-Track-B requires an evaluation set of 60–100 realistic queries with gold answers, written before any agent code. Shahid’s rule for this project: frozen records must be `verified_live` only; target 60–100 records at about 10 per intent (at least 8), balanced on bucket, API and team as far as possible. This activity does not edit the GT and does not re-pick the frozen set.
+Track-B requires an evaluation set of 60–100 realistic queries with gold answers, written before any agent code. Shahid’s rule for this project: frozen records must be `verified_live` only; target 60–100 records at about 10 per intent (at least 8), balanced on bucket, API and team. This repository does not edit the GT; GT v2.5 was built by the Knowledge & Validation Engineer.
 
-**v2.4 meets the verified_live-only rule and the intent, API and team targets (same membership as v2.3 and v2.2):**
+**What changed in v2.5.** GT v2.5 adds 11 new `verified_live` eval records (`source=provider_2026-11-14`) and swaps **16** frozen-core members (the frozen size stays 80; swapped-out records remain in the GT, unfrozen):
 
-- 80 records have `frozen_core=True`. All 80 are `split=eval` and all 80 are `verification_status=verified_live`. Count of frozen records that are not `verified_live`: **0**.
-- Frozen count per scored intent: **10 each**.
-- Frozen count per API: **20 each** (25%, above a 15% floor used in later row 6 wording).
-- Frozen team split: Sales **43**, Support **37** (53.75% / 46.25%, inside a 40–60% band).
-- `verified_live` records in the eval split, per intent, available as a pool: coverage_limits 59, pricing_quote 35, pricing_comparison 30, docs_how_to 29, troubleshooting 17, capability_match 17, sales_qualification 16, human_handoff 10. Each intent has at least 10 verified_live eval records, so 10 per intent is feasible (and already achieved).
+- In: `GT-LBS-AC-205`, `GT-LBS-AC-210`, `GT-LBS-AC-235`, `GT-LBS-AC-236`, `GT-LBS-DIR-201`, `GT-LBS-DIR-223`, `GT-LBS-DIR-224`, `GT-LBS-DIR-225`, `GT-LBS-DIR-226`, `GT-LBS-DM-201`, `GT-LBS-DM-231`, `GT-LBS-DM-232`, `GT-LBS-DM-233`, `GT-LBS-RG-201`, `GT-LBS-RG-235`, `GT-LBS-RG-236`.
+- Out: `GT-LBS-AC-038`, `GT-LBS-AC-044`, `GT-LBS-AC-204`, `GT-LBS-AC-214`, `GT-LBS-DIR-056`, `GT-LBS-DIR-062`, `GT-LBS-DIR-076`, `GT-LBS-DIR-080`, `GT-LBS-DIR-209`, `GT-LBS-DM-025`, `GT-LBS-DM-052`, `GT-LBS-DM-077`, `GT-LBS-DM-213`, `GT-LBS-RG-034`, `GT-LBS-RG-038`, `GT-LBS-RG-104`.
 
-**Bucket balance is not met and cannot be met under the verified_live-only rule without new live verification:**
+**Activity 4 counts on GT v2.5 (recomputed from the `Data` sheet; all pass):**
 
-| Bucket | Frozen in v2.4 | `verified_live` eval records |
-|---|---|---|
-| updates | 21 | 29 |
-| qualification | 16 | 32 |
-| limitscompare | 12 | 36 |
-| ownership | 11 | 11 |
-| capabilitycompare | 11 | 27 |
-| pricecompare | 5 | 24 |
-| history | 3 | 13 |
-| interpretation | 1 | 1 |
-| coveragecompare | 0 | 40 |
-| docs | 0 | 0 |
+| Check | Activity 4 threshold | GT v2.5 frozen value | Result |
+|---|---|---|---|
+| Frozen size | 60–100 | 80 | PASS |
+| Each bucket | ≥ 5 | capabilitycompare 11, coveragecompare 5, docs 5, history 5, interpretation 5, limitscompare 7, ownership 11, pricecompare 5, qualification 15, updates 11 | PASS (minimum 5) |
+| Each API | ≥ 15% | autocomplete 20, directions 20, distance_matrix 20, reverse_geocode 20 (25% each) | PASS |
+| Each team | 40–60% | Sales 48 (60%), Support 32 (40%) | PASS (both at the band edges) |
 
-The `docs` bucket has 50 records, all `docs_how_to`, and **zero** `verified_live` records (47 `carried_from_v1_unverified`, 3 `flagged`). The `interpretation` bucket has only **one** `verified_live` eval record. A frozen set with at least 5 records in every bucket (the later row 6 wording) is therefore not feasible if membership is restricted to `verified_live`. This imbalance is an **ACCEPTED known limitation**: the `docs` bucket has 0 `verified_live` records and `interpretation` has 1. The current 80 frozen ids are kept. No alternative frozen-id list is proposed.
+- All 80 frozen records are `split=eval` and `verification_status=verified_live`. Frozen count per scored intent: **10 each**; every intent × API cell has at least 2 records.
+- The `docs` bucket now has 5 `verified_live` records and `interpretation` has 5 (both were the blockers in v2.4).
+- The frozen IDs, counts, thresholds and file hashes are recorded in `eval/freeze-manifest.json`. The freeze itself is the annotated git tag `eval-freeze-v1`; the Activity 4 timing condition (tag commit earlier than the first agent-code commit) holds while the repository contains no agent code.
 
-Content changes applied in v2.3 without changing frozen membership remain in force: `GT-LBS-RG-001` (the one frozen record that had `api_probe` in v2.2) and three frozen OSRM label merges (`GT-LBS-DIR-221`, `GT-LBS-DM-218`, `GT-LBS-DM-224`), listed in the applied v2.3 change list. v2.4 additionally relabelled the owner on frozen records `GT-LBS-DIR-222` and `GT-LBS-RG-232` from the bare label `Support` to `Support L2`, still without changing membership.
+**Superseded:** the GT v2.4 “Frozen-80 bucket imbalance” (**ACCEPTED known limitation**: `docs` 0 and `interpretation` 1 `verified_live` records) is **superseded by GT v2.5** and no longer applies.
+
+Content changes applied in v2.3 and v2.4 remain in force: `GT-LBS-RG-001` (the frozen record that had `api_probe` in v2.2), the OSRM label merges on `GT-LBS-DIR-221`, `GT-LBS-DM-218` and `GT-LBS-DM-224`, and the `Support` → `Support L2` owner relabel on `GT-LBS-DIR-222` and `GT-LBS-RG-232`.
+
+**Open items (not resolved by v2.5):**
+
+- Activity 5 reviews are pending: all 532 records have `review_status=pending` and blank self-review fields; no dual reviews are logged.
+- Activity 5 embedding-cosine deduplication (no pair ≥ 0.90) was not re-run for v2.5.
+- The full GT split is 429 eval / 103 holdout (532 records), not the 400/100 target.
+- Activity 3’s Cohen’s κ ≥ 0.70 pilot is not evidenced.
+- Spec sign-off stays pending.
 
 ---
 
 ## 13. Schemas, vocabulary, mapping and validator
 
 - Versioned JSON Schemas (all `x-spec-version: 1.0.0`) live in `schemas/`: one file for each of the seven outputs, plus `envelope.schema.json`.
-- The controlled vocabulary is `vocab/controlled-vocabulary.json`. The current read-only diff against distinct GT v2.4 values is `vocab/vocab-diff-gt-v2_4.md`. The v2.3 diff files `vocab/vocab-diff-gt-v2_3.md` and `vocab/vocab-diff-gt-v2_3.json` are kept as history.
-- The mechanical mapper `mapping/map_gt.py` maps all 521 records from GT v2.4 and writes `mapping/gold_outputs_all.jsonl` and `mapping/gold_outputs_frozen.jsonl`. It copies `expected_tools`, `service_providers`, owners, and the self-review fields as they stand in v2.4. `self_review_date` and `self_review_evidence` may be blank or null until the review happens. The GT file is not modified. Raw `expected_tools` tokens are preserved in `tools_raw_gt`.
+- The controlled vocabulary is `vocab/controlled-vocabulary.json`. The current read-only diff against distinct GT v2.5 values is `vocab/vocab-diff-gt-v2_5.md`. The v2.4 and v2.3 diff files (`vocab/vocab-diff-gt-v2_4.*`, `vocab/vocab-diff-gt-v2_3.*`) are kept as history.
+- The mechanical mapper `mapping/map_gt.py` maps all 532 records from GT v2.5 and writes `mapping/gold_outputs_all.jsonl` and `mapping/gold_outputs_frozen.jsonl`. It copies `expected_tools`, `service_providers`, owners, and the self-review fields as they stand in v2.5. `self_review_date` and `self_review_evidence` may be blank or null until the review happens. The GT file is not modified. Raw `expected_tools` tokens are preserved in `tools_raw_gt`.
 - The validator `validator/validate_spec.py` checks: schema self-consistency; every mapped envelope and nested output; the approval rule; qualification required-field consistency; and the approved interim token budget. Run it from the repo root with `repo/.venv/bin/python validator/validate_spec.py`. The default writes into the repo; `--out-dir` writes elsewhere. The report is `validator/validator-report.md`.
 
 ---
 
-## 14. GT history (v2.3 change list and v2.4 follow-up)
+## 14. GT history (v2.3 change list, v2.4 and v2.5 follow-ups)
 
 The change list in `gt-change-list-v2_3.md` has been applied in GT v2.3 and is kept as history. This activity does not edit any GT file. The applied v2.3 list covered: the 11 `api_probe` re-labels (with the one frozen record flagged); the 16 `OSRM (OpenStreetMap)` → `OSRM` merges; the `needs_two_reviewers` policy change; and the frozen-core feasibility finding (no membership change).
 
-GT v2.4, already built by the Knowledge & Validation Engineer, additionally: relabelled `GT-LBS-DIR-222` and `GT-LBS-RG-232` from owner `Support` to `Support L2`; added blank `self_review_date` and `self_review_evidence` columns after `review_priority`; filled one `doc_search` step each on `GT-LBS-DIR-042` and `GT-LBS-DIR-064`; and replaced the `api_probe` wording in `GT-LBS-DM-093` with “Verify against the cited docs”. Frozen membership is unchanged.
+GT v2.4, already built by the Knowledge & Validation Engineer, additionally: relabelled `GT-LBS-DIR-222` and `GT-LBS-RG-232` from owner `Support` to `Support L2`; added blank `self_review_date` and `self_review_evidence` columns after `review_priority`; filled one `doc_search` step each on `GT-LBS-DIR-042` and `GT-LBS-DIR-064`; and replaced the `api_probe` wording in `GT-LBS-DM-093` with “Verify against the cited docs”. Frozen membership was unchanged in v2.4.
+
+GT v2.5 (built 2026-11-14 by the Knowledge & Validation Engineer) adds 11 `verified_live` eval records (`GT-LBS-AC-235`, `GT-LBS-AC-236`, `GT-LBS-DIR-223` to `GT-LBS-DIR-226`, `GT-LBS-DM-231` to `GT-LBS-DM-233`, `GT-LBS-RG-235`, `GT-LBS-RG-236`) and swaps 16 frozen-core members to resolve the bucket imbalance (section 12). Full GT: 532 records, 429 eval / 103 holdout.
 
 ---
 
@@ -289,7 +295,7 @@ GT v2.4, already built by the Knowledge & Validation Engineer, additionally: rel
 - Project brief, including lines 14, 21, 25, 26, 31, 35, 38, 45 and 46.
 - Capstone-Templates-GenAI-Agentic-AI.pdf, Track-B section (spec + 60–100 gold queries; planner→executor→critic; ≤10 steps; human-in-the-loop for consequential actions).
 - Track B inference API guide (Learner Guide), 5 November 2026.
-- GT v2.4 workbook, including the Data, citations, attribute details, data-usage, summary and stats sheets. Earlier workbooks (`gt_v2_3.xlsx`, `gt_v2_2.xlsx`) are unchanged and are not the source of truth for this revision.
+- GT v2.5 workbook, including the Data, citations, attribute details, data-usage, summary and stats sheets. Earlier workbooks (`gt_v2_4.xlsx`, `gt_v2_3.xlsx`, `gt_v2_2.xlsx`) are unchanged and are not the source of truth for this revision.
 - Shahid’s approved decisions for this revision, recorded as resolved in section 16.
 
 ---
@@ -300,9 +306,9 @@ The following decisions are recorded as resolved. Items 6 and 7 were resolved in
 
 1. **Criterion 2 wording — resolved.** The row 3 wording is amended to “Shahid reviews and signs off.” The second self-review is recorded through `self_review_date` and `self_review_evidence`. Sign-off of this specification stays pending and unsigned.
 2. **Token method — resolved.** `ceil(chars/4)` on the draft text is the **approved interim** method. Official counts will be measured with the endpoint `usage` field in C10/eval.
-3. **Frozen-80 bucket imbalance — resolved as an accepted known limitation.** The `docs` bucket has 0 `verified_live` records and `interpretation` has 1. Frozen membership is not re-picked.
+3. **Frozen-80 bucket imbalance — resolved as an accepted known limitation (v2.4); superseded by GT v2.5.** In v2.4 the `docs` bucket had 0 `verified_live` records and `interpretation` had 1. GT v2.5 re-picked 16 frozen members and every bucket now has at least 5 (section 12).
 4. **Bare `Support` owner label — resolved.** It has been removed from the controlled vocabulary. In GT v2.4, `GT-LBS-DIR-222` and `GT-LBS-RG-232` use `Support L2`.
-5. **Self-review columns — resolved.** `self_review_date` and `self_review_evidence` are in the GT, the envelope schema, the mapper and this spec. Blank or null is allowed until the review happens; all 521 v2.4 rows are currently blank.
+5. **Self-review columns — resolved.** `self_review_date` and `self_review_evidence` are in the GT, the envelope schema, the mapper and this spec. Blank or null is allowed until the review happens; all 532 v2.5 rows are currently blank.
 6. **Empty tool traces on DIR-042 and DIR-064 — resolved in GT v2.4.** Each record now has one `doc_search` step in `gold_tool_trace`.
 7. **DM-093 `api_probe` wording — resolved in GT v2.4.** The `reference_answer` now says “Verify against the cited docs” and no longer mentions `api_probe`.
 

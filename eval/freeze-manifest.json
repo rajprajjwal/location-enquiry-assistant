@@ -1,0 +1,221 @@
+{
+  "manifest": "Activity 4 frozen core eval set",
+  "gt_version": "v2.5",
+  "date_ist": "2026-11-14",
+  "timezone": "Asia/Calcutta (IST, UTC+05:30)",
+  "git_tag": "eval-freeze-v1",
+  "sources": {
+    "gt_v2_5.csv": {
+      "path": "/workspace/capstone-trackb/data/gt_v2_5.csv",
+      "sha256": "cb95d55457720dfbe97ca7eb0fb4b3970d3033b839c3ccf9dedec754850f7c5d"
+    },
+    "gt_v2_5.xlsx": {
+      "path": "/workspace/capstone-trackb/data/gt_v2_5.xlsx",
+      "sha256": "44f7ed7302f06e772e6c77630eed6dc8268e4620b3366ef0e242e9b0e9131fda",
+      "sheet": "Data",
+      "records": 532
+    }
+  },
+  "frozen_file": {
+    "path": "mapping/gold_outputs_frozen.jsonl",
+    "sha256": "87c255fe402b68303e95205882d9596efd4e51391d395d3d86aaf129333a0604",
+    "records": 80
+  },
+  "frozen_record_ids": [
+    "GT-LBS-AC-031",
+    "GT-LBS-AC-032",
+    "GT-LBS-AC-033",
+    "GT-LBS-AC-045",
+    "GT-LBS-AC-051",
+    "GT-LBS-AC-068",
+    "GT-LBS-AC-073",
+    "GT-LBS-AC-081",
+    "GT-LBS-AC-086",
+    "GT-LBS-AC-089",
+    "GT-LBS-AC-205",
+    "GT-LBS-AC-210",
+    "GT-LBS-AC-215",
+    "GT-LBS-AC-222",
+    "GT-LBS-AC-229",
+    "GT-LBS-AC-230",
+    "GT-LBS-AC-231",
+    "GT-LBS-AC-234",
+    "GT-LBS-AC-235",
+    "GT-LBS-AC-236",
+    "GT-LBS-DIR-011",
+    "GT-LBS-DIR-012",
+    "GT-LBS-DIR-020",
+    "GT-LBS-DIR-021",
+    "GT-LBS-DIR-039",
+    "GT-LBS-DIR-043",
+    "GT-LBS-DIR-084",
+    "GT-LBS-DIR-085",
+    "GT-LBS-DIR-100",
+    "GT-LBS-DIR-108",
+    "GT-LBS-DIR-113",
+    "GT-LBS-DIR-201",
+    "GT-LBS-DIR-210",
+    "GT-LBS-DIR-216",
+    "GT-LBS-DIR-221",
+    "GT-LBS-DIR-222",
+    "GT-LBS-DIR-223",
+    "GT-LBS-DIR-224",
+    "GT-LBS-DIR-225",
+    "GT-LBS-DIR-226",
+    "GT-LBS-DM-026",
+    "GT-LBS-DM-027",
+    "GT-LBS-DM-059",
+    "GT-LBS-DM-085",
+    "GT-LBS-DM-087",
+    "GT-LBS-DM-094",
+    "GT-LBS-DM-097",
+    "GT-LBS-DM-117",
+    "GT-LBS-DM-118",
+    "GT-LBS-DM-201",
+    "GT-LBS-DM-214",
+    "GT-LBS-DM-218",
+    "GT-LBS-DM-221",
+    "GT-LBS-DM-222",
+    "GT-LBS-DM-224",
+    "GT-LBS-DM-226",
+    "GT-LBS-DM-227",
+    "GT-LBS-DM-231",
+    "GT-LBS-DM-232",
+    "GT-LBS-DM-233",
+    "GT-LBS-RG-001",
+    "GT-LBS-RG-005",
+    "GT-LBS-RG-006",
+    "GT-LBS-RG-007",
+    "GT-LBS-RG-015",
+    "GT-LBS-RG-016",
+    "GT-LBS-RG-021",
+    "GT-LBS-RG-082",
+    "GT-LBS-RG-084",
+    "GT-LBS-RG-201",
+    "GT-LBS-RG-212",
+    "GT-LBS-RG-213",
+    "GT-LBS-RG-225",
+    "GT-LBS-RG-226",
+    "GT-LBS-RG-231",
+    "GT-LBS-RG-232",
+    "GT-LBS-RG-233",
+    "GT-LBS-RG-234",
+    "GT-LBS-RG-235",
+    "GT-LBS-RG-236"
+  ],
+  "counts": {
+    "total": {
+      "value": 80,
+      "threshold": "60-100",
+      "pass": true
+    },
+    "bucket": {
+      "capabilitycompare": {
+        "value": 11,
+        "threshold": ">=5",
+        "pass": true
+      },
+      "coveragecompare": {
+        "value": 5,
+        "threshold": ">=5",
+        "pass": true
+      },
+      "docs": {
+        "value": 5,
+        "threshold": ">=5",
+        "pass": true
+      },
+      "history": {
+        "value": 5,
+        "threshold": ">=5",
+        "pass": true
+      },
+      "interpretation": {
+        "value": 5,
+        "threshold": ">=5",
+        "pass": true
+      },
+      "limitscompare": {
+        "value": 7,
+        "threshold": ">=5",
+        "pass": true
+      },
+      "ownership": {
+        "value": 11,
+        "threshold": ">=5",
+        "pass": true
+      },
+      "pricecompare": {
+        "value": 5,
+        "threshold": ">=5",
+        "pass": true
+      },
+      "qualification": {
+        "value": 15,
+        "threshold": ">=5",
+        "pass": true
+      },
+      "updates": {
+        "value": 11,
+        "threshold": ">=5",
+        "pass": true
+      }
+    },
+    "api": {
+      "autocomplete": {
+        "value": 20,
+        "share_pct": 25.0,
+        "threshold": ">=15%",
+        "pass": true
+      },
+      "directions": {
+        "value": 20,
+        "share_pct": 25.0,
+        "threshold": ">=15%",
+        "pass": true
+      },
+      "distance_matrix": {
+        "value": 20,
+        "share_pct": 25.0,
+        "threshold": ">=15%",
+        "pass": true
+      },
+      "reverse_geocode": {
+        "value": 20,
+        "share_pct": 25.0,
+        "threshold": ">=15%",
+        "pass": true
+      }
+    },
+    "team": {
+      "Sales": {
+        "value": 48,
+        "share_pct": 60.0,
+        "threshold": "40-60%",
+        "pass": true
+      },
+      "Support": {
+        "value": 32,
+        "share_pct": 40.0,
+        "threshold": "40-60%",
+        "pass": true
+      }
+    }
+  },
+  "other_checks": {
+    "all_split_eval": true,
+    "all_verified_live": true,
+    "per_intent": {
+      "capability_match": 10,
+      "coverage_limits": 10,
+      "docs_how_to": 10,
+      "human_handoff": 10,
+      "pricing_comparison": 10,
+      "pricing_quote": 10,
+      "sales_qualification": 10,
+      "troubleshooting": 10
+    }
+  },
+  "activity_4_counts_pass": true,
+  "note": "Raw GT files (data/) are excluded from git and bound to this manifest by SHA-256 only. The freeze is the annotated tag eval-freeze-v1 plus the SHA-256 of mapping/gold_outputs_frozen.jsonl; the tag must predate the first agent-code commit."
+}

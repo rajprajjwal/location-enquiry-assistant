@@ -1,7 +1,7 @@
 # C1 validator report
 
-Generated: 2026-11-11T21:23:54+05:30
-GT source (read only): `/workspace/capstone-trackb/data/gt_v2_4.xlsx`.
+Generated: 2026-11-14T23:10:38+05:30
+GT source (read only): `/workspace/capstone-trackb/data/gt_v2_5.xlsx`.
 Schemas: `schemas/*.schema.json` version 1.0.0.
 Vocabulary: `vocab/controlled-vocabulary.json` version 1.0.0.
 
@@ -19,16 +19,16 @@ Files:
 - `schemas/next_action.schema.json` — x-spec-version 1.0.0
 - `schemas/envelope.schema.json` — x-spec-version 1.0.0
 
-## Mapping of all 521 records
+## Mapping of all 532 records
 
-Mapped **521** records from sheet `Data`.
+Mapped **532** records from sheet `Data`.
 Mapping-time warnings (non-fatal unless they also fail schema/approval/token checks): **0** on **0** records.
 
 No mapping-time warnings.
 
 ## Validation against schemas, approval rule, required fields and token budget
 
-- All records: **521/521 pass**, 0 fail.
+- All records: **532/532 pass**, 0 fail.
 - Frozen gold expected outputs (`frozen_core=True`): **80/80 pass**, 0 fail.
 
 Row 3 acceptance criterion: 100% of frozen gold expected outputs validate with 0 schema errors.
@@ -43,7 +43,7 @@ None.
 
 Token counts use the **APPROVED** interim method: `ceil(Unicode character count / 4)` applied to `response_draft.draft_text`. No Qwen/Qwen3-8B tokenizer, tiktoken, or Hugging Face tokenizer was available offline, and the hosted inference endpoint was not called. Official token counts will be measured with the endpoint `usage` field in C10/eval. The hosted inference endpoint is not called from this activity.
 
-- All mapped drafts: n=521, min=15, median=90, max=408
+- All mapped drafts: n=532, min=15, median=89, max=408
 - Frozen drafts: n=80, min=20, median=117, max=408
 - Over 1,024 approx tokens: **0**
 

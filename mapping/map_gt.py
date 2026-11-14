@@ -1,4 +1,4 @@
-"""Mechanical GT v2.4 → schema mapper. Read-only on the GT file.
+"""Mechanical GT v2.5 → schema mapper. Read-only on the GT file.
 
 Purpose: turn each row of the GT workbook (sheet ``Data`` plus the citations
 sheet) into one copilot output envelope that follows ``schemas/``.
@@ -21,13 +21,14 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parents[1]
 VOCAB_PATH = REPO / "vocab" / "controlled-vocabulary.json"
-DEFAULT_GT = Path("/workspace/capstone-trackb/data/gt_v2_4.xlsx")
+DEFAULT_GT = Path("/workspace/capstone-trackb/data/gt_v2_5.xlsx")
 
 # v2.3 applied the approved tool re-labels and provider-label merge in the
 # GT workbook. v2.4 keeps those values, relabels the remaining bare Support
 # owners, fills the two previously empty tool traces, and adds blank
 # self-review columns. The mapper copies expected_tools, service_providers,
-# owners and self-review fields as they stand.
+# owners and self-review fields as they stand. v2.5 adds 11 eval records and
+# swaps 16 frozen-core members (frozen size stays 80) with the same columns.
 
 TOOL_ORDER = ["doc_search", "calculator", "update_record", "escalate_ticket"]
 

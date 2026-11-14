@@ -1,10 +1,10 @@
-# GT v2.4 to schema mapping
+# GT v2.5 to schema mapping
 
-The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_4.xlsx` and builds one envelope per record. The GT file is never modified. The v2.4 workbook already contains the approved tool re-labels and the canonical provider labels, so the mapper copies `expected_tools` and `service_providers` as they stand.
+The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_5.xlsx` and builds one envelope per record. The GT file is never modified. The v2.5 workbook already contains the approved tool re-labels and the canonical provider labels, so the mapper copies `expected_tools` and `service_providers` as they stand.
 
 ## Field mapping
 
-| Schema output | GT v2.4 source | Rule |
+| Schema output | GT v2.5 source | Rule |
 |---------------|----------------|------|
 | `record_id`, `intent`, `sub_intent`, `api`, `team`, `bucket`, `split`, `frozen_core` | same-named Data columns (`team` ← `primary_team`) | copied; must already match the controlled vocabulary |
 | `tools_expected` | `expected_tools` | split on commas; tokens must be in the registered tool list |
@@ -22,9 +22,9 @@ The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_4
 
 ## Counts
 
-- Records mapped: **521** (eval 418, holdout 103).
+- Records mapped: **532** (eval 429, holdout 103).
 - Frozen mapped: **80**.
-- Validation pass (all): **521/521**.
+- Validation pass (all): **532/532**.
 - Validation pass (frozen): **80/80**.
 - Mapping-time warnings: **0**.
 
@@ -33,7 +33,7 @@ The mapper in `mapping/map_gt.py` reads `/workspace/capstone-trackb/data/gt_v2_4
 - `mapping/gold_outputs_all.jsonl`
 - `mapping/gold_outputs_frozen.jsonl`
 - `mapping/mapping_issues.json`
-- `vocab/vocab-diff-gt-v2_4.md`
+- `vocab/vocab-diff-gt-v2_5.md`
 - `validator/validator-report.md`
-- Historical vocabulary diffs kept in the repo: `vocab/vocab-diff-gt-v2_3.md`, `vocab/vocab-diff-gt-v2_3.json`.
+- Historical vocabulary diffs kept in the repo: `vocab/vocab-diff-gt-v2_4.md`, `vocab/vocab-diff-gt-v2_4.json`, `vocab/vocab-diff-gt-v2_3.md`, `vocab/vocab-diff-gt-v2_3.json`.
 
