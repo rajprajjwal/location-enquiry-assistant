@@ -48,20 +48,22 @@ class InterpretationInput(BaseModel):
 
 GT adapter: 52 of the 532 GT `question` cells (5 frozen) embed history as `[user] …` / `[assistant] …` lines. `copilot/interpret/gt_adapter.py::from_gt_question(text)` splits them into turns: the last `[user]` turn becomes `query` and the rest become `history`. Plain questions become `query` with empty history. For scoring, `known_facts` is always empty because the GT has no state-store column.
 
-### 2.2 Output (new shape, `interpretation_output` v0.1.0, proposed)
+### 2.2 Output (`interpretation_output` v0.2.0)
+
+v0.2.0 makes `intent`, `api` and `team` nullable. There is no `unknown` vocabulary value. `abstain_reason` stays an enum and adds `no_rule_match`.
 
 ```json
 {
-  "intent": "pricing_comparison",          // enum: vocab.intents (8)
+  "intent": "pricing_comparison",          // vocab.intents (8), or null when abstain=true
   "sub_intent": "pricing_comparison",      // enum: vocab.sub_intents (31) or null; must be in intent_to_sub_intents[intent]
-  "api": "directions",                     // enum: vocab.apis (4)
-  "team": "Sales",                         // enum: vocab.teams (Sales, Support)
+  "api": "directions",                     // vocab.apis (4), or null when abstain=true
+  "team": "Sales",                         // Sales | Support, or null when abstain=true
   "qualification_details": { ... },        // validates against schemas/qualification_details.schema.json exactly
   "missing_required_fields": ["current_provider", "timeline"],  // equal to qualification_details.missing_required_fields
   "field_provenance": {"region": "rule", "monthly_volume": "model", "timeline": "history"},
   "confidence": {"intent": 0.0-1.0 | null, "api": ..., "team": ...},
   "abstain": false,                        // true when the output is rules-only fallback or unresolvable
-  "abstain_reason": null,                  // "model_unavailable" | "invalid_after_repair" | "budget_exceeded" | null
+  "abstain_reason": null,                  // model_unavailable | invalid_after_repair | budget_exceeded | no_rule_match | null
   "trace": {"model": "Qwen/Qwen3-8B", "prompt_version": "interp-v1", "approx_input_tokens": 0,
             "approx_output_tokens": 0, "latency_ms": 0, "repair_attempts": 0, "model_calls": 0,
             "rule_model_disagreements": ["api"]}
@@ -69,7 +71,9 @@ GT adapter: 52 of the 532 GT `question` cells (5 frozen) embed history as `[user
 ```
 
 Contract rules:
-- `qualification_details` has all 10 required keys of the schema. `use_case_api.api` must equal the top-level `api`, as in the gold mapping (`map_gt.py`).
+- `qualification_details` has all 10 required keys of the schema. `use_case_api.api` equals the top-level `api`, including when both are null. A null `api` requires `use_case_api` null; that null is a missing required field, so `complete` is false.
+- When `abstain` is false, `intent`, `api` and `team` are non-null vocabulary values.
+- When `abstain` is true, each of `intent`, `api` and `team` may be null. `abstain_reason` is required and is one of the four reason strings (non-empty; whitespace-only is invalid). `no_rule_match` is the reason when no rule matched. `abstain=false` requires `abstain_reason` null; the key stays required, so omitting it is invalid.
 - `missing_required_fields` = the required fields (`use_case_api, region, monthly_volume, current_provider, timeline`) whose value is null after the history and known-facts merge, in vocabulary order. `complete = (len(missing) == 0)`. Both are computed by code only.
 - `confidence` is the model's self-reported value, or null. It is diagnostic only and never used for scoring. `abstain=true` outputs are still scored (no free passes).
 - Token counts use `ceil(chars/4)` (`mapping/map_gt.py::approx_output_tokens`) until Activity 8 or Activity 20 starts.
@@ -104,7 +108,7 @@ input ─► (1) rule pre-extraction ─► (2) model call ─► (3) post-check
    - validate `qualification_details` with the same `Draft202012Validator` and schema files as `validator/validate_spec.py`. Shared rule functions (e.g. required-field consistency) move to one importable module used by both. `validate_spec.py`'s behaviour and outputs must not change.
 4. **Repair:** at most **one** extra model call. It sends the original prompt plus the specific validation errors and asks for corrected JSON only. Then the post-check runs again.
 5. **Fallback:** rules-only output.
-   - The API comes from the rule hit if exactly one API matched, otherwise `null` → invalid → abstain.
+   - The API comes from the rule hit if exactly one API matched, otherwise `null` with `abstain=true` (v0.2.0: a null API is valid only on that abstain output, with `use_case_api` null).
    - Intent and team come from a fixed keyword table (`rules.py`, built on the allowed pool only), else abstain.
    - Qualification comes from the rule hits.
    - `abstain=true` with a reason. The step never loops and never exceeds 2 model calls per input.
