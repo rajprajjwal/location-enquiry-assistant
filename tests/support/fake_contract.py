@@ -171,7 +171,11 @@ def _schema_errors(instance: object, validator: Draft202012Validator) -> list[st
         for error in validator.iter_errors(instance)
     ]
     rows.sort()
-    return _format(rows)
+    unique: list[tuple[str, str, str]] = []
+    for row in rows:
+        if not unique or unique[-1] != row:
+            unique.append(row)
+    return _format(unique)
 
 
 def _qualification_consistency(qual: dict) -> list[tuple[str, str, str]]:
@@ -302,6 +306,44 @@ def _output_schema() -> dict:
                 },
             },
         },
+        "allOf": [
+            {
+                "if": {
+                    "properties": {"abstain": {"const": False}},
+                    "required": ["abstain"],
+                },
+                "then": {
+                    "properties": {
+                        "intent": {"type": "string", "enum": list(vocab.intents)},
+                        "api": {"type": "string", "enum": list(vocab.apis)},
+                        "team": {"type": "string", "enum": list(vocab.teams)},
+                        "abstain_reason": {"const": None},
+                    },
+                    "required": ["intent", "api", "team", "abstain_reason"],
+                },
+            },
+            {
+                "if": {
+                    "properties": {"abstain": {"const": True}},
+                    "required": ["abstain"],
+                },
+                "then": {
+                    "properties": {
+                        "abstain_reason": {
+                            "type": "string",
+                            "minLength": 1,
+                            "enum": [
+                                "model_unavailable",
+                                "invalid_after_repair",
+                                "budget_exceeded",
+                                "no_rule_match",
+                            ],
+                        },
+                    },
+                    "required": ["abstain_reason"],
+                },
+            },
+        ],
     }
 
 
@@ -353,6 +395,68 @@ def _missing_list_mismatch(obj: dict) -> list[tuple[str, str, str]]:
     ]
 
 
+_ABSTAIN_VALUE_FIELDS = ("intent", "api", "team")
+
+
+def _abstain_required_fields(obj: dict) -> list[tuple[str, str, str]]:
+    """abstain false requires intent, api and team to be vocabulary values."""
+    if obj.get("abstain") is not False:
+        return []
+    vocab = load_vocab()
+    tables = {"intent": vocab.intents, "api": vocab.apis, "team": vocab.teams}
+    rows: list[tuple[str, str, str]] = []
+    for field in _ABSTAIN_VALUE_FIELDS:
+        value = obj.get(field, _ABSENT)
+        if isinstance(value, str) and value in tables[field]:
+            continue
+        rows.append(
+            (
+                f"/{field}",
+                "ABSTAIN_REQUIRED_FIELDS",
+                f"abstain=false requires {field} in the controlled vocabulary; "
+                f"{field}={_fmt(value)}",
+            )
+        )
+    return rows
+
+
+def _abstain_reason_required(obj: dict) -> list[tuple[str, str, str]]:
+    """abstain true requires a reason string that is not empty or whitespace."""
+    if obj.get("abstain") is not True:
+        return []
+    reason = obj.get("abstain_reason", _ABSENT)
+    if isinstance(reason, str) and reason.strip():
+        return []
+    return [
+        (
+            "/abstain_reason",
+            "ABSTAIN_REASON_REQUIRED",
+            "abstain=true requires a non-empty abstain_reason; "
+            f"abstain_reason={_fmt(reason)}",
+        )
+    ]
+
+
+def _abstain_reason_must_be_null(obj: dict) -> list[tuple[str, str, str]]:
+    """abstain false requires the abstain_reason key to be present and JSON null.
+
+    A missing key is not null. The schema also reports REQUIRED or CONST.
+    """
+    if obj.get("abstain") is not False:
+        return []
+    reason = obj.get("abstain_reason", _ABSENT)
+    if reason is None:
+        return []
+    return [
+        (
+            "/abstain_reason",
+            "ABSTAIN_REASON_FORBIDDEN",
+            "abstain=false requires abstain_reason null; "
+            f"abstain_reason={_fmt(reason)}",
+        )
+    ]
+
+
 def validate_interpretation_output(obj: dict) -> list[str]:
     errors = _schema_errors(obj, _output_validator())
     if not isinstance(obj, dict):
@@ -363,6 +467,9 @@ def validate_interpretation_output(obj: dict) -> list[str]:
             errors.append(f"{_prefix('/qualification_details', pointer)}: {code}: {detail}")
     errors.extend(_format(_api_mismatch(obj)))
     errors.extend(_format(_missing_list_mismatch(obj)))
+    errors.extend(_format(_abstain_required_fields(obj)))
+    errors.extend(_format(_abstain_reason_required(obj)))
+    errors.extend(_format(_abstain_reason_must_be_null(obj)))
     return errors
 
 

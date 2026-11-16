@@ -17,6 +17,15 @@ if str(ROOT) not in sys.path:
 if os.environ.get("INTERPRET_VALIDATION") == "real":
     real_root = os.environ["INTERPRET_REAL_ROOT"]
     sys.path.insert(0, real_root)
+    loaded = sys.modules.get("copilot")
+    real_pkg = str(Path(real_root) / "copilot")
+    if loaded is not None and real_pkg not in list(getattr(loaded, "__path__", [])):
+        for name in list(sys.modules):
+            if name == "copilot" or name.startswith("copilot."):
+                del sys.modules[name]
+    import copilot.validation.rules as _rules
+
+    print(f"VALIDATION_RULES_FILE {_rules.__file__}", flush=True)
 else:
     from copilot.interpret import seam
     from tests.support.fake_contract import install

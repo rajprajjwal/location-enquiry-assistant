@@ -267,4 +267,9 @@ def interpret(inp: Any, *, client=None):
     )
     if not checked_again["errors"] and checked_again["output"] is not None:
         return _publish(checked_again["output"])
-    return fallback("invalid_after_repair", checked_again["disagreements"])
+    # A call-level failure was already returned. Both calls returned text.
+    # Parseable output with labels still unresolved is no_rule_match.
+    # Two unparseable bodies are invalid_after_repair.
+    parsed = checked.get("parsed") is not None or checked_again.get("parsed") is not None
+    reason = "no_rule_match" if parsed else "invalid_after_repair"
+    return fallback(reason, checked_again["disagreements"])

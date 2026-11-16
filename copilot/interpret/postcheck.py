@@ -499,6 +499,8 @@ def _resolve(
         else:
             sub_intent = canon_sub
 
+    if not abstain:
+        abstain_reason = None
     disagreements = sorted(set(disagreements))
     trace_out = dict(default_trace())
     if trace:

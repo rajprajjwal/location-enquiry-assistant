@@ -91,6 +91,21 @@ def test_budget_exceeded_does_not_count_as_a_model_call() -> None:
     assert body["trace"]["model_calls"] == 0
 
 
+def test_parseable_unresolved_labels_use_no_rule_match() -> None:
+    unresolved = model_json(intent=None, sub_intent=None, api=None, team=None)
+    client = ScriptedClient([completion(unresolved), completion(unresolved)])
+    body = _body(interpret({"query": "hello there"}, client=client))
+    assert len(client.calls) == 2
+    assert body["abstain"] is True
+    assert body["abstain_reason"] == "no_rule_match"
+    assert body["intent"] is None
+    assert body["api"] is None
+    assert body["team"] is None
+    assert body["qualification_details"]["use_case_api"] is None
+    assert body["qualification_details"]["complete"] is False
+    assert "use_case_api" in body["missing_required_fields"]
+
+
 def test_one_repair_then_a_valid_reply() -> None:
     good = model_json()
     client = ScriptedClient([completion(model_json(intent="nope")), completion(good)])
@@ -101,6 +116,8 @@ def test_one_repair_then_a_valid_reply() -> None:
     assert "ENUM" in repair_user
     body = _body(output)
     assert body["abstain"] is False
+    assert "abstain_reason" in body
+    assert body["abstain_reason"] is None
     assert body["intent"] == "docs_how_to"
     assert body["trace"]["repair_attempts"] == 1
     assert body["trace"]["model_calls"] == 2
