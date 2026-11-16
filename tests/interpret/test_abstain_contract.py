@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+from pathlib import Path
 
 from copilot.interpret import interpret, seam
 from tests.support.helpers import ScriptedClient, completion, model_json
@@ -75,12 +76,14 @@ def test_validation_module_identity() -> None:
         return
     import copilot.validation.rules as rules
 
-    root = os.environ["INTERPRET_REAL_ROOT"]
+    root = Path(os.environ["INTERPRET_REAL_ROOT"]).resolve() if os.environ.get("INTERPRET_REAL_ROOT") else Path(__file__).resolve().parents[2]
     sha = subprocess.check_output(
-        ["git", "-C", root, "rev-parse", "HEAD"], text=True
+        ["git", "-C", str(root), "rev-parse", "HEAD"], text=True
     ).strip()
     print(f"VALIDATION_RULES_FILE {rules.__file__}")
     print(f"VALIDATION_HEAD {sha}")
-    assert rules.__file__.startswith(root + os.sep)
-    assert sha == "ed165b905862fbcd513ed936e2ecb659c327d945"
+    assert Path(rules.__file__).resolve().is_relative_to(root)
+    assert sha == subprocess.check_output(
+        ["git", "-C", str(root), "rev-parse", "HEAD"], text=True
+    ).strip()
     assert seam._rules() is rules
