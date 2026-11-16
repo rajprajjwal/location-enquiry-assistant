@@ -1,0 +1,25 @@
+# Purpose: run the interpretation step against the in-tree validation package.
+# Use case: pull requests on feat/interpretation-step, without editing the
+# Knowledge & Validation workflow.
+# Example: INTERPRET_VALIDATION=real pytest tests/interpret tests/llm tests/validation
+name: interpretation-step
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  interpretation-step-tests:
+    name: interpretation-step-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run interpretation and validation tests against in-tree rules
+        env:
+          INTERPRET_VALIDATION: real
+        run: python -m pytest -q tests/interpret tests/llm tests/validation
