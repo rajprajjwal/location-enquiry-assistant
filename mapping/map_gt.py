@@ -41,7 +41,9 @@ LABEL_OVERRIDES_PATH = REPO / "mapping" / "label_overrides.json"
 # user_text, extract_timeline, extract_monthly_volume, extract_current_provider).
 # GT v2.6 (eval-freeze-v3, pending tag): CF1-CF4 fix the 9 confirmed frozen-80
 # qualification defects, R1-R14 settle the rule boundaries, and L1/L2 relabel two
-# records through mapping/label_overrides.json (apply_label_overrides).
+# records through mapping/label_overrides.json (apply_label_overrides). A missing
+# overrides file, or an override whose ``from`` values do not match the GT row,
+# fails the run instead of being skipped.
 
 TOOL_ORDER = ["doc_search", "calculator", "update_record", "escalate_ticket"]
 
@@ -531,7 +533,10 @@ def _canon_country(c: str) -> str:
     return re.sub(r"\s+", " ", c)
 
 
-_COUNTRY_PREP = re.compile(r"\b(?:in|across|for|throughout|within)\s+" + _COUNTRY_RE + r"\b(?![-'])")
+_COUNTRY_PREP = re.compile(
+    r"\b(?:in|across|for|throughout|within)\s+" + _COUNTRY_RE + r"\b(?![-'])",
+    re.I,
+)
 
 
 def _first_country(q: str) -> str | None:
@@ -552,7 +557,8 @@ _INDIA_PRICE_R10 = r"\bIndia\s+(?:[\w-]+\s+){0,3}(?:charges|pricing|prices?|rate
 # such a country with "and", "," or "as well as" ("in India and Nepal").
 _REGION_LIST_R7 = re.compile(
     r"\b(?:in|across|for|throughout|within|cover|covers|covering)\s+" + _COUNTRY_RE.replace("?P<c>", "")
-    + r"(?:\s*(?:,|and|as\s+well\s+as)\s+" + _COUNTRY_RE.replace("?P<c>", "") + r")*\b(?![-'])"
+    + r"(?:\s*(?:,|and|as\s+well\s+as)\s+" + _COUNTRY_RE.replace("?P<c>", "") + r")*\b(?![-'])",
+    re.I,
 )
 _COUNTRY_ANY = re.compile(_COUNTRY_RE + r"\b(?![-'])")
 
@@ -649,7 +655,7 @@ def extract_qualification(question: str, api: str, vocab: dict) -> dict:
     # R7 several countries; R8 (city only), R9 (data residency) and R11
     # ("global") set no region.
     region = None
-    if re.search(r"\b(?:in|across|for|throughout|across)\s+India\b", q, re.I):
+    if re.search(r"\b(?:in|across|for|throughout)\s+India\b", q, re.I):
         region = "India"
     elif re.search(r"\bIndian\s+(?:cities|city|market|price|pricing)\b", q, re.I):
         region = "India"
@@ -964,10 +970,20 @@ def load_gt(path: Path = DEFAULT_GT) -> tuple[pd.DataFrame, pd.DataFrame]:
     return data, cites
 
 
+class LabelOverrideError(RuntimeError):
+    """label_overrides.json is missing, or an override does not match the GT row."""
+
+
 def load_label_overrides(path: Path = LABEL_OVERRIDES_PATH) -> dict:
-    """Approved label corrections (GT v2.6 L1/L2), keyed by record_id."""
+    """Approved label corrections (GT v2.6 L1/L2), keyed by record_id.
+
+    The file is required. A missing file raises ``LabelOverrideError`` instead
+    of returning no overrides, which would silently drop L1 and L2.
+    """
     if not path.exists():
-        return {}
+        raise LabelOverrideError(
+            f"label overrides file is required and was not found: {path}"
+        )
     return json.loads(path.read_text(encoding="utf-8"))["overrides"]
 
 
@@ -979,7 +995,8 @@ def apply_label_overrides(row: pd.Series, overrides: dict, vocab: dict) -> tuple
 
     Each override names the GT values it expects (``from``) and the new ones
     (``to``). A value that no longer matches the GT, a value outside the
-    vocabulary or a sub_intent outside its intent is reported and not applied.
+    vocabulary or a sub_intent outside its intent raises ``LabelOverrideError``.
+    The override is not applied and is not reported as a mapping warning.
     Everything the mapper derives from labels (comparison, responsible_role.team,
     default owner) then follows the overridden row.
     """
@@ -998,7 +1015,10 @@ def apply_label_overrides(row: pd.Series, overrides: dict, vocab: dict) -> tuple
             or to.get("primary_team", "Sales") not in vocab["teams"] or to.get("api", "directions") not in vocab["apis"]):
         issues.append("label_override_invalid")
     if issues:
-        return row, issues
+        raise LabelOverrideError(
+            f"{row['id']}: label override is stale or broken and was not applied: "
+            + "; ".join(issues)
+        )
     row = row.copy()
     for col, val in to.items():
         row[col] = val

@@ -5,7 +5,7 @@
   "date_ist": "2026-11-16",
   "timezone": "Asia/Calcutta (IST, UTC+05:30)",
   "git_tag": "eval-freeze-v3",
-  "tag_status": "pending (not yet tagged; Application Engineer review pending)",
+  "tag_status": "Application Engineer review: approved with nits (fixed); tag eval-freeze-v3 not created, pending Shahid decision",
   "supersedes": {
     "tag": "eval-freeze-v2",
     "commit": "22e797398767a68e19af93181271410d573ce363",
@@ -35,7 +35,7 @@
   },
   "mapper": {
     "path": "mapping/map_gt.py",
-    "sha256": "a3efd8b3b7f5729d33834ad0965ebbaffab88bf473461800084b8c4339f02c8e"
+    "sha256": "7011eb90ca66450639969da3cc743e6c05ae23ea3af11ef1c1bfcf2078bcfeb0"
   },
   "label_overrides": {
     "path": "mapping/label_overrides.json",
