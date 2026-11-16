@@ -1,10 +1,12 @@
-# Purpose: Python packages needed by mapping/map_gt.py, validator/validate_spec.py,
+# Purpose: Python packages for the dataset validator, interpretation validation,
 # the interpretation step, and its tests.
-# Use case: pip install -r requirements.txt into .venv before running the validator or pytest.
-# Example: jsonschema validates envelopes; the pinned openai SDK is the VM07 client.
-# Pinned: interpretation repair text uses jsonschema 4.26 messages (INTERFACE.md).
+# Use case: pip install -r requirements.txt into .venv before tests or the validator.
+# Example: jsonschema 4.26.0 is pinned because repair-prompt error text uses its messages.
+# Pin note: pytest was 8.3.5 on this branch and 9.2.0 on master; master's pin is kept.
 jsonschema==4.26.0
 openpyxl>=3.0
 pandas>=2.0
+pydantic==2.14.3
+datamodel-code-generator==0.96.0
 openai==1.58.1
-pytest==8.3.5
+pytest==9.2.0

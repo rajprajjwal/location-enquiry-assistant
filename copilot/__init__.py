@@ -1,6 +1,6 @@
-"""Location-services copilot package.
+"""Location Services Sales and Support Copilot library package.
 
-Purpose: namespace for the interpretation step and the thin model client.
-Use case: ``import copilot.interpret`` and ``python -m copilot.llm.client --smoke``.
-Example: ``from copilot.interpret import interpret``.
+Purpose: import root for validation, generated models, the interpretation step, and the model client.
+Use case: ``from copilot.interpret import interpret`` and ``from copilot.validation import validate_interpretation_output``.
+Example: ``copilot.validation``, ``copilot.models``, ``copilot.interpret``, and ``copilot.llm`` are subpackages.
 """
