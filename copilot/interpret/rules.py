@@ -5,14 +5,17 @@ Use case: the hits are prompt hints and, on the rules-only path, the output.
 Example: ``"20,000 requests a month"`` becomes a monthly_volume hit of 20000.
 
 Patterns for volume, timeline, provider, region, budget, constraints, and
-use case are the eval-freeze-v2 mapper patterns. Intent and team keyword
-tables stay empty: the §7 pool's question text and template_family are not
-in tracked files, so the tables are not tuned and the fallback abstains.
+use case are the eval-freeze-v2 mapper patterns. Intent keywords are loaded
+from ``intent_keywords.json`` and apply only on the rules-only (abstain) path,
+matched against the customer's quoted message. Team keywords stay empty, so
+the fallback leaves team null.
 """
 
 from __future__ import annotations
 
+import json
 import re
+from pathlib import Path
 from typing import Any
 
 from mapping.map_gt import (
@@ -48,12 +51,41 @@ _USE_CASE_B = re.compile(
     re.I,
 )
 
-# Design §3: directions/routing, distance matrix, autocomplete, reverse geocod*.
 _API_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
-    ("directions", re.compile(r"\b(?:directions?|routing)\b", re.I)),
-    ("distance_matrix", re.compile(r"\bdistance\s+matrix\b", re.I)),
-    ("autocomplete", re.compile(r"\bautocomplete\b", re.I)),
-    ("reverse_geocode", re.compile(r"\breverse\s+geocod", re.I)),
+    ("directions", re.compile(
+        r"\b(?:directions?|turn[- ]by[- ]turn|driving\s+routes?|route\s+(?:requests?|instructions?|geometry))\b",
+        re.I,
+    )),
+    ("distance_matrix", re.compile(
+        r"\b(?:(?:distance|route|routing|travel[- ]time|transit|mapbox)\s+matri(?:x|ces)"
+        r"|computeRouteMatrix|matri(?:x|ces)\s+(?:api|calls?|engine)"
+        r"|\d+\s*[x×]\s*\d+\s+matri(?:x|ces))\b", re.I)),
+    ("autocomplete", re.compile(
+        r"\b(?:auto[- ]?complete|auto[- ]?suggest|type[- ]?ahead|mapbox\s+search\s+box"
+        r"|places\s+(?:api\s+)?session\s+tokens?"
+        r"|suggest(?:ions|ed|ing|s)?\b[^.!?\n]{0,75}\b(?:as|while)\s+"
+        r"(?:users?|customers?|visitors?|people|they|we)\s+typ(?:e|es|ing)"
+        r"|(?:on|with)\s+every\s+keystroke\s+for\s+(?:address\s+)?suggestions)\b", re.I)),
+    ("reverse_geocode", re.compile(
+        r"\b(?:reverse[- ]geocod\w*|(?:street\s+)?address\s+(?:from|for|at)\s+"
+        r"(?:the\s+|a\s+pair\s+of\s+)?(?:coordinates|latitude\s+and\s+longitude))\b", re.I)),
+)
+_GENERIC_ROUTING = re.compile(r"\brouting\b", re.I)
+_DIRECTIONAL_COMPARISON = re.compile(
+    r"\b(?:(?:more|less|fewer|higher|lower|cheaper)\s+than|instead\s+of|rather\s+than)\b", re.I,
+)
+_PRICE_COMPARISON = re.compile(
+    r"\b(?:which\b[^.!?\n]{0,80}\b(?:cheaper|costs?\s+less|lower\s+cost)"
+    r"|(?:options?|providers?|vendors?|alternatives?)\s+and\s+(?:(?:their|the)\s+)?"
+    r"(?:(?:monthly|annual|yearly)\s+)?(?:costs?|prices?|pricing)"
+    r"|(?:is|are)\b[^.!?\n]{0,60}\bor\b[^.!?\n]{0,60}\b(?:cheaper|less\s+expensive|lower\s+cost))\b",
+    re.I,
+)
+_PER_CALL_CAP = re.compile(
+    r"\b(?:can|could)\b[^.!?\n]{0,65}\b(?:return|accept|handle|include)\s+"
+    r"(?:up to\s+)?\d[\d,]*\s+(?:results?|suggestions?|elements?|coordinates?|waypoints?|origins?|destinations?)"
+    r"\s+(?:per\s+(?:call|request)|in\s+(?:one|a single)\s+(?:call|request))\b",
+    re.I,
 )
 
 _DECLINE = re.compile(
@@ -73,11 +105,36 @@ _FIELD_CUES = {
     "use_case": re.compile(r"\buse[- ]?cases?\b", re.I),
 }
 
-# Built only from the §7 pool. That pool cannot be constructed from tracked
-# files (no question text, no template_family), so both tables are empty and
-# the rules-only path abstains on intent and team instead of guessing.
-INTENT_KEYWORDS: list[tuple[re.Pattern[str], str]] = []
+# Intent fallback table (intent_keywords.json): built from the docs and the tune
+# split of the §7 pool only. It is used ONLY on the rules-only (abstain) path; on
+# the model path the model's intent wins (design §3). TEAM_KEYWORDS stays empty.
+_KW_PATH = Path(__file__).resolve().parent / "intent_keywords.json"
+_WRAPPED = re.compile(r'(?:Customer wrote|Customer message):\s*["\u201c](.+?)["\u201d]', re.S)
+
+
+def _load_intent_keywords() -> list[tuple[re.Pattern[str], str]]:
+    data = json.loads(_KW_PATH.read_text(encoding="utf-8"))
+    return [(re.compile(pattern, re.I | re.M), label) for label, pattern in data["rules"]]
+
+
+INTENT_KEYWORDS: list[tuple[re.Pattern[str], str]] = _load_intent_keywords()
 TEAM_KEYWORDS: list[tuple[re.Pattern[str], str]] = []
+
+
+def customer_text(text: str) -> str:
+    """The quoted customer message inside a CRM/ticket wrapper, else the text itself."""
+    match = _WRAPPED.search(text or "")
+    return match.group(1) if match else (text or "")
+
+
+def explicit_intent(text: str) -> str | None:
+    """Resolve direct cost comparisons and per-call capacity questions."""
+    question = customer_text(text)
+    if _PRICE_COMPARISON.search(question):
+        return "pricing_comparison"
+    if _PER_CALL_CAP.search(question):
+        return "coverage_limits"
+    return None
 
 
 def is_decline_value(text: str) -> bool:
@@ -169,7 +226,26 @@ def _api_hits(text: str) -> list[dict]:
         match = pattern.search(text)
         if match:
             hits.append({"api": name, "span": match.group(0)})
+    if not any(hit["api"] == "directions" for hit in hits):
+        routing = _GENERIC_ROUTING.search(text)
+        if routing:
+            hits.append({"api": "directions", "span": routing.group(0)})
     return hits
+
+
+def _specific_api_families(hits: list[dict]) -> set[str]:
+    return {hit["api"] for hit in hits if not _GENERIC_ROUTING.fullmatch(hit["span"])}
+
+
+def _comparison_subject(text: str) -> str | None:
+    """Use an explicit API in the main clause of an asymmetric comparison."""
+    clauses = _DIRECTIONAL_COMPARISON.split(text, maxsplit=1)
+    if len(clauses) != 2:
+        return None
+    subject, comparator = (_specific_api_families(_api_hits(clause)) for clause in clauses)
+    if len(subject) == len(comparator) == 1 and subject != comparator:
+        return next(iter(subject))
+    return None
 
 
 def _keyword(text: str, table: list[tuple[re.Pattern[str], str]]) -> str | None:
@@ -180,6 +256,7 @@ def _keyword(text: str, table: list[tuple[re.Pattern[str], str]]) -> str | None:
 
 
 def _extract_user_text(text: str) -> dict:
+    question = customer_text(text)
     return {
         "text": text,
         "region": _region_hit(text),
@@ -189,9 +266,9 @@ def _extract_user_text(text: str) -> dict:
         "budget": _budget_hit(text),
         "technical_constraints": _constraint_hit(text),
         "use_case": _use_case_hit(text),
-        "api_hits": _api_hits(text),
+        "api_hits": _api_hits(question),
         "declines": _named_declines(text),
-        "intent": _keyword(text, INTENT_KEYWORDS),
+        "intent": _keyword(question, INTENT_KEYWORDS),
         "team": _keyword(text, TEAM_KEYWORDS),
     }
 
@@ -227,18 +304,15 @@ def extract(history: list[Any], query: str) -> dict:
         current["declines"] = _field_cues(previous_assistant)
     user_turns.append(current)
 
-    found: list[str] = []
-    all_hits: list[dict] = []
-    for index, turn in enumerate(user_turns):
-        for hit in turn["api_hits"]:
-            all_hits.append({"api": hit["api"], "span": hit["span"], "turn": index})
-            if hit["api"] not in found:
-                found.append(hit["api"])
+    all_hits = [{**hit, "turn": index} for index, turn in enumerate(user_turns) for hit in turn["api_hits"]]
     from . import seam
 
-    order = list(seam.load_vocab().apis)
-    ordered = [name for name in order if name in set(found)]
-    unique = ordered[0] if len(ordered) == 1 else None
+    found = {hit["api"] for hit in all_hits}
+    ordered = [name for name in seam.load_vocab().apis if name in found]
+    current_apis = _specific_api_families(current["api_hits"])
+    # A newly named operation takes precedence. A bare follow-up uses the earlier API evidence.
+    candidates = current_apis or _specific_api_families(all_hits) or found
+    unique = next(iter(candidates)) if len(candidates) == 1 else _comparison_subject(customer_text(query or ""))
     return {
         "user_turns": user_turns,
         "api_hits": all_hits,
@@ -252,6 +326,8 @@ def to_hints(extraction: dict) -> dict:
     hints: dict[str, Any] = {}
     if extraction["api_hits"]:
         hints["api"] = extraction["api_hits"]
+    if extraction["unique_api"] is not None:
+        hints["primary_api"] = extraction["unique_api"]
     fields = (
         "region",
         "monthly_volume",

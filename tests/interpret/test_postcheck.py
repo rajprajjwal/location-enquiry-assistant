@@ -104,3 +104,39 @@ def test_rule_api_wins_over_a_different_model_api() -> None:
     assert result["output"]["api"] == "directions"
     assert "api" in result["output"]["trace"]["rule_model_disagreements"]
     assert result["output"]["field_provenance"]["use_case_api"] == "rule"
+
+
+def test_specific_matrix_cue_updates_api_and_qualification_together() -> None:
+    result = postcheck(model_json(api="directions"), query="Can we calculate a 4x8 matrix?")
+    assert result["errors"] == []
+    assert result["output"]["api"] == "distance_matrix"
+    assert result["output"]["qualification_details"]["use_case_api"]["api"] == "distance_matrix"
+    assert result["output"]["field_provenance"]["use_case_api"] == "rule"
+
+
+def test_explicit_cost_comparison_resolves_single_quote_label() -> None:
+    result = postcheck(model_json(intent="pricing_quote", sub_intent="pricing_estimate"),
+                       query="For our delivery app, is pay-as-you-go or a monthly plan cheaper?")
+    assert result["errors"] == []
+    assert result["output"]["intent"] == "pricing_comparison"
+    assert result["output"]["sub_intent"] is None
+
+
+def test_explicit_result_cap_resolves_parameter_label() -> None:
+    result = postcheck(model_json(intent="docs_how_to", sub_intent="parameter_question"),
+                       query="Can our address picker return 16 results in a single request?")
+    assert result["errors"] == []
+    assert result["output"]["intent"] == "coverage_limits"
+
+
+def test_intent_tiebreak_preserves_a_reported_failure() -> None:
+    result = postcheck(model_json(intent="troubleshooting", sub_intent="error_resolution"),
+                       query="Our suggestions now all time out. Can the service return 16 results per call?")
+    assert result["errors"] == []
+    assert result["output"]["intent"] == "troubleshooting"
+
+
+def test_generic_billing_question_remains_a_quote() -> None:
+    result = postcheck(model_json(intent="pricing_quote"), query="Is the monthly plan cheaper now?")
+    assert result["errors"] == []
+    assert result["output"]["intent"] == "pricing_quote"
