@@ -20,7 +20,7 @@ import ssl
 import sys
 import threading
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 DEFAULT_BASE_URL = "https://103.42.50.41:1031/v1"
 DEFAULT_MODEL = "Qwen/Qwen3-8B"
@@ -68,6 +68,8 @@ class Completion:
     usage: dict | None
     latency_ms: int
     think_seen: bool
+    tool_calls: list[dict] = field(default_factory=list)
+    finish_reason: str | None = None
 
 
 def estimate_text_tokens(text: str) -> int:
@@ -88,6 +90,9 @@ def estimate_input_tokens(messages: list[dict]) -> int:
         if not isinstance(content, str):
             content = json.dumps(content, ensure_ascii=False, sort_keys=True)
         chunks.append(content)
+        metadata = {key: value for key, value in message.items() if key not in {"role", "content"}}
+        if metadata:
+            chunks.append(json.dumps(metadata, ensure_ascii=False, sort_keys=True))
     return estimate_text_tokens("\n".join(chunks))
 
 
@@ -148,6 +153,9 @@ class LLMClient:
         *,
         max_tokens: int = 512,
         temperature: float = 0,
+        tools: list[dict] | None = None,
+        tool_choice: str | dict | None = None,
+        response_format: dict | None = None,
     ) -> Completion:
         """Send one logical chat call. Retries 429/503 after 2s, 4s, then 8s."""
         if isinstance(max_tokens, bool) or not isinstance(max_tokens, int):
@@ -157,13 +165,24 @@ class LLMClient:
                 f"max_tokens must be 1..{MAX_COMPLETION_TOKENS}, got {max_tokens}"
             )
         outgoing = self._prepare_messages(messages)
+        if tool_choice is not None and not tools:
+            raise ConfigError("tool_choice requires tools")
+        extra = self._thinking_extra()
+        for name, value in (
+            ("tools", tools), ("tool_choice", tool_choice), ("response_format", response_format)
+        ):
+            if value is not None:
+                extra[name] = value
         estimated = estimate_input_tokens(outgoing)
+        if tools or response_format:
+            estimated += estimate_text_tokens(json.dumps(
+                {"tools": tools, "response_format": response_format}, ensure_ascii=False, sort_keys=True
+            ))
         if estimated + max_tokens > MAX_CONTEXT_TOKENS:
             raise BudgetExceeded(
                 f"estimated input tokens {estimated} + max_tokens {max_tokens} "
                 f"exceeds {MAX_CONTEXT_TOKENS}"
             )
-        extra = self._thinking_extra()
         started = time.perf_counter()
         with _CALL_LOCK:
             response = self._call_with_backoff(outgoing, max_tokens, temperature, extra)
@@ -172,6 +191,19 @@ class LLMClient:
         text = _scrub(self._api_key, text)
         usage = self._usage(response)
         model = _scrub(self._api_key, getattr(response, "model", None) or self._model)
+        choices = getattr(response, "choices", None) or []
+        message = getattr(choices[0], "message", None) if choices else None
+        tool_calls = []
+        for call in getattr(message, "tool_calls", None) or []:
+            function = getattr(call, "function", None)
+            tool_calls.append({
+                "id": _scrub(self._api_key, getattr(call, "id", "") or ""),
+                "type": getattr(call, "type", "function"),
+                "function": {
+                    "name": _scrub(self._api_key, getattr(function, "name", "") or ""),
+                    "arguments": _scrub(self._api_key, getattr(function, "arguments", "") or ""),
+                },
+            })
         return Completion(
             text=text,
             raw=text,
@@ -179,13 +211,12 @@ class LLMClient:
             usage=usage,
             latency_ms=latency_ms,
             think_seen=bool(_THINK_MARK.search(text)),
+            tool_calls=tool_calls,
+            finish_reason=getattr(choices[0], "finish_reason", None) if choices else None,
         )
 
     def _prepare_messages(self, messages: list[dict]) -> list[dict]:
-        copied = [
-            {"role": m.get("role"), "content": m.get("content")}
-            for m in messages
-        ]
+        copied = [dict(message) for message in messages]
         if self._thinking == "no_think":
             if copied and copied[-1].get("role") == "user" and isinstance(copied[-1].get("content"), str):
                 copied[-1]["content"] = copied[-1]["content"].rstrip() + "\n/no_think"

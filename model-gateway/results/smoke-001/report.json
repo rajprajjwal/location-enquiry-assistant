@@ -1,0 +1,93 @@
+{
+  "acceptance_review": {
+    "basis": "Model accepted by project owner as institute-provided; original model outputs and timings unchanged",
+    "previous_activity18_passed": false,
+    "updated_at_utc": "2026-11-19T20:01:54.460384+00:00"
+  },
+  "activity18_passed": false,
+  "frozen_records": 0,
+  "frozen_requested": false,
+  "frozen_successes": 0,
+  "inputs_sha256": null,
+  "latency_p50_ms": 430,
+  "latency_p95_ms": 714,
+  "latency_population": "synthetic smoke completions",
+  "latency_samples": 3,
+  "manifest_sha256": null,
+  "model_card": {
+    "model": "Qwen/Qwen3-8B",
+    "model_acceptance_basis": "Project owner confirmed use of the institute-provided model on 2026-11-20",
+    "non_embedding_parameters_billions": 6.95,
+    "project_model_accepted": true,
+    "strict_total_parameter_limit_pass": false,
+    "total_parameters_billions": 8.2,
+    "url": "https://huggingface.co/Qwen/Qwen3-8B"
+  },
+  "smoke": [
+    {
+      "passed": true,
+      "probe": "chat",
+      "response": {
+        "finish_reason": "stop",
+        "latency_ms": 714,
+        "model": "Qwen/Qwen3-8B",
+        "raw": "pong",
+        "text": "pong",
+        "think_seen": false,
+        "tool_calls": [],
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 19,
+          "total_tokens": 21
+        }
+      }
+    },
+    {
+      "passed": true,
+      "probe": "json",
+      "response": {
+        "finish_reason": "stop",
+        "latency_ms": 410,
+        "model": "Qwen/Qwen3-8B",
+        "raw": "{\"status\": \"ok\"}",
+        "text": "{\"status\": \"ok\"}",
+        "think_seen": false,
+        "tool_calls": [],
+        "usage": {
+          "completion_tokens": 7,
+          "prompt_tokens": 29,
+          "total_tokens": 36
+        }
+      }
+    },
+    {
+      "passed": true,
+      "probe": "tool",
+      "response": {
+        "finish_reason": "stop",
+        "latency_ms": 430,
+        "model": "Qwen/Qwen3-8B",
+        "raw": "",
+        "text": "",
+        "think_seen": false,
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\n  \"value\": 7\n}",
+              "name": "echo_value"
+            },
+            "id": "chatcmpl-tool-83572b999314b9ce",
+            "type": "function"
+          }
+        ],
+        "usage": {
+          "completion_tokens": 10,
+          "prompt_tokens": 164,
+          "total_tokens": 174
+        }
+      }
+    }
+  ],
+  "smoke_passed": true,
+  "started_at_utc": "2026-11-19T07:07:27.643497+00:00"
+}
