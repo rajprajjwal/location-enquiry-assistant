@@ -1,0 +1,174 @@
+LOCATION SERVICES KNOWLEDGE BASE
+==================================
+
+## 1. Core Location Services Capabilities
+
+### 1.1 Real-Time Location API
+- Provides GPS/GNSS coordinates with accuracy from 1m to 50m depending on signal
+- Supports REST and WebSocket protocols
+- Rate limits: 1000 requests/min (standard), 10000/min (enterprise)
+- Latency: <200ms p95 for REST, <50ms for WebSocket streaming
+- Coordinate formats: WGS84 (default), UTM, MGRS
+- Required parameters: device_id (string), timestamp (ISO8601), auth_token
+- Response structure: { lat, lon, accuracy_m, timestamp, source }
+
+### 1.2 Geofencing Service
+- Supports circular, polygon, and corridor geofences
+- Max geofences per account: 500 (standard), unlimited (enterprise)
+- Event types: ENTER, EXIT, DWELL (configurable dwell time 1s–24h)
+- Webhook delivery with retry (3 attempts, exponential backoff)
+- Geofence definition: GeoJSON format required
+- Typical use cases: fleet management, asset tracking, proximity alerts
+
+### 1.3 Route Optimization
+- Supports up to 150 waypoints per request
+- Algorithms: TSP (Travelling Salesman), VRP (Vehicle Routing Problem)
+- Traffic-aware routing with historical and real-time data
+- Constraints: time windows, vehicle capacity, driver hours
+- Response includes: optimized_route[], total_distance_km, estimated_duration_s
+
+### 1.4 Indoor Positioning
+- Technologies: Wi-Fi fingerprinting, BLE beacons, UWB
+- Accuracy: 1–3m (BLE), 0.1–0.3m (UWB)
+- Requires site survey and beacon deployment
+- Floor-level detection supported
+- SDK available for iOS and Android
+
+### 1.5 Geocoding & Reverse Geocoding
+- Forward: address string → coordinates
+- Reverse: coordinates → address
+- Coverage: 195 countries
+- Batch processing: up to 1000 addresses per request
+- Response includes: formatted_address, confidence_score (0–1), components
+
+---
+
+## 2. Integration Details
+
+### 2.1 Authentication
+- API Key (header: X-API-Key) for server-to-server
+- OAuth 2.0 (client_credentials flow) for user-context calls
+- JWT expiry: 3600s, refresh supported
+- IP allowlisting available for enterprise
+
+### 2.2 SDKs
+- iOS SDK: Swift, min iOS 14, CocoaPods / SPM
+- Android SDK: Kotlin/Java, min API 21, Maven/Gradle
+- Web SDK: JavaScript/TypeScript, npm package @locationsvc/web
+- Server SDKs: Python, Node.js, Java, Go
+
+### 2.3 Webhooks
+- HTTPS endpoint required (TLS 1.2+)
+- Signature verification: HMAC-SHA256 header X-Signature
+- Payload format: JSON
+- Retry policy: 3 retries with 5s, 30s, 300s delays
+
+### 2.4 Data Residency
+- Regions: EU (Frankfurt), US (Virginia), APAC (Singapore)
+- Data residency guarantees available for enterprise
+- GDPR compliant; DPA available on request
+
+---
+
+## 3. Limitations and Known Issues
+
+### 3.1 Known Limitations
+- Indoor positioning requires physical beacon installation (2–4 week lead time)
+- Route optimization >150 waypoints requires async job endpoint
+- WebSocket connections drop after 24h; client must reconnect
+- Geofence events may be delayed up to 30s under high load
+- Batch geocoding limited to 1000 per request; use pagination for larger sets
+
+### 3.2 Common Error Codes
+- 400 INVALID_COORDINATES: lat/lon out of valid range (-90/90, -180/180)
+- 401 AUTH_FAILED: invalid or expired token
+- 403 QUOTA_EXCEEDED: rate limit or monthly quota hit
+- 404 DEVICE_NOT_FOUND: device_id not registered
+- 422 MISSING_PARAMETER: required field absent (check required_fields in response)
+- 429 RATE_LIMITED: slow down requests; check Retry-After header
+- 500 INTERNAL_ERROR: transient; retry with exponential backoff
+- 503 SERVICE_UNAVAILABLE: maintenance window or incident
+
+### 3.3 Diagnostic Checklist for Location API Errors
+1. Verify device_id is registered in the portal
+2. Check auth_token expiry (JWT exp claim)
+3. Confirm timestamp is ISO8601 and within ±5 min of server time
+4. Validate coordinate range: lat [-90,90], lon [-180,180]
+5. Check account quota in dashboard
+6. Review response body for required_fields array on 422 errors
+
+---
+
+## 4. Pricing and Plans
+
+### 4.1 Standard Plan
+- Up to 500K location API calls/month
+- Up to 100 geofences
+- REST API only
+- Email support, 48h SLA
+- $299/month
+
+### 4.2 Professional Plan
+- Up to 5M location API calls/month
+- Up to 1000 geofences
+- REST + WebSocket
+- Route optimization included
+- Chat + email support, 8h SLA
+- $999/month
+
+### 4.3 Enterprise Plan
+- Unlimited API calls
+- Unlimited geofences
+- All features including indoor positioning
+- Dedicated support, 1h SLA
+- Custom pricing; contact sales
+- SLA: 99.99% uptime guarantee
+- Data residency options
+
+---
+
+## 5. Escalation Policy
+
+### 5.1 Support Escalation Criteria
+- Escalate to L2 if:
+  - Issue unresolved after 2 diagnostic cycles
+  - Error rate >5% sustained for >15 minutes
+  - Data loss or corruption suspected
+  - Security incident suspected
+- Escalate to L3 / Engineering if:
+  - L2 cannot reproduce or resolve within 4h
+  - Systemic issue affecting multiple customers
+- Escalation requires: case_id, affected_service, error_codes[], steps_taken[], impact_assessment
+
+### 5.2 Sales Escalation Criteria
+- Escalate to Solutions Engineer if:
+  - Custom integration requirements beyond standard SDK
+  - Accuracy requirements <1m (UWB evaluation needed)
+  - >10,000 concurrent devices
+  - Data residency or compliance requirements
+- Escalate to Legal/Commercial if:
+  - Custom SLA negotiation
+  - DPA or data processing agreement needed
+
+---
+
+## 6. Qualification Checklist (Sales)
+
+### 6.1 BANT+ Qualification
+- Budget: confirmed budget range or approval process?
+- Authority: is the contact the decision-maker or influencer?
+- Need: primary use case (fleet, asset, indoor, proximity)?
+- Timeline: go-live target date?
+- Technical: platform (iOS/Android/Web/Server), expected device count, accuracy requirement, integration method?
+- Compliance: data residency, GDPR, industry regulations?
+
+### 6.2 Discovery Questions
+- What is the primary use case for location services?
+- How many devices/assets will be tracked simultaneously?
+- What accuracy level is required (city, street, meter, sub-meter)?
+- What platforms need to be supported?
+- Are there existing systems to integrate with?
+- What is the expected monthly API call volume?
+- Are there data residency or compliance requirements?
+- What is the target go-live date?
+- Who else is involved in the technical and commercial decision?

@@ -1,19 +1,34 @@
-# Purpose: keep local env, caches and secrets out of git.
-# Use case: blocks keys/certs (e.g. *.crt, *.pem, .env, TRACKB_API_KEY) and the .venv/.
-# Example: .venv/ and __pycache__/ below are never committed.
+
+# Python virtual environments
 .venv/
+.venv312/
+venv/
+env/
+
+# Python cache files
 __pycache__/
 *.py[cod]
+*.pyo
+
+# Python build artifacts
+build/
+dist/
 *.egg-info/
-.Python
-.DS_Store
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables and secrets
 .env
 .env.*
-*.key
-*.pem
-*.crt
-*API_KEY*
-*api_key*
-TRACKB_API_KEY
-# Generated scratch (reports and gold JSON are committed)
-.pytest_cache/
+!.env.example
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
