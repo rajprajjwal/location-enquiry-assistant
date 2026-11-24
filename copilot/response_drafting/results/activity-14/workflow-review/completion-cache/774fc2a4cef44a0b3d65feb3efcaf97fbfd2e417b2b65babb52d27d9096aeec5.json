@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"Dubai\",\"evidence\":\"We're launching in Dubai\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps Autocomplete\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"Dubai\",\"evidence\":\"We're launching in Dubai\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps Autocomplete\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1316,
+    "completion_tokens": 149,
+    "total_tokens": 1465
+  },
+  "latency_ms": 3474,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

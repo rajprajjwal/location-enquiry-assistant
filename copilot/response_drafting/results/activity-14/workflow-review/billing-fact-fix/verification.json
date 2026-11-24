@@ -1,0 +1,323 @@
+{
+  "status": "Bounded request-input precision fix; source stable for snapshot.",
+  "source_sha256": {
+    "copilot/qualification/request_scope.py": "7138f196739accb8c431517e65e525eb5e14a89e112ae6c1f8dfea8f86c2ac74",
+    "copilot/qualification/extraction.py": "047e428d2bb37f10b516011f3af53ad8255ba9956e15690f33a71ef8ef2e7131",
+    "tests/enquiry_workflow/test_requested_billing_inputs.py": "d7426bbe531a9bad8d720b5c85a8e8827983b06b00a9e529fdc80e0385978fae"
+  },
+  "scope": "Explicit estimate/comparison inputs remain assumptions. Real asserted requirements remain facts. No model calls, GT labels, frozen/holdout or sealed runtime changes.",
+  "tests": {
+    "passed": 151,
+    "failed": 0,
+    "command": ".venv/bin/python -B -m pytest -q tests/enquiry_workflow/test_requested_billing_inputs.py tests/enquiry_workflow/test_request_scope.py tests/enquiry_workflow/test_requirement_binding.py tests/enquiry_workflow/test_qualification.py tests/enquiry_workflow/test_fact_admission.py -p no:cacheprovider"
+  },
+  "examples": [
+    {
+      "query": "Google vs Mapbox reverse geocoding for 500,000 lookups a month (display only, no storage)?",
+      "direct_extracted_facts": [],
+      "context_actual_facts": {},
+      "context_assumptions": {
+        "monthly_volume": {
+          "field": "monthly_volume_assumption",
+          "status": "supplied",
+          "value": {
+            "raw": "500,000 lookups a month",
+            "requests_per_month": 500000,
+            "unit": "lookups_per_month",
+            "basis": "scenario_assumption",
+            "evidence": "Google vs Mapbox reverse geocoding for 500,000 lookups a month (display only, no storage)"
+          },
+          "source": "query",
+          "evidence": "Google vs Mapbox reverse geocoding for 500,000 lookups a month (display only, no storage)",
+          "start": null,
+          "end": null
+        },
+        "alternative_providers": {
+          "field": "alternative_providers",
+          "status": "supplied",
+          "value": {
+            "value": [
+              "Google Maps Platform",
+              "Mapbox"
+            ],
+            "basis": "requested_scope",
+            "evidence": "Google vs Mapbox"
+          },
+          "source": "query",
+          "evidence": "Google vs Mapbox",
+          "start": 0,
+          "end": 16
+        },
+        "storage_required": {
+          "field": "storage_required",
+          "status": "supplied",
+          "value": {
+            "value": false,
+            "basis": "requested_scope",
+            "evidence": "no storage"
+          },
+          "source": "query",
+          "evidence": "no storage",
+          "start": 78,
+          "end": 88
+        }
+      }
+    },
+    {
+      "query": "Ola vs Mapbox reverse geocoding when we must store 300,000 results a month?",
+      "direct_extracted_facts": [],
+      "context_actual_facts": {},
+      "context_assumptions": {
+        "alternative_providers": {
+          "field": "alternative_providers",
+          "status": "supplied",
+          "value": {
+            "value": [
+              "Ola Maps",
+              "Mapbox"
+            ],
+            "basis": "requested_scope",
+            "evidence": "Ola vs Mapbox"
+          },
+          "source": "query",
+          "evidence": "Ola vs Mapbox",
+          "start": 0,
+          "end": 13
+        },
+        "storage_required": {
+          "field": "storage_required",
+          "status": "supplied",
+          "value": {
+            "value": true,
+            "basis": "requested_scope",
+            "evidence": "must store 300,000 results"
+          },
+          "source": "query",
+          "evidence": "must store 300,000 results",
+          "start": 40,
+          "end": 66
+        }
+      }
+    },
+    {
+      "query": "Will Google bill our Place Autocomplete and the final Place Details call as one session if their keys belong to two projects?",
+      "direct_extracted_facts": [],
+      "context_actual_facts": {},
+      "context_assumptions": {
+        "details_completion": {
+          "field": "details_completion",
+          "status": "supplied",
+          "value": {
+            "value": true,
+            "basis": "requested_scope",
+            "evidence": "final Place Details call"
+          },
+          "source": "query",
+          "evidence": "final Place Details call",
+          "start": 48,
+          "end": 72
+        }
+      }
+    },
+    {
+      "query": "If our Autocomplete session ends with Place Details Pro, do we pay for twelve requests?",
+      "direct_extracted_facts": [],
+      "context_actual_facts": {},
+      "context_assumptions": {
+        "details_completion": {
+          "field": "details_completion",
+          "status": "supplied",
+          "value": {
+            "value": true,
+            "basis": "requested_scope",
+            "evidence": "ends with Place Details Pro"
+          },
+          "source": "query",
+          "evidence": "ends with Place Details Pro",
+          "start": 28,
+          "end": 55
+        },
+        "details_sku": {
+          "field": "details_sku",
+          "status": "supplied",
+          "value": {
+            "value": "Place Details Pro",
+            "basis": "requested_scope",
+            "evidence": "ends with Place Details Pro"
+          },
+          "source": "query",
+          "evidence": "ends with Place Details Pro",
+          "start": 28,
+          "end": 55
+        }
+      }
+    },
+    {
+      "query": "Compare the cost of point-to-point driving routes.",
+      "direct_extracted_facts": [],
+      "context_actual_facts": {},
+      "context_assumptions": {
+        "travel_mode": {
+          "field": "travel_mode",
+          "status": "supplied",
+          "value": {
+            "value": "driving",
+            "basis": "requested_scope",
+            "evidence": "driving routes"
+          },
+          "source": "query",
+          "evidence": "driving routes",
+          "start": 35,
+          "end": 49
+        }
+      }
+    },
+    {
+      "query": "What will two-wheeler routes via the Routes API cost?",
+      "direct_extracted_facts": [],
+      "context_actual_facts": {},
+      "context_assumptions": {
+        "travel_mode": {
+          "field": "travel_mode",
+          "status": "supplied",
+          "value": {
+            "value": "two-wheeler",
+            "basis": "requested_scope",
+            "evidence": "two-wheeler routes"
+          },
+          "source": "query",
+          "evidence": "two-wheeler routes",
+          "start": 10,
+          "end": 28
+        }
+      }
+    },
+    {
+      "query": "We must store 300,000 results a month.",
+      "direct_extracted_facts": [
+        {
+          "field": "storage_required",
+          "value": true,
+          "source": "query",
+          "evidence": "must store 300,000 results",
+          "start": 3,
+          "end": 29
+        }
+      ],
+      "context_actual_facts": {
+        "storage_required": {
+          "field": "storage_required",
+          "status": "supplied",
+          "value": true,
+          "source": "query",
+          "evidence": "must store 300,000 results",
+          "start": 3,
+          "end": 29
+        }
+      },
+      "context_assumptions": {}
+    },
+    {
+      "query": "Our session ends with Place Details Pro.",
+      "direct_extracted_facts": [
+        {
+          "field": "details_completion",
+          "value": true,
+          "source": "query",
+          "evidence": "ends with Place Details Pro",
+          "start": 12,
+          "end": 39
+        },
+        {
+          "field": "details_sku",
+          "value": "Place Details Pro",
+          "source": "query",
+          "evidence": "ends with Place Details Pro",
+          "start": 12,
+          "end": 39
+        }
+      ],
+      "context_actual_facts": {
+        "details_completion": {
+          "field": "details_completion",
+          "status": "supplied",
+          "value": true,
+          "source": "query",
+          "evidence": "ends with Place Details Pro",
+          "start": 12,
+          "end": 39
+        },
+        "details_sku": {
+          "field": "details_sku",
+          "status": "supplied",
+          "value": "Place Details Pro",
+          "source": "query",
+          "evidence": "ends with Place Details Pro",
+          "start": 12,
+          "end": 39
+        }
+      },
+      "context_assumptions": {}
+    },
+    {
+      "query": "We do not store any responses.",
+      "direct_extracted_facts": [
+        {
+          "field": "storage_required",
+          "value": false,
+          "source": "query",
+          "evidence": "do not store any responses",
+          "start": 3,
+          "end": 29
+        }
+      ],
+      "context_actual_facts": {
+        "storage_required": {
+          "field": "storage_required",
+          "status": "supplied",
+          "value": false,
+          "source": "query",
+          "evidence": "do not store any responses",
+          "start": 3,
+          "end": 29
+        }
+      },
+      "context_assumptions": {}
+    },
+    {
+      "query": "The documentation says sessions end with Place Details Pro.",
+      "direct_extracted_facts": [],
+      "context_actual_facts": {},
+      "context_assumptions": {}
+    },
+    {
+      "query": "What would it cost if we might store addresses?",
+      "direct_extracted_facts": [],
+      "context_actual_facts": {},
+      "context_assumptions": {}
+    }
+  ],
+  "integrated_proof": "Context evidence captured after removal of the unconditional Details-SKU scan. Requested options remain assumptions; only asserted customer requirements become actual facts.",
+  "known_remaining_limits": [
+    {
+      "area": "Provider-comparison applicability",
+      "example": "Compare Mapbox and Ola Directions for 100,000 requests per month.",
+      "observation": "The named comparison has provider candidates but does not satisfy the discovery-based selection predicate, so this profile currently produces no requirement groups.",
+      "status": "Recorded catalogue coverage limit. No runtime or reference change made for this observation."
+    },
+    {
+      "area": "Explicit monthly estimate parsing",
+      "examples": [
+        "How much is Google Distance Matrix for 120,000 Distance Matrix elements per month?",
+        "Which Mapbox Directions product prices apply to 100,000 requests per month?"
+      ],
+      "observation": "The scenario-intent recognizer does not cover the standalone how-much construction or plural prices. Without a parsed monthly workload, billable-unit-specific question suppression cannot activate.",
+      "status": "Recorded parser coverage limit. No additional variant or reference change made."
+    }
+  ],
+  "supporting_source_sha256": {
+    "copilot/qualification/requirements.py": "d4bf8811364389b653f1664cafc70efe3dfb149c19ef6cce787aefe2862ee251",
+    "copilot/qualification/workload.py": "3724bdc9ab5f27e8635d30e67350cbd51c54117972f3e2a362b4de617de2587e"
+  },
+  "acceptance_note": "These bounded fact-binding checks do not establish a complete requirement catalogue or achievement of Activity 14 F1. Primary acceptance remains subject to the controlled end-to-end scores."
+}

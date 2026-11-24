@@ -1,0 +1,22 @@
+{
+  "cases": 32,
+  "preserved": {
+    "route": 32,
+    "next_action": 32,
+    "owner": 32,
+    "approvals": 32,
+    "proposed_actions": 32,
+    "active_questions": 32,
+    "pending_reply": 32,
+    "asked": 32,
+    "answered": 32,
+    "awaiting": 32,
+    "clarification_messages": 32
+  },
+  "reopened_cases": 0,
+  "reopened_preserved": 0,
+  "excluded_attempts": [],
+  "endpoint_errors": [],
+  "endpoint_calls": 137,
+  "changes": []
+}

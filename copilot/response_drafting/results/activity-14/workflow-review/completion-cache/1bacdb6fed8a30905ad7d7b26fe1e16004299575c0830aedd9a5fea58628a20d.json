@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"capability_fit\",\"api\":\"directions\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"hospital ambulance network in Hyderabad\",\"evidence\":\"Hi, we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?\"},\"region\":{\"value\":\"Hyderabad\",\"evidence\":\"Hi, we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?\"},\"technical_constraints\":{\"value\":\"fastest route under live traffic\",\"evidence\":\"Hi, we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?\"}}}",
+  "raw": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"capability_fit\",\"api\":\"directions\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"hospital ambulance network in Hyderabad\",\"evidence\":\"Hi, we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?\"},\"region\":{\"value\":\"Hyderabad\",\"evidence\":\"Hi, we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?\"},\"technical_constraints\":{\"value\":\"fastest route under live traffic\",\"evidence\":\"Hi, we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?\"}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1331,
+    "completion_tokens": 176,
+    "total_tokens": 1507
+  },
+  "latency_ms": 4076,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

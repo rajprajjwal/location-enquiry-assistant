@@ -1,0 +1,1152 @@
+{
+  "cases": 80,
+  "paired_cases": 80,
+  "prior_predictions_sha256": "23933c73ef34ea87f56b9e2709165a71fb34898792d5a5744df50e2a3aa5dc2d",
+  "current_predictions_sha256": "826bfc2184299941f21a5f90e902c79bd718ac90900af0a09d9f4321c6583571",
+  "comparison": "Historical frozen-qualification initial snapshots.integrated versus current initial snapshot. No synthetic replies or reopened turns included.",
+  "interpretation": "Observed differences across complete implementations and fresh model requests; this is not isolated attribution, new correctness scoring, tuning or a control-invariance claim.",
+  "normalization": "Only UUID values in generated workflow identifier fields are normalized; customer facts, record targets and payload content remain visible.",
+  "uncompared_prior_only_fields": [
+    "awaiting",
+    "clarification_messages"
+  ],
+  "counts": {
+    "route": 1,
+    "owner_identity": 8,
+    "owner_reason_only": 11,
+    "next_action_control": 1,
+    "next_action_description_only": 0,
+    "approval_payload_or_status": 2,
+    "proposed_actions": 2,
+    "active_question": 0,
+    "pending_reply": 0,
+    "asked": 0,
+    "answered": 0,
+    "interpretation": 2,
+    "any_common_snapshot_field": 21,
+    "meaningful_control": 11
+  },
+  "routes_before": {
+    "final": 66,
+    "escalated": 14
+  },
+  "routes_after": {
+    "final": 65,
+    "escalated": 15
+  },
+  "records": [
+    {
+      "record_id": "GT-LBS-AC-045",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+          },
+          "after": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "An existing customer needs service guidance."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-AC-205",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is exploring providers for a stated business requirement; ownership is provisional until customer status is confirmed."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-AC-210",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-AC-222",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for a documented product limit or behavior."
+          },
+          "after": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "An existing customer needs service guidance."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-AC-229",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer needs qualification of a proposed deployment before selecting a provider."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-AC-230",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. no escalation (support)"
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": true,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-011",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is exploring providers for a stated business requirement; ownership is provisional until customer status is confirmed."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-012",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is exploring providers for a stated business requirement; ownership is provisional until customer status is confirmed."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. no escalation (support)"
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": true,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The model found no passage that answered the enquiry."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Licensing obligations or commercial reuse require provisional Sales ownership. The model found no passage that answered the enquiry."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": true,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-084",
+      "changes": {},
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": {
+        "before": {
+          "api": "directions",
+          "intent": "human_handoff"
+        },
+        "after": {
+          "api": "directions",
+          "intent": "troubleshooting"
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. no escalation (support)"
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": true,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-201",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is exploring providers for a stated business requirement; ownership is provisional until customer status is confirmed."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. no escalation (support) The cited passage does not directly answer the enquiry."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed. The cited passage does not directly answer the enquiry."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": true,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "changes": {
+        "next_action": {
+          "before": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "refuse",
+            "description": "The cited passage does not directly answer the enquiry.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+          },
+          "after": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The cited passage does not directly answer the enquiry."
+          }
+        },
+        "route": {
+          "before": "final",
+          "after": "escalated"
+        }
+      },
+      "changed_categories": {
+        "route": true,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": true,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. A routine price estimate or billing question can use the provider's published rates."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer requested a deployment quote; Sales ownership is provisional until the relationship is confirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": true,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-DM-097",
+      "changes": {
+        "approvals": {
+          "before": [
+            {
+              "type": "record_update",
+              "payload": {
+                "record_id": "TKT-48403",
+                "mode": "propose",
+                "fields": {
+                  "status": "solution_proposed",
+                  "owner": "Support L1",
+                  "api": "distance_matrix",
+                  "category": "coverage_error",
+                  "providers": "Google Maps Platform",
+                  "severity": "SEV4"
+                },
+                "diff": {
+                  "status": {
+                    "old": null,
+                    "new": "solution_proposed"
+                  },
+                  "owner": {
+                    "old": null,
+                    "new": "Support L1"
+                  },
+                  "api": {
+                    "old": null,
+                    "new": "distance_matrix"
+                  },
+                  "category": {
+                    "old": null,
+                    "new": "coverage_error"
+                  },
+                  "providers": {
+                    "old": null,
+                    "new": "Google Maps Platform"
+                  },
+                  "severity": {
+                    "old": null,
+                    "new": "SEV4"
+                  }
+                }
+              },
+              "status": "pending"
+            }
+          ],
+          "after": [
+            {
+              "type": "record_update",
+              "payload": {
+                "record_id": "TKT-48403",
+                "mode": "propose",
+                "fields": {
+                  "status": "solution_proposed",
+                  "owner": "Support L1",
+                  "api": "distance_matrix",
+                  "category": "error_resolution",
+                  "providers": "Google Maps Platform",
+                  "severity": "SEV4"
+                },
+                "diff": {
+                  "status": {
+                    "old": null,
+                    "new": "solution_proposed"
+                  },
+                  "owner": {
+                    "old": null,
+                    "new": "Support L1"
+                  },
+                  "api": {
+                    "old": null,
+                    "new": "distance_matrix"
+                  },
+                  "category": {
+                    "old": null,
+                    "new": "error_resolution"
+                  },
+                  "providers": {
+                    "old": null,
+                    "new": "Google Maps Platform"
+                  },
+                  "severity": {
+                    "old": null,
+                    "new": "SEV4"
+                  }
+                }
+              },
+              "status": "pending"
+            }
+          ]
+        },
+        "proposed_actions": {
+          "before": [
+            {
+              "action_type": "propose_record_update",
+              "description": "Review the proposed change to TKT-48403.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "record_update": {
+                "record_id": "TKT-48403",
+                "mode": "propose",
+                "fields": {
+                  "status": "solution_proposed",
+                  "owner": "Support L1",
+                  "api": "distance_matrix",
+                  "category": "coverage_error",
+                  "providers": "Google Maps Platform",
+                  "severity": "SEV4"
+                },
+                "diff": {
+                  "status": {
+                    "old": null,
+                    "new": "solution_proposed"
+                  },
+                  "owner": {
+                    "old": null,
+                    "new": "Support L1"
+                  },
+                  "api": {
+                    "old": null,
+                    "new": "distance_matrix"
+                  },
+                  "category": {
+                    "old": null,
+                    "new": "coverage_error"
+                  },
+                  "providers": {
+                    "old": null,
+                    "new": "Google Maps Platform"
+                  },
+                  "severity": {
+                    "old": null,
+                    "new": "SEV4"
+                  }
+                }
+              }
+            }
+          ],
+          "after": [
+            {
+              "action_type": "propose_record_update",
+              "description": "Review the proposed change to TKT-48403.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "record_update": {
+                "record_id": "TKT-48403",
+                "mode": "propose",
+                "fields": {
+                  "status": "solution_proposed",
+                  "owner": "Support L1",
+                  "api": "distance_matrix",
+                  "category": "error_resolution",
+                  "providers": "Google Maps Platform",
+                  "severity": "SEV4"
+                },
+                "diff": {
+                  "status": {
+                    "old": null,
+                    "new": "solution_proposed"
+                  },
+                  "owner": {
+                    "old": null,
+                    "new": "Support L1"
+                  },
+                  "api": {
+                    "old": null,
+                    "new": "distance_matrix"
+                  },
+                  "category": {
+                    "old": null,
+                    "new": "error_resolution"
+                  },
+                  "providers": {
+                    "old": null,
+                    "new": "Google Maps Platform"
+                  },
+                  "severity": {
+                    "old": null,
+                    "new": "SEV4"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": true,
+        "proposed_actions": true,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-RG-001",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+          },
+          "after": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "An existing customer needs service guidance."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-RG-082",
+      "changes": {
+        "approvals": {
+          "before": [
+            {
+              "type": "record_update",
+              "payload": {
+                "record_id": "TKT-38973",
+                "mode": "propose",
+                "fields": {
+                  "owner": "Support L1",
+                  "api": "reverse_geocode",
+                  "category": "capability_fit",
+                  "providers": "OSM Nominatim",
+                  "severity": "SEV4"
+                },
+                "diff": {
+                  "owner": {
+                    "old": null,
+                    "new": "Support L1"
+                  },
+                  "api": {
+                    "old": null,
+                    "new": "reverse_geocode"
+                  },
+                  "category": {
+                    "old": null,
+                    "new": "capability_fit"
+                  },
+                  "providers": {
+                    "old": null,
+                    "new": "OSM Nominatim"
+                  },
+                  "severity": {
+                    "old": null,
+                    "new": "SEV4"
+                  }
+                }
+              },
+              "status": "pending"
+            }
+          ],
+          "after": [
+            {
+              "type": "record_update",
+              "payload": {
+                "record_id": "TKT-38973",
+                "mode": "propose",
+                "fields": {
+                  "owner": "Support L1",
+                  "api": "reverse_geocode",
+                  "category": "capability_match",
+                  "providers": "OSM Nominatim",
+                  "severity": "SEV4"
+                },
+                "diff": {
+                  "owner": {
+                    "old": null,
+                    "new": "Support L1"
+                  },
+                  "api": {
+                    "old": null,
+                    "new": "reverse_geocode"
+                  },
+                  "category": {
+                    "old": null,
+                    "new": "capability_match"
+                  },
+                  "providers": {
+                    "old": null,
+                    "new": "OSM Nominatim"
+                  },
+                  "severity": {
+                    "old": null,
+                    "new": "SEV4"
+                  }
+                }
+              },
+              "status": "pending"
+            }
+          ]
+        },
+        "proposed_actions": {
+          "before": [
+            {
+              "action_type": "propose_record_update",
+              "description": "Review the proposed change to TKT-38973.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "record_update": {
+                "record_id": "TKT-38973",
+                "mode": "propose",
+                "fields": {
+                  "owner": "Support L1",
+                  "api": "reverse_geocode",
+                  "category": "capability_fit",
+                  "providers": "OSM Nominatim",
+                  "severity": "SEV4"
+                },
+                "diff": {
+                  "owner": {
+                    "old": null,
+                    "new": "Support L1"
+                  },
+                  "api": {
+                    "old": null,
+                    "new": "reverse_geocode"
+                  },
+                  "category": {
+                    "old": null,
+                    "new": "capability_fit"
+                  },
+                  "providers": {
+                    "old": null,
+                    "new": "OSM Nominatim"
+                  },
+                  "severity": {
+                    "old": null,
+                    "new": "SEV4"
+                  }
+                }
+              }
+            }
+          ],
+          "after": [
+            {
+              "action_type": "propose_record_update",
+              "description": "Review the proposed change to TKT-38973.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "record_update": {
+                "record_id": "TKT-38973",
+                "mode": "propose",
+                "fields": {
+                  "owner": "Support L1",
+                  "api": "reverse_geocode",
+                  "category": "capability_match",
+                  "providers": "OSM Nominatim",
+                  "severity": "SEV4"
+                },
+                "diff": {
+                  "owner": {
+                    "old": null,
+                    "new": "Support L1"
+                  },
+                  "api": {
+                    "old": null,
+                    "new": "reverse_geocode"
+                  },
+                  "category": {
+                    "old": null,
+                    "new": "capability_match"
+                  },
+                  "providers": {
+                    "old": null,
+                    "new": "OSM Nominatim"
+                  },
+                  "severity": {
+                    "old": null,
+                    "new": "SEV4"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": true,
+        "proposed_actions": true,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": {
+        "before": {
+          "api": "reverse_geocode",
+          "intent": "sales_qualification"
+        },
+        "after": {
+          "api": "reverse_geocode",
+          "intent": "capability_match"
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-201",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is exploring providers for a stated business requirement; ownership is provisional until customer status is confirmed."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": false,
+        "owner_reason_only": true,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Licensing obligations or commercial reuse require provisional Sales ownership."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": true,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "changes": {
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+          }
+        }
+      },
+      "changed_categories": {
+        "route": false,
+        "owner_identity": true,
+        "owner_reason_only": false,
+        "next_action_control": false,
+        "next_action_description_only": false,
+        "approval_payload_or_status": false,
+        "proposed_actions": false,
+        "active_question": false,
+        "pending_reply": false,
+        "asked": false,
+        "answered": false
+      },
+      "interpretation": null
+    }
+  ],
+  "frozen_cases": 80,
+  "holdout_cases": 0
+}

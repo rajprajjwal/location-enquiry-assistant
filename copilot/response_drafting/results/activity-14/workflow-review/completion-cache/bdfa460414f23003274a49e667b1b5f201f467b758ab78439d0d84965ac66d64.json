@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"in India\"},\"monthly_volume\":{\"value\":\"7,000 elements a month\",\"evidence\":\"7,000 elements a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"in India\"},\"monthly_volume\":{\"value\":\"7,000 elements a month\",\"evidence\":\"7,000 elements a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1384,
+    "completion_tokens": 154,
+    "total_tokens": 1538
+  },
+  "latency_ms": 3576,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

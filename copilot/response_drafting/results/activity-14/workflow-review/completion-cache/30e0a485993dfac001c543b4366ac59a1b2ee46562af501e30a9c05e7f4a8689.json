@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The issue might be related to how the duration_in_traffic is being displayed or interpreted. The documentation indicates that the duration_in_traffic is available under specific conditions, and the display might not be correctly rendering the traffic-aware duration.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The issue might be related to how the duration_in_traffic is being displayed or interpreted. The documentation indicates that the duration_in_traffic is available under specific conditions, and the display might not be correctly rendering the traffic-aware duration.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2197,
+    "completion_tokens": 54,
+    "total_tokens": 2251
+  },
+  "latency_ms": 1513,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

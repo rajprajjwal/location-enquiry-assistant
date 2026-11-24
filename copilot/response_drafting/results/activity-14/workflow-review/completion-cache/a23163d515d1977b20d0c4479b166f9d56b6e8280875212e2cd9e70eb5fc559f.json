@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"free_tier_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"in India\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"free_tier_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"in India\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1347,
+    "completion_tokens": 144,
+    "total_tokens": 1491
+  },
+  "latency_ms": 5358,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

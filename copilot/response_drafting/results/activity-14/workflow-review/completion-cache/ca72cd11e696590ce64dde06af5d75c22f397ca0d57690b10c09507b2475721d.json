@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"docs_how_to\",\"sub_intent\":null,\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{}}",
+  "raw": "{\"intent\":\"docs_how_to\",\"sub_intent\":null,\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1315,
+    "completion_tokens": 49,
+    "total_tokens": 1364
+  },
+  "latency_ms": 3529,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding API has a limit parameter that can be set up to 10. The customer is passing limit=3, which is within the allowed range. However, the issue might be that the API is not returning any results, which could be due to incorrect coordinates or no matching features at the specified location. The customer needs to provide the coordinates and any filters they are using to further diagnose the issue.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding API has a limit parameter that can be set up to 10. The customer is passing limit=3, which is within the allowed range. However, the issue might be that the API is not returning any results, which could be due to incorrect coordinates or no matching features at the specified location. The customer needs to provide the coordinates and any filters they are using to further diagnose the issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2388,
+    "completion_tokens": 95,
+    "total_tokens": 2483
+  },
+  "latency_ms": 2504,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

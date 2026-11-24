@@ -1,0 +1,237 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-219",
+    "query": "For a cab aggregator in Delhi, which directions options account for live traffic, and which are static?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether traffic is needed now or for future departures?"
+    ],
+    "gold": [
+      {
+        "question": "Is live traffic essential, or are typical ETAs acceptable?",
+        "facts": [
+          "Whether live traffic is essential or typical ETAs are acceptable."
+        ]
+      },
+      {
+        "question": "Is your Google Cloud project new?",
+        "facts": [
+          "Whether the Google Cloud project is new."
+        ]
+      }
+    ],
+    "questions_sha256": "7127f2a4786e61f59387e40fd3670b30fd5ac0a4975b936bf35d48b351d20e5d",
+    "gold_sha256": "5e1095f6443991defb8b71d8f6326878785b989b7d870a221eebfe220a5debe1"
+  },
+  {
+    "record_id": "GT-LBS-DM-018",
+    "query": "Ola Maps Distance Matrix: we'd send 5 origins × 10 destinations about 20,000 times a month. How many API calls per matrix and what's the monthly cost?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need traffic or a travel mode other than driving?",
+        "facts": [
+          "Whether traffic is required.",
+          "Whether a travel mode other than driving is required."
+        ]
+      }
+    ],
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60"
+  },
+  {
+    "record_id": "GT-LBS-DM-020",
+    "query": "Ola Maps Distance Matrix: we'd send 2 origins × 25 destinations about 100,000 times a month. How many API calls per matrix and what's the monthly cost?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need traffic or a travel mode other than driving?",
+        "facts": [
+          "Whether traffic is required.",
+          "Whether a travel mode other than driving is required."
+        ]
+      }
+    ],
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60"
+  },
+  {
+    "record_id": "GT-LBS-DM-030",
+    "query": "Google Maps Platform quote: 10×10 matrices, 120,000 per month in India, existing project.",
+    "history": [],
+    "questions": [
+      "Could you confirm whether inputs are coordinates, addresses or place IDs?"
+    ],
+    "gold": [
+      {
+        "question": "Are inputs coordinates or addresses?",
+        "facts": [
+          "Whether inputs are coordinates or addresses."
+        ]
+      }
+    ],
+    "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+    "gold_sha256": "f210c2f3761ed1c22adca7017b8957987ec2921f6a622679558738725c3efba1"
+  },
+  {
+    "record_id": "GT-LBS-DM-086",
+    "query": "We plan 80M Ola Distance Matrix pairs a month and want a committed-use price.",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+    ],
+    "gold": [
+      {
+        "question": "Start date?",
+        "facts": [
+          "The start date."
+        ]
+      },
+      {
+        "question": "SLA needs?",
+        "facts": [
+          "The SLA requirements."
+        ]
+      }
+    ],
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "c0dc8549533404db021936eaf9e2b349b056a1731e4ee8cee0e1bc16a1af35a5"
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "query": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API?",
+    "history": [],
+    "questions": [
+      "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?",
+      "Could you confirm whether Mapbox driving-traffic is required?"
+    ],
+    "gold": [
+      {
+        "question": "How many origins and destinations per request, and do they need traffic-aware ETAs?",
+        "facts": [
+          "The number of origins per request.",
+          "The number of destinations per request.",
+          "Whether traffic-aware ETAs are required."
+        ]
+      },
+      {
+        "question": "Should cost be compared per pair (Ola) or per element/request (Google/Mapbox)?",
+        "facts": [
+          "The requested cost-comparison basis: pairs, elements or requests."
+        ]
+      },
+      {
+        "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+        "facts": [
+          "Whether Mapbox driving-traffic will be used."
+        ]
+      }
+    ],
+    "questions_sha256": "2548b8ad034e185ff1388733cdb05e0941397e3c9fef421b32905b2959ffb079",
+    "gold_sha256": "2a3aa9fa7b93a57f54738d3ff5f8195163c0c1a0b49ea96f0b3b6df0179912b8"
+  },
+  {
+    "record_id": "GT-LBS-RG-008",
+    "query": "Our Jaipur tour operator needs about 1,500,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether results must be stored?",
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "Whether results must be stored."
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "Whether lookups are user-triggered or periodic tracking."
+        ]
+      }
+    ],
+    "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e"
+  },
+  {
+    "record_id": "GT-LBS-RG-010",
+    "query": "Our Lucknow e-commerce returns operator needs about 4,500,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "Whether results must be stored."
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "Whether lookups are user-triggered or periodic tracking."
+        ]
+      }
+    ],
+    "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e"
+  },
+  {
+    "record_id": "GT-LBS-RG-012",
+    "query": "Our Coimbatore home-services marketplace needs about 9,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether results must be stored?",
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "Whether results must be stored."
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "Whether lookups are user-triggered or periodic tracking."
+        ]
+      }
+    ],
+    "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e"
+  },
+  {
+    "record_id": "GT-LBS-RG-014",
+    "query": "Our Chandigarh real-estate portal needs about 400,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "Whether results must be stored."
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "Whether lookups are user-triggered or periodic tracking."
+        ]
+      }
+    ],
+    "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e"
+  }
+]

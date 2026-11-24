@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"origin_count\",\n      \"value\": 15,\n      \"evidence\": \"15 stations \\u00d7 10 offices\"\n    },\n    {\n      \"field\": \"destination_count\",\n      \"value\": 10,\n      \"evidence\": \"15 stations \\u00d7 10 offices\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"input_type\"],\n      \"decision_impact\": \"Choose the correct request representation and applicable processing constraints.\"\n    }\n  ],\n  \"reason\": \"The input_type is required to determine the correct request format and processing constraints for the transit matrix calculation.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"origin_count\",\n      \"value\": 15,\n      \"evidence\": \"15 stations \\u00d7 10 offices\"\n    },\n    {\n      \"field\": \"destination_count\",\n      \"value\": 10,\n      \"evidence\": \"15 stations \\u00d7 10 offices\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"input_type\"],\n      \"decision_impact\": \"Choose the correct request representation and applicable processing constraints.\"\n    }\n  ],\n  \"reason\": \"The input_type is required to determine the correct request format and processing constraints for the transit matrix calculation.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1605,
+    "completion_tokens": 154,
+    "total_tokens": 1759
+  },
+  "latency_ms": 3649,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

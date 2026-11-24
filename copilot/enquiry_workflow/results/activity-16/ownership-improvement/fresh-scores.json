@@ -1,0 +1,40 @@
+{
+  "baseline": {
+    "cases": 26,
+    "owner_matches": 24,
+    "owner_accuracy": 0.9230769230769231,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_true_negatives": 26,
+    "escalation_precision": 0,
+    "escalation_recall": 0,
+    "escalations_with_reason": 0,
+    "escalation_reason_coverage": 0,
+    "passes": false
+  },
+  "candidate": {
+    "cases": 26,
+    "owner_matches": 24,
+    "owner_accuracy": 0.9230769230769231,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_true_negatives": 26,
+    "escalation_precision": 0,
+    "escalation_recall": 0,
+    "escalations_with_reason": 0,
+    "escalation_reason_coverage": 0,
+    "passes": false
+  },
+  "changed": [],
+  "escalations_preserved": true,
+  "excluded_model_handoff_cases": [
+    "GT-LBS-DIR-121",
+    "GT-LBS-DM-057",
+    "GT-LBS-DM-058",
+    "GT-LBS-DM-060",
+    "GT-LBS-RG-035"
+  ],
+  "selected_cases": 31
+}

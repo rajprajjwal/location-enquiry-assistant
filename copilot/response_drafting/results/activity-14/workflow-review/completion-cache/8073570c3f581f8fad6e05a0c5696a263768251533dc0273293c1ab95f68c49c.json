@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"credential_distribution\"],\"decision_impact\":\"Apply provider rate-limit scopes to the actual traffic distribution.\"}],\"reason\":\"The customer's peak request volume of 6,000 directions requests per minute needs to be evaluated against the provider's rate limits, which are counted per access token. The distribution of traffic across API keys or tokens is a critical factor in determining which limits will be hit.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"credential_distribution\"],\"decision_impact\":\"Apply provider rate-limit scopes to the actual traffic distribution.\"}],\"reason\":\"The customer's peak request volume of 6,000 directions requests per minute needs to be evaluated against the provider's rate limits, which are counted per access token. The distribution of traffic across API keys or tokens is a critical factor in determining which limits will be hit.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2236,
+    "completion_tokens": 91,
+    "total_tokens": 2327
+  },
+  "latency_ms": 2324,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

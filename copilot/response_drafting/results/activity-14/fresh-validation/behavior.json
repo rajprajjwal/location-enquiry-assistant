@@ -1,0 +1,34 @@
+{
+  "cases": 16,
+  "preserved": {
+    "route": 16,
+    "next_action": 16,
+    "owner": 16,
+    "approvals": 16,
+    "proposed_actions": 16,
+    "active_questions": 16,
+    "pending_reply": 16,
+    "asked": 16,
+    "answered": 16,
+    "awaiting": 16,
+    "clarification_messages": 16
+  },
+  "reopened_cases": 0,
+  "reopened_preserved": 0,
+  "excluded_attempts": [
+    {
+      "record_id": "GT-LBS-DM-209",
+      "attempt": 1,
+      "errors": [
+        429,
+        429
+      ]
+    }
+  ],
+  "endpoint_errors": [
+    429,
+    429
+  ],
+  "endpoint_calls": 40,
+  "changes": []
+}

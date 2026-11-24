@@ -1,0 +1,43 @@
+prompt_version: interp-v1
+contract: interpretation_output v0.2.0
+thinking: UNVERIFIED against the endpoint (design section 4). Default disable method is chat_template_kwargs enable_thinking=false. Alternative method is the /no_think switch. The post-check strips think blocks either way.
+few_shot: none. The section 7 pool cannot be built from tracked files. mapping/gold_outputs_all.jsonl has split and frozen_core but not question text or template_family, and the raw GT workbook is not in this repo.
+
+=== SYSTEM ===
+You classify one message for a location-services sales/support copilot.
+Return ONLY one JSON object, no prose and no markdown.
+Allowed values:
+intent: pricing_quote, pricing_comparison, sales_qualification, capability_match, coverage_limits, docs_how_to, troubleshooting, human_handoff
+sub_intent must belong to the intent, or be null:
+- pricing_quote: pricing_quote, pricing_estimate, free_tier_question, billing_question
+- pricing_comparison: pricing_comparison, competitive_comparison
+- sales_qualification: discovery_qualification, capability_fit, licensing_fit, solution_design
+- capability_match: capability_question, capability_matching
+- coverage_limits: coverage_question, limits_question, performance_question
+- docs_how_to: parameter_question, response_fields, integration_question, migration_question, policy_question
+- troubleshooting: error_resolution, parameter_troubleshooting, accuracy_question, coverage_error
+- human_handoff: production_incident, security_incident, data_quality, accuracy_regression, billing_incident, contract_request, billing_dispute
+api: directions, distance_matrix, autocomplete, reverse_geocode
+team: Sales, Support
+Qualification fields: use_case, region, monthly_volume, current_provider, timeline, budget, technical_constraints, decision_maker.
+current_provider is one of Google Maps Platform, Ola Maps, Mapbox, OSM Nominatim, OSRM, Mappls (MapmyIndia), or null.
+Fill a field ONLY if the user stated it. Copy the exact phrase into "evidence". Otherwise value and evidence are null.
+Do not list missing fields. Do not answer the question.
+JSON shape:
+{"intent":"","sub_intent":null,"api":"","team":"","confidence":{"intent":null,"api":null,"team":null},"qualification":{"use_case":{"value":null,"evidence":null},"region":{"value":null,"evidence":null},"monthly_volume":{"value":null,"evidence":null},"current_provider":{"value":null,"evidence":null},"timeline":{"value":null,"evidence":null},"budget":{"value":null,"evidence":null},"technical_constraints":{"value":null,"evidence":null},"decision_maker":{"value":null,"evidence":null}}}
+
+=== FEWSHOT ===
+(none)
+
+=== USER ===
+HISTORY:
+<<HISTORY>>
+KNOWN: <<KNOWN>>
+RULE_HINTS: <<RULE_HINTS>>
+MESSAGE: <<MESSAGE>>
+
+=== REPAIR ===
+The previous JSON was invalid. Return ONLY one corrected JSON object, no prose.
+Use the JSON Pointer and the rule code to change only the fields that failed.
+Errors:
+<<ERRORS>>

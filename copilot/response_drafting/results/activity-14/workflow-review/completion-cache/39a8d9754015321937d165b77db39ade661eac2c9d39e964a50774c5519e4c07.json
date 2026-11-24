@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":\"Bengaluru\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"traffic_required\"],\"decision_impact\":\"Select traffic-aware versus static routing capability.\"},{\"fields\":[\"travel_mode\"],\"decision_impact\":\"Determine vehicle-specific routing support.\"},{\"fields\":[\"max_stops\"],\"decision_impact\":\"Check route shape against waypoint limits.\"},{\"fields\":[\"monthly_volume\"],\"decision_impact\":\"Estimate the recurring workload and cost.\"},{\"fields\":[\"existing_project\",\"ola_contract\"],\"decision_impact\":\"Establish product eligibility and applicable commercial terms.\"}],\"reason\":\"The customer's requirements for a directions/routing API for rider ETAs at checkout necessitate understanding traffic-aware routing, vehicle-specific support, waypoint limits, workload, and eligibility for the service.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":\"Bengaluru\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"traffic_required\"],\"decision_impact\":\"Select traffic-aware versus static routing capability.\"},{\"fields\":[\"travel_mode\"],\"decision_impact\":\"Determine vehicle-specific routing support.\"},{\"fields\":[\"max_stops\"],\"decision_impact\":\"Check route shape against waypoint limits.\"},{\"fields\":[\"monthly_volume\"],\"decision_impact\":\"Estimate the recurring workload and cost.\"},{\"fields\":[\"existing_project\",\"ola_contract\"],\"decision_impact\":\"Establish product eligibility and applicable commercial terms.\"}],\"reason\":\"The customer's requirements for a directions/routing API for rider ETAs at checkout necessitate understanding traffic-aware routing, vehicle-specific support, waypoint limits, workload, and eligibility for the service.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2102,
+    "completion_tokens": 162,
+    "total_tokens": 2264
+  },
+  "latency_ms": 4161,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The issue might be related to the region code or the availability of transit routes between the provided UK postcodes. The documentation indicates that the region code should be a ccTLD two-character value, and the UK's ccTLD is 'uk' while its ISO 3166-1 code is 'gb'. Ensure the correct region code is used and check if transit routes are available for the specified locations.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The issue might be related to the region code or the availability of transit routes between the provided UK postcodes. The documentation indicates that the region code should be a ccTLD two-character value, and the UK's ccTLD is 'uk' while its ISO 3166-1 code is 'gb'. Ensure the correct region code is used and check if transit routes are available for the specified locations.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1356,
+    "completion_tokens": 94,
+    "total_tokens": 1450
+  },
+  "latency_ms": 2317,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

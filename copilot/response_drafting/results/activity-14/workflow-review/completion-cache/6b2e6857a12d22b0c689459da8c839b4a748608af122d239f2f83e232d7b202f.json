@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"12,000,000 route (directions) requests a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing prices.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Compare equivalent vehicle modes across providers.\"\n    },\n    {\n      \"fields\": [\"existing_project\"],\n      \"decision_impact\": \"Check Google product eligibility for the quoted workload.\"\n    }\n  ],\n  \"reason\": \"The missing material decisions include whether live-traffic ETAs are required, the required vehicle or travel modes, and whether the Google Cloud project is new or existing. These factors are essential for determining the appropriate pricing and eligibility for the APIs.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"12,000,000 route (directions) requests a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing prices.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Compare equivalent vehicle modes across providers.\"\n    },\n    {\n      \"fields\": [\"existing_project\"],\n      \"decision_impact\": \"Check Google product eligibility for the quoted workload.\"\n    }\n  ],\n  \"reason\": \"The missing material decisions include whether live-traffic ETAs are required, the required vehicle or travel modes, and whether the Google Cloud project is new or existing. These factors are essential for determining the appropriate pricing and eligibility for the APIs.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2274,
+    "completion_tokens": 223,
+    "total_tokens": 2497
+  },
+  "latency_ms": 5282,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"answers_enquiry\": false, \"partial_answer\": true}",
+  "raw": "{\"answers_enquiry\": false, \"partial_answer\": true}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 576,
+    "completion_tokens": 14,
+    "total_tokens": 590
+  },
+  "latency_ms": 499,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

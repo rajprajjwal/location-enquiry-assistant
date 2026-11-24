@@ -1,0 +1,745 @@
+{
+  "source": "eval-freeze-v4 frozen GT, question text unchanged",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-031",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-032",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-033",
+      "bucket": "ownership",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-045",
+      "bucket": "interpretation",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-051",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-068",
+      "bucket": "pricecompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-073",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-081",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-086",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-089",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "Target go-live?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-205",
+      "bucket": "coveragecompare",
+      "questions": [
+        {
+          "question": "Do users type in the native script or in transliterated Latin text?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-210",
+      "bucket": "coveragecompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-215",
+      "bucket": "limitscompare",
+      "questions": [
+        {
+          "question": "How many keystrokes per user per second do you send?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-222",
+      "bucket": "limitscompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-229",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "Who owns each generated app's provider account and deployment?",
+          "facts": []
+        },
+        {
+          "question": "What are the expected monthly volumes, peak request rates and target regions?",
+          "facts": []
+        },
+        {
+          "question": "Will the generated apps store, export, or redistribute results?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-230",
+      "bucket": "qualification",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-231",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "What monthly volume do they expect, and will they bill Google Autocomplete as Requests or Session Usage?",
+          "facts": []
+        },
+        {
+          "question": "Will they store the selected coordinates or only use them ephemerally?",
+          "facts": []
+        },
+        {
+          "question": "Are they proposing the public Nominatim server as the autocomplete backend?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-234",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "Are they on a standard self-service plan with automatic card payments, or a contractual customer whose current contract is unaffected?",
+          "facts": []
+        },
+        {
+          "question": "Is expected Autocomplete usage within the documented 100,000 free calls per API, or above it?",
+          "facts": []
+        },
+        {
+          "question": "Have they already received the official instructions for adding credits?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-235",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-236",
+      "bucket": "history",
+      "questions": [
+        {
+          "question": "Is the usage estimate for one billing account or multiple billing accounts?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-011",
+      "bucket": "pricecompare",
+      "questions": [
+        {
+          "question": "Do you need live-traffic ETAs or are static routes enough?",
+          "facts": []
+        },
+        {
+          "question": "What vehicle types (car, bike, auto, truck) do you route?",
+          "facts": []
+        },
+        {
+          "question": "Is your Google Cloud project new or existing?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-012",
+      "bucket": "pricecompare",
+      "questions": [
+        {
+          "question": "Do you need live-traffic ETAs or are static routes enough?",
+          "facts": []
+        },
+        {
+          "question": "What vehicle types (car, bike, auto, truck) do you route?",
+          "facts": []
+        },
+        {
+          "question": "Is your Google Cloud project new or existing?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-020",
+      "bucket": "history",
+      "questions": [
+        {
+          "question": "How many intermediate waypoints per route at most?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-021",
+      "bucket": "history",
+      "questions": [
+        {
+          "question": "How many intermediate waypoints per route at most?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "bucket": "qualification",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "Will you redistribute derived data, or only display routes?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-084",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "Requests per minute at peak?",
+          "facts": []
+        },
+        {
+          "question": "Contract or prepaid?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-085",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "Target start date?",
+          "facts": []
+        },
+        {
+          "question": "Required SLA?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-100",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-108",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-201",
+      "bucket": "coveragecompare",
+      "questions": [
+        {
+          "question": "Do you need motorcycle/scooter routing specifically, or would car routing do in the new country?",
+          "facts": []
+        },
+        {
+          "question": "Roughly how many route requests a month do you expect in the new country?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-210",
+      "bucket": "limitscompare",
+      "questions": [
+        {
+          "question": "Must the stops be visited in a fixed order, or can they be optimised?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "bucket": "capabilitycompare",
+      "questions": [
+        {
+          "question": "Do you also need the map labels in that language, or only the instructions?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-222",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "Was Directions (Legacy) ever enabled on this project?",
+          "facts": []
+        },
+        {
+          "question": "What exact enablement error and Cloud Console checks should the support owner record?",
+          "facts": []
+        },
+        {
+          "question": "Which route features and rollout constraints should the migration preserve?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-223",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-224",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-225",
+      "bucket": "interpretation",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-226",
+      "bucket": "interpretation",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-026",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "Are inputs coordinates or addresses?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "Are inputs coordinates or addresses?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-059",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-085",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "Which endpoint?",
+          "facts": []
+        },
+        {
+          "question": "Sample pairs?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-087",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "When did usage spike?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-094",
+      "bucket": "qualification",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-097",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-117",
+      "bucket": "pricecompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-118",
+      "bucket": "pricecompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-201",
+      "bucket": "coveragecompare",
+      "questions": [
+        {
+          "question": "Do you need traffic-aware durations in the new country?",
+          "facts": []
+        },
+        {
+          "question": "How many origin×destination pairs a month?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-214",
+      "bucket": "limitscompare",
+      "questions": [
+        {
+          "question": "Are origins/destinations given as coordinates, or as addresses/place IDs?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-218",
+      "bucket": "limitscompare",
+      "questions": [
+        {
+          "question": "How many coordinates are in the failing request?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-221",
+      "bucket": "capabilitycompare",
+      "questions": [
+        {
+          "question": "Do you need live traffic in the ETAs?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-222",
+      "bucket": "capabilitycompare",
+      "questions": [
+        {
+          "question": "Do you need live traffic in the ETAs?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-224",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-226",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "Is the billing account in India, and where will most requests be billed?",
+          "facts": []
+        },
+        {
+          "question": "Is Distance Matrix (Legacy) already enabled on the project?",
+          "facts": []
+        },
+        {
+          "question": "What volume, traffic capability, display needs, and retention or redistribution rights are required?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-227",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "What are the typical and maximum origin and destination counts?",
+          "facts": []
+        },
+        {
+          "question": "How many matrices are computed per hour and month, and what is the peak concurrency?",
+          "facts": []
+        },
+        {
+          "question": "Which traffic and departure-time conditions are required, and can requests be split?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-231",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-232",
+      "bucket": "interpretation",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-233",
+      "bucket": "history",
+      "questions": [
+        {
+          "question": "Confirm whether the monthly total already includes all projects on the billing account.",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-001",
+      "bucket": "history",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-005",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "Do you need to store results?",
+          "facts": []
+        },
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-006",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "Do you need to store results?",
+          "facts": []
+        },
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-007",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "Do you need to store results?",
+          "facts": []
+        },
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-015",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-016",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-021",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-082",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-084",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-201",
+      "bucket": "coveragecompare",
+      "questions": [
+        {
+          "question": "What volume per month, and do you need to store results?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-212",
+      "bucket": "limitscompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-213",
+      "bucket": "limitscompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-225",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "What monthly volume and peak rate?",
+          "facts": []
+        },
+        {
+          "question": "Which countries?",
+          "facts": []
+        },
+        {
+          "question": "Will results be stored?",
+          "facts": []
+        },
+        {
+          "question": "Which languages?",
+          "facts": []
+        },
+        {
+          "question": "Is self-hosting acceptable?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question": "For Mapbox, can they set the permanent parameter and do they have a credit card or enterprise contract?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-231",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "Is the exposed token a default public token, a token with secret scopes, or a token with URL restrictions?",
+          "facts": []
+        },
+        {
+          "question": "Has the token already been deleted or rotated on the Access Tokens page?",
+          "facts": []
+        },
+        {
+          "question": "Is the account still on a trial with no payment method, which blocks create, rotate, or delete?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-232",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "Was location_type in the response RANGE_INTERPOLATED, ROOFTOP, or something else?",
+          "facts": []
+        },
+        {
+          "question": "Does the customer have Enhanced Support, which official docs require for map data quality assistance?",
+          "facts": []
+        },
+        {
+          "question": "Has anyone already opened a Technical support case or used Send feedback on Google Maps?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-233",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question": "Would the stored payload include only place IDs, or full address content?",
+          "facts": []
+        },
+        {
+          "question": "Would the results be shown on a Google Map, on a non-Google map, or with no map?",
+          "facts": []
+        },
+        {
+          "question": "Has legal already asked about custom licensing from Google Sales?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "bucket": "capabilitycompare",
+      "questions": [
+        {
+          "question": "How many coordinates would you need to send in one request?",
+          "facts": []
+        },
+        {
+          "question": "Are you asking about a documented batch endpoint, or only about looping over a single-coordinate API?",
+          "facts": []
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-235",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-236",
+      "bucket": "interpretation",
+      "questions": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The 20x10 matrix has 200 elements, which exceeds the 100-element limit for TRAFFIC_AWARE_OPTIMAL routing preference as per the documentation. This likely causes the request to fail or return no results.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The 20x10 matrix has 200 elements, which exceeds the 100-element limit for TRAFFIC_AWARE_OPTIMAL routing preference as per the documentation. This likely causes the request to fail or return no results.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1908,
+    "completion_tokens": 61,
+    "total_tokens": 1969
+  },
+  "latency_ms": 1668,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

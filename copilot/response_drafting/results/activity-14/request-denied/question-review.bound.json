@@ -1,0 +1,1046 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "747742173372fcf24c6fc735811756fc07d289fd92ec491cab7b165cf872023b",
+  "gold_sha256": "613fb9262da75bf1d3f7c5b85a07a084896520063cf9164690b1902defb91c59",
+  "reviewer": "Assistant semantic review of the exact saved outputs under user delegation",
+  "cases": [
+    {
+      "record_id": "GT-LBS-DIR-079",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Requests the raw API result for one route that is not drawn."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Requests the raw API result for one route that is not drawn."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-124",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Requests the failing request as sent with credentials redacted."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Requests the failing request as sent with credentials redacted."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests both the exact failing request and the response-body error message."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests both the exact failing request and the response-body error message."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests provider and the redacted request body for absent predictions."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests provider and the redacted request body for absent predictions."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests failing coordinates and submitted result filters."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests failing coordinates and submitted result filters."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests the redacted loop request and its isolated OVER_QUERY_LIMIT outcome."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests the redacted loop request and its isolated OVER_QUERY_LIMIT outcome."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests a failing origin-destination pair exactly as submitted."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests a failing origin-destination pair exactly as submitted."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-046",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-125",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-226",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-209",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-207",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-072",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-030",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-026",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-080",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-209",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-067",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-121",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-105",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-091",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-217",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests billing account country and primary usage geography."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Requests billing account country and primary usage geography."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-027",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-084",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-099",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-114",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-118",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-121",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-122",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-216",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-224",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-045",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-034",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "The approved request question is absent."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Requests a redacted example of the failing reverse-geocoding request as sent."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-102",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "The approved request question is absent."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Requests a redacted example of the failing reverse-geocoding request as sent."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-120",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-123",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-124",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-205",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-211",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-216",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-222",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question required by the reviewed labels."
+        }
+      }
+    }
+  ]
+}

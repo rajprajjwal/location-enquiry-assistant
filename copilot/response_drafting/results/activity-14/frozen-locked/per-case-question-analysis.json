@@ -1,0 +1,1402 @@
+[
+  {
+    "record_id": "GT-LBS-AC-031",
+    "generated_questions": [
+      "Which country is your billing account based in, and where will most of these requests be used?"
+    ],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 1,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-032",
+    "generated_questions": [
+      "Which country is your billing account based in, and where will most of these requests be used?"
+    ],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 1,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-033",
+    "generated_questions": [
+      "Which country is your billing account based in, and where will most of these requests be used?"
+    ],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 1,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-045",
+    "generated_questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 1,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-051",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-068",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-073",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-081",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-086",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-089",
+    "generated_questions": [],
+    "gold_questions": [
+      "Target go-live?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "target go-live date"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-AC-205",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do users type in the native script or in transliterated Latin text?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "native-script versus transliterated-Latin typing"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-AC-210",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-215",
+    "generated_questions": [],
+    "gold_questions": [
+      "How many keystrokes per user per second do you send?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "keystrokes sent per user per second"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-AC-222",
+    "generated_questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 1,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-229",
+    "generated_questions": [
+      "Where will the application operate?"
+    ],
+    "gold_questions": [
+      "Who owns each generated app's provider account and deployment?",
+      "What are the expected monthly volumes, peak request rates and target regions?",
+      "Will the generated apps store, export, or redistribute results?"
+    ],
+    "covered_facts": [
+      {
+        "gold_question": 2,
+        "fact": 3,
+        "text": "target regions"
+      }
+    ],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "owner of each generated app provider account"
+      },
+      {
+        "gold_question": 1,
+        "fact": 2,
+        "text": "owner of each generated app deployment"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "expected monthly volume"
+      },
+      {
+        "gold_question": 2,
+        "fact": 2,
+        "text": "peak request rate"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "whether results will be stored"
+      },
+      {
+        "gold_question": 3,
+        "fact": 2,
+        "text": "whether results will be exported"
+      },
+      {
+        "gold_question": 3,
+        "fact": 3,
+        "text": "whether results will be redistributed"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "The operating-location question covers target regions, but not monthly volume or peak rate."
+  },
+  {
+    "record_id": "GT-LBS-AC-230",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-231",
+    "generated_questions": [
+      "What is your expected monthly request volume?"
+    ],
+    "gold_questions": [
+      "What monthly volume do they expect, and will they bill Google Autocomplete as Requests or Session Usage?",
+      "Will they store the selected coordinates or only use them ephemerally?",
+      "Are they proposing the public Nominatim server as the autocomplete backend?"
+    ],
+    "covered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "expected monthly volume"
+      }
+    ],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 2,
+        "text": "Google Autocomplete Requests versus Session Usage billing"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "selected coordinates stored versus ephemeral use"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "whether public Nominatim is the proposed autocomplete backend"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "Monthly volume is requested; Requests versus Session Usage billing is not."
+  },
+  {
+    "record_id": "GT-LBS-AC-234",
+    "generated_questions": [],
+    "gold_questions": [
+      "Are they on a standard self-service plan with automatic card payments, or a contractual customer whose current contract is unaffected?",
+      "Is expected Autocomplete usage within the documented 100,000 free calls per API, or above it?",
+      "Have they already received the official instructions for adding credits?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "standard self-service automatic-card plan versus unaffected contractual customer"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "Autocomplete usage within or above 100000 free calls per API"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "whether official add-credits instructions were received"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-AC-235",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-AC-236",
+    "generated_questions": [],
+    "gold_questions": [
+      "Is the usage estimate for one billing account or multiple billing accounts?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "one billing account versus multiple billing accounts"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-011",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you need live-traffic ETAs or are static routes enough?",
+      "What vehicle types (car, bike, auto, truck) do you route?",
+      "Is your Google Cloud project new or existing?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "live-traffic ETA versus static-route requirement"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "vehicle types routed"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "new versus existing Google Cloud project"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-012",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you need live-traffic ETAs or are static routes enough?",
+      "What vehicle types (car, bike, auto, truck) do you route?",
+      "Is your Google Cloud project new or existing?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "live-traffic ETA versus static-route requirement"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "vehicle types routed"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "new versus existing Google Cloud project"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-020",
+    "generated_questions": [],
+    "gold_questions": [
+      "How many intermediate waypoints per route at most?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "maximum intermediate waypoints per route"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-021",
+    "generated_questions": [],
+    "gold_questions": [
+      "How many intermediate waypoints per route at most?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "maximum intermediate waypoints per route"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-039",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DIR-043",
+    "generated_questions": [],
+    "gold_questions": [
+      "Will you redistribute derived data, or only display routes?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "derived-data redistribution versus routes-only display"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-084",
+    "generated_questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "gold_questions": [
+      "Requests per minute at peak?",
+      "Contract or prepaid?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "peak requests per minute"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "contract versus prepaid account"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-085",
+    "generated_questions": [],
+    "gold_questions": [
+      "Target start date?",
+      "Required SLA?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "target start date"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "required SLA"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-100",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DIR-108",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DIR-113",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DIR-201",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you need motorcycle/scooter routing specifically, or would car routing do in the new country?",
+      "Roughly how many route requests a month do you expect in the new country?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "motorcycle or scooter routing specifically versus acceptable car routing"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "monthly route requests in the new country"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-210",
+    "generated_questions": [],
+    "gold_questions": [
+      "Must the stops be visited in a fixed order, or can they be optimised?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "fixed stop order versus optimizable order"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-216",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you also need the map labels in that language, or only the instructions?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "whether translated map labels are needed in addition to instructions"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-221",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DIR-222",
+    "generated_questions": [],
+    "gold_questions": [
+      "Was Directions (Legacy) ever enabled on this project?",
+      "What exact enablement error and Cloud Console checks should the support owner record?",
+      "Which route features and rollout constraints should the migration preserve?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "whether Directions Legacy was ever enabled on the project"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "exact enablement error"
+      },
+      {
+        "gold_question": 2,
+        "fact": 2,
+        "text": "Cloud Console checks to record"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "route features migration must preserve"
+      },
+      {
+        "gold_question": 3,
+        "fact": 2,
+        "text": "rollout constraints migration must preserve"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-223",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DIR-224",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DIR-225",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DIR-226",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DM-026",
+    "generated_questions": [],
+    "gold_questions": [
+      "Are inputs coordinates or addresses?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "coordinates versus address inputs"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-027",
+    "generated_questions": [],
+    "gold_questions": [
+      "Are inputs coordinates or addresses?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "coordinates versus address inputs"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-059",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DM-085",
+    "generated_questions": [],
+    "gold_questions": [
+      "Which endpoint?",
+      "Sample pairs?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "endpoint used"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "sample origin-destination pairs"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-087",
+    "generated_questions": [],
+    "gold_questions": [
+      "When did usage spike?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "time the usage spike began"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-094",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DM-097",
+    "generated_questions": [
+      "Could you share one failing request with credentials redacted, and tell us whether the same request still returns OVER_QUERY_LIMIT when sent on its own?"
+    ],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 1,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DM-117",
+    "generated_questions": [
+      "Which country is your billing account based in, and where will most of these requests be used?"
+    ],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 1,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DM-118",
+    "generated_questions": [
+      "Which country is your billing account based in, and where will most of these requests be used?"
+    ],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 1,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DM-201",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you need traffic-aware durations in the new country?",
+      "How many origin\u00d7destination pairs a month?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "traffic-aware durations needed in the new country"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "monthly origin-destination pairs"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-214",
+    "generated_questions": [],
+    "gold_questions": [
+      "Are origins/destinations given as coordinates, or as addresses/place IDs?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "coordinates versus addresses or place IDs as inputs"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-218",
+    "generated_questions": [],
+    "gold_questions": [
+      "How many coordinates are in the failing request?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "coordinate count in the failing request"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-221",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you need live traffic in the ETAs?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "live traffic required in ETAs"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-222",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you need live traffic in the ETAs?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "live traffic required in ETAs"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-224",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DM-226",
+    "generated_questions": [
+      "What is your expected monthly request volume?"
+    ],
+    "gold_questions": [
+      "Is the billing account in India, and where will most requests be billed?",
+      "Is Distance Matrix (Legacy) already enabled on the project?",
+      "What volume, traffic capability, display needs, and retention or redistribution rights are required?"
+    ],
+    "covered_facts": [
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "required volume"
+      }
+    ],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "billing account country"
+      },
+      {
+        "gold_question": 1,
+        "fact": 2,
+        "text": "where most requests will be billed"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "whether Distance Matrix Legacy is enabled on the project"
+      },
+      {
+        "gold_question": 3,
+        "fact": 2,
+        "text": "required traffic capability"
+      },
+      {
+        "gold_question": 3,
+        "fact": 3,
+        "text": "display needs"
+      },
+      {
+        "gold_question": 3,
+        "fact": 4,
+        "text": "retention rights needed"
+      },
+      {
+        "gold_question": 3,
+        "fact": 5,
+        "text": "redistribution rights needed"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "Volume is requested; traffic, display and retention or redistribution needs are not."
+  },
+  {
+    "record_id": "GT-LBS-DM-227",
+    "generated_questions": [],
+    "gold_questions": [
+      "What are the typical and maximum origin and destination counts?",
+      "How many matrices are computed per hour and month, and what is the peak concurrency?",
+      "Which traffic and departure-time conditions are required, and can requests be split?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "typical origin count"
+      },
+      {
+        "gold_question": 1,
+        "fact": 2,
+        "text": "maximum origin count"
+      },
+      {
+        "gold_question": 1,
+        "fact": 3,
+        "text": "typical destination count"
+      },
+      {
+        "gold_question": 1,
+        "fact": 4,
+        "text": "maximum destination count"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "matrices per hour"
+      },
+      {
+        "gold_question": 2,
+        "fact": 2,
+        "text": "matrices per month"
+      },
+      {
+        "gold_question": 2,
+        "fact": 3,
+        "text": "peak concurrency"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "traffic conditions required"
+      },
+      {
+        "gold_question": 3,
+        "fact": 2,
+        "text": "departure-time conditions required"
+      },
+      {
+        "gold_question": 3,
+        "fact": 3,
+        "text": "whether requests can be split"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-DM-231",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DM-232",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-DM-233",
+    "generated_questions": [],
+    "gold_questions": [
+      "Confirm whether the monthly total already includes all projects on the billing account."
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "whether monthly total includes all projects on the billing account"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-001",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-RG-005",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you need to store results?",
+      "Are lookups user-triggered or periodic tracking?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "whether results must be stored"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "user-triggered versus periodic tracking lookups"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-006",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you need to store results?",
+      "Are lookups user-triggered or periodic tracking?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "whether results must be stored"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "user-triggered versus periodic tracking lookups"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-007",
+    "generated_questions": [],
+    "gold_questions": [
+      "Do you need to store results?",
+      "Are lookups user-triggered or periodic tracking?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "whether results must be stored"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "user-triggered versus periodic tracking lookups"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-015",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-RG-016",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-RG-021",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-RG-082",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-RG-084",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-RG-201",
+    "generated_questions": [],
+    "gold_questions": [
+      "What volume per month, and do you need to store results?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "monthly volume"
+      },
+      {
+        "gold_question": 1,
+        "fact": 2,
+        "text": "whether results must be stored"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-212",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-RG-213",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-RG-225",
+    "generated_questions": [
+      "What is your expected monthly request volume?"
+    ],
+    "gold_questions": [
+      "What monthly volume and peak rate?",
+      "Which countries?",
+      "Will results be stored?",
+      "Which languages?",
+      "Is self-hosting acceptable?"
+    ],
+    "covered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "monthly volume"
+      }
+    ],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 2,
+        "text": "peak request rate"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "countries"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "whether results will be stored"
+      },
+      {
+        "gold_question": 4,
+        "fact": 1,
+        "text": "languages"
+      },
+      {
+        "gold_question": 5,
+        "fact": 1,
+        "text": "whether self-hosting is acceptable"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "Monthly volume is requested, but peak rate is not. The other four gold questions are absent."
+  },
+  {
+    "record_id": "GT-LBS-RG-226",
+    "generated_questions": [],
+    "gold_questions": [
+      "For Mapbox, can they set the permanent parameter and do they have a credit card or enterprise contract?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "whether Mapbox permanent parameter can be set"
+      },
+      {
+        "gold_question": 1,
+        "fact": 2,
+        "text": "whether a credit card or enterprise contract is available"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-231",
+    "generated_questions": [],
+    "gold_questions": [
+      "Is the exposed token a default public token, a token with secret scopes, or a token with URL restrictions?",
+      "Has the token already been deleted or rotated on the Access Tokens page?",
+      "Is the account still on a trial with no payment method, which blocks create, rotate, or delete?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "exposed token type: default public, secret scopes, or URL-restricted"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "whether token was already deleted or rotated on Access Tokens page"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "whether trial without payment method blocks token create rotate or delete"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-232",
+    "generated_questions": [],
+    "gold_questions": [
+      "Was location_type in the response RANGE_INTERPOLATED, ROOFTOP, or something else?",
+      "Does the customer have Enhanced Support, which official docs require for map data quality assistance?",
+      "Has anyone already opened a Technical support case or used Send feedback on Google Maps?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "returned location_type value"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "whether customer has Enhanced Support"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "whether a Technical support case was already opened"
+      },
+      {
+        "gold_question": 3,
+        "fact": 2,
+        "text": "whether Send feedback on Google Maps was already used"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-233",
+    "generated_questions": [],
+    "gold_questions": [
+      "Would the stored payload include only place IDs, or full address content?",
+      "Would the results be shown on a Google Map, on a non-Google map, or with no map?",
+      "Has legal already asked about custom licensing from Google Sales?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "stored payload is only place IDs versus full address content"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "Google Map versus non-Google map versus no-map display"
+      },
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "text": "whether legal already asked Google Sales about custom licensing"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-234",
+    "generated_questions": [],
+    "gold_questions": [
+      "How many coordinates would you need to send in one request?",
+      "Are you asking about a documented batch endpoint, or only about looping over a single-coordinate API?"
+    ],
+    "covered_facts": [],
+    "missed_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "text": "coordinates needed per request"
+      },
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "text": "documented batch endpoint versus looping single-coordinate API"
+      }
+    ],
+    "questions_on_empty_gold": 0,
+    "notes": "No gold question or atomic fact is semantically matched."
+  },
+  {
+    "record_id": "GT-LBS-RG-235",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  },
+  {
+    "record_id": "GT-LBS-RG-236",
+    "generated_questions": [],
+    "gold_questions": [],
+    "covered_facts": [],
+    "missed_facts": [],
+    "questions_on_empty_gold": 0,
+    "notes": "No question recorded in the frozen GT."
+  }
+]

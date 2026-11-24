@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"200,000 sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Essentials\",\n      \"evidence\": \"ending in Place Details Essentials\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Select the applicable session-termination billing rule.\"\n    }\n  ],\n  \"reason\": \"The customer's enquiry requires confirmation of the session-termination billing rule based on the selected Place Details SKU.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"200,000 sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Essentials\",\n      \"evidence\": \"ending in Place Details Essentials\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Select the applicable session-termination billing rule.\"\n    }\n  ],\n  \"reason\": \"The customer's enquiry requires confirmation of the session-termination billing rule based on the selected Place Details SKU.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1223,
+    "completion_tokens": 170,
+    "total_tokens": 1393
+  },
+  "latency_ms": 3956,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

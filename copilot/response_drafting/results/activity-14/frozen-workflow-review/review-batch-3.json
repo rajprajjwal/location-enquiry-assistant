@@ -1,0 +1,403 @@
+[
+  {
+    "record_id": "GT-LBS-DM-026",
+    "bucket": "qualification",
+    "query": "Google Maps Platform quote: 20,000 matrix requests per month in India, each a 25×4 traffic-aware matrix, on an existing project.",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Are inputs coordinates or addresses?",
+        "facts": [
+          "coordinates versus address inputs"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "d49f4c931dac92dab8f96897c0f973e87c6f94a6f26103fb0ce7691363b868fb",
+    "prediction_row_sha256": "343cec2201a37ca5a66e3e3e7d8985a5a88d3a06a6c422e1686f21f7221c20b3"
+  },
+  {
+    "record_id": "GT-LBS-DM-027",
+    "bucket": "qualification",
+    "query": "Google Maps Platform quote: 3,000 matrix requests per month in India, each a 20×20 matrix, on a brand-new GCP project.",
+    "history": [],
+    "questions": [
+      "Could you confirm whether inputs are coordinates, addresses or place IDs?"
+    ],
+    "gold": [
+      {
+        "question": "Are inputs coordinates or addresses?",
+        "facts": [
+          "coordinates versus address inputs"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+    "gold_sha256": "d49f4c931dac92dab8f96897c0f973e87c6f94a6f26103fb0ce7691363b868fb",
+    "prediction_row_sha256": "6de2097ffc0e650bebcd265638f069fe50a00b92958d69b6a526e51befff8269"
+  },
+  {
+    "record_id": "GT-LBS-DM-059",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-89608. Customer wrote:\n\"Distances from Google Distance Matrix show '5.2 mi' for some users. Are the values in miles?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "04ec9e8481c9fba19347656edbfe3a64d2c8a628bbfc86c906914035aeb34786"
+  },
+  {
+    "record_id": "GT-LBS-DM-085",
+    "bucket": "ownership",
+    "query": "Ola Distance Matrix durations for Bengaluru have been about 40% lower than actual for three days after previously being accurate. Please prepare a handoff to a human owner to investigate the regression.",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Which endpoint?",
+        "facts": [
+          "endpoint used"
+        ]
+      },
+      {
+        "question": "Sample pairs?",
+        "facts": [
+          "sample origin-destination pairs"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "28b42b0d933c1289c3124952b8b1b82cae8090f842826d8af7b4ba01bd223cf8",
+    "prediction_row_sha256": "3a9e665d1a89a39d990c4166bfa0e1b881ded01f7610db1b1ae6bfdeddde25ff"
+  },
+  {
+    "record_id": "GT-LBS-DM-087",
+    "bucket": "ownership",
+    "query": "Our Google Distance Matrix bill jumped 5× overnight and we suspect a leaked unrestricted key.",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "When did usage spike?",
+        "facts": [
+          "time the usage spike began"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "85fdd2d7256a4b87107a77c4e62a53440f6b70a7d093c86883714cc87476b94a",
+    "prediction_row_sha256": "5d5a88a6eb236adbe6b6969cc94f06bc5ba263db4e72dc9a79a48f1c52f3c4ca"
+  },
+  {
+    "record_id": "GT-LBS-DM-094",
+    "bucket": "qualification",
+    "query": "For a ride-hailing ETA screen, a prospect wants to compare travel times from many drivers to one pickup. What should we clarify before recommending an Ola Distance Matrix solution, and when would single-route Directions be useful?",
+    "history": [],
+    "questions": [
+      "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "173f4b73dc29f30fd8ea50d55e95248ead089a57e1b5b45cd77175f346790483",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "beb36538665de3f0f2c1e4c62ad9c1b4c6512a83f364e01b9ced05dcdaec8a40"
+  },
+  {
+    "record_id": "GT-LBS-DM-097",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-48403. Customer wrote:\n\"Google Distance Matrix with 1 origin and 14 destinations hits OVER_QUERY_LIMIT in a loop.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [
+      "Could you share one failing request with credentials redacted, and tell us whether the same request still returns OVER_QUERY_LIMIT when sent on its own?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "165b79a60e91cf2c94c067292186b3f1fe144098e62afb1049855901ce85e1f3",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "91b40504a84db40cd8bd6118d8915ff7adcf0620b600915d09b37e202ccdb393"
+  },
+  {
+    "record_id": "GT-LBS-DM-117",
+    "bucket": "pricecompare",
+    "query": "Mapbox vs Google matrix cost for 400,000 elements a month, no traffic?",
+    "history": [],
+    "questions": [
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "08b06d92253d54ffe71fbfc89cac4866e6c4b1ebcc52134e5f152a3a4f8e52c0"
+  },
+  {
+    "record_id": "GT-LBS-DM-118",
+    "bucket": "pricecompare",
+    "query": "Mapbox vs Google matrix cost for 1,000,000 elements a month, no traffic?",
+    "history": [],
+    "questions": [
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "5e4a5b77ead49aadf9f447ee35fc2e404f42a463a36be67e64b0d9f1b7285f29"
+  },
+  {
+    "record_id": "GT-LBS-DM-201",
+    "bucket": "coveragecompare",
+    "query": "We're a logistics firm in Lucknow adding Kathmandu. Which distance-matrix providers can cover Nepal as well as India?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Do you need traffic-aware durations in the new country?",
+        "facts": [
+          "traffic-aware durations needed in the new country"
+        ]
+      },
+      {
+        "question": "How many origin×destination pairs a month?",
+        "facts": [
+          "monthly origin-destination pairs"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "9a12c62b393f5776930c1c1c73cebd67fc0976ff87d7025a447fbad532f0b52e",
+    "prediction_row_sha256": "0f2a43661f456b8e1e1a7e151a698a791deff4cc3bec9a069d8d81a731c20451"
+  },
+  {
+    "record_id": "GT-LBS-DM-214",
+    "bucket": "limitscompare",
+    "query": "We need a 30×30 matrix (900 elements) per request. Which providers accept that in one call?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Are origins/destinations given as coordinates, or as addresses/place IDs?",
+        "facts": [
+          "coordinates versus addresses or place IDs as inputs"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "03d2bda652e3b0332c41fa2cf8428b8bc3e6ec75a86562338b291788efb4ad58",
+    "prediction_row_sha256": "7f100c0d3c63cc4be587371ded0a29a6fafd597e5ab9c39c5b978feb119af646"
+  },
+  {
+    "record_id": "GT-LBS-DM-218",
+    "bucket": "limitscompare",
+    "query": "Our self-hosted OSRM /table call returns code TooBig. What does that mean?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "How many coordinates are in the failing request?",
+        "facts": [
+          "coordinate count in the failing request"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "de87ef2b379b05d016a6effd5e6a6da16c566b9b787948da468af5a96b3d8028",
+    "prediction_row_sha256": "279b46a60907e00e2810b56fb93ee569cd6d94cb93328b6a6b19b333ffd75606"
+  },
+  {
+    "record_id": "GT-LBS-DM-221",
+    "bucket": "capabilitycompare",
+    "query": "For a grocery dispatcher, what's the practical difference between Ola Distance Matrix and Distance Matrix Basic?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need live traffic in the ETAs?",
+        "facts": [
+          "live traffic required in ETAs"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "716aaf448930ef0c9406ce351117aeae2897248f5612a332ebb54eb47ec9efc4",
+    "prediction_row_sha256": "03c8671e38bcb2c57e3e48fbc442d6491971ce8457fc4f401d6457847373552b"
+  },
+  {
+    "record_id": "GT-LBS-DM-222",
+    "bucket": "capabilitycompare",
+    "query": "For a field-service scheduler, what's the practical difference between Ola Distance Matrix and Distance Matrix Basic?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need live traffic in the ETAs?",
+        "facts": [
+          "live traffic required in ETAs"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "716aaf448930ef0c9406ce351117aeae2897248f5612a332ebb54eb47ec9efc4",
+    "prediction_row_sha256": "ea2b044bb5ba0965b0ae28cd04cd3cc0a124420b4cc5042a98242ae76bd4e292"
+  },
+  {
+    "record_id": "GT-LBS-DM-224",
+    "bucket": "capabilitycompare",
+    "query": "Are the distances from OSRM's table service the shortest road distances?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "dc211ce28834f4c817e1e4a31ce648654cf75232419d6ddfdf0619d29b76d500"
+  },
+  {
+    "record_id": "GT-LBS-DM-226",
+    "bucket": "qualification",
+    "query": "A prospect is evaluating Google Distance Matrix for an India-only app. What should we confirm about their intended use and licensing before recommending it, including which published price list would apply?",
+    "history": [],
+    "questions": [
+      "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?"
+    ],
+    "gold": [
+      {
+        "question": "Is the billing account in India, and where will most requests be billed?",
+        "facts": [
+          "billing account country",
+          "where most requests will be billed"
+        ]
+      },
+      {
+        "question": "Is Distance Matrix (Legacy) already enabled on the project?",
+        "facts": [
+          "whether Distance Matrix Legacy is enabled on the project"
+        ]
+      },
+      {
+        "question": "What volume, traffic capability, display needs, and retention or redistribution rights are required?",
+        "facts": [
+          "required volume",
+          "required traffic capability",
+          "display needs",
+          "retention rights needed",
+          "redistribution rights needed"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "173f4b73dc29f30fd8ea50d55e95248ead089a57e1b5b45cd77175f346790483",
+    "gold_sha256": "ba9618753b1a70937d8decfb7b1aec8cc82c0057ed9a2ee6ec98e926f600fd51",
+    "prediction_row_sha256": "102379a85eb53049243692832b7cd8dbe357c1575699cd2b48b30fed6f65ea0b"
+  },
+  {
+    "record_id": "GT-LBS-DM-227",
+    "bucket": "qualification",
+    "query": "A prospect needs a many-to-many travel-time matrix that can include traffic. What volume, matrix-size and traffic requirements should we clarify before recommending Ola Distance Matrix, Google Distance Matrix or Route Matrix, or Mapbox Matrix?",
+    "history": [],
+    "questions": [
+      "Could you confirm typical origins per matrix, maximum origins per matrix, typical destinations per matrix and maximum destinations per matrix?",
+      "Could you confirm matrices computed per hour, matrices computed per month and peak concurrent requests?",
+      "Could you confirm required traffic conditions, such as live, predicted or standard estimates, whether traffic is needed now or for future departures and whether requests can be split?"
+    ],
+    "gold": [
+      {
+        "question": "What are the typical and maximum origin and destination counts?",
+        "facts": [
+          "typical origin count",
+          "maximum origin count",
+          "typical destination count",
+          "maximum destination count"
+        ]
+      },
+      {
+        "question": "How many matrices are computed per hour and month, and what is the peak concurrency?",
+        "facts": [
+          "matrices per hour",
+          "matrices per month",
+          "peak concurrency"
+        ]
+      },
+      {
+        "question": "Which traffic and departure-time conditions are required, and can requests be split?",
+        "facts": [
+          "traffic conditions required",
+          "departure-time conditions required",
+          "whether requests can be split"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "8fd0ae53fcd6789a5f70f137f31abe67725e6e82dfa25937042f696ff77b2ff0",
+    "gold_sha256": "04cd19747b36e44b95bd541bc966e92efd9dc8bd04af5a1aee1e68193dd7dd5c",
+    "prediction_row_sha256": "3248deb3818333675c77500950c51d94eaca2f2fd68e9b758c2f21d8c87b3bab"
+  },
+  {
+    "record_id": "GT-LBS-DM-231",
+    "bucket": "docs",
+    "query": "How do I set origins and destinations in Google Compute Route Matrix and calculate the element count before choosing a non-transit request size?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "3dc929ed2e38332810dd45a678530bf6767fa7c131eb4d227ddab03092730511"
+  },
+  {
+    "record_id": "GT-LBS-DM-232",
+    "bucket": "interpretation",
+    "query": "OSRM Table service returns `NoTable` for a matrix request. What does the code tell us?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "d264d0eb718f1c9422f2d700f5b895af540542f4d92661d76d67e0357fbb0c63"
+  },
+  {
+    "record_id": "GT-LBS-DM-233",
+    "bucket": "history",
+    "query": "Legacy Distance Matrix API. Please use list prices and show USD.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Estimate Google Maps Platform India legacy Distance Matrix charges for 100,000 elements per month. Our monthly batch has 10 origins and 10,000 destinations, for 100,000 origin-destination elements in total. What is the free allowance and estimated charge?"
+      },
+      {
+        "role": "assistant",
+        "text": "Are you asking about the legacy Distance Matrix API or the newer Routes API Compute Route Matrix?"
+      }
+    ],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Confirm whether the monthly total already includes all projects on the billing account.",
+        "facts": [
+          "whether monthly total includes all projects on the billing account"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4c3020e1fa7f49bbc30cc931f79bfb10a5f9780c0792ec32eb3d8bba0593e1d7",
+    "prediction_row_sha256": "2023afc7d59c2e5917c3a1b5c6a4ea5f65289a94ee05a622497c78cc5fe444ba"
+  }
+]

@@ -1,0 +1,207 @@
+{
+  "working_baseline": {
+    "cases": 49,
+    "owner_matches": 39,
+    "owner_accuracy": 0.7959183673469388,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 1,
+    "escalation_false_negatives": 0,
+    "escalation_true_negatives": 39,
+    "escalation_precision": 0.9,
+    "escalation_recall": 1.0,
+    "escalations_with_reason": 10,
+    "escalation_reason_coverage": 1.0,
+    "passes": false,
+    "split": "working",
+    "arm": "baseline",
+    "model_route_sources": {
+      "baseline": 49
+    },
+    "model_errors_in_this_run": []
+  },
+  "working_candidate": {
+    "cases": 49,
+    "owner_matches": 48,
+    "owner_accuracy": 0.9795918367346939,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_true_negatives": 40,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalations_with_reason": 9,
+    "escalation_reason_coverage": 1.0,
+    "passes": true,
+    "split": "working",
+    "arm": "candidate",
+    "model_route_sources": {
+      "rule": 48,
+      "model": 1
+    },
+    "model_errors_in_this_run": []
+  },
+  "frozen_candidate": {
+    "cases": 80,
+    "owner_matches": 57,
+    "owner_accuracy": 0.7125,
+    "escalation_true_positives": 10,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_true_negatives": 70,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalations_with_reason": 10,
+    "escalation_reason_coverage": 1.0,
+    "passes": false,
+    "split": "frozen",
+    "arm": "candidate",
+    "model_route_sources": {
+      "rule": 75,
+      "model": 5
+    },
+    "model_errors_in_this_run": []
+  },
+  "manifest": {
+    "tag": "eval-freeze-v4",
+    "tag_commit": "16a0594d68d99bc2bb001e3a455b03f56e6ae072",
+    "working_report_sha256": "62ac0410b7716ba956ac28e53056eab73ce6b4be5b3719a7fe24515e9fd6ac2f",
+    "routing_sources": {
+      "copilot/config/escalation_policy.yaml": "379e91dcf5332a501ee277d2b906eb0253d4a04c78d8dbccda6807443baf3050",
+      "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77",
+      "copilot/safety/escalation_policy.py": "26aec1f73d797432f07cf3175638d7c82aedfa47d798d86374403a8241cd3baa",
+      "copilot/enquiry_workflow/escalation.py": "e86f0bbebc7b2e17d6d360b806806622c1ed62f0f3609f0d414751793e12573f",
+      "copilot/enquiry_workflow/workflow.py": "80f48bc7cf278056552559a0ed10b99c316782cbaa2b8d1b444894746ec2cc22",
+      "copilot/response_drafting/drafter.py": "f6ca64d3c7256ff490a4f34037da63a6796ffca43db33055e902d405aefcf8de"
+    },
+    "cases": 80,
+    "holdout_cases": 0,
+    "scope": "live interpretation and production router"
+  },
+  "owner_audit": {
+    "frozen_owner_mismatches": [
+      {
+        "expected": "Account team (Sales)",
+        "actual": "Support L1",
+        "count": 16
+      },
+      {
+        "expected": "Support L1",
+        "actual": "Account team (Sales)",
+        "count": 5
+      },
+      {
+        "expected": "Account team (Sales)",
+        "actual": "Support L2",
+        "count": 1
+      },
+      {
+        "expected": "Support L2",
+        "actual": "Maps engineering",
+        "count": 1
+      }
+    ],
+    "frozen_owner_errors_by_interpreted_intent": {
+      "capability_match": 7,
+      "docs_how_to": 4,
+      "human_handoff": 2,
+      "pricing_quote": 5,
+      "sales_qualification": 2,
+      "pricing_comparison": 3
+    },
+    "fresh_working_cases": 33,
+    "fresh_working_owner_matches": 21,
+    "fresh_working_by_interpreted_intent": {
+      "pricing_comparison": {
+        "cases": 11,
+        "owner_matches": 6
+      },
+      "capability_match": {
+        "cases": 5,
+        "owner_matches": 2
+      },
+      "pricing_quote": {
+        "cases": 10,
+        "owner_matches": 7
+      },
+      "coverage_limits": {
+        "cases": 4,
+        "owner_matches": 4
+      },
+      "docs_how_to": {
+        "cases": 2,
+        "owner_matches": 1
+      },
+      "sales_qualification": {
+        "cases": 1,
+        "owner_matches": 1
+      }
+    },
+    "working_challenge_inputs_sha256": "673ec3013ec27659e7a46b6c109f2a290517686b41a4455baadc0739eb64a202"
+  },
+  "exploratory_working_owner_model": {
+    "cases": 33,
+    "locked_owner_matches": 21,
+    "shadow_owner_matches": 22,
+    "corrected": 3,
+    "regressed": 2,
+    "valid_model_selections": 33
+  },
+  "live_handoff": {
+    "interpretation_intent": "human_handoff",
+    "model_calls": [
+      {
+        "usage": {
+          "prompt_tokens": 1322,
+          "completion_tokens": 50,
+          "total_tokens": 1372
+        },
+        "latency_ms": 1867,
+        "finish_reason": "stop"
+      },
+      {
+        "usage": {
+          "prompt_tokens": 266,
+          "completion_tokens": 27,
+          "total_tokens": 293
+        },
+        "latency_ms": 1103,
+        "finish_reason": "stop"
+      }
+    ],
+    "status": "escalated",
+    "schema_errors": [],
+    "responsible_role": {
+      "owner": "Support L2",
+      "team": "Support",
+      "should_escalate": true,
+      "severity": "SEV3",
+      "reason": "Customer explicitly requests a human support engineer to review the Directions integration issue."
+    },
+    "next_action": {
+      "action_type": "propose_escalation",
+      "description": "Ask a reviewer to approve handoff to Support L2.",
+      "requires_human_approval": true,
+      "approval_status": "pending",
+      "executed": false,
+      "escalation": {
+        "severity": "SEV3",
+        "owner": "Support L2",
+        "summary": "Customer explicitly requests a human support engineer to review the Directions integration issue."
+      }
+    },
+    "steps": [
+      {
+        "step": 1,
+        "action": "plan",
+        "status": "completed",
+        "latency_ms": 0
+      },
+      {
+        "step": 2,
+        "action": "route_evidence",
+        "status": "completed",
+        "latency_ms": 1
+      }
+    ]
+  }
+}

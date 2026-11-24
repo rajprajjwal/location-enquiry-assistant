@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"storage_required\",\"value\":false,\"evidence\":\"whether results must be stored\"}],\"groups\":[{\"fields\":[\"storage_required\"],\"decision_impact\":\"Select temporary versus retained-result licensing and prices.\"}],\"reason\":\"The customer is asking about reverse geocoding storage requirements and pricing, but the storage_required field is not explicitly confirmed. This affects the decision on licensing and pricing for the API.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"storage_required\",\"value\":false,\"evidence\":\"whether results must be stored\"}],\"groups\":[{\"fields\":[\"storage_required\"],\"decision_impact\":\"Select temporary versus retained-result licensing and prices.\"}],\"reason\":\"The customer is asking about reverse geocoding storage requirements and pricing, but the storage_required field is not explicitly confirmed. This affects the decision on licensing and pricing for the API.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1773,
+    "completion_tokens": 87,
+    "total_tokens": 1860
+  },
+  "latency_ms": 2202,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

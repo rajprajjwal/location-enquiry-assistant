@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The 422 error indicates a semantically invalid request, which may be due to unsupported coordinates or out-of-coverage area. To diagnose, we need the actual redacted request to inspect the parameters and verify their validity.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The 422 error indicates a semantically invalid request, which may be due to unsupported coordinates or out-of-coverage area. To diagnose, we need the actual redacted request to inspect the parameters and verify their validity.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1457,
+    "completion_tokens": 58,
+    "total_tokens": 1515
+  },
+  "latency_ms": 1568,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

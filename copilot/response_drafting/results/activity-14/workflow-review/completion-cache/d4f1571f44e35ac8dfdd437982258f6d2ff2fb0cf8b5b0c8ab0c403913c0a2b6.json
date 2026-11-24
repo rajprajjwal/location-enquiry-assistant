@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":\"India\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"},{\"fields\":[\"debouncing\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"}],\"reason\":\"The customer is asking for cost per billing option for Autocomplete (Legacy) in India with 80,000 sessions and 7 requests. The missing material decisions are whether Place Details are called after a selection and whether keystrokes are debounced, as these affect the billing calculation.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":\"India\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"},{\"fields\":[\"debouncing\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"}],\"reason\":\"The customer is asking for cost per billing option for Autocomplete (Legacy) in India with 80,000 sessions and 7 requests. The missing material decisions are whether Place Details are called after a selection and whether keystrokes are debounced, as these affect the billing calculation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1159,
+    "completion_tokens": 130,
+    "total_tokens": 1289
+  },
+  "latency_ms": 3100,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

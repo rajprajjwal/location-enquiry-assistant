@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"Authentication or integration failure needs the actual redacted request after credential rotation.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"Authentication or integration failure needs the actual redacted request after credential rotation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1267,
+    "completion_tokens": 26,
+    "total_tokens": 1293
+  },
+  "latency_ms": 905,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,34 @@
+Activity 14 documentation and credential question filter
+
+The filter runs after workflow routing and changes only staff-facing suggestions.
+It rejects requests for credential values and common questions that delegate provider documentation or
+configuration advice to the customer. It keeps redacted request examples and actual observed inputs.
+
+Inputs: the same sixteen reviewed working-eval cases from the locked enquiry/history snapshot.
+The current workbook differs from that snapshot. The reviewed gold labels were kept unchanged.
+
+Final paired results
+- Questions on nine confirmed-empty cases: 6 before, 1 after.
+- Credential-value requests: 1 before, 0 after.
+- Approved facts covered: 1/12 before and after (8.33%).
+- Strict complete-question F1: 0.000 before and after.
+- Routes, next actions, owners, approvals, active questions and pending state matched in all sixteen cases.
+- Automated checks: 232 passed and four subtests passed.
+
+The paired baseline generated six empty-case questions. The preceding saved run generated five.
+Two endpoint HTTP 429 errors were retried. Only clean behavior-matched pairs were admitted.
+
+Fixed saved-candidate checks
+- Five documentation/configuration questions on confirmed-empty cases were removed.
+- One credential-value request was removed.
+- All seven human-approved question wordings passed the filter.
+
+Remaining issue
+The OSRM distance request still triggers a question about the correct matrix type. It should receive
+documentation guidance. The filter reduces unwanted suggestions but does not select the eleven missing
+approved facts. No complete approved question is generated, so F1 remains zero.
+Question and fact matching was assessed by the assistant against locked human labels.
+These are development results. The rule-based filter still needs validation on untouched working-eval groups.
+Frozen and holdout cases were excluded.
+
+All four separate pending conversations reopened and resumed identically in the serial verification.

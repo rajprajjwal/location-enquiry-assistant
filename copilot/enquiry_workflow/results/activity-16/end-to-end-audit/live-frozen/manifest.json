@@ -1,0 +1,15 @@
+{
+  "input_sha256": "d0117e1cbe165684dd10d48dc38b0eb69b7069fd86d87948f5dbec6239b6e382",
+  "cases": 80,
+  "mode": "fresh interpretation and live routing; no cached decisions",
+  "sources": {
+    "enquiry_workflow/escalation.py": "ca40dc88509f15bf4cb2ce34be9dcab1d206b41224d5566d0675c6262907d702",
+    "enquiry_workflow/ownership_status.py": "f284ff05453dbd003311f0e184f612de92ec45002a27fd3281af77de4be6c7b4",
+    "enquiry_workflow/routine_triage.py": "df9bec6e93aee3cef12404910fbd40e840a2164c07cec10d2fdf81913bfb7807",
+    "enquiry_workflow/billing_policy.py": "0459f0d71c4c13bd55b62d93157b793c07aac19306b6c49b573bbfb9c01e0d56",
+    "safety/customer_evidence.py": "2be8c53a8cab608a0051b68f71b5b7878fb330de6d6cb4bdda9ae19a2c812905",
+    "safety/escalation_policy.py": "31d5e5ca6b2973614bbc50cee53b24fe23fb3747aa516fa01ed01be47c342e64",
+    "config/escalation_policy.yaml": "465e9205086b2ac00b892713d517c406154b0e66dd040b450bb2146dbb108621",
+    "model_gateway/client.py": "2610390b6ab2f1cc25f649e8e6a161ca9da2377c46a9f4a6d00ea147a38f1d61"
+  }
+}

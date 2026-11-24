@@ -1,0 +1,14 @@
+{
+  "text": "{\"passages\": [1, 5]}",
+  "raw": "{\"passages\": [1, 5]}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2341,
+    "completion_tokens": 11,
+    "total_tokens": 2352
+  },
+  "latency_ms": 690,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

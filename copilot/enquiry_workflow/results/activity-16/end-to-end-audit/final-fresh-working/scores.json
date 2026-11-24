@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "cases": 17,
+    "owner_correct": 16,
+    "owner_accuracy": 0.9411764705882353,
+    "escalation_true_positives": 4,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "candidate": {
+    "cases": 17,
+    "owner_correct": 16,
+    "owner_accuracy": 0.9411764705882353,
+    "escalation_true_positives": 4,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "owner_changes": [],
+  "escalations_preserved": true,
+  "model_calls": 0,
+  "method": "Deterministic routing replay; fresh handoff classifications preserved because the policy does not enter that path."
+}

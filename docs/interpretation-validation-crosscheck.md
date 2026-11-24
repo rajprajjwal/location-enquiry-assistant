@@ -6,7 +6,7 @@ Holdout rows were read and not used to change rules, schemas, or tests.
 No provider API was called. The dataset validator and the gold files
 were not modified.
 
-Dataset side: `validator.validate_spec.load_schemas`, `validator_for`,
+Dataset side: `copilot.validation.specification_checks.validate_spec.load_schemas`, `validator_for`,
 and `required_field_violations` on `outputs.qualification_details`.
 `validate_spec.py` was not executed as a program: that entry point
 rewrites gold outputs, the vocabulary diff, and the validator report.

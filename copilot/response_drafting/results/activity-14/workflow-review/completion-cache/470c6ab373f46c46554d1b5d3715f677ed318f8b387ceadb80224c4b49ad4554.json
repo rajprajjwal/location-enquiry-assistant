@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\", \"reason\":\"The reverse geocode is returning incorrect city names, which suggests an issue with how the results are being displayed or interpreted, not with the API's response itself.\"}",
+  "raw": "{\"decision\":\"display_result\", \"reason\":\"The reverse geocode is returning incorrect city names, which suggests an issue with how the results are being displayed or interpreted, not with the API's response itself.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1356,
+    "completion_tokens": 43,
+    "total_tokens": 1399
+  },
+  "latency_ms": 1202,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer reported an UNKNOWN_ERROR from the Google Distance Matrix API, which is a server-side error. The documentation indicates that this error may resolve on its own if retried. Since the customer has not provided specific details about the request or the context in which the error occurred, no further action is needed at this time.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer reported an UNKNOWN_ERROR from the Google Distance Matrix API, which is a server-side error. The documentation indicates that this error may resolve on its own if retried. Since the customer has not provided specific details about the request or the context in which the error occurred, no further action is needed at this time.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2278,
+    "completion_tokens": 73,
+    "total_tokens": 2351
+  },
+  "latency_ms": 14651,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

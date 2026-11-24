@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates that the issue is related to prepaid credits running out, which affects autocomplete functionality for paying users. The documentation confirms that prepaid credits are separate from the Krutrim cloud balance and that credits need to be added based on expected API usage. Since the customer has already mentioned the provider and the issue is related to credit balance, no further action is required at this stage.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates that the issue is related to prepaid credits running out, which affects autocomplete functionality for paying users. The documentation confirms that prepaid credits are separate from the Krutrim cloud balance and that credits need to be added based on expected API usage. Since the customer has already mentioned the provider and the issue is related to credit balance, no further action is required at this stage.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1112,
+    "completion_tokens": 85,
+    "total_tokens": 1197
+  },
+  "latency_ms": 2116,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

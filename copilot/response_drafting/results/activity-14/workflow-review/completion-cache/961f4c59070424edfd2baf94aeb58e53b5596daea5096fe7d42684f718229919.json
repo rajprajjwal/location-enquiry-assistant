@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The HTTP 429 Too Many Requests error indicates that the rate limit for the Mapbox Directions API has been exceeded. Since the customer is using a single token for all services, it's possible that the token has reached its rate limit. To diagnose this, we need to inspect one request and test it in isolation to confirm if it's part of a burst of requests hitting the quota.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The HTTP 429 Too Many Requests error indicates that the rate limit for the Mapbox Directions API has been exceeded. Since the customer is using a single token for all services, it's possible that the token has reached its rate limit. To diagnose this, we need to inspect one request and test it in isolation to confirm if it's part of a burst of requests hitting the quota.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1644,
+    "completion_tokens": 91,
+    "total_tokens": 1735
+  },
+  "latency_ms": 2294,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

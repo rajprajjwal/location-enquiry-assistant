@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The documentation indicates that if there is no possible route between two points, the Matrix API sets the resulting matrix element to null. This suggests that some Matrix cells may return null if there is no route, which aligns with the reported issue. To confirm, coordinates and result filters are needed to identify the specific cases where null values are returned.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The documentation indicates that if there is no possible route between two points, the Matrix API sets the resulting matrix element to null. This suggests that some Matrix cells may return null if there is no route, which aligns with the reported issue. To confirm, coordinates and result filters are needed to identify the specific cases where null values are returned.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2334,
+    "completion_tokens": 78,
+    "total_tokens": 2412
+  },
+  "latency_ms": 2062,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

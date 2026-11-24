@@ -1,0 +1,3178 @@
+{
+  "status": "locked_original_working_gt",
+  "source_workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "working_allowlist_sha256": "59ada638b0147cdc67f4c0e6c01cc5d1fd30e50968bec37206aee2d876d5005f",
+  "reference_policy": "Original workbook API, intent, sub-intent, primary team and bucket; no label changes. Used only for offline evaluation, never supplied to the model.",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-003",
+      "api": "autocomplete",
+      "intent": "sales_qualification",
+      "sub_intent": "licensing_fit",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-AC-003",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-008",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-AC-008",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-009",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-AC-008",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-010",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-AC-010",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-011",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-AC-008",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-012",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-AC-012",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-015",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-AC-015",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-016",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-AC-015",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-017",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-AC-015",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-018",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-AC-015",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-019",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-AC-015",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-020",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-AC-015",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-021",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-AC-021",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-AC-021",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-AC-021",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-AC-021",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-026",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "updates",
+      "group": "GT-LBS-AC-026",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-027",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "updates",
+      "group": "GT-LBS-AC-026",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-035",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-035",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-038",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-AC-038",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-043",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-043",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-044",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "updates",
+      "group": "GT-LBS-AC-044",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-047",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-049",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-049",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-053",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-053",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-055",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-055",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-056",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-056",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-059",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-059",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-069",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-069",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-072",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "updates",
+      "group": "GT-LBS-AC-072",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-082",
+      "api": "autocomplete",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-082",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-083",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-AC-083",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-084",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-084",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-085",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-088",
+      "api": "autocomplete",
+      "intent": "human_handoff",
+      "sub_intent": "billing_incident",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-AC-088",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-090",
+      "api": "autocomplete",
+      "intent": "human_handoff",
+      "sub_intent": "data_quality",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-AC-090",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-091",
+      "api": "autocomplete",
+      "intent": "human_handoff",
+      "sub_intent": "security_incident",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-AC-091",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-092",
+      "api": "autocomplete",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-092",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-093",
+      "api": "autocomplete",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-093",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "api": "autocomplete",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-094",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-096",
+      "api": "autocomplete",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-096",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-099",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-099",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-101",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-101",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-102",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-102",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-103",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-103",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-104",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-104",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-105",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-105",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-106",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "integration_question",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-AC-106",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-107",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "integration_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-107",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-109",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-109",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-110",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-110",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-AC-111",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-112",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-112",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-113",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-113",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-114",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-114",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-115",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-AC-115",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-116",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-116",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-117",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-116",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-118",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-116",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-119",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-119",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-120",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-119",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-121",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-119",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-122",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-122",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-123",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-AC-122",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-125",
+      "api": "autocomplete",
+      "intent": "pricing_comparison",
+      "sub_intent": "competitive_comparison",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-125",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-204",
+      "api": "autocomplete",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-AC-204",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-208",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-AC-208",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-209",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-AC-208",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-212",
+      "api": "autocomplete",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-AC-212",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-213",
+      "api": "autocomplete",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-AC-213",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-AC-216",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-AC-216",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-217",
+      "api": "autocomplete",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-AC-216",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-218",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-AC-218",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-219",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-AC-218",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-220",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-AC-220",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-221",
+      "api": "autocomplete",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-AC-220",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "api": "autocomplete",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-AC-223",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-224",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-224",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-225",
+      "api": "autocomplete",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-224",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-AC-226",
+      "api": "autocomplete",
+      "intent": "capability_match",
+      "sub_intent": "capability_question",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-226",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-AC-227",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-227",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-228",
+      "api": "autocomplete",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-AC-227",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-AC-233",
+      "api": "autocomplete",
+      "intent": "sales_qualification",
+      "sub_intent": "licensing_fit",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-AC-233",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-013",
+      "api": "directions",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DIR-013",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-014",
+      "api": "directions",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DIR-014",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-025",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DIR-025",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-026",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DIR-025",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-027",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DIR-025",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-028",
+      "api": "directions",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DIR-028",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-029",
+      "api": "directions",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DIR-028",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-030",
+      "api": "directions",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DIR-028",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-031",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "free_tier_question",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DIR-031",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-032",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "free_tier_question",
+      "team": "Sales",
+      "bucket": "updates",
+      "group": "GT-LBS-DIR-032",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-033",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "free_tier_question",
+      "team": "Sales",
+      "bucket": "updates",
+      "group": "GT-LBS-DIR-033",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-036",
+      "api": "directions",
+      "intent": "sales_qualification",
+      "sub_intent": "capability_fit",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DIR-036",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-037",
+      "api": "directions",
+      "intent": "sales_qualification",
+      "sub_intent": "capability_fit",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DIR-037",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-038",
+      "api": "directions",
+      "intent": "sales_qualification",
+      "sub_intent": "capability_fit",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DIR-038",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-040",
+      "api": "directions",
+      "intent": "sales_qualification",
+      "sub_intent": "capability_fit",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DIR-040",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-044",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DIR-044",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-045",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DIR-045",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-047",
+      "api": "directions",
+      "intent": "sales_qualification",
+      "sub_intent": "discovery_qualification",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DIR-047",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-048",
+      "api": "directions",
+      "intent": "sales_qualification",
+      "sub_intent": "discovery_qualification",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DIR-048",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "api": "directions",
+      "intent": "sales_qualification",
+      "sub_intent": "discovery_qualification",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DIR-049",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "api": "directions",
+      "intent": "sales_qualification",
+      "sub_intent": "discovery_qualification",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DIR-050",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-053",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DIR-053",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-055",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DIR-055",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-056",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DIR-056",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-057",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DIR-057",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-058",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DIR-058",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-060",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DIR-060",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-061",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DIR-061",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-062",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DIR-062",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-063",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DIR-063",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-064",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DIR-064",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-065",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DIR-065",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-070",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DIR-070",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-072",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DIR-072",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-076",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DIR-076",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-078",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DIR-078",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-079",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-079",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-080",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DIR-080",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-086",
+      "api": "directions",
+      "intent": "human_handoff",
+      "sub_intent": "security_incident",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DIR-086",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-087",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-087",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-088",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-089",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-089",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-090",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-090",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-092",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-092",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-093",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-093",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-094",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-094",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DIR-097",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-098",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "integration_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DIR-098",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-101",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DIR-101",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-102",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DIR-102",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-105",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DIR-105",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-106",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DIR-106",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-107",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DIR-107",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-109",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-109",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-110",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DIR-110",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-111",
+      "api": "directions",
+      "intent": "capability_match",
+      "sub_intent": "capability_question",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DIR-111",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-114",
+      "api": "directions",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DIR-114",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-116",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_estimate",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DIR-116",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-117",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_estimate",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DIR-117",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-118",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_estimate",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DIR-118",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-119",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DIR-119",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-120",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DIR-120",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-121",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DIR-121",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-124",
+      "api": "directions",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_estimate",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DIR-124",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-125",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DIR-125",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DIR-205",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DIR-205",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-206",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DIR-205",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DIR-207",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DIR-207",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-208",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DIR-207",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-211",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DIR-211",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-212",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DIR-211",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-213",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DIR-213",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-214",
+      "api": "directions",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DIR-214",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-215",
+      "api": "directions",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DIR-215",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DIR-218",
+      "api": "directions",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DIR-218",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-219",
+      "api": "directions",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DIR-218",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DIR-220",
+      "api": "directions",
+      "intent": "capability_match",
+      "sub_intent": "capability_question",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DIR-220",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-003",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "history",
+      "group": "GT-LBS-DM-003",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-004",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "history",
+      "group": "GT-LBS-DM-004",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-007",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-007",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-008",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-007",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-009",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-007",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-010",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-007",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-011",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-007",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-012",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-007",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-013",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-007",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-017",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DM-017",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-018",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DM-017",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-019",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DM-017",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-020",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DM-017",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-025",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DM-025",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-030",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DM-025",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DM-034",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-035",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-034",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-036",
+      "api": "distance_matrix",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-034",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-043",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "free_tier_question",
+      "team": "Sales",
+      "bucket": "history",
+      "group": "GT-LBS-DM-043",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-044",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DM-044",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-045",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DM-044",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-046",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "history",
+      "group": "GT-LBS-DM-046",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-047",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "history",
+      "group": "GT-LBS-DM-047",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-048",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DM-048",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DM-049",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-050",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-050",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-051",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-051",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-052",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DM-052",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-056",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-056",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-057",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-057",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-058",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-058",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-060",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-060",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-061",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-061",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-062",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-062",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-065",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DM-065",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-067",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "history",
+      "group": "GT-LBS-DM-067",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-068",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "integration_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DM-068",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-069",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DM-069",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-072",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DM-072",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-073",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DM-073",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-075",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "billing_question",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DM-075",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-077",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-DM-077",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-080",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DM-080",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-086",
+      "api": "distance_matrix",
+      "intent": "human_handoff",
+      "sub_intent": "contract_request",
+      "team": "Sales",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-086",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-088",
+      "api": "distance_matrix",
+      "intent": "human_handoff",
+      "sub_intent": "billing_dispute",
+      "team": "Sales",
+      "bucket": "ownership",
+      "group": "GT-LBS-DM-088",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-089",
+      "api": "distance_matrix",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DM-089",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-090",
+      "api": "distance_matrix",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DM-090",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-091",
+      "api": "distance_matrix",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DM-091",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-092",
+      "api": "distance_matrix",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DM-092",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-093",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DM-093",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-102",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DM-102",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-103",
+      "api": "distance_matrix",
+      "intent": "capability_match",
+      "sub_intent": "capability_question",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DM-103",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-104",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DM-104",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-DM-105",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DM-105",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-106",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DM-106",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-107",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-DM-107",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-114",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DM-114",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-115",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DM-114",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-116",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DM-114",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-120",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DM-120",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-121",
+      "api": "distance_matrix",
+      "intent": "pricing_quote",
+      "sub_intent": "pricing_quote",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-DM-120",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-124",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "integration_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DM-124",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-DM-125",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-206",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DM-206",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-207",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DM-206",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-208",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DM-206",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-209",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DM-209",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-210",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DM-209",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-211",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DM-211",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-212",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-DM-211",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-216",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DM-216",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-217",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DM-216",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-219",
+      "api": "distance_matrix",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DM-219",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-DM-220",
+      "api": "distance_matrix",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-DM-220",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-223",
+      "api": "distance_matrix",
+      "intent": "capability_match",
+      "sub_intent": "capability_question",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DM-223",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "api": "distance_matrix",
+      "intent": "capability_match",
+      "sub_intent": "capability_question",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-DM-225",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "api": "distance_matrix",
+      "intent": "sales_qualification",
+      "sub_intent": "discovery_qualification",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DM-228",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-230",
+      "api": "distance_matrix",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-DM-230",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-004",
+      "api": "reverse_geocode",
+      "intent": "human_handoff",
+      "sub_intent": "production_incident",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-004",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-008",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-008",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-009",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-009",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-010",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-011",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-011",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-012",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-012",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-013",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-013",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-014",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-033",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-033",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-034",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-RG-034",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-035",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-035",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-038",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-RG-038",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-039",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-039",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-040",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-040",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-045",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-045",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-046",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-046",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-061",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-061",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-062",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-065",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-065",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-079",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-079",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-080",
+      "api": "reverse_geocode",
+      "intent": "capability_match",
+      "sub_intent": "capability_question",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-080",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-083",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-083",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-085",
+      "api": "reverse_geocode",
+      "intent": "human_handoff",
+      "sub_intent": "production_incident",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-085",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-086",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-087",
+      "api": "reverse_geocode",
+      "intent": "human_handoff",
+      "sub_intent": "contract_request",
+      "team": "Sales",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-087",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-088",
+      "api": "reverse_geocode",
+      "intent": "human_handoff",
+      "sub_intent": "data_quality",
+      "team": "Support",
+      "bucket": "ownership",
+      "group": "GT-LBS-RG-088",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-091",
+      "api": "reverse_geocode",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-091",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-092",
+      "api": "reverse_geocode",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-092",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-094",
+      "api": "reverse_geocode",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Sales",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-094",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-095",
+      "api": "reverse_geocode",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-095",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "api": "reverse_geocode",
+      "intent": "pricing_quote",
+      "sub_intent": "free_tier_question",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-RG-096",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-097",
+      "api": "reverse_geocode",
+      "intent": "capability_match",
+      "sub_intent": "capability_matching",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-097",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-098",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-098",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-099",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-100",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "updates",
+      "group": "GT-LBS-RG-100",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-101",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-101",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-102",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-102",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-103",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-103",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-104",
+      "api": "reverse_geocode",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-RG-104",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-105",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-105",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-106",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-106",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-107",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-107",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-108",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-108",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-109",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-109",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-110",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "accuracy_question",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-110",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "response_fields",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-111",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-112",
+      "api": "reverse_geocode",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-112",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-115",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-115",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-116",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "interpretation",
+      "group": "GT-LBS-RG-116",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-117",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-RG-117",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-118",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-RG-117",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-RG-117",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-120",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-RG-120",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-121",
+      "api": "reverse_geocode",
+      "intent": "pricing_comparison",
+      "sub_intent": "pricing_comparison",
+      "team": "Sales",
+      "bucket": "pricecompare",
+      "group": "GT-LBS-RG-120",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-122",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-122",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-123",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-123",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-124",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-124",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-125",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "docs",
+      "group": "GT-LBS-RG-123",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-205",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-RG-205",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-206",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-RG-205",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-207",
+      "api": "reverse_geocode",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-RG-207",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-208",
+      "api": "reverse_geocode",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-RG-207",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-209",
+      "api": "reverse_geocode",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-RG-207",
+      "fold": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-210",
+      "api": "reverse_geocode",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-RG-210",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-211",
+      "api": "reverse_geocode",
+      "intent": "coverage_limits",
+      "sub_intent": "coverage_question",
+      "team": "Sales",
+      "bucket": "coveragecompare",
+      "group": "GT-LBS-RG-210",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-214",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-RG-214",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-215",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-RG-214",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-216",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-RG-214",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-217",
+      "api": "reverse_geocode",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-RG-217",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-218",
+      "api": "reverse_geocode",
+      "intent": "coverage_limits",
+      "sub_intent": "limits_question",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-RG-217",
+      "fold": 4
+    },
+    {
+      "record_id": "GT-LBS-RG-219",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-RG-219",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-220",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "error_resolution",
+      "team": "Support",
+      "bucket": "limitscompare",
+      "group": "GT-LBS-RG-220",
+      "fold": 1
+    },
+    {
+      "record_id": "GT-LBS-RG-221",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-221",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-222",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "parameter_question",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-221",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-223",
+      "api": "reverse_geocode",
+      "intent": "troubleshooting",
+      "sub_intent": "parameter_troubleshooting",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-223",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-224",
+      "api": "reverse_geocode",
+      "intent": "docs_how_to",
+      "sub_intent": "policy_question",
+      "team": "Support",
+      "bucket": "capabilitycompare",
+      "group": "GT-LBS-RG-224",
+      "fold": 2
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "api": "reverse_geocode",
+      "intent": "sales_qualification",
+      "sub_intent": "capability_fit",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-227",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "api": "reverse_geocode",
+      "intent": "sales_qualification",
+      "sub_intent": "discovery_qualification",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-228",
+      "fold": 5
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "api": "reverse_geocode",
+      "intent": "sales_qualification",
+      "sub_intent": "discovery_qualification",
+      "team": "Sales",
+      "bucket": "qualification",
+      "group": "GT-LBS-RG-230",
+      "fold": 1
+    }
+  ]
+}

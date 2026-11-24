@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": null, \"reason\": \"The customer is asking about modifying UI elements based on data from Google Directions, which is a routine UI/UX question and does not require a formal handoff.\"}",
+  "raw": "{\"category\": null, \"reason\": \"The customer is asking about modifying UI elements based on data from Google Directions, which is a routine UI/UX question and does not require a formal handoff.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 283,
+    "completion_tokens": 43,
+    "total_tokens": 326
+  },
+  "latency_ms": 1124,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

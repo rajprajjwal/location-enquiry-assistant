@@ -1,0 +1,24 @@
+{
+  "variant": "candidate-v3",
+  "previous": "candidate-v2",
+  "cases": 317,
+  "counts": {
+    "identical_questions": 47,
+    "empty_side": 269,
+    "fresh_semantic_review": 1
+  },
+  "review_batches": [
+    {
+      "path": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/workflow-review/candidate-v3-review-batch-1.json",
+      "cases": 1,
+      "sha256": "a427274eee6825a1162abf9c294fc00dddea7951196438b51a3cc13d49f9ca94"
+    }
+  ],
+  "source_predictions_sha256": "e1033bc7eaf147cad94ed39d1859fa7f891b3d6df5cf9e16f0a7a585ccbe8a97",
+  "previous_predictions_sha256": "badbc2784d9c628cb57bb3851ce3a2f57d893fd3fd3399cf876e8186d2ea36ba",
+  "previous_bound_review_sha256": "c4048e86d258f873be1efed6460215a4e8b0cb6d5ee5b477a73031fdc4000850",
+  "gold_sha256": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089",
+  "equivalence_review_sha256": null,
+  "frozen_cases": 0,
+  "holdout_cases": 0
+}

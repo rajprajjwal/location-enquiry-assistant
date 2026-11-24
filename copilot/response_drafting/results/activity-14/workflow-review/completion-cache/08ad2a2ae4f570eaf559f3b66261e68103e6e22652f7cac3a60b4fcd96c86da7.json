@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"capability_fit\",\"api\":\"directions\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"hyperlocal grocery app\",\"evidence\":\"Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?\"},\"region\":{\"value\":\"Bengaluru\",\"evidence\":\"Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?\"},\"technical_constraints\":{\"value\":\"rider ETAs at checkout\",\"evidence\":\"Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?\"}}}",
+  "raw": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"capability_fit\",\"api\":\"directions\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"hyperlocal grocery app\",\"evidence\":\"Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?\"},\"region\":{\"value\":\"Bengaluru\",\"evidence\":\"Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?\"},\"technical_constraints\":{\"value\":\"rider ETAs at checkout\",\"evidence\":\"Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?\"}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1333,
+    "completion_tokens": 183,
+    "total_tokens": 1516
+  },
+  "latency_ms": 4337,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

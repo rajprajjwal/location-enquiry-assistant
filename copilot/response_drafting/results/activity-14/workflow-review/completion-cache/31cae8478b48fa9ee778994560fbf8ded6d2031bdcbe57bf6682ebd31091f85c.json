@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"12,000,000 route (directions) requests a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing prices.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Compare equivalent vehicle modes across providers.\"\n    },\n    {\n      \"fields\": [\"existing_project\"],\n      \"decision_impact\": \"Check Google product eligibility for the quoted workload.\"\n    }\n  ],\n  \"reason\": \"The customer's query requires determining the cost of routing APIs for 12 million requests per month in India. The missing material decisions include whether live-traffic ETAs are required, the required vehicle or travel modes, and if the customer already has an enabled Google project. These factors are essential for selecting the appropriate API and calculating the cost.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"12,000,000 route (directions) requests a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing prices.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Compare equivalent vehicle modes across providers.\"\n    },\n    {\n      \"fields\": [\"existing_project\"],\n      \"decision_impact\": \"Check Google product eligibility for the quoted workload.\"\n    }\n  ],\n  \"reason\": \"The customer's query requires determining the cost of routing APIs for 12 million requests per month in India. The missing material decisions include whether live-traffic ETAs are required, the required vehicle or travel modes, and if the customer already has an enabled Google project. These factors are essential for selecting the appropriate API and calculating the cost.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2273,
+    "completion_tokens": 244,
+    "total_tokens": 2517
+  },
+  "latency_ms": 5723,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

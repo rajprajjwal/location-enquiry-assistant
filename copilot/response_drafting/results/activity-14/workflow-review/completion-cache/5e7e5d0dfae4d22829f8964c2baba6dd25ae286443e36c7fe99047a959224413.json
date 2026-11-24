@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding returns ZERO_RESULTS, which may occur if the geocoder was passed a latlng in a remote location. The issue might be related to the specific coordinates being queried or the filters applied, such as result_type and location_type parameters, which could be restricting the results.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding returns ZERO_RESULTS, which may occur if the geocoder was passed a latlng in a remote location. The issue might be related to the specific coordinates being queried or the filters applied, such as result_type and location_type parameters, which could be restricting the results.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1940,
+    "completion_tokens": 68,
+    "total_tokens": 2008
+  },
+  "latency_ms": 1829,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"storage_required\",\"value\":true,\"evidence\":\"must store the addresses\"}],\"groups\":[{\"fields\":[\"lookup_trigger\"],\"decision_impact\":\"Check public-service usage-policy compatibility for interactive versus periodic use.\"}],\"reason\":\"The lookup trigger is not provided, which is necessary to determine the compatibility with public-service usage policies for interactive versus periodic use.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"storage_required\",\"value\":true,\"evidence\":\"must store the addresses\"}],\"groups\":[{\"fields\":[\"lookup_trigger\"],\"decision_impact\":\"Check public-service usage-policy compatibility for interactive versus periodic use.\"}],\"reason\":\"The lookup trigger is not provided, which is necessary to determine the compatibility with public-service usage policies for interactive versus periodic use.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2050,
+    "completion_tokens": 78,
+    "total_tokens": 2128
+  },
+  "latency_ms": 2860,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

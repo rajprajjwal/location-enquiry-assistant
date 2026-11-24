@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"rejected_request\",\"reason\":\"The error 'Invalid param input: input length, must be >0' indicates an HTTP input-validation failure. The request body or query parameters are missing or invalid. To diagnose this, the actual request and response-body error need to be inspected.\"}",
+  "raw": "{\"decision\":\"rejected_request\",\"reason\":\"The error 'Invalid param input: input length, must be >0' indicates an HTTP input-validation failure. The request body or query parameters are missing or invalid. To diagnose this, the actual request and response-body error need to be inspected.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2180,
+    "completion_tokens": 59,
+    "total_tokens": 2239
+  },
+  "latency_ms": 1722,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

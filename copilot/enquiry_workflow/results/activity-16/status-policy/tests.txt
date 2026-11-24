@@ -1,0 +1,46 @@
+.................................................................... [  7%]
+........................................................................ [ 16%]
+........................................................................ [ 24%]
+......................................F................................. [ 33%]
+........................................................................ [ 41%]
+.............................F....F..F.................................. [ 50%]
+........................................................................ [ 58%]
+......F................................................................. [ 66%]
+........................................................................ [ 75%]
+F....................................................................... [ 83%]
+...................................s.................................... [ 92%]
+............................................................. [ 99%]
+.......                                                                  [100%]
+=================================== FAILURES ===================================
+___ test_bad_interpretation_and_model_proposal_cannot_hide_monthly_question ____
+tests/enquiry_workflow/test_monthly_workload.py:70: in test_bad_interpretation_and_model_proposal_cannot_hide_monthly_question
+    assert any('monthly_volume' in group['fields'] for group in updated['follow_up_selection']['groups'])
+E   assert False
+E    +  where False = any(<generator object test_bad_interpretation_and_model_proposal_cannot_hide_monthly_question.<locals>.<genexpr> at 0x14be9fed0>)
+_____ test_material_profile_facts_are_not_dropped_by_an_empty_model_group ______
+tests/enquiry_workflow/test_qualification.py:157: in test_material_profile_facts_are_not_dropped_by_an_empty_model_group
+    assert updated['follow_up_selection']['groups'][0]['fields']==['instruction_modality']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range
+______ test_customer_route_size_is_not_rejected_as_provider_documentation ______
+tests/enquiry_workflow/test_qualification.py:190: in test_customer_route_size_is_not_rejected_as_provider_documentation
+    assert any('max_stops' in group['fields'] for group in updated['follow_up_selection']['groups'])
+E   assert False
+E    +  where False = any(<generator object test_customer_route_size_is_not_rejected_as_provider_documentation.<locals>.<genexpr> at 0x14d2b7ed0>)
+_ test_requested_matrix_checklist_does_not_invent_generic_region_or_timeline_intake _
+tests/enquiry_workflow/test_qualification_checklist.py:26: in test_requested_matrix_checklist_does_not_invent_generic_region_or_timeline_intake
+    assert 'Mapbox driving-traffic' in text
+E   AssertionError: assert 'Mapbox driving-traffic' in 'Before recommending a provider, confirm the remaining customer requirements:\n\n- Could you confirm number of origins...-traffic ETAs are required?\n\nThis checklist is qualification advice. No provider-specific claims have been verified.'
+___ test_unbound_outlet_count_cannot_enter_through_model_or_stale_saved_fact ___
+tests/enquiry_workflow/test_requirement_binding.py:94: in test_unbound_outlet_count_cannot_enter_through_model_or_stale_saved_fact
+    assert any('max_stops' in group['fields'] for group in updated['follow_up_selection']['groups'])
+E   assert False
+E    +  where False = any(<generator object test_unbound_outlet_count_cannot_enter_through_model_or_stale_saved_fact.<locals>.<genexpr> at 0x14d33b5e0>)
+____ test_workload_geography_reaches_planner_without_a_model_fact_proposal _____
+tests/enquiry_workflow/test_usage_geography.py:101: in test_workload_geography_reaches_planner_without_a_model_fact_proposal
+    assert result['follow_up_selection']['groups'][0]['fields'] == ['billing_country']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range
+=========================== short test summary info ============================
+SKIPPED [1] tests/rag/test_freshness.py:77: no local snapshot
+6 failed, 849 passed, 1 skipped, 15 subtests passed in 9.10s

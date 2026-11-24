@@ -1,0 +1,11 @@
+﻿pilot_id,intent,api,team
+P01,coverage_limits,distance_matrix,Sales
+P02,pricing_comparison,autocomplete,Sales
+P03,troubleshooting,reverse_geocode,Support
+P04,capability_match,directions,Sales
+P05,docs_how_to,distance_matrix,Support
+P06,sales_qualification,autocomplete,Sales
+P07,human_handoff,directions,Support
+P08,capability_match,distance_matrix,Sales
+P09,coverage_limits,reverse_geocode,Support
+P10,pricing_comparison,autocomplete,Sales

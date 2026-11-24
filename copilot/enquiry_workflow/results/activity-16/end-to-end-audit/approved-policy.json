@@ -1,0 +1,12 @@
+{
+  "existing_customer_routine_service_guidance": "Support",
+  "new_customer_qualification": "Sales",
+  "unknown_product_provider_selection": "provisional Sales",
+  "unknown_deployment_quote": "provisional Sales",
+  "unknown_licensing_decision": "provisional Sales",
+  "unknown_api_documentation_and_published_rate_calculation": "provisional Support",
+  "generic_provider_feature_discovery_without_buying_request": "provisional Sales",
+  "numeric_per_request_capacity": "technical documentation, provisional Support",
+  "status_deferrals": "preserve; do not repeat status question",
+  "ground_truth_changes": 0
+}

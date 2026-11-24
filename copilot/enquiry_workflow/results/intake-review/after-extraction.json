@@ -1,0 +1,5790 @@
+[
+  {
+    "record_id": "GT-LBS-AC-003",
+    "group": "GT-LBS-AC-003",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "OSM Nominatim"
+        ],
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 50,
+        "end": 59
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "OSM Nominatim",
+        "evidence": "Nominatim",
+        "start": 50,
+        "end": 59
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "OSM Nominatim"
+          ],
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 50,
+          "end": 59
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "OSM Nominatim",
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 50,
+          "end": 59
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-008",
+    "group": "GT-LBS-AC-008",
+    "fold": 4,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-009",
+    "group": "GT-LBS-AC-008",
+    "fold": 4,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-010",
+    "group": "GT-LBS-AC-010",
+    "fold": 3,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-021",
+    "group": "GT-LBS-AC-021",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-022",
+    "group": "GT-LBS-AC-021",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-023",
+    "group": "GT-LBS-AC-021",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-024",
+    "group": "GT-LBS-AC-021",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-233",
+    "group": "GT-LBS-AC-233",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "OSM Nominatim"
+        ],
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 129,
+        "end": 138
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "OSM Nominatim",
+        "evidence": "Nominatim",
+        "start": 129,
+        "end": 138
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "OSM Nominatim"
+          ],
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 129,
+          "end": 138
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "OSM Nominatim",
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 129,
+          "end": 138
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-036",
+    "group": "GT-LBS-DIR-036",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps"
+        ],
+        "source": "query",
+        "evidence": "Ola",
+        "start": 5,
+        "end": 8
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Ola Maps",
+        "evidence": "Ola",
+        "start": 5,
+        "end": 8
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps"
+          ],
+          "source": "query",
+          "evidence": "Ola",
+          "start": 5,
+          "end": 8
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "Ola",
+          "start": 5,
+          "end": 8
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-037",
+    "group": "GT-LBS-DIR-037",
+    "fold": 2,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-038",
+    "group": "GT-LBS-DIR-038",
+    "fold": 1,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-040",
+    "group": "GT-LBS-DIR-040",
+    "fold": 4,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-047",
+    "group": "GT-LBS-DIR-047",
+    "fold": 1,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "group": "GT-LBS-DIR-048",
+    "fold": 2,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-049",
+    "group": "GT-LBS-DIR-049",
+    "fold": 2,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-050",
+    "group": "GT-LBS-DIR-050",
+    "fold": 3,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-017",
+    "group": "GT-LBS-DM-017",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps"
+        ],
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Ola Maps",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps"
+          ],
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-018",
+    "group": "GT-LBS-DM-017",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps"
+        ],
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Ola Maps",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps"
+          ],
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-019",
+    "group": "GT-LBS-DM-017",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps"
+        ],
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Ola Maps",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps"
+          ],
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-020",
+    "group": "GT-LBS-DM-017",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps"
+        ],
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Ola Maps",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps"
+          ],
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-025",
+    "group": "GT-LBS-DM-025",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "matrices, 5,000 per month in India",
+        "start": 34,
+        "end": 68
+      },
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "origin_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      },
+      {
+        "field": "matrix_elements",
+        "value": 100,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "matrices, 5,000 per month in India",
+          "start": 34,
+          "end": 68
+        },
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "origin_count": {
+          "field": "origin_count",
+          "status": "supplied",
+          "value": 10,
+          "source": "query",
+          "evidence": "10×10",
+          "start": 28,
+          "end": 33
+        },
+        "destination_count": {
+          "field": "destination_count",
+          "status": "supplied",
+          "value": 10,
+          "source": "query",
+          "evidence": "10×10",
+          "start": 28,
+          "end": 33
+        },
+        "matrix_elements": {
+          "field": "matrix_elements",
+          "status": "supplied",
+          "value": 100,
+          "source": "query",
+          "evidence": "10×10",
+          "start": 28,
+          "end": 33
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": false,
+    "current_provider_correct": null,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-030",
+    "group": "GT-LBS-DM-025",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "matrices, 120,000 per month in India",
+        "start": 34,
+        "end": 70
+      },
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "origin_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      },
+      {
+        "field": "matrix_elements",
+        "value": 100,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "matrices, 120,000 per month in India",
+          "start": 34,
+          "end": 70
+        },
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "origin_count": {
+          "field": "origin_count",
+          "status": "supplied",
+          "value": 10,
+          "source": "query",
+          "evidence": "10×10",
+          "start": 28,
+          "end": 33
+        },
+        "destination_count": {
+          "field": "destination_count",
+          "status": "supplied",
+          "value": 10,
+          "source": "query",
+          "evidence": "10×10",
+          "start": 28,
+          "end": 33
+        },
+        "matrix_elements": {
+          "field": "matrix_elements",
+          "status": "supplied",
+          "value": 100,
+          "source": "query",
+          "evidence": "10×10",
+          "start": 28,
+          "end": 33
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": false,
+    "current_provider_correct": null,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-034",
+    "group": "GT-LBS-DM-034",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "matrices, 10,000 a month in India",
+        "start": 29,
+        "end": 62
+      },
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps",
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Ola Maps vs Google",
+        "start": 0,
+        "end": 18
+      },
+      {
+        "field": "origin_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 23,
+        "end": 28
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 23,
+        "end": 28
+      },
+      {
+        "field": "matrix_elements",
+        "value": 100,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 23,
+        "end": 28
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "matrices, 10,000 a month in India",
+          "start": 29,
+          "end": 62
+        },
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps",
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Ola Maps vs Google",
+          "start": 0,
+          "end": 18
+        },
+        "origin_count": {
+          "field": "origin_count",
+          "status": "supplied",
+          "value": 10,
+          "source": "query",
+          "evidence": "10×10",
+          "start": 23,
+          "end": 28
+        },
+        "destination_count": {
+          "field": "destination_count",
+          "status": "supplied",
+          "value": 10,
+          "source": "query",
+          "evidence": "10×10",
+          "start": 23,
+          "end": 28
+        },
+        "matrix_elements": {
+          "field": "matrix_elements",
+          "status": "supplied",
+          "value": 100,
+          "source": "query",
+          "evidence": "10×10",
+          "start": 23,
+          "end": 28
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": true,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "group": "GT-LBS-DM-228",
+    "fold": 3,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-230",
+    "group": "GT-LBS-DM-230",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 41,
+        "end": 47
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 41,
+        "end": 47
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 41,
+          "end": 47
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 41,
+          "end": 47
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-008",
+    "group": "GT-LBS-RG-008",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 65,
+        "end": 89
+      },
+      {
+        "field": "workload",
+        "value": 1500000,
+        "source": "query",
+        "evidence": "1,500,000 reverse-geocoding lookups a month",
+        "start": 37,
+        "end": 80
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "1,500,000 reverse-geocoding lookups a month",
+        "start": 37,
+        "end": 80
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "lookups a month in India",
+          "start": 65,
+          "end": 89
+        },
+        "workload": {
+          "field": "workload",
+          "status": "supplied",
+          "value": 1500000,
+          "source": "query",
+          "evidence": "1,500,000 reverse-geocoding lookups a month",
+          "start": 37,
+          "end": 80
+        },
+        "workload_period": {
+          "field": "workload_period",
+          "status": "supplied",
+          "value": "month",
+          "source": "query",
+          "evidence": "1,500,000 reverse-geocoding lookups a month",
+          "start": 37,
+          "end": 80
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-009",
+    "group": "GT-LBS-RG-009",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 79,
+        "end": 103
+      },
+      {
+        "field": "workload",
+        "value": 3000000,
+        "source": "query",
+        "evidence": "3,000,000 reverse-geocoding lookups a month",
+        "start": 51,
+        "end": 94
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "3,000,000 reverse-geocoding lookups a month",
+        "start": 51,
+        "end": 94
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "lookups a month in India",
+          "start": 79,
+          "end": 103
+        },
+        "workload": {
+          "field": "workload",
+          "status": "supplied",
+          "value": 3000000,
+          "source": "query",
+          "evidence": "3,000,000 reverse-geocoding lookups a month",
+          "start": 51,
+          "end": 94
+        },
+        "workload_period": {
+          "field": "workload_period",
+          "status": "supplied",
+          "value": "month",
+          "source": "query",
+          "evidence": "3,000,000 reverse-geocoding lookups a month",
+          "start": 51,
+          "end": 94
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-010",
+    "group": "GT-LBS-RG-010",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 80,
+        "end": 104
+      },
+      {
+        "field": "workload",
+        "value": 4500000,
+        "source": "query",
+        "evidence": "4,500,000 reverse-geocoding lookups a month",
+        "start": 52,
+        "end": 95
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "4,500,000 reverse-geocoding lookups a month",
+        "start": 52,
+        "end": 95
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "lookups a month in India",
+          "start": 80,
+          "end": 104
+        },
+        "workload": {
+          "field": "workload",
+          "status": "supplied",
+          "value": 4500000,
+          "source": "query",
+          "evidence": "4,500,000 reverse-geocoding lookups a month",
+          "start": 52,
+          "end": 95
+        },
+        "workload_period": {
+          "field": "workload_period",
+          "status": "supplied",
+          "value": "month",
+          "source": "query",
+          "evidence": "4,500,000 reverse-geocoding lookups a month",
+          "start": 52,
+          "end": 95
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-011",
+    "group": "GT-LBS-RG-011",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 74,
+        "end": 98
+      },
+      {
+        "field": "workload",
+        "value": 7000000,
+        "source": "query",
+        "evidence": "7,000,000 reverse-geocoding lookups a month",
+        "start": 46,
+        "end": 89
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "7,000,000 reverse-geocoding lookups a month",
+        "start": 46,
+        "end": 89
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "lookups a month in India",
+          "start": 74,
+          "end": 98
+        },
+        "workload": {
+          "field": "workload",
+          "status": "supplied",
+          "value": 7000000,
+          "source": "query",
+          "evidence": "7,000,000 reverse-geocoding lookups a month",
+          "start": 46,
+          "end": 89
+        },
+        "workload_period": {
+          "field": "workload_period",
+          "status": "supplied",
+          "value": "month",
+          "source": "query",
+          "evidence": "7,000,000 reverse-geocoding lookups a month",
+          "start": 46,
+          "end": 89
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-012",
+    "group": "GT-LBS-RG-012",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 81,
+        "end": 105
+      },
+      {
+        "field": "workload",
+        "value": 9000000,
+        "source": "query",
+        "evidence": "9,000,000 reverse-geocoding lookups a month",
+        "start": 53,
+        "end": 96
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "9,000,000 reverse-geocoding lookups a month",
+        "start": 53,
+        "end": 96
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "lookups a month in India",
+          "start": 81,
+          "end": 105
+        },
+        "workload": {
+          "field": "workload",
+          "status": "supplied",
+          "value": 9000000,
+          "source": "query",
+          "evidence": "9,000,000 reverse-geocoding lookups a month",
+          "start": 53,
+          "end": 96
+        },
+        "workload_period": {
+          "field": "workload_period",
+          "status": "supplied",
+          "value": "month",
+          "source": "query",
+          "evidence": "9,000,000 reverse-geocoding lookups a month",
+          "start": 53,
+          "end": 96
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-013",
+    "group": "GT-LBS-RG-013",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 84,
+        "end": 108
+      },
+      {
+        "field": "workload",
+        "value": 12000000,
+        "source": "query",
+        "evidence": "12,000,000 reverse-geocoding lookups a month",
+        "start": 55,
+        "end": 99
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "12,000,000 reverse-geocoding lookups a month",
+        "start": 55,
+        "end": 99
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "lookups a month in India",
+          "start": 84,
+          "end": 108
+        },
+        "workload": {
+          "field": "workload",
+          "status": "supplied",
+          "value": 12000000,
+          "source": "query",
+          "evidence": "12,000,000 reverse-geocoding lookups a month",
+          "start": 55,
+          "end": 99
+        },
+        "workload_period": {
+          "field": "workload_period",
+          "status": "supplied",
+          "value": "month",
+          "source": "query",
+          "evidence": "12,000,000 reverse-geocoding lookups a month",
+          "start": 55,
+          "end": 99
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-014",
+    "group": "GT-LBS-RG-014",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 72,
+        "end": 96
+      },
+      {
+        "field": "workload",
+        "value": 400000,
+        "source": "query",
+        "evidence": "400,000 reverse-geocoding lookups a month",
+        "start": 46,
+        "end": 87
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "400,000 reverse-geocoding lookups a month",
+        "start": 46,
+        "end": 87
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "query",
+          "evidence": "lookups a month in India",
+          "start": 72,
+          "end": 96
+        },
+        "workload": {
+          "field": "workload",
+          "status": "supplied",
+          "value": 400000,
+          "source": "query",
+          "evidence": "400,000 reverse-geocoding lookups a month",
+          "start": 46,
+          "end": 87
+        },
+        "workload_period": {
+          "field": "workload_period",
+          "status": "supplied",
+          "value": "month",
+          "source": "query",
+          "evidence": "400,000 reverse-geocoding lookups a month",
+          "start": 46,
+          "end": 87
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-227",
+    "group": "GT-LBS-RG-227",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform",
+          "OSM Nominatim",
+          "Ola Maps",
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox",
+        "start": 184,
+        "end": 260
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform",
+            "OSM Nominatim",
+            "Ola Maps",
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox",
+          "start": 184,
+          "end": 260
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": true,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-228",
+    "group": "GT-LBS-RG-228",
+    "fold": 5,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-230",
+    "group": "GT-LBS-RG-230",
+    "fold": 1,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-079",
+    "group": "GT-LBS-DIR-079",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "OSRM"
+        ],
+        "source": "query",
+        "evidence": "OSRM",
+        "start": 16,
+        "end": 20
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "OSRM",
+        "evidence": "OSRM",
+        "start": 16,
+        "end": 20
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "OSRM",
+        "evidence": "Our self-hosted OSRM",
+        "start": 0,
+        "end": 20
+      },
+      {
+        "field": "coordinates",
+        "value": "12.97,77.59;12.93,77.62",
+        "source": "query",
+        "evidence": "12.97,77.59;12.93,77.62",
+        "start": 94,
+        "end": 117
+      },
+      {
+        "field": "http_status",
+        "value": [
+          "400"
+        ],
+        "source": "query",
+        "evidence": "HTTP 400",
+        "start": 29,
+        "end": 37
+      },
+      {
+        "field": "error_code",
+        "value": "NoSegment",
+        "source": "query",
+        "evidence": "NoSegment",
+        "start": 49,
+        "end": 58
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "OSRM"
+          ],
+          "source": "query",
+          "evidence": "OSRM",
+          "start": 16,
+          "end": 20
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "OSRM",
+          "source": "query",
+          "evidence": "OSRM",
+          "start": 16,
+          "end": 20
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "OSRM",
+          "source": "query",
+          "evidence": "Our self-hosted OSRM",
+          "start": 0,
+          "end": 20
+        },
+        "coordinates": {
+          "field": "coordinates",
+          "status": "supplied",
+          "value": "12.97,77.59;12.93,77.62",
+          "source": "query",
+          "evidence": "12.97,77.59;12.93,77.62",
+          "start": 94,
+          "end": 117
+        },
+        "http_status": {
+          "field": "http_status",
+          "status": "supplied",
+          "value": [
+            "400"
+          ],
+          "source": "query",
+          "evidence": "HTTP 400",
+          "start": 29,
+          "end": 37
+        },
+        "error_code": {
+          "field": "error_code",
+          "status": "supplied",
+          "value": "NoSegment",
+          "source": "query",
+          "evidence": "NoSegment",
+          "start": 49,
+          "end": 58
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-097",
+    "group": "GT-LBS-DIR-097",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 16,
+        "end": 22
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 16,
+        "end": 22
+      },
+      {
+        "field": "waypoint_lower_bound_exclusive",
+        "value": 10,
+        "source": "query",
+        "evidence": "more than 10 waypoints",
+        "start": 35,
+        "end": 57
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 16,
+          "end": 22
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 16,
+          "end": 22
+        },
+        "waypoint_lower_bound_exclusive": {
+          "field": "waypoint_lower_bound_exclusive",
+          "status": "supplied",
+          "value": 10,
+          "source": "query",
+          "evidence": "more than 10 waypoints",
+          "start": 35,
+          "end": 57
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": false,
+    "current_provider_correct": null,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-124",
+    "group": "GT-LBS-DIR-124",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 17,
+        "end": 23
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 17,
+          "end": 23
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 17,
+          "end": 23
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": false,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": true,
+    "scenario_assumption": {
+      "raw": "50,000 Google two-wheeler routes a month",
+      "requests_per_month": 50000,
+      "unit": "routes_per_month",
+      "basis": "scenario_assumption",
+      "evidence": "What will 50,000 Google two-wheeler routes a month cost us in India via the Routes API"
+    },
+    "scenario_source": "query"
+  },
+  {
+    "record_id": "GT-LBS-AC-223",
+    "group": "GT-LBS-AC-223",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Mapbox",
+        "evidence": "Mapbox",
+        "start": 4,
+        "end": 10
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 4,
+          "end": 10
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 4,
+          "end": 10
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-086",
+    "group": "GT-LBS-RG-086",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps"
+        ],
+        "source": "query",
+        "evidence": "Ola",
+        "start": 4,
+        "end": 7
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Ola Maps",
+        "evidence": "Ola",
+        "start": 4,
+        "end": 7
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "Ola Maps",
+        "evidence": "All Ola reverse-geocode calls fail with 401/403 after we rotated OAuth credentials",
+        "start": 0,
+        "end": 82
+      },
+      {
+        "field": "http_status",
+        "value": [
+          "401",
+          "403"
+        ],
+        "source": "query",
+        "evidence": "fail with 401/403",
+        "start": 30,
+        "end": 47
+      },
+      {
+        "field": "failure_after_credential_rotation",
+        "value": true,
+        "source": "query",
+        "evidence": "after we rotated OAuth credentials",
+        "start": 48,
+        "end": 82
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps"
+          ],
+          "source": "query",
+          "evidence": "Ola",
+          "start": 4,
+          "end": 7
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "Ola",
+          "start": 4,
+          "end": 7
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "All Ola reverse-geocode calls fail with 401/403 after we rotated OAuth credentials",
+          "start": 0,
+          "end": 82
+        },
+        "http_status": {
+          "field": "http_status",
+          "status": "supplied",
+          "value": [
+            "401",
+            "403"
+          ],
+          "source": "query",
+          "evidence": "fail with 401/403",
+          "start": 30,
+          "end": 47
+        },
+        "failure_after_credential_rotation": {
+          "field": "failure_after_credential_rotation",
+          "status": "supplied",
+          "value": true,
+          "source": "query",
+          "evidence": "after we rotated OAuth credentials",
+          "start": 48,
+          "end": 82
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-085",
+    "group": "GT-LBS-AC-085",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "OSM Nominatim"
+        ],
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 4,
+        "end": 13
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "OSM Nominatim",
+        "evidence": "Nominatim",
+        "start": 4,
+        "end": 13
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "OSM Nominatim",
+        "evidence": "Our Nominatim",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "field": "user_agent_present",
+        "value": false,
+        "source": "query",
+        "evidence": "don't send any User-Agent",
+        "start": 39,
+        "end": 64
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "OSM Nominatim"
+          ],
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 4,
+          "end": 13
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "OSM Nominatim",
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 4,
+          "end": 13
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "OSM Nominatim",
+          "source": "query",
+          "evidence": "Our Nominatim",
+          "start": 0,
+          "end": 13
+        },
+        "user_agent_present": {
+          "field": "user_agent_present",
+          "status": "supplied",
+          "value": false,
+          "source": "query",
+          "evidence": "don't send any User-Agent",
+          "start": 39,
+          "end": 64
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-225",
+    "group": "GT-LBS-DM-225",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "field": "origin_count",
+        "value": 15,
+        "source": "query",
+        "evidence": "15 stations × 10 offices",
+        "start": 53,
+        "end": 77
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "15 stations × 10 offices",
+        "start": 53,
+        "end": 77
+      },
+      {
+        "field": "matrix_elements",
+        "value": 150,
+        "source": "query",
+        "evidence": "15 stations × 10 offices",
+        "start": 53,
+        "end": 77
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 4,
+          "end": 10
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 4,
+          "end": 10
+        },
+        "origin_count": {
+          "field": "origin_count",
+          "status": "supplied",
+          "value": 15,
+          "source": "query",
+          "evidence": "15 stations × 10 offices",
+          "start": 53,
+          "end": 77
+        },
+        "destination_count": {
+          "field": "destination_count",
+          "status": "supplied",
+          "value": 10,
+          "source": "query",
+          "evidence": "15 stations × 10 offices",
+          "start": 53,
+          "end": 77
+        },
+        "matrix_elements": {
+          "field": "matrix_elements",
+          "status": "supplied",
+          "value": 150,
+          "source": "query",
+          "evidence": "15 stations × 10 offices",
+          "start": 53,
+          "end": 77
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-062",
+    "group": "GT-LBS-RG-062",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Mapbox",
+        "evidence": "Mapbox",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "http_status",
+        "value": [
+          "422"
+        ],
+        "source": "query",
+        "evidence": "returns 422",
+        "start": 38,
+        "end": 49
+      },
+      {
+        "field": "limit_parameter",
+        "value": 5,
+        "source": "query",
+        "evidence": "limit=5",
+        "start": 30,
+        "end": 37
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 0,
+          "end": 6
+        },
+        "http_status": {
+          "field": "http_status",
+          "status": "supplied",
+          "value": [
+            "422"
+          ],
+          "source": "query",
+          "evidence": "returns 422",
+          "start": 38,
+          "end": 49
+        },
+        "limit_parameter": {
+          "field": "limit_parameter",
+          "status": "supplied",
+          "value": 5,
+          "source": "query",
+          "evidence": "limit=5",
+          "start": 30,
+          "end": 37
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": false,
+    "current_provider_correct": null,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-047",
+    "group": "GT-LBS-AC-047",
+    "fold": 4,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-111",
+    "group": "GT-LBS-RG-111",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 38,
+        "end": 44
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Mapbox",
+        "evidence": "Mapbox",
+        "start": 38,
+        "end": 44
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 38,
+          "end": 44
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 38,
+          "end": 44
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-099",
+    "group": "GT-LBS-RG-099",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 9,
+        "end": 15
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 9,
+        "end": 15
+      },
+      {
+        "field": "error_code",
+        "value": "ZERO_RESULTS",
+        "source": "query",
+        "evidence": "ZERO_RESULTS",
+        "start": 41,
+        "end": 53
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 9,
+          "end": 15
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 9,
+          "end": 15
+        },
+        "error_code": {
+          "field": "error_code",
+          "status": "supplied",
+          "value": "ZERO_RESULTS",
+          "source": "query",
+          "evidence": "ZERO_RESULTS",
+          "start": 41,
+          "end": 53
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": false,
+    "current_provider_correct": null,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-088",
+    "group": "GT-LBS-DIR-088",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 36,
+        "end": 42
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 36,
+        "end": 42
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Looping over 15 markers and calling Google Directions for each pair quickly gives OVER_QUERY_LIMIT",
+        "start": 0,
+        "end": 98
+      },
+      {
+        "field": "error_code",
+        "value": "OVER_QUERY_LIMIT",
+        "source": "query",
+        "evidence": "OVER_QUERY_LIMIT",
+        "start": 82,
+        "end": 98
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 36,
+          "end": 42
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 36,
+          "end": 42
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Looping over 15 markers and calling Google Directions for each pair quickly gives OVER_QUERY_LIMIT",
+          "start": 0,
+          "end": 98
+        },
+        "error_code": {
+          "field": "error_code",
+          "status": "supplied",
+          "value": "OVER_QUERY_LIMIT",
+          "source": "query",
+          "evidence": "OVER_QUERY_LIMIT",
+          "start": 82,
+          "end": 98
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-111",
+    "group": "GT-LBS-AC-111",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google Places autocomplete says 'The provided API key is invalid' with our server key",
+        "start": 0,
+        "end": 85
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google Places autocomplete says 'The provided API key is invalid' with our server key",
+          "start": 0,
+          "end": 85
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-049",
+    "group": "GT-LBS-DM-049",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 68,
+        "end": 74
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 68,
+        "end": 74
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "our Google",
+        "start": 64,
+        "end": 74
+      },
+      {
+        "field": "error_code",
+        "value": "NOT_FOUND",
+        "source": "query",
+        "evidence": "NOT_FOUND",
+        "start": 112,
+        "end": 121
+      },
+      {
+        "field": "ticket_id",
+        "value": "TKT-93241",
+        "source": "query",
+        "evidence": "TKT-93241",
+        "start": 19,
+        "end": 28
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 68,
+          "end": 74
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 68,
+          "end": 74
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "our Google",
+          "start": 64,
+          "end": 74
+        },
+        "error_code": {
+          "field": "error_code",
+          "status": "supplied",
+          "value": "NOT_FOUND",
+          "source": "query",
+          "evidence": "NOT_FOUND",
+          "start": 112,
+          "end": 121
+        },
+        "ticket_id": {
+          "field": "ticket_id",
+          "status": "supplied",
+          "value": "TKT-93241",
+          "source": "query",
+          "evidence": "TKT-93241",
+          "start": 19,
+          "end": 28
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-125",
+    "group": "GT-LBS-DM-125",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "OSRM"
+        ],
+        "source": "query",
+        "evidence": "OSRM",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "OSRM",
+        "evidence": "OSRM",
+        "start": 0,
+        "end": 4
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "OSRM"
+          ],
+          "source": "query",
+          "evidence": "OSRM",
+          "start": 0,
+          "end": 4
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "OSRM",
+          "source": "query",
+          "evidence": "OSRM",
+          "start": 0,
+          "end": 4
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-046",
+    "group": "GT-LBS-DM-046",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "history[0]",
+        "evidence": "Google",
+        "start": 10,
+        "end": 16
+      },
+      {
+        "field": "provider",
+        "source": "history[0]",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 10,
+        "end": 16
+      },
+      {
+        "field": "current_provider",
+        "source": "history[0]",
+        "value": "Google Maps Platform",
+        "evidence": "Our 10×10 Google",
+        "start": 0,
+        "end": 16
+      },
+      {
+        "field": "origin_count",
+        "value": 10,
+        "source": "history[0]",
+        "evidence": "10×10",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "history[0]",
+        "evidence": "10×10",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "field": "matrix_elements",
+        "value": 100,
+        "source": "history[0]",
+        "evidence": "10×10",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "field": "departure_time",
+        "value": "now",
+        "source": "history[0]",
+        "evidence": "departure_time=now",
+        "start": 38,
+        "end": 56
+      },
+      {
+        "field": "proceed_without_more_questions",
+        "value": true,
+        "source": "query",
+        "evidence": "answer based on my earlier message",
+        "start": 31,
+        "end": 65
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "history[0]",
+          "evidence": "Google",
+          "start": 10,
+          "end": 16
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "history[0]",
+          "evidence": "Google",
+          "start": 10,
+          "end": 16
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "history[0]",
+          "evidence": "Our 10×10 Google",
+          "start": 0,
+          "end": 16
+        },
+        "origin_count": {
+          "field": "origin_count",
+          "status": "supplied",
+          "value": 10,
+          "source": "history[0]",
+          "evidence": "10×10",
+          "start": 4,
+          "end": 9
+        },
+        "destination_count": {
+          "field": "destination_count",
+          "status": "supplied",
+          "value": 10,
+          "source": "history[0]",
+          "evidence": "10×10",
+          "start": 4,
+          "end": 9
+        },
+        "matrix_elements": {
+          "field": "matrix_elements",
+          "status": "supplied",
+          "value": 100,
+          "source": "history[0]",
+          "evidence": "10×10",
+          "start": 4,
+          "end": 9
+        },
+        "departure_time": {
+          "field": "departure_time",
+          "status": "supplied",
+          "value": "now",
+          "source": "history[0]",
+          "evidence": "departure_time=now",
+          "start": 38,
+          "end": 56
+        },
+        "proceed_without_more_questions": {
+          "field": "proceed_without_more_questions",
+          "status": "supplied",
+          "value": true,
+          "source": "query",
+          "evidence": "answer based on my earlier message",
+          "start": 31,
+          "end": 65
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-125",
+    "group": "GT-LBS-AC-125",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps",
+          "OSM Nominatim"
+        ],
+        "source": "query",
+        "evidence": "Ola Maps Autocomplete and the public Nominatim",
+        "start": 44,
+        "end": 90
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps",
+            "OSM Nominatim"
+          ],
+          "source": "query",
+          "evidence": "Ola Maps Autocomplete and the public Nominatim",
+          "start": 44,
+          "end": 90
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": true,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-226",
+    "group": "GT-LBS-AC-226",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Mapbox",
+        "evidence": "Mapbox",
+        "start": 4,
+        "end": 10
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 4,
+          "end": 10
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 4,
+          "end": 10
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-094",
+    "group": "GT-LBS-AC-094",
+    "fold": 4,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-209",
+    "group": "GT-LBS-AC-208",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mappls (MapmyIndia)"
+        ],
+        "source": "query",
+        "evidence": "Mappls",
+        "start": 15,
+        "end": 21
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Mappls (MapmyIndia)",
+        "evidence": "Mappls",
+        "start": 15,
+        "end": 21
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "Mappls (MapmyIndia)",
+        "evidence": "I'm setting up Mappls",
+        "start": 0,
+        "end": 21
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mappls (MapmyIndia)"
+          ],
+          "source": "query",
+          "evidence": "Mappls",
+          "start": 15,
+          "end": 21
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mappls (MapmyIndia)",
+          "source": "query",
+          "evidence": "Mappls",
+          "start": 15,
+          "end": 21
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Mappls (MapmyIndia)",
+          "source": "query",
+          "evidence": "I'm setting up Mappls",
+          "start": 0,
+          "end": 21
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-207",
+    "group": "GT-LBS-DIR-207",
+    "fold": 5,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-072",
+    "group": "GT-LBS-DIR-072",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps"
+        ],
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Ola Maps",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps"
+          ],
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": false,
+    "current_provider_correct": null,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DIR-030",
+    "group": "GT-LBS-DIR-028",
+    "fold": 1,
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "history[0]",
+        "evidence": "requests a month in India",
+        "start": 62,
+        "end": 87
+      },
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps",
+          "Google Maps Platform"
+        ],
+        "source": "history[0]",
+        "evidence": "Ola Maps and Google",
+        "start": 8,
+        "end": 27
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "usage_geography": {
+          "field": "usage_geography",
+          "status": "supplied",
+          "value": "India",
+          "source": "history[0]",
+          "evidence": "requests a month in India",
+          "start": 62,
+          "end": 87
+        },
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps",
+            "Google Maps Platform"
+          ],
+          "source": "history[0]",
+          "evidence": "Ola Maps and Google",
+          "start": 8,
+          "end": 27
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": true,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": false,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": true,
+    "scenario_assumption": {
+      "raw": "6,000,000 traffic-aware route requests a month",
+      "requests_per_month": 6000000,
+      "unit": "requests_per_month",
+      "basis": "scenario_assumption",
+      "evidence": "Compare Ola Maps and Google for 6,000,000 traffic-aware route requests a month in India"
+    },
+    "scenario_source": "history[0]"
+  },
+  {
+    "record_id": "GT-LBS-DIR-026",
+    "group": "GT-LBS-DIR-025",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mapbox"
+        ],
+        "source": "history[0]",
+        "evidence": "Mapbox",
+        "start": 15,
+        "end": 21
+      },
+      {
+        "field": "provider",
+        "source": "history[0]",
+        "value": "Mapbox",
+        "evidence": "Mapbox",
+        "start": 15,
+        "end": 21
+      },
+      {
+        "field": "proceed_without_more_questions",
+        "value": true,
+        "source": "query",
+        "evidence": "answer based on my earlier message",
+        "start": 31,
+        "end": 65
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "history[0]",
+          "evidence": "Mapbox",
+          "start": 15,
+          "end": 21
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "history[0]",
+          "evidence": "Mapbox",
+          "start": 15,
+          "end": 21
+        },
+        "proceed_without_more_questions": {
+          "field": "proceed_without_more_questions",
+          "status": "supplied",
+          "value": true,
+          "source": "query",
+          "evidence": "answer based on my earlier message",
+          "start": 31,
+          "end": 65
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": false,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": true,
+    "scenario_assumption": {
+      "raw": "900,000 requests a month",
+      "requests_per_month": 900000,
+      "unit": "requests_per_month",
+      "basis": "scenario_assumption",
+      "evidence": "How much would Mapbox Directions cost for 900,000 requests a month"
+    },
+    "scenario_source": "history[0]"
+  },
+  {
+    "record_id": "GT-LBS-DM-080",
+    "group": "GT-LBS-DM-080",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "OSRM"
+        ],
+        "source": "query",
+        "evidence": "osrm",
+        "start": 26,
+        "end": 30
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "OSRM",
+        "evidence": "osrm",
+        "start": 26,
+        "end": 30
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "OSRM"
+          ],
+          "source": "query",
+          "evidence": "osrm",
+          "start": 26,
+          "end": 30
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "OSRM",
+          "source": "query",
+          "evidence": "osrm",
+          "start": 26,
+          "end": 30
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-209",
+    "group": "GT-LBS-DM-209",
+    "fold": 3,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-067",
+    "group": "GT-LBS-DM-067",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps"
+        ],
+        "source": "history[0]",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "provider",
+        "source": "history[0]",
+        "value": "Ola Maps",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "current_provider",
+        "source": "history[0]",
+        "value": "Ola Maps",
+        "evidence": "Ola Distance Matrix returns 429 when our dispatcher refreshes ETAs every 10 seconds for 200 drivers",
+        "start": 0,
+        "end": 99
+      },
+      {
+        "field": "http_status",
+        "value": [
+          "429"
+        ],
+        "source": "history[0]",
+        "evidence": "returns 429",
+        "start": 20,
+        "end": 31
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps"
+          ],
+          "source": "history[0]",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "history[0]",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "history[0]",
+          "evidence": "Ola Distance Matrix returns 429 when our dispatcher refreshes ETAs every 10 seconds for 200 drivers",
+          "start": 0,
+          "end": 99
+        },
+        "http_status": {
+          "field": "http_status",
+          "status": "supplied",
+          "value": [
+            "429"
+          ],
+          "source": "history[0]",
+          "evidence": "returns 429",
+          "start": 20,
+          "end": 31
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-121",
+    "group": "GT-LBS-DM-120",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-105",
+    "group": "GT-LBS-RG-105",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 46,
+        "end": 52
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 46,
+        "end": 52
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 46,
+          "end": 52
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 46,
+          "end": 52
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-091",
+    "group": "GT-LBS-RG-091",
+    "fold": 5,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-217",
+    "group": "GT-LBS-RG-217",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 7,
+        "end": 13
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 7,
+        "end": 13
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 7,
+          "end": 13
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 7,
+          "end": 13
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-119",
+    "group": "GT-LBS-RG-117",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform",
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Google vs Mapbox",
+        "start": 0,
+        "end": 16
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform",
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Google vs Mapbox",
+          "start": 0,
+          "end": 16
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": true,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": false,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": true,
+    "scenario_assumption": {
+      "raw": "4,000,000 lookups a month",
+      "requests_per_month": 4000000,
+      "unit": "lookups_per_month",
+      "basis": "scenario_assumption",
+      "evidence": "Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)"
+    },
+    "scenario_source": "query"
+  },
+  {
+    "record_id": "GT-LBS-AC-027",
+    "group": "GT-LBS-AC-026",
+    "fold": 5,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": false,
+    "current_provider_correct": null,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-084",
+    "group": "GT-LBS-AC-084",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "OSM Nominatim"
+        ],
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 16,
+        "end": 25
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "OSM Nominatim",
+        "evidence": "Nominatim",
+        "start": 16,
+        "end": 25
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "OSM Nominatim"
+          ],
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 16,
+          "end": 25
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "OSM Nominatim",
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 16,
+          "end": 25
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-099",
+    "group": "GT-LBS-AC-099",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-114",
+    "group": "GT-LBS-AC-114",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 9,
+        "end": 15
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 9,
+        "end": 15
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 9,
+          "end": 15
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 9,
+          "end": 15
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-118",
+    "group": "GT-LBS-AC-116",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps"
+        ],
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Ola Maps",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "workload",
+        "value": 6000000,
+        "source": "query",
+        "evidence": "6,000,000 calls a month",
+        "start": 48,
+        "end": 71
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "6,000,000 calls a month",
+        "start": 48,
+        "end": 71
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps"
+          ],
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "Ola",
+          "start": 0,
+          "end": 3
+        },
+        "workload": {
+          "field": "workload",
+          "status": "supplied",
+          "value": 6000000,
+          "source": "query",
+          "evidence": "6,000,000 calls a month",
+          "start": 48,
+          "end": 71
+        },
+        "workload_period": {
+          "field": "workload_period",
+          "status": "supplied",
+          "value": "month",
+          "source": "query",
+          "evidence": "6,000,000 calls a month",
+          "start": 48,
+          "end": 71
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-121",
+    "group": "GT-LBS-AC-119",
+    "fold": 1,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-122",
+    "group": "GT-LBS-AC-122",
+    "fold": 1,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps",
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Ola vs Mapbox",
+        "start": 0,
+        "end": 13
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps",
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Ola vs Mapbox",
+          "start": 0,
+          "end": 13
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": true,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-216",
+    "group": "GT-LBS-AC-216",
+    "fold": 4,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Mapbox",
+        "evidence": "Mapbox",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "Mapbox",
+        "evidence": "Our Mapbox",
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 4,
+          "end": 10
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 4,
+          "end": 10
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Our Mapbox",
+          "start": 0,
+          "end": 10
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-AC-224",
+    "group": "GT-LBS-AC-224",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 3,
+        "end": 9
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Mapbox",
+        "evidence": "Mapbox",
+        "start": 3,
+        "end": 9
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 3,
+          "end": 9
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 3,
+          "end": 9
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-DM-045",
+    "group": "GT-LBS-DM-044",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 47,
+        "end": 53
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 47,
+        "end": 53
+      },
+      {
+        "field": "ticket_id",
+        "value": "TKT-63953",
+        "source": "query",
+        "evidence": "TKT-63953",
+        "start": 19,
+        "end": 28
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 47,
+          "end": 53
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 47,
+          "end": 53
+        },
+        "ticket_id": {
+          "field": "ticket_id",
+          "status": "supplied",
+          "value": "TKT-63953",
+          "source": "query",
+          "evidence": "TKT-63953",
+          "start": 19,
+          "end": 28
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": false,
+    "current_provider_correct": null,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-034",
+    "group": "GT-LBS-RG-034",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 47,
+        "end": 53
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 47,
+        "end": 53
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP",
+        "start": 46,
+        "end": 126
+      },
+      {
+        "field": "error_code",
+        "value": "REQUEST_DENIED",
+        "source": "query",
+        "evidence": "REQUEST_DENIED",
+        "start": 78,
+        "end": 92
+      },
+      {
+        "field": "ticket_id",
+        "value": "TKT-35162",
+        "source": "query",
+        "evidence": "TKT-35162",
+        "start": 19,
+        "end": 28
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 47,
+          "end": 53
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 47,
+          "end": 53
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP",
+          "start": 46,
+          "end": 126
+        },
+        "error_code": {
+          "field": "error_code",
+          "status": "supplied",
+          "value": "REQUEST_DENIED",
+          "source": "query",
+          "evidence": "REQUEST_DENIED",
+          "start": 78,
+          "end": 92
+        },
+        "ticket_id": {
+          "field": "ticket_id",
+          "status": "supplied",
+          "value": "TKT-35162",
+          "source": "query",
+          "evidence": "TKT-35162",
+          "start": 19,
+          "end": 28
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-096",
+    "group": "GT-LBS-RG-096",
+    "fold": 3,
+    "facts": [],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {},
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": false,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": true,
+    "scenario_assumption": {
+      "raw": "20,000 lookups a month",
+      "requests_per_month": 20000,
+      "unit": "lookups_per_month",
+      "basis": "scenario_assumption",
+      "evidence": "Free reverse geocoding options for a hobby app with 20,000 lookups a month"
+    },
+    "scenario_source": "query"
+  },
+  {
+    "record_id": "GT-LBS-RG-102",
+    "group": "GT-LBS-RG-102",
+    "fold": 3,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "current_provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google Geocode REQUEST_DENIED for reverse geocode with our Places-enabled key",
+        "start": 0,
+        "end": 77
+      },
+      {
+        "field": "error_code",
+        "value": "REQUEST_DENIED",
+        "source": "query",
+        "evidence": "REQUEST_DENIED",
+        "start": 15,
+        "end": 29
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        },
+        "current_provider": {
+          "field": "current_provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google Geocode REQUEST_DENIED for reverse geocode with our Places-enabled key",
+          "start": 0,
+          "end": 77
+        },
+        "error_code": {
+          "field": "error_code",
+          "status": "supplied",
+          "value": "REQUEST_DENIED",
+          "source": "query",
+          "evidence": "REQUEST_DENIED",
+          "start": 15,
+          "end": 29
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-120",
+    "group": "GT-LBS-RG-120",
+    "fold": 1,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Ola Maps",
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Ola vs Mapbox",
+        "start": 0,
+        "end": 13
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Ola Maps",
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Ola vs Mapbox",
+          "start": 0,
+          "end": 13
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": true,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-123",
+    "group": "GT-LBS-RG-123",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 7,
+        "end": 13
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 7,
+        "end": 13
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 7,
+          "end": 13
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 7,
+          "end": 13
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-124",
+    "group": "GT-LBS-RG-124",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Google Maps Platform"
+        ],
+        "source": "query",
+        "evidence": "Google",
+        "start": 7,
+        "end": 13
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Google Maps Platform",
+        "evidence": "Google",
+        "start": 7,
+        "end": 13
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Google Maps Platform"
+          ],
+          "source": "query",
+          "evidence": "Google",
+          "start": 7,
+          "end": 13
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 7,
+          "end": 13
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-205",
+    "group": "GT-LBS-RG-205",
+    "fold": 1,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mapbox"
+        ],
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 53,
+        "end": 59
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Mapbox",
+        "evidence": "Mapbox",
+        "start": 53,
+        "end": 59
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 53,
+          "end": 59
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 53,
+          "end": 59
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-211",
+    "group": "GT-LBS-RG-210",
+    "fold": 2,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "Mappls (MapmyIndia)"
+        ],
+        "source": "query",
+        "evidence": "Mappls",
+        "start": 5,
+        "end": 11
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "Mappls (MapmyIndia)",
+        "evidence": "Mappls",
+        "start": 5,
+        "end": 11
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mappls (MapmyIndia)"
+          ],
+          "source": "query",
+          "evidence": "Mappls",
+          "start": 5,
+          "end": 11
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mappls (MapmyIndia)",
+          "source": "query",
+          "evidence": "Mappls",
+          "start": 5,
+          "end": 11
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-216",
+    "group": "GT-LBS-RG-214",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "OSM Nominatim"
+        ],
+        "source": "query",
+        "evidence": "nominatim",
+        "start": 70,
+        "end": 79
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "OSM Nominatim",
+        "evidence": "nominatim",
+        "start": 70,
+        "end": 79
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "OSM Nominatim"
+          ],
+          "source": "query",
+          "evidence": "nominatim",
+          "start": 70,
+          "end": 79
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "OSM Nominatim",
+          "source": "query",
+          "evidence": "nominatim",
+          "start": 70,
+          "end": 79
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  },
+  {
+    "record_id": "GT-LBS-RG-222",
+    "group": "GT-LBS-RG-221",
+    "fold": 5,
+    "facts": [
+      {
+        "field": "mentioned_providers",
+        "value": [
+          "OSM Nominatim"
+        ],
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 4,
+        "end": 13
+      },
+      {
+        "field": "provider",
+        "source": "query",
+        "value": "OSM Nominatim",
+        "evidence": "Nominatim",
+        "start": 4,
+        "end": 13
+      }
+    ],
+    "shared_state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "OSM Nominatim"
+          ],
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 4,
+          "end": 13
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "OSM Nominatim",
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 4,
+          "end": 13
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "provider_mentions_correct": true,
+    "current_provider_scored": true,
+    "current_provider_correct": true,
+    "provider_handoff_consistent": true,
+    "legacy_ambiguous_scalar": false,
+    "ambiguous_scalar_removed": true,
+    "evidence_valid": true,
+    "non_provider_unchanged": true,
+    "non_provider_change_expected": true,
+    "scenario_input_preserved": null,
+    "scenario_assumption": null,
+    "scenario_source": null
+  }
+]

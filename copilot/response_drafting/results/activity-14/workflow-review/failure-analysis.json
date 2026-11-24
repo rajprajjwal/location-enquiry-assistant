@@ -1,0 +1,1707 @@
+{
+  "scope": "Read-only causal audit of candidate v1 on all 317 fixed working-eval; primary gold and primary score unchanged.",
+  "review_kind": "Assistant analysis, not independent human adjudication.",
+  "source_sha256": {
+    "candidate_predictions": "4e0cb1ac057c37653a7b385e49b9d580f50e9179dbf500f35f17abd93b20b875",
+    "original_reference": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089",
+    "bound_review": "24a92c187eef826cb8e119a5b5e2712d3f41299883ee766815ebed7914241c86",
+    "reference_conflicts": "d71ddb7991e8635bc30c4f6237539a1bc00f02223b18139c1dc300e43096674b"
+  },
+  "primary_score": {
+    "predicted": 139,
+    "gold": 128,
+    "matches": 62,
+    "facts": 80,
+    "gold_facts": 164,
+    "questions_on_empty_gold": 67,
+    "f1": 0.46441947565543074,
+    "precision": 0.4460431654676259,
+    "recall": 0.484375,
+    "fact_recall": 0.4878048780487805
+  },
+  "empty_gold": {
+    "cases": 50,
+    "questions": 67,
+    "question_assessments": {
+      "conditional_answer_first": 7,
+      "clearly_unnecessary": 36,
+      "defensible_missing_fact": 24
+    },
+    "by_cause": {
+      "requested_billing_options": 2,
+      "quantity_already_fixed": 2,
+      "billing_diagnostic": 1,
+      "wrong_decision_dependency": 1,
+      "supplied_fact_reasked": 3,
+      "documented_rule": 2,
+      "documented_remedy_before_reproduction": 4,
+      "explicit_scenario_reasked": 1,
+      "request_reproduction": 8,
+      "optional_qualification_on_documentation": 2,
+      "operation_mismatch": 6,
+      "provider_product_mismatch": 4,
+      "keystrokes_not_http_calls": 2,
+      "diagnostic_isolation": 1,
+      "renderer_vs_api": 1,
+      "generic_intake_route": 1,
+      "documented_limit_before_reproduction": 1,
+      "price_insensitive_capability": 2,
+      "failed_input_example": 5,
+      "documented_billing_unit": 1,
+      "price_insensitive_input_format": 5,
+      "documented_limit_scope": 1,
+      "rate_diagnostic": 1,
+      "licensing_requirement": 1,
+      "usage_policy_requirement": 1,
+      "negative_fact_not_bound": 3,
+      "pricing_geography_requirement": 3,
+      "numeric_object_not_bound": 2
+    },
+    "cases_detail": [
+      {
+        "record_id": "GT-LBS-AC-026",
+        "query": "Sandbox CRM opportunity OPP-21025. Customer wrote:\n\"We're still on Place Autocomplete (Legacy) in India: 80,000 sessions × 7 requests. Cost per billing option?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "conditional_answer_first",
+            "cause": "requested_billing_options",
+            "reason": "The user asks for cost per billing option; show documented alternatives rather than requiring a terminating-call choice first."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "quantity_already_fixed",
+            "reason": "The number of requests per session is explicitly given; debouncing cannot change that stated request-count scenario."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-027",
+        "query": "Sandbox CRM opportunity OPP-58418. Customer wrote:\n\"We're still on Place Autocomplete (Legacy) in India: 300,000 sessions × 9 requests. Cost per billing option?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "conditional_answer_first",
+            "cause": "requested_billing_options",
+            "reason": "The user asks for cost per billing option; show documented alternatives rather than requiring a terminating-call choice first."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "quantity_already_fixed",
+            "reason": "The number of requests per session is explicitly given; debouncing cannot change that stated request-count scenario."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-035",
+        "query": "Our Google Place Autocomplete bill is per keystroke even though we pass a sessiontoken.",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "defensible_missing_fact",
+            "cause": "billing_diagnostic",
+            "reason": "A session token alone does not prove valid session termination; the terminating call can explain per-request billing."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "wrong_decision_dependency",
+            "reason": "Debouncing affects volume, not why a token-bearing session is billed per request."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-044",
+        "query": "Sandbox CRM opportunity OPP-56568. Customer wrote: \"Will Google bill our Place Autocomplete and the final Place Details call as one session if their API keys belong to two different Google Cloud projects?\" Draft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "clearly_unnecessary",
+            "cause": "supplied_fact_reasked",
+            "reason": "The final Place Details call is explicitly part of the question."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "documented_rule",
+            "reason": "Whether keys from different projects share a billed session is a documented eligibility rule, independent of keystroke debouncing."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-047",
+        "query": "Autocomplete (New) never returns query predictions for us.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Which provider are you using, and could you share the request body from one call that did not return predictions? Please remove credentials.",
+            "assessment": "conditional_answer_first",
+            "cause": "documented_remedy_before_reproduction",
+            "reason": "The draft already retrieves includeQueryPredictions and includedRegionCodes conditions. Explain these first; request the body if those settings do not resolve the reported failure."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-049",
+        "query": "If our Autocomplete (New) session ends with Place Details Pro, do we still pay for the 12 autocomplete requests?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "clearly_unnecessary",
+            "cause": "explicit_scenario_reasked",
+            "reason": "The conditional scenario already states session termination with Place Details Pro."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-053",
+        "query": "Ola Autocomplete returns 400 'Invalid param input: input length, must be >0'.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+            "assessment": "conditional_answer_first",
+            "cause": "documented_remedy_before_reproduction",
+            "reason": "The reported error names an empty input. Give the required-input remedy first; the response error is already supplied, and a request is useful only if the issue persists."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-069",
+        "query": "Mapbox Search Box rejects our long pasted addresses.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+            "assessment": "defensible_missing_fact",
+            "cause": "request_reproduction",
+            "reason": "An exact redacted input/request can establish the actual pasted-input length and endpoint parameters."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-094",
+        "query": "How do we restrict autocomplete results to India on each provider?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you need points of interest as well as addresses?",
+            "assessment": "clearly_unnecessary",
+            "cause": "optional_qualification_on_documentation",
+            "reason": "POI-versus-address preferences are not needed to explain country restriction parameters across providers."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-116",
+        "query": "Ola Place Details after autocomplete selection: 150,000 calls a month. Cost?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "clearly_unnecessary",
+            "cause": "operation_mismatch",
+            "reason": "The user explicitly prices Ola Place Details calls after selection; asking whether that call occurs repeats the priced operation."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "operation_mismatch",
+            "reason": "Debouncing preceding autocomplete calls does not determine the price of the stated Place Details call count."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-117",
+        "query": "Ola Place Details after autocomplete selection: 1,000,000 calls a month. Cost?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "clearly_unnecessary",
+            "cause": "operation_mismatch",
+            "reason": "The user explicitly prices Ola Place Details calls after selection; asking whether that call occurs repeats the priced operation."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "operation_mismatch",
+            "reason": "Debouncing preceding autocomplete calls does not determine the price of the stated Place Details call count."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-118",
+        "query": "Ola Place Details after autocomplete selection: 6,000,000 calls a month. Cost?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "clearly_unnecessary",
+            "cause": "operation_mismatch",
+            "reason": "The user explicitly prices Ola Place Details calls after selection; asking whether that call occurs repeats the priced operation."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "operation_mismatch",
+            "reason": "Debouncing preceding autocomplete calls does not determine the price of the stated Place Details call count."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-122",
+        "query": "Ola vs Mapbox autocomplete for 100,000 sessions × 8 keystrokes a month?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "clearly_unnecessary",
+            "cause": "provider_product_mismatch",
+            "reason": "A Google-style Place Details session question is applied to an Ola-versus-Mapbox autocomplete comparison."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "defensible_missing_fact",
+            "cause": "keystrokes_not_http_calls",
+            "reason": "Keystrokes do not establish how many HTTP calls are sent after debouncing; this can affect a per-request comparison."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-123",
+        "query": "Ola vs Mapbox autocomplete for 400,000 sessions × 10 keystrokes a month?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you call Place Details after a selection?",
+            "assessment": "clearly_unnecessary",
+            "cause": "provider_product_mismatch",
+            "reason": "A Google-style Place Details session question is applied to an Ola-versus-Mapbox autocomplete comparison."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "defensible_missing_fact",
+            "cause": "keystrokes_not_http_calls",
+            "reason": "Keystrokes do not establish how many HTTP calls are sent after debouncing; this can affect a per-request comparison."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-125",
+        "query": "For a type-ahead address search box, how do Ola Maps Autocomplete and the public Nominatim endpoint compare for free usage and restrictions?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether self-hosting is acceptable or a managed API is required?",
+            "assessment": "clearly_unnecessary",
+            "cause": "optional_qualification_on_documentation",
+            "reason": "Published free usage and restrictions can be compared before asking a new hosting-preference question."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-217",
+        "query": "Does Mapbox Geocoding bill one request per keystroke when used for type-ahead?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether you debounce keystrokes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "documented_rule",
+            "reason": "The question asks whether HTTP requests or keystrokes are billed, not for a personalized monthly estimate."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-AC-225",
+        "query": "Our Mapbox Search Box /retrieve calls fail validation. Do we need a session parameter?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+            "assessment": "conditional_answer_first",
+            "cause": "documented_remedy_before_reproduction",
+            "reason": "Answer the documented retrieve-session parameter requirement first; a redacted actual request is useful if validation still fails."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-057",
+        "query": "Customer message:\n\"Our Google Directions URL has 23 lat/lng waypoints and sometimes gets rejected as too long. Options?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+            "assessment": "defensible_missing_fact",
+            "cause": "request_reproduction",
+            "reason": "The actual URL is needed to distinguish encoded URL length, waypoint representation and API restrictions."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-064",
+        "query": "Customer message:\n\"Ola Directions returns 400 with reason 'Invalid/missing origin'. We send origin=77.5946,12.9716.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+            "assessment": "conditional_answer_first",
+            "cause": "documented_remedy_before_reproduction",
+            "reason": "The origin value and exact error are already given. Explain coordinate order/format first; request the full call only for an unresolved remainder."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-088",
+        "query": "Looping over 15 markers and calling Google Directions for each pair quickly gives OVER_QUERY_LIMIT. How should we fix it?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share one failing request with credentials redacted, and tell us whether the same request still returns OVER_QUERY_LIMIT when sent on its own?",
+            "assessment": "defensible_missing_fact",
+            "cause": "diagnostic_isolation",
+            "reason": "An isolated failing call distinguishes a burst-specific failure from a continuing quota or request problem."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-097",
+        "query": "Drawing several Google routes with more than 10 waypoints each only shows one route. Is there a 10-waypoint cap?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "For one route that is not drawn, does the API return a route, an empty result, or an error?",
+            "assessment": "defensible_missing_fact",
+            "cause": "renderer_vs_api",
+            "reason": "Whether the API returns a route separates rendering replacement from a server-side waypoint failure."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-098",
+        "query": "We need to optimize the order of more than 10 delivery addresses with Google Directions.",
+        "history": [],
+        "selection_status": "no_qualification_required",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Where will the application operate?",
+            "assessment": "clearly_unnecessary",
+            "cause": "generic_intake_route",
+            "reason": "Operating region does not resolve the requested waypoint-order optimization capability; a broad sales label triggered a generic blocking question."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-106",
+        "query": "Ola Directions Basic returns 422 for a route from Colombo to Kandy. Is something wrong with our request?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+            "assessment": "defensible_missing_fact",
+            "cause": "request_reproduction",
+            "reason": "HTTP 422 alone does not establish which parameter or regional condition failed; the actual request and response body are useful."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-110",
+        "query": "Mapbox Directions fails for our test route Kanyakumari→Leh→Kanyakumari→Leh→Kanyakumari (four legs). Is there a distance cap?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+            "assessment": "conditional_answer_first",
+            "cause": "documented_limit_before_reproduction",
+            "reason": "The named repeated long route supports a distance-limit explanation first. Ask for the request only if the documented cap does not explain the failure; this run produced no draft."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-117",
+        "query": "What would 250,000 requests a month to the Mapbox Directions API cost in rupees for point-to-point driving routes?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether live-traffic ETAs are required?",
+            "assessment": "clearly_unnecessary",
+            "cause": "price_insensitive_capability",
+            "reason": "The stated Mapbox Directions request price does not require choosing a traffic profile first."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm required vehicle or travel modes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "supplied_fact_reasked",
+            "reason": "Driving is explicitly specified."
+          },
+          {
+            "index": 3,
+            "text": "Could you confirm whether you already have an enabled Google project?",
+            "assessment": "clearly_unnecessary",
+            "cause": "provider_product_mismatch",
+            "reason": "Google project eligibility is irrelevant to a Mapbox-only quote."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-124",
+        "query": "What will 50,000 Google two-wheeler routes a month cost us in India via the Routes API?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether live-traffic ETAs are required?",
+            "assessment": "clearly_unnecessary",
+            "cause": "price_insensitive_capability",
+            "reason": "The named Google two-wheeler Routes product already determines the relevant SKU; do not require a separate feature-selection discussion to quote it."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm required vehicle or travel modes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "supplied_fact_reasked",
+            "reason": "Two-wheeler travel mode is explicitly specified."
+          },
+          {
+            "index": 3,
+            "text": "Could you confirm whether you already have an enabled Google project?",
+            "assessment": "clearly_unnecessary",
+            "cause": "provider_product_mismatch",
+            "reason": "The user chose Routes API; a legacy-project eligibility question is not needed for this quote."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-049",
+        "query": "Sandbox CRM ticket TKT-93241. Customer wrote:\n\"Some elements in our Google Distance Matrix response have status NOT_FOUND while others are OK.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share one origin and destination pair that failed, with both values exactly as sent in the request?",
+            "assessment": "defensible_missing_fact",
+            "cause": "failed_input_example",
+            "reason": "A failing origin/destination pair is material to an element-level NOT_FOUND diagnosis."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-061",
+        "query": "Customer message:\n\"Google Distance Matrix returns REQUEST_DENIED from our Node.js backend.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+            "assessment": "defensible_missing_fact",
+            "cause": "request_reproduction",
+            "reason": "The observed denial has no confirmed complete request-level cause; a redacted as-sent example can verify endpoint, restrictions and authentication context."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-069",
+        "query": "Is Ola Distance Matrix billed per request or per pair?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+            "assessment": "clearly_unnecessary",
+            "cause": "documented_billing_unit",
+            "reason": "Per-request versus per-pair billing is a provider rule, independent of the customer traffic/travel-mode preference."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-114",
+        "query": "Existing Google project: 150,000 traffic-aware Distance Matrix elements a month in India. Cost?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+            "assessment": "clearly_unnecessary",
+            "cause": "price_insensitive_input_format",
+            "reason": "The billable monthly element count and product are already supplied; input representation affects request feasibility, not this element-price calculation."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-115",
+        "query": "Existing Google project: 1,500,000 traffic-aware Distance Matrix elements a month in India. Cost?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+            "assessment": "clearly_unnecessary",
+            "cause": "price_insensitive_input_format",
+            "reason": "The billable monthly element count and product are already supplied; input representation affects request feasibility, not this element-price calculation."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-116",
+        "query": "Existing Google project: 6,000,000 traffic-aware Distance Matrix elements a month in India. Cost?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+            "assessment": "clearly_unnecessary",
+            "cause": "price_insensitive_input_format",
+            "reason": "The billable monthly element count and product are already supplied; input representation affects request feasibility, not this element-price calculation."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-120",
+        "query": "Google Route Matrix for two-wheelers in India: 7,000 elements a month. Cost?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+            "assessment": "clearly_unnecessary",
+            "cause": "price_insensitive_input_format",
+            "reason": "The billable monthly element count and product are already supplied; input representation affects request feasibility, not this element-price calculation."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-121",
+        "query": "Google Route Matrix for two-wheelers in India: 120,000 elements a month. Cost?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+            "assessment": "clearly_unnecessary",
+            "cause": "price_insensitive_input_format",
+            "reason": "The billable monthly element count and product are already supplied; input representation affects request feasibility, not this element-price calculation."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-225",
+        "query": "Can Google's Routes API give us a transit matrix for 15 stations × 10 offices?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+            "assessment": "clearly_unnecessary",
+            "cause": "documented_limit_scope",
+            "reason": "The question supplies a transit matrix shape. Explain the transit element cap and batching; a generic input-format quote question does not resolve that cap."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-034",
+        "query": "Sandbox CRM ticket TKT-35162. Customer wrote:\n\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+            "assessment": "defensible_missing_fact",
+            "cause": "request_reproduction",
+            "reason": "The observed denial has no confirmed complete request-level cause; a redacted as-sent example can verify endpoint, restrictions and authentication context."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-062",
+        "query": "Mapbox reverse geocoding with limit=5 returns 422.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+            "assessment": "defensible_missing_fact",
+            "cause": "request_reproduction",
+            "reason": "The request type/filter context can determine whether limit=5 is valid; the query does not establish that the required type is absent."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-065",
+        "query": "A Mapbox Geocoding v6 batch job that reverse-geocodes our coordinates returns HTTP 429. What should we check?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+            "assessment": "defensible_missing_fact",
+            "cause": "rate_diagnostic",
+            "reason": "A reported 429 needs request/retry context, although aggregate rate and retry headers would be more targeted than the generic request template."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-086",
+        "query": "All Ola reverse-geocode calls fail with 401/403 after we rotated OAuth credentials.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+            "assessment": "defensible_missing_fact",
+            "cause": "request_reproduction",
+            "reason": "The observed denial has no confirmed complete request-level cause; a redacted as-sent example can verify endpoint, restrictions and authentication context."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-096",
+        "query": "Free reverse geocoding options for a hobby app with 20,000 lookups a month?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether results must be stored?",
+            "assessment": "defensible_missing_fact",
+            "cause": "licensing_requirement",
+            "reason": "Result storage affects which free or temporary products can be recommended."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+            "assessment": "defensible_missing_fact",
+            "cause": "usage_policy_requirement",
+            "reason": "User-triggered versus periodic tracking affects public-service suitability."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-098",
+        "query": "Google reverse geocoding gives ZERO_RESULTS for some Indian coordinates outside Delhi and Mumbai.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+            "assessment": "defensible_missing_fact",
+            "cause": "failed_input_example",
+            "reason": "Actual coordinates and filters are material to a specific ZERO_RESULTS diagnosis; original empty labels do not make the diagnostic request inherently wrong."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-099",
+        "query": "Why does Google reverse geocoding return ZERO_RESULTS on some GPS coordinates?",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+            "assessment": "defensible_missing_fact",
+            "cause": "failed_input_example",
+            "reason": "Actual coordinates and filters are material to a specific ZERO_RESULTS diagnosis; original empty labels do not make the diagnostic request inherently wrong."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-100",
+        "query": "Sandbox CRM ticket TKT-71137. Customer wrote:\n\"Coordinates from Google forward geocoding give ZERO_RESULTS in reverse geocoding.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+            "assessment": "defensible_missing_fact",
+            "cause": "failed_input_example",
+            "reason": "Actual coordinates and filters are material to a specific ZERO_RESULTS diagnosis; original empty labels do not make the diagnostic request inherently wrong."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-101",
+        "query": "Google reverse geocoding returns ZERO_RESULTS on the phone but works in the browser.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+            "assessment": "defensible_missing_fact",
+            "cause": "failed_input_example",
+            "reason": "Actual coordinates and filters are material to a specific ZERO_RESULTS diagnosis; original empty labels do not make the diagnostic request inherently wrong."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-102",
+        "query": "Google Geocode REQUEST_DENIED for reverse geocode with our Places-enabled key.",
+        "history": [],
+        "selection_status": "selected",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+            "assessment": "defensible_missing_fact",
+            "cause": "request_reproduction",
+            "reason": "The observed denial has no confirmed complete request-level cause; a redacted as-sent example can verify endpoint, restrictions and authentication context."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-117",
+        "query": "Google vs Mapbox reverse geocoding for 500,000 lookups a month (display only, no storage)?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether results must be stored?",
+            "assessment": "clearly_unnecessary",
+            "cause": "negative_fact_not_bound",
+            "reason": "The query explicitly says display only, no storage, but storage is asked again."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm billing account country and where most requests will be used?",
+            "assessment": "defensible_missing_fact",
+            "cause": "pricing_geography_requirement",
+            "reason": "Billing country and primary usage geography can change the applicable pricing schedule and are not supplied."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-118",
+        "query": "Google vs Mapbox reverse geocoding for 2,000,000 lookups a month (display only, no storage)?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether results must be stored?",
+            "assessment": "clearly_unnecessary",
+            "cause": "negative_fact_not_bound",
+            "reason": "The query explicitly says display only, no storage, but storage is asked again."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm billing account country and where most requests will be used?",
+            "assessment": "defensible_missing_fact",
+            "cause": "pricing_geography_requirement",
+            "reason": "Billing country and primary usage geography can change the applicable pricing schedule and are not supplied."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-119",
+        "query": "Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether results must be stored?",
+            "assessment": "clearly_unnecessary",
+            "cause": "negative_fact_not_bound",
+            "reason": "The query explicitly says display only, no storage, but storage is asked again."
+          },
+          {
+            "index": 2,
+            "text": "Could you confirm billing account country and where most requests will be used?",
+            "assessment": "defensible_missing_fact",
+            "cause": "pricing_geography_requirement",
+            "reason": "Billing country and primary usage geography can change the applicable pricing schedule and are not supplied."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-120",
+        "query": "Ola vs Mapbox reverse geocoding when we must store 300,000 results a month?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether results must be stored?",
+            "assessment": "clearly_unnecessary",
+            "cause": "numeric_object_not_bound",
+            "reason": "The query explicitly requires storing a stated number of results. A number between store and results defeats the narrow requirement extractor."
+          }
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-121",
+        "query": "Ola vs Mapbox reverse geocoding when we must store 900,000 results a month?",
+        "history": [],
+        "selection_status": "qualification_planned",
+        "questions": [
+          {
+            "index": 1,
+            "text": "Could you confirm whether results must be stored?",
+            "assessment": "clearly_unnecessary",
+            "cause": "numeric_object_not_bound",
+            "reason": "The query explicitly requires storing a stated number of results. A number between store and results defeats the narrow requirement extractor."
+          }
+        ]
+      }
+    ]
+  },
+  "missed_gold_groups": {
+    "total": 66,
+    "clear_conflicts_excluded_from_causal_analysis_only": 23,
+    "remaining": 43,
+    "remaining_materiality_needs_review": 14,
+    "remaining_unflagged": 29,
+    "excluded_detail": [
+      {
+        "record_id": "GT-LBS-AC-011",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-AC-012",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-AC-021",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-AC-022",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-AC-023",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-AC-024",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-AC-228",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-DIR-044",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-DIR-050",
+        "gold_question_index": 2,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-DIR-087",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-DIR-121",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-DM-007",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-DM-008",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-DM-009",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-DM-010",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-DM-011",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-DM-012",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-DM-013",
+        "gold_question_index": 1,
+        "classification": "global_proceed_instruction"
+      },
+      {
+        "record_id": "GT-LBS-DM-093",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-RG-010",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-RG-014",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-RG-228",
+        "gold_question_index": 2,
+        "classification": "already_answered"
+      },
+      {
+        "record_id": "GT-LBS-RG-230",
+        "gold_question_index": 1,
+        "classification": "already_answered"
+      }
+    ],
+    "remaining_detail": [
+      {
+        "record_id": "GT-LBS-AC-088",
+        "gold_question_index": 1,
+        "question": "Account ID?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "credit_restoration",
+          "reason": "The enquiry indicates that prepaid Ola credits ran out, which likely caused the autocomplete feature to stop for paying users. The decision to restore the service would require the affected account reference to initiate credit restoration."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-AC-090",
+        "gold_question_index": 1,
+        "question": "Exact query and prediction?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "prediction_quality",
+          "reason": "The reported issue involves incorrect or harmful autocomplete output, which requires the exact query and returned prediction to address the problem."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-AC-204",
+        "gold_question_index": 1,
+        "question": "Do you need hard restriction or just a bias toward those countries?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-AC-220",
+        "gold_question_index": 1,
+        "question": "What debounce interval do you use now?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "unsupported_decision",
+        "allowed_decisions": null,
+        "model_proposal": {
+          "decision": "request_burst",
+          "reason": "The 429 status code indicates a rate limit has been exceeded, which suggests a burst of requests during sale traffic. Inspect one request and test it in isolation to confirm the issue."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-AC-221",
+        "gold_question_index": 1,
+        "question": "What debounce interval do you use now?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-031",
+        "gold_question_index": 1,
+        "question": "What's your expected monthly volume?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-048",
+        "gold_question_index": 3,
+        "question": "Which vehicle types?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm whether live-traffic ETAs are required?",
+          "Could you confirm expected monthly API workload?",
+          "Could you confirm maximum stops or waypoints per route?",
+          "Could you confirm whether you already have an enabled Google project and whether you have an Ola Maps contract?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-053",
+        "gold_question_index": 1,
+        "question": "Are you calling the REST web service or an SDK?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "request_reproduction",
+          "reason": "The error indicates the API key is not authorized for the Android app, despite being restricted to the package name. To diagnose, we need the actual request (redacted) to verify headers and ensure the X-Android-Package header is correctly included and matches the package name."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-053",
+        "gold_question_index": 2,
+        "question": "Which signing certificate is the build using?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "request_reproduction",
+          "reason": "The error indicates the API key is not authorized for the Android app, despite being restricted to the package name. To diagnose, we need the actual request (redacted) to verify headers and ensure the X-Android-Package header is correctly included and matches the package name."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-055",
+        "gold_question_index": 1,
+        "question": "Can you share the via: coordinate?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "display_result",
+          "reason": "The enquiry indicates that the Directions API is returning ZERO_RESULTS when using a via: waypoint, but works without it. This suggests an issue with how the API is interpreting or processing the via: waypoint, which may be related to the display of the result rather than the API's functionality. The documentation highlights that via: waypoints can lead to ZERO_RESULTS if the API cannot find a valid route through the point, so the display of the result may not be showing the expected route or may be misrepresenting the API's response."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-065",
+        "gold_question_index": 1,
+        "question": "Which endpoint and overview value are you sending?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "display_result",
+          "reason": "The documentation indicates that the `travel_advisory` is included in the response only when `traffic_metadata` is set to true and `overview` is set to 'full'. The enquiry does not mention the value of the `overview` parameter, so it is necessary to check the actual response to determine if the `travel_advisory` is present or if there is a rendering issue."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-086",
+        "gold_question_index": 1,
+        "question": "When was the key exposed?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "none",
+          "reason": "The enquiry identifies the issue of an API key being exposed, which is a security concern rather than a diagnostic or configuration issue. No specific diagnostic decision is required as the action needed is to remove the key from the public repository and secure it."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-086",
+        "gold_question_index": 2,
+        "question": "Any unusual usage spikes?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "none",
+          "reason": "The enquiry identifies the issue of an API key being exposed, which is a security concern rather than a diagnostic or configuration issue. No specific diagnostic decision is required as the action needed is to remove the key from the public repository and secure it."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-213",
+        "gold_question_index": 1,
+        "question": "How many Directions requests per minute do you send at peak?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "unsupported_decision",
+        "allowed_decisions": null,
+        "model_proposal": {
+          "decision": "request_burst",
+          "reason": "The HTTP 429 Too Many Requests error indicates that the rate limit for the Mapbox Directions API has been exceeded. Since the customer is using a single token for all services, it's possible that the token has reached its rate limit. To diagnose this, we need to inspect one request and test it in isolation to confirm if it's part of a burst of requests hitting the quota."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-215",
+        "gold_question_index": 1,
+        "question": "What request rate do you expect?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "none",
+          "reason": "The enquiry seeks information about request-rate ceilings and usage limits for the public OSRM /route endpoint. The retrieved evidence from the OSRM demo server documentation indicates that the demo server is restricted to reasonable, non-commercial use-cases and advises not to exceed 1 request per second. However, the enquiry does not indicate any specific issue or behavior that requires a diagnostic decision. Therefore, no specific decision is needed as the information is already provided in the documentation."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DIR-218",
+        "gold_question_index": 1,
+        "question": "Is live traffic essential, or are typical ETAs acceptable?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm whether traffic is needed now or for future departures?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-218",
+        "gold_question_index": 2,
+        "question": "Is your Google Cloud project new?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm whether traffic is needed now or for future departures?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-219",
+        "gold_question_index": 1,
+        "question": "Is live traffic essential, or are typical ETAs acceptable?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm whether traffic is needed now or for future departures?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-219",
+        "gold_question_index": 2,
+        "question": "Is your Google Cloud project new?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm whether traffic is needed now or for future departures?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DIR-220",
+        "gold_question_index": 1,
+        "question": "Which vehicle models and charger networks do you need?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DM-034",
+        "gold_question_index": 1,
+        "question": "Traffic needed for all matrices?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm billing account country?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-086",
+        "gold_question_index": 1,
+        "question": "Start date?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-086",
+        "gold_question_index": 2,
+        "question": "SLA needs?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-088",
+        "gold_question_index": 1,
+        "question": "Can you share the usage export?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-206",
+        "gold_question_index": 1,
+        "question": "How large is each matrix (origins × destinations)?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DM-207",
+        "gold_question_index": 1,
+        "question": "How large is each matrix (origins × destinations)?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DM-208",
+        "gold_question_index": 1,
+        "question": "How large is each matrix (origins × destinations)?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DM-211",
+        "gold_question_index": 1,
+        "question": "Do you have the ops capacity to host and update the routing engine?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DM-212",
+        "gold_question_index": 1,
+        "question": "Do you have the ops capacity to host and update the routing engine?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DM-216",
+        "gold_question_index": 1,
+        "question": "What matrix size do you send per request?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DM-217",
+        "gold_question_index": 1,
+        "question": "What matrix size do you send per request?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-DM-228",
+        "gold_question_index": 2,
+        "question": "Should cost be compared per pair (Ola) or per element/request (Google/Mapbox)?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-DM-228",
+        "gold_question_index": 3,
+        "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-004",
+        "gold_question_index": 1,
+        "question": "Approximate requests per minute right now?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "selected",
+        "allowed_decisions": [
+          "rejected_request"
+        ],
+        "model_proposal": {
+          "decision": "request_burst",
+          "reason": "The customer is experiencing '429 Reached monthly/minute rate limits' and some '400 INVALID_LATLNG' errors, which suggests a burst of requests may be hitting the rate limit. Inspect one request and test it in isolation to confirm."
+        },
+        "predicted_questions": [
+          "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials."
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-004",
+        "gold_question_index": 2,
+        "question": "Are you on a contract or prepaid credits?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "selected",
+        "allowed_decisions": [
+          "rejected_request"
+        ],
+        "model_proposal": {
+          "decision": "request_burst",
+          "reason": "The customer is experiencing '429 Reached monthly/minute rate limits' and some '400 INVALID_LATLNG' errors, which suggests a burst of requests may be hitting the rate limit. Inspect one request and test it in isolation to confirm."
+        },
+        "predicted_questions": [
+          "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials."
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-085",
+        "gold_question_index": 1,
+        "question": "Sample points?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_follow_up",
+        "allowed_decisions": [
+          "none"
+        ],
+        "model_proposal": {
+          "decision": "display_result",
+          "reason": "The reverse geocode is returning incorrect city names, which suggests an issue with how the results are being displayed or interpreted, not with the API's response itself."
+        },
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-RG-207",
+        "gold_question_index": 1,
+        "question": "Do you need full street addresses or only locality names in that language?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-RG-208",
+        "gold_question_index": 1,
+        "question": "Do you need full street addresses or only locality names in that language?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-RG-209",
+        "gold_question_index": 1,
+        "question": "Do you need full street addresses or only locality names in that language?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-RG-219",
+        "gold_question_index": 1,
+        "question": "Did traffic spike, or did you deploy from a new server/domain?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "selected",
+        "allowed_decisions": [
+          "request_reproduction"
+        ],
+        "model_proposal": {
+          "decision": "request_reproduction",
+          "reason": "The 403 Forbidden error indicates the developer's key may have hit its daily/hourly limit or the IP/domain might not be white-listed. To diagnose, we need the actual redacted request to inspect for any changes or anomalies."
+        },
+        "predicted_questions": [
+          "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-224",
+        "gold_question_index": 1,
+        "question": "Do you need to store the results long-term?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "no_qualification_required",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": []
+      },
+      {
+        "record_id": "GT-LBS-RG-228",
+        "gold_question_index": 3,
+        "question": "Will results be stored, and is public Nominatim or Mapbox temporary geocoding acceptable?",
+        "reference_materiality_needs_review": false,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm whether results must be stored, whether a public community endpoint is acceptable and whether temporary-only geocoding results are acceptable?",
+          "Could you confirm peak requests per second and expected monthly API workload?"
+        ]
+      },
+      {
+        "record_id": "GT-LBS-RG-230",
+        "gold_question_index": 2,
+        "question": "Which provider are they considering besides Google and Nominatim?",
+        "reference_materiality_needs_review": true,
+        "selection_status": "qualification_planned",
+        "allowed_decisions": null,
+        "model_proposal": null,
+        "predicted_questions": [
+          "Could you confirm other providers you want to consider?"
+        ]
+      }
+    ]
+  },
+  "prior_reference_overlap": {
+    "reviewed52": {
+      "source_sha256": "613fb9262da75bf1d3f7c5b85a07a084896520063cf9164690b1902defb91c59",
+      "cases": 52,
+      "original_question_groups": 0,
+      "reviewed_question_groups": 10,
+      "original_positive_cases": 0,
+      "reviewed_positive_cases": 10,
+      "polarity_changed_cases": [
+        {
+          "record_id": "GT-LBS-DIR-097",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        },
+        {
+          "record_id": "GT-LBS-RG-086",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        },
+        {
+          "record_id": "GT-LBS-RG-062",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        },
+        {
+          "record_id": "GT-LBS-AC-047",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        },
+        {
+          "record_id": "GT-LBS-RG-099",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        },
+        {
+          "record_id": "GT-LBS-DIR-088",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        },
+        {
+          "record_id": "GT-LBS-DM-049",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        },
+        {
+          "record_id": "GT-LBS-RG-119",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        },
+        {
+          "record_id": "GT-LBS-RG-034",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        },
+        {
+          "record_id": "GT-LBS-RG-102",
+          "original_questions": 0,
+          "reviewed_questions": 1
+        }
+      ]
+    },
+    "reviewed36": {
+      "source_sha256": "cd6ee9fa6480ad19be251e3760118384946619698d3fc7ba7ef38b328d163ed7",
+      "cases": 36,
+      "original_question_groups": 65,
+      "reviewed_question_groups": 55,
+      "original_positive_cases": 33,
+      "reviewed_positive_cases": 29,
+      "polarity_changed_cases": [
+        {
+          "record_id": "GT-LBS-AC-021",
+          "original_questions": 1,
+          "reviewed_questions": 0
+        },
+        {
+          "record_id": "GT-LBS-AC-022",
+          "original_questions": 1,
+          "reviewed_questions": 0
+        },
+        {
+          "record_id": "GT-LBS-AC-023",
+          "original_questions": 1,
+          "reviewed_questions": 0
+        },
+        {
+          "record_id": "GT-LBS-AC-024",
+          "original_questions": 1,
+          "reviewed_questions": 0
+        }
+      ]
+    }
+  },
+  "architecture_causes": [
+    "Task dispatch still chooses broad API/intent menus without a product, priced operation, requested output and resolved-evidence dependency gate.",
+    "Suppression checks recognize some assertions but miss compact negative phrases and numeric objects, allowing known facts to be asked again.",
+    "Documented fixes and conditional branches are not represented as resolved or answerable decisions, so reproduction templates can survive after sufficient guidance is retrieved.",
+    "Diagnostic policy recognizes a narrow set of enums and error codes; genuine billing, quality, identity and security handoff facts are discarded as none or unsupported.",
+    "The API catalogue lacks several material matrix-size, output-granularity and storage-duration requirements outside the small qualification development subset.",
+    "Original acceptance questions and separately reviewed working questions implement different policies about repeated facts and useful diagnostic follow-ups."
+  ],
+  "next_fixes": [
+    "Unify product/operation/task and fact dependency contracts before selecting questions. Quote fixed billable quantities without unrelated capability intake; keep published-rule questions as documented answers.",
+    "Add evidence-bound extraction for compact no-storage statements, quantified stored results, explicit selected modes and terminating calls; preserve actual/scenario distinction.",
+    "Use a documented-remedy resolution gate: answer supported parameter or limit remedies first and ask reproduction only for the unresolved decision.",
+    "Expand one shared diagnostic/handoff requirement catalogue for actual symptoms, including request rate, debounce interval, platform restrictions, failing samples, billing exports and security impact. Preserve sandbox approvals.",
+    "Review the versioned reference policy separately. Continue primary unchanged scores; do not claim passing by substituting the reviewed52/36 labels."
+  ],
+  "target_statement": "Candidate v1 F1 is 46.44%, below 80%. The target is not proven mathematically impossible under the original reference; however current performance cannot be called passing, and suppressing defensible diagnostics or repeating supplied facts merely to match inconsistent labels would be a regression.",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "label_changes": 0,
+  "production_changes": 0
+}

@@ -1,0 +1,124 @@
+# Source history: Deepshikha (62db1b2), deepshikha/lbs-copilot. See copilot/enquiry_workflow/source-history.json.
+# Escalation policy SC-02: severity and owning team per escalation category.
+# Source: the `escalation` labels of ground truth v2.4 (should_escalate, severity SEV1-4, owner, reason), which Deepshikha confirmed on
+# 2026-11-14 ARE the approved escalation policy. Derived from the 22 escalating records and the 499/521 non-escalating ones:
+#   SEV1 = customer production is down (all requests failing, whole system down)          SEV2 = production impaired, credential exposure, billing outage
+#   SEV3 = security/billing suspicion, data correction                                    SEV4 = no urgency: sales / contract hand-off, routine support
+# Owners (internal teams): Support L1, Support L2, Maps engineering, Account team (Sales).
+# `rules` are checked in order inside a category; the first whose `when` regex matches the message (case-insensitive) wins, else `default`.
+policy_version: "SC-02 (ground truth v2.4 escalation labels, adopted 2026-11-14)"
+
+categories:
+  production_incident:
+    description: A live outage or broad production degradation needing intervention.
+    default: {severity: SEV2, owner: Maps engineering}
+    rules:
+      - {when: '\b429\b|rate[- ]?limit|quota|too many requests', then: {severity: SEV2, owner: Account team (Sales)},
+         upgrade_when: 'whole .{0,25}(system|stack|platform)? ?down|dispatch system|all (our )?(requests|orders|users)|\b\d{2,3}\s?% of', upgrade_to: SEV1}
+      - {when: '\b5xx\b|\b5\d\d\b.{0,40}\ball requests|all requests|every request|production .{0,20}down|eta engine', then: {severity: SEV1, owner: Maps engineering}}
+  billing_incident:
+    description: Service stopped by a billing failure or confirmed account incident.
+    default: {severity: SEV2, owner: Account team (Sales)}
+  security_incident:
+    description: Exposed credentials, unauthorized usage, or active abuse.
+    default: {severity: SEV3, owner: Support L2}
+    rules:
+      - {when: 'pushed|github|public repo|exposed|leak|credential|compromis', then: {severity: SEV2, owner: Support L2}}
+  accuracy_regression:
+    description: Sustained regression in production map accuracy.
+    default: {severity: SEV2, owner: Maps engineering}
+  data_quality:
+    description: A reported address-quality issue requiring support investigation.
+    default: {severity: SEV3, owner: Support L2}
+    rules:
+      - {when: 'regression|sustained|lower than actual|higher than actual|\b\d{2}\s?% (lower|higher)', then: {severity: SEV2, owner: Maps engineering}}
+  contract_request:
+    description: An explicit sales handoff, special deployment, or custom contract requirement.
+    default: {severity: SEV4, owner: Account team (Sales)}
+
+  billing_policy:
+    description: A human review of billing policy, pricing changes, or account billing terms.
+    default: {severity: SEV4, owner: Account team (Sales)}
+
+  advanced_support:
+    description: An explicit technical handoff or a persistent issue that needs second-line investigation.
+    default: {severity: SEV3, owner: Support L2}
+
+# Explicit status applies to routine pricing and technical enquiries.
+actual_use_detection: true
+provider_discovery_fallback: false
+
+customer_status:
+  existing: '\b(?:existing (?:customer|account|project|integration)|already (?:use|using|on|integrated)|we (?:currently use|are using|are on)|(?<!could )(?<!would )(?<!should )(?<!can )(?<!may )we use|our (?:current|existing) (?:provider|service|integration)|self[- ]service customer)\b'
+  new: '\b(?:new customer|prospect|prospective customer|brand[- ]new (?:project|account)|newly created (?:project|account)|evaluating (?:a |the )?(?:provider|service)|before (?:we )?(?:sign up|subscribe|integrate|adopt)|planning to (?:adopt|integrate|subscribe))\b'
+
+# First matching routine ownership rule wins.
+routine_ownership:
+  - team: sales
+    reason: The customer is exploring providers for a stated business requirement; ownership is provisional until customer status is confirmed.
+    when: '\b(?:which|what|any)\b.{0,90}\b(?:providers?|APIs|geocoders|options|services)\b|\bwho (?:can|covers)\b'
+    and_when: '\b(?:we need|we run|we.re a|our (?:users|drivers|riders)|expanding|adding|for dispatch)\b'
+    not_when: '\b(?:one call|single call|per request|fewest|maximum|limit|batch)\b'
+  - team: sales
+    reason: A planned application needs product-fit guidance before choosing its integration.
+    when: '\b(?:can|does)\b.{0,85}\b(?:suggest|choose)\b.{0,90}\b(?:POIs|as users type|shortest|optimal)\b'
+  - team: support
+    reason: The customer needs documented capacity for a single API call.
+    when: '\b(?:one|single) (?:API )?(?:call|request)\b'
+    and_when: '\b(?:matrix|elements|origins|destinations|batch)\b'
+  - team: sales
+    reason: The customer needs qualification of a proposed deployment before selecting a provider.
+    when: '\b(?:prospect|evaluating|before recommending)\b'
+    and_when: '\b(?:confirm|clarify|ask|licensing|intended use)\b'
+  - team: sales
+    reason: The customer needs an account decision or a custom commercial quote.
+    when: '\b(?:overcharg\w*|billing discrepancy|unexpected charges?|dispute (?:a |the )?charge|negotiat\w*|(?:custom|bespoke|enterprise) (?:quote|pricing|discount|plan)|(?:volume|commitment|committed[- ]use) discount|(?:review|adjust|change) (?:our|my) (?:contract|plan|invoice))\b'
+  - team: sales
+    reason: The customer is choosing among providers on commercial terms.
+    when: '\b(?:which|what|compare|choose|recommend|select)\b[^.!?\n]{0,75}\b(?:providers?|vendors?)\b|\b(?:per|across|each) (?:provider|vendor)s?\b'
+    and_when: '\b(?:price|prices|pricing|cost|costs|cheaper|cheapest|budget|quote|fees?)\b'
+  - team: sales
+    reason: The customer needs provider options and a cost comparison for a deployment.
+    when: '\b(?:options|alternatives) (?:and|with) (?:an? )?(?:estimated |monthly )?(?:cost|costs|pricing|prices)\b'
+    and_when: '\b(?:needs?|require|requires|looking for|planning)\b'
+  - team: support
+    reason: This enquiry asks how published billing units or session charges work.
+    when: '\bbilled (?:per|as)\b|\bhow (?:am I|are we|is it|are requests) billed\b|\b(?:billing units?|minimum billable|billable events?)\b|\bper[- ]request\b.{0,24}\b(?:vs\.?|versus|or)\b.{0,20}\bsession\b|\bsession[- ]based pricing\b|\bdo we still pay\b|\bbill\b.{0,100}\bas one session\b'
+  - team: sales
+    reason: The customer needs a price comparison between providers.
+    min_providers: 2
+    when: '\b(?:compare|versus|vs|cheaper|cheapest|cost|costs|price|prices|pricing|quote|fees?)\b'
+  - team: sales
+    reason: The customer is assessing a deployment or asking for a commercial comparison.
+    when: '\b(?:want to launch|launching in|planning to launch|evaluating providers|onboarding a prospect)\b|\bwhich\b.{0,35}\b(?:directions|routing|matrix|autocomplete|geocoding) APIs\b.{0,70}\b(?:cities|regions|cost|price|rupees|INR)\b|\bwhat would\b.{0,45}\bcost\b.{0,25}\b(?:each|per) provider\b'
+  - team: support
+    reason: The customer needs documented batching requirements or call limits.
+    when: '\b(?:fewest (?:API )?(?:calls|requests)|how many (?:API )?(?:calls|requests) (?:are needed|would (?:it|we) (?:need|take))|maximum (?:batch|matrix) size)\b'
+  - team: sales
+    reason: The customer is comparing providers against a specific product or deployment requirement.
+    when: '\b(?:compare (?:the )?(?:providers|vendors)|(?:which|what|any)\b.{0,70}\b(?:providers?|vendors?|options|APIs|geocoders)\b|(?:what|how) do\b.{0,120}\b(?:and|versus|vs\.?)\b)'
+    and_when: '\b(?:traffic-aware|live[- ]traffic|real[- ]time traffic|EV routes?|charging stops?|geographic coverage|cover both|we need|we require|we want|planning to)\b'
+  - team: support
+    reason: A routine price estimate or billing question can use the provider's published rates.
+    when: '\b(?:costs?|prices?|pricing|quotes?|billing|billed|bills?|charged|charges?|pay|free (?:tier|allowance|calls|requests)|cheaper|cheapest)\b'
+  - team: sales
+    reason: This enquiry needs commercial qualification or geographic coverage confirmation.
+    intents: [sales_qualification]
+    sub_intents: [coverage_question]
+  - team: sales
+    reason: A specific monthly deployment needs provider or cost qualification.
+    when: '\b(?:compare|options|providers?)\b.{0,110}\b(?:a month|per month|monthly cost)\b|\b(?:a month|per month)\b.{0,65}\b(?:options|providers?|cost in|monthly cost)\b'
+  - team: support
+    reason: This enquiry asks about published billing mechanics or a self-service usage policy.
+    when: '\b(?:count(?:ed|s) as|free tier|price per (?:request|element)|list price|store (?:the )?(?:results|addresses)|storing (?:the )?(?:results|addresses))\b'
+  - team: support
+    reason: This enquiry asks for technical guidance or troubleshooting.
+    intents: [docs_how_to, troubleshooting]
+  - team: support
+    reason: This enquiry asks for a documented product limit or behavior.
+    sub_intents: [limits_question, parameter_question, accuracy_question]
+
+# Used when nothing escalates: who normally owns the case and how urgent it is.
+non_escalating:
+  support: {severity: SEV4, owner: Support L1}
+  sales: {severity: SEV4, owner: Account team (Sales)}

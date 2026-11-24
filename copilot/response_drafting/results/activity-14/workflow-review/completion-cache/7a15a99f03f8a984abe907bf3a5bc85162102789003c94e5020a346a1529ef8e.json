@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"instruction_modality\",\"value\":false,\"evidence\":\"The enquiry does not specify whether instructions must be voice or text.\"}],\"groups\":[{\"fields\":[\"instruction_modality\"],\"decision_impact\":\"The missing instruction modality affects the decision of which directions APIs can provide turn-by-turn instructions in the required languages.\"}],\"reason\":\"The enquiry does not specify whether the instructions need to be in text or voice format, which is a required field for determining the appropriate API.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"instruction_modality\",\"value\":false,\"evidence\":\"The enquiry does not specify whether instructions must be voice or text.\"}],\"groups\":[{\"fields\":[\"instruction_modality\"],\"decision_impact\":\"The missing instruction modality affects the decision of which directions APIs can provide turn-by-turn instructions in the required languages.\"}],\"reason\":\"The enquiry does not specify whether the instructions need to be in text or voice format, which is a required field for determining the appropriate API.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2795,
+    "completion_tokens": 103,
+    "total_tokens": 2898
+  },
+  "latency_ms": 2890,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The error code REQUEST_DENIED suggests an authentication or integration failure. To diagnose this, we need the actual redacted request that caused the error.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The error code REQUEST_DENIED suggests an authentication or integration failure. To diagnose this, we need the actual redacted request that caused the error.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2037,
+    "completion_tokens": 40,
+    "total_tokens": 2077
+  },
+  "latency_ms": 1220,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

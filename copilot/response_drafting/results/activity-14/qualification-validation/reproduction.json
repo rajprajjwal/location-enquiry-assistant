@@ -1,0 +1,27 @@
+{
+  "scope": "Two working cases, initial DM-030 and RG-228 monthly reply; no frozen or holdout data.",
+  "turns": [
+    {
+      "record_id": "GT-LBS-DM-030",
+      "turn": "initial",
+      "qualification_error": null,
+      "status": "final"
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "turn": "initial",
+      "qualification_error": null,
+      "status": "clarification_needed"
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "turn": "monthly_volume_reply",
+      "qualification_error": "ValidationError",
+      "status": "final"
+    }
+  ],
+  "endpoint_errors": [],
+  "endpoint_calls": 12,
+  "captured_plans": 3,
+  "invalid_plans": 1
+}

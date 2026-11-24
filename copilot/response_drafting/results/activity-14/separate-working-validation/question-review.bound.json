@@ -1,0 +1,308 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "afbe9f8bc5b15c5b33426fa2c9cc98addb4d3f050f6e8d8b2b3f9be4f0823612",
+  "gold_sha256": "ee1a01222d81b3add3182c0acf5a5cfe8cbc5f7bbf0b41a80f52a62ce0cc66dd",
+  "reviewer": "Assistant semantic review of saved predictions under user delegation",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-027",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-084",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-099",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-114",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-118",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-121",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-122",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-216",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-224",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-045",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-034",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "The expected redacted request question is absent."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "The expected redacted request question is absent."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-102",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "The expected redacted request question is absent."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "The expected redacted request question is absent."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-120",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-123",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-124",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-205",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-211",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-216",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-222",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No follow-up required by the pre-prediction review."
+        }
+      }
+    }
+  ]
+}

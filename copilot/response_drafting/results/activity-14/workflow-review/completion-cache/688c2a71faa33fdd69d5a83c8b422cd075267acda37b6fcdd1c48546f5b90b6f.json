@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The documentation indicates that the 'alternatives' parameter is only available for requests without intermediate waypoints. The customer's request includes 3 waypoints, which may be causing the API to return only one route. The issue might be related to how the API is rendering the results rather than the actual data returned.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The documentation indicates that the 'alternatives' parameter is only available for requests without intermediate waypoints. The customer's request includes 3 waypoints, which may be causing the API to return only one route. The issue might be related to how the API is rendering the results rather than the actual data returned.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2066,
+    "completion_tokens": 70,
+    "total_tokens": 2136
+  },
+  "latency_ms": 2100,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

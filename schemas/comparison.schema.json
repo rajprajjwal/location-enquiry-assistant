@@ -77,6 +77,9 @@
             "string",
             "null"
           ]
+        },
+        "monthly_workload": {
+          "$ref": "#/$defs/monthly_workload"
         }
       }
     },
@@ -97,6 +100,14 @@
         "string",
         "null"
       ]
+    },
+    "provider_results": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/provider_result"
+      },
+      "minItems": 2,
+      "maxItems": 3
     }
   },
   "allOf": [
@@ -131,6 +142,461 @@
           }
         }
       }
+    },
+    {
+      "if": {
+        "required": [
+          "provider_results"
+        ]
+      },
+      "then": {
+        "required": [
+          "equivalent_requirements"
+        ],
+        "properties": {
+          "applicable": {
+            "const": true
+          },
+          "dimensions": {
+            "const": [
+              "pricing",
+              "limits",
+              "coverage"
+            ]
+          },
+          "providers": {
+            "minItems": 2,
+            "maxItems": 3
+          },
+          "assumptions": {
+            "minItems": 1
+          },
+          "equivalent_requirements": {
+            "type": "object",
+            "required": [
+              "api",
+              "region",
+              "monthly_workload"
+            ],
+            "properties": {
+              "api": {
+                "type": "string"
+              },
+              "region": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
     }
-  ]
+  ],
+  "$defs": {
+    "monthly_workload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "quantity",
+        "unit"
+      ],
+      "properties": {
+        "quantity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "unit": {
+          "enum": [
+            "requests",
+            "elements",
+            "sessions",
+            "matrix_requests"
+          ]
+        },
+        "origins": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "destinations": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "keystrokes_per_session": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "unit": {
+                "const": "matrix_requests"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "origins",
+              "destinations"
+            ]
+          },
+          "else": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "origins"
+                  ]
+                },
+                {
+                  "required": [
+                    "destinations"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "keystrokes_per_session"
+            ]
+          },
+          "then": {
+            "properties": {
+              "unit": {
+                "const": "sessions"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "source_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "span"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "span": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "pricing_component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sku",
+        "label",
+        "quantity",
+        "billing_unit",
+        "free_units",
+        "billable_units"
+      ],
+      "properties": {
+        "sku": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "billing_unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "free_units": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "billable_units": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "price_estimate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scenario",
+        "currency",
+        "monthly_cost",
+        "monthly_cost_inr",
+        "components",
+        "source_references",
+        "assumptions"
+      ],
+      "properties": {
+        "scenario": {
+          "type": "string",
+          "minLength": 1
+        },
+        "currency": {
+          "enum": [
+            "USD",
+            "INR"
+          ]
+        },
+        "monthly_cost": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]+(?:\\.[0-9]+)?$"
+        },
+        "monthly_cost_inr": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]+(?:\\.[0-9]+)?$"
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pricing_component"
+          },
+          "minItems": 1
+        },
+        "source_references": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_reference"
+          },
+          "minItems": 1
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "pricing_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "estimates",
+        "reason"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "verified",
+            "partial",
+            "missing_evidence"
+          ]
+        },
+        "estimates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/price_estimate"
+          }
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "missing_evidence"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "estimates": {
+                "maxItems": 0
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "estimates": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "reason": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "document_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "findings",
+        "reason"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "verified",
+            "missing_evidence"
+          ]
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source_reference"
+          }
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "missing_evidence"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "findings": {
+                "maxItems": 0
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "not": {
+              "required": [
+                "summary"
+              ]
+            }
+          },
+          "else": {
+            "properties": {
+              "findings": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "reason": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "provider_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "pricing",
+        "limits",
+        "coverage"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string",
+          "enum": [
+            "Google Maps Platform",
+            "Ola Maps",
+            "Mapbox",
+            "OSM Nominatim",
+            "OSRM",
+            "Mappls (MapmyIndia)"
+          ]
+        },
+        "pricing": {
+          "$ref": "#/$defs/pricing_result"
+        },
+        "limits": {
+          "$ref": "#/$defs/document_result"
+        },
+        "coverage": {
+          "$ref": "#/$defs/document_result"
+        }
+      }
+    }
+  }
 }

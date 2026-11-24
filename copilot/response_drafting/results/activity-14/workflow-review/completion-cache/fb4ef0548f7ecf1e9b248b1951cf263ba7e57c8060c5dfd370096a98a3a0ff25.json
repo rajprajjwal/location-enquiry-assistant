@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"error_resolution\",\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "raw": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"error_resolution\",\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1325,
+    "completion_tokens": 50,
+    "total_tokens": 1375
+  },
+  "latency_ms": 1298,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"limits_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"limits_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1366,
+    "completion_tokens": 144,
+    "total_tokens": 1510
+  },
+  "latency_ms": 3430,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

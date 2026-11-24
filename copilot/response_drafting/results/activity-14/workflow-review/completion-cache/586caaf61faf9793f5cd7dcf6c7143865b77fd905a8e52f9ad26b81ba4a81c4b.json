@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":20000,\"evidence\":\"20,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer is asking about the number of API calls and monthly cost for the Distance Matrix API, which depends on the required features such as traffic data and travel mode.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":20000,\"evidence\":\"20,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer is asking about the number of API calls and monthly cost for the Distance Matrix API, which depends on the required features such as traffic data and travel mode.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2197,
+    "completion_tokens": 99,
+    "total_tokens": 2296
+  },
+  "latency_ms": 2542,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

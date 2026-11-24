@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.85,\"team\":0.75},\"qualification\":{\"use_case\":{\"value\":\"truck routing\",\"evidence\":\"We run 16-tonne trucks between Indian warehouses\"},\"region\":{\"value\":\"India\",\"evidence\":\"between Indian warehouses\"},\"technical_constraints\":{\"value\":\"truck routing\",\"evidence\":\"Which routing APIs support truck routing?\"}}}",
+  "raw": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.85,\"team\":0.75},\"qualification\":{\"use_case\":{\"value\":\"truck routing\",\"evidence\":\"We run 16-tonne trucks between Indian warehouses\"},\"region\":{\"value\":\"India\",\"evidence\":\"between Indian warehouses\"},\"technical_constraints\":{\"value\":\"truck routing\",\"evidence\":\"Which routing APIs support truck routing?\"}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1320,
+    "completion_tokens": 102,
+    "total_tokens": 1422
+  },
+  "latency_ms": 2422,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

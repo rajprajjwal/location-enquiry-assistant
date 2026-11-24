@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\",\"reason\":\"The enquiry indicates a REQUEST_DENIED error with the correct API key, which suggests an issue with the request itself. To diagnose this, we need the actual redacted request to inspect for potential issues such as missing parameters, incorrect formatting, or other request-specific problems.\"}",
+  "raw": "{\"decision\":\"request_reproduction\",\"reason\":\"The enquiry indicates a REQUEST_DENIED error with the correct API key, which suggests an issue with the request itself. To diagnose this, we need the actual redacted request to inspect for potential issues such as missing parameters, incorrect formatting, or other request-specific problems.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2197,
+    "completion_tokens": 63,
+    "total_tokens": 2260
+  },
+  "latency_ms": 1744,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

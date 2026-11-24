@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"storage_required\",\n      \"value\": true,\n      \"evidence\": \"must store 900,000 results\"\n    },\n    {\n      \"field\": \"alternative_providers\",\n      \"value\": {\n        \"value\": [\"Ola Maps\", \"Mapbox\"],\n        \"basis\": \"requested_scope\",\n        \"evidence\": \"Ola vs Mapbox\"\n      },\n      \"evidence\": \"Ola vs Mapbox\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing Ola Maps and Mapbox for reverse geocoding, with a requirement to store 900,000 results monthly. The decision impact involves selecting between temporary and retained-result licensing and pricing based on storage needs.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"storage_required\",\n      \"value\": true,\n      \"evidence\": \"must store 900,000 results\"\n    },\n    {\n      \"field\": \"alternative_providers\",\n      \"value\": {\n        \"value\": [\"Ola Maps\", \"Mapbox\"],\n        \"basis\": \"requested_scope\",\n        \"evidence\": \"Ola vs Mapbox\"\n      },\n      \"evidence\": \"Ola vs Mapbox\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing Ola Maps and Mapbox for reverse geocoding, with a requirement to store 900,000 results monthly. The decision impact involves selecting between temporary and retained-result licensing and pricing based on storage needs.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2206,
+    "completion_tokens": 204,
+    "total_tokens": 2410
+  },
+  "latency_ms": 5210,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

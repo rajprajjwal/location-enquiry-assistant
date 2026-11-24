@@ -1,0 +1,265 @@
+{
+  "checked_at_utc": "2026-11-24T16:11:58.099997+00:00",
+  "scope": "Read-only production integration watch. Temporary databases and mocked model/tool replies only. No Activity 16 source edits, external messages, frozen or holdout inspection.",
+  "source_stable_during_probes_and_tests": true,
+  "hashes": {
+    "copilot/enquiry_workflow/cases.py": {
+      "current": "b590aab476ed069b295f75466069ee740d78b13ada3503feb7ebc228200e9c16",
+      "baseline": "38742f0763072eaa87dfdd409368f278f966b24cb409a0cd530114dd54097bc5",
+      "candidate": "4aabc98fb728a3a9c2ab0b37453c4ad5d45085fa17d6968e85f3cbcd1e14576e",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": false
+    },
+    "copilot/enquiry_workflow/case_memory.py": {
+      "current": "a4e646946280193a39552e6371a715a89556efb81a798300a6060f55f7c76283",
+      "baseline": "5db3d86495de6b77f4d0e5e37263e89b1730caa85803a72c646ec90d54bc2d73",
+      "candidate": "5db3d86495de6b77f4d0e5e37263e89b1730caa85803a72c646ec90d54bc2d73",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": true
+    },
+    "copilot/enquiry_workflow/ownership_status.py": {
+      "current": "5fe07116576fad7c12a325a7b39a50a9ba5f93ff7e9a550951f90fbdd0fde2c6",
+      "baseline": "f284ff05453dbd003311f0e184f612de92ec45002a27fd3281af77de4be6c7b4",
+      "candidate": "f284ff05453dbd003311f0e184f612de92ec45002a27fd3281af77de4be6c7b4",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": true
+    },
+    "copilot/enquiry_workflow/escalation.py": {
+      "current": "2465d8d2cbf5ab361d879c52d737b593e15d57cf52a1663d7980d4e3619b127d",
+      "baseline": "e9cab72b2fe6f2c1e3e901e56442ea2be5da410dd0418d8bf37b936ba0072e48",
+      "candidate": "e9cab72b2fe6f2c1e3e901e56442ea2be5da410dd0418d8bf37b936ba0072e48",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": true
+    },
+    "copilot/enquiry_workflow/workflow.py": {
+      "current": "6bc8eecd88ede83f44f8411f930f3be590efcdd69934b3cc8c22c3a67f4dea82",
+      "baseline": "b32ae07fce62fe57b0e1a30fbe7bac72a9b038cc8d8000df29dd75b6a3e17120",
+      "candidate": "6bc8eecd88ede83f44f8411f930f3be590efcdd69934b3cc8c22c3a67f4dea82",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": false
+    },
+    "copilot/conversation_state/state.py": {
+      "current": "d4d68bc289d2ef536aa437c85e4b6fb656e42bc2780b90390d56004393b47fa8",
+      "baseline": "7d6058248447b2e3bd10d1c54920e05d3d83c23f8ca64255b99581434f2cf78b",
+      "candidate": "7d6058248447b2e3bd10d1c54920e05d3d83c23f8ca64255b99581434f2cf78b",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": true
+    },
+    "copilot/safety/escalation_policy.py": {
+      "current": "31d5e5ca6b2973614bbc50cee53b24fe23fb3747aa516fa01ed01be47c342e64",
+      "baseline": "31d5e5ca6b2973614bbc50cee53b24fe23fb3747aa516fa01ed01be47c342e64",
+      "candidate": "31d5e5ca6b2973614bbc50cee53b24fe23fb3747aa516fa01ed01be47c342e64",
+      "current_changed_from_baseline": false,
+      "candidate_matches_baseline": true
+    },
+    "copilot/config/escalation_policy.yaml": {
+      "current": "465e9205086b2ac00b892713d517c406154b0e66dd040b450bb2146dbb108621",
+      "baseline": "0c86a8b15e85c4d2b2fbf7315f30edbf94a348bf2a8178476028648b844bb4cd",
+      "candidate": "0c86a8b15e85c4d2b2fbf7315f30edbf94a348bf2a8178476028648b844bb4cd",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": true
+    },
+    "copilot/qualification/task.py": {
+      "current": "cea9c57b47ae100a5be1c1f46e1e378829f031a8c93dad445d97bc9b8c399acd",
+      "baseline": null,
+      "candidate": "cea9c57b47ae100a5be1c1f46e1e378829f031a8c93dad445d97bc9b8c399acd",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": false
+    },
+    "copilot/qualification/finalization.py": {
+      "current": "48387b114a84b1ade7a2bd5a5e431b68a6ab65833ceeea22330919972a781d4b",
+      "baseline": null,
+      "candidate": "48387b114a84b1ade7a2bd5a5e431b68a6ab65833ceeea22330919972a781d4b",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": false
+    },
+    "copilot/diagnostics/extraction.py": {
+      "current": "ff7bca391e6b01687d5826c4ae775c528db4ddb9848df70593493f335e0ea3f4",
+      "baseline": "0894075e76b23ff832711ef490bbce72a43530a152854abe4950f1cbe7bf2052",
+      "candidate": "ff7bca391e6b01687d5826c4ae775c528db4ddb9848df70593493f335e0ea3f4",
+      "current_changed_from_baseline": true,
+      "candidate_matches_baseline": false
+    }
+  },
+  "controlled_benchmark": {
+    "candidate_cases_patch_is_only_finalizer": true,
+    "candidate_case_memory_matches_baseline": true,
+    "candidate_ownership_status_matches_baseline": true,
+    "candidate_escalation_policy_matches_baseline": true,
+    "candidate_escalation_config_matches_baseline": true,
+    "attribution": "Keep primary baseline/candidate metrics on these locked runtimes; production Activity 16 changes require a separately labelled combined integration run.",
+    "candidate_escalation_routing_matches_baseline": true,
+    "candidate_conversation_state_matches_baseline": true
+  },
+  "ownership_tasks_or_provisional_policy_modules_present": [],
+  "tests": {
+    "command": ".venv/bin/python -B -m pytest -q tests/enquiry_interpretation tests/enquiry_workflow -p no:cacheprovider",
+    "returncode": 0,
+    "output": "882 passed, 4 subtests passed",
+    "focused_passed": 78,
+    "rerun_on_this_check": true
+  },
+  "probes": {
+    "status_replies": [
+      {
+        "question": "Are you an existing customer?",
+        "answer": "yes",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you an existing customer?",
+        "answer": "no",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you an existing customer?",
+        "answer": "existing",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you an existing customer?",
+        "answer": "new",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you an existing customer?",
+        "answer": "Let's leave that open for now.",
+        "status": "unknown",
+        "deferred": true
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "yes",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "no",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "existing",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "new",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "Let's leave that open for now.",
+        "status": "unknown",
+        "deferred": true
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "yes",
+        "status": "unknown",
+        "deferred": false
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "no",
+        "status": "unknown",
+        "deferred": false
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "existing",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "new",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "Let's leave that open for now.",
+        "status": "unknown",
+        "deferred": true
+      }
+    ],
+    "pending_status_reply": [
+      {
+        "answer": "existing",
+        "returned_status": "existing",
+        "persisted_status": "existing",
+        "owner": "Support L1",
+        "provisional": false,
+        "route": "final",
+        "pending_reply": null
+      },
+      {
+        "answer": "new",
+        "returned_status": "new",
+        "persisted_status": "new",
+        "owner": "Account team (Sales)",
+        "provisional": false,
+        "route": "final",
+        "pending_reply": null
+      }
+    ],
+    "live_model_calls": 0
+  },
+  "findings": [
+    {
+      "id": "pending_customer_status_binding",
+      "severity": "high",
+      "status": "resolved_by_narrow_production_integration_fix",
+      "evidence": "For an actual pending customer_status question, replies existing/new return ownership status unknown while persisting the correct status. New returns Support L1 provisionally instead of Sales on that turn.",
+      "cause": "Generic pending-answer task augmentation occurs before current status is resolved; raw short status is only recognized later when saving the ownership event.",
+      "recommendation": "Bind a recognized pending customer-status answer before routing and pass it as the effective current status, preserving raw query/source and deletion semantics. Do not alter the controlled Activity 14 benchmark runtime.",
+      "previous_status": "confirmed_in_current_production_only",
+      "resolution_report": "combined-status-integration/report.json"
+    },
+    {
+      "id": "unambiguous_yes_no_status",
+      "severity": "medium",
+      "status": "resolved_by_narrow_production_integration_fix",
+      "evidence": "Yes/no after Are you an existing customer? or Are you already using this service? remains unknown. Literal existing/new and explicit deferral work.",
+      "recommendation": "Resolve yes/no only against an unambiguous polar status question; keep yes/no unknown for a new-or-existing choice question.",
+      "previous_status": "confirmed_in_current_production_only",
+      "resolution_report": "combined-status-integration/report.json"
+    },
+    {
+      "id": "history_and_finalizer_boundary",
+      "severity": "informational",
+      "status": "no_confirmed_finalizer_conflict",
+      "evidence": "Clarification turns now enter production interpretation history as assistant turns; our task helper reads customer turns and the finalizer preserves route/owner/pending metadata. Existing integration suites pass, but do not cover the two gaps above.",
+      "recommendation": "Retain exact source locks. New clarification-history prompts must not reuse results from a different runtime or be attributed to Activity 14."
+    },
+    {
+      "id": "new_ownership_modules",
+      "severity": "informational",
+      "status": "not_part_of_adopted_runtime",
+      "evidence": "The named modules are present only under an archived rejected experiment source directory; the adopted runtime uses ownership_status.py and its approved policy.",
+      "recommendation": "Recheck when these files land; their integration is not certified by this watch."
+    }
+  ],
+  "previous_check_at_utc": "2026-11-24T15:56:00.209887+00:00",
+  "source_changes_since_previous_check": [
+    "copilot/enquiry_workflow/cases.py",
+    "copilot/enquiry_workflow/ownership_status.py"
+  ],
+  "other_chat_progress": {
+    "status": "completed",
+    "snapshot_only": true,
+    "note": "Read-only compact completion checked. No cross-thread message sent; aggregate scores were not used as code or label evidence."
+  },
+  "status_binding_gaps_resolved": true,
+  "polar_yes_no_resolved": true,
+  "combined_integration_report": "combined-status-integration/report.json"
+}

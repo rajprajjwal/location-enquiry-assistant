@@ -1,0 +1,11 @@
+{
+  "selection": "One hash-selected case from every remaining unused working-eval group. No content or labels used for selection.",
+  "working_cohort_sha256": "59ada638b0147cdc67f4c0e6c01cc5d1fd30e50968bec37206aee2d876d5005f",
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "case_sha256": "2988975e329c8fe7453e94524d26caf261ada62b6937b4283a017eeabc3a9856",
+  "excluded_groups": 234,
+  "groups": 20,
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "review_kind": "Assistant pre-prediction review under user delegation, not independent human review"
+}

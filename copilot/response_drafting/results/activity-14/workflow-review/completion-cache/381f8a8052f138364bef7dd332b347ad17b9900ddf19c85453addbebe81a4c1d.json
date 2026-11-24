@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"alternative_providers\",\n      \"value\": [\"Ola Maps\", \"Mapbox\"],\n      \"evidence\": \"Ola vs Mapbox\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The decision to use debouncing affects how the number of keystrokes translates to API requests, which is critical for accurate cost estimation between Ola Maps and Mapbox.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"alternative_providers\",\n      \"value\": [\"Ola Maps\", \"Mapbox\"],\n      \"evidence\": \"Ola vs Mapbox\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The decision to use debouncing affects how the number of keystrokes translates to API requests, which is critical for accurate cost estimation between Ola Maps and Mapbox.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1039,
+    "completion_tokens": 128,
+    "total_tokens": 1167
+  },
+  "latency_ms": 3213,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

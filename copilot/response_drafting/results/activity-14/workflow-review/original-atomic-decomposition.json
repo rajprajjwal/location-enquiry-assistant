@@ -1,0 +1,429 @@
+{
+  "review_kind": "Assistant-authored and independently cross-checked by a second agent before candidate generation. Baseline generation began in parallel; neither reviewer used predictions for decomposition. Not independent human review.",
+  "policy": "Original question text and grouping remain unchanged. Alternatives for one decision are one fact; independently requested values or checks are separate facts. No prediction-derived labels or supplied-fact contradiction correction.",
+  "questions": [
+    {
+      "question": "Are you open to self-hosting, or do you want a managed API?",
+      "facts": [
+        "Whether self-hosting is acceptable or a managed API is required."
+      ]
+    },
+    {
+      "question": "Do you call Place Details after selection?",
+      "facts": [
+        "Whether Place Details is called after selecting a suggestion."
+      ]
+    },
+    {
+      "question": "Do you debounce keystrokes?",
+      "facts": [
+        "Whether keystrokes are debounced."
+      ]
+    },
+    {
+      "question": "Which Place Details SKU ends your sessions?",
+      "facts": [
+        "The Place Details SKU that terminates the sessions."
+      ]
+    },
+    {
+      "question": "Account ID?",
+      "facts": [
+        "The account ID."
+      ]
+    },
+    {
+      "question": "Exact query and prediction?",
+      "facts": [
+        "The exact query submitted.",
+        "The prediction returned for that query."
+      ]
+    },
+    {
+      "question": "Do you need hard restriction or just a bias toward those countries?",
+      "facts": [
+        "Whether a hard country restriction or a geographic bias is required."
+      ]
+    },
+    {
+      "question": "Do you need POIs as well as addresses?",
+      "facts": [
+        "Whether points of interest are required in addition to addresses."
+      ]
+    },
+    {
+      "question": "What debounce interval do you use now?",
+      "facts": [
+        "The debounce interval currently used."
+      ]
+    },
+    {
+      "question": "Do you want a hard restriction or just a bias?",
+      "facts": [
+        "Whether a hard restriction or a geographic bias is required."
+      ]
+    },
+    {
+      "question": "What peak rate and geographic coverage does type-ahead need?",
+      "facts": [
+        "The required peak type-ahead request rate.",
+        "The required type-ahead geographic coverage."
+      ]
+    },
+    {
+      "question": "Who operates the API backend and what result retention, redistribution, or resale rights are required?",
+      "facts": [
+        "Who operates the API backend.",
+        "The result retention rights required.",
+        "The result redistribution rights required.",
+        "The result resale rights required."
+      ]
+    },
+    {
+      "question": "Do you need live-traffic ETAs or are static routes enough?",
+      "facts": [
+        "Whether live-traffic ETAs are required or static routes are sufficient."
+      ]
+    },
+    {
+      "question": "What vehicle types (car, bike, auto, truck) do you route?",
+      "facts": [
+        "The vehicle types to be routed."
+      ]
+    },
+    {
+      "question": "Is your Google Cloud project new or existing?",
+      "facts": [
+        "Whether the Google Cloud project is new or existing."
+      ]
+    },
+    {
+      "question": "What's your expected monthly volume?",
+      "facts": [
+        "The expected monthly volume."
+      ]
+    },
+    {
+      "question": "Do you need traffic at request time or for future departures?",
+      "facts": [
+        "Whether traffic estimates are needed at request time or for future departures."
+      ]
+    },
+    {
+      "question": "Voice or text instructions?",
+      "facts": [
+        "Whether instructions must be voice or text."
+      ]
+    },
+    {
+      "question": "Do you need hazmat or height/weight restrictions?",
+      "facts": [
+        "Whether hazardous-material restrictions are required.",
+        "Whether vehicle-height restrictions are required.",
+        "Whether vehicle-weight restrictions are required."
+      ]
+    },
+    {
+      "question": "Is the current balance positive?",
+      "facts": [
+        "Whether the current account balance is positive."
+      ]
+    },
+    {
+      "question": "How many route requests per month?",
+      "facts": [
+        "The number of route requests per month."
+      ]
+    },
+    {
+      "question": "Do you need live-traffic ETAs?",
+      "facts": [
+        "Whether live-traffic ETAs are required."
+      ]
+    },
+    {
+      "question": "Which vehicle types?",
+      "facts": [
+        "The vehicle types."
+      ]
+    },
+    {
+      "question": "How many stops per route?",
+      "facts": [
+        "The number of stops per route."
+      ]
+    },
+    {
+      "question": "Existing Google project or Ola contract?",
+      "facts": [
+        "Whether an existing Google project is available.",
+        "Whether an Ola contract is available."
+      ]
+    },
+    {
+      "question": "Are you calling the REST web service or an SDK?",
+      "facts": [
+        "Whether calls use the REST web service or an SDK."
+      ]
+    },
+    {
+      "question": "Which signing certificate is the build using?",
+      "facts": [
+        "The signing certificate used by the build."
+      ]
+    },
+    {
+      "question": "Can you share the via: coordinate?",
+      "facts": [
+        "The actual via coordinate."
+      ]
+    },
+    {
+      "question": "Which endpoint and overview value are you sending?",
+      "facts": [
+        "The endpoint being called.",
+        "The overview parameter value being sent."
+      ]
+    },
+    {
+      "question": "When was the key exposed?",
+      "facts": [
+        "When the key was exposed."
+      ]
+    },
+    {
+      "question": "Any unusual usage spikes?",
+      "facts": [
+        "Whether unusual usage spikes occurred."
+      ]
+    },
+    {
+      "question": "Which status string exactly?",
+      "facts": [
+        "The exact returned status string."
+      ]
+    },
+    {
+      "question": "Are you on a contract or prepaid?",
+      "facts": [
+        "Whether the commercial arrangement is a contract or prepaid."
+      ]
+    },
+    {
+      "question": "Do you need live traffic, or are historical/typical ETAs enough?",
+      "facts": [
+        "Whether live traffic is required or historical/typical ETAs are sufficient."
+      ]
+    },
+    {
+      "question": "Is the load spread across several API keys/tokens?",
+      "facts": [
+        "Whether the load is spread across several API keys or tokens."
+      ]
+    },
+    {
+      "question": "How many Directions requests per minute do you send at peak?",
+      "facts": [
+        "The peak number of Directions requests per minute."
+      ]
+    },
+    {
+      "question": "What request rate do you expect?",
+      "facts": [
+        "The expected request rate."
+      ]
+    },
+    {
+      "question": "Is live traffic essential, or are typical ETAs acceptable?",
+      "facts": [
+        "Whether live traffic is essential or typical ETAs are acceptable."
+      ]
+    },
+    {
+      "question": "Is your Google Cloud project new?",
+      "facts": [
+        "Whether the Google Cloud project is new."
+      ]
+    },
+    {
+      "question": "Which vehicle models and charger networks do you need?",
+      "facts": [
+        "The vehicle models that must be supported.",
+        "The charger networks that must be supported."
+      ]
+    },
+    {
+      "question": "Are origins and destinations given as coordinates or addresses?",
+      "facts": [
+        "Whether origins are provided as coordinates or addresses.",
+        "Whether destinations are provided as coordinates or addresses."
+      ]
+    },
+    {
+      "question": "Do you need traffic or a travel mode other than driving?",
+      "facts": [
+        "Whether traffic is required.",
+        "Whether a travel mode other than driving is required."
+      ]
+    },
+    {
+      "question": "Are inputs coordinates or addresses?",
+      "facts": [
+        "Whether inputs are coordinates or addresses."
+      ]
+    },
+    {
+      "question": "Traffic needed for all matrices?",
+      "facts": [
+        "Whether traffic is needed for all matrices."
+      ]
+    },
+    {
+      "question": "Start date?",
+      "facts": [
+        "The start date."
+      ]
+    },
+    {
+      "question": "SLA needs?",
+      "facts": [
+        "The SLA requirements."
+      ]
+    },
+    {
+      "question": "Can you share the usage export?",
+      "facts": [
+        "The usage export."
+      ]
+    },
+    {
+      "question": "Which Nepal cities?",
+      "facts": [
+        "The Nepal cities that must be supported."
+      ]
+    },
+    {
+      "question": "How large is each matrix (origins × destinations)?",
+      "facts": [
+        "The number of origins in each matrix.",
+        "The number of destinations in each matrix."
+      ]
+    },
+    {
+      "question": "Do you have the ops capacity to host and update the routing engine?",
+      "facts": [
+        "Whether there is operational capacity to host the routing engine.",
+        "Whether there is operational capacity to update the routing engine."
+      ]
+    },
+    {
+      "question": "What matrix size do you send per request?",
+      "facts": [
+        "The matrix size sent per request."
+      ]
+    },
+    {
+      "question": "How many origins and destinations per request, and do they need traffic-aware ETAs?",
+      "facts": [
+        "The number of origins per request.",
+        "The number of destinations per request.",
+        "Whether traffic-aware ETAs are required."
+      ]
+    },
+    {
+      "question": "Should cost be compared per pair (Ola) or per element/request (Google/Mapbox)?",
+      "facts": [
+        "The requested cost-comparison basis: pairs, elements or requests."
+      ]
+    },
+    {
+      "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+      "facts": [
+        "Whether Mapbox driving-traffic will be used."
+      ]
+    },
+    {
+      "question": "Approximate requests per minute right now?",
+      "facts": [
+        "The approximate number of requests per minute currently being sent."
+      ]
+    },
+    {
+      "question": "Are you on a contract or prepaid credits?",
+      "facts": [
+        "Whether the commercial arrangement is a contract or prepaid credits."
+      ]
+    },
+    {
+      "question": "Do you need to store results?",
+      "facts": [
+        "Whether results must be stored."
+      ]
+    },
+    {
+      "question": "Are lookups user-triggered or periodic tracking?",
+      "facts": [
+        "Whether lookups are user-triggered or periodic tracking."
+      ]
+    },
+    {
+      "question": "Sample points?",
+      "facts": [
+        "Sample input points."
+      ]
+    },
+    {
+      "question": "Do you need full street addresses or only locality names in that language?",
+      "facts": [
+        "Whether full street addresses or only locality names are required in the requested language."
+      ]
+    },
+    {
+      "question": "Did traffic spike, or did you deploy from a new server/domain?",
+      "facts": [
+        "Whether traffic spiked.",
+        "Whether a deployment used a new server or domain."
+      ]
+    },
+    {
+      "question": "Do you need to store the results long-term?",
+      "facts": [
+        "Whether results must be stored long-term."
+      ]
+    },
+    {
+      "question": "What peak rate and monthly volume do they need?",
+      "facts": [
+        "The required peak request rate.",
+        "The required monthly volume."
+      ]
+    },
+    {
+      "question": "Must results be in Hindi or another language?",
+      "facts": [
+        "The required result language, including whether Hindi is required."
+      ]
+    },
+    {
+      "question": "Will results be stored, and is public Nominatim or Mapbox temporary geocoding acceptable?",
+      "facts": [
+        "Whether results will be stored.",
+        "Whether public Nominatim is acceptable.",
+        "Whether Mapbox temporary geocoding is acceptable."
+      ]
+    },
+    {
+      "question": "Is street-address / rooftop precision a hard filter, and is an address-element breakdown required?",
+      "facts": [
+        "Whether street-address/rooftop precision is a hard filter.",
+        "Whether an address-element breakdown is required."
+      ]
+    },
+    {
+      "question": "Which provider are they considering besides Google and Nominatim?",
+      "facts": [
+        "The providers being considered besides Google and Nominatim."
+      ]
+    }
+  ]
+}

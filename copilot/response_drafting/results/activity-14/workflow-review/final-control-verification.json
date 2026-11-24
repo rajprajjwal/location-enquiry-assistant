@@ -1,0 +1,19 @@
+{
+  "cases": 317,
+  "source_predictions_sha256": {
+    "baseline": "45170d5060db7a10c89ba8bc0cb125959e818339e90b59a20f36003ff75ffe62",
+    "candidate": "4e0cb1ac057c37653a7b385e49b9d580f50e9179dbf500f35f17abd93b20b875",
+    "candidate-v3": "e1033bc7eaf147cad94ed39d1859fa7f891b3d6df5cf9e16f0a7a585ccbe8a97"
+  },
+  "first_to_final_trial_changes": {
+    "route": [],
+    "next_action": [],
+    "owner": [],
+    "pending_reply": [],
+    "approvals": [],
+    "proposed_actions": [],
+    "active_questions": []
+  },
+  "baseline_to_first_trial_audit": "paired-control-audit-v1.json",
+  "conclusion": "Precision and incident follow-up fixes preserve all listed controls across 317 cases. The earlier holistic interpretation/route corrections have the separately reported baseline differences; this is not a claim of zero changes against baseline."
+}

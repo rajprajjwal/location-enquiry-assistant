@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The customer is encountering an INVALID_REQUEST error with Google reverse geocoding. To diagnose the issue, we need to reproduce the request to identify the exact cause, such as missing parameters or invalid inputs.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The customer is encountering an INVALID_REQUEST error with Google reverse geocoding. To diagnose the issue, we need to reproduce the request to identify the exact cause, such as missing parameters or invalid inputs.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2008,
+    "completion_tokens": 52,
+    "total_tokens": 2060
+  },
+  "latency_ms": 1460,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

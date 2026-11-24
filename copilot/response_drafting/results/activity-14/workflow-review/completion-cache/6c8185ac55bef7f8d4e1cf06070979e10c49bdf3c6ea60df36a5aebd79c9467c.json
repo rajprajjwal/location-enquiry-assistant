@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"matrix_input\", \"reason\":\"The customer is encountering an issue with their 8 origins × 8 destinations request to the Ola Distance Matrix API. The problem may be due to some matrix elements failing to resolve inputs, which could be due to incorrect formatting, missing coordinates, or invalid data. Inspecting a failing pair exactly as submitted would help identify the root cause.\"}",
+  "raw": "{\"decision\":\"matrix_input\", \"reason\":\"The customer is encountering an issue with their 8 origins × 8 destinations request to the Ola Distance Matrix API. The problem may be due to some matrix elements failing to resolve inputs, which could be due to incorrect formatting, missing coordinates, or invalid data. Inspecting a failing pair exactly as submitted would help identify the root cause.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1252,
+    "completion_tokens": 79,
+    "total_tokens": 1331
+  },
+  "latency_ms": 1983,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"capability_fit\",\"api\":\"directions\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"Jaipur tour operator\",\"evidence\":\"We're a Jaipur tour operator\"},\"region\":{\"value\":\"India\",\"evidence\":\"all in India\"},\"monthly_volume\":{\"value\":\"9,500,000 route (directions) requests a month\",\"evidence\":\"expect about 9,500,000 route (directions) requests a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"capability_fit\",\"api\":\"directions\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"Jaipur tour operator\",\"evidence\":\"We're a Jaipur tour operator\"},\"region\":{\"value\":\"India\",\"evidence\":\"all in India\"},\"monthly_volume\":{\"value\":\"9,500,000 route (directions) requests a month\",\"evidence\":\"expect about 9,500,000 route (directions) requests a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1431,
+    "completion_tokens": 186,
+    "total_tokens": 1617
+  },
+  "latency_ms": 4297,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

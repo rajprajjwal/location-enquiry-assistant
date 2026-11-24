@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "records": 88,
+  "frozen_records": 0,
+  "holdout_records": 0,
+  "model_calls": 0,
+  "reference": "Assistant-reviewed provider roles; eight ambiguous current-provider cases excluded.",
+  "scope": "Intake extraction and shared-state validation; not answer F1, live-model accuracy or all-route equivalence.",
+  "checks": {
+    "provider_mentions_correct": 88,
+    "current_provider_correct": 80,
+    "current_provider_scored": 80,
+    "ambiguous_current_provider_excluded": 8,
+    "evidence_valid": 88,
+    "state_schema_valid": 88,
+    "provider_handoff_consistent": 88,
+    "legacy_ambiguous_scalars": 7,
+    "ambiguous_scalar_checks_passed": 88,
+    "non_provider_unchanged": 83,
+    "scenario_inputs_reclassified": 5,
+    "unexpected_non_provider_changes": 0
+  }
+}

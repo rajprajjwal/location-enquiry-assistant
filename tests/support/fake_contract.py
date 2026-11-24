@@ -1,7 +1,7 @@
 """TEST-ONLY fake of ``copilot.models`` and ``copilot.validation.rules``.
 
 Purpose: stand in for the Knowledge & Validation package during unit tests.
-Use case: ``tests/conftest.py`` installs this onto ``copilot.interpret.seam``.
+Use case: ``tests/conftest.py`` installs this onto ``copilot.enquiry_interpretation.seam``.
 Example: ``normalize_enum("api", "Directions")`` is ``"directions"``.
 
 This is not production code and it is not a copy of ``copilot/validation/rules.py``.

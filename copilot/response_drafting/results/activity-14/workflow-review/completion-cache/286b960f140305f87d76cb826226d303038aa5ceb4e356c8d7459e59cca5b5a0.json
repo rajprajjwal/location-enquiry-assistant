@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The customer is experiencing '429 Reached monthly/minute rate limits' and some '400 INVALID_LATLNG' errors, which suggests a burst of requests may be hitting the rate limit. Inspect one request and test it in isolation to confirm.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The customer is experiencing '429 Reached monthly/minute rate limits' and some '400 INVALID_LATLNG' errors, which suggests a burst of requests may be hitting the rate limit. Inspect one request and test it in isolation to confirm.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1645,
+    "completion_tokens": 65,
+    "total_tokens": 1710
+  },
+  "latency_ms": 2814,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

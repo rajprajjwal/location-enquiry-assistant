@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue relates to the snapping behavior of the start point in Google Directions when using raw lat/lng coordinates. The diagnostic evidence suggests that specifying a heading for the waypoint can help ensure the vehicle arrives on the correct side of the road. Since the customer is already using the Google Maps Platform and the issue is related to configuration or usage of the API, no further action is required at this time.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue relates to the snapping behavior of the start point in Google Directions when using raw lat/lng coordinates. The diagnostic evidence suggests that specifying a heading for the waypoint can help ensure the vehicle arrives on the correct side of the road. Since the customer is already using the Google Maps Platform and the issue is related to configuration or usage of the API, no further action is required at this time.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2234,
+    "completion_tokens": 90,
+    "total_tokens": 2324
+  },
+  "latency_ms": 2417,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,227 @@
+{
+  "cohort": "development",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "cases": 251,
+        "owner_correct": 238,
+        "owner_accuracy": 0.9482071713147411,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 3,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.75,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": []
+    },
+    "technical_checks": {
+      "metrics": {
+        "cases": 251,
+        "owner_correct": 240,
+        "owner_accuracy": 0.9561752988047809,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 1,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.9,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-DIR-057",
+          "query": "Customer message:\n\"Our Google Directions URL has 23 lat/lng waypoints and sometimes gets rejected as too long. Options?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+          "before_owner": "Support L2",
+          "after_owner": "Support L1",
+          "before_escalate": true,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        },
+        {
+          "record_id": "GT-LBS-DM-061",
+          "query": "Customer message:\n\"Google Distance Matrix returns REQUEST_DENIED from our Node.js backend.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+          "before_owner": "Maps engineering",
+          "after_owner": "Support L1",
+          "before_escalate": true,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        }
+      ]
+    },
+    "personal_use": {
+      "metrics": {
+        "cases": 251,
+        "owner_correct": 239,
+        "owner_accuracy": 0.952191235059761,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 3,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.75,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-RG-061",
+          "query": "Mapbox reverse geocoding returns places in the Arctic for our Indian points.",
+          "before_owner": "Account team (Sales)",
+          "after_owner": "Support L1",
+          "before_escalate": false,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        }
+      ]
+    },
+    "country_settings": {
+      "metrics": {
+        "cases": 251,
+        "owner_correct": 239,
+        "owner_accuracy": 0.952191235059761,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 3,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.75,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-AC-099",
+          "query": "Google Places Autocomplete: we need results from 5 countries (CH, FR, DE, AT, IT). Is only one country allowed?",
+          "before_owner": "Account team (Sales)",
+          "after_owner": "Support L1",
+          "before_escalate": false,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        }
+      ]
+    },
+    "free_allowance": {
+      "metrics": {
+        "cases": 251,
+        "owner_correct": 239,
+        "owner_accuracy": 0.952191235059761,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 3,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.75,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-DIR-032",
+          "query": "Sandbox CRM opportunity OPP-19566. Customer wrote:\n\"Is Ola Maps Directions free for a small app doing about 60,000 requests a month? Do we need to buy credits?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+          "before_owner": "Account team (Sales)",
+          "after_owner": "Support L1",
+          "before_escalate": false,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        }
+      ]
+    },
+    "combined": {
+      "metrics": {
+        "cases": 251,
+        "owner_correct": 243,
+        "owner_accuracy": 0.9681274900398407,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 1,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.9,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-AC-099",
+          "query": "Google Places Autocomplete: we need results from 5 countries (CH, FR, DE, AT, IT). Is only one country allowed?",
+          "before_owner": "Account team (Sales)",
+          "after_owner": "Support L1",
+          "before_escalate": false,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        },
+        {
+          "record_id": "GT-LBS-RG-061",
+          "query": "Mapbox reverse geocoding returns places in the Arctic for our Indian points.",
+          "before_owner": "Account team (Sales)",
+          "after_owner": "Support L1",
+          "before_escalate": false,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        },
+        {
+          "record_id": "GT-LBS-DIR-032",
+          "query": "Sandbox CRM opportunity OPP-19566. Customer wrote:\n\"Is Ola Maps Directions free for a small app doing about 60,000 requests a month? Do we need to buy credits?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+          "before_owner": "Account team (Sales)",
+          "after_owner": "Support L1",
+          "before_escalate": false,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        },
+        {
+          "record_id": "GT-LBS-DIR-057",
+          "query": "Customer message:\n\"Our Google Directions URL has 23 lat/lng waypoints and sometimes gets rejected as too long. Options?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+          "before_owner": "Support L2",
+          "after_owner": "Support L1",
+          "before_escalate": true,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        },
+        {
+          "record_id": "GT-LBS-DM-061",
+          "query": "Customer message:\n\"Google Distance Matrix returns REQUEST_DENIED from our Node.js backend.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+          "before_owner": "Maps engineering",
+          "after_owner": "Support L1",
+          "before_escalate": true,
+          "after_escalate": false,
+          "expected": {
+            "owner": "Support L1",
+            "escalate": false
+          },
+          "owner_regression": false
+        }
+      ]
+    }
+  },
+  "method": "Saved-interpretation replay; cached model handoffs retained except explicit first-line rule eligibility."
+}

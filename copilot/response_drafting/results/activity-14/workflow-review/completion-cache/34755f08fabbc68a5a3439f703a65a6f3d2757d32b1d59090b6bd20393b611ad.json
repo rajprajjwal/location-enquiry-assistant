@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":true,\"evidence\":\"qualification_details.region\"},{\"field\":\"languages\",\"value\":true,\"evidence\":\"shown in Hindi\"}],\"groups\":[{\"fields\":[\"peak_rate\",\"monthly_volume\"],\"decision_impact\":\"Check throughput and recurring usage before recommending a service.\"},{\"fields\":[\"storage_required\",\"public_service_acceptable\",\"temporary_results_acceptable\"],\"decision_impact\":\"Select a deployment and licensing model compatible with the customer use.\"}],\"reason\":\"The customer has provided the region and languages, but the peak rate, monthly volume, and storage requirements are missing, which are critical for determining the appropriate service and deployment model.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":true,\"evidence\":\"qualification_details.region\"},{\"field\":\"languages\",\"value\":true,\"evidence\":\"shown in Hindi\"}],\"groups\":[{\"fields\":[\"peak_rate\",\"monthly_volume\"],\"decision_impact\":\"Check throughput and recurring usage before recommending a service.\"},{\"fields\":[\"storage_required\",\"public_service_acceptable\",\"temporary_results_acceptable\"],\"decision_impact\":\"Select a deployment and licensing model compatible with the customer use.\"}],\"reason\":\"The customer has provided the region and languages, but the peak rate, monthly volume, and storage requirements are missing, which are critical for determining the appropriate service and deployment model.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1935,
+    "completion_tokens": 134,
+    "total_tokens": 2069
+  },
+  "latency_ms": 3237,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

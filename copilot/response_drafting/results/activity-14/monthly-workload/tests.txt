@@ -1,0 +1,3 @@
+364 passed, 4 subtests passed in 4.18s
+Command from repository root
+env PYTHONPATH=. .venv/bin/python -B -m pytest -q -p no:cacheprovider tests/enquiry_workflow tests/enquiry_interpretation tests/test_comparison_pricing.py

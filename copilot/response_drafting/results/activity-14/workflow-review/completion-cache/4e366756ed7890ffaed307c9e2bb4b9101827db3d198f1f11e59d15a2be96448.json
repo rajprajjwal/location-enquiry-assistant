@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer is asking about hiding the 'warnings' array from the Google Directions API response for walking routes in old Delhi. The retrieved evidence indicates that the 'warnings' array is part of the response when walking directions are not available via pedestrian paths. The documentation does not provide a configuration to hide this array, and the customer's request does not require a diagnostic decision as it is a UI customization question.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer is asking about hiding the 'warnings' array from the Google Directions API response for walking routes in old Delhi. The retrieved evidence indicates that the 'warnings' array is part of the response when walking directions are not available via pedestrian paths. The documentation does not provide a configuration to hide this array, and the customer's request does not require a diagnostic decision as it is a UI customization question.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1844,
+    "completion_tokens": 89,
+    "total_tokens": 1933
+  },
+  "latency_ms": 2367,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

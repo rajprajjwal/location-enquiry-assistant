@@ -1,0 +1,111 @@
+{
+  "baseline": {
+    "cases": 251,
+    "owner_correct": 228,
+    "owner_accuracy": 0.9083665338645418,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 9,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.5,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "candidate": {
+    "cases": 251,
+    "owner_correct": 238,
+    "owner_accuracy": 0.9482071713147411,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 3,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.75,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "model_calls": 0,
+  "record_writes": 0,
+  "method": "Saved-interpretation replay; cached handoff classifications retained except rule-based first-line triage. Unchanged escalation metrics measure preservation.",
+  "changes": [
+    {
+      "record_id": "GT-LBS-AC-003",
+      "query": "To save money, can our mobile app call the public Nominatim server directly for type-ahead address search? We have about 20 searches per second at peak.",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Account team (Sales)",
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-033",
+      "query": "Sandbox CRM opportunity OPP-74655. Customer wrote:\n\"Does Google give us free Directions calls in India, and what happens if we exceed it without a card on file?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DM-051",
+      "query": "Customer message:\n\"Google Distance Matrix doesn't return duration_in_traffic even though we pass traffic_model=best_guess.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": "Support L2",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-118",
+      "query": "Google Directions: we always send 15 waypoints. Which SKU and what's the rate for 200,000 requests in India?",
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-RG-098",
+      "query": "Google reverse geocoding gives ZERO_RESULTS for some Indian coordinates outside Delhi and Mumbai.",
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-064",
+      "query": "Customer message:\n\"Ola Directions returns 400 with reason 'Invalid/missing origin'. We send origin=77.5946,12.9716.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": "Support L2",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DM-050",
+      "query": "Customer message:\n\"A Google Distance Matrix element returns MAX_ROUTE_LENGTH_EXCEEDED for a Kanyakumari\u2013Srinagar pair. Can we raise the limit?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": "Maps engineering",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DM-056",
+      "query": "Customer message:\n\"Google Compute Route Matrix rejects our 30\u00d730 request. Isn't the limit 625?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": "Maps engineering",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-RG-033",
+      "query": "Customer message:\n\"We added result_type=street_address and now some points return ZERO_RESULTS.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": "Maps engineering",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DM-062",
+      "query": "Customer message:\n\"Ola Distance Matrix rejects our 8 origins \u00d7 8 destinations request.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": "Support L2",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "improved": true
+    }
+  ],
+  "deferred": [],
+  "escalations_preserved": false
+}

@@ -1,0 +1,133 @@
+{
+  "$defs": {
+    "DiagnosticFact": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "status": {
+          "default": "supplied",
+          "enum": [
+            "supplied",
+            "missing",
+            "asked",
+            "declined",
+            "documentation"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "value": {
+          "default": null,
+          "title": "Value"
+        },
+        "source": {
+          "default": "query",
+          "title": "Source",
+          "type": "string"
+        },
+        "evidence": {
+          "default": "",
+          "title": "Evidence",
+          "type": "string"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start"
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End"
+        }
+      },
+      "required": [
+        "field"
+      ],
+      "title": "DiagnosticFact",
+      "type": "object"
+    },
+    "DiagnosticQuestion": {
+      "additionalProperties": false,
+      "properties": {
+        "facts": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Facts",
+          "type": "array"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "status": {
+          "default": "suggested",
+          "enum": [
+            "suggested",
+            "asked",
+            "answered",
+            "declined"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "facts",
+        "text"
+      ],
+      "title": "DiagnosticQuestion",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Version",
+      "type": "string"
+    },
+    "facts": {
+      "additionalProperties": {
+        "$ref": "#/$defs/DiagnosticFact"
+      },
+      "title": "Facts",
+      "type": "object"
+    },
+    "questions": {
+      "items": {
+        "$ref": "#/$defs/DiagnosticQuestion"
+      },
+      "title": "Questions",
+      "type": "array"
+    },
+    "completed_checks": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Completed Checks",
+      "type": "array"
+    }
+  },
+  "title": "DiagnosticState",
+  "type": "object"
+}

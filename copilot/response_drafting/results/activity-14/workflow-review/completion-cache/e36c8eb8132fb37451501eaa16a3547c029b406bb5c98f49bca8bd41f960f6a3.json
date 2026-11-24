@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The MAX_ROUTE_LENGTH_EXCEEDED error indicates the requested route is too long and cannot be processed. This is a limitation of the Distance Matrix API and not a configurable limit that can be raised. The customer's question is based on a misunderstanding of the error, as the limit is not adjustable.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The MAX_ROUTE_LENGTH_EXCEEDED error indicates the requested route is too long and cannot be processed. This is a limitation of the Distance Matrix API and not a configurable limit that can be raised. The customer's question is based on a misunderstanding of the error, as the limit is not adjustable.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1428,
+    "completion_tokens": 67,
+    "total_tokens": 1495
+  },
+  "latency_ms": 2701,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

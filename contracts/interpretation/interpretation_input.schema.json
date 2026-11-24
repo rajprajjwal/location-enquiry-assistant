@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://capstone.local/lbs-copilot/contracts/interpretation_input/v0.1.0",
   "title": "InterpretationInput",
-  "$comment": "Purpose: input to the interpretation step (query, history, known facts). Use case: interpret(InterpretationInput). Example: query \"Price directions for 2,000,000 requests a month in India\", empty history. These wrappers are not under schemas/ because validator/validate_spec.py loads every schemas/*.schema.json.",
+  "$comment": "Purpose: input to the interpretation step (query, history, known facts). Use case: interpret(InterpretationInput). Example: query \"Price directions for 2,000,000 requests a month in India\", empty history. These wrappers are not under schemas/ because copilot/validation/specification_checks/validate_spec.py loads every schemas/*.schema.json.",
   "x-spec-version": "0.1.0",
   "type": "object",
   "additionalProperties": false,

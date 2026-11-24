@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"parameter_troubleshooting\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":\"Google Maps Platform\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"parameter_troubleshooting\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":\"Google Maps Platform\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1367,
+    "completion_tokens": 146,
+    "total_tokens": 1513
+  },
+  "latency_ms": 3526,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

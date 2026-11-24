@@ -1,0 +1,1174 @@
+{
+  "status": "assistant_review_only_not_gold_correction_or_human_approval",
+  "review_policy": "Read raw customer queries/history and original reference questions only. No predictions, implementation outputs, frozen cases or holdout cases were used. Ambiguous materiality/scope concerns are needs_review, not confirmed defects.",
+  "gold_policy": "Preserve original gold and primary scores unchanged. This audit neither approves corrections nor excludes cases from scoring.",
+  "question_indexing": "Zero-based within original-working-reference.json cases[].questions.",
+  "source_sha256": {
+    "inputs317.json": "eae0cf7b2da650fa7f6da6fccb28ef516ab0dcfd27fc94767f596c26b4458380",
+    "original-working-reference.json": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089"
+  },
+  "counts": {
+    "reviewed_positive_cases": 86,
+    "reviewed_gold_questions": 128,
+    "clear_conflict_questions": 23,
+    "clear_conflict_cases": 23,
+    "needs_review_questions": 17,
+    "all_flagged_questions": 40,
+    "all_flagged_cases": 35,
+    "unflagged_questions": 88,
+    "by_classification": {
+      "already_answered": 13,
+      "global_proceed_instruction": 10,
+      "needs_review": 17
+    },
+    "unique_gold_question_wordings": 67,
+    "unique_clear_conflict_wordings": 12
+  },
+  "reviewed_coverage": [
+    {
+      "record_id": "GT-LBS-AC-003",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-008",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-009",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-010",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-011",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-012",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-021",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-088",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-090",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-204",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-213",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-220",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-221",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-227",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-228",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-233",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-013",
+      "reviewed_question_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-014",
+      "reviewed_question_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-031",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-037",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-038",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-040",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-044",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-047",
+      "reviewed_question_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-048",
+      "reviewed_question_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "reviewed_question_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "reviewed_question_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-053",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-055",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-065",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-086",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-087",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-121",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-205",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-206",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-211",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-212",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-213",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-215",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-218",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-219",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-220",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-007",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-008",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-009",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-010",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-011",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-012",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-013",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-017",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-018",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-019",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-020",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-025",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-030",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-086",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-088",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-093",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-206",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-207",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-208",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-211",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-212",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-216",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-217",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "reviewed_question_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-004",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-008",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-009",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-011",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-012",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-013",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-085",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-207",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-208",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-209",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-219",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-224",
+      "reviewed_question_indices": [
+        0
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "reviewed_question_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "reviewed_question_indices": [
+        0,
+        1
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "record_id": "GT-LBS-AC-011",
+      "gold_question_index": 0,
+      "question": "Do you debounce keystrokes?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "I don't know yet. Please proceed on what I already said."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-AC-012",
+      "gold_question_index": 0,
+      "question": "Do you debounce keystrokes?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "I don't know yet. Please proceed on what I already said."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-AC-021",
+      "gold_question_index": 0,
+      "question": "Which Place Details SKU ends your sessions?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "ending in Place Details Essentials"
+        }
+      ],
+      "reason": "The customer explicitly names Place Details Essentials as the session terminator; the reference asks for that same SKU.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "gold_question_index": 0,
+      "question": "Which Place Details SKU ends your sessions?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "ending in Place Details Essentials"
+        }
+      ],
+      "reason": "The customer explicitly names Place Details Essentials as the session terminator; the reference asks for that same SKU.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "gold_question_index": 0,
+      "question": "Which Place Details SKU ends your sessions?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "ending in Place Details Essentials"
+        }
+      ],
+      "reason": "The customer explicitly names Place Details Essentials as the session terminator; the reference asks for that same SKU.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "gold_question_index": 0,
+      "question": "Which Place Details SKU ends your sessions?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "ending in Place Details Essentials"
+        }
+      ],
+      "reason": "The customer explicitly names Place Details Essentials as the session terminator; the reference asks for that same SKU.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-AC-204",
+      "gold_question_index": 0,
+      "question": "Do you need hard restriction or just a bias toward those countries?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "restricted to all 20"
+        }
+      ],
+      "reason": "The customer asks whether one request can be restricted to all 20 countries. This may already fix hard-restriction scope, but a bias-versus-restriction follow-up could be useful if alternatives are acceptable. Do not treat this as a confirmed defect.",
+      "confidence": "medium",
+      "review_topic": "requested_scope_vs_alternative_preference"
+    },
+    {
+      "record_id": "GT-LBS-AC-227",
+      "gold_question_index": 0,
+      "question": "Do you want a hard restriction or just a bias?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "inside a 5 km radius"
+        }
+      ],
+      "reason": "Keeping results inside a 5 km radius suggests restriction, but the customer has not explicitly said whether an approximate bias is acceptable. The reference can be a legitimate preference question.",
+      "confidence": "medium",
+      "review_topic": "requested_scope_vs_alternative_preference"
+    },
+    {
+      "record_id": "GT-LBS-AC-228",
+      "gold_question_index": 0,
+      "question": "Do you want a hard restriction or just a bias?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "strictly restrict to a circle"
+        }
+      ],
+      "reason": "The request explicitly asks for strict restriction. Asking whether the customer wants hard restriction or bias repeats the stated answer scope.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DIR-014",
+      "gold_question_index": 1,
+      "question": "What vehicle types (car, bike, auto, truck) do you route?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "school-bus tracking provider"
+        }
+      ],
+      "reason": "School-bus context suggests a vehicle class, but business identity does not prove which vehicle profile the API must use. The reference may legitimately seek that routing requirement.",
+      "confidence": "medium",
+      "review_topic": "business_context_is_not_a_confirmed_requirement"
+    },
+    {
+      "record_id": "GT-LBS-DIR-031",
+      "gold_question_index": 0,
+      "question": "What's your expected monthly volume?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "Which routing / directions APIs have a free monthly allowance, and how big is it?"
+        }
+      ],
+      "reason": "Published free monthly allowances can be reported without knowing customer volume. Volume is a valid customer fact for recommending a fitting plan, but that additional recommendation is not explicitly requested. Review whether the gold expects optional qualification.",
+      "confidence": "medium",
+      "review_topic": "documentation_answer_vs_optional_qualification"
+    },
+    {
+      "record_id": "GT-LBS-DIR-044",
+      "gold_question_index": 0,
+      "question": "Is the current balance positive?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "I don't know yet. Please proceed on what I already said."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DIR-048",
+      "gold_question_index": 2,
+      "question": "Which vehicle types?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "intercity bus aggregator"
+        },
+        {
+          "source": "query",
+          "text": "route previews between cities"
+        }
+      ],
+      "reason": "Intercity-bus context suggests buses, but a bus aggregator could request a different preview profile. The reference is not clearly redundant without confirming the intended routing mode.",
+      "confidence": "medium",
+      "review_topic": "business_context_is_not_a_confirmed_requirement"
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "gold_question_index": 1,
+      "question": "Do you need live-traffic ETAs?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "fastest route under live traffic"
+        }
+      ],
+      "reason": "Live-traffic routing is already an explicit requirement in the enquiry.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DIR-087",
+      "gold_question_index": 0,
+      "question": "Which status string exactly?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "fail with REQUEST_DENIED"
+        }
+      ],
+      "reason": "The exact returned status string REQUEST_DENIED is already provided.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DIR-121",
+      "gold_question_index": 0,
+      "question": "Are you on a contract or prepaid?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "We're on Ola's prepaid credits"
+        }
+      ],
+      "reason": "The customer explicitly states prepaid credits; the reference repeats the contract-or-prepaid question.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DIR-215",
+      "gold_question_index": 0,
+      "question": "What request rate do you expect?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "What request-rate ceiling and usage limits apply to the public OSRM /route endpoint"
+        }
+      ],
+      "reason": "The request asks for documented public-endpoint ceilings and usage rules. Expected rate is useful for deployment fitness, but not required to state a published ceiling or explain that one is undocumented. Review optional-versus-required follow-up policy.",
+      "confidence": "medium",
+      "review_topic": "documentation_answer_vs_optional_qualification"
+    },
+    {
+      "record_id": "GT-LBS-DIR-218",
+      "gold_question_index": 0,
+      "question": "Is live traffic essential, or are typical ETAs acceptable?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "which directions options account for live traffic, and which are static?"
+        }
+      ],
+      "reason": "The enquiry requests a factual comparison of traffic-aware and static options. Asking which is essential can support a later recommendation, but is not necessary to present both categories. Review whether this is optional qualification rather than a mandatory clarification.",
+      "confidence": "medium",
+      "review_topic": "comparison_scope_vs_optional_preference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-218",
+      "gold_question_index": 1,
+      "question": "Is your Google Cloud project new?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "which directions options account for live traffic, and which are static?"
+        }
+      ],
+      "reason": "Google project status may affect product availability, but the enquiry asks for a provider capability comparison and supplies no Google account relationship. A documented conditional answer may suffice; eligibility follow-up policy needs review.",
+      "confidence": "medium",
+      "review_topic": "product_eligibility_vs_documented_comparison"
+    },
+    {
+      "record_id": "GT-LBS-DIR-219",
+      "gold_question_index": 0,
+      "question": "Is live traffic essential, or are typical ETAs acceptable?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "which directions options account for live traffic, and which are static?"
+        }
+      ],
+      "reason": "The enquiry requests a factual comparison of traffic-aware and static options. Asking which is essential can support a later recommendation, but is not necessary to present both categories. Review whether this is optional qualification rather than a mandatory clarification.",
+      "confidence": "medium",
+      "review_topic": "comparison_scope_vs_optional_preference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-219",
+      "gold_question_index": 1,
+      "question": "Is your Google Cloud project new?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "which directions options account for live traffic, and which are static?"
+        }
+      ],
+      "reason": "Google project status may affect product availability, but the enquiry asks for a provider capability comparison and supplies no Google account relationship. A documented conditional answer may suffice; eligibility follow-up policy needs review.",
+      "confidence": "medium",
+      "review_topic": "product_eligibility_vs_documented_comparison"
+    },
+    {
+      "record_id": "GT-LBS-DM-007",
+      "gold_question_index": 0,
+      "question": "Are origins and destinations given as coordinates or addresses?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "Not sure. Answer with the details from my first message and note where that choice would change things."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DM-008",
+      "gold_question_index": 0,
+      "question": "Are origins and destinations given as coordinates or addresses?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "I don't know yet. Please proceed on what I already said."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DM-009",
+      "gold_question_index": 0,
+      "question": "Are origins and destinations given as coordinates or addresses?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "Not decided yet. Go ahead with what I told you and state any assumption you make."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DM-010",
+      "gold_question_index": 0,
+      "question": "Are origins and destinations given as coordinates or addresses?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "Not decided yet. Go ahead with what I told you and state any assumption you make."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DM-011",
+      "gold_question_index": 0,
+      "question": "Are origins and destinations given as coordinates or addresses?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "I don't know yet. Please proceed on what I already said."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DM-012",
+      "gold_question_index": 0,
+      "question": "Are origins and destinations given as coordinates or addresses?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "I don't know yet. Please proceed on what I already said."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DM-013",
+      "gold_question_index": 0,
+      "question": "Are origins and destinations given as coordinates or addresses?",
+      "classification": "global_proceed_instruction",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "I don't know yet. Please proceed on what I already said."
+        }
+      ],
+      "reason": "The latest customer turn explicitly directs the assistant to answer from the earlier information, stating assumptions or noting consequences. The reference nevertheless expects a new follow-up question. The missing fact remains unknown; the conflict is the instruction to proceed, not a supplied value.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "gold_question_index": 0,
+      "question": "Traffic needed for all matrices?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "with and without traffic. Which is cheaper?"
+        }
+      ],
+      "reason": "The customer explicitly requests both with-traffic and without-traffic cost scenarios. A fraction-of-matrices question would be needed for a blended bill, but separate scenario estimates need not choose that fraction. The intended comparison output is ambiguous, so this is not classified as a confirmed defect.",
+      "confidence": "medium",
+      "review_topic": "requested_scenarios_vs_blended_usage"
+    },
+    {
+      "record_id": "GT-LBS-DM-093",
+      "gold_question_index": 0,
+      "question": "Which Nepal cities?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "between Indian cities and Kathmandu"
+        }
+      ],
+      "reason": "The Nepal destination has already been named as Kathmandu.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-DM-211",
+      "gold_question_index": 0,
+      "question": "Do you have the ops capacity to host and update the routing engine?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "self-hosted OSRM distance matrix"
+        }
+      ],
+      "reason": "Operational capacity is a legitimate deployment qualification, but the enquiry asks for geographic coverage of an explicitly self-hosted setup. Review whether this follow-up is optional guidance or required to answer coverage; self-hosting interest alone does not prove operational capacity.",
+      "confidence": "medium",
+      "review_topic": "coverage_answer_vs_deployment_readiness"
+    },
+    {
+      "record_id": "GT-LBS-DM-212",
+      "gold_question_index": 0,
+      "question": "Do you have the ops capacity to host and update the routing engine?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "self-hosted OSRM distance matrix"
+        }
+      ],
+      "reason": "Operational capacity is a legitimate deployment qualification, but the enquiry asks for geographic coverage of an explicitly self-hosted setup. Review whether this follow-up is optional guidance or required to answer coverage; self-hosting interest alone does not prove operational capacity.",
+      "confidence": "medium",
+      "review_topic": "coverage_answer_vs_deployment_readiness"
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "gold_question_index": 0,
+      "question": "How many origins and destinations per request, and do they need traffic-aware ETAs?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "wants live ETAs between many drivers and many jobs"
+        }
+      ],
+      "reason": "Origins and destinations are genuinely missing. The phrase live ETAs could indicate traffic-aware estimates or merely continuously refreshed ETAs, so the traffic atom is not unambiguously supplied. The whole reference question must not be labelled redundant.",
+      "confidence": "medium",
+      "review_topic": "partial_fact_ambiguity"
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "gold_question_index": 1,
+      "question": "Should cost be compared per pair (Ola) or per element/request (Google/Mapbox)?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "What should we ask before recommending a distance-matrix API?"
+        }
+      ],
+      "reason": "Provider billing units are documented properties and costs can be normalized to equivalent workload. The question may instead intend a display-metric preference. Review that distinction rather than automatically removing the reference or requiring customers to select how providers bill.",
+      "confidence": "medium",
+      "review_topic": "documented_or_computable_basis_vs_display_preference"
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "gold_question_index": 2,
+      "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "before recommending a distance-matrix API"
+        }
+      ],
+      "reason": "No provider or Mapbox profile is selected in the enquiry. The question could be premature provider choice or a useful conditional profile check; eligibility and intended shortlist need review.",
+      "confidence": "medium",
+      "review_topic": "provider_specific_option_before_provider_selection"
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "gold_question_index": 0,
+      "question": "Do you need to store results?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "we must store the addresses"
+        }
+      ],
+      "reason": "The customer explicitly says the addresses must be stored.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "gold_question_index": 0,
+      "question": "Do you need to store results?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "we must store the addresses"
+        }
+      ],
+      "reason": "The customer explicitly says the addresses must be stored.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "gold_question_index": 1,
+      "question": "Must results be in Hindi or another language?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "addresses shown in Hindi"
+        }
+      ],
+      "reason": "The result language is explicitly Hindi. Additional languages are not required by the supplied enquiry; the reference question repeats the known language choice.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "gold_question_index": 0,
+      "question": "Is street-address / rooftop precision a hard filter, and is an address-element breakdown required?",
+      "classification": "already_answered",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision"
+        },
+        {
+          "source": "query",
+          "text": "they need an address broken into elements"
+        }
+      ],
+      "reason": "Both requested facts are explicit: return results only at rooftop/street-address precision, and provide an address-element breakdown.",
+      "confidence": "high"
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "gold_question_index": 1,
+      "question": "Which provider are they considering besides Google and Nominatim?",
+      "classification": "needs_review",
+      "supplied_evidence": [
+        {
+          "source": "query",
+          "text": "A prospect says they only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision, and they need an address broken into elements. What should we ask, and which documented parameters matter?"
+        }
+      ],
+      "reason": "The reference presupposes Google and Nominatim are already under consideration, but neither appears in the supplied runtime enquiry. A general provider clarification may be legitimate; the named baseline providers require review.",
+      "confidence": "high",
+      "review_topic": "unsupported_provider_presupposition"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "http_status": 429,
+  "retry_after": null,
+  "body": "{\"detail\":\"per-key concurrent request limit exceeded\"}"
+}

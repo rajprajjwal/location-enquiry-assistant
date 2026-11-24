@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://capstone.local/lbs-copilot/contracts/interpretation_output/v0.2.0",
   "title": "InterpretationOutput",
-  "$comment": "Purpose: interpretation_output v0.2.0. Use case: validated model output before scoring. Example: abstain false keeps intent, api and team in the vocabulary; abstain true may leave them null with abstain_reason no_rule_match and use_case_api null. qualification_details is the v1.0.0 schema by $id. Not placed under schemas/ so validator/validate_spec.py does not count it.",
+  "$comment": "Purpose: interpretation_output v0.2.0. Use case: validated model output before scoring. Example: abstain false keeps intent, api and team in the vocabulary; abstain true may leave them null with abstain_reason no_rule_match and use_case_api null. qualification_details is the v1.0.0 schema by $id. Not placed under schemas/ so copilot/validation/specification_checks/validate_spec.py does not count it.",
   "x-spec-version": "0.2.0",
   "type": "object",
   "additionalProperties": false,

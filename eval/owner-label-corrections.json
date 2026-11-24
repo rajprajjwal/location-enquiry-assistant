@@ -1,0 +1,21 @@
+{
+  "approved_on": "2026-11-23",
+  "scope": "Two user-approved frozen owner corrections",
+  "original_freeze": "eval-freeze-v4",
+  "corrections": [
+    {
+      "record_id": "GT-LBS-DM-026",
+      "field": "owner",
+      "before": "Account team (Sales)",
+      "after": "Support L1"
+    },
+    {
+      "record_id": "GT-LBS-DM-094",
+      "field": "owner",
+      "before": "Support L1",
+      "after": "Account team (Sales)"
+    }
+  ],
+  "previous_workbook_sha256": "b0ad6e415cf093ecaefff73b6a0fa0811f8f1d783ba7414a770f44a1c692f4fb",
+  "corrected_workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68"
+}

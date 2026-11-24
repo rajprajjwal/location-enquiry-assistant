@@ -1,0 +1,81 @@
+{
+  "cases": 317,
+  "groups": 254,
+  "positive_cases": 86,
+  "gold_question_groups": 128,
+  "empty_gold_cases": 231,
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "source_workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "working_allowlist_sha256": "59ada638b0147cdc67f4c0e6c01cc5d1fd30e50968bec37206aee2d876d5005f",
+  "adapter_sha256": "b507a391c10f43420ade1ca309ca0051b4bf55a8761c7508451bc374d08a94a4",
+  "columns_zero_based": {
+    "id": 0,
+    "question": 1,
+    "split": 10,
+    "frozen_core": 11,
+    "gold_clarifying_questions": 15,
+    "api": 5,
+    "intent": 8,
+    "sub_intent": 9,
+    "primary_team": 6
+  },
+  "inputs_sha256": "eae0cf7b2da650fa7f6da6fccb28ef516ab0dcfd27fc94767f596c26b4458380",
+  "reference_sha256": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089",
+  "by_bucket": {
+    "capabilitycompare": {
+      "cases": 32,
+      "positive_cases": 6,
+      "questions": 8
+    },
+    "coveragecompare": {
+      "cases": 24,
+      "positive_cases": 12,
+      "questions": 12
+    },
+    "docs": {
+      "cases": 40,
+      "positive_cases": 0,
+      "questions": 0
+    },
+    "history": {
+      "cases": 31,
+      "positive_cases": 10,
+      "questions": 10
+    },
+    "interpretation": {
+      "cases": 39,
+      "positive_cases": 1,
+      "questions": 1
+    },
+    "limitscompare": {
+      "cases": 28,
+      "positive_cases": 10,
+      "questions": 10
+    },
+    "ownership": {
+      "cases": 32,
+      "positive_cases": 9,
+      "questions": 12
+    },
+    "pricecompare": {
+      "cases": 32,
+      "positive_cases": 4,
+      "questions": 8
+    },
+    "qualification": {
+      "cases": 36,
+      "positive_cases": 33,
+      "questions": 65
+    },
+    "updates": {
+      "cases": 23,
+      "positive_cases": 1,
+      "questions": 2
+    }
+  },
+  "atomic_decomposition_sha256": "f4bbdec472ea89d799a7e8138444957eb39782f1311fb8a9bba0d7651d6a4560",
+  "gold_atomic_facts": 164,
+  "unique_question_texts": 67,
+  "atomic_decomposition_review": "Assistant-authored and independently cross-checked by a second agent before candidate generation. Baseline generation began in parallel; neither reviewer used predictions for decomposition. Not independent human review."
+}

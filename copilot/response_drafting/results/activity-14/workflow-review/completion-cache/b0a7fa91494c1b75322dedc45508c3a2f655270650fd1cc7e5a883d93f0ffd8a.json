@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"peak_rate\", \"region\"],\n      \"decision_impact\": \"Check service scale and geographic fit.\"\n    },\n    {\n      \"fields\": [\"backend_owner\", \"storage_required\", \"redistribution_required\", \"resale_required\"],\n      \"decision_impact\": \"Determine backend operating responsibility and required data rights.\"\n    }\n  ],\n  \"reason\": \"The customer's use case involves generating client code for public Nominatim and reselling geocoding data, which requires understanding the scale of usage, geographic focus, and data handling responsibilities.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"peak_rate\", \"region\"],\n      \"decision_impact\": \"Check service scale and geographic fit.\"\n    },\n    {\n      \"fields\": [\"backend_owner\", \"storage_required\", \"redistribution_required\", \"resale_required\"],\n      \"decision_impact\": \"Determine backend operating responsibility and required data rights.\"\n    }\n  ],\n  \"reason\": \"The customer's use case involves generating client code for public Nominatim and reselling geocoding data, which requires understanding the scale of usage, geographic focus, and data handling responsibilities.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2167,
+    "completion_tokens": 134,
+    "total_tokens": 2301
+  },
+  "latency_ms": 3274,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

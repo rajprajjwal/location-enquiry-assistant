@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding query with limit=3 may be returning no results due to the lack of matching features at the specified coordinates. This requires checking the coordinates and possibly adjusting the limit or other parameters to get the desired results.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding query with limit=3 may be returning no results due to the lack of matching features at the specified coordinates. This requires checking the coordinates and possibly adjusting the limit or other parameters to get the desired results.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2334,
+    "completion_tokens": 56,
+    "total_tokens": 2390
+  },
+  "latency_ms": 1589,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

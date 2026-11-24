@@ -1,0 +1,16 @@
+[
+  {
+    "record_id": "GT-LBS-DM-026",
+    "sheet": "Data",
+    "cell": "Q145",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitive reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitive reference"
+  },
+  {
+    "record_id": "GT-LBS-DM-094",
+    "sheet": "Data",
+    "cell": "Q204",
+    "old": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Documented behaviour; resolve in L1",
+    "new": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Documented behaviour; resolve in L1"
+  }
+]

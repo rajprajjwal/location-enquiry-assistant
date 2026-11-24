@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_request\", \"reason\":\"The enquiry indicates that the expected autocomplete query predictions are absent, which suggests an issue with the provider's ability to return predictions. The documentation mentions that the API may return zero_results if no type is matched, and the customer is experiencing far-away results despite setting radius=5000. This implies that the provider might not be returning the expected predictions, and the request body or provider configuration needs to be inspected.\"}",
+  "raw": "{\"decision\":\"prediction_request\", \"reason\":\"The enquiry indicates that the expected autocomplete query predictions are absent, which suggests an issue with the provider's ability to return predictions. The documentation mentions that the API may return zero_results if no type is matched, and the customer is experiencing far-away results despite setting radius=5000. This implies that the provider might not be returning the expected predictions, and the request body or provider configuration needs to be inspected.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1485,
+    "completion_tokens": 94,
+    "total_tokens": 1579
+  },
+  "latency_ms": 2362,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

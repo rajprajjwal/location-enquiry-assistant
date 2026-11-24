@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": \"data_quality\", \"reason\": \"The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation.\"}",
+  "raw": "{\"category\": \"data_quality\", \"reason\": \"The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 39,
+    "total_tokens": 329
+  },
+  "latency_ms": 1084,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

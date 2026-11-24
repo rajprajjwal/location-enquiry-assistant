@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The error code REQUEST_DENIED indicates the service denied use of the Distance Matrix service. To diagnose this, we need the actual redacted request to inspect for issues such as invalid API key, billing issues, or other configuration problems.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The error code REQUEST_DENIED indicates the service denied use of the Distance Matrix service. To diagnose this, we need the actual redacted request to inspect for issues such as invalid API key, billing issues, or other configuration problems.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2002,
+    "completion_tokens": 57,
+    "total_tokens": 2059
+  },
+  "latency_ms": 1589,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

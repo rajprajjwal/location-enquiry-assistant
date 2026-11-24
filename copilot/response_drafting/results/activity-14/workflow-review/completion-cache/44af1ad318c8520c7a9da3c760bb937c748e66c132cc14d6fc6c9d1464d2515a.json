@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":\"India\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"geographic_matching\"],\"decision_impact\":\"Distinguish exclusion of out-of-area results from geographic ranking preferences.\"}],\"reason\":\"The customer operates exclusively in India and is seeking providers that are India-focused, which requires understanding if they need a hard geographic restriction or a location bias.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":\"India\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"geographic_matching\"],\"decision_impact\":\"Distinguish exclusion of out-of-area results from geographic ranking preferences.\"}],\"reason\":\"The customer operates exclusively in India and is seeking providers that are India-focused, which requires understanding if they need a hard geographic restriction or a location bias.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2046,
+    "completion_tokens": 83,
+    "total_tokens": 2129
+  },
+  "latency_ms": 2341,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":true,\"evidence\":\"100,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer's request for pricing requires confirmation of whether live-traffic ETAs are needed and the travel mode, which are critical for determining the correct pricing and API usage limits.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":true,\"evidence\":\"100,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer's request for pricing requires confirmation of whether live-traffic ETAs are needed and the travel mode, which are critical for determining the correct pricing and API usage limits.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1767,
+    "completion_tokens": 98,
+    "total_tokens": 1865
+  },
+  "latency_ms": 2434,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

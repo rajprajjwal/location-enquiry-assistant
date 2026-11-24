@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"usage_geography\",\"value\":\"India\",\"evidence\":\"matrices, 10,000 a month in India\"},{\"field\":\"origin_count\",\"value\":10,\"evidence\":\"10\\u00d710\"},{\"field\":\"destination_count\",\"value\":10,\"evidence\":\"10\\u00d710\"},{\"field\":\"monthly_volume\",\"value\":{\"raw\":\"matrices, 10,000 a month\",\"requests_per_month\":10000,\"unit\":\"matrices_per_month\"},\"evidence\":\"matrices, 10,000 a month\"},{\"field\":\"traffic_scope\",\"value\":\"with_and_without\",\"evidence\":\"with and without traffic\"}],\"groups\":[{\"fields\":[\"billing_country\"],\"decision_impact\":\"Qualify the applicable regional price schedule.\"},{\"fields\":[\"usage_geography\"],\"decision_impact\":\"Qualify the applicable regional price schedule.\"}],\"reason\":\"The billing country and usage geography are required to determine the applicable regional price schedule for the comparison between Ola Maps and Google Maps.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"usage_geography\",\"value\":\"India\",\"evidence\":\"matrices, 10,000 a month in India\"},{\"field\":\"origin_count\",\"value\":10,\"evidence\":\"10\\u00d710\"},{\"field\":\"destination_count\",\"value\":10,\"evidence\":\"10\\u00d710\"},{\"field\":\"monthly_volume\",\"value\":{\"raw\":\"matrices, 10,000 a month\",\"requests_per_month\":10000,\"unit\":\"matrices_per_month\"},\"evidence\":\"matrices, 10,000 a month\"},{\"field\":\"traffic_scope\",\"value\":\"with_and_without\",\"evidence\":\"with and without traffic\"}],\"groups\":[{\"fields\":[\"billing_country\"],\"decision_impact\":\"Qualify the applicable regional price schedule.\"},{\"fields\":[\"usage_geography\"],\"decision_impact\":\"Qualify the applicable regional price schedule.\"}],\"reason\":\"The billing country and usage geography are required to determine the applicable regional price schedule for the comparison between Ola Maps and Google Maps.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2124,
+    "completion_tokens": 225,
+    "total_tokens": 2349
+  },
+  "latency_ms": 5276,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,160 @@
+{
+  "cases": 4,
+  "included_in_scores": false,
+  "fields": {
+    "region": 2,
+    "provider": 1,
+    "monthly_volume": 1
+  },
+  "reopened_replies_preserved": {
+    "previous_app": 4,
+    "staff_selector": 4
+  },
+  "model_errors": [],
+  "per_case": [
+    {
+      "record_id": "GT-LBS-AC-233",
+      "pending_field": "region",
+      "preserved": {
+        "previous_app": {
+          "route": true,
+          "next_action": true,
+          "owner": true,
+          "approvals": true,
+          "proposed_actions": true,
+          "active_questions": true,
+          "pending_reply": true,
+          "asked": true,
+          "answered": true,
+          "awaiting": true,
+          "clarification_messages": true
+        },
+        "staff_selector": {
+          "route": true,
+          "next_action": true,
+          "owner": true,
+          "approvals": true,
+          "proposed_actions": true,
+          "active_questions": true,
+          "pending_reply": true,
+          "asked": true,
+          "answered": true,
+          "awaiting": true,
+          "clarification_messages": true
+        }
+      },
+      "reply_preserved": {
+        "previous_app": true,
+        "staff_selector": true
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "pending_field": "region",
+      "preserved": {
+        "previous_app": {
+          "route": true,
+          "next_action": true,
+          "owner": true,
+          "approvals": true,
+          "proposed_actions": true,
+          "active_questions": true,
+          "pending_reply": true,
+          "asked": true,
+          "answered": true,
+          "awaiting": true,
+          "clarification_messages": true
+        },
+        "staff_selector": {
+          "route": true,
+          "next_action": true,
+          "owner": true,
+          "approvals": true,
+          "proposed_actions": true,
+          "active_questions": true,
+          "pending_reply": true,
+          "asked": true,
+          "answered": true,
+          "awaiting": true,
+          "clarification_messages": true
+        }
+      },
+      "reply_preserved": {
+        "previous_app": true,
+        "staff_selector": true
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "pending_field": "provider",
+      "preserved": {
+        "previous_app": {
+          "route": true,
+          "next_action": true,
+          "owner": true,
+          "approvals": true,
+          "proposed_actions": true,
+          "active_questions": true,
+          "pending_reply": true,
+          "asked": true,
+          "answered": true,
+          "awaiting": true,
+          "clarification_messages": true
+        },
+        "staff_selector": {
+          "route": true,
+          "next_action": true,
+          "owner": true,
+          "approvals": true,
+          "proposed_actions": true,
+          "active_questions": true,
+          "pending_reply": true,
+          "asked": true,
+          "answered": true,
+          "awaiting": true,
+          "clarification_messages": true
+        }
+      },
+      "reply_preserved": {
+        "previous_app": true,
+        "staff_selector": true
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "pending_field": "monthly_volume",
+      "preserved": {
+        "previous_app": {
+          "route": true,
+          "next_action": true,
+          "owner": true,
+          "approvals": true,
+          "proposed_actions": true,
+          "active_questions": true,
+          "pending_reply": true,
+          "asked": true,
+          "answered": true,
+          "awaiting": true,
+          "clarification_messages": true
+        },
+        "staff_selector": {
+          "route": true,
+          "next_action": true,
+          "owner": true,
+          "approvals": true,
+          "proposed_actions": true,
+          "active_questions": true,
+          "pending_reply": true,
+          "asked": true,
+          "answered": true,
+          "awaiting": true,
+          "clarification_messages": true
+        }
+      },
+      "reply_preserved": {
+        "previous_app": true,
+        "staff_selector": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "supplied_facts": [
+    {
+      "field": "region",
+      "value": "Bengaluru",
+      "evidence": "qualification_details.region"
+    }
+  ],
+  "groups": [
+    {
+      "fields": ["monthly_volume"],
+      "decision_impact": "Estimate the recurring workload and cost."
+    },
+    {
+      "fields": ["traffic_required"],
+      "decision_impact": "Select traffic-aware versus static routing capability."
+    },
+    {
+      "fields": ["travel_mode"],
+      "decision_impact": "Determine vehicle-specific routing support."
+    },
+    {
+      "fields": ["max_stops"],
+      "decision_impact": "Check route shape against waypoint limits."
+    },
+    {
+      "fields": ["existing_project", "commercial_plan"],
+      "decision_impact": "Establish product eligibility and applicable commercial terms."
+    }
+  ],
+  "reason": "The customer's requirements for a directions/routing API for rider ETAs at checkout involve several key decisions. The missing material facts include the expected monthly API workload, whether live-traffic ETAs are required, the required vehicle or travel modes, the maximum stops or waypoints per route, and whether the customer already has an enabled Google project or a provider contract/prepaid plan. These facts are essential for estimating workload and cost, selecting traffic-aware routing, determining vehicle-specific support, checking waypoint limits, and establishing product eligibility and commercial terms."
+}

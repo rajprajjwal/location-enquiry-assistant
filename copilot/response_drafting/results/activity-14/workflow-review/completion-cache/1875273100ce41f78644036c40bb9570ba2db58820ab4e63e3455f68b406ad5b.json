@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.8,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.8,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1290,
+    "completion_tokens": 136,
+    "total_tokens": 1426
+  },
+  "latency_ms": 3164,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

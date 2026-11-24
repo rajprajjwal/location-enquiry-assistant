@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding request returned an INVALID_REQUEST status, which may be due to missing or invalid parameters such as the query, components, or latlng. The customer needs to provide the exact request and response bodies for further analysis.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding request returned an INVALID_REQUEST status, which may be due to missing or invalid parameters such as the query, components, or latlng. The customer needs to provide the exact request and response bodies for further analysis.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2023,
+    "completion_tokens": 57,
+    "total_tokens": 2080
+  },
+  "latency_ms": 1576,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

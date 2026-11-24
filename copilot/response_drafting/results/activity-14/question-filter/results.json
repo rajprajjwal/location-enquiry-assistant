@@ -1,0 +1,464 @@
+{
+  "methods": [
+    "previous_app",
+    "staff_selector"
+  ],
+  "retrieval": "BM25",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "input_source": "Locked review packet verified against the saved working-eval cohort",
+  "review_packet_sha256": "1c7d50e3b992820969a0f0e883a2a16b75539cb913e4e36f3cdb3fcd8e088c94",
+  "locked_labels_sha256": "8a4de740bcb26c974540c298772f3f70484a97888fb18be3d6f0b5111bb39940",
+  "working_cohort_sha256": "59ada638b0147cdc67f4c0e6c01cc5d1fd30e50968bec37206aee2d876d5005f",
+  "original_workbook_sha256": "59518ab0d5df4a7d4ed176603b78e9b247352581f66e63496c972179bf770113",
+  "current_workbook_sha256": "b0ad6e415cf093ecaefff73b6a0fa0811f8f1d783ba7414a770f44a1c692f4fb",
+  "source_digests": {
+    "copilot/enquiry_workflow/workflow.py": "80f48bc7cf278056552559a0ed10b99c316782cbaa2b8d1b444894746ec2cc22",
+    "copilot/enquiry_workflow/cases.py": "1ff50f12796b634be707d6bd6cc26166dc6631d3a3fc0eff9ae6a882c757eb4c",
+    "copilot/response_drafting/drafter.py": "f6ca64d3c7256ff490a4f34037da63a6796ffca43db33055e902d405aefcf8de",
+    "copilot/response_drafting/schemas.py": "fe401c05a420999627c3ee45271e1ceb57ab5feab65c66d80a7f49c8c176cdd6",
+    "copilot/response_drafting/follow_up_questions.py": "88cad7b86254c71851bacf1e6bf3f65ac7893ba2d90f36bd8d87a3f8d2f2b8a4",
+    "copilot/response_drafting/follow_up_decisions.py": "f18a0e89d0237574467bc5ad54704ca87a06073b194d8d16c1844f59e075c3d7"
+  },
+  "grouped_cases": [
+    {
+      "id": "GT-LBS-DIR-079",
+      "group": "GT-LBS-DIR-079",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DIR-097",
+      "group": "GT-LBS-DIR-097",
+      "fold": 4
+    },
+    {
+      "id": "GT-LBS-DIR-124",
+      "group": "GT-LBS-DIR-124",
+      "fold": 4
+    },
+    {
+      "id": "GT-LBS-AC-223",
+      "group": "GT-LBS-AC-223",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-RG-086",
+      "group": "GT-LBS-RG-086",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-AC-085",
+      "group": "GT-LBS-AC-085",
+      "fold": 4
+    },
+    {
+      "id": "GT-LBS-DM-225",
+      "group": "GT-LBS-DM-225",
+      "fold": 5
+    },
+    {
+      "id": "GT-LBS-RG-062",
+      "group": "GT-LBS-RG-062",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-AC-047",
+      "group": "GT-LBS-AC-047",
+      "fold": 4
+    },
+    {
+      "id": "GT-LBS-RG-111",
+      "group": "GT-LBS-RG-111",
+      "fold": 2
+    },
+    {
+      "id": "GT-LBS-RG-099",
+      "group": "GT-LBS-RG-099",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DIR-088",
+      "group": "GT-LBS-DIR-088",
+      "fold": 5
+    },
+    {
+      "id": "GT-LBS-AC-111",
+      "group": "GT-LBS-AC-111",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DM-049",
+      "group": "GT-LBS-DM-049",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DM-125",
+      "group": "GT-LBS-DM-125",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DM-046",
+      "group": "GT-LBS-DM-046",
+      "fold": 5
+    }
+  ],
+  "scoring_status": "reviewed_working_eval_development_question_filter",
+  "baseline_selector_sha256": "254c5f7d9a358ab91a3a25618de8e19a48dbb51b605ee0cb4dfea724ed3ad7a3",
+  "extractor_sha256": "29c1e7660a13585017079548dd4ed209688c3bf0ffa25f71389e636aa627a8a8",
+  "filter_sha256": "e18ba2735f1ce7b78b3a02ecc9a835cc80f47c28317f2fe72742e00477df63de",
+  "fact_replay_sha256": "3f20a2dd87f6d515b5d5c9a218045e922c586a050ce3dd89b72df6337d405b28",
+  "cases": 16,
+  "route_counts": {
+    "final": 15,
+    "escalated": 1
+  },
+  "approval_cases": 1,
+  "reply_cases": 0,
+  "endpoint_calls_in_session": 68,
+  "cached_calls_in_session": 70,
+  "model_errors_in_session": [
+    429,
+    429
+  ],
+  "preserved": {
+    "previous_app": {
+      "route": 16,
+      "next_action": 16,
+      "owner": 16,
+      "approvals": 16,
+      "proposed_actions": 16,
+      "active_questions": 16,
+      "pending_reply": 16,
+      "asked": 16,
+      "answered": 16,
+      "awaiting": 16,
+      "clarification_messages": 16
+    },
+    "staff_selector": {
+      "route": 16,
+      "next_action": 16,
+      "owner": 16,
+      "approvals": 16,
+      "proposed_actions": 16,
+      "active_questions": 16,
+      "pending_reply": 16,
+      "asked": 16,
+      "answered": 16,
+      "awaiting": 16,
+      "clarification_messages": 16
+    }
+  },
+  "replies_preserved": {
+    "previous_app": 0,
+    "staff_selector": 0
+  },
+  "metrics": {
+    "previous_app": {
+      "strict_f1": 0.0,
+      "whole_matches": 0,
+      "gold_questions": 7,
+      "fact_recall": 0.08333333333333333,
+      "facts_covered": 1,
+      "gold_facts": 12,
+      "total_questions": 10,
+      "empty_gold_cases": 9,
+      "questions_on_empty_gold": 6,
+      "credential_requests": 1
+    },
+    "staff_selector": {
+      "strict_f1": 0.0,
+      "whole_matches": 0,
+      "gold_questions": 7,
+      "fact_recall": 0.08333333333333333,
+      "facts_covered": 1,
+      "gold_facts": 12,
+      "total_questions": 3,
+      "empty_gold_cases": 9,
+      "questions_on_empty_gold": 1,
+      "credential_requests": 0
+    }
+  },
+  "question_review": "Assistant assessment against locked human labels. No gold labels changed.",
+  "fixed_filter_checks": {
+    "measurement": "Fixed saved candidates and human-approved question wording. No model generation.",
+    "saved_candidates": 9,
+    "confirmed_empty_questions_before": 5,
+    "confirmed_empty_questions_after": 0,
+    "credential_requests_rejected": 1,
+    "approved_questions_retained": 7,
+    "approved_questions_tested": 7,
+    "candidates": [
+      {
+        "record_id": "GT-LBS-DIR-097",
+        "text": "What is the maximum number of waypoints allowed per route in the Google Maps Platform Directions API?",
+        "confirmed_empty": false,
+        "rejection": "documentation_question"
+      },
+      {
+        "record_id": "GT-LBS-AC-223",
+        "text": "Does the Mapbox Search Box API allow specifying a maximum number of results, and if so, what is the maximum allowed?",
+        "confirmed_empty": true,
+        "rejection": "documentation_question"
+      },
+      {
+        "record_id": "GT-LBS-RG-086",
+        "text": "What OAuth token is being used for the reverse-geocode calls after the credential rotation?",
+        "confirmed_empty": false,
+        "rejection": "credential_value_requested"
+      },
+      {
+        "record_id": "GT-LBS-AC-085",
+        "text": "Are you required to use a specific User-Agent for Nominatim requests, or can you configure one?",
+        "confirmed_empty": true,
+        "rejection": "documentation_question"
+      },
+      {
+        "record_id": "GT-LBS-AC-047",
+        "text": "Can you provide an example query that is not returning predictions?",
+        "confirmed_empty": false,
+        "rejection": null
+      },
+      {
+        "record_id": "GT-LBS-RG-111",
+        "text": "What format does the Mapbox reverse geocoding response use (e.g., JSON, XML) and what are the exact keys for city, state, and country?",
+        "confirmed_empty": true,
+        "rejection": "documentation_question"
+      },
+      {
+        "record_id": "GT-LBS-RG-099",
+        "text": "What are the specific GPS coordinates that are returning ZERO_RESULTS?",
+        "confirmed_empty": false,
+        "rejection": null
+      },
+      {
+        "record_id": "GT-LBS-AC-111",
+        "text": "Is the API key still active and correctly configured for the Google Maps Platform?",
+        "confirmed_empty": true,
+        "rejection": "configuration_advice_as_question"
+      },
+      {
+        "record_id": "GT-LBS-DM-125",
+        "text": "Are you requesting the distance matrix in a format that supports distances, such as JSON or XML?",
+        "confirmed_empty": true,
+        "rejection": "documentation_question"
+      }
+    ],
+    "approved": [
+      {
+        "record_id": "GT-LBS-DIR-097",
+        "text": "For one route that isn\u2019t drawn, what does the API return for that request: a route, an empty result, or an error?",
+        "rejection": null
+      },
+      {
+        "record_id": "GT-LBS-RG-086",
+        "text": "Could you share an example of the failing reverse-geocoding request as sent, with tokens and credentials redacted?",
+        "rejection": null
+      },
+      {
+        "record_id": "GT-LBS-RG-062",
+        "text": "Could you share the exact request that returned `422` and the error message from the response body? Please redact your access token.",
+        "rejection": null
+      },
+      {
+        "record_id": "GT-LBS-AC-047",
+        "text": "Which provider are you using, and could you share the request body from one call that didn\u2019t return query predictions? Please remove any credentials.",
+        "rejection": null
+      },
+      {
+        "record_id": "GT-LBS-RG-099",
+        "text": "Could you share one latitude and longitude that returned `ZERO_RESULTS`, along with any result filters sent in that request?",
+        "rejection": null
+      },
+      {
+        "record_id": "GT-LBS-DIR-088",
+        "text": "Could you share one Directions request from the loop with the API key redacted, and tell us whether that same request still returns `OVER_QUERY_LIMIT` when sent on its own?",
+        "rejection": null
+      },
+      {
+        "record_id": "GT-LBS-DM-049",
+        "text": "Could you share one origin and destination pair that returned `NOT_FOUND`, with both values exactly as sent in the request?",
+        "rejection": null
+      }
+    ]
+  },
+  "automated_tests": {
+    "passed": 232,
+    "subtests_passed": 4,
+    "failed": 0
+  },
+  "transport_note": "Only clean, behavior-matched pairs are admitted by the replay runner. Session errors include retried attempts.",
+  "limitations": [
+    "These sixteen reviewed cases are development evidence.",
+    "The filter suppresses candidates. It does not generate the missing diagnostic facts.",
+    "A rule-based filter needs separate working-eval validation for unseen wording.",
+    "The input is the locked snapshot because the workbook has changed since its creation."
+  ],
+  "remaining_unnecessary_question": {
+    "record_id": "GT-LBS-DM-125",
+    "question": "Are you using the correct matrix type for distance calculation with OSRM?",
+    "reason": "The customer asked how to request distances. This belongs in documentation guidance."
+  },
+  "baseline_note": "The contemporaneous paired baseline generated six questions on confirmed-empty cases. The preceding saved run generated five.",
+  "rate_limit_note": "Two HTTP 429 errors occurred during the final run. The runner retried and admitted only clean, behavior-matched pairs. An earlier rate-limited reopen trial was excluded.",
+  "pending_reply_regression": {
+    "cases": 4,
+    "included_in_scores": false,
+    "fields": {
+      "region": 2,
+      "provider": 1,
+      "monthly_volume": 1
+    },
+    "reopened_replies_preserved": {
+      "previous_app": 4,
+      "staff_selector": 4
+    },
+    "model_errors": [],
+    "excluded_attempts": [],
+    "per_case": [
+      {
+        "record_id": "GT-LBS-AC-233",
+        "pending_field": "region",
+        "preserved": {
+          "previous_app": {
+            "route": true,
+            "next_action": true,
+            "owner": true,
+            "approvals": true,
+            "proposed_actions": true,
+            "active_questions": true,
+            "pending_reply": true,
+            "asked": true,
+            "answered": true,
+            "awaiting": true,
+            "clarification_messages": true
+          },
+          "staff_selector": {
+            "route": true,
+            "next_action": true,
+            "owner": true,
+            "approvals": true,
+            "proposed_actions": true,
+            "active_questions": true,
+            "pending_reply": true,
+            "asked": true,
+            "answered": true,
+            "awaiting": true,
+            "clarification_messages": true
+          }
+        },
+        "reply_preserved": {
+          "previous_app": true,
+          "staff_selector": true
+        }
+      },
+      {
+        "record_id": "GT-LBS-DM-228",
+        "pending_field": "region",
+        "preserved": {
+          "previous_app": {
+            "route": true,
+            "next_action": true,
+            "owner": true,
+            "approvals": true,
+            "proposed_actions": true,
+            "active_questions": true,
+            "pending_reply": true,
+            "asked": true,
+            "answered": true,
+            "awaiting": true,
+            "clarification_messages": true
+          },
+          "staff_selector": {
+            "route": true,
+            "next_action": true,
+            "owner": true,
+            "approvals": true,
+            "proposed_actions": true,
+            "active_questions": true,
+            "pending_reply": true,
+            "asked": true,
+            "answered": true,
+            "awaiting": true,
+            "clarification_messages": true
+          }
+        },
+        "reply_preserved": {
+          "previous_app": true,
+          "staff_selector": true
+        }
+      },
+      {
+        "record_id": "GT-LBS-RG-227",
+        "pending_field": "provider",
+        "preserved": {
+          "previous_app": {
+            "route": true,
+            "next_action": true,
+            "owner": true,
+            "approvals": true,
+            "proposed_actions": true,
+            "active_questions": true,
+            "pending_reply": true,
+            "asked": true,
+            "answered": true,
+            "awaiting": true,
+            "clarification_messages": true
+          },
+          "staff_selector": {
+            "route": true,
+            "next_action": true,
+            "owner": true,
+            "approvals": true,
+            "proposed_actions": true,
+            "active_questions": true,
+            "pending_reply": true,
+            "asked": true,
+            "answered": true,
+            "awaiting": true,
+            "clarification_messages": true
+          }
+        },
+        "reply_preserved": {
+          "previous_app": true,
+          "staff_selector": true
+        }
+      },
+      {
+        "record_id": "GT-LBS-RG-228",
+        "pending_field": "monthly_volume",
+        "preserved": {
+          "previous_app": {
+            "route": true,
+            "next_action": true,
+            "owner": true,
+            "approvals": true,
+            "proposed_actions": true,
+            "active_questions": true,
+            "pending_reply": true,
+            "asked": true,
+            "answered": true,
+            "awaiting": true,
+            "clarification_messages": true
+          },
+          "staff_selector": {
+            "route": true,
+            "next_action": true,
+            "owner": true,
+            "approvals": true,
+            "proposed_actions": true,
+            "active_questions": true,
+            "pending_reply": true,
+            "asked": true,
+            "answered": true,
+            "awaiting": true,
+            "clarification_messages": true
+          }
+        },
+        "reply_preserved": {
+          "previous_app": true,
+          "staff_selector": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,715 @@
+{
+  "record_id": "GT-LBS-RG-227",
+  "query": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?",
+  "scope": "Cached-response evidence capture; zero new endpoint calls.",
+  "cache_hits": 19,
+  "fresh": {
+    "status": "final",
+    "clarifying_questions": {
+      "needed": false,
+      "questions": []
+    },
+    "response_draft": {
+      "draft_text": "Google Maps Platform: Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.\n\nGoogle Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.\n\nGoogle Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |\n\nMapbox: Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |\n\nMapbox | Search Box API | API Docs | Mapbox > Example response: do a reverse lookup ​\n\n21st Street\",            \"address_number\":\"1827\",            \"street_name\":\"21st Street\"          },          \"street\":{            \"id\":\"STREET_ID\",            \"name\":\"21st Street\"          }        },        \"coordinates\":{          \"latitude\":34.023345,          \"longitude\":-118.471584,          \"accuracy\":\"rooftop\",          \"routable_points\":[            {              \"name\":\"Address\",              \"latitude\":34.023233,              \"longitude\":-118.471854            }          ]        },        \"language\":\"de\",        \"maki\":\"marker\",        \"metadata\":{        },       }     }  ],  \"attribution\":\"© 2026 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service. (https://www.mapbox.com/about/maps/)\"}\n\nOla Maps: Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error\n\nOla Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error\n\nOSM Nominatim: OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.\n\nOSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+      "citations": [
+        {
+          "url": "https://developers.google.com/maps/documentation/geocoding/geocoding-v4-overview",
+          "span": "Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.",
+          "supports_claim": "Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://developers.google.com/maps/documentation/geocoding/requests-reverse-geocoding",
+          "span": "Google Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.",
+          "supports_claim": "Google Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://developers.google.com/maps/documentation/geocoding/choose-a-method",
+          "span": "Google Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |",
+          "supports_claim": "Google Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://docs.mapbox.com/api/search/geocoding-v5/",
+          "span": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |",
+          "supports_claim": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://docs.mapbox.com/api/search/search-box/",
+          "span": "Mapbox | Search Box API | API Docs | Mapbox > Example response: do a reverse lookup ​\n\n21st Street\",            \"address_number\":\"1827\",            \"street_name\":\"21st Street\"          },          \"street\":{            \"id\":\"STREET_ID\",            \"name\":\"21st Street\"          }        },        \"coordinates\":{          \"latitude\":34.023345,          \"longitude\":-118.471584,          \"accuracy\":\"rooftop\",          \"routable_points\":[            {              \"name\":\"Address\",              \"latitude\":34.023233,              \"longitude\":-118.471854            }          ]        },        \"language\":\"de\",        \"maki\":\"marker\",        \"metadata\":{        },       }     }  ],  \"attribution\":\"© 2026 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service. (https://www.mapbox.com/about/maps/)\"}",
+          "supports_claim": "Mapbox | Search Box API | API Docs | Mapbox > Example response: do a reverse lookup ​\n\n21st Street\",            \"address_number\":\"1827\",            \"street_name\":\"21st Street\"          },          \"street\":{            \"id\":\"STREET_ID\",            \"name\":\"21st Street\"          }        },        \"coordinates\":{          \"latitude\":34.023345,          \"longitude\":-118.471584,          \"accuracy\":\"rooftop\",          \"routable_points\":[            {              \"name\":\"Address\",              \"latitude\":34.023233,              \"longitude\":-118.471854            }          ]        },        \"language\":\"de\",        \"maki\":\"marker\",        \"metadata\":{        },       }     }  ],  \"attribution\":\"© 2026 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service. (https://www.mapbox.com/about/maps/)\"}",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+          "span": "Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error",
+          "supports_claim": "Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+          "span": "Ola Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error",
+          "supports_claim": "Ola Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://nominatim.org/release-docs/latest/api/Reverse/",
+          "span": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.",
+          "supports_claim": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://nominatim.org/release-docs/latest/api/Reverse/",
+          "span": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+          "supports_claim": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+          "quote_or_summary": "verbatim"
+        }
+      ],
+      "is_refusal": false,
+      "refusal": null
+    },
+    "outputs": {
+      "response_draft": {
+        "draft_text": "Google Maps Platform: Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.\n\nGoogle Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.\n\nGoogle Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |\n\nMapbox: Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |\n\nMapbox | Search Box API | API Docs | Mapbox > Example response: do a reverse lookup ​\n\n21st Street\",            \"address_number\":\"1827\",            \"street_name\":\"21st Street\"          },          \"street\":{            \"id\":\"STREET_ID\",            \"name\":\"21st Street\"          }        },        \"coordinates\":{          \"latitude\":34.023345,          \"longitude\":-118.471584,          \"accuracy\":\"rooftop\",          \"routable_points\":[            {              \"name\":\"Address\",              \"latitude\":34.023233,              \"longitude\":-118.471854            }          ]        },        \"language\":\"de\",        \"maki\":\"marker\",        \"metadata\":{        },       }     }  ],  \"attribution\":\"© 2026 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service. (https://www.mapbox.com/about/maps/)\"}\n\nOla Maps: Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error\n\nOla Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error\n\nOSM Nominatim: OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.\n\nOSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+        "citations": [
+          {
+            "url": "https://developers.google.com/maps/documentation/geocoding/geocoding-v4-overview",
+            "span": "Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.",
+            "supports_claim": "Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://developers.google.com/maps/documentation/geocoding/requests-reverse-geocoding",
+            "span": "Google Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.",
+            "supports_claim": "Google Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://developers.google.com/maps/documentation/geocoding/choose-a-method",
+            "span": "Google Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |",
+            "supports_claim": "Google Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://docs.mapbox.com/api/search/geocoding-v5/",
+            "span": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |",
+            "supports_claim": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://docs.mapbox.com/api/search/search-box/",
+            "span": "Mapbox | Search Box API | API Docs | Mapbox > Example response: do a reverse lookup ​\n\n21st Street\",            \"address_number\":\"1827\",            \"street_name\":\"21st Street\"          },          \"street\":{            \"id\":\"STREET_ID\",            \"name\":\"21st Street\"          }        },        \"coordinates\":{          \"latitude\":34.023345,          \"longitude\":-118.471584,          \"accuracy\":\"rooftop\",          \"routable_points\":[            {              \"name\":\"Address\",              \"latitude\":34.023233,              \"longitude\":-118.471854            }          ]        },        \"language\":\"de\",        \"maki\":\"marker\",        \"metadata\":{        },       }     }  ],  \"attribution\":\"© 2026 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service. (https://www.mapbox.com/about/maps/)\"}",
+            "supports_claim": "Mapbox | Search Box API | API Docs | Mapbox > Example response: do a reverse lookup ​\n\n21st Street\",            \"address_number\":\"1827\",            \"street_name\":\"21st Street\"          },          \"street\":{            \"id\":\"STREET_ID\",            \"name\":\"21st Street\"          }        },        \"coordinates\":{          \"latitude\":34.023345,          \"longitude\":-118.471584,          \"accuracy\":\"rooftop\",          \"routable_points\":[            {              \"name\":\"Address\",              \"latitude\":34.023233,              \"longitude\":-118.471854            }          ]        },        \"language\":\"de\",        \"maki\":\"marker\",        \"metadata\":{        },       }     }  ],  \"attribution\":\"© 2026 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service. (https://www.mapbox.com/about/maps/)\"}",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+            "span": "Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error",
+            "supports_claim": "Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+            "span": "Ola Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error",
+            "supports_claim": "Ola Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://nominatim.org/release-docs/latest/api/Reverse/",
+            "span": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.",
+            "supports_claim": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://nominatim.org/release-docs/latest/api/Reverse/",
+            "span": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+            "supports_claim": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+            "quote_or_summary": "verbatim"
+          }
+        ],
+        "is_refusal": false,
+        "refusal": null
+      },
+      "clarifying_questions": {
+        "needed": false,
+        "questions": []
+      },
+      "qualification_details": {
+        "use_case_api": {
+          "api": "reverse_geocode",
+          "use_case": null
+        },
+        "region": null,
+        "monthly_volume": null,
+        "current_provider": null,
+        "timeline": null,
+        "budget": null,
+        "technical_constraints": null,
+        "decision_maker": null,
+        "missing_required_fields": [
+          "region",
+          "monthly_volume",
+          "current_provider",
+          "timeline"
+        ],
+        "complete": false
+      },
+      "proposed_record_update": {
+        "applicable": false,
+        "requires_human_approval": false,
+        "approval_status": "not_applicable",
+        "executed": false,
+        "proposal": null
+      },
+      "comparison": {
+        "applicable": true,
+        "providers": [
+          "Google Maps Platform",
+          "Mapbox",
+          "Ola Maps",
+          "OSM Nominatim"
+        ],
+        "dimensions": [
+          "capabilities"
+        ],
+        "assumptions": [
+          "Providers were evaluated against the same request."
+        ],
+        "source_urls": [
+          "https://developers.google.com/maps/documentation/geocoding/geocoding-v4-overview",
+          "https://developers.google.com/maps/documentation/geocoding/requests-reverse-geocoding",
+          "https://developers.google.com/maps/documentation/geocoding/choose-a-method",
+          "https://docs.mapbox.com/api/search/geocoding-v5/",
+          "https://docs.mapbox.com/api/search/search-box/",
+          "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+          "https://nominatim.org/release-docs/latest/api/Reverse/"
+        ],
+        "notes": null
+      },
+      "responsible_role": {
+        "owner": "Account team (Sales)",
+        "team": "Sales",
+        "should_escalate": false,
+        "severity": "SEV4",
+        "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+      },
+      "next_action": {
+        "action_type": "answer_directly",
+        "description": "Review the drafted reply.",
+        "requires_human_approval": false,
+        "approval_status": "not_applicable",
+        "executed": false
+      }
+    },
+    "steps": [
+      {
+        "step": 1,
+        "action": "plan",
+        "status": "completed",
+        "latency_ms": 0
+      },
+      {
+        "step": 2,
+        "action": "compare_documents",
+        "status": "completed",
+        "latency_ms": 475
+      },
+      {
+        "step": 3,
+        "action": "compare_documents",
+        "status": "completed",
+        "latency_ms": 43
+      },
+      {
+        "step": 4,
+        "action": "compare_documents",
+        "status": "completed",
+        "latency_ms": 41
+      },
+      {
+        "step": 5,
+        "action": "compare_documents",
+        "status": "completed",
+        "latency_ms": 452
+      },
+      {
+        "step": 6,
+        "action": "critic",
+        "status": "completed",
+        "latency_ms": 4
+      }
+    ],
+    "critic": {
+      "verdict": "pass",
+      "reason": null,
+      "reviews": [
+        {
+          "verdict": "pass",
+          "reason": null
+        }
+      ]
+    },
+    "tool_calls": [
+      {
+        "tool_name": "document_search",
+        "registered": true,
+        "invocation_timestamp": "2026-11-24T11:47:02.229987+00:00",
+        "input_metadata": {
+          "field_count": 2,
+          "collection_sizes": []
+        },
+        "input_validation": "passed",
+        "output_validation": "passed",
+        "validation_result": "passed",
+        "execution_status": "success",
+        "output_metadata": {
+          "field_count": 1,
+          "collection_sizes": [
+            5
+          ]
+        },
+        "error_details": null,
+        "attempts": 1,
+        "execution_duration_ms": 473.12
+      },
+      {
+        "tool_name": "document_search",
+        "registered": true,
+        "invocation_timestamp": "2026-11-24T11:47:02.705137+00:00",
+        "input_metadata": {
+          "field_count": 2,
+          "collection_sizes": []
+        },
+        "input_validation": "passed",
+        "output_validation": "passed",
+        "validation_result": "passed",
+        "execution_status": "success",
+        "output_metadata": {
+          "field_count": 1,
+          "collection_sizes": [
+            5
+          ]
+        },
+        "error_details": null,
+        "attempts": 1,
+        "execution_duration_ms": 42.19
+      },
+      {
+        "tool_name": "document_search",
+        "registered": true,
+        "invocation_timestamp": "2026-11-24T11:47:02.748757+00:00",
+        "input_metadata": {
+          "field_count": 2,
+          "collection_sizes": []
+        },
+        "input_validation": "passed",
+        "output_validation": "passed",
+        "validation_result": "passed",
+        "execution_status": "success",
+        "output_metadata": {
+          "field_count": 1,
+          "collection_sizes": [
+            5
+          ]
+        },
+        "error_details": null,
+        "attempts": 1,
+        "execution_duration_ms": 40.32
+      },
+      {
+        "tool_name": "document_search",
+        "registered": true,
+        "invocation_timestamp": "2026-11-24T11:47:02.790114+00:00",
+        "input_metadata": {
+          "field_count": 2,
+          "collection_sizes": []
+        },
+        "input_validation": "passed",
+        "output_validation": "passed",
+        "validation_result": "passed",
+        "execution_status": "success",
+        "output_metadata": {
+          "field_count": 1,
+          "collection_sizes": [
+            7
+          ]
+        },
+        "error_details": null,
+        "attempts": 1,
+        "execution_duration_ms": 450.34
+      }
+    ],
+    "proposed_actions": [],
+    "reliability": {
+      "limits": {
+        "max_retries_per_step": 2,
+        "enquiry_timeout_seconds": 120.0,
+        "model_timeout_seconds": 30.0,
+        "tool_timeout_seconds": 15.0,
+        "token_budget": 32768
+      },
+      "reserved_tokens": 0,
+      "observed_tokens": 0,
+      "model_attempts": 0,
+      "retries_by_step": {},
+      "events": [],
+      "elapsed_ms": 1051
+    }
+  },
+  "legacy_reopen": {
+    "status": "final",
+    "clarifying_questions": {
+      "needed": false,
+      "questions": []
+    },
+    "response_draft": {
+      "draft_text": "Google Maps Platform: Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.\n\nGoogle Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.\n\nGoogle Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |\n\nMapbox: Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |\n\nMapbox | Geocoding API | API Docs | Mapbox > Reverse geocoding ​\n\nget\n\nhttps://api.mapbox.com /search/geocode/v6/reverse?longitude= {longitude} &latitude= {latitude}\n\nThe reverse geocoding query type allows you to look up a pair of coordinates and returns the geographic features there, including a standardized address or place and full geographic context.\n\n| Required parameters | Type | Description |\n| longitude | number | The longitude decimal value from the geographic coordinate for the location being queried. |\n| latitude | number | The latitude decimal value from the geographic coordinate for the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\nOla Maps: Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error\n\nOla Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error\n\nOSM Nominatim: OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.\n\nOSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+      "citations": [
+        {
+          "url": "https://developers.google.com/maps/documentation/geocoding/geocoding-v4-overview",
+          "span": "Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.",
+          "supports_claim": "Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://developers.google.com/maps/documentation/geocoding/requests-reverse-geocoding",
+          "span": "Google Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.",
+          "supports_claim": "Google Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://developers.google.com/maps/documentation/geocoding/choose-a-method",
+          "span": "Google Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |",
+          "supports_claim": "Google Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://docs.mapbox.com/api/search/geocoding-v5/",
+          "span": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |",
+          "supports_claim": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://docs.mapbox.com/api/search/geocoding/",
+          "span": "Mapbox | Geocoding API | API Docs | Mapbox > Reverse geocoding ​\n\nget\n\nhttps://api.mapbox.com /search/geocode/v6/reverse?longitude= {longitude} &latitude= {latitude}\n\nThe reverse geocoding query type allows you to look up a pair of coordinates and returns the geographic features there, including a standardized address or place and full geographic context.\n\n| Required parameters | Type | Description |\n| longitude | number | The longitude decimal value from the geographic coordinate for the location being queried. |\n| latitude | number | The latitude decimal value from the geographic coordinate for the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:",
+          "supports_claim": "Mapbox | Geocoding API | API Docs | Mapbox > Reverse geocoding ​\n\nget\n\nhttps://api.mapbox.com /search/geocode/v6/reverse?longitude= {longitude} &latitude= {latitude}\n\nThe reverse geocoding query type allows you to look up a pair of coordinates and returns the geographic features there, including a standardized address or place and full geographic context.\n\n| Required parameters | Type | Description |\n| longitude | number | The longitude decimal value from the geographic coordinate for the location being queried. |\n| latitude | number | The latitude decimal value from the geographic coordinate for the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+          "span": "Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error",
+          "supports_claim": "Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+          "span": "Ola Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error",
+          "supports_claim": "Ola Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://nominatim.org/release-docs/latest/api/Reverse/",
+          "span": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.",
+          "supports_claim": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://nominatim.org/release-docs/latest/api/Reverse/",
+          "span": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+          "supports_claim": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+          "quote_or_summary": "verbatim"
+        }
+      ],
+      "is_refusal": false,
+      "refusal": null
+    },
+    "outputs": {
+      "response_draft": {
+        "draft_text": "Google Maps Platform: Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.\n\nGoogle Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.\n\nGoogle Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |\n\nMapbox: Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |\n\nMapbox | Geocoding API | API Docs | Mapbox > Reverse geocoding ​\n\nget\n\nhttps://api.mapbox.com /search/geocode/v6/reverse?longitude= {longitude} &latitude= {latitude}\n\nThe reverse geocoding query type allows you to look up a pair of coordinates and returns the geographic features there, including a standardized address or place and full geographic context.\n\n| Required parameters | Type | Description |\n| longitude | number | The longitude decimal value from the geographic coordinate for the location being queried. |\n| latitude | number | The latitude decimal value from the geographic coordinate for the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\nOla Maps: Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error\n\nOla Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error\n\nOSM Nominatim: OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.\n\nOSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+        "citations": [
+          {
+            "url": "https://developers.google.com/maps/documentation/geocoding/geocoding-v4-overview",
+            "span": "Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.",
+            "supports_claim": "Google Maps Platform | Geocoding API v4 overview | Google for Developers > What you can do with the Geocoding API\n\nGeocoding API v4 includes the following capabilities and endpoints:\n\n- Search for destinations : Retrieve hyperlocal arrival details for a destination from an address, Place ID, or coordinates—including building entrances, routable navigation point tokens , building and grounds outlines, sub-destinations, and nearby landmarks.\n\n- Geocode an address : Convert street addresses into geographic coordinates and Place IDs ( forward geocoding ).\n\n- Geocode a location : Convert latitude and longitude coordinates into human-readable street addresses or administrative areas ( reverse geocoding ).\n\n- Geocode a place : Retrieve formatted address details and coordinates for a known Google Maps Place ID.\n\nYou can control where the results appear and constrain the results to a particular region, county, or postal code.",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://developers.google.com/maps/documentation/geocoding/requests-reverse-geocoding",
+            "span": "Google Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.",
+            "supports_claim": "Google Maps Platform | Reverse geocoding (address lookup) request and response | Geocoding API | Google for Developers > Reverse geocoding filtered by type\n\nThe following example filters the addresses returned to include only those with a location type of ROOFTOP and an address type of street_address .\n\n```\nhttps://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452\n&location_type=ROOFTOP&result_type=street_address&key=YOUR_API_KEY\n```\n\nNote: These filters are only valid for reverse geocoding.",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://developers.google.com/maps/documentation/geocoding/choose-a-method",
+            "span": "Google Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |",
+            "supports_claim": "Google Maps Platform | Choose a geocoding method | Geocoding API | Google for Developers > Use-case routing table\n\n| Normalize or parse structured address components at high batch volume without arrival geometry | Geocode an address ( GET /v4/geocode/address ) | Returns structured postalAddress and addressComponents for postal/administrative areas as well as street addresses. |\n\n| Look up a display address or administrative area (city, postal code, state) from GPS coordinates | Reverse geocode a location ( GET /v4/geocode/location ) | Translates raw latitude/longitude coordinates into ranked human-readable addresses across all granularity levels. |\n\n| Retrieve the formatted address and coordinate point for a known Google Maps Place ID | Geocode a place ( GET /v4/geocode/places/{placeId} ) | Direct lookup when you already have a Place ID (for example, from Place Autocomplete) and only need its address and centroid coordinates. |",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://docs.mapbox.com/api/search/geocoding-v5/",
+            "span": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |",
+            "supports_claim": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Reverse geocoding\n\nget\n\nhttps://api.mapbox.com /geocoding/v5/ {endpoint} / {longitude} , {latitude} .json\n\nThe reverse geocoding query type allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location.\n\n| Required parameters | Type | Description |\n| endpoint | string | One of mapbox.places or mapbox.places-permanent , as described in the Endpoints section . |\n| longitude,latitude | number | A longitude,latitude pair that specifies the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:\n\n| Optional parameters | Type | Description |\n\n| country | string | Limit results to one or more countries. Permitted values are ISO 3166 alpha 2 country codes separated by commas. |\n\n| language | string | Specify the user’s language. This parameter controls the language of the text supplied in responses. Options are IETF language tags comprised of a mandatory ISO 639-1 language code and, optionally, one or more IETF subtags for country or script. More than one value can also be specified, separated by commas, for applications that need to display labels in multiple languages. For more information on which specific languages are supported, see the language coverage section . |\n\n| limit | integer | Specify the maximum number of results to return. The default is 1 and the maximum supported is 10 . The default behavior in reverse geocoding is to return at most one feature at each of the multiple levels of the administrative hierarchy (for example, one address, one region, one country). Increasing the limit allows returning multiple features of the same type, but only for one type (for example, multiple address results). So, setting limit to a higher-than-default value requires specifying exactly one types parameter. |",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://docs.mapbox.com/api/search/geocoding/",
+            "span": "Mapbox | Geocoding API | API Docs | Mapbox > Reverse geocoding ​\n\nget\n\nhttps://api.mapbox.com /search/geocode/v6/reverse?longitude= {longitude} &latitude= {latitude}\n\nThe reverse geocoding query type allows you to look up a pair of coordinates and returns the geographic features there, including a standardized address or place and full geographic context.\n\n| Required parameters | Type | Description |\n| longitude | number | The longitude decimal value from the geographic coordinate for the location being queried. |\n| latitude | number | The latitude decimal value from the geographic coordinate for the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:",
+            "supports_claim": "Mapbox | Geocoding API | API Docs | Mapbox > Reverse geocoding ​\n\nget\n\nhttps://api.mapbox.com /search/geocode/v6/reverse?longitude= {longitude} &latitude= {latitude}\n\nThe reverse geocoding query type allows you to look up a pair of coordinates and returns the geographic features there, including a standardized address or place and full geographic context.\n\n| Required parameters | Type | Description |\n| longitude | number | The longitude decimal value from the geographic coordinate for the location being queried. |\n| latitude | number | The latitude decimal value from the geographic coordinate for the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+            "span": "Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error",
+            "supports_claim": "Ola Maps | Ola Maps API Reference > GET /places/v1/reverse-geocode\n\nGET /places/v1/reverse-geocode\nReverse Geocode API\nThis API converts geographic coordinates back into readable addresses or place names based upon the satisfying criteria with a reasonable probability.\nParameters:\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\n- latlng (query, required): The coordinates of which you want to do the reverse geocoding to get the address {\"type\": \"string\"}\n- language (query, optional): Response language - `en` (English), `hi` (Hindi), `kn` (Kannada),  `te` (Telugu), `ta` (Tamil), `ml` (Malayalam), `sa` (Sanskrit),  `bn` (Bengali), `gu` (Gujarati), `mr` (Marathi), `or` (Oriya) and `ur` (Urdu). By default this is set to English. {\"type\": {}, \"example\": {}}\nResponse 200: Successful response. Please note there are multiple responses possible  based on the input coordinates. Other possibility is zero results  which is outlined under schema\nResponse 400: Bad request\nResponse 500: Internal error",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+            "span": "Ola Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error",
+            "supports_claim": "Ola Maps | Ola Maps API Reference > GET /places/v1/geocode\n\nGET /places/v1/geocode\nForward Geocode API\nProvides probable geographic coordinates and detailed location information  including formatted address for the given address as input.\nParameters:\n- address (query, required): The address to be geocoded. It cannot be empty. {\"type\": \"string\"}\n- language (query, optional): The language in which to return the results. Currently only accepts English. {\"type\": \"string\", \"default\": \"English\"}\n- X-Request-Id (header, optional): A UUIDv4 unique to that HTTP request and response combination {\"type\": {}, \"format\": {}}\n- X-Correlation-Id (header, optional): A UUIDv4 unique over a series of requests and responses, identifying a transaction {\"type\": {}, \"format\": {}}\nResponse 200: Successful geocoding response. Please note there are multiple responses  possible based on the input address. One possibility is geocoding results are returned,  which is outlined in examples and schema. Other possibility is zero results which is  outlined under schema\nResponse 400: Invalid or empty address parameter\nResponse 500: Internal server error",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://nominatim.org/release-docs/latest/api/Reverse/",
+            "span": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.",
+            "supports_claim": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Reverse Geocoding 🔗\n\nReverse geocoding generates an address from a coordinate given as latitude and longitude.",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://nominatim.org/release-docs/latest/api/Reverse/",
+            "span": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+            "supports_claim": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > Output details 🔗\n\n| Parameter | Value | Default |\n| addressdetails | 0 or 1 | 1 |\n\nWhen set to 1, include a breakdown of the address into elements. The exact content of the address breakdown depends on the output format.\n\nTip\n\nIf you are interested in a stable classification of address categories (suburb, city, state, etc), have a look at the geocodejson format. All other formats return classifications according to OSM tagging. There is a much larger set of categories and they are not always consistent, which makes them very hard to work with.\n\n| Parameter | Value | Default |\n| extratags | 0 or 1 | 0 |\n\nWhen set to 1, the response include any additional information in the result that is available in the database, e.g. wikipedia link, opening hours.\n\n| Parameter | Value | Default |\n| namedetails | 0 or 1 | 0 |\n\nWhen set to 1, include a full list of names for the result. These may include language variants, older names, references and brand.\n\n| Parameter | Value | Default |\n| entrances | 0 or 1 | 0 |\n\nWhen set to 1, include the tagged entrances in the result.",
+            "quote_or_summary": "verbatim"
+          }
+        ],
+        "is_refusal": false,
+        "refusal": null
+      },
+      "clarifying_questions": {
+        "needed": false,
+        "questions": []
+      },
+      "qualification_details": {
+        "use_case_api": {
+          "api": "reverse_geocode",
+          "use_case": null
+        },
+        "region": null,
+        "monthly_volume": null,
+        "current_provider": "Mapbox",
+        "timeline": null,
+        "budget": null,
+        "technical_constraints": null,
+        "decision_maker": null,
+        "missing_required_fields": [
+          "region",
+          "monthly_volume",
+          "timeline"
+        ],
+        "complete": false
+      },
+      "proposed_record_update": {
+        "applicable": false,
+        "requires_human_approval": false,
+        "approval_status": "not_applicable",
+        "executed": false,
+        "proposal": null
+      },
+      "comparison": {
+        "applicable": true,
+        "providers": [
+          "Google Maps Platform",
+          "Mapbox",
+          "Ola Maps",
+          "OSM Nominatim"
+        ],
+        "dimensions": [
+          "capabilities"
+        ],
+        "assumptions": [
+          "Providers were evaluated against the same request."
+        ],
+        "source_urls": [
+          "https://developers.google.com/maps/documentation/geocoding/geocoding-v4-overview",
+          "https://developers.google.com/maps/documentation/geocoding/requests-reverse-geocoding",
+          "https://developers.google.com/maps/documentation/geocoding/choose-a-method",
+          "https://docs.mapbox.com/api/search/geocoding-v5/",
+          "https://docs.mapbox.com/api/search/geocoding/",
+          "https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml",
+          "https://nominatim.org/release-docs/latest/api/Reverse/"
+        ],
+        "notes": null
+      },
+      "responsible_role": {
+        "owner": "Account team (Sales)",
+        "team": "Sales",
+        "should_escalate": false,
+        "severity": "SEV4",
+        "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+      },
+      "next_action": {
+        "action_type": "answer_directly",
+        "description": "Review the drafted reply.",
+        "requires_human_approval": false,
+        "approval_status": "not_applicable",
+        "executed": false
+      }
+    },
+    "steps": [
+      {
+        "step": 1,
+        "action": "plan",
+        "status": "completed",
+        "latency_ms": 0
+      },
+      {
+        "step": 2,
+        "action": "compare_documents",
+        "status": "completed",
+        "latency_ms": 38
+      },
+      {
+        "step": 3,
+        "action": "compare_documents",
+        "status": "completed",
+        "latency_ms": 37
+      },
+      {
+        "step": 4,
+        "action": "compare_documents",
+        "status": "completed",
+        "latency_ms": 36
+      },
+      {
+        "step": 5,
+        "action": "compare_documents",
+        "status": "completed",
+        "latency_ms": 75
+      },
+      {
+        "step": 6,
+        "action": "critic",
+        "status": "completed",
+        "latency_ms": 1
+      }
+    ],
+    "critic": {
+      "verdict": "pass",
+      "reason": null,
+      "reviews": [
+        {
+          "verdict": "pass",
+          "reason": null
+        }
+      ]
+    },
+    "tool_calls": [
+      {
+        "tool_name": "document_search",
+        "registered": true,
+        "invocation_timestamp": "2026-11-24T11:47:03.280876+00:00",
+        "input_metadata": {
+          "field_count": 2,
+          "collection_sizes": []
+        },
+        "input_validation": "passed",
+        "output_validation": "passed",
+        "validation_result": "passed",
+        "execution_status": "success",
+        "output_metadata": {
+          "field_count": 1,
+          "collection_sizes": [
+            5
+          ]
+        },
+        "error_details": null,
+        "attempts": 1,
+        "execution_duration_ms": 36.93
+      },
+      {
+        "tool_name": "document_search",
+        "registered": true,
+        "invocation_timestamp": "2026-11-24T11:47:03.319069+00:00",
+        "input_metadata": {
+          "field_count": 2,
+          "collection_sizes": []
+        },
+        "input_validation": "passed",
+        "output_validation": "passed",
+        "validation_result": "passed",
+        "execution_status": "success",
+        "output_metadata": {
+          "field_count": 1,
+          "collection_sizes": [
+            5
+          ]
+        },
+        "error_details": null,
+        "attempts": 1,
+        "execution_duration_ms": 35.94
+      },
+      {
+        "tool_name": "document_search",
+        "registered": true,
+        "invocation_timestamp": "2026-11-24T11:47:03.356681+00:00",
+        "input_metadata": {
+          "field_count": 2,
+          "collection_sizes": []
+        },
+        "input_validation": "passed",
+        "output_validation": "passed",
+        "validation_result": "passed",
+        "execution_status": "success",
+        "output_metadata": {
+          "field_count": 1,
+          "collection_sizes": [
+            5
+          ]
+        },
+        "error_details": null,
+        "attempts": 1,
+        "execution_duration_ms": 35.36
+      },
+      {
+        "tool_name": "document_search",
+        "registered": true,
+        "invocation_timestamp": "2026-11-24T11:47:03.393063+00:00",
+        "input_metadata": {
+          "field_count": 2,
+          "collection_sizes": []
+        },
+        "input_validation": "passed",
+        "output_validation": "passed",
+        "validation_result": "passed",
+        "execution_status": "success",
+        "output_metadata": {
+          "field_count": 1,
+          "collection_sizes": [
+            7
+          ]
+        },
+        "error_details": null,
+        "attempts": 1,
+        "execution_duration_ms": 74.53
+      }
+    ],
+    "proposed_actions": [],
+    "reliability": {
+      "limits": {
+        "max_retries_per_step": 2,
+        "enquiry_timeout_seconds": 120.0,
+        "model_timeout_seconds": 30.0,
+        "tool_timeout_seconds": 15.0,
+        "token_budget": 32768
+      },
+      "reserved_tokens": 0,
+      "observed_tokens": 0,
+      "model_attempts": 0,
+      "retries_by_step": {},
+      "events": [],
+      "elapsed_ms": 198
+    }
+  }
+}

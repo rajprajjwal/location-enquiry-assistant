@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The error MAX_DIMENSIONS_EXCEEDED indicates that the number of origins or destinations exceeds the per-query limit. The customer is using 30 destinations and 1 origin, which may exceed the allowed dimensions for the Distance Matrix API (Legacy).\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The error MAX_DIMENSIONS_EXCEEDED indicates that the number of origins or destinations exceeds the per-query limit. The customer is using 30 destinations and 1 origin, which may exceed the allowed dimensions for the Distance Matrix API (Legacy).\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2020,
+    "completion_tokens": 58,
+    "total_tokens": 2078
+  },
+  "latency_ms": 1612,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

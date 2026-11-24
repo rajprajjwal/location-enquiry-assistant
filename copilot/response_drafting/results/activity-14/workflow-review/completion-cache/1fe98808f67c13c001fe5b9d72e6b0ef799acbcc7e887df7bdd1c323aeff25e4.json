@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The HTTP 429 status indicates a rate limit has been exceeded. To diagnose this, we need to inspect the actual request that triggered the 429 response, as the issue could be related to the number of requests, the frequency, or specific parameters used in the batch geocoding job.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The HTTP 429 status indicates a rate limit has been exceeded. To diagnose this, we need to inspect the actual request that triggered the 429 response, as the issue could be related to the number of requests, the frequency, or specific parameters used in the batch geocoding job.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1821,
+    "completion_tokens": 74,
+    "total_tokens": 1895
+  },
+  "latency_ms": 1933,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

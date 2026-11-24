@@ -1,0 +1,361 @@
+{
+  "cases": 36,
+  "groups": 28,
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "gold_questions": 65,
+  "gold_atomic_facts": 84,
+  "workbook_unchanged": true,
+  "working_labels_unchanged": true,
+  "runtime_sources_equal_local_project": true,
+  "final_turn_statuses": {
+    "baseline": {
+      "no_validation_audit": 37,
+      "ValidationError": 3
+    },
+    "integrated": {
+      "valid": 33,
+      "no_validation_audit": 4,
+      "locally_repaired": 3
+    }
+  },
+  "natural_recoveries": [
+    {
+      "record_id": "GT-LBS-DM-017",
+      "query": "Ola Maps Distance Matrix: we'd send 10 origins × 5 destinations about 2,000 times a month. How many API calls per matrix and what's the monthly cost?",
+      "audit": {
+        "status": "locally_repaired",
+        "logical_requests": 1,
+        "repair_attempted": false,
+        "local_repair_attempted": true,
+        "attempts": [
+          {
+            "stage": "initial",
+            "response_sha256": "2062c5403533d53419c0a2f8d6f6717726a66f9e116fe63ee3bd021d3a624957",
+            "finish_reason": "stop",
+            "errors": [
+              {
+                "loc": [
+                  "supplied_facts",
+                  0,
+                  "evidence"
+                ],
+                "type": "string_too_short",
+                "msg": "String should have at least 1 character"
+              },
+              {
+                "loc": [
+                  "supplied_facts",
+                  1,
+                  "evidence"
+                ],
+                "type": "string_too_short",
+                "msg": "String should have at least 1 character"
+              }
+            ]
+          },
+          {
+            "stage": "omit_unsupported_facts",
+            "response_sha256": "b5c080aed02e3ffeb008cf51c6d03398c33e70d3da533ca5b425bc76368abe91",
+            "finish_reason": "stop",
+            "errors": [],
+            "dropped_facts": [
+              {
+                "index": 0,
+                "errors": [
+                  {
+                    "loc": [
+                      "evidence"
+                    ],
+                    "type": "string_too_short",
+                    "msg": "String should have at least 1 character"
+                  }
+                ]
+              },
+              {
+                "index": 1,
+                "errors": [
+                  {
+                    "loc": [
+                      "evidence"
+                    ],
+                    "type": "string_too_short",
+                    "msg": "String should have at least 1 character"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "query": "Ola Maps vs Google for 10×10 matrices, 10,000 a month in India, with and without traffic. Which is cheaper?",
+      "audit": {
+        "status": "locally_repaired",
+        "logical_requests": 1,
+        "repair_attempted": false,
+        "local_repair_attempted": true,
+        "attempts": [
+          {
+            "stage": "initial",
+            "response_sha256": "e98e2592bb75bcf5862b01de146a38c5102f10c8a33885bef543ddd27e2e315d",
+            "finish_reason": "stop",
+            "errors": [
+              {
+                "loc": [
+                  "supplied_facts",
+                  2,
+                  "value",
+                  "str"
+                ],
+                "type": "string_type",
+                "msg": "Input should be a valid string"
+              },
+              {
+                "loc": [
+                  "supplied_facts",
+                  2,
+                  "value",
+                  "bool"
+                ],
+                "type": "bool_type",
+                "msg": "Input should be a valid boolean"
+              },
+              {
+                "loc": [
+                  "supplied_facts",
+                  2,
+                  "value",
+                  "int"
+                ],
+                "type": "int_type",
+                "msg": "Input should be a valid integer"
+              },
+              {
+                "loc": [
+                  "supplied_facts",
+                  2,
+                  "value",
+                  "float"
+                ],
+                "type": "float_type",
+                "msg": "Input should be a valid number"
+              }
+            ]
+          },
+          {
+            "stage": "omit_unsupported_facts",
+            "response_sha256": "d90365ea8349e2560005e3bd779429434a6e247ce8e60904fd7d165eb9a1c949",
+            "finish_reason": "stop",
+            "errors": [],
+            "dropped_facts": [
+              {
+                "index": 2,
+                "errors": [
+                  {
+                    "loc": [
+                      "value",
+                      "str"
+                    ],
+                    "type": "string_type",
+                    "msg": "Input should be a valid string"
+                  },
+                  {
+                    "loc": [
+                      "value",
+                      "bool"
+                    ],
+                    "type": "bool_type",
+                    "msg": "Input should be a valid boolean"
+                  },
+                  {
+                    "loc": [
+                      "value",
+                      "int"
+                    ],
+                    "type": "int_type",
+                    "msg": "Input should be a valid integer"
+                  },
+                  {
+                    "loc": [
+                      "value",
+                      "float"
+                    ],
+                    "type": "float_type",
+                    "msg": "Input should be a valid number"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "query": "500,000 requests per month",
+      "audit": {
+        "status": "locally_repaired",
+        "logical_requests": 1,
+        "repair_attempted": false,
+        "local_repair_attempted": true,
+        "attempts": [
+          {
+            "stage": "initial",
+            "response_sha256": "066f041cd7e34a4b2ac8d05099bdb6ab4bdd9738a71afd3ac45597c1a1ba3d32",
+            "finish_reason": "stop",
+            "errors": [
+              {
+                "loc": [
+                  "supplied_facts",
+                  0,
+                  "evidence"
+                ],
+                "type": "string_too_short",
+                "msg": "String should have at least 1 character"
+              }
+            ]
+          },
+          {
+            "stage": "omit_unsupported_facts",
+            "response_sha256": "61b185606c1f1b17d2b61ee5b01d5e8c23a094cb57394da915a23d8682bd7900",
+            "finish_reason": "stop",
+            "errors": [],
+            "dropped_facts": [
+              {
+                "index": 0,
+                "errors": [
+                  {
+                    "loc": [
+                      "evidence"
+                    ],
+                    "type": "string_too_short",
+                    "msg": "String should have at least 1 character"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "behavior": {
+    "cases": 36,
+    "preserved": {
+      "route": 36,
+      "next_action": 36,
+      "owner": 36,
+      "approvals": 36,
+      "proposed_actions": 36,
+      "active_questions": 36,
+      "pending_reply": 36,
+      "asked": 36,
+      "answered": 36,
+      "awaiting": 36,
+      "clarification_messages": 36
+    },
+    "reopened_cases": 4,
+    "reopened_preserved": 4,
+    "endpoint_errors": [
+      429,
+      429
+    ],
+    "excluded_attempts": [
+      {
+        "record_id": "GT-LBS-AC-024",
+        "attempt": 1,
+        "errors": [
+          429,
+          429
+        ]
+      }
+    ],
+    "endpoint_calls": 169,
+    "changes": []
+  },
+  "scores": {
+    "baseline": {
+      "predicted": 56,
+      "gold": 65,
+      "matches": 52,
+      "facts": 71,
+      "gold_facts": 84,
+      "questions_on_empty_gold": 1,
+      "f1": 0.859504132231405,
+      "precision": 0.9285714285714286,
+      "recall": 0.8,
+      "fact_recall": 0.8452380952380952
+    },
+    "integrated": {
+      "predicted": 57,
+      "gold": 65,
+      "matches": 54,
+      "facts": 73,
+      "gold_facts": 84,
+      "questions_on_empty_gold": 1,
+      "f1": 0.8852459016393442,
+      "precision": 0.9473684210526315,
+      "recall": 0.8307692307692308,
+      "fact_recall": 0.8690476190476191
+    }
+  },
+  "captured_fault": {
+    "status": "locally_repaired",
+    "logical_requests": 1,
+    "repair_attempted": false,
+    "local_repair_attempted": true,
+    "attempts": [
+      {
+        "stage": "initial",
+        "response_sha256": "58b0e3664905e989259ee1ebebe3561cec3c874e4a93221dc587308e3f3132ee",
+        "finish_reason": "stop",
+        "errors": [
+          {
+            "loc": [
+              "supplied_facts",
+              0,
+              "evidence"
+            ],
+            "type": "string_too_short",
+            "msg": "String should have at least 1 character"
+          }
+        ]
+      },
+      {
+        "stage": "omit_unsupported_facts",
+        "response_sha256": "758b803959924ba54f3f930a25447ff8a2e6e98ad594708fe889ce004426bb21",
+        "finish_reason": "stop",
+        "errors": [],
+        "dropped_facts": [
+          {
+            "index": 0,
+            "errors": [
+              {
+                "loc": [
+                  "evidence"
+                ],
+                "type": "string_too_short",
+                "msg": "String should have at least 1 character"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "scoring_status": "Working-eval development; assistant-inspected canonical-fact alignment. Not independent human acceptance.",
+  "score_interpretation": {
+    "DM-025": "Useful recovery of the missing input-type question: one extra whole match and one fact.",
+    "RG-230": "One extra whole match and fact from repeating an explicitly supplied address-element requirement. This is a stale-label reward, not a quality improvement.",
+    "acceptance": "Schema-repair work verified. Overall qualification acceptance remains open because labels and supplied-fact binding still need attention."
+  },
+  "tests": {
+    "passed": 417,
+    "subtests_passed": 4,
+    "command": "env PYTHONPATH=. .venv/bin/python -B -m pytest -q -p no:cacheprovider tests/enquiry_workflow tests/enquiry_interpretation tests/model_gateway tests/test_comparison_pricing.py",
+    "result": "417 passed, 4 subtests passed in 6.90s"
+  }
+}

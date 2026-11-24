@@ -1,0 +1,516 @@
+{
+  "upstream": {
+    "repository": "https://github.com/ssshahid99/location-enquiry-assistant",
+    "revision": "ec8d817e853a2a8eda00f4980334b0051c38e6b3",
+    "ref": "deepshikha/lbs-copilot"
+  },
+  "files": {
+    "copilot/streamlit_ui/streamlit_app.py": {
+      "reuse": "adapted",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "746a2996f7830072680f3a48c48311718ccf2498",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/746a2996f7830072680f3a48c48311718ccf2498"
+        }
+      ]
+    },
+    "copilot/config/approvers.yaml": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/config/escalation_policy.yaml": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "62db1b217d01e9fd1d15fe135ce3514b204771dd",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/62db1b217d01e9fd1d15fe135ce3514b204771dd"
+        }
+      ]
+    },
+    "copilot/config/escalation_rules.yaml": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/config/freshness.yaml": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "ebb39df93b2bd2722c75ad9f5891fc91867f56e8",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/ebb39df93b2bd2722c75ad9f5891fc91867f56e8"
+        }
+      ]
+    },
+    "copilot/config/sources.yaml": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "434e40e808f31eec1f607259dfd4ff482819ff77",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/434e40e808f31eec1f607259dfd4ff482819ff77"
+        }
+      ]
+    },
+    "copilot/rag/data/processed/chunks.jsonl": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "434e40e808f31eec1f607259dfd4ff482819ff77",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/434e40e808f31eec1f607259dfd4ff482819ff77"
+        }
+      ]
+    },
+    "copilot/rag/__init__.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/response_drafting/__init__.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f066c615750a7882b26b46d2bb1abaae443509ec",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f066c615750a7882b26b46d2bb1abaae443509ec"
+        }
+      ]
+    },
+    "copilot/case_storage/sandbox.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f066c615750a7882b26b46d2bb1abaae443509ec",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f066c615750a7882b26b46d2bb1abaae443509ec"
+        }
+      ]
+    },
+    "copilot/rag/document_indexing/__init__.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_indexing/bm25.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_indexing/build_index.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_indexing/embed.py": {
+      "reuse": "adapted",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "434e40e808f31eec1f607259dfd4ff482819ff77",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/434e40e808f31eec1f607259dfd4ff482819ff77"
+        }
+      ]
+    },
+    "copilot/rag/document_indexing/vector_store.py": {
+      "reuse": "adapted",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "434e40e808f31eec1f607259dfd4ff482819ff77",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/434e40e808f31eec1f607259dfd4ff482819ff77"
+        }
+      ]
+    },
+    "copilot/rag/document_ingestion/__init__.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_ingestion/build_sources.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_ingestion/chunk.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "434e40e808f31eec1f607259dfd4ff482819ff77",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/434e40e808f31eec1f607259dfd4ff482819ff77"
+        }
+      ]
+    },
+    "copilot/rag/document_ingestion/fetch.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_ingestion/freshness.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "ebb39df93b2bd2722c75ad9f5891fc91867f56e8",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/ebb39df93b2bd2722c75ad9f5891fc91867f56e8"
+        }
+      ]
+    },
+    "copilot/rag/document_ingestion/parse_html.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_ingestion/parse_openapi.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_ingestion/parse_stackoverflow.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_ingestion/run_ingest.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "ebb39df93b2bd2722c75ad9f5891fc91867f56e8",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/ebb39df93b2bd2722c75ad9f5891fc91867f56e8"
+        }
+      ]
+    },
+    "copilot/rag/document_retrieval/__init__.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/rag/document_retrieval/hybrid.py": {
+      "reuse": "adapted",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f066c615750a7882b26b46d2bb1abaae443509ec",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f066c615750a7882b26b46d2bb1abaae443509ec"
+        }
+      ]
+    },
+    "copilot/rag/document_retrieval/query_analyzer.py": {
+      "reuse": "adapted",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f488cce3e522c0ad7c21c751389000b06069a142",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f488cce3e522c0ad7c21c751389000b06069a142"
+        }
+      ]
+    },
+    "copilot/rag/document_retrieval/rerank.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/safety/__init__.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/safety/escalation.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/safety/escalation_policy.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "62db1b217d01e9fd1d15fe135ce3514b204771dd",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/62db1b217d01e9fd1d15fe135ce3514b204771dd"
+        }
+      ]
+    },
+    "copilot/safety/pii.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f066c615750a7882b26b46d2bb1abaae443509ec",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f066c615750a7882b26b46d2bb1abaae443509ec"
+        }
+      ]
+    },
+    "copilot/case_storage/__init__.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/case_storage/cases.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "746a2996f7830072680f3a48c48311718ccf2498",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/746a2996f7830072680f3a48c48311718ccf2498"
+        }
+      ]
+    },
+    "copilot/case_storage/db.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "ebb39df93b2bd2722c75ad9f5891fc91867f56e8",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/ebb39df93b2bd2722c75ad9f5891fc91867f56e8"
+        }
+      ]
+    },
+    "copilot/case_storage/handlers.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f066c615750a7882b26b46d2bb1abaae443509ec",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f066c615750a7882b26b46d2bb1abaae443509ec"
+        }
+      ]
+    },
+    "copilot/case_storage/review.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "ebb39df93b2bd2722c75ad9f5891fc91867f56e8",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/ebb39df93b2bd2722c75ad9f5891fc91867f56e8"
+        }
+      ]
+    },
+    "copilot/case_storage/schema.sql": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f066c615750a7882b26b46d2bb1abaae443509ec",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f066c615750a7882b26b46d2bb1abaae443509ec"
+        }
+      ]
+    },
+    "copilot/case_storage/traces.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "ebb39df93b2bd2722c75ad9f5891fc91867f56e8",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/ebb39df93b2bd2722c75ad9f5891fc91867f56e8"
+        }
+      ]
+    },
+    "tests/rag/test_chunk_limit.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "434e40e808f31eec1f607259dfd4ff482819ff77",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/434e40e808f31eec1f607259dfd4ff482819ff77"
+        }
+      ]
+    },
+    "tests/rag/test_cover.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f066c615750a7882b26b46d2bb1abaae443509ec",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f066c615750a7882b26b46d2bb1abaae443509ec"
+        }
+      ]
+    },
+    "tests/rag/test_embed_endpoint.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "434e40e808f31eec1f607259dfd4ff482819ff77",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/434e40e808f31eec1f607259dfd4ff482819ff77"
+        }
+      ]
+    },
+    "tests/rag/test_freshness.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "ebb39df93b2bd2722c75ad9f5891fc91867f56e8",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/ebb39df93b2bd2722c75ad9f5891fc91867f56e8"
+        }
+      ]
+    },
+    "copilot/response_drafting/drafter.py": {
+      "reuse": "adapted",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f066c615750a7882b26b46d2bb1abaae443509ec",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f066c615750a7882b26b46d2bb1abaae443509ec"
+        }
+      ]
+    },
+    "copilot/response_drafting/schemas.py": {
+      "reuse": "adapted",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "f066c615750a7882b26b46d2bb1abaae443509ec",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/f066c615750a7882b26b46d2bb1abaae443509ec"
+        }
+      ]
+    },
+    "copilot/config/pricing.yaml": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "746a2996f7830072680f3a48c48311718ccf2498",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/746a2996f7830072680f3a48c48311718ccf2498"
+        }
+      ]
+    },
+    "copilot/pricing_tools/__init__.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "7b89516548929def0417ee77bc0ed80a0c17b6fb",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/7b89516548929def0417ee77bc0ed80a0c17b6fb"
+        }
+      ]
+    },
+    "copilot/pricing_tools/pricing_calc.py": {
+      "reuse": "imported",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "746a2996f7830072680f3a48c48311718ccf2498",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/746a2996f7830072680f3a48c48311718ccf2498"
+        }
+      ]
+    },
+    "copilot/pricing_tools/pricing_intent.py": {
+      "reuse": "adapted",
+      "authors": [
+        {
+          "author": "Deepshikha",
+          "commit": "393e4db7bcabfabd51f3ac1bc40b56d342bce304",
+          "url": "https://github.com/ssshahid99/location-enquiry-assistant/commit/393e4db7bcabfabd51f3ac1bc40b56d342bce304"
+        }
+      ]
+    }
+  },
+  "workflow_references": {
+    "critic": "https://github.com/ssshahid99/location-enquiry-assistant/blob/ec8d817e853a2a8eda00f4980334b0051c38e6b3/lbs-copilot/src/lbs_rag/agent/critic.py",
+    "orchestrator": "https://github.com/ssshahid99/location-enquiry-assistant/blob/ec8d817e853a2a8eda00f4980334b0051c38e6b3/lbs-copilot/src/lbs_rag/agent/orchestrator.py"
+  },
+  "inherited": {
+    "files": [
+      "copilot/comparison_engine.py",
+      "copilot/conversation_state/state.py",
+      "copilot/registered_tools/tool_registry.py"
+    ],
+    "author": "Vinayagam Raja",
+    "commit": "ca2437da503df9805c511a8ce29efa4b37ae34b9",
+    "interpretation_refs": [
+      "feat/interpretation-step",
+      "feat/interpretation-validation"
+    ]
+  }
+}

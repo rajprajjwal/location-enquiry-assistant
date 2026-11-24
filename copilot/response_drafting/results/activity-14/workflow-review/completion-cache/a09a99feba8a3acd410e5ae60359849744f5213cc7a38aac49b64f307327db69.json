@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\",\"reason\":\"The error code REQUEST_DENIED suggests the request is missing an API key or the key is invalid. To diagnose this, we need the actual redacted request to verify the key is correctly included and formatted.\"}",
+  "raw": "{\"decision\":\"request_reproduction\",\"reason\":\"The error code REQUEST_DENIED suggests the request is missing an API key or the key is invalid. To diagnose this, we need the actual redacted request to verify the key is correctly included and formatted.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2143,
+    "completion_tokens": 51,
+    "total_tokens": 2194
+  },
+  "latency_ms": 1469,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

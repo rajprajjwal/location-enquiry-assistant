@@ -1,0 +1,47 @@
+[
+  {
+    "record_id": "GT-LBS-AC-094",
+    "query": "How do we restrict autocomplete results to India on each provider?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-094",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-088",
+    "query": "Our prepaid Ola credits ran out and autocomplete stopped for paying users. Can you restore it now?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-AC-088",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-047",
+    "query": "Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DIR-047",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-117",
+    "query": "Google vs Mapbox reverse geocoding for 500,000 lookups a month (display only, no storage)?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-RG-117",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-114",
+    "query": "Existing Google project: 150,000 traffic-aware Distance Matrix elements a month in India. Cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DM-114",
+    "fold": 3
+  }
+]

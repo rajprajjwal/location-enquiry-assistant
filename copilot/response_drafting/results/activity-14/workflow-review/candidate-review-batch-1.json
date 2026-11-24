@@ -1,0 +1,242 @@
+[
+  {
+    "record_id": "GT-LBS-AC-213",
+    "query": "We only operate in India. Which autocomplete providers are India-focused, and how do we keep global ones inside India?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether you need points of interest as well as addresses?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need POIs as well as addresses?",
+        "facts": [
+          "Whether points of interest are required in addition to addresses."
+        ]
+      }
+    ],
+    "questions_sha256": "9a5d368c1d3cf9df5116d8904b95986852dacbe9353984f2a49ed2e6c0db498f",
+    "gold_sha256": "3bcc0049a42d465b6c0afe8efe06d1f84e84802ecc75e89d2cc151e965cbe051"
+  },
+  {
+    "record_id": "GT-LBS-AC-227",
+    "query": "How do I keep Ola Autocomplete results inside a 5 km radius of the user?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether you require a hard geographic restriction or a location bias is acceptable?"
+    ],
+    "gold": [
+      {
+        "question": "Do you want a hard restriction or just a bias?",
+        "facts": [
+          "Whether a hard restriction or a geographic bias is required."
+        ]
+      }
+    ],
+    "questions_sha256": "e8056eb267dbd06f0a2bb821db0423cb0405f177cb558c190121df155c7dd48b",
+    "gold_sha256": "82ea3451ac42f745afd7c592aade5a4dd54da0957c8d1d0204aea1eb9282bfb9"
+  },
+  {
+    "record_id": "GT-LBS-DIR-013",
+    "query": "We're a Jaipur tour operator and expect about 9,500,000 route (directions) requests a month, all in India. Which routing APIs could we use, and what would each cost per month in rupees?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm whether you already have an enabled Google project?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need live-traffic ETAs or are static routes enough?",
+        "facts": [
+          "Whether live-traffic ETAs are required or static routes are sufficient."
+        ]
+      },
+      {
+        "question": "What vehicle types (car, bike, auto, truck) do you route?",
+        "facts": [
+          "The vehicle types to be routed."
+        ]
+      },
+      {
+        "question": "Is your Google Cloud project new or existing?",
+        "facts": [
+          "Whether the Google Cloud project is new or existing."
+        ]
+      }
+    ],
+    "questions_sha256": "0e263f05fe474e912f63da527142e2ac01b84ebdb4d5a4e8b0ed2e49c3b510b5",
+    "gold_sha256": "5e67aef2f304db84c8e99861822ae9feff3e642ede9d1b67f0302a90d8304e73"
+  },
+  {
+    "record_id": "GT-LBS-DIR-014",
+    "query": "We're a Kochi school-bus tracking provider and expect about 12,000,000 route (directions) requests a month, all in India. Which routing APIs could we use, and what would each cost per month in rupees?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm whether you already have an enabled Google project?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need live-traffic ETAs or are static routes enough?",
+        "facts": [
+          "Whether live-traffic ETAs are required or static routes are sufficient."
+        ]
+      },
+      {
+        "question": "What vehicle types (car, bike, auto, truck) do you route?",
+        "facts": [
+          "The vehicle types to be routed."
+        ]
+      },
+      {
+        "question": "Is your Google Cloud project new or existing?",
+        "facts": [
+          "Whether the Google Cloud project is new or existing."
+        ]
+      }
+    ],
+    "questions_sha256": "0e263f05fe474e912f63da527142e2ac01b84ebdb4d5a4e8b0ed2e49c3b510b5",
+    "gold_sha256": "5e67aef2f304db84c8e99861822ae9feff3e642ede9d1b67f0302a90d8304e73"
+  },
+  {
+    "record_id": "GT-LBS-DIR-047",
+    "query": "Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm maximum stops or waypoints per route?",
+      "Could you confirm expected monthly API workload?",
+      "Could you confirm whether you already have an enabled Google project and whether you have an Ola Maps contract?"
+    ],
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "The number of route requests per month."
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "Whether live-traffic ETAs are required."
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "The vehicle types."
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "The number of stops per route."
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "Whether an existing Google project is available.",
+          "Whether an Ola contract is available."
+        ]
+      }
+    ],
+    "questions_sha256": "82eea74c312a08d77c6631fb5f2fff222d073ed98e02fe114b2691fb642e6909",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d"
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "query": "Hi, we're an intercity bus aggregator and want a directions/routing API for route previews between cities. What do you recommend?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm expected monthly API workload?",
+      "Could you confirm maximum stops or waypoints per route?",
+      "Could you confirm whether you already have an enabled Google project and whether you have an Ola Maps contract?"
+    ],
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "The number of route requests per month."
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "Whether live-traffic ETAs are required."
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "The vehicle types."
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "The number of stops per route."
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "Whether an existing Google project is available.",
+          "Whether an Ola contract is available."
+        ]
+      }
+    ],
+    "questions_sha256": "a0eb8dede301abbad86c9376b1d164647f198812a107ea47e70922d4ef5c5c52",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d"
+  },
+  {
+    "record_id": "GT-LBS-DIR-049",
+    "query": "Hi, we're a field-sales app for FMCG reps in UP and want a directions/routing API for daily beat plans with 15–20 outlets. What do you recommend?",
+    "history": [],
+    "questions": [
+      "Could you confirm expected monthly API workload?",
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm maximum stops or waypoints per route?",
+      "Could you confirm whether you already have an enabled Google project and whether you have an Ola Maps contract?"
+    ],
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "The number of route requests per month."
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "Whether live-traffic ETAs are required."
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "The vehicle types."
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "The number of stops per route."
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "Whether an existing Google project is available.",
+          "Whether an Ola contract is available."
+        ]
+      }
+    ],
+    "questions_sha256": "0e6f104bd12cc35c9fe9b5323eff9e82c865f85ecf21678f91b2ec2d0db81505",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d"
+  }
+]

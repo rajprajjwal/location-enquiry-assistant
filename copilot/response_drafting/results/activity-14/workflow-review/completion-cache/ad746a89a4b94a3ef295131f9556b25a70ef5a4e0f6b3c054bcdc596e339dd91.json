@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"credential_distribution\",\n      \"value\": false,\n      \"evidence\": \"whether traffic is spread across several API keys or tokens\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"credential_distribution\"],\n      \"decision_impact\": \"Apply provider rate-limit scopes to the actual traffic distribution.\"\n    }\n  ],\n  \"reason\": \"The customer's peak request rate of 500 directions requests per minute needs to be evaluated against provider-specific rate limits. The distribution of traffic across API keys or tokens affects how these limits are applied and whether the customer will hit any provider-specific limits.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"credential_distribution\",\n      \"value\": false,\n      \"evidence\": \"whether traffic is spread across several API keys or tokens\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"credential_distribution\"],\n      \"decision_impact\": \"Apply provider rate-limit scopes to the actual traffic distribution.\"\n    }\n  ],\n  \"reason\": \"The customer's peak request rate of 500 directions requests per minute needs to be evaluated against provider-specific rate limits. The distribution of traffic across API keys or tokens affects how these limits are applied and whether the customer will hit any provider-specific limits.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2119,
+    "completion_tokens": 141,
+    "total_tokens": 2260
+  },
+  "latency_ms": 3438,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

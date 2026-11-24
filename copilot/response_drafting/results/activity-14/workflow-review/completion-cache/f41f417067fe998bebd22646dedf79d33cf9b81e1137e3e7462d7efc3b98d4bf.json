@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"Bengaluru\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"departure_time_mode\"],\n      \"decision_impact\": \"Determine current versus future-departure traffic requirements.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about directions options that account for live traffic versus static ones, which requires understanding whether the traffic data needs to be current or for future departures.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"Bengaluru\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"departure_time_mode\"],\n      \"decision_impact\": \"Determine current versus future-departure traffic requirements.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about directions options that account for live traffic versus static ones, which requires understanding whether the traffic data needs to be current or for future departures.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1887,
+    "completion_tokens": 120,
+    "total_tokens": 2007
+  },
+  "latency_ms": 3083,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

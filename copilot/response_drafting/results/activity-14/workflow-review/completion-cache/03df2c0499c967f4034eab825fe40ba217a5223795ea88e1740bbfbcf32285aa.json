@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\", \"reason\":\"The customer is reporting that the reverse geocoding result is not accurate, specifically that it returns the neighbor's house number instead of the correct address. This suggests an issue with how the results are being displayed or interpreted, not necessarily with the API's response. The diagnostic decision 'display_result' is appropriate as it addresses the rendering or display of the API's response, distinguishing between the raw API result and the rendering.\"}",
+  "raw": "{\"decision\":\"display_result\", \"reason\":\"The customer is reporting that the reverse geocoding result is not accurate, specifically that it returns the neighbor's house number instead of the correct address. This suggests an issue with how the results are being displayed or interpreted, not necessarily with the API's response. The diagnostic decision 'display_result' is appropriate as it addresses the rendering or display of the API's response, distinguishing between the raw API result and the rendering.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1429,
+    "completion_tokens": 95,
+    "total_tokens": 1524
+  },
+  "latency_ms": 2363,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

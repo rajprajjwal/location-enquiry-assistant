@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The customer is encountering an issue with the Google Directions URL having 23 lat/lng waypoints and sometimes being rejected as too long. To diagnose this, we need to reproduce the issue by inspecting the actual request, as the problem might be related to URL length limits or encoding issues as mentioned in the documentation.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The customer is encountering an issue with the Google Directions URL having 23 lat/lng waypoints and sometimes being rejected as too long. To diagnose this, we need to reproduce the issue by inspecting the actual request, as the problem might be related to URL length limits or encoding issues as mentioned in the documentation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1381,
+    "completion_tokens": 75,
+    "total_tokens": 1456
+  },
+  "latency_ms": 1943,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

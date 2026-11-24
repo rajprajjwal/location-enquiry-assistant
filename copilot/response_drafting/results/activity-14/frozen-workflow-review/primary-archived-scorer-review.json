@@ -1,0 +1,1314 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "826bfc2184299941f21a5f90e902c79bd718ac90900af0a09d9f4321c6583571",
+  "gold_sha256": "7c5c44fb2f1d216957585b7edaf765406b791da2c13decd6c05cd0e4d63000fb",
+  "reviewer": "Primary assistant semantic judgements; archived-scorer arithmetic cross-check. Not independent human acceptance.",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-031",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "10fdc85071f162a92f94c0b20cd6ab43ee730c535bbd0f70dc32e29d1a09624e",
+      "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-032",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "c48d14aaddf7ac61c30cd2bdb1b08c0de3d281b589d94114bf624cf153969a3e",
+      "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-033",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "3181dc69da9da53e7b4010409e0898335cc63c73649c9fc339a9d9299651585c",
+      "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-045",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "f470ade661f2d21e84e1f02c9068f61ca9337b5d94532c22b4315b351f9d5ae8",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-051",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "edd803a6bd0de8bf90b1d714066b8881645b71d88fecc39e3eed9481dd58a5b1",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-068",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "0c50d9f964ed1246afdf715b72a875cb22334876fd871fc04f824ac85a8e6877",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-073",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "a3ff510169ac3fb3c7a1eac8a2c759e382f148f79520ff2364cb13110ec242ef",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-081",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "99308dc33236f27cff415873584775ca16bb21242636c181a545d7387061fd00",
+      "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-086",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "47829003fec79f841afe866dbe7f5e16076d4d932b2a3f4dfa130f88f8ad3c2e",
+      "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-089",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "5ed8510cdb1e56989545096c019a40fa68c2e4afd3d85331d253df48408fb643",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "b859c3bc1aa32927f4523c72f74810edf8fb37e67da2a40edb23d1ce16569782"
+    },
+    {
+      "record_id": "GT-LBS-AC-205",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "0eae0df9371cca59618e71817481c9f25cf169180b913707afdca094189b3f11",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "08b19e79070ac5af35b2893e3acb2035e9ffb16bfd6e59928dac6b30600adc37"
+    },
+    {
+      "record_id": "GT-LBS-AC-210",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "47e7c1d6feaa5b67d6461ded13819622a027cbfc1ce371047acdafef73edea34",
+      "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-215",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "fd6b8eba8073d14a9054400531de5ab611c170937ab1fe51480cc0d11dbcb98c",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "c335993b2f2c5adbded601fae7c8ccd9120459eb6cca11c6da38c7219d21aa22"
+    },
+    {
+      "record_id": "GT-LBS-AC-222",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "265bcc15920c2817963b1ba2cef36ba2c051815b8ff592ff5fe7d4a6cdba0195",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-229",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              3,
+              3
+            ]
+          ]
+        }
+      },
+      "reason": "The first question requests peak rate and target regions, but not monthly volume. The second requests storage and redistribution. Generic API-backend operation does not identify ownership of each generated app provider account or deployment; export is not requested. No gold group is fully covered.",
+      "prediction_row_sha256": "6b6dd7c4496942cdbdefb78314b17135fff91ac83c7fc96c379d37b0f698245b",
+      "questions_sha256": "b4cdc0b52f64f857ba2235f16525c9c845e2b2a8b34ce2aaa37b4987ffccb929",
+      "gold_sha256": "0463a75f1e2934a871bb2f585ad7b5fa28529fc847ca1cd99f5c4106ff6bf47e"
+    },
+    {
+      "record_id": "GT-LBS-AC-230",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "686a92b49c16e7b472f56fcfd6df4de47e4c08df7bec231a5f945a3dec288449",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-231",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "The second question requests whether the results must be stored, which covers storage versus ephemeral use for the selected coordinates in this context. It also bundles independent backend-operation, redistribution and resale decisions, so it is not a whole match to the storage-only gold group. Peak rate is not monthly volume, geography is not a billing mode, and who operates a backend does not ask whether public Nominatim is proposed.",
+      "prediction_row_sha256": "7586b6a97d3752cf50cb9a4b0ed20802731e3757822ea76f07f7339765a8c87e",
+      "questions_sha256": "833e54f4d332cfe3b255fe5626589499da87c729dd19d17774acddd6ea39d887",
+      "gold_sha256": "913192b4ebee74cefbd7f21a1ab5fb000befdb43f0a264ca5d3adeefcbd9c8ee"
+    },
+    {
+      "record_id": "GT-LBS-AC-234",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "114571498971a4427c817de192df452582772bf061d53819b8e438dcb814d6b4",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "556b2e9e796b955673949835877487498f82fb8dc2abf74c1f5a538131bb1192"
+    },
+    {
+      "record_id": "GT-LBS-AC-235",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "61e8df9129638053e48ac3c97e2887b78c0862d2c053edbb9c7319304a88b405",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-AC-236",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Place Details after selection does not ask whether usage belongs to one or multiple billing accounts.",
+      "prediction_row_sha256": "6a30d51911b68fe000e77c66ee1dccecc79c1bf1deec88b7bdb291f21474407a",
+      "questions_sha256": "84a0006029c68fce916240d1164a823dbbc7d039127876e412d5459e763c69a9",
+      "gold_sha256": "e61182e5271a916c7d63ef086f1700c7a1c0a6e83d1212570f52dec60e650f80"
+    },
+    {
+      "record_id": "GT-LBS-DIR-011",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "The three independent questions cover live-traffic versus static routing, vehicle/travel modes and new versus existing Google project. The two-wheeler business description is not treated as an additional asked fact; scoring follows the unchanged gold.",
+      "prediction_row_sha256": "842d8b98b5319fc3636a6e3dcd4ce3edf5bdb79acaf375f221253d92aaeea2b0",
+      "questions_sha256": "c5c9fc67cf5e38b7d4972f3cf3e28ab9868948777be5f0e27ee15fb5fc1092f8",
+      "gold_sha256": "2e05a45ff7b2b0ab1b488c83142b514bf15b70c2b84baa084893228268a7ae16"
+    },
+    {
+      "record_id": "GT-LBS-DIR-012",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "All three requested decisions are covered with equivalent meanings: traffic need, vehicle/travel types and Google project status.",
+      "prediction_row_sha256": "04031e32ad907478e9c97cedd6a06075b6cd2f97ee9e535a629896bd3102eb8d",
+      "questions_sha256": "c5c9fc67cf5e38b7d4972f3cf3e28ab9868948777be5f0e27ee15fb5fc1092f8",
+      "gold_sha256": "2e05a45ff7b2b0ab1b488c83142b514bf15b70c2b84baa084893228268a7ae16"
+    },
+    {
+      "record_id": "GT-LBS-DIR-020",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "de11da3ed605b82364f7b1a2ccadf45daba01f507c5fcb1a89ce47cfb6c12f56",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "fc3e1c812c0ba7cd6fc2e0d397b1f8f2d24fad18cc6126fb342528355bdc2131"
+    },
+    {
+      "record_id": "GT-LBS-DIR-021",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "5221bdcbb105720171f83d57ed27d840d54cb2e8f1aef08813345ddd07978589",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "fc3e1c812c0ba7cd6fc2e0d397b1f8f2d24fad18cc6126fb342528355bdc2131"
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "7f106d728b39c4e171c6bd59a4e3cdc470419444b89aa71aee62ae27d0ab6d55",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "22e378643bc1994ced129f1769ea271226b150b0ed4a7d6fcfa895a8c89dc41a",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "40d6954cca8ff76ab4c934a1d5b61b1b070958320a635c214f759cdb9d81b993"
+    },
+    {
+      "record_id": "GT-LBS-DIR-084",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "028a726ba1d3778fbdd021e691fa30090455af530e28791a4628b1ec772307dd",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "a1b6d8a620fd40f4de97eb867b65fb6e9f8e52fc3b50078786a3bd0fea418060"
+    },
+    {
+      "record_id": "GT-LBS-DIR-085",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "5976e38bd918cdb5cb1d7702cc5073846e4c606be4ab2d878b3d00b801c74aa7",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "216d99e7b0ff6f765822cfabe267c65f362252b4efa55598598c6743edf1bc54"
+    },
+    {
+      "record_id": "GT-LBS-DIR-100",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "e38fc99cdfe9468e0be7eb80451f78da3143b4bc39ac424c8264a68e478d996f",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DIR-108",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "70b14750c97b1085c28f4a6fd85914af859d3bdc09f8020b87847ac832005337",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "b48791514f1cbfe7afb283cba6afe50ead8f671288a8241c99a1f7dee6a16ce1",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DIR-201",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "70a34881b47e26318dd5942d03da73bcbe81c1f9b3511365dfa11a4da9199227",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "9c3c7ea33edf95503e0c3ddf02d338b2ee10247ef40cbb69b49bfbe39b76d57f"
+    },
+    {
+      "record_id": "GT-LBS-DIR-210",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "d8bdb4501a96a80ba2fea9eae077e0cc4be4af53b254d9d28217ece034601941",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "8bac9867a71299b8aaf052f4f5fedacbe5062c72e5a62f7fe82f5521cbabcbb6"
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Voice versus text is instruction modality. It does not ask whether map labels must also be translated, which is a separate output-scope decision.",
+      "prediction_row_sha256": "ffae08070932b2d9d11df6495cfa11643fd6cc1c7cc92f0d49509a9f8eeff186",
+      "questions_sha256": "b0ac1e3f3bd821847efc0a0a702964d1426c555d8fd83bb022db71650eedc332",
+      "gold_sha256": "ac3b8f3a129296d3e9c9eac2e9db8609ae852101b5c6f2fa8f90e134cbd2a647"
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "483e0d23de577daf390d02fd43991f74b8281c28641b34d567c27ccc25d7feb6",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DIR-222",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "034187c1b78e304a818f38e46085e61f9ab277065d22b8ec011287f8872d1389",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "e3da37ca0e7db9439c5f6c4e19d694411f4422cec9a1119d0bbbaab51bbe3bec"
+    },
+    {
+      "record_id": "GT-LBS-DIR-223",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "4990f74e3de988c71d8ccbcc2cb836a6715066f2b44dfc3a64f01d967cd5c944",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DIR-224",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "8eddf8d43028bb93b93527cf91904ed9abed165876c4c9046629024dca1c14bb",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DIR-225",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "dd18a251c5db97bc7230d9ffbe8481419a9c02c923da108da2841b42b9b555d9",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DIR-226",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "d874957921b0d479bcad5359e1f8ffafa18dd6f2b78bffd4d5df8d010290837f",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DM-026",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "343cec2201a37ca5a66e3e3e7d8985a5a88d3a06a6c422e1686f21f7221c20b3",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "d49f4c931dac92dab8f96897c0f973e87c6f94a6f26103fb0ce7691363b868fb"
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "The input-format choice is explicitly requested. Place IDs are an additional option within that same decision, not an additional independent requirement.",
+      "prediction_row_sha256": "6de2097ffc0e650bebcd265638f069fe50a00b92958d69b6a526e51befff8269",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "gold_sha256": "d49f4c931dac92dab8f96897c0f973e87c6f94a6f26103fb0ce7691363b868fb"
+    },
+    {
+      "record_id": "GT-LBS-DM-059",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "04ec9e8481c9fba19347656edbfe3a64d2c8a628bbfc86c906914035aeb34786",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DM-085",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "3a9e665d1a89a39d990c4166bfa0e1b881ded01f7610db1b1ae6bfdeddde25ff",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "28b42b0d933c1289c3124952b8b1b82cae8090f842826d8af7b4ba01bd223cf8"
+    },
+    {
+      "record_id": "GT-LBS-DM-087",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "5d5a88a6eb236adbe6b6969cc94f06bc5ba263db4e72dc9a79a48f1c52f3c4ca",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "85fdd2d7256a4b87107a77c4e62a53440f6b70a7d093c86883714cc87476b94a"
+    },
+    {
+      "record_id": "GT-LBS-DM-094",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "beb36538665de3f0f2c1e4c62ad9c1b4c6512a83f364e01b9ced05dcdaec8a40",
+      "questions_sha256": "173f4b73dc29f30fd8ea50d55e95248ead089a57e1b5b45cd77175f346790483",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DM-097",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "91b40504a84db40cd8bd6118d8915ff7adcf0620b600915d09b37e202ccdb393",
+      "questions_sha256": "165b79a60e91cf2c94c067292186b3f1fe144098e62afb1049855901ce85e1f3",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DM-117",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "08b06d92253d54ffe71fbfc89cac4866e6c4b1ebcc52134e5f152a3a4f8e52c0",
+      "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DM-118",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "5e4a5b77ead49aadf9f447ee35fc2e404f42a463a36be67e64b0d9f1b7285f29",
+      "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DM-201",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "0f2a43661f456b8e1e1a7e151a698a791deff4cc3bec9a069d8d81a731c20451",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "9a12c62b393f5776930c1c1c73cebd67fc0976ff87d7025a447fbad532f0b52e"
+    },
+    {
+      "record_id": "GT-LBS-DM-214",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "7f100c0d3c63cc4be587371ded0a29a6fafd597e5ab9c39c5b978feb119af646",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "03d2bda652e3b0332c41fa2cf8428b8bc3e6ec75a86562338b291788efb4ad58"
+    },
+    {
+      "record_id": "GT-LBS-DM-218",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "279b46a60907e00e2810b56fb93ee569cd6d94cb93328b6a6b19b333ffd75606",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "de87ef2b379b05d016a6effd5e6a6da16c566b9b787948da468af5a96b3d8028"
+    },
+    {
+      "record_id": "GT-LBS-DM-221",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "Live-traffic need is requested, but the same question also asks the independent vehicle/travel-mode requirement. That additional decision prevents a whole match to the traffic-only gold group; the traffic fact is covered.",
+      "prediction_row_sha256": "03c8671e38bcb2c57e3e48fbc442d6491971ce8457fc4f401d6457847373552b",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "gold_sha256": "716aaf448930ef0c9406ce351117aeae2897248f5612a332ebb54eb47ec9efc4"
+    },
+    {
+      "record_id": "GT-LBS-DM-222",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "The traffic fact is covered. The bundled independent travel-mode requirement is absent from the gold group, so there is no whole-question match.",
+      "prediction_row_sha256": "ea2b044bb5ba0965b0ae28cd04cd3cc0a124420b4cc5042a98242ae76bd4e292",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "gold_sha256": "716aaf448930ef0c9406ce351117aeae2897248f5612a332ebb54eb47ec9efc4"
+    },
+    {
+      "record_id": "GT-LBS-DM-224",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "dc211ce28834f4c817e1e4a31ce648654cf75232419d6ddfdf0619d29b76d500",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DM-226",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      "reason": "The question asks about live-traffic capability. Origin and destination counts describe matrix dimensions rather than the overall usage volume needed for pricing qualification. Billing country, billing location, Legacy enablement, display requirements and retention/redistribution rights are not asked.",
+      "prediction_row_sha256": "102379a85eb53049243692832b7cd8dbe357c1575699cd2b48b30fed6f65ea0b",
+      "questions_sha256": "173f4b73dc29f30fd8ea50d55e95248ead089a57e1b5b45cd77175f346790483",
+      "gold_sha256": "ba9618753b1a70937d8decfb7b1aec8cc82c0057ed9a2ee6ec98e926f600fd51"
+    },
+    {
+      "record_id": "GT-LBS-DM-227",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              1,
+              4
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              2
+            ],
+            [
+              2,
+              2,
+              3
+            ],
+            [
+              3,
+              3,
+              1
+            ],
+            [
+              3,
+              3,
+              2
+            ],
+            [
+              3,
+              3,
+              3
+            ]
+          ]
+        }
+      },
+      "reason": "All three gold groups are fully covered: typical and maximum origin/destination counts; matrices per hour/month and concurrency; traffic regime, departure timing and whether requests can be split.",
+      "prediction_row_sha256": "3248deb3818333675c77500950c51d94eaca2f2fd68e9b758c2f21d8c87b3bab",
+      "questions_sha256": "8fd0ae53fcd6789a5f70f137f31abe67725e6e82dfa25937042f696ff77b2ff0",
+      "gold_sha256": "04cd19747b36e44b95bd541bc966e92efd9dc8bd04af5a1aee1e68193dd7dd5c"
+    },
+    {
+      "record_id": "GT-LBS-DM-231",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "3dc929ed2e38332810dd45a678530bf6767fa7c131eb4d227ddab03092730511",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DM-232",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "d264d0eb718f1c9422f2d700f5b895af540542f4d92661d76d67e0357fbb0c63",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-DM-233",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "2023afc7d59c2e5917c3a1b5c6a4ea5f65289a94ee05a622497c78cc5fe444ba",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4c3020e1fa7f49bbc30cc931f79bfb10a5f9780c0792ec32eb3d8bba0593e1d7"
+    },
+    {
+      "record_id": "GT-LBS-RG-001",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "8887238c239373c5c7761462ad05f5f75cb65875dd072c928e0ab27e19b7faee",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-RG-005",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "Result-storage need and user-triggered versus periodic lookup use are requested separately with equivalent meanings.",
+      "prediction_row_sha256": "2618e8832ecb972a8a504607649817b4ce66f330de1f27b40cf8e24c9b13e415",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "gold_sha256": "bda936552aada8e2ac38f46fff8b05786fec96dd507e2d2e35c2997188960576"
+    },
+    {
+      "record_id": "GT-LBS-RG-006",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "Both gold groups are fully covered: result storage and lookup trigger.",
+      "prediction_row_sha256": "397e33abff90beb7eb371e39fcabc81b4744b888c052ab21e62115943dcc4271",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "gold_sha256": "bda936552aada8e2ac38f46fff8b05786fec96dd507e2d2e35c2997188960576"
+    },
+    {
+      "record_id": "GT-LBS-RG-007",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "The lookup-trigger question matches the second gold group. Storage is already explicit in the enquiry but is not asked again, so the unchanged first gold group receives no question credit.",
+      "prediction_row_sha256": "2318fe2b554d64fb7f41233ae1eab14f3ee9d4da9f4ed02dde3ab9b9c628695b",
+      "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+      "gold_sha256": "bda936552aada8e2ac38f46fff8b05786fec96dd507e2d2e35c2997188960576"
+    },
+    {
+      "record_id": "GT-LBS-RG-015",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "9f2784233603890c4566b85b11fa00959c455bead3e7ea15c920caadf05a43f5",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-RG-016",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "158590168861205d288ce1881cd7d200170f0280f484438b79c6b5ce20ccb34b",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-RG-021",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "03aa4a10c1e9a1d009d8ae45c4e6495ab8f1e7f3cab625cb536c2e2f328b2687",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-RG-082",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "13d1f2ce1c789b15d3a6ded132bd08d27e7edf1e678dc31f6234340c6b2167d4",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-RG-084",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "08735075b9751e441384defc191a85ebb660fd98cc5e64bd0d397aa8e1c9e306",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-RG-201",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "7cf1784d75f8d48bef1801a501fff43f20ecd27acf0267f4d1a9ab07aa294d85",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "268dc9c28d9c7da002fdb305e3398d07ded27dcf453fedd7d040ca77fca51b2c"
+    },
+    {
+      "record_id": "GT-LBS-RG-212",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "e5460d7ec1c7a4f4e26c21fc002ccfbf0fad5f99ed478d7b6a280c1dcbcd76af",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-RG-213",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "42b9c959039d8cac6558c88865b7f3ecab02c48f924d4ff59a1edc5871d62caa",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-RG-225",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              4,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "reason": "The first question covers monthly workload and peak rate, and the second covers languages. The third includes storage but bundles independent public-endpoint and temporary-result acceptability decisions, preventing a whole storage-only match. It does not ask whether self-hosting is acceptable. The supplied countries are not asked again.",
+      "prediction_row_sha256": "e045a89137febbf5e795662de7b511aeaccdb235aa0144bb399b431c9a48f210",
+      "questions_sha256": "98101ae5f411e04c7c24a901a3849b6ddc2da4ad177343780dcac93111e4bc1c",
+      "gold_sha256": "c82342eb063547ca8accabc296b13a39d7bced066948459a06383f9abc5477e3"
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "3a784a2a436cb816994ff96c394f394fa6c41334be976b9eba833331c81aae76",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "297e055f4bf29d1984ea33ba6cbeb58d506a013de3b0c135304cfe1bac376b65"
+    },
+    {
+      "record_id": "GT-LBS-RG-231",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "e1c0697003c14be6acdde9cbed6e57a63fe954f117bd9e9a50180d21eb05bae5",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "05a66eaaa347bb0a0612b94079958db4bc9babbf068649270a3f9f08f60fa929"
+    },
+    {
+      "record_id": "GT-LBS-RG-232",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "954386622650c50eab927fd3618dd4866582bcc5a8dbeed46eb5c2a36d38eb9f",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "00d37c6ec56c6707435056c565ed708b325ac99053454a1fc3c650c7793417b2"
+    },
+    {
+      "record_id": "GT-LBS-RG-233",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "5d44ebfbb3a219ecab3e1aa2bf22d61faac2a6fffb519bddb2638529e4f76af3",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "67adf497387823f2041ccc2790f590c81082507bae66479c0305132c72c29a6f"
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "3d0d15daef807420ec45c326d55b88616cce111c02f6ebe1168737aca83d150f",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "d2008081cbd1e51ba161ade7e9086138e1810a33b44f6dfd7f3ad1f832a54822"
+    },
+    {
+      "record_id": "GT-LBS-RG-235",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "a899e8b121d1f00cb72e5c054c39164078bebdea5feb787b0e60ef534bf6060b",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "record_id": "GT-LBS-RG-236",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "reason": "Zero matches: the original gold or predicted question list is empty. No label changes or exclusions.",
+      "prediction_row_sha256": "8b9b9415baca292a75ae4518bef3bb421a637672059cf2d67f33f0355ecd9d82",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "primary_review_batches_sha256": {
+    "primary-review-1.json": "e3b7921237374ed739f063008a1f3f95b01bfe7bc3741e0e5a996e39dd985711",
+    "primary-review-2.json": "ac11a42d8a45c593a2cc6e59ace7c3ced9dc5271d738bab0bc4fbed45d02d8fa",
+    "primary-review-3.json": "fe10c1734ecdfc6f1a25dc0e620241e327d3739d73c0df258528ed4a4cc82b92",
+    "primary-review-4.json": "6359df7f8cb94bab3aec8ba48c43b237f17b386b4ea468e377c28799848fa83d"
+  },
+  "archived_scorer_sha256": "2f7dc80a4a075113152eb0e074804f27b1211b513f9b725d581b55511d31d17f"
+}

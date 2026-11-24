@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"alternative_providers\",\n      \"value\": [\"Ola Maps\", \"Mapbox\"],\n      \"evidence\": \"Ola vs Mapbox\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing Ola Maps and Mapbox for autocomplete functionality with 100,000 sessions and 8 keystrokes per session. The missing material decisions are about how autocomplete sessions end for billing and whether keystrokes are debounced, which affects the number of billable API requests.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"alternative_providers\",\n      \"value\": [\"Ola Maps\", \"Mapbox\"],\n      \"evidence\": \"Ola vs Mapbox\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing Ola Maps and Mapbox for autocomplete functionality with 100,000 sessions and 8 keystrokes per session. The missing material decisions are about how autocomplete sessions end for billing and whether keystrokes are debounced, which affects the number of billable API requests.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1069,
+    "completion_tokens": 184,
+    "total_tokens": 1253
+  },
+  "latency_ms": 4219,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

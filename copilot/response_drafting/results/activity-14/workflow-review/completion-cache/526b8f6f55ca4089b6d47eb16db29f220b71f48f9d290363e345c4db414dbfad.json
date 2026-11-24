@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"Hyderabad\",\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"traffic_required\",\n      \"value\": true,\n      \"evidence\": \"under live traffic\"\n    },\n    {\n      \"field\": \"traffic_conditions\",\n      \"value\": \"live\",\n      \"evidence\": \"under live traffic\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Determine vehicle-specific routing support.\"\n    },\n    {\n      \"fields\": [\"monthly_volume\"],\n      \"decision_impact\": \"Estimate the recurring workload and cost.\"\n    },\n    {\n      \"fields\": [\"max_stops\"],\n      \"decision_impact\": \"Check route shape against waypoint limits.\"\n    },\n    {\n      \"fields\": [\"existing_project\", \"ola_contract\"],\n      \"decision_impact\": \"Establish product eligibility and applicable commercial terms.\"\n    }\n  ],\n  \"reason\": \"The customer's requirements include live traffic routing, but the specific travel mode, monthly workload, maximum stops, and eligibility for the product are not provided, which are essential for making informed decisions.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"Hyderabad\",\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"traffic_required\",\n      \"value\": true,\n      \"evidence\": \"under live traffic\"\n    },\n    {\n      \"field\": \"traffic_conditions\",\n      \"value\": \"live\",\n      \"evidence\": \"under live traffic\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Determine vehicle-specific routing support.\"\n    },\n    {\n      \"fields\": [\"monthly_volume\"],\n      \"decision_impact\": \"Estimate the recurring workload and cost.\"\n    },\n    {\n      \"fields\": [\"max_stops\"],\n      \"decision_impact\": \"Check route shape against waypoint limits.\"\n    },\n    {\n      \"fields\": [\"existing_project\", \"ola_contract\"],\n      \"decision_impact\": \"Establish product eligibility and applicable commercial terms.\"\n    }\n  ],\n  \"reason\": \"The customer's requirements include live traffic routing, but the specific travel mode, monthly workload, maximum stops, and eligibility for the product are not provided, which are essential for making informed decisions.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2220,
+    "completion_tokens": 260,
+    "total_tokens": 2480
+  },
+  "latency_ms": 6071,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

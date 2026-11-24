@@ -2,7 +2,7 @@
 
 Purpose: turn each row of the GT workbook (sheet ``Data`` plus the citations
 sheet) into one copilot output envelope that follows ``schemas/``.
-Use case: imported by ``validator/validate_spec.py`` (``map_all``) to build the
+Use case: imported by ``copilot/validation/specification_checks/validate_spec.py`` (``map_all``) to build the
 gold expected outputs; it has no command-line entry point of its own.
 Example: ``map_record`` maps GT-LBS-DIR-011 to an envelope with
 ``tools_expected=["doc_search", "calculator"]``, ``step_count_limit=10`` and

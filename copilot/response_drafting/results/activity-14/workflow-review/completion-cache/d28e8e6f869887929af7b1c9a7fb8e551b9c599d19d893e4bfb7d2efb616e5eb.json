@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding request is returning ZERO_RESULTS, which may be due to the coordinates being in a remote location or not matching any addressable location. The coordinates need to be checked for accuracy and the request parameters should be reviewed to ensure they are correctly configured.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding request is returning ZERO_RESULTS, which may be due to the coordinates being in a remote location or not matching any addressable location. The coordinates need to be checked for accuracy and the request parameters should be reviewed to ensure they are correctly configured.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2069,
+    "completion_tokens": 63,
+    "total_tokens": 2132
+  },
+  "latency_ms": 1742,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

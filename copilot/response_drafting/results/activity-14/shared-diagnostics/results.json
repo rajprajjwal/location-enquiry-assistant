@@ -1,0 +1,86 @@
+{
+  "scope": "16 reviewed working-eval development cases, using locked enquiry/history snapshots",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "metrics": {
+    "integrated": {
+      "predicted": 7,
+      "gold": 7,
+      "matches": 6,
+      "facts": 11,
+      "gold_facts": 12,
+      "questions_on_empty_gold": 0,
+      "f1": 0.8571428571428571,
+      "precision": 0.8571428571428571,
+      "recall": 0.8571428571428571,
+      "fact_recall": 0.9166666666666666
+    },
+    "baseline": {
+      "predicted": 3,
+      "gold": 7,
+      "matches": 0,
+      "facts": 1,
+      "gold_facts": 12,
+      "questions_on_empty_gold": 1,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fact_recall": 0.08333333333333333
+    }
+  },
+  "behavior": {
+    "cases": 16,
+    "preserved": {
+      "route": 16,
+      "next_action": 16,
+      "owner": 16,
+      "approvals": 16,
+      "proposed_actions": 16,
+      "active_questions": 16,
+      "pending_reply": 16,
+      "asked": 16,
+      "answered": 16,
+      "awaiting": 16,
+      "clarification_messages": 16
+    },
+    "excluded_attempts": [],
+    "endpoint_errors": [],
+    "endpoint_calls": 81,
+    "cache_hits": 51,
+    "changes": []
+  },
+  "pending_reply_verification": {
+    "cases": 4,
+    "included_in_question_scores": false,
+    "reply_preserved": 4,
+    "pending_preserved": 4,
+    "excluded_attempts": [],
+    "endpoint_errors": []
+  },
+  "diagnostic_states_restored": 16,
+  "cases_with_retrieved_evidence": 15,
+  "evaluation_binding": {
+    "predictions_sha256": "c549131bd50f87c3ef4ee6745b47c6f3611a09a585afa818f84e8c33c40c21b6",
+    "gold_sha256": "8a4de740bcb26c974540c298772f3f70484a97888fb18be3d6f0b5111bb39940",
+    "review_sha256": "9f1de539204107aeee4aba62572a49b7568efcfe2a4c40a05442d000d034607f",
+    "reviewer": "Assistant semantic review against user-approved working-eval labels",
+    "scorer_sha256": "2f7dc80a4a075113152eb0e074804f27b1211b513f9b725d581b55511d31d17f"
+  },
+  "automated_tests": {
+    "passed": 274,
+    "subtests_passed": 4,
+    "failed": 0
+  },
+  "remaining_strict_miss": {
+    "record_id": "GT-LBS-DIR-088",
+    "fact": "Whether the isolated request still returns OVER_QUERY_LIMIT",
+    "reason": "The wording asks whether the request still fails. It does not explicitly confirm that the same quota error persists."
+  },
+  "limitations": [
+    "The applicability rules and templates were developed on these same reviewed working-eval cases.",
+    "Semantic question matches were assessed by the assistant against the locked user-approved labels.",
+    "The scored run used a locked runtime snapshot. Earlier prototype runs exposed and corrected unsupported decisions and an interpretation-prompt ownership regression.",
+    "The current workbook differs from the review snapshot, so the original approved enquiries and histories were retained."
+  ],
+  "source_manifest_sha256": "0cf36481ea2d82a14c9779d9e727bde93e6b5c724eac0b80911e005051f711a1"
+}

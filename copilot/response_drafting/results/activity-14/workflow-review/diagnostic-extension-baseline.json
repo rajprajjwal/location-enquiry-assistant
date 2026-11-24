@@ -1,0 +1,368 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-079",
+    "api": null,
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-097",
+    "api": null,
+    "allowed_decisions": [
+      "display_result"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-124",
+    "api": null,
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-223",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-086",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "request_reproduction"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-085",
+    "api": null,
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-225",
+    "api": "distance_matrix",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-062",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "rejected_request"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-047",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "prediction_request"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-111",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-099",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "missing_results"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-088",
+    "api": "directions",
+    "allowed_decisions": [
+      "request_burst"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-111",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-049",
+    "api": "distance_matrix",
+    "allowed_decisions": [
+      "matrix_input"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-125",
+    "api": null,
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-046",
+    "api": "distance_matrix",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-125",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-226",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-094",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-209",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-207",
+    "api": "directions",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-072",
+    "api": "directions",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-030",
+    "api": "directions",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-026",
+    "api": "directions",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-080",
+    "api": null,
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-209",
+    "api": null,
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-067",
+    "api": "distance_matrix",
+    "allowed_decisions": [
+      "none",
+      "request_reproduction",
+      "rejected_request"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-121",
+    "api": "distance_matrix",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-105",
+    "api": null,
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-091",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-217",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-119",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-027",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-084",
+    "api": null,
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-099",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-114",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-118",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-121",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-122",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-216",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-224",
+    "api": "autocomplete",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-045",
+    "api": "distance_matrix",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-034",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "request_reproduction"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-096",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-102",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "request_reproduction"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-120",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-123",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-124",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-205",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-211",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-216",
+    "api": "reverse_geocode",
+    "allowed_decisions": [
+      "none"
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-222",
+    "api": null,
+    "allowed_decisions": [
+      "none"
+    ]
+  }
+]

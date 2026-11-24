@@ -24,7 +24,7 @@ The interpretation step is one plain Python function, `interpret(InterpretationI
 
 ## 2. Interface contract
 
-Pydantic v2 models live in `copilot/interpret/models.py`. `QualificationDetails` is generated from the JSON Schema (the schemas stay the source of truth). The two wrapper models below are new. They are specified here only and are **not** added to `schemas/` yet.
+Pydantic v2 models live in `copilot/enquiry_interpretation/models.py`. `QualificationDetails` is generated from the JSON Schema (the schemas stay the source of truth). The two wrapper models below are new. They are specified here only and are **not** added to `schemas/` yet.
 
 ### 2.1 Input
 
@@ -46,7 +46,7 @@ class InterpretationInput(BaseModel):
     record_id: str | None = None               # set only when scoring
 ```
 
-GT adapter: 52 of the 532 GT `question` cells (5 frozen) embed history as `[user] …` / `[assistant] …` lines. `copilot/interpret/gt_adapter.py::from_gt_question(text)` splits them into turns: the last `[user]` turn becomes `query` and the rest become `history`. Plain questions become `query` with empty history. For scoring, `known_facts` is always empty because the GT has no state-store column.
+GT adapter: 52 of the 532 GT `question` cells (5 frozen) embed history as `[user] …` / `[assistant] …` lines. `copilot/enquiry_interpretation/gt_adapter.py::from_gt_question(text)` splits them into turns: the last `[user]` turn becomes `query` and the rest become `history`. Plain questions become `query` with empty history. For scoring, `known_facts` is always empty because the GT has no state-store column.
 
 ### 2.2 Output (`interpretation_output` v0.2.0)
 
@@ -76,7 +76,7 @@ Contract rules:
 - When `abstain` is true, each of `intent`, `api` and `team` may be null. `abstain_reason` is required and is one of the four reason strings (non-empty; whitespace-only is invalid). `no_rule_match` is the reason when no rule matched. `abstain=false` requires `abstain_reason` null; the key stays required, so omitting it is invalid.
 - `missing_required_fields` = the required fields (`use_case_api, region, monthly_volume, current_provider, timeline`) whose value is null after the history and known-facts merge, in vocabulary order. `complete = (len(missing) == 0)`. Both are computed by code only.
 - `confidence` is the model's self-reported value, or null. It is diagnostic only and never used for scoring. `abstain=true` outputs are still scored (no free passes).
-- Token counts use `ceil(chars/4)` (`mapping/map_gt.py::approx_output_tokens`) until Activity 8 or Activity 20 starts.
+- Token counts use `ceil(chars/4)` (`mapping/map_gt.py::approx_output_tokens`) in legacy trace fields; runtime admission now uses the pinned Qwen3 tokenizer (Activity 20).
 
 ## 3. Pipeline
 
@@ -86,7 +86,7 @@ input ─► (1) rule pre-extraction ─► (2) model call ─► (3) post-check
                      └────────────────────────────────────────────────┴─ still invalid / no model ─► (5) rules-only + abstain
 ```
 
-1. **Deterministic pre-extraction** (`copilot/interpret/rules.py`). Runs on **user turns only**, never assistant turns. It reuses `mapping/map_gt.py` patterns as the starting point:
+1. **Deterministic pre-extraction** (`copilot/enquiry_interpretation/rules.py`). Runs on **user turns only**, never assistant turns. It reuses `mapping/map_gt.py` patterns as the starting point:
    - volumes (`VOLUME_PATTERNS`, `_parse_volume_number`);
    - region (India patterns);
    - provider names (`PROVIDER_ALIASES` onto the 6 canonical names);
@@ -95,17 +95,17 @@ input ─► (1) rule pre-extraction ─► (2) model call ─► (3) post-check
    - API keyword hits (directions/routing, distance matrix, autocomplete, reverse geocod*).
 
    Each hit records its matched span.
-2. **Model call** through the thin client (`copilot/llm/client.py`):
+2. **Model call** through the thin client (`copilot/model_gateway/client.py`):
    - VM07 base URL fixed by config, fails closed if missing; `OPENAI_*` env vars are ignored; the openai SDK is pinned;
    - `model="Qwen/Qwen3-8B"`, `temperature=0`, `max_tokens` ≤1024 (this step requests 512), thinking disabled (§4);
    - the prompt includes the rule hits as hints. Few-shot examples come only from the allowed pool (§7).
-3. **Post-check** (`copilot/interpret/postcheck.py`, deterministic, no model):
+3. **Post-check** (`copilot/enquiry_interpretation/postcheck.py`, deterministic, no model):
    - strip any `<think>…</think>` and parse the first JSON object;
    - enforce the vocabulary: case-folded exact match to `intents`, `sub_intents`, `apis`, `teams`, and `providers` via `PROVIDER_ALIASES`. Anything else is invalid; nothing is guessed;
    - `sub_intent` must belong to `intent_to_sub_intents[intent]`, otherwise it is set to null and logged (sub_intent is not scored);
    - **grounding:** every non-null model qualification value must carry an `evidence` substring that occurs (case-insensitive, whitespace-collapsed) in a user turn or in `known_facts`. Ungrounded values are dropped to null;
    - merge history and known facts (§5), then compute `missing_required_fields` and `complete` in code;
-   - validate `qualification_details` with the same `Draft202012Validator` and schema files as `validator/validate_spec.py`. Shared rule functions (e.g. required-field consistency) move to one importable module used by both. `validate_spec.py`'s behaviour and outputs must not change.
+   - validate `qualification_details` with the same `Draft202012Validator` and schema files as `copilot/validation/specification_checks/validate_spec.py`. Shared rule functions (e.g. required-field consistency) move to one importable module used by both. `validate_spec.py`'s behaviour and outputs must not change.
 4. **Repair:** at most **one** extra model call. It sends the original prompt plus the specific validation errors and asks for corrected JSON only. Then the post-check runs again.
 5. **Fallback:** rules-only output.
    - The API comes from the rule hit if exactly one API matched, otherwise `null` with `abstain=true` (v0.2.0: a null API is valid only on that abstain output, with `use_case_api` null).
@@ -126,7 +126,7 @@ input ─► (1) rule pre-extraction ─► (2) model call ─► (3) post-check
 
 Every disagreement is listed in `trace.rule_model_disagreements`.
 
-## 4. Prompt design (`copilot/interpret/prompts/interp-v1.txt`, versioned)
+## 4. Prompt design (`copilot/enquiry_interpretation/prompts/interp-v1.txt`, versioned)
 
 Skeleton (system + user; few-shot as prior user/assistant pairs):
 
@@ -234,7 +234,7 @@ The `eval-freeze-v1` qualification gold was regex output from `mapping/map_gt.py
   - `per_record.jsonl`: per record, gold vs pred for intent/api/team, per-slot TP/FP/FN with normalised values, G/P missing sets, abstain, repair_attempts;
   - `report.md`: tables by bucket, API and team.
 - Pure function of its inputs: no network, no model; byte-identical output on rerun (sorted keys, fixed float format `%.4f`).
-- The run that produces `predictions.jsonl` is separate (`copilot/interpret/run_batch.py`) and records the raw model responses for replay.
+- The run that produces `predictions.jsonl` is separate (`copilot/enquiry_interpretation/run_batch.py`) and records the raw model responses for replay.
 
 ## 7. Data splits and leakage rules
 
@@ -253,7 +253,7 @@ GT v2.5: 532 records = 80 frozen (eval) + 349 non-frozen eval + 103 holdout. The
 Owner mapping (assumed; not defined in the repo): Forge = Application Engineer, Anchor = Knowledge & Validation Engineer, Assay = QA & Evaluation Engineer.
 
 1. [Anchor] Generated Pydantic `QualificationDetails` accepts all 532 gold `qualification_details` objects and rejects 5 hand-made invalid ones (extra key, bad enum, `monthly_volume` without `raw`, wrong type, missing key).
-2. [Anchor] `validator/validate_spec.py` still reports 532/532 and 80/80 pass after shared rule functions are extracted, and its regenerated outputs are byte-identical.
+2. [Anchor] `copilot/validation/specification_checks/validate_spec.py` still reports 532/532 and 80/80 pass after shared rule functions are extracted, and its regenerated outputs are byte-identical.
 3. [Forge] Post-check unit tests:
    - out-of-vocab intent/api/team → invalid;
    - case variant (`"Directions"`) → normalised;
@@ -266,7 +266,7 @@ Owner mapping (assumed; not defined in the repo): Forge = Application Engineer, 
 5. [Forge] Rules-only fallback and abstain:
    - with the client stubbed to fail (timeout, 503, invalid JSON twice), output is schema-valid with `abstain=true` and a reason;
    - at most 2 model calls per input;
-   - no retry loop beyond the client's 429/503 backoff (2, 4, 8 s, then stop).
+   - no retry loop beyond the client's 429/503 backoff (2 and 4 s, with at most two shared retries including JSON repair).
 6. [Forge] Client tests:
    - a missing base URL raises before any network call;
    - `OPENAI_BASE_URL`/`OPENAI_API_KEY` env values are ignored;
@@ -296,8 +296,8 @@ Owner mapping (assumed; not defined in the repo): Forge = Application Engineer, 
 | Owner | Delivers | Proposed paths |
 |---|---|---|
 | Capstone Architect | This contract; answers to interface questions; no code | `docs/activity-2-interpretation-design.md` |
-| Knowledge & Validation Engineer | Pydantic models generated from `schemas/` (incl. the two wrappers in §2); shared rule functions; GT adapter / history lookup; scorer; leakage tests; any follow-up to Shahid's optional gold spot-check | `copilot/models/` (generated), `copilot/interpret/gt_adapter.py`, `eval/score_activity2.py`, `tests/eval/` |
-| Application Engineer | Interpretation module, rules, prompts, post-check, repair/fallback; thin endpoint client; tracing fields; batch runner with response recording | `copilot/interpret/{__init__,interpret,rules,postcheck,models}.py`, `copilot/interpret/prompts/interp-v1.txt`, `copilot/interpret/fewshot_ids.json`, `copilot/llm/client.py`, `copilot/interpret/run_batch.py`, `tests/interpret/` |
+| Knowledge & Validation Engineer | Pydantic models generated from `schemas/` (incl. the two wrappers in §2); shared rule functions; GT adapter / history lookup; scorer; leakage tests; any follow-up to Shahid's optional gold spot-check | `copilot/models/` (generated), `copilot/enquiry_interpretation/gt_adapter.py`, `eval/score_activity2.py`, `tests/eval/` |
+| Application Engineer | Interpretation module, rules, prompts, post-check, repair/fallback; thin endpoint client; tracing fields; batch runner with response recording | `copilot/enquiry_interpretation/{__init__,interpret,rules,postcheck,models}.py`, `copilot/enquiry_interpretation/prompts/interp-v1.txt`, `copilot/enquiry_interpretation/fewshot_ids.json`, `copilot/model_gateway/client.py`, `copilot/enquiry_interpretation/run_batch.py`, `tests/enquiry_interpretation/` |
 | QA & Evaluation Engineer | Independent frozen-80 scoring at milestones, determinism checks, report | `runs/activity2/<run_id>/` (decide whether committed or archived) |
 
 Handoff order:
@@ -319,5 +319,5 @@ Agent code must not be committed before the `eval-freeze-v2` tag (the re-freeze 
 6. **Free-text match rule** (substring, ≥3 chars) is a proposed convention, not a defined threshold. It may be generous; per-slot reporting makes this visible.
 7. **Rate limits:** 1 active request per key and 60/min. A frozen run is ≤160 calls, sequential, so batch runs must queue and must not share the key concurrently with other team runs.
 8. **Owner mapping of Forge/Anchor/Assay** to roles is assumed (§8).
-9. **Token counts** are `ceil(chars/4)` estimates, not tokenizer counts. The real `usage` field is recorded in the trace when available, but limits are enforced on the estimate until Activity 8 or Activity 20 starts.
+9. **Token counts** are `ceil(chars/4)` estimates, not tokenizer counts. The real `usage` field is recorded in the trace when available, but limits are enforced on the estimate in legacy trace fields; runtime admission now uses the pinned Qwen3 tokenizer (Activity 20).
 10. Spec sign-off is still pending; this contract inherits the spec's definitions and changes none of them.

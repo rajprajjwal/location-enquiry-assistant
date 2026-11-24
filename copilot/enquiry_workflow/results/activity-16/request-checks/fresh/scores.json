@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "cases": 26,
+    "owner_correct": 26,
+    "owner_accuracy": 1.0,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": null,
+    "escalation_recall": null,
+    "escalation_reason_coverage": null
+  },
+  "candidate": {
+    "cases": 26,
+    "owner_correct": 26,
+    "owner_accuracy": 1.0,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": null,
+    "escalation_recall": null,
+    "escalation_reason_coverage": null
+  },
+  "model_calls": 0,
+  "record_writes": 0,
+  "method": "Saved-interpretation replay; cached handoff classifications retained except rule-based first-line triage. Unchanged escalation metrics measure preservation.",
+  "changes": [],
+  "deferred": [],
+  "escalations_preserved": true
+}

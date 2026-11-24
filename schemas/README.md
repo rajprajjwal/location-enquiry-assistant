@@ -13,4 +13,4 @@ Versioned JSON Schemas (draft 2020-12, `x-spec-version` 1.0.0) for the copilot's
 | `responsible_role.schema.json` | Output 6: owner and escalation. | Owner ∈ Support L1, Support L2, Account team (Sales), Maps engineering. |
 | `next_action.schema.json` | Output 7: recommended next step. | Proposals only; executed-without-approval is rejected by the validator. |
 
-Use case: `validator/validate_spec.py` loads every `*.schema.json` here (this README is not loaded) and validates each gold envelope; the later runtime will validate its outputs the same way.
+Use case: `copilot/validation/specification_checks/validate_spec.py` loads every `*.schema.json` here (this README is not loaded) and validates each gold envelope; the later runtime will validate its outputs the same way.

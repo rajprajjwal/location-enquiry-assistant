@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"hazmat_required\"],\n      \"decision_impact\": \"Determine if hazardous-goods restrictions are required for the routing product.\"\n    },\n    {\n      \"fields\": [\"vehicle_dimensions\"],\n      \"decision_impact\": \"Determine the vehicle restrictions that the routing product must enforce.\"\n    }\n  ],\n  \"reason\": \"The customer is operating 16-tonne trucks between Indian warehouses and needs routing APIs that support truck routing. The vehicle weight is specified, but the exact vehicle dimensions (height, width) and whether hazardous goods are involved are not provided, which are critical for determining the appropriate routing parameters and restrictions.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"hazmat_required\"],\n      \"decision_impact\": \"Determine if hazardous-goods restrictions are required for the routing product.\"\n    },\n    {\n      \"fields\": [\"vehicle_dimensions\"],\n      \"decision_impact\": \"Determine the vehicle restrictions that the routing product must enforce.\"\n    }\n  ],\n  \"reason\": \"The customer is operating 16-tonne trucks between Indian warehouses and needs routing APIs that support truck routing. The vehicle weight is specified, but the exact vehicle dimensions (height, width) and whether hazardous goods are involved are not provided, which are critical for determining the appropriate routing parameters and restrictions.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1700,
+    "completion_tokens": 179,
+    "total_tokens": 1879
+  },
+  "latency_ms": 4207,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

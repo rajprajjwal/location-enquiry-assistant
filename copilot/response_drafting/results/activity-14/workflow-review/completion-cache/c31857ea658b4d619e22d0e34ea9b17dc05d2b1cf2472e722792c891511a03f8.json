@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The documentation states that OSRM's trip service uses a greedy heuristic for 10 or more waypoints and brute force for less than 10, returning an approximation of the optimal delivery order. The enquiry does not provide specific details about the configuration or observed behavior, so no further action is needed.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The documentation states that OSRM's trip service uses a greedy heuristic for 10 or more waypoints and brute force for less than 10, returning an approximation of the optimal delivery order. The enquiry does not provide specific details about the configuration or observed behavior, so no further action is needed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2253,
+    "completion_tokens": 69,
+    "total_tokens": 2322
+  },
+  "latency_ms": 2207,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,19 @@
+{
+  "selected_working_cases": 36,
+  "groups": 28,
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "original_GT_question_text_unchanged": true,
+  "workbook_byte_hash_unchanged": true,
+  "labels_hash_unchanged": true,
+  "evaluated_runtime_hashes_verified": true,
+  "live_production_code_matches_runtime": true,
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68"
+}

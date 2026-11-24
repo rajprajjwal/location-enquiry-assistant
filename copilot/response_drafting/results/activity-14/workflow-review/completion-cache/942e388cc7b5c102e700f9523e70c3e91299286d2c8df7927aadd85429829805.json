@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The customer is encountering a 429 error, which indicates they have exceeded the rate limit. This suggests a burst of requests may be hitting the quota. Inspecting one request and testing it in isolation can help identify if the issue is due to a high volume of concurrent or repeated requests.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The customer is encountering a 429 error, which indicates they have exceeded the rate limit. This suggests a burst of requests may be hitting the quota. Inspecting one request and testing it in isolation can help identify if the issue is due to a high volume of concurrent or repeated requests.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1449,
+    "completion_tokens": 71,
+    "total_tokens": 1520
+  },
+  "latency_ms": 1830,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

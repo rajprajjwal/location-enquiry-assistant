@@ -1,0 +1,61 @@
+--- a/copilot/diagnostics/extraction.py
++++ b/copilot/diagnostics/extraction.py
+@@ -33,8 +33,9 @@
+             add("coordinates", match.group().replace(" ", ""), match)
+         for match in re.finditer(r"\b(?:HTTP\s+|returns?\s+|fail\w*\s+with\s+)([45]\d\d(?:/[45]\d\d)*)\b", text, re.I):
+             add("http_status", match.group(1).split("/"), match)
+-        for match in re.finditer(r"\b(NoSegment|ZERO_RESULTS|OVER_QUERY_LIMIT|NOT_FOUND)\b", text):
+-            add("error_code", match.group(1), match)
++        for match in re.finditer(r"\b(NoSegment|ZERO_RESULTS|OVER_QUERY_LIMIT|NOT_FOUND|REQUEST_DENIED)\b", text, re.I):
++            code = "NoSegment" if match.group(1).casefold() == "nosegment" else match.group(1).upper()
++            add("error_code", code, match)
+         for match in re.finditer(r"\b([\d,]+)\s+(?:[\w-]+\s+){0,4}(?:routes|requests|calls|lookups)\s+(?:a|per|/)\s*(month|year|day|minute|second)\b", text, re.I):
+             add("workload", int(match.group(1).replace(",", "")), match)
+             add("workload_period", match.group(2).lower(), match)
+--- a/copilot/diagnostics/policy.py
++++ b/copilot/diagnostics/policy.py
+@@ -13,6 +13,8 @@
+         return ["none"]
+     if re.search(r"\bapi key\b.{0,35}\binvalid\b", text):
+         return ["none"]
++    if code == "request_denied" and _observed_denial(query):
++        return ["none"] if _confirmed_key_cause(query) else ["request_reproduction"]
+     if code == "nosegment" and values.get("coordinates"):
+         return ["none"]
+     if re.search(
+@@ -41,3 +43,24 @@
+     if re.search(r"\b(?:fails?|failing|errors?|reject\w*)\b", text):
+         return ["none", "request_reproduction", "rejected_request"]
+     return ["none"]
++
++
++def _observed_denial(query):
++    # A status definition alone does not establish a customer failure.
++    if re.search(r"\b(?:what (?:does|is)|meaning of)\s+[`\"']?REQUEST_DENIED\b|\bREQUEST_DENIED\b.{0,12}\bmean\b", query, re.I):
++        return False
++    return bool(re.search(
++        r"\b(?:returns?|returned|returning|gives?|gave|getting|received?|seeing|reports?|reported|fails?|failed|failing)\b.{0,65}\bREQUEST_DENIED\b"
++        r"|\bREQUEST_DENIED\b\s+(?:for|with|when|after)\b", query, re.I,
++    ))
++
++
++def _confirmed_key_cause(query):
++    # Only customer statements establish a cause. Retrieved possibilities do not.
++    return bool(re.search(
++        r"\b(?:we|i|our request|the request)\b.{0,35}\b(?:omitted|omit|do not include|did not include|did not send)\b.{0,20}\b(?:api\s+)?key\b"
++        r"|\bwithout\s+(?:our|an?|the)\s+(?:api\s+)?key\b"
++        r"|\b(?:we|i)\s+(?:have not|haven['’]t|did not|didn['’]t)\s+enabled?\s+(?:the\s+)?Geocoding API\b"
++        r"|\bGeocoding API\s+is\s+(?:not enabled|disabled)\s+(?:in|for)\s+(?:our|my)\s+project\b",
++        query, re.I,
++    ))
+--- a/copilot/diagnostics/planning.py
++++ b/copilot/diagnostics/planning.py
+@@ -86,6 +86,8 @@
+ matrix_input: some matrix elements fail to resolve inputs; inspect a failing pair exactly as submitted.
+ Prefer none when the enquiry already identifies the configuration fix. Use request_reproduction for a
+ failure following credential rotation, rather than asking for any token or secret value.
++A possible cause in documentation does not confirm the customer has that configuration.
++For an observed unresolved REQUEST_DENIED, inspect the redacted request.
+ Select from the menu using the observed symptom. Do not choose a decision just because documents
+ mention that topic. Include a short reason. Never output a credential value."""
+ 

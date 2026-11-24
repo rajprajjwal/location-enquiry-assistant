@@ -1,0 +1,13 @@
+{
+  "owner_changes": [
+    {
+      "record_id": "GT-LBS-RG-082",
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "gold": "Support L1"
+    }
+  ],
+  "before": 0.725,
+  "after": 0.7375,
+  "escalation_decisions_preserved": true
+}

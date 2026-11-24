@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's request exceeds the maximum allowed number of elements (625) for a Compute Route Matrix request. The customer is attempting a 30x30 matrix, which results in 900 elements, violating the limit. The issue is not related to a missing request or configuration, but rather an exceeded limit. No further action is needed as the problem is clear from the provided information.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's request exceeds the maximum allowed number of elements (625) for a Compute Route Matrix request. The customer is attempting a 30x30 matrix, which results in 900 elements, violating the limit. The issue is not related to a missing request or configuration, but rather an exceeded limit. No further action is needed as the problem is clear from the provided information.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1752,
+    "completion_tokens": 91,
+    "total_tokens": 1843
+  },
+  "latency_ms": 2304,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

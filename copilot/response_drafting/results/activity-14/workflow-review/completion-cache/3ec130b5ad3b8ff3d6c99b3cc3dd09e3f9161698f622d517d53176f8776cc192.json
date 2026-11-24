@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer is reporting that the `travel_advisory` is not appearing in the response despite setting `traffic_metadata=true`. According to the documentation, `travel_advisory` is included only when `traffic_metadata` is set to `true` and `overview` is set to `full`. The customer has provided the `traffic_metadata=true` parameter, but it is not clear if the `overview` parameter is also set to `full`. Since the customer has not provided the full request details, it is not possible to determine if the issue is due to a missing parameter or an API behavior. Therefore, no specific decision is needed at this stage.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer is reporting that the `travel_advisory` is not appearing in the response despite setting `traffic_metadata=true`. According to the documentation, `travel_advisory` is included only when `traffic_metadata` is set to `true` and `overview` is set to `full`. The customer has provided the `traffic_metadata=true` parameter, but it is not clear if the `overview` parameter is also set to `full`. Since the customer has not provided the full request details, it is not possible to determine if the issue is due to a missing parameter or an API behavior. Therefore, no specific decision is needed at this stage.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1832,
+    "completion_tokens": 141,
+    "total_tokens": 1973
+  },
+  "latency_ms": 3399,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

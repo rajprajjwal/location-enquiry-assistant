@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": null, \"reason\": \"The request is for a specific data extraction task using a known API and does not require human intervention.\"}",
+  "raw": "{\"category\": null, \"reason\": \"The request is for a specific data extraction task using a known API and does not require human intervention.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 275,
+    "completion_tokens": 31,
+    "total_tokens": 306
+  },
+  "latency_ms": 876,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

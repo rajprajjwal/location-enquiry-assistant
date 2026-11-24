@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"accuracy_question\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{}}",
+  "raw": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"accuracy_question\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1312,
+    "completion_tokens": 50,
+    "total_tokens": 1362
+  },
+  "latency_ms": 1309,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

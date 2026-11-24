@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_request\", \"reason\":\"The Autocomplete API is expected to return predictions based on the query, but the reported behavior indicates that no results are being returned. This suggests that the API may not be providing the expected autocomplete query predictions, which requires inspecting the provider's configuration and the request body to identify the cause.\"}",
+  "raw": "{\"decision\":\"prediction_request\", \"reason\":\"The Autocomplete API is expected to return predictions based on the query, but the reported behavior indicates that no results are being returned. This suggests that the API may not be providing the expected autocomplete query predictions, which requires inspecting the provider's configuration and the request body to identify the cause.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1120,
+    "completion_tokens": 69,
+    "total_tokens": 1189
+  },
+  "latency_ms": 1779,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

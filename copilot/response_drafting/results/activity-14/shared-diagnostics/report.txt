@@ -1,0 +1,32 @@
+Shared diagnostic contract and retrieval-aware follow-up planning
+
+The shared Pydantic contract carries facts, provenance, completed checks and question status.
+Interpretation validates the context and adapts supported qualification facts through its existing input contract.
+The interpretation prompt is preserved. Diagnostic state is saved with case events and restored on reopen.
+Legacy cases rebuild diagnostic values from stored user turns.
+The workflow exposes retrieved passages to follow-up planning alongside the draft and validated API/intent.
+The model proposes a decision. An applicability policy checks customer evidence before fixed templates
+request the missing facts for that decision. Staff suggestions do not alter active clarification routing.
+
+Final working-eval comparison on the same sixteen reviewed cases
+- Atomic fact coverage: 1/12 (8.33%) before, 11/12 (91.67%) after.
+- Strict complete-question F1: 0.000 before, 0.857143 after.
+- Complete approved questions: 0/7 before, 6/7 after.
+- Questions on nine confirmed-empty cases: 1 before, 0 after.
+- Routes, owners, next actions, approvals, active questions and pending state matched on 16/16 cases.
+- Four additional pending conversations reopened and resumed identically.
+- Diagnostic snapshots restored correctly on 16/16 cases.
+- Retrieved documentation was available in fifteen cases. The pricing case had no documentation-search passages.
+- Automated regression checks: 274 passed and four subtests passed.
+
+The remaining strict miss is DIR-088. The follow-up asks whether the same request still fails when sent
+alone. A conservative judgement does not credit explicit confirmation of the same OVER_QUERY_LIMIT error.
+
+Evaluation now uses per-run reviewer judgements bound to prediction and gold SHA-256 hashes.
+The scorer rejects stale files, invalid indices and full-question credit without every required fact.
+Matching judgements for this run were assessed by the assistant against unchanged user-approved labels.
+
+These are development results. The applicability rules and templates were informed by these sixteen cases.
+The run used a locked runtime and the original reviewed enquiry/history snapshot, because the workbook changed.
+Earlier prototype runs exposed and corrected unsupported decisions and a prompt-induced ownership change.
+Frozen and holdout cases were excluded.

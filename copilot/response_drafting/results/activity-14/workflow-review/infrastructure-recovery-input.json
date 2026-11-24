@@ -1,0 +1,11 @@
+[
+  {
+    "record_id": "GT-LBS-RG-065",
+    "query": "A Mapbox Geocoding v6 batch job that reverse-geocodes our coordinates returns HTTP 429. What should we check?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-065",
+    "fold": 4
+  }
+]

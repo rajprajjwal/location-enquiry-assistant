@@ -1,0 +1,44 @@
+{
+  "cases": 80,
+  "holdout_cases": 0,
+  "methods": {
+    "integrated": {
+      "predicted": 13,
+      "gold": 75,
+      "matches": 0,
+      "facts": 4,
+      "gold_facts": 99,
+      "questions_on_empty_gold": 8,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fact_recall": 0.04040404040404041
+    },
+    "baseline": {
+      "predicted": 13,
+      "gold": 75,
+      "matches": 0,
+      "facts": 4,
+      "gold_facts": 99,
+      "questions_on_empty_gold": 8,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fact_recall": 0.04040404040404041
+    }
+  },
+  "question_f1_threshold": 0.8,
+  "question_f1_pass": false,
+  "fact_coverage_basis": "99 assistant-derived atomic facts from 75 unchanged original frozen questions, decomposed before predictions",
+  "paired_route_changes": 0,
+  "paired_pending_reply_changes": 0,
+  "reopened_cases": 4,
+  "reopened_preserved": 4,
+  "historical_route_changes": [
+    "GT-LBS-DIR-108",
+    "GT-LBS-DIR-221"
+  ],
+  "frozen_gt_unchanged": true,
+  "workbook_unchanged": true,
+  "rubric_comparison_rerun": false
+}

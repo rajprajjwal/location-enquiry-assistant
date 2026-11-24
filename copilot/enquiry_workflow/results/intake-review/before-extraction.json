@@ -1,0 +1,1504 @@
+[
+  {
+    "record_id": "GT-LBS-AC-003",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSM Nominatim",
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 50,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-008",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-AC-009",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-AC-010",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-AC-021",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-022",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-023",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-024",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-233",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSM Nominatim",
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 129,
+        "end": 138
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-036",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 5,
+        "end": 8
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-037",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-038",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-040",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-047",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-049",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-050",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DM-017",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-018",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-019",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-020",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-025",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "matrices, 5,000 per month in India",
+        "start": 34,
+        "end": 68
+      },
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "origin_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      },
+      {
+        "field": "matrix_elements",
+        "value": 100,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-030",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "matrices, 120,000 per month in India",
+        "start": 34,
+        "end": 70
+      },
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "origin_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      },
+      {
+        "field": "matrix_elements",
+        "value": 100,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 28,
+        "end": 33
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-034",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "matrices, 10,000 a month in India",
+        "start": 29,
+        "end": 62
+      },
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "origin_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 23,
+        "end": 28
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 23,
+        "end": 28
+      },
+      {
+        "field": "matrix_elements",
+        "value": 100,
+        "source": "query",
+        "evidence": "10×10",
+        "start": 23,
+        "end": 28
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DM-230",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 41,
+        "end": 47
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-008",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 65,
+        "end": 89
+      },
+      {
+        "field": "workload",
+        "value": 1500000,
+        "source": "query",
+        "evidence": "1,500,000 reverse-geocoding lookups a month",
+        "start": 37,
+        "end": 80
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "1,500,000 reverse-geocoding lookups a month",
+        "start": 37,
+        "end": 80
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-009",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 79,
+        "end": 103
+      },
+      {
+        "field": "workload",
+        "value": 3000000,
+        "source": "query",
+        "evidence": "3,000,000 reverse-geocoding lookups a month",
+        "start": 51,
+        "end": 94
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "3,000,000 reverse-geocoding lookups a month",
+        "start": 51,
+        "end": 94
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-010",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 80,
+        "end": 104
+      },
+      {
+        "field": "workload",
+        "value": 4500000,
+        "source": "query",
+        "evidence": "4,500,000 reverse-geocoding lookups a month",
+        "start": 52,
+        "end": 95
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "4,500,000 reverse-geocoding lookups a month",
+        "start": 52,
+        "end": 95
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-011",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 74,
+        "end": 98
+      },
+      {
+        "field": "workload",
+        "value": 7000000,
+        "source": "query",
+        "evidence": "7,000,000 reverse-geocoding lookups a month",
+        "start": 46,
+        "end": 89
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "7,000,000 reverse-geocoding lookups a month",
+        "start": 46,
+        "end": 89
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-012",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 81,
+        "end": 105
+      },
+      {
+        "field": "workload",
+        "value": 9000000,
+        "source": "query",
+        "evidence": "9,000,000 reverse-geocoding lookups a month",
+        "start": 53,
+        "end": 96
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "9,000,000 reverse-geocoding lookups a month",
+        "start": 53,
+        "end": 96
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-013",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 84,
+        "end": 108
+      },
+      {
+        "field": "workload",
+        "value": 12000000,
+        "source": "query",
+        "evidence": "12,000,000 reverse-geocoding lookups a month",
+        "start": 55,
+        "end": 99
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "12,000,000 reverse-geocoding lookups a month",
+        "start": 55,
+        "end": 99
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-014",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "query",
+        "evidence": "lookups a month in India",
+        "start": 72,
+        "end": 96
+      },
+      {
+        "field": "workload",
+        "value": 400000,
+        "source": "query",
+        "evidence": "400,000 reverse-geocoding lookups a month",
+        "start": 46,
+        "end": 87
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "400,000 reverse-geocoding lookups a month",
+        "start": 46,
+        "end": 87
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-227",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSM Nominatim",
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 210,
+        "end": 219
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-228",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-RG-230",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-079",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSRM",
+        "source": "query",
+        "evidence": "OSRM",
+        "start": 16,
+        "end": 20
+      },
+      {
+        "field": "coordinates",
+        "value": "12.97,77.59;12.93,77.62",
+        "source": "query",
+        "evidence": "12.97,77.59;12.93,77.62",
+        "start": 94,
+        "end": 117
+      },
+      {
+        "field": "http_status",
+        "value": [
+          "400"
+        ],
+        "source": "query",
+        "evidence": "HTTP 400",
+        "start": 29,
+        "end": 37
+      },
+      {
+        "field": "error_code",
+        "value": "NoSegment",
+        "source": "query",
+        "evidence": "NoSegment",
+        "start": 49,
+        "end": 58
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-097",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 16,
+        "end": 22
+      },
+      {
+        "field": "waypoint_lower_bound_exclusive",
+        "value": 10,
+        "source": "query",
+        "evidence": "more than 10 waypoints",
+        "start": 35,
+        "end": 57
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-124",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "field": "workload",
+        "value": 50000,
+        "source": "query",
+        "evidence": "50,000 Google two-wheeler routes a month",
+        "start": 10,
+        "end": 50
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "50,000 Google two-wheeler routes a month",
+        "start": 10,
+        "end": 50
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-223",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mapbox",
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 4,
+        "end": 10
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-086",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 4,
+        "end": 7
+      },
+      {
+        "field": "http_status",
+        "value": [
+          "401",
+          "403"
+        ],
+        "source": "query",
+        "evidence": "fail with 401/403",
+        "start": 30,
+        "end": 47
+      },
+      {
+        "field": "failure_after_credential_rotation",
+        "value": true,
+        "source": "query",
+        "evidence": "after we rotated OAuth credentials",
+        "start": 48,
+        "end": 82
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-085",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSM Nominatim",
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 4,
+        "end": 13
+      },
+      {
+        "field": "user_agent_present",
+        "value": false,
+        "source": "query",
+        "evidence": "don't send any User-Agent",
+        "start": 39,
+        "end": 64
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-225",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "field": "origin_count",
+        "value": 15,
+        "source": "query",
+        "evidence": "15 stations × 10 offices",
+        "start": 53,
+        "end": 77
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "query",
+        "evidence": "15 stations × 10 offices",
+        "start": 53,
+        "end": 77
+      },
+      {
+        "field": "matrix_elements",
+        "value": 150,
+        "source": "query",
+        "evidence": "15 stations × 10 offices",
+        "start": 53,
+        "end": 77
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-062",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mapbox",
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "http_status",
+        "value": [
+          "422"
+        ],
+        "source": "query",
+        "evidence": "returns 422",
+        "start": 38,
+        "end": 49
+      },
+      {
+        "field": "limit_parameter",
+        "value": 5,
+        "source": "query",
+        "evidence": "limit=5",
+        "start": 30,
+        "end": 37
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-047",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-RG-111",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mapbox",
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 38,
+        "end": 44
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-099",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 9,
+        "end": 15
+      },
+      {
+        "field": "error_code",
+        "value": "ZERO_RESULTS",
+        "source": "query",
+        "evidence": "ZERO_RESULTS",
+        "start": 41,
+        "end": 53
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-088",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 36,
+        "end": 42
+      },
+      {
+        "field": "error_code",
+        "value": "OVER_QUERY_LIMIT",
+        "source": "query",
+        "evidence": "OVER_QUERY_LIMIT",
+        "start": 82,
+        "end": 98
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-111",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-049",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 68,
+        "end": 74
+      },
+      {
+        "field": "error_code",
+        "value": "NOT_FOUND",
+        "source": "query",
+        "evidence": "NOT_FOUND",
+        "start": 112,
+        "end": 121
+      },
+      {
+        "field": "ticket_id",
+        "value": "TKT-93241",
+        "source": "query",
+        "evidence": "TKT-93241",
+        "start": 19,
+        "end": 28
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-125",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSRM",
+        "source": "query",
+        "evidence": "OSRM",
+        "start": 0,
+        "end": 4
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-046",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "history[0]",
+        "evidence": "Google",
+        "start": 10,
+        "end": 16
+      },
+      {
+        "field": "origin_count",
+        "value": 10,
+        "source": "history[0]",
+        "evidence": "10×10",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "field": "destination_count",
+        "value": 10,
+        "source": "history[0]",
+        "evidence": "10×10",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "field": "matrix_elements",
+        "value": 100,
+        "source": "history[0]",
+        "evidence": "10×10",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "field": "departure_time",
+        "value": "now",
+        "source": "history[0]",
+        "evidence": "departure_time=now",
+        "start": 38,
+        "end": 56
+      },
+      {
+        "field": "proceed_without_more_questions",
+        "value": true,
+        "source": "query",
+        "evidence": "answer based on my earlier message",
+        "start": 31,
+        "end": 65
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-125",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSM Nominatim",
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 81,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-226",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mapbox",
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 4,
+        "end": 10
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-094",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-AC-209",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mappls (MapmyIndia)",
+        "source": "query",
+        "evidence": "Mappls",
+        "start": 15,
+        "end": 21
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-207",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-072",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-030",
+    "facts": [
+      {
+        "field": "usage_geography",
+        "value": "India",
+        "source": "history[0]",
+        "evidence": "requests a month in India",
+        "start": 62,
+        "end": 87
+      },
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "history[0]",
+        "evidence": "Ola",
+        "start": 8,
+        "end": 11
+      },
+      {
+        "field": "workload",
+        "value": 6000000,
+        "source": "history[0]",
+        "evidence": "6,000,000 traffic-aware route requests a month",
+        "start": 32,
+        "end": 78
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "history[0]",
+        "evidence": "6,000,000 traffic-aware route requests a month",
+        "start": 32,
+        "end": 78
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-026",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mapbox",
+        "source": "history[0]",
+        "evidence": "Mapbox",
+        "start": 15,
+        "end": 21
+      },
+      {
+        "field": "workload",
+        "value": 900000,
+        "source": "history[0]",
+        "evidence": "900,000 requests a month",
+        "start": 42,
+        "end": 66
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "history[0]",
+        "evidence": "900,000 requests a month",
+        "start": 42,
+        "end": 66
+      },
+      {
+        "field": "proceed_without_more_questions",
+        "value": true,
+        "source": "query",
+        "evidence": "answer based on my earlier message",
+        "start": 31,
+        "end": 65
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-080",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSRM",
+        "source": "query",
+        "evidence": "osrm",
+        "start": 26,
+        "end": 30
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-209",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-DM-067",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "history[0]",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "http_status",
+        "value": [
+          "429"
+        ],
+        "source": "history[0]",
+        "evidence": "returns 429",
+        "start": 20,
+        "end": 31
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-121",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-105",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 46,
+        "end": 52
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-091",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-RG-217",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 7,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-119",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mapbox",
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 10,
+        "end": 16
+      },
+      {
+        "field": "workload",
+        "value": 4000000,
+        "source": "query",
+        "evidence": "4,000,000 lookups a month",
+        "start": 39,
+        "end": 64
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "4,000,000 lookups a month",
+        "start": 39,
+        "end": 64
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-027",
+    "facts": []
+  },
+  {
+    "record_id": "GT-LBS-AC-084",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSM Nominatim",
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 16,
+        "end": 25
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-099",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-114",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 9,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-118",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "field": "workload",
+        "value": 6000000,
+        "source": "query",
+        "evidence": "6,000,000 calls a month",
+        "start": 48,
+        "end": 71
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "6,000,000 calls a month",
+        "start": 48,
+        "end": 71
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-121",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-122",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-216",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mapbox",
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 4,
+        "end": 10
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-224",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mapbox",
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 3,
+        "end": 9
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-045",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 47,
+        "end": 53
+      },
+      {
+        "field": "ticket_id",
+        "value": "TKT-63953",
+        "source": "query",
+        "evidence": "TKT-63953",
+        "start": 19,
+        "end": 28
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-034",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 47,
+        "end": 53
+      },
+      {
+        "field": "error_code",
+        "value": "REQUEST_DENIED",
+        "source": "query",
+        "evidence": "REQUEST_DENIED",
+        "start": 78,
+        "end": 92
+      },
+      {
+        "field": "ticket_id",
+        "value": "TKT-35162",
+        "source": "query",
+        "evidence": "TKT-35162",
+        "start": 19,
+        "end": 28
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-096",
+    "facts": [
+      {
+        "field": "workload",
+        "value": 20000,
+        "source": "query",
+        "evidence": "20,000 lookups a month",
+        "start": 52,
+        "end": 74
+      },
+      {
+        "field": "workload_period",
+        "value": "month",
+        "source": "query",
+        "evidence": "20,000 lookups a month",
+        "start": 52,
+        "end": 74
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-102",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "field": "error_code",
+        "value": "REQUEST_DENIED",
+        "source": "query",
+        "evidence": "REQUEST_DENIED",
+        "start": 15,
+        "end": 29
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-120",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Ola Maps",
+        "source": "query",
+        "evidence": "Ola",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-123",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 7,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-124",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Google Maps Platform",
+        "source": "query",
+        "evidence": "Google",
+        "start": 7,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-205",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mapbox",
+        "source": "query",
+        "evidence": "Mapbox",
+        "start": 53,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-211",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "Mappls (MapmyIndia)",
+        "source": "query",
+        "evidence": "Mappls",
+        "start": 5,
+        "end": 11
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-216",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSM Nominatim",
+        "source": "query",
+        "evidence": "nominatim",
+        "start": 70,
+        "end": 79
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-222",
+    "facts": [
+      {
+        "field": "provider",
+        "value": "OSM Nominatim",
+        "source": "query",
+        "evidence": "Nominatim",
+        "start": 4,
+        "end": 13
+      }
+    ]
+  }
+]

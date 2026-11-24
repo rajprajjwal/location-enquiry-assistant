@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The enquiry indicates that calls to the Mapbox Search Box /retrieve endpoint are failing validation, and the documentation explicitly states that the /suggest and /retrieve endpoints must include a session_token parameter. To diagnose the issue, we need to inspect the actual request to confirm whether the session_token is being included correctly and if there are any other validation errors.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The enquiry indicates that calls to the Mapbox Search Box /retrieve endpoint are failing validation, and the documentation explicitly states that the /suggest and /retrieve endpoints must include a session_token parameter. To diagnose the issue, we need to inspect the actual request to confirm whether the session_token is being included correctly and if there are any other validation errors.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1828,
+    "completion_tokens": 81,
+    "total_tokens": 1909
+  },
+  "latency_ms": 2100,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

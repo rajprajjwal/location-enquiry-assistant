@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The issue described is a known behavior of the Nominatim reverse geocoding API, as documented. It does not require further customer input or action to diagnose.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The issue described is a known behavior of the Nominatim reverse geocoding API, as documented. It does not require further customer input or action to diagnose.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1821,
+    "completion_tokens": 43,
+    "total_tokens": 1864
+  },
+  "latency_ms": 1254,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

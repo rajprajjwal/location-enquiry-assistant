@@ -1,0 +1,158 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-050",
+    "questions_sha256": "76d5ea8a846dc8dba7cfa47ec91185e1d7ab87984b64a7c5d7d230fd58ea1999",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+    "whole": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        4,
+        5,
+        2
+      ]
+    ],
+    "reason": "Vehicle modes, monthly route workload, route stops and both provider-specific project/contract facts are requested. No live-traffic question is asked; that requirement is already supplied in the enquiry, but the original gold remains unchanged."
+  },
+  {
+    "record_id": "GT-LBS-DIR-205",
+    "questions_sha256": "3d143c78118f37d41bce17512caaa5597b142ca78193b248eddea640b008d540",
+    "gold_sha256": "6fa1caebafd384ba207e128f27f0e00ff6c348adddcb9cc1fec97ee358459108",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "The required traffic regime is asked directly, with live versus predicted or standard estimates as examples. This covers whether live traffic is needed or a non-live typical estimate is sufficient; the examples do not add an independent decision."
+  },
+  {
+    "record_id": "GT-LBS-DIR-206",
+    "questions_sha256": "3d143c78118f37d41bce17512caaa5597b142ca78193b248eddea640b008d540",
+    "gold_sha256": "6fa1caebafd384ba207e128f27f0e00ff6c348adddcb9cc1fec97ee358459108",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "The question requests the required traffic conditions and explicitly contrasts live with other estimate types, covering the gold traffic-regime choice."
+  },
+  {
+    "record_id": "GT-LBS-DIR-211",
+    "questions_sha256": "2378b8b01a7af20ffb9527e351159264af5c568b786eb4da3e8febfe5378c560",
+    "gold_sha256": "33a5627ee396a5d90387adbdd9598116cd53817574d398fd083ff1524224d7fd",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "The request-load distribution across API keys or tokens is explicitly requested. In this throughput context traffic refers to request load."
+  },
+  {
+    "record_id": "GT-LBS-DIR-212",
+    "questions_sha256": "2378b8b01a7af20ffb9527e351159264af5c568b786eb4da3e8febfe5378c560",
+    "gold_sha256": "33a5627ee396a5d90387adbdd9598116cd53817574d398fd083ff1524224d7fd",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "The same peak-load key/token distribution fact is requested directly."
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "questions_sha256": "173f4b73dc29f30fd8ea50d55e95248ead089a57e1b5b45cd77175f346790483",
+    "gold_sha256": "2a3aa9fa7b93a57f54738d3ff5f8195163c0c1a0b49ea96f0b3b6df0179912b8",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ]
+    ],
+    "reason": "The matrix origins, destinations and traffic-aware ETA requirement are all asked in one equivalent group. The billing-comparison basis and specific Mapbox driving-traffic profile are not requested."
+  }
+]

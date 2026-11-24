@@ -1,0 +1,298 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-079",
+    "query": "Our self-hosted OSRM returns HTTP 400 with code 'NoSegment' for Indian coordinates we pass as 12.97,77.59;12.93,77.62.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-097",
+    "query": "Drawing several Google routes with more than 10 waypoints each only shows one route. Is there a 10-waypoint cap?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-124",
+    "query": "What will 50,000 Google two-wheeler routes a month cost us in India via the Routes API?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-223",
+    "query": "Can Mapbox Search Box return 20 suggestions per call?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-086",
+    "query": "All Ola reverse-geocode calls fail with 401/403 after we rotated OAuth credentials.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-085",
+    "query": "Our Nominatim requests get blocked. We don't send any User-Agent.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DM-225",
+    "query": "Can Google's Routes API give us a transit matrix for 15 stations × 10 offices?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-062",
+    "query": "Mapbox reverse geocoding with limit=5 returns 422.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-047",
+    "query": "Autocomplete (New) never returns query predictions for us.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-111",
+    "query": "How do we get city/state/country from Mapbox reverse geocoding?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-099",
+    "query": "Why does Google reverse geocoding return ZERO_RESULTS on some GPS coordinates?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-088",
+    "query": "Looping over 15 markers and calling Google Directions for each pair quickly gives OVER_QUERY_LIMIT. How should we fix it?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-111",
+    "query": "Google Places autocomplete says 'The provided API key is invalid' with our server key.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DM-049",
+    "query": "Sandbox CRM ticket TKT-93241. Customer wrote:\n\"Some elements in our Google Distance Matrix response have status NOT_FOUND while others are OK.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DM-125",
+    "query": "OSRM table returns durations only. How do we also get distances?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DM-046",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Our 10×10 Google Distance Matrix with departure_time=now fails, but works without departure_time."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Exact origin/destination counts?"
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-AC-125",
+    "query": "For a type-ahead address search box, how do Ola Maps Autocomplete and the public Nominatim endpoint compare for free usage and restrictions?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-226",
+    "query": "Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-094",
+    "query": "How do we restrict autocomplete results to India on each provider?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-209",
+    "query": "I'm setting up Mappls Autosuggest for Sri Lanka. How do I select that country, and what should I do about the zoom parameter I use for India?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-207",
+    "query": "We're a cycling-delivery startup in Pune. Which providers give bicycling directions in India?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-072",
+    "query": "Ola Directions gives a 'shortest' route that's slower than expected through Bengaluru traffic. Which option gives the quickest route?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-030",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Compare Ola Maps and Google for 6,000,000 traffic-aware route requests a month in India. What if we drop live traffic?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Which ETA accuracy do you need at dispatch vs in-trip?"
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-026",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "How much would Mapbox Directions cost for 900,000 requests a month?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need driving-traffic, or is the driving profile enough?"
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-080",
+    "query": "Can we use router.project-osrm.org table service for our commercial fleet ETA matrix?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DM-209",
+    "query": "We need walking-time matrices for a campus-delivery robot pilot in India. Which providers support walking?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DM-067",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Distance Matrix returns 429 when our dispatcher refreshes ETAs every 10 seconds for 200 drivers."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Requests per minute?"
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-121",
+    "query": "Google Route Matrix for two-wheelers in India: 120,000 elements a month. Cost?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-105",
+    "query": "How do we get the city name from lat/lng with Google?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-091",
+    "query": "Which reverse geocoders handle Indian boundaries per Indian law?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-217",
+    "query": "What's Google's default reverse geocoding throughput?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-119",
+    "query": "Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-027",
+    "query": "Sandbox CRM opportunity OPP-58418. Customer wrote:\n\"We're still on Place Autocomplete (Legacy) in India: 300,000 sessions × 9 requests. Cost per billing option?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-084",
+    "query": "How do we limit Nominatim search to India and get up to 50 results?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-099",
+    "query": "Google Places Autocomplete: we need results from 5 countries (CH, FR, DE, AT, IT). Is only one country allowed?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-114",
+    "query": "Restrict Google Place Autocomplete to Bangladesh.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-118",
+    "query": "Ola Place Details after autocomplete selection: 6,000,000 calls a month. Cost?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-121",
+    "query": "Google Autocomplete (New), India: 200,000 sessions with 25 requests each. Is per-request or session pricing cheaper, assuming every session ends in Place Details Essentials?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-122",
+    "query": "Ola vs Mapbox autocomplete for 100,000 sessions × 8 keystrokes a month?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-216",
+    "query": "Our Mapbox address box shows autocomplete suggestions while users type. After we switched it to the Geocoding API, request counts exploded. Why is this happening?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-224",
+    "query": "Do Mapbox Search Box autocomplete /suggest and /retrieve calls need a session token?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DM-045",
+    "query": "Sandbox CRM ticket TKT-63953. Customer wrote:\n\"Google Distance Matrix gives MAX_DIMENSIONS_EXCEEDED with 30 destinations and 1 origin, even though that's only 30 elements.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-034",
+    "query": "Sandbox CRM ticket TKT-35162. Customer wrote:\n\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-096",
+    "query": "Free reverse geocoding options for a hobby app with 20,000 lookups a month?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-102",
+    "query": "Google Geocode REQUEST_DENIED for reverse geocode with our Places-enabled key.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-120",
+    "query": "Ola vs Mapbox reverse geocoding when we must store 300,000 results a month?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-123",
+    "query": "Filter Google reverse geocoding to location_type=RANGE_INTERPOLATED only.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-124",
+    "query": "Filter Google reverse geocoding to location_type=GEOMETRIC_CENTER only.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-205",
+    "query": "Our map shows disputed borders for Indian users. Can Mapbox reverse geocoding return India's view of boundaries?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-211",
+    "query": "Will Mappls reverse geocoding give us the same detailed response in Bangladesh as in India?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-216",
+    "query": "We want to batch reverse-geocode 2 million historical GPS points with nominatim.openstreetmap.org. OK?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-222",
+    "query": "Can Nominatim reverse return just the suburb instead of the full address?",
+    "history": []
+  }
+]

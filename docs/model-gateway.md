@@ -1,8 +1,8 @@
 # Model gateway
 
-Capstone tracking: Activity 18.
+Capstone tracking: Activities 18 and 20.
 
-The shared client lives in `copilot/llm/client.py`. Activity 2's existing call remains valid. Other components can supply optional `tools`, `tool_choice`, and `response_format` to `LLMClient.complete()`.
+The shared client lives in `copilot/model_gateway/client.py`. Activity 2's existing call remains valid. Other components can supply optional `tools`, `tool_choice`, and `response_format` to `LLMClient.complete()`.
 
 | Input | Meaning |
 |---|---|
@@ -11,24 +11,24 @@ The shared client lives in `copilot/llm/client.py`. Activity 2's existing call r
 | `tools`, `tool_choice` | Function definitions and tool selection. A tool choice requires definitions. |
 | `response_format` | Endpoint output mode, such as `{"type": "json_object"}`. |
 
-The returned `Completion` has `text`, `raw` (the same redacted text), `model`, endpoint `usage`, `latency_ms`, `think_seen`, normalized `tool_calls`, and `finish_reason`. Each tool call retains its ID, type, function name and arguments string. Callers parse arguments and validate the registered tool schema before execution. Endpoint errors use the existing `ConfigError`, `LLMError`, `TokenLimitError`, and `BudgetExceeded` exceptions. Context preflight uses the existing character-based estimate and includes tool definitions and tool-message metadata. Exact tokenizer enforcement belongs to Activity 20.
+The returned `Completion` has `text`, `raw` (the same redacted text), `model`, endpoint `usage`, `latency_ms`, `think_seen`, normalized `tool_calls`, and `finish_reason`. Each tool call retains its ID, type, function name and arguments string. Callers parse arguments and validate the registered tool schema before execution. Endpoint errors use the existing `ConfigError`, `LLMError`, `TokenLimitError`, and `BudgetExceeded` exceptions. Context admission uses the published Qwen3 tokenizer and template, including tool definitions, metadata and a conservative framing allowance. Each enquiry shares a cumulative token reservation. See [reliability setup and limits](activity-20-reliability.md).
 
-Configuration uses `TRACKB_API_KEY` and `TRACKB_CA_CERT` or explicit client constructor arguments. An app adapter can pass its configured credentials explicitly. TLS verification uses the provided CA certificate. Latency covers the complete logical SDK call including waits for serialization and retry backoff. The existing three-retry policy needs alignment with Activity 20's per-step retry target.
+Configuration uses `TRACKB_API_KEY` and `TRACKB_CA_CERT` or explicit client constructor arguments. An app adapter can pass its configured credentials explicitly. TLS verification uses the provided CA certificate. Latency covers the logical SDK call, including waits for serialization and retry backoff. Retries are capped at two per step and share credits with JSON repair. Model and tool timeouts respect the remaining enquiry deadline.
 
 ## Endpoint verification
 
 Run synthetic chat, JSON-object mode, and a forced function-call probe.
 
 ```bash
-python -m copilot.llm.endpoint_checks --out model-gateway/results/smoke-002
+python -m copilot.model_gateway.endpoint_checks --out copilot/model_gateway/results/smoke-002
 ```
 
 After the probes pass, the following also sends the 80 frozen enquiries and their conversation history to the configured endpoint. It checks the input checksum and record IDs first.
 
 ```bash
-python -m copilot.llm.endpoint_checks \
+python -m copilot.model_gateway.endpoint_checks \
   --frozen-dir eval/frozen-interpretation \
-  --out model-gateway/results/frozen-002
+  --out copilot/model_gateway/results/frozen-002
 ```
 
 Each run uses a new output directory and writes `report.json`. A frozen run also writes `responses.jsonl`. Reports distinguish smoke latency from the full frozen latency population. p50 and p95 use nearest-rank percentiles of completed calls. Error cases are counted separately through the per-case pass fields. The frozen run measures endpoint completion behavior and latency. Answer accuracy uses the evaluation harness.
@@ -41,6 +41,6 @@ Live smoke results, frozen latency and overall acceptance are recorded only afte
 
 ## Verified status
 
-The first live synthetic run passed chat, JSON-object mode and function-call checks. The evidence is in `model-gateway/results/smoke-001/report.json`. Across these three synthetic calls, p50 was 430 ms and p95 was 714 ms; these are smoke timings, not frozen-set timings. The 80-case live run is complete: all 80 endpoint checks passed, with p50 2,680 ms and p95 5,463 ms. Evidence is in `model-gateway/results/frozen-001/report.json` and `responses.jsonl`. Activity 18 is complete under the project owner's acceptance of the institute-provided model. The stored acceptance decision was updated without rerunning the endpoint or changing measured results.
+The first live synthetic run passed chat, JSON-object mode and function-call checks. The evidence is in `copilot/model_gateway/results/smoke-001/report.json`. Across these three synthetic calls, p50 was 430 ms and p95 was 714 ms; these are smoke timings, not frozen-set timings. The 80-case live run is complete: all 80 endpoint checks passed, with p50 2,680 ms and p95 5,463 ms. Evidence is in `copilot/model_gateway/results/frozen-001/report.json` and `responses.jsonl`. Activity 18 is complete under the project owner's acceptance of the institute-provided model. The stored acceptance decision was updated without rerunning the endpoint or changing measured results.
 
 The CLI exits with status 0 only when every Activity 18 acceptance condition passes. A passing smoke-only run therefore still exits with status 1; inspect `smoke_passed` for the individual smoke result.

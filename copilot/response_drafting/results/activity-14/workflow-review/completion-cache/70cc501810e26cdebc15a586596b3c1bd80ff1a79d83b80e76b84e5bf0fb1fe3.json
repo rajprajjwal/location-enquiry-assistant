@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The 'not authorized' error suggests an API key restriction issue, which requires inspecting the actual request to confirm the cause.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The 'not authorized' error suggests an API key restriction issue, which requires inspecting the actual request to confirm the cause.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1872,
+    "completion_tokens": 37,
+    "total_tokens": 1909
+  },
+  "latency_ms": 1161,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

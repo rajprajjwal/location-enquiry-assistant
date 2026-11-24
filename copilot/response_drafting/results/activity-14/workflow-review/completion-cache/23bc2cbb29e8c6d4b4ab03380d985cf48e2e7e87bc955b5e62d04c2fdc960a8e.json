@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The '429 Reached monthly/minute rate limits' error indicates a rate limiting issue, which could be due to a burst of requests exceeding the allowed quota. To diagnose this, inspect one request and test it in isolation to confirm the rate limit behavior.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The '429 Reached monthly/minute rate limits' error indicates a rate limiting issue, which could be due to a burst of requests exceeding the allowed quota. To diagnose this, inspect one request and test it in isolation to confirm the rate limit behavior.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1408,
+    "completion_tokens": 64,
+    "total_tokens": 1472
+  },
+  "latency_ms": 1679,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

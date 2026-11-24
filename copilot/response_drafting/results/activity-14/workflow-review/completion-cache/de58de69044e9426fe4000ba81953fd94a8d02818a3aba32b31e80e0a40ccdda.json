@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The 429 status code indicates a rate limit has been exceeded, which suggests a burst of requests during sale traffic. Inspect one request and test it in isolation to confirm the issue.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The 429 status code indicates a rate limit has been exceeded, which suggests a burst of requests during sale traffic. Inspect one request and test it in isolation to confirm the issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2119,
+    "completion_tokens": 51,
+    "total_tokens": 2170
+  },
+  "latency_ms": 2301,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,11 @@
+{
+  "workbook_sha256_before": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "workbook_sha256_after": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "workbook_unchanged": true,
+  "reference_sha256": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089",
+  "records_exact_question_raw_and_normalized": 317,
+  "exact_original_question_groups": 128,
+  "frozen_records": 0,
+  "holdout_records": 0,
+  "atomic_review": "Assistant-authored and independently cross-checked by a second agent before candidate generation. Baseline generation began in parallel; neither reviewer used predictions for decomposition. Not independent human review."
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The enquiry indicates a rejection of a Directions request with 30 waypoints, which suggests a possible limit on the number of waypoints allowed. The retrieved evidence does not specify the exact limit, so further investigation is needed to determine the maximum number of waypoints supported by the Ola Maps Directions API.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The enquiry indicates a rejection of a Directions request with 30 waypoints, which suggests a possible limit on the number of waypoints allowed. The retrieved evidence does not specify the exact limit, so further investigation is needed to determine the maximum number of waypoints supported by the Ola Maps Directions API.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1123,
+    "completion_tokens": 68,
+    "total_tokens": 1191
+  },
+  "latency_ms": 1735,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

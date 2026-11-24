@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"debouncing\",\n      \"value\": false,\n      \"evidence\": \"The customer's question implies they are not using debouncing.\"\n    },\n    {\n      \"field\": \"details_completion\",\n      \"value\": false,\n      \"evidence\": \"The customer's question implies they are not calling Place Details after a selection.\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about billing for two API calls with different API keys. The sessionToken parameter is essential for billing, and the documentation states that all requests within a session must use the same Google Cloud Console project. Therefore, the missing material decisions are whether the customer calls Place Details after a selection and whether they debounce keystrokes.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"debouncing\",\n      \"value\": false,\n      \"evidence\": \"The customer's question implies they are not using debouncing.\"\n    },\n    {\n      \"field\": \"details_completion\",\n      \"value\": false,\n      \"evidence\": \"The customer's question implies they are not calling Place Details after a selection.\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about billing for two API calls with different API keys. The sessionToken parameter is essential for billing, and the documentation states that all requests within a session must use the same Google Cloud Console project. Therefore, the missing material decisions are whether the customer calls Place Details after a selection and whether they debounce keystrokes.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1932,
+    "completion_tokens": 226,
+    "total_tokens": 2158
+  },
+  "latency_ms": 5262,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

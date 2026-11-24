@@ -1,0 +1,24 @@
+{
+  "cases": 17,
+  "completed": 17,
+  "valid_cases": 17,
+  "errors": [],
+  "owner_correct": 16,
+  "owner_accuracy_all_cases": 0.9411764705882353,
+  "valid_only_diagnostics": {
+    "cases": 17,
+    "owner_correct": 16,
+    "owner_accuracy": 0.9411764705882353,
+    "escalation_true_positives": 4,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "complete_valid_run": true,
+  "mode": "fresh interpretation and live routing; no cached decisions",
+  "production_record_writes": 0,
+  "external_messages": 0,
+  "passes": true
+}

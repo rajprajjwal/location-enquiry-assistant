@@ -1,0 +1,20 @@
+Activity 14 question selection verification
+
+The route gate and punctuation validation were corrected. Structured candidate decisions are saved in the case trace.
+Fallback selection now runs for direct answers and record-update proposals as well as escalations.
+Active questions, pending replies and approval behavior are tracked independently from staff suggestions.
+
+Reviewed working-eval cohort: 16 cases, seven approved questions and twelve atomic facts.
+Prior selector: strict F1 0.000, fact recall 0/12, no questions on the nine confirmed-empty cases.
+Revised selector: strict F1 0.000, fact recall 1/12, seven questions on confirmed-empty cases.
+The revision does not meet the 0.80 F1 acceptance target.
+
+All sixteen paired cases preserved route, owner, next action, approvals and pending-reply state.
+Automated regression checks: 188 passed and four subtests passed.
+Frozen and holdout cases were excluded.
+
+These reviewed working-eval cases were used to diagnose the revision and are development evidence.
+Question matching was assessed by the assistant against the locked human labels.
+The run shows that model selection still repeats supplied facts, asks documentation questions and misses diagnostic evidence.
+
+All four separate pending-reply cases reopened and resumed identically, with zero endpoint errors.

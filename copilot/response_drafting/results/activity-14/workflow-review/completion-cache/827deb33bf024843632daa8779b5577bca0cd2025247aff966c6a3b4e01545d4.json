@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The enquiry indicates that the traffic results from the Google Distance Matrix are inaccurate. This could be due to the display not correctly rendering the API's response, which may include traffic data. The diagnostic plan should focus on verifying the raw API result to determine if the issue lies in the data retrieval or the rendering process.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The enquiry indicates that the traffic results from the Google Distance Matrix are inaccurate. This could be due to the display not correctly rendering the API's response, which may include traffic data. The diagnostic plan should focus on verifying the raw API result to determine if the issue lies in the data retrieval or the rendering process.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2169,
+    "completion_tokens": 72,
+    "total_tokens": 2241
+  },
+  "latency_ms": 2107,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

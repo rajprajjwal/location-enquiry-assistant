@@ -1,0 +1,102 @@
+{
+  "measurement": "Fixed saved candidates and human-approved question wording. No model generation.",
+  "saved_candidates": 9,
+  "confirmed_empty_questions_before": 5,
+  "confirmed_empty_questions_after": 0,
+  "credential_requests_rejected": 1,
+  "approved_questions_retained": 7,
+  "approved_questions_tested": 7,
+  "candidates": [
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "text": "What is the maximum number of waypoints allowed per route in the Google Maps Platform Directions API?",
+      "confirmed_empty": false,
+      "rejection": "documentation_question"
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "text": "Does the Mapbox Search Box API allow specifying a maximum number of results, and if so, what is the maximum allowed?",
+      "confirmed_empty": true,
+      "rejection": "documentation_question"
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "text": "What OAuth token is being used for the reverse-geocode calls after the credential rotation?",
+      "confirmed_empty": false,
+      "rejection": "credential_value_requested"
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "text": "Are you required to use a specific User-Agent for Nominatim requests, or can you configure one?",
+      "confirmed_empty": true,
+      "rejection": "documentation_question"
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "text": "Can you provide an example query that is not returning predictions?",
+      "confirmed_empty": false,
+      "rejection": null
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "text": "What format does the Mapbox reverse geocoding response use (e.g., JSON, XML) and what are the exact keys for city, state, and country?",
+      "confirmed_empty": true,
+      "rejection": "documentation_question"
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "text": "What are the specific GPS coordinates that are returning ZERO_RESULTS?",
+      "confirmed_empty": false,
+      "rejection": null
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "text": "Is the API key still active and correctly configured for the Google Maps Platform?",
+      "confirmed_empty": true,
+      "rejection": "configuration_advice_as_question"
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "text": "Are you requesting the distance matrix in a format that supports distances, such as JSON or XML?",
+      "confirmed_empty": true,
+      "rejection": "documentation_question"
+    }
+  ],
+  "approved": [
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "text": "For one route that isn\u2019t drawn, what does the API return for that request: a route, an empty result, or an error?",
+      "rejection": null
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "text": "Could you share an example of the failing reverse-geocoding request as sent, with tokens and credentials redacted?",
+      "rejection": null
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "text": "Could you share the exact request that returned `422` and the error message from the response body? Please redact your access token.",
+      "rejection": null
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "text": "Which provider are you using, and could you share the request body from one call that didn\u2019t return query predictions? Please remove any credentials.",
+      "rejection": null
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "text": "Could you share one latitude and longitude that returned `ZERO_RESULTS`, along with any result filters sent in that request?",
+      "rejection": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "text": "Could you share one Directions request from the loop with the API key redacted, and tell us whether that same request still returns `OVER_QUERY_LIMIT` when sent on its own?",
+      "rejection": null
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "text": "Could you share one origin and destination pair that returned `NOT_FOUND`, with both values exactly as sent in the request?",
+      "rejection": null
+    }
+  ]
+}

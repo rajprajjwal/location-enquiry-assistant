@@ -1,0 +1,507 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "c549131bd50f87c3ef4ee6745b47c6f3611a09a585afa818f84e8c33c40c21b6",
+  "gold_sha256": "8a4de740bcb26c974540c298772f3f70484a97888fb18be3d6f0b5111bb39940",
+  "reviewer": "Assistant semantic review against user-approved working-eval labels",
+  "cases": [
+    {
+      "record_id": "GT-LBS-DIR-079",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Confirmed-empty case."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "All approved facts are requested together. Equivalent wording accepted."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": [
+          "For one route that is not drawn, does the API return a route, an empty result, or an error?"
+        ]
+      },
+      "approved_questions": [
+        {
+          "question": "For one route that isn’t drawn, what does the API return for that request: a route, an empty result, or an error?",
+          "facts": [
+            "API response for one missing route: route, empty result, or error"
+          ],
+          "why_it_matters": "Determine whether to troubleshoot the route request or the app's rendering."
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-124",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Confirmed-empty case."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Confirmed-empty case."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "All approved facts are requested together. Equivalent wording accepted."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": [
+          "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+        ]
+      },
+      "approved_questions": [
+        {
+          "question": "Could you share an example of the failing reverse-geocoding request as sent, with tokens and credentials redacted?",
+          "facts": [
+            "redacted example of the failing reverse-geocoding request as sent"
+          ],
+          "why_it_matters": "Check how the request is built and how it attaches the access token."
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Confirmed-empty case."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Confirmed-empty case."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "All approved facts are requested together. Equivalent wording accepted."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": [
+          "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials."
+        ]
+      },
+      "approved_questions": [
+        {
+          "question": "Could you share the exact request that returned `422` and the error message from the response body? Please redact your access token.",
+          "facts": [
+            "exact failing Mapbox reverse-geocoding request with access token redacted",
+            "error message in the 422 response body"
+          ],
+          "why_it_matters": "Identify which parameters were sent with limit=5 and what Mapbox rejected."
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "All approved facts are requested together. Equivalent wording accepted."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "Can you provide an example query that is not returning predictions?"
+        ],
+        "integrated": [
+          "Which provider are you using, and could you share the request body from one call that did not return predictions? Please remove credentials."
+        ]
+      },
+      "approved_questions": [
+        {
+          "question": "Which provider are you using, and could you share the request body from one call that didn’t return query predictions? Please remove any credentials.",
+          "facts": [
+            "provider",
+            "redacted request body from a call without query predictions"
+          ],
+          "why_it_matters": "Check whether the request uses the correct query-prediction option for the provider."
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Confirmed-empty case."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Coordinates covered. Filters omitted."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "All approved facts are requested together. Equivalent wording accepted."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "What are the specific GPS coordinates that are returning ZERO_RESULTS?"
+        ],
+        "integrated": [
+          "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?"
+        ]
+      },
+      "approved_questions": [
+        {
+          "question": "Could you share one latitude and longitude that returned `ZERO_RESULTS`, along with any result filters sent in that request?",
+          "facts": [
+            "failing latitude and longitude",
+            "result filters"
+          ],
+          "why_it_matters": "Reproduce the lookup and check whether the same coordinates return a result without the filters."
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Conservative strict judgement. The request example is covered, but still fails does not explicitly confirm the same OVER_QUERY_LIMIT error in isolation."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": [
+          "Could you share one failing request with credentials redacted, and tell us whether the same request still fails when sent on its own?"
+        ]
+      },
+      "approved_questions": [
+        {
+          "question": "Could you share one Directions request from the loop with the API key redacted, and tell us whether that same request still returns `OVER_QUERY_LIMIT` when sent on its own?",
+          "facts": [
+            "redacted Directions request from the loop",
+            "whether that request returns OVER_QUERY_LIMIT when sent on its own"
+          ],
+          "why_it_matters": "Inspect the failing request and determine whether the error is tied to the burst from the loop."
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Confirmed-empty case."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "All approved facts are requested together. Equivalent wording accepted."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": [
+          "Could you share one origin and destination pair that failed, with both values exactly as sent in the request?"
+        ]
+      },
+      "approved_questions": [
+        {
+          "question": "Could you share one origin and destination pair that returned `NOT_FOUND`, with both values exactly as sent in the request?",
+          "facts": [
+            "origin and destination from one failing pair",
+            "exact representation of each input in the request"
+          ],
+          "why_it_matters": "Reproduce the element failure and check how its inputs were represented."
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Confirmed-empty case."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "Are you using the correct matrix type for distance calculation with OSRM?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-046",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No complete approved question."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Confirmed-empty case."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    }
+  ]
+}

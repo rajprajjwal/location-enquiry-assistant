@@ -1,0 +1,34 @@
+{
+  "cases": 36,
+  "preserved": {
+    "route": 36,
+    "next_action": 36,
+    "owner": 36,
+    "approvals": 36,
+    "proposed_actions": 36,
+    "active_questions": 36,
+    "pending_reply": 36,
+    "asked": 36,
+    "answered": 36,
+    "awaiting": 36,
+    "clarification_messages": 36
+  },
+  "reopened_cases": 4,
+  "reopened_preserved": 4,
+  "endpoint_errors": [
+    429,
+    429
+  ],
+  "excluded_attempts": [
+    {
+      "record_id": "GT-LBS-AC-024",
+      "attempt": 1,
+      "errors": [
+        429,
+        429
+      ]
+    }
+  ],
+  "endpoint_calls": 169,
+  "changes": []
+}

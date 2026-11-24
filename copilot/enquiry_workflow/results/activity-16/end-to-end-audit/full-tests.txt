@@ -1,0 +1,26 @@
+.................................................................... [  6%]
+........................................................................ [ 14%]
+........................................................................ [ 21%]
+........................................................................ [ 29%]
+........................................................................ [ 36%]
+........................................................................ [ 43%]
+........................................................................ [ 51%]
+........................................................................ [ 58%]
+............................................................F........... [ 65%]
+........................................................................ [ 73%]
+........................................................................ [ 80%]
+........................................................................ [ 88%]
+............s...................................................... [ 94%]
+..................................................                 [100%]
+=================================== FAILURES ===================================
+_ test_requirement_decisions_and_final_advice_are_identical_without_control_changes _
+tests/enquiry_workflow/test_requirement_plan.py:81: in test_requirement_decisions_and_final_advice_are_identical_without_control_changes
+    interpreted = models().InterpretationOutput.model_validate(rules_only(query=enquiry['query'], abstain_reason='test')['output'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for InterpretationOutput
+E   abstain_reason
+E     Input should be 'model_unavailable', 'invalid_after_repair', 'budget_exceeded' or 'no_rule_match' [type=literal_error, input_value='test', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.14/v/literal_error
+=========================== short test summary info ============================
+SKIPPED [1] tests/rag/test_freshness.py:77: no local snapshot
+1 failed, 975 passed, 1 skipped, 15 subtests passed in 10.74s

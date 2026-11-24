@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The discrepancy in addresses between geocoding and reverse geocoding is expected due to the nature of the APIs. Reverse geocoding provides an estimated address based on the closest addressable location, while geocoding may return more specific details. The documentation confirms this behavior, and no further action is required.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The discrepancy in addresses between geocoding and reverse geocoding is expected due to the nature of the APIs. Reverse geocoding provides an estimated address based on the closest addressable location, while geocoding may return more specific details. The documentation confirms this behavior, and no further action is required.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1915,
+    "completion_tokens": 71,
+    "total_tokens": 1986
+  },
+  "latency_ms": 2097,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

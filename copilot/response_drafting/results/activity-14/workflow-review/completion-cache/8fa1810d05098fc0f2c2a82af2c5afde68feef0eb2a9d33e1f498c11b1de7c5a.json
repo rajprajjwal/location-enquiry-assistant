@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The error OVER_QUERY_LIMIT suggests that the service has received too many requests from the application within the allowed time period. This could be due to a burst of requests, possibly from a loop or concurrent requests hitting a quota. Inspecting one request and testing it in isolation can help identify if the issue is related to request rate limits.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The error OVER_QUERY_LIMIT suggests that the service has received too many requests from the application within the allowed time period. This could be due to a burst of requests, possibly from a loop or concurrent requests hitting a quota. Inspecting one request and testing it in isolation can help identify if the issue is related to request rate limits.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2033,
+    "completion_tokens": 78,
+    "total_tokens": 2111
+  },
+  "latency_ms": 2035,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

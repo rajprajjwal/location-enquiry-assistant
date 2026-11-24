@@ -1,0 +1,28 @@
+# Purpose: keep local env, caches and secrets out of git.
+# Use case: blocks keys/certs (e.g. *.crt, *.pem, .env, TRACKB_API_KEY) and the .venv/.
+# Example: .venv/ and __pycache__/ below are never committed.
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+.DS_Store
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*API_KEY*
+*api_key*
+TRACKB_API_KEY
+# Generated scratch (reports and gold JSON are committed)
+.pytest_cache/
+
+# Rebuildable retrieval files.
+copilot/rag/data/chroma/
+copilot/rag/data/raw/
+
+# Local review database.
+copilot/case_storage/data/lbs.db*
+
+copilot/model_gateway/assets/

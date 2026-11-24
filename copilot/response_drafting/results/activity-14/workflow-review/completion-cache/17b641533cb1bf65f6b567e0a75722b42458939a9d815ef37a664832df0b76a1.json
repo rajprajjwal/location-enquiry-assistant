@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The response contains null values for unroutable coordinate pairs, which is expected behavior. The issue might be with the display or rendering of the matrix results rather than the API response itself.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The response contains null values for unroutable coordinate pairs, which is expected behavior. The issue might be with the display or rendering of the matrix results rather than the API response itself.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2280,
+    "completion_tokens": 47,
+    "total_tokens": 2327
+  },
+  "latency_ms": 1392,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

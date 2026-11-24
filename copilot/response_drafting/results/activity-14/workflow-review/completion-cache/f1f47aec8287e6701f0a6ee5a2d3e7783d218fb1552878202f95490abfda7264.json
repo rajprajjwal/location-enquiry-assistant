@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The customer is encountering a REQUEST_DENIED error when using the location_type=ROOFTOP parameter with Google reverse geocoding. According to the documentation, this error may occur if the request includes a location_type or result_type parameter but does not include an API key. To diagnose the issue, we need to inspect the actual request that was made, as the error might be due to missing or incorrect API key configuration.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The customer is encountering a REQUEST_DENIED error when using the location_type=ROOFTOP parameter with Google reverse geocoding. According to the documentation, this error may occur if the request includes a location_type or result_type parameter but does not include an API key. To diagnose the issue, we need to inspect the actual request that was made, as the error might be due to missing or incorrect API key configuration.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2952,
+    "completion_tokens": 96,
+    "total_tokens": 3048
+  },
+  "latency_ms": 2553,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

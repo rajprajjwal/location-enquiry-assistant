@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"matrix_input\", \"reason\":\"Some elements in the Distance Matrix response have status NOT_FOUND, which indicates that the origin and/or destination of the pairing couldn't be geocoded. This suggests that the input addresses for some matrix elements may be invalid or not properly formatted. Inspect a failing pair exactly as submitted to identify the issue.\"}",
+  "raw": "{\"decision\":\"matrix_input\", \"reason\":\"Some elements in the Distance Matrix response have status NOT_FOUND, which indicates that the origin and/or destination of the pairing couldn't be geocoded. This suggests that the input addresses for some matrix elements may be invalid or not properly formatted. Inspect a failing pair exactly as submitted to identify the issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2139,
+    "completion_tokens": 72,
+    "total_tokens": 2211
+  },
+  "latency_ms": 1940,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

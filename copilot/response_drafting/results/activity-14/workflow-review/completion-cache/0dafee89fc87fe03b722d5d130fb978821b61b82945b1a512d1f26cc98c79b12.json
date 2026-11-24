@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry is asking about OSRM's route service capabilities, and the retrieved evidence confirms that the service returns alternative routes and full geometry based on the specified parameters. No further diagnostic action is required.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry is asking about OSRM's route service capabilities, and the retrieved evidence confirms that the service returns alternative routes and full geometry based on the specified parameters. No further diagnostic action is required.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2054,
+    "completion_tokens": 48,
+    "total_tokens": 2102
+  },
+  "latency_ms": 1368,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,17 @@
+{
+  "reference": "Earlier saved outputs/activity-14-frozen/workflow.jsonl. Historical reference uses older upstream code, so differences are not attributed to the named-error change.",
+  "changes": [
+    {
+      "record_id": "GT-LBS-DIR-108",
+      "historical_route": "final",
+      "paired_before_fix_route": "escalated",
+      "locked_route": "escalated"
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "historical_route": "final",
+      "paired_before_fix_route": "escalated",
+      "locked_route": "escalated"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "cases": 80,
+  "completed": 80,
+  "valid_cases": 79,
+  "errors": [
+    {
+      "record_id": "GT-LBS-DM-224",
+      "error": "interpretation:no_rule_match"
+    }
+  ],
+  "owner_correct": 63,
+  "owner_accuracy_all_cases": 0.7875,
+  "valid_only_diagnostics": {
+    "cases": 79,
+    "owner_correct": 63,
+    "owner_accuracy": 0.7974683544303798,
+    "escalation_true_positives": 10,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "complete_valid_run": false,
+  "mode": "fresh interpretation and live routing; no cached decisions",
+  "production_record_writes": 0,
+  "external_messages": 0,
+  "passes": false
+}

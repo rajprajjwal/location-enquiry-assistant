@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"120,000 elements a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"input_type\"],\n      \"decision_impact\": \"Choose the correct request representation and applicable processing constraints.\"\n    }\n  ],\n  \"reason\": \"The input_type is required to determine the correct request representation and applicable processing constraints for the Google Route Matrix API.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"120,000 elements a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"input_type\"],\n      \"decision_impact\": \"Choose the correct request representation and applicable processing constraints.\"\n    }\n  ],\n  \"reason\": \"The input_type is required to determine the correct request representation and applicable processing constraints for the Google Route Matrix API.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 949,
+    "completion_tokens": 138,
+    "total_tokens": 1087
+  },
+  "latency_ms": 3225,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

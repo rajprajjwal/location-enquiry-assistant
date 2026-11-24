@@ -1,0 +1,361 @@
+[
+  {
+    "record_id": "GT-LBS-AC-021",
+    "before": [
+      {
+        "question": "Which Place Details SKU ends your sessions?",
+        "facts": [
+          "details_sku"
+        ]
+      }
+    ],
+    "after": []
+  },
+  {
+    "record_id": "GT-LBS-AC-022",
+    "before": [
+      {
+        "question": "Which Place Details SKU ends your sessions?",
+        "facts": [
+          "details_sku"
+        ]
+      }
+    ],
+    "after": []
+  },
+  {
+    "record_id": "GT-LBS-AC-023",
+    "before": [
+      {
+        "question": "Which Place Details SKU ends your sessions?",
+        "facts": [
+          "details_sku"
+        ]
+      }
+    ],
+    "after": []
+  },
+  {
+    "record_id": "GT-LBS-AC-024",
+    "before": [
+      {
+        "question": "Which Place Details SKU ends your sessions?",
+        "facts": [
+          "details_sku"
+        ]
+      }
+    ],
+    "after": []
+  },
+  {
+    "record_id": "GT-LBS-DIR-049",
+    "before": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "Will the 15–20 outlets be visited in one route, and how many must be included in one request?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DIR-050",
+    "before": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-034",
+    "before": [
+      {
+        "question": "Traffic needed for all matrices?",
+        "facts": [
+          "traffic_scope"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "question": "Which country is your billing account based in?",
+        "facts": [
+          "billing_country"
+        ]
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "before": [
+      {
+        "question": "How many origins and destinations per request, and do they need traffic-aware ETAs?",
+        "facts": [
+          "origin_count",
+          "destination_count",
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Should cost be compared per pair (Ola) or per element/request (Google/Mapbox)?",
+        "facts": [
+          "billing_basis"
+        ]
+      },
+      {
+        "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+        "facts": [
+          "mapbox_traffic_profile"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "question": "How many origins and destinations per request, and do they need traffic-aware ETAs?",
+        "facts": [
+          "origin_count",
+          "destination_count",
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+        "facts": [
+          "mapbox_traffic_profile"
+        ]
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-010",
+    "before": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "storage_required"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-014",
+    "before": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "storage_required"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-228",
+    "before": [
+      {
+        "question": "What peak rate and monthly volume do they need?",
+        "facts": [
+          "peak_rate",
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Must results be in Hindi or another language?",
+        "facts": [
+          "languages"
+        ]
+      },
+      {
+        "question": "Will results be stored, and is public Nominatim or Mapbox temporary geocoding acceptable?",
+        "facts": [
+          "storage_required",
+          "public_service_acceptable",
+          "temporary_results_acceptable"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "question": "What peak rate and monthly volume do they need?",
+        "facts": [
+          "peak_rate",
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Will results be stored, and is public Nominatim or Mapbox temporary geocoding acceptable?",
+        "facts": [
+          "storage_required",
+          "public_service_acceptable",
+          "temporary_results_acceptable"
+        ]
+      }
+    ]
+  },
+  {
+    "record_id": "GT-LBS-RG-230",
+    "before": [
+      {
+        "question": "Is street-address / rooftop precision a hard filter, and is an address-element breakdown required?",
+        "facts": [
+          "rooftop_hard_filter",
+          "address_elements_required"
+        ]
+      },
+      {
+        "question": "Which provider are they considering besides Google and Nominatim?",
+        "facts": [
+          "alternative_providers"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "question": "Which providers should we evaluate?",
+        "facts": [
+          "alternative_providers"
+        ]
+      }
+    ]
+  }
+]

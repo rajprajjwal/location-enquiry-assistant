@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The enquiry indicates a rejection of a Directions request with 30 waypoints, which suggests a possible limit issue. The retrieved evidence does not specify the exact limit for waypoints, so further investigation is needed to determine the limit and verify if the request exceeds it.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The enquiry indicates a rejection of a Directions request with 30 waypoints, which suggests a possible limit issue. The retrieved evidence does not specify the exact limit for waypoints, so further investigation is needed to determine the limit and verify if the request exceeds it.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1177,
+    "completion_tokens": 61,
+    "total_tokens": 1238
+  },
+  "latency_ms": 1599,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

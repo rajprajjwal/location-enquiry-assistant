@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"debouncing\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"},{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"}],\"reason\":\"The enquiry is about which autocomplete APIs support session-based pricing, and the missing material facts are whether the customer debounces keystrokes and whether they call Place Details after a selection, both of which are critical for determining billing and session management.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"debouncing\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"},{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"}],\"reason\":\"The enquiry is about which autocomplete APIs support session-based pricing, and the missing material facts are whether the customer debounces keystrokes and whether they call Place Details after a selection, both of which are critical for determining billing and session management.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1758,
+    "completion_tokens": 103,
+    "total_tokens": 1861
+  },
+  "latency_ms": 2591,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

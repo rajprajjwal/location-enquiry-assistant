@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"limits_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "raw": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"limits_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1299,
+    "completion_tokens": 48,
+    "total_tokens": 1347
+  },
+  "latency_ms": 1273,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

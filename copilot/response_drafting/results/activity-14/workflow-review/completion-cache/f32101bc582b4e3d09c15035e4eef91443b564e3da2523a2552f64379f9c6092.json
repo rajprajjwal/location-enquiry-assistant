@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_request\", \"reason\":\"The enquiry indicates that query predictions are not being returned, which requires inspecting the exact query and the returned prediction to diagnose the issue.\"}",
+  "raw": "{\"decision\":\"prediction_request\", \"reason\":\"The enquiry indicates that query predictions are not being returned, which requires inspecting the exact query and the returned prediction to diagnose the issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1721,
+    "completion_tokens": 38,
+    "total_tokens": 1759
+  },
+  "latency_ms": 1160,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

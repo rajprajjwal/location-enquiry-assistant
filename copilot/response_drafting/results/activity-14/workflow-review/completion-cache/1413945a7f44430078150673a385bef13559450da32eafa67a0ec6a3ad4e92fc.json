@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\", \"reason\":\"The reverse geocoding request is returning ZERO_RESULTS, which may indicate that the coordinates provided are in a remote location or there are no addressable locations within the specified tolerance. To diagnose further, the coordinates and any result filters used in the request are needed.\"}",
+  "raw": "{\"decision\":\"missing_results\", \"reason\":\"The reverse geocoding request is returning ZERO_RESULTS, which may indicate that the coordinates provided are in a remote location or there are no addressable locations within the specified tolerance. To diagnose further, the coordinates and any result filters used in the request are needed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2053,
+    "completion_tokens": 63,
+    "total_tokens": 2116
+  },
+  "latency_ms": 1986,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 
-from copilot.llm.client import DEFAULT_MODEL, Completion
+from copilot.model_gateway.client import DEFAULT_MODEL, Completion
 
 QUAL_KEYS = (
     "use_case",

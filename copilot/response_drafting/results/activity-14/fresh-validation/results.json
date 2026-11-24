@@ -1,0 +1,96 @@
+{
+  "cohort": "16 fresh working-eval cases from sixteen previously unused groups; four cases per API",
+  "review_kind": "assistant_reviewed_exploratory",
+  "user_approved_labels": 2,
+  "assistant_reviewed_labels": 14,
+  "independent_human_review_complete": false,
+  "positive_cases": 1,
+  "empty_cases": 15,
+  "metrics": {
+    "baseline": {
+      "predicted": 9,
+      "gold": 1,
+      "matches": 0,
+      "facts": 0,
+      "gold_facts": 2,
+      "questions_on_empty_gold": 8,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fact_recall": 0.0
+    },
+    "integrated": {
+      "predicted": 0,
+      "gold": 1,
+      "matches": 0,
+      "facts": 0,
+      "gold_facts": 2,
+      "questions_on_empty_gold": 0,
+      "f1": 0.0,
+      "precision": 0,
+      "recall": 0.0,
+      "fact_recall": 0.0
+    }
+  },
+  "behavior": {
+    "cases": 16,
+    "preserved": {
+      "route": 16,
+      "next_action": 16,
+      "owner": 16,
+      "approvals": 16,
+      "proposed_actions": 16,
+      "active_questions": 16,
+      "pending_reply": 16,
+      "asked": 16,
+      "answered": 16,
+      "awaiting": 16,
+      "clarification_messages": 16
+    },
+    "reopened_cases": 0,
+    "reopened_preserved": 0,
+    "excluded_attempts": [
+      {
+        "record_id": "GT-LBS-DM-209",
+        "attempt": 1,
+        "errors": [
+          429,
+          429
+        ]
+      }
+    ],
+    "endpoint_errors": [
+      429,
+      429
+    ],
+    "endpoint_calls": 40,
+    "changes": []
+  },
+  "selection_status_counts": {
+    "no_follow_up": 14,
+    "declined": 1,
+    "unsupported_decision": 1
+  },
+  "evaluation_binding": {
+    "predictions_sha256": "958940a3ddee347d93cacd3341a66ff71ad1e2b19b7861dc10f14d01ff160fe7",
+    "gold_sha256": "f85624a7d42d755c953908fc428c89949eac7355819765b2b952e0ae80d0de46",
+    "review_sha256": "92d28df32a8426d8c1e768779ed9409eff880e7aa7c844607721a9d769c0d6bd"
+  },
+  "f1_target": 0.8,
+  "f1_target_met": false,
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "finding": {
+    "record_id": "GT-LBS-RG-119",
+    "missing_facts": [
+      "billing account country",
+      "primary usage geography"
+    ],
+    "observation": "The integrated workflow produced no follow-up. Its decision policy permits no pricing-eligibility decision for this enquiry."
+  },
+  "limitations": [
+    "Only one positive case is present, so this provides limited evidence about general fact recall.",
+    "Fourteen reference labels were reviewed by the implementer under explicit user delegation.",
+    "Only endpoint-error-free paired cases were scored. Rate-limited attempts were retried from checkpoints."
+  ]
+}

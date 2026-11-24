@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The reverse geocoding API may return a street 100 m away due to the nature of how Nominatim works, which finds the closest suitable OSM object. This is documented and does not require further action or customer input.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The reverse geocoding API may return a street 100 m away due to the nature of how Nominatim works, which finds the closest suitable OSM object. This is documented and does not require further action or customer input.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1875,
+    "completion_tokens": 59,
+    "total_tokens": 1934
+  },
+  "latency_ms": 1632,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

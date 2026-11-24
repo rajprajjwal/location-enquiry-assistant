@@ -1,0 +1,16 @@
+{
+  "records": 52,
+  "input_sha256": "7b747af4f557ae9884b2e4af0353fe4b7c6aa113ef9f436357dd0258fa08a1b7",
+  "changes": [],
+  "unchanged": 52,
+  "new_trigger_overlaps": 0,
+  "source_sha256": {
+    "copilot/diagnostics/policy.py": "d6ba39fdea65ce3286899b64d056a14aaa3369bd48c1568157dfb100faea1580",
+    "copilot/diagnostics/planning.py": "a1bc0ae8308192b53a1296ddb54364de0ad41f428338fd1d4d4e942b3ad98563",
+    "copilot/diagnostics/extraction.py": "ff7bca391e6b01687d5826c4ae775c528db4ddb9848df70593493f335e0ea3f4",
+    "copilot/qualification/task.py": "cea9c57b47ae100a5be1c1f46e1e378829f031a8c93dad445d97bc9b8c399acd"
+  },
+  "frozen": 0,
+  "holdout": 0,
+  "model_calls": 0
+}

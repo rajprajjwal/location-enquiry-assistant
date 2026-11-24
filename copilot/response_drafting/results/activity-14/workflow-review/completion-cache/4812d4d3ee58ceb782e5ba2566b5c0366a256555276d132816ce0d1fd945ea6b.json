@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"food-delivery platform app\",\"evidence\":\"Our Mumbai food-delivery platform app expects 150,000 address-search sessions a month, averaging 12 keystrokes each.\"},\"region\":{\"value\":\"Mumbai\",\"evidence\":\"Our Mumbai food-delivery platform app expects 150,000 address-search sessions a month, averaging 12 keystrokes each.\"},\"monthly_volume\":{\"value\":\"150,000 address-search sessions a month\",\"evidence\":\"Our Mumbai food-delivery platform app expects 150,000 address-search sessions a month, averaging 12 keystrokes each.\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"food-delivery platform app\",\"evidence\":\"Our Mumbai food-delivery platform app expects 150,000 address-search sessions a month, averaging 12 keystrokes each.\"},\"region\":{\"value\":\"Mumbai\",\"evidence\":\"Our Mumbai food-delivery platform app expects 150,000 address-search sessions a month, averaging 12 keystrokes each.\"},\"monthly_volume\":{\"value\":\"150,000 address-search sessions a month\",\"evidence\":\"Our Mumbai food-delivery platform app expects 150,000 address-search sessions a month, averaging 12 keystrokes each.\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1386,
+    "completion_tokens": 241,
+    "total_tokens": 1627
+  },
+  "latency_ms": 5493,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

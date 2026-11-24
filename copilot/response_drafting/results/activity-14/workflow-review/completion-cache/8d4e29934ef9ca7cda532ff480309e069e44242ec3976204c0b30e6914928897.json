@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\", \"travel_mode\"],\n      \"decision_impact\": \"Check the required matrix features before applying the documented price and limits.\"\n    }\n  ],\n  \"reason\": \"The customer's request for a committed-use price for 80M Distance Matrix pairs requires understanding the specific features like traffic data and travel modes, which are essential for accurate pricing and service configuration.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\", \"travel_mode\"],\n      \"decision_impact\": \"Check the required matrix features before applying the documented price and limits.\"\n    }\n  ],\n  \"reason\": \"The customer's request for a committed-use price for 80M Distance Matrix pairs requires understanding the specific features like traffic data and travel modes, which are essential for accurate pricing and service configuration.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1669,
+    "completion_tokens": 98,
+    "total_tokens": 1767
+  },
+  "latency_ms": 2430,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

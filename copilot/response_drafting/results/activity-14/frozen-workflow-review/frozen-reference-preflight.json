@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "records": 80,
+  "unique_ids": 80,
+  "same_order_across_inputs_and_references": true,
+  "frozen_records": 80,
+  "holdout_records": 0,
+  "by_api": {
+    "directions": 20,
+    "distance_matrix": 20,
+    "autocomplete": 20,
+    "reverse_geocode": 20
+  },
+  "original_question_groups": 75,
+  "original_atomic_facts": 99,
+  "gold_positive_cases": 40,
+  "gold_empty_cases": 40,
+  "workbook_exact_queries_history_and_question_lists": 80,
+  "normalization_drift": false,
+  "workbook_changed": false,
+  "source_hashes": {
+    "copilot/response_drafting/results/activity-14/frozen-qualification/inputs.jsonl": "b8c26d867bca77364d7348957b22ea8b7cda85b7d918f7cefd398f8b1ad39d81",
+    "copilot/response_drafting/results/activity-14/frozen-qualification/locked-gold.json": "7c5c44fb2f1d216957585b7edaf765406b791da2c13decd6c05cd0e4d63000fb",
+    "copilot/response_drafting/results/activity-14/frozen-qualification/frozen-questions.json": "b5f8fce68f5d751931f74403671bc402dc624bb2df73f167a2a2ecd782518984",
+    "copilot/response_drafting/results/activity-14/frozen-qualification/ground-truth-frozen.csv": "00a6727d142f0f00a2d35c2edaea32d4c2ebbcbabf58afe3adda793ca3b3ade1",
+    "copilot/response_drafting/results/activity-14/frozen-qualification/review-cases.json": "9d78b9f59b7d2b24565f231ec146d5a07b85005cbf0b28413bbc12684274a7a7",
+    "copilot/response_drafting/results/activity-14/frozen-qualification/question-review.bound.json": "a632da26c93e85dd4ecd8a7cfd6134e134ff8c1f3ad12d5fcd0d87fed003f4f9",
+    "copilot/response_drafting/results/activity-14/frozen-qualification/scores.json": "582842a5f586a6aabe0206b25a7c49b364b971172fbf8edd603b3fe28fe4d8d7",
+    "copilot/response_drafting/results/activity-14/frozen-qualification/run-manifest.json": "713db523e14230d8fd2e502dae1ea0a59c54129364144fdf4fec55b2f9f2dfcc",
+    "data/ground-truth.xlsx": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68"
+  },
+  "previous_latest_metrics": {
+    "predicted": 46,
+    "gold": 75,
+    "matches": 8,
+    "facts": 18,
+    "gold_facts": 99,
+    "questions_on_empty_gold": 24,
+    "f1": 0.1322314049586777,
+    "precision": 0.17391304347826086,
+    "recall": 0.10666666666666667,
+    "fact_recall": 0.18181818181818182
+  },
+  "previous_older_metrics": {
+    "predicted": 13,
+    "gold": 75,
+    "matches": 0,
+    "facts": 4,
+    "gold_facts": 99,
+    "questions_on_empty_gold": 8,
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "fact_recall": 0.04040404040404041
+  },
+  "previous_retrieval": {
+    "mode": "bm25",
+    "rerank": false
+  },
+  "previous_few_shot_interpretation": false,
+  "review_provenance": "Assistant semantic review with independent cross-checks against unchanged frozen questions and prior atomic facts; historical baseline judgements preserved. Not independent human acceptance.",
+  "comparability": "Use these exact 75 original question groups and 99 prior atomic facts. The working-eval 164-fact decomposition is a different cohort and must not replace this reference.",
+  "source_or_gold_changes": false
+}

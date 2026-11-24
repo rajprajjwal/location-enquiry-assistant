@@ -1,0 +1,54 @@
+{
+  "original-reference": {
+    "integrated": {
+      "predicted": 51,
+      "gold": 65,
+      "matches": 48,
+      "facts": 65,
+      "gold_facts": 84,
+      "questions_on_empty_gold": 1,
+      "f1": 0.8275862068965517,
+      "precision": 0.9411764705882353,
+      "recall": 0.7384615384615385,
+      "fact_recall": 0.7738095238095238
+    },
+    "baseline": {
+      "predicted": 52,
+      "gold": 65,
+      "matches": 49,
+      "facts": 67,
+      "gold_facts": 84,
+      "questions_on_empty_gold": 1,
+      "f1": 0.8376068376068376,
+      "precision": 0.9423076923076923,
+      "recall": 0.7538461538461538,
+      "fact_recall": 0.7976190476190477
+    }
+  },
+  "reviewed-reference": {
+    "integrated": {
+      "predicted": 51,
+      "gold": 55,
+      "matches": 49,
+      "facts": 66,
+      "gold_facts": 73,
+      "questions_on_empty_gold": 1,
+      "f1": 0.9245283018867925,
+      "precision": 0.9607843137254902,
+      "recall": 0.8909090909090909,
+      "fact_recall": 0.9041095890410958
+    },
+    "baseline": {
+      "predicted": 52,
+      "gold": 55,
+      "matches": 48,
+      "facts": 66,
+      "gold_facts": 73,
+      "questions_on_empty_gold": 1,
+      "f1": 0.897196261682243,
+      "precision": 0.9230769230769231,
+      "recall": 0.8727272727272727,
+      "fact_recall": 0.9041095890410958
+    }
+  }
+}

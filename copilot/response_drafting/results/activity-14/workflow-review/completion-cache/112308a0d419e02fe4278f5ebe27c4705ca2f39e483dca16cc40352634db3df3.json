@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\",\"reason\":\"The issue with transit directions returning ZERO_RESULTS might be due to incorrect parameters or timing issues. To diagnose, we need the actual request that was made, as the error could be related to the arrival_time format, specific location data, or transit availability at the specified time.\"}",
+  "raw": "{\"decision\":\"request_reproduction\",\"reason\":\"The issue with transit directions returning ZERO_RESULTS might be due to incorrect parameters or timing issues. To diagnose, we need the actual request that was made, as the error could be related to the arrival_time format, specific location data, or transit availability at the specified time.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1923,
+    "completion_tokens": 65,
+    "total_tokens": 1988
+  },
+  "latency_ms": 1777,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

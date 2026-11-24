@@ -1,0 +1,257 @@
+{
+  "status_replies": [
+    {
+      "question": "Are you an existing customer?",
+      "answer": "yes",
+      "status": "existing",
+      "deferred": false
+    },
+    {
+      "question": "Are you an existing customer?",
+      "answer": "no",
+      "status": "new",
+      "deferred": false
+    },
+    {
+      "question": "Are you an existing customer?",
+      "answer": "existing",
+      "status": "existing",
+      "deferred": false
+    },
+    {
+      "question": "Are you an existing customer?",
+      "answer": "new",
+      "status": "new",
+      "deferred": false
+    },
+    {
+      "question": "Are you an existing customer?",
+      "answer": "Let's leave that open for now.",
+      "status": "unknown",
+      "deferred": true
+    },
+    {
+      "question": "Are you already using this service?",
+      "answer": "yes",
+      "status": "existing",
+      "deferred": false
+    },
+    {
+      "question": "Are you already using this service?",
+      "answer": "no",
+      "status": "new",
+      "deferred": false
+    },
+    {
+      "question": "Are you already using this service?",
+      "answer": "existing",
+      "status": "existing",
+      "deferred": false
+    },
+    {
+      "question": "Are you already using this service?",
+      "answer": "new",
+      "status": "new",
+      "deferred": false
+    },
+    {
+      "question": "Are you already using this service?",
+      "answer": "Let's leave that open for now.",
+      "status": "unknown",
+      "deferred": true
+    },
+    {
+      "question": "Are you a new or existing customer?",
+      "answer": "yes",
+      "status": "unknown",
+      "deferred": false
+    },
+    {
+      "question": "Are you a new or existing customer?",
+      "answer": "no",
+      "status": "unknown",
+      "deferred": false
+    },
+    {
+      "question": "Are you a new or existing customer?",
+      "answer": "existing",
+      "status": "existing",
+      "deferred": false
+    },
+    {
+      "question": "Are you a new or existing customer?",
+      "answer": "new",
+      "status": "new",
+      "deferred": false
+    },
+    {
+      "question": "Are you a new or existing customer?",
+      "answer": "Let's leave that open for now.",
+      "status": "unknown",
+      "deferred": true
+    }
+  ],
+  "pending_status_reply": [
+    {
+      "restored_task": "How do I set waypoints in Mapbox Directions?",
+      "raw_reply": "existing",
+      "assistant_question_saved": true,
+      "returned_status": "existing",
+      "persisted_status": "existing",
+      "owner": "Support L1",
+      "provisional": false,
+      "route": "final",
+      "pending_reply": null,
+      "approval_statuses": []
+    },
+    {
+      "restored_task": "How do I set waypoints in Mapbox Directions?",
+      "raw_reply": "new",
+      "assistant_question_saved": true,
+      "returned_status": "new",
+      "persisted_status": "new",
+      "owner": "Account team (Sales)",
+      "provisional": false,
+      "route": "final",
+      "pending_reply": null,
+      "approval_statuses": []
+    },
+    {
+      "restored_task": "How do I set waypoints in Mapbox Directions?",
+      "raw_reply": "new",
+      "assistant_question_saved": false,
+      "returned_status": "new",
+      "persisted_status": "new",
+      "owner": "Account team (Sales)",
+      "provisional": false,
+      "route": "final",
+      "pending_reply": null,
+      "approval_statuses": []
+    },
+    {
+      "restored_task": "How do I set waypoints in Mapbox Directions?",
+      "raw_reply": "existing",
+      "assistant_question_saved": false,
+      "returned_status": "existing",
+      "persisted_status": "existing",
+      "owner": "Support L1",
+      "provisional": false,
+      "route": "final",
+      "pending_reply": null,
+      "approval_statuses": []
+    },
+    {
+      "restored_task": "We are an existing customer. How do I set waypoints in Mapbox Directions?",
+      "raw_reply": "new",
+      "assistant_question_saved": true,
+      "returned_status": "new",
+      "persisted_status": "new",
+      "owner": "Account team (Sales)",
+      "provisional": false,
+      "route": "final",
+      "pending_reply": null,
+      "approval_statuses": []
+    },
+    {
+      "restored_task": "We are a new customer. How do I set waypoints in Mapbox Directions?",
+      "raw_reply": "existing",
+      "assistant_question_saved": true,
+      "returned_status": "existing",
+      "persisted_status": "existing",
+      "owner": "Support L1",
+      "provisional": false,
+      "route": "final",
+      "pending_reply": null,
+      "approval_statuses": []
+    },
+    {
+      "restored_task": "Production is down. Directions returns HTTP 503 for every request.",
+      "raw_reply": "new",
+      "assistant_question_saved": true,
+      "returned_status": "new",
+      "persisted_status": "new",
+      "owner": "Maps engineering",
+      "provisional": false,
+      "route": "escalated",
+      "pending_reply": null,
+      "approval_statuses": [
+        "pending"
+      ]
+    }
+  ],
+  "setup_question_guards": [
+    {
+      "question": "Is this a new or existing Google Cloud project?",
+      "answer": "new",
+      "bound": false,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing Google Cloud project?",
+      "answer": "new",
+      "bound": true,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing Google Cloud project?",
+      "answer": "existing",
+      "bound": false,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing Google Cloud project?",
+      "answer": "existing",
+      "bound": true,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing API key?",
+      "answer": "new",
+      "bound": false,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing API key?",
+      "answer": "new",
+      "bound": true,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing API key?",
+      "answer": "existing",
+      "bound": false,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing API key?",
+      "answer": "existing",
+      "bound": true,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing account setup?",
+      "answer": "new",
+      "bound": false,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing account setup?",
+      "answer": "new",
+      "bound": true,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing account setup?",
+      "answer": "existing",
+      "bound": false,
+      "result": null
+    },
+    {
+      "question": "Is this a new or existing account setup?",
+      "answer": "existing",
+      "bound": true,
+      "result": null
+    }
+  ],
+  "live_model_calls": 0
+}

@@ -1,0 +1,873 @@
+[
+  {
+    "record_id": "GT-LBS-AC-021",
+    "query": "Google Places Autocomplete (New) in India: 50,000 sessions a month, ~8 requests each, ending in Place Details Essentials. Sessions vs no sessions: what's the cost?",
+    "original_gold_questions": [
+      {
+        "question": "Which Place Details SKU ends your sessions?",
+        "facts": [
+          "details_sku"
+        ]
+      }
+    ],
+    "generated_questions": [],
+    "unmatched_gold_questions": [
+      1
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "field": "details_sku",
+        "state": {
+          "field": "details_sku",
+          "status": "supplied",
+          "value": "Place Details Essentials",
+          "source": "query",
+          "evidence": "ending in Place Details Essentials",
+          "start": 86,
+          "end": 120
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "The provided facts include the monthly volume, region, and details SKU. The missing material fact is the session-termination billing rule, which is necessary to determine the cost structure for the Autocomplete API with Place Details Essentials.",
+      "model_reason": "The provided facts include the monthly volume, region, and details SKU. The missing material fact is the session-termination billing rule, which is necessary to determine the cost structure for the Autocomplete API with Place Details Essentials.",
+      "groups": [],
+      "supplied_fact_proposals": 3
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-022",
+    "query": "Google Places Autocomplete (New) in India: 200,000 sessions a month, ~15 requests each, ending in Place Details Essentials. Sessions vs no sessions: what's the cost?",
+    "original_gold_questions": [
+      {
+        "question": "Which Place Details SKU ends your sessions?",
+        "facts": [
+          "details_sku"
+        ]
+      }
+    ],
+    "generated_questions": [],
+    "unmatched_gold_questions": [
+      1
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "field": "details_sku",
+        "state": {
+          "field": "details_sku",
+          "status": "supplied",
+          "value": "Place Details Essentials",
+          "source": "query",
+          "evidence": "ending in Place Details Essentials",
+          "start": 88,
+          "end": 122
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "The provided facts include the monthly volume, region, and details SKU, which are necessary for calculating the cost. However, the exact session-termination billing rule for the selected details SKU is not explicitly confirmed, which affects the pricing calculation.",
+      "model_reason": "The provided facts include the monthly volume, region, and details SKU, which are necessary for calculating the cost. However, the exact session-termination billing rule for the selected details SKU is not explicitly confirmed, which affects the pricing calculation.",
+      "groups": [],
+      "supplied_fact_proposals": 3
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-023",
+    "query": "Google Places Autocomplete (New) in India: 1,000,000 sessions a month, ~10 requests each, ending in Place Details Essentials. Sessions vs no sessions: what's the cost?",
+    "original_gold_questions": [
+      {
+        "question": "Which Place Details SKU ends your sessions?",
+        "facts": [
+          "details_sku"
+        ]
+      }
+    ],
+    "generated_questions": [],
+    "unmatched_gold_questions": [
+      1
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "field": "details_sku",
+        "state": {
+          "field": "details_sku",
+          "status": "supplied",
+          "value": "Place Details Essentials",
+          "source": "query",
+          "evidence": "ending in Place Details Essentials",
+          "start": 90,
+          "end": 124
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "The provided facts include the monthly volume, region, and details SKU, which are necessary for determining the cost. However, the exact cost calculation may depend on additional factors such as the specific pricing tiers, any applicable discounts, and the exact billing rules for the selected SKU.",
+      "model_reason": "The provided facts include the monthly volume, region, and details SKU, which are necessary for determining the cost. However, the exact cost calculation may depend on additional factors such as the specific pricing tiers, any applicable discounts, and the exact billing rules for the selected SKU.",
+      "groups": [],
+      "supplied_fact_proposals": 3
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-024",
+    "query": "Google Places Autocomplete (New) in India: 400,000 sessions a month, ~5 requests each, ending in Place Details Essentials. Sessions vs no sessions: what's the cost?",
+    "original_gold_questions": [
+      {
+        "question": "Which Place Details SKU ends your sessions?",
+        "facts": [
+          "details_sku"
+        ]
+      }
+    ],
+    "generated_questions": [],
+    "unmatched_gold_questions": [
+      1
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "field": "details_sku",
+        "state": {
+          "field": "details_sku",
+          "status": "supplied",
+          "value": "Place Details Essentials",
+          "source": "query",
+          "evidence": "ending in Place Details Essentials",
+          "start": 87,
+          "end": 121
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "The provided facts include the monthly volume, region, and details SKU, which are necessary for calculating the cost. However, the exact session-termination billing rule for the selected details SKU is not explicitly confirmed, which affects the pricing calculation.",
+      "model_reason": "The provided facts include the monthly volume, region, and details SKU, which are necessary for calculating the cost. However, the exact session-termination billing rule for the selected details SKU is not explicitly confirmed, which affects the pricing calculation.",
+      "groups": [],
+      "supplied_fact_proposals": 3
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "query": "Hi, we're an intercity bus aggregator and want a directions/routing API for route previews between cities. What do you recommend?",
+    "original_gold_questions": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ],
+    "generated_questions": [
+      "Could you confirm expected monthly API workload?",
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm maximum stops or waypoints per route?",
+      "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?"
+    ],
+    "unmatched_gold_questions": [
+      3
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 3,
+        "fact": 1,
+        "field": "travel_mode",
+        "state": {
+          "field": "travel_mode",
+          "status": "supplied",
+          "value": "bus",
+          "source": "query",
+          "evidence": "Hi, we're an intercity bus aggregator and want a directions/routing API for route previews between cities.",
+          "start": null,
+          "end": null
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "Material profile requirements remain unconfirmed.",
+      "model_reason": "The customer has specified the travel mode as 'bus', but other critical factors such as monthly volume, traffic requirements, maximum stops, and project/commercial plan status are missing, which are essential for determining the appropriate API solution and its associated costs and capabilities.",
+      "groups": [
+        {
+          "fields": [
+            "monthly_volume"
+          ],
+          "decision_impact": "Estimate the recurring workload and cost.",
+          "text": "Could you confirm expected monthly API workload?"
+        },
+        {
+          "fields": [
+            "traffic_required"
+          ],
+          "decision_impact": "Select traffic-aware versus static routing capability.",
+          "text": "Could you confirm whether live-traffic ETAs are required?"
+        },
+        {
+          "fields": [
+            "max_stops"
+          ],
+          "decision_impact": "Check route shape against waypoint limits.",
+          "text": "Could you confirm maximum stops or waypoints per route?"
+        },
+        {
+          "fields": [
+            "existing_project",
+            "commercial_plan"
+          ],
+          "decision_impact": "Establish product eligibility and applicable commercial terms.",
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?"
+        }
+      ],
+      "supplied_fact_proposals": 1
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-049",
+    "query": "Hi, we're a field-sales app for FMCG reps in UP and want a directions/routing API for daily beat plans with 15–20 outlets. What do you recommend?",
+    "original_gold_questions": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ],
+    "generated_questions": [
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?"
+    ],
+    "unmatched_gold_questions": [
+      1,
+      4
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "field": "monthly_volume",
+        "state": {
+          "field": "monthly_volume",
+          "status": "supplied",
+          "value": {
+            "raw": "15–20 outlets",
+            "requests_per_month": null,
+            "unit": null
+          },
+          "source": "interpretation",
+          "evidence": "qualification_details.monthly_volume",
+          "start": null,
+          "end": null
+        }
+      },
+      {
+        "gold_question": 4,
+        "fact": 1,
+        "field": "max_stops",
+        "state": {
+          "field": "max_stops",
+          "status": "supplied",
+          "value": "15–20",
+          "source": "query",
+          "evidence": "15–20 outlets",
+          "start": 108,
+          "end": 121
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "Material profile requirements remain unconfirmed.",
+      "model_reason": "The customer's enquiry lacks information on monthly volume, traffic requirements, and travel mode, which are critical for determining the appropriate API solution, cost estimation, and feature selection.",
+      "groups": [
+        {
+          "fields": [
+            "traffic_required"
+          ],
+          "decision_impact": "Select traffic-aware versus static routing capability.",
+          "text": "Could you confirm whether live-traffic ETAs are required?"
+        },
+        {
+          "fields": [
+            "travel_mode"
+          ],
+          "decision_impact": "Determine vehicle-specific routing support.",
+          "text": "Could you confirm required vehicle or travel modes?"
+        },
+        {
+          "fields": [
+            "existing_project",
+            "commercial_plan"
+          ],
+          "decision_impact": "Establish product eligibility and applicable commercial terms.",
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?"
+        }
+      ],
+      "supplied_fact_proposals": 3
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-050",
+    "query": "Hi, we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?",
+    "original_gold_questions": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ],
+    "generated_questions": [
+      "Could you confirm expected monthly API workload?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm maximum stops or waypoints per route?",
+      "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?"
+    ],
+    "unmatched_gold_questions": [
+      2
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "field": "traffic_required",
+        "state": {
+          "field": "traffic_required",
+          "status": "supplied",
+          "value": true,
+          "source": "query",
+          "evidence": "under live traffic",
+          "start": 104,
+          "end": 122
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "Material profile requirements remain unconfirmed.",
+      "model_reason": "The customer has specified the need for live traffic routing but has not provided details on monthly API usage, travel mode, maximum stops, or project/commercial plan status, which are critical for evaluating workload, cost, and eligibility.",
+      "groups": [
+        {
+          "fields": [
+            "monthly_volume"
+          ],
+          "decision_impact": "Estimate the recurring workload and cost.",
+          "text": "Could you confirm expected monthly API workload?"
+        },
+        {
+          "fields": [
+            "travel_mode"
+          ],
+          "decision_impact": "Determine vehicle-specific routing support.",
+          "text": "Could you confirm required vehicle or travel modes?"
+        },
+        {
+          "fields": [
+            "max_stops"
+          ],
+          "decision_impact": "Check route shape against waypoint limits.",
+          "text": "Could you confirm maximum stops or waypoints per route?"
+        },
+        {
+          "fields": [
+            "existing_project",
+            "commercial_plan"
+          ],
+          "decision_impact": "Establish product eligibility and applicable commercial terms.",
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?"
+        }
+      ],
+      "supplied_fact_proposals": 2
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-030",
+    "query": "Google Maps Platform quote: 10×10 matrices, 120,000 per month in India, existing project.",
+    "original_gold_questions": [
+      {
+        "question": "Are inputs coordinates or addresses?",
+        "facts": [
+          "input_type"
+        ]
+      }
+    ],
+    "generated_questions": [],
+    "unmatched_gold_questions": [
+      1
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "field": "input_type",
+        "state": null
+      }
+    ],
+    "selection": {
+      "status": "no_follow_up",
+      "decision": "none",
+      "reason": "The enquiry already identifies the configuration fix related to the matrix elements limit and the pricing details for the Google Maps Platform Distance Matrix API.",
+      "proposal": {
+        "decision": "none",
+        "reason": "The enquiry already identifies the configuration fix related to the matrix elements limit and the pricing details for the Google Maps Platform Distance Matrix API."
+      },
+      "allowed_decisions": [
+        "none"
+      ],
+      "retrieved_passages_available": 7
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-034",
+    "query": "Ola Maps vs Google for 10×10 matrices, 10,000 a month in India, with and without traffic. Which is cheaper?",
+    "original_gold_questions": [
+      {
+        "question": "Traffic needed for all matrices?",
+        "facts": [
+          "traffic_scope"
+        ]
+      }
+    ],
+    "generated_questions": [
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "unmatched_gold_questions": [
+      1
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "field": "traffic_scope",
+        "state": null
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "Material profile requirements remain unconfirmed.",
+      "model_reason": "The billing country and usage geography are required to qualify the applicable regional price schedule for accurate pricing comparison.",
+      "groups": [
+        {
+          "fields": [
+            "billing_country",
+            "usage_geography"
+          ],
+          "decision_impact": "Qualify the applicable regional price schedule.",
+          "text": "Could you confirm billing account country and where most requests will be used?"
+        }
+      ],
+      "supplied_fact_proposals": 2
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "query": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API?",
+    "original_gold_questions": [
+      {
+        "question": "How many origins and destinations per request, and do they need traffic-aware ETAs?",
+        "facts": [
+          "origin_count",
+          "destination_count",
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Should cost be compared per pair (Ola) or per element/request (Google/Mapbox)?",
+        "facts": [
+          "billing_basis"
+        ]
+      },
+      {
+        "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+        "facts": [
+          "mapbox_traffic_profile"
+        ]
+      }
+    ],
+    "generated_questions": [
+      "Where will the application operate?",
+      "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?",
+      "Could you confirm whether Mapbox driving-traffic is required?"
+    ],
+    "unmatched_gold_questions": [
+      2
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "field": "billing_basis",
+        "state": null
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "Material profile requirements remain unconfirmed.",
+      "model_reason": "The customer is seeking live ETAs between many drivers and many jobs, which requires understanding the number of origins and destinations per matrix, as well as whether Mapbox traffic profile is needed for accurate ETAs.",
+      "groups": [
+        {
+          "fields": [
+            "origin_count",
+            "destination_count",
+            "traffic_required"
+          ],
+          "decision_impact": "Select a service and request shape that supports the required matrix and ETA capability.",
+          "text": "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?"
+        },
+        {
+          "fields": [
+            "mapbox_traffic_profile"
+          ],
+          "decision_impact": "Check the coordinate cap if the Mapbox traffic profile is required.",
+          "text": "Could you confirm whether Mapbox driving-traffic is required?"
+        }
+      ],
+      "supplied_fact_proposals": 1
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-010",
+    "query": "Our Lucknow e-commerce returns operator needs about 4,500,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?",
+    "original_gold_questions": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "storage_required"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "generated_questions": [
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "unmatched_gold_questions": [
+      1
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "field": "storage_required",
+        "state": {
+          "field": "storage_required",
+          "status": "supplied",
+          "value": true,
+          "source": "query",
+          "evidence": "must store the addresses",
+          "start": 112,
+          "end": 136
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "Material profile requirements remain unconfirmed.",
+      "model_reason": "The customer's requirement for reverse-geocoding lookups and storage is clear, but the trigger type (user-triggered or periodic) is missing, which affects the compatibility with public-service usage policies.",
+      "groups": [
+        {
+          "fields": [
+            "lookup_trigger"
+          ],
+          "decision_impact": "Check public-service usage-policy compatibility for interactive versus periodic use.",
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?"
+        }
+      ],
+      "supplied_fact_proposals": 3
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-014",
+    "query": "Our Chandigarh real-estate portal needs about 400,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?",
+    "original_gold_questions": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "storage_required"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "generated_questions": [
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "unmatched_gold_questions": [
+      1
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 1,
+        "field": "storage_required",
+        "state": {
+          "field": "storage_required",
+          "status": "supplied",
+          "value": true,
+          "source": "query",
+          "evidence": "must store the addresses",
+          "start": 104,
+          "end": 128
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "Material profile requirements remain unconfirmed.",
+      "model_reason": "The customer has specified the need for reverse-geocoding lookups and storage, but the trigger type (user-triggered or periodic) is missing, which affects the selection of compatible services and their policies.",
+      "groups": [
+        {
+          "fields": [
+            "lookup_trigger"
+          ],
+          "decision_impact": "Check public-service usage-policy compatibility for interactive versus periodic use.",
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?"
+        }
+      ],
+      "supplied_fact_proposals": 3
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-227",
+    "query": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?",
+    "original_gold_questions": [],
+    "generated_questions": [
+      "Which map provider are you using?"
+    ],
+    "unmatched_gold_questions": [],
+    "uncovered_facts": [],
+    "selection": {
+      "status": "no_qualification_required"
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-228",
+    "query": "A logistics prospect wants to reverse-geocode driver GPS pings into addresses shown in Hindi, and they may store the results. What should we ask before recommending a provider?",
+    "original_gold_questions": [
+      {
+        "question": "What peak rate and monthly volume do they need?",
+        "facts": [
+          "peak_rate",
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Must results be in Hindi or another language?",
+        "facts": [
+          "languages"
+        ]
+      },
+      {
+        "question": "Will results be stored, and is public Nominatim or Mapbox temporary geocoding acceptable?",
+        "facts": [
+          "storage_required",
+          "public_service_acceptable",
+          "temporary_results_acceptable"
+        ]
+      }
+    ],
+    "generated_questions": [
+      "Could you confirm peak requests per second and expected monthly API workload?",
+      "Could you confirm whether results must be stored, whether a public community endpoint is acceptable and whether temporary-only geocoding results are acceptable?"
+    ],
+    "unmatched_gold_questions": [
+      2
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 2,
+        "fact": 1,
+        "field": "languages",
+        "state": {
+          "field": "languages",
+          "status": "supplied",
+          "value": "Hindi",
+          "source": "query",
+          "evidence": "shown in Hindi",
+          "start": 78,
+          "end": 92
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "Material profile requirements remain unconfirmed.",
+      "model_reason": "The customer's requirements include reverse geocoding with Hindi language support and potential storage of results. To recommend a provider, we need to understand the expected monthly workload, peak rate, storage needs, and whether a public endpoint or temporary results are acceptable.",
+      "groups": [
+        {
+          "fields": [
+            "peak_rate",
+            "monthly_volume"
+          ],
+          "decision_impact": "Check throughput and recurring usage before recommending a service.",
+          "text": "Could you confirm peak requests per second and expected monthly API workload?"
+        },
+        {
+          "fields": [
+            "storage_required",
+            "public_service_acceptable",
+            "temporary_results_acceptable"
+          ],
+          "decision_impact": "Select a deployment and licensing model compatible with the customer use.",
+          "text": "Could you confirm whether results must be stored, whether a public community endpoint is acceptable and whether temporary-only geocoding results are acceptable?"
+        }
+      ],
+      "supplied_fact_proposals": 2
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-230",
+    "query": "A prospect says they only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision, and they need an address broken into elements. What should we ask, and which documented parameters matter?",
+    "original_gold_questions": [
+      {
+        "question": "Is street-address / rooftop precision a hard filter, and is an address-element breakdown required?",
+        "facts": [
+          "rooftop_hard_filter",
+          "address_elements_required"
+        ]
+      },
+      {
+        "question": "Which provider are they considering besides Google and Nominatim?",
+        "facts": [
+          "alternative_providers"
+        ]
+      }
+    ],
+    "generated_questions": [
+      "Could you confirm whether rooftop precision must be a hard filter?",
+      "Could you confirm other providers you want to consider?"
+    ],
+    "unmatched_gold_questions": [
+      1
+    ],
+    "uncovered_facts": [
+      {
+        "gold_question": 1,
+        "fact": 2,
+        "field": "address_elements_required",
+        "state": {
+          "field": "address_elements_required",
+          "status": "supplied",
+          "value": true,
+          "source": "query",
+          "evidence": "they need an address broken into elements",
+          "start": null,
+          "end": null
+        }
+      }
+    ],
+    "selection": {
+      "status": "qualification_planned",
+      "reason": "Material profile requirements remain unconfirmed.",
+      "model_reason": "The customer has specified that they only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision and they need an address broken into elements. This indicates that the rooftop_hard_filter and address_elements_required fields are already known. However, the alternative_providers field is still missing, which is necessary to determine which additional providers should be evaluated.",
+      "groups": [
+        {
+          "fields": [
+            "rooftop_hard_filter"
+          ],
+          "decision_impact": "Determine the required filtering behavior and response structure.",
+          "text": "Could you confirm whether rooftop precision must be a hard filter?"
+        },
+        {
+          "fields": [
+            "alternative_providers"
+          ],
+          "decision_impact": "Establish which additional providers should be evaluated.",
+          "text": "Could you confirm other providers you want to consider?"
+        }
+      ],
+      "supplied_fact_proposals": 2
+    }
+  }
+]

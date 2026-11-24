@@ -1,0 +1,216 @@
+{
+  "$defs": {
+    "DiagnosticFact": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "status": {
+          "default": "supplied",
+          "enum": [
+            "supplied",
+            "missing",
+            "asked",
+            "declined",
+            "documentation"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "value": {
+          "default": null,
+          "title": "Value"
+        },
+        "source": {
+          "default": "query",
+          "title": "Source",
+          "type": "string"
+        },
+        "evidence": {
+          "default": "",
+          "title": "Evidence",
+          "type": "string"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start"
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End"
+        }
+      },
+      "required": [
+        "field"
+      ],
+      "title": "DiagnosticFact",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Version",
+      "type": "string"
+    },
+    "api": {
+      "title": "Api",
+      "type": "string"
+    },
+    "intent": {
+      "title": "Intent",
+      "type": "string"
+    },
+    "facts": {
+      "additionalProperties": {
+        "$ref": "#/$defs/DiagnosticFact"
+      },
+      "propertyNames": {
+        "enum": [
+          "region",
+          "monthly_volume",
+          "peak_rate",
+          "timeline",
+          "sla",
+          "budget",
+          "current_provider",
+          "alternative_providers",
+          "backend_owner",
+          "deployment_owner",
+          "hosting_preference",
+          "billing_country",
+          "usage_geography",
+          "billing_basis",
+          "billing_account_scope",
+          "commercial_plan",
+          "existing_project",
+          "api_enabled",
+          "details_completion",
+          "details_sku",
+          "debouncing",
+          "session_tokens",
+          "traffic_required",
+          "traffic_scope",
+          "departure_time_mode",
+          "travel_mode",
+          "max_stops",
+          "hazmat_required",
+          "vehicle_dimensions",
+          "instruction_modality",
+          "origin_count",
+          "destination_count",
+          "input_type",
+          "matrix_frequency",
+          "peak_concurrency",
+          "mapbox_traffic_profile",
+          "requests_splittable",
+          "storage_required",
+          "retention_period",
+          "redistribution_required",
+          "resale_required",
+          "display_context",
+          "lookup_trigger",
+          "languages",
+          "public_service_acceptable",
+          "temporary_results_acceptable",
+          "rooftop_hard_filter",
+          "address_elements_required"
+        ]
+      },
+      "title": "Facts",
+      "type": "object"
+    },
+    "assumptions": {
+      "additionalProperties": {
+        "$ref": "#/$defs/DiagnosticFact"
+      },
+      "propertyNames": {
+        "enum": [
+          "region",
+          "monthly_volume",
+          "peak_rate",
+          "timeline",
+          "sla",
+          "budget",
+          "current_provider",
+          "alternative_providers",
+          "backend_owner",
+          "deployment_owner",
+          "hosting_preference",
+          "billing_country",
+          "usage_geography",
+          "billing_basis",
+          "billing_account_scope",
+          "commercial_plan",
+          "existing_project",
+          "api_enabled",
+          "details_completion",
+          "details_sku",
+          "debouncing",
+          "session_tokens",
+          "traffic_required",
+          "traffic_scope",
+          "departure_time_mode",
+          "travel_mode",
+          "max_stops",
+          "hazmat_required",
+          "vehicle_dimensions",
+          "instruction_modality",
+          "origin_count",
+          "destination_count",
+          "input_type",
+          "matrix_frequency",
+          "peak_concurrency",
+          "mapbox_traffic_profile",
+          "requests_splittable",
+          "storage_required",
+          "retention_period",
+          "redistribution_required",
+          "resale_required",
+          "display_context",
+          "lookup_trigger",
+          "languages",
+          "public_service_acceptable",
+          "temporary_results_acceptable",
+          "rooftop_hard_filter",
+          "address_elements_required"
+        ]
+      },
+      "title": "Assumptions",
+      "type": "object"
+    },
+    "missing_interpretation_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Missing Interpretation Fields",
+      "type": "array"
+    }
+  },
+  "required": [
+    "api",
+    "intent"
+  ],
+  "title": "QualificationContext",
+  "type": "object"
+}

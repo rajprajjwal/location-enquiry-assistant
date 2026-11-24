@@ -1,0 +1,137 @@
+{
+  "case_sha256": "55011c9ff47000083fb81004ea3edbadfe71128a5fb193c1e92cf14cb2425ff6",
+  "reviewer": "",
+  "reviewed_on": "",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-125",
+      "decision": "empty",
+      "questions": [],
+      "notes": "Compare documented free usage and restrictions. Workload details are needed for an estimate, while this enquiry asks for a general comparison."
+    },
+    {
+      "record_id": "GT-LBS-AC-226",
+      "decision": "empty",
+      "questions": [],
+      "notes": "The provider, API and requested POI capability are specified. Explain documented product capabilities and relevant alternatives."
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "decision": "empty",
+      "questions": [],
+      "notes": "Explain country restriction parameters for the project’s selected providers and state that provider scope in the answer."
+    },
+    {
+      "record_id": "GT-LBS-AC-209",
+      "decision": "empty",
+      "questions": [],
+      "notes": "The provider, target country and parameter question are explicit. Explain documented country selection and zoom behavior."
+    },
+    {
+      "record_id": "GT-LBS-DIR-207",
+      "decision": "empty",
+      "questions": [],
+      "notes": "Travel mode, geography and the capability being compared are supplied. Give a documentation-based comparison."
+    },
+    {
+      "record_id": "GT-LBS-DIR-072",
+      "decision": "empty",
+      "questions": [],
+      "notes": "The provider, current option and desired routing objective are specified. Explain the documented route option and any evidence limits."
+    },
+    {
+      "record_id": "GT-LBS-DIR-030",
+      "decision": "empty",
+      "questions": [],
+      "notes": "The customer declined the ETA-accuracy follow-up and asked to proceed. Use the supplied volume and country, comparing the two traffic assumptions."
+    },
+    {
+      "record_id": "GT-LBS-DIR-026",
+      "decision": "empty",
+      "questions": [],
+      "notes": "The customer declined the profile choice. Provide both documented profile scenarios or a clearly stated assumption."
+    },
+    {
+      "record_id": "GT-LBS-DM-080",
+      "decision": "empty",
+      "questions": [],
+      "notes": "The endpoint and commercial purpose are explicit. Explain documented service terms, usage limits and suitability without requesting fleet diagnostics."
+    },
+    {
+      "record_id": "GT-LBS-DM-209",
+      "decision": "empty",
+      "questions": [],
+      "notes": "The API capability, travel mode, purpose and country are specified. Compare documented walking-matrix support."
+    },
+    {
+      "record_id": "GT-LBS-DM-067",
+      "decision": "empty",
+      "questions": [],
+      "notes": "Requests per minute was already asked and declined. Proceed with explicit assumptions about refreshes and batching, and avoid repeating that question."
+    },
+    {
+      "record_id": "GT-LBS-DM-121",
+      "decision": "empty",
+      "questions": [],
+      "notes": "The provider, product, mode, country, monthly volume and billing unit are supplied. State any remaining SKU assumptions in the estimate."
+    },
+    {
+      "record_id": "GT-LBS-RG-105",
+      "decision": "empty",
+      "questions": [],
+      "notes": "This is a documented response-parsing question. Explain how to identify the city field and handle missing values using an example."
+    },
+    {
+      "record_id": "GT-LBS-RG-091",
+      "decision": "empty",
+      "questions": [],
+      "notes": "Compare verifiable provider statements and qualify unsupported compliance claims. A customer follow-up is not needed merely to describe the documentation. Staff source or legal review may still be needed."
+    },
+    {
+      "record_id": "GT-LBS-RG-217",
+      "decision": "empty",
+      "questions": [],
+      "notes": "Report documented throughput with an explicit API version and distinguish published defaults from project-specific settings. Give separate version scopes where necessary."
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "decision": "questions",
+      "questions": [
+        {
+          "question": "Which country is your billing account based in, and where will most reverse-geocoding lookups be used?",
+          "facts": [
+            "billing account country",
+            "primary usage geography"
+          ],
+          "why_it_matters": "Determine the applicable pricing schedule before comparing Google and Mapbox for the same workload."
+        }
+      ],
+      "notes": "The providers, workload and storage/display requirements are supplied. Billing country and usage geography can change which pricing schedule applies, so these details materially affect an equivalent comparison."
+    }
+  ],
+  "prepared_by": "assistant",
+  "review_status": "draft_pending_independent_review",
+  "preparation_method": "Reviewed customer enquiry and history before generating any system predictions.",
+  "review_attention": [
+    {
+      "record_id": "GT-LBS-RG-091",
+      "reason": "Confirm that documented provider behavior is the intended answer scope. Legal-compliance conclusions require separate evidence review."
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "reason": "Confirm whether billing and usage geography should be clarified or whether the answer should present explicit regional pricing assumptions."
+    }
+  ],
+  "source_notes": [
+    {
+      "record_id": "GT-LBS-RG-091",
+      "url": "https://docs.mapbox.com/api/search/geocoding/",
+      "note": "The worldview documentation distinguishes regional representations from government approval. This supports qualifying claims rather than assuming compliance."
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "url": "https://developers.google.com/maps/billing-and-pricing/india",
+      "note": "Google documents India-pricing eligibility using billing and primary usage location."
+    }
+  ]
+}

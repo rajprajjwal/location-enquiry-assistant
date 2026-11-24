@@ -1,0 +1,30 @@
+{
+  "exit_code": 0,
+  "passed": 423,
+  "skipped": 1,
+  "failed": 0,
+  "excluded": [
+    "tests/rag/test_chunk_limit.py (5 tests)"
+  ],
+  "excluded_reason": "The existing BGE tokenizer is unavailable locally; its download failed in the restricted network.",
+  "skip_reason": "Real freshness snapshot is not available locally.",
+  "dependency_search_paths": [
+    "/private/tmp/activity19-verification",
+    "/private/tmp/activity7-library-test/deps",
+    "/private/tmp/activity8-drive-hme7nt9n/chroma-deps"
+  ],
+  "pytest_arguments": [
+    "-q",
+    "-rs",
+    "-p",
+    "no:cacheprovider",
+    "--tb=short",
+    "--ignore=tests/rag/test_chunk_limit.py"
+  ],
+  "offline": true,
+  "test_log": "tests.txt",
+  "prior_attempts": [
+    "Base environment collection stopped because bs4 was unavailable.",
+    "With existing dependency bundles, the full run reached 295 passes and three chunk-tokenizer download failures before interruption."
+  ]
+}

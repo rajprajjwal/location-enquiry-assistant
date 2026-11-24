@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_request\",\"reason\":\"The issue might be with the provider's ability to generate predictions for transit directions based on the specified arrival_time. Inspect the provider's configuration and the request body to ensure the arrival_time is correctly formatted and within the supported range.\"}",
+  "raw": "{\"decision\":\"prediction_request\",\"reason\":\"The issue might be with the provider's ability to generate predictions for transit directions based on the specified arrival_time. Inspect the provider's configuration and the request body to ensure the arrival_time is correctly formatted and within the supported range.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1869,
+    "completion_tokens": 56,
+    "total_tokens": 1925
+  },
+  "latency_ms": 1529,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"hosting_preference\"],\"decision_impact\":\"Select a viable backend when the public service cannot support the proposed typeahead use.\"}],\"reason\":\"The customer is considering using the public Nominatim server directly for type-ahead address search, but the applicable decision requires knowing if self-hosting is acceptable or a managed API is required.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"hosting_preference\"],\"decision_impact\":\"Select a viable backend when the public service cannot support the proposed typeahead use.\"}],\"reason\":\"The customer is considering using the public Nominatim server directly for type-ahead address search, but the applicable decision requires knowing if self-hosting is acceptable or a managed API is required.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1723,
+    "completion_tokens": 79,
+    "total_tokens": 1802
+  },
+  "latency_ms": 2329,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"rooftop_hard_filter\",\n      \"value\": true,\n      \"evidence\": \"only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision\"\n    },\n    {\n      \"field\": \"address_elements_required\",\n      \"value\": true,\n      \"evidence\": \"need an address broken into elements\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"rooftop_hard_filter\"],\n      \"decision_impact\": \"Determine if the API must strictly filter results to rooftop precision, which affects the response's accuracy and data source compatibility.\"\n    },\n    {\n      \"fields\": [\"address_elements_required\"],\n      \"decision_impact\": \"Determine if the API must return structured address elements, which affects the response format and data processing requirements.\"\n    }\n  ],\n  \"reason\": \"The customer's requirements specify a need for reverse-geocoded addresses with rooftop precision and structured address elements. These requirements impact the API's filtering behavior and response structure, necessitating confirmation of the specific parameters and their implications.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"rooftop_hard_filter\",\n      \"value\": true,\n      \"evidence\": \"only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision\"\n    },\n    {\n      \"field\": \"address_elements_required\",\n      \"value\": true,\n      \"evidence\": \"need an address broken into elements\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"rooftop_hard_filter\"],\n      \"decision_impact\": \"Determine if the API must strictly filter results to rooftop precision, which affects the response's accuracy and data source compatibility.\"\n    },\n    {\n      \"fields\": [\"address_elements_required\"],\n      \"decision_impact\": \"Determine if the API must return structured address elements, which affects the response format and data processing requirements.\"\n    }\n  ],\n  \"reason\": \"The customer's requirements specify a need for reverse-geocoded addresses with rooftop precision and structured address elements. These requirements impact the API's filtering behavior and response structure, necessitating confirmation of the specific parameters and their implications.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2132,
+    "completion_tokens": 239,
+    "total_tokens": 2371
+  },
+  "latency_ms": 5582,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

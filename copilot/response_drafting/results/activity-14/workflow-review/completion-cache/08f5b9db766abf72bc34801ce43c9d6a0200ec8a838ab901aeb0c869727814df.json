@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the MAX_DIMENSIONS_EXCEEDED error, which indicates that the number of origins or destinations exceeds the per-query limit. The documentation confirms that the Distance Matrix API (Legacy) has a limit on the number of origins and destinations per request. The customer is using 30 destinations and 1 origin, which may exceed the per-query limit for dimensions. However, the customer has already identified the configuration and the issue, so no further action is required.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the MAX_DIMENSIONS_EXCEEDED error, which indicates that the number of origins or destinations exceeds the per-query limit. The documentation confirms that the Distance Matrix API (Legacy) has a limit on the number of origins and destinations per request. The customer is using 30 destinations and 1 origin, which may exceed the per-query limit for dimensions. However, the customer has already identified the configuration and the issue, so no further action is required.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2004,
+    "completion_tokens": 106,
+    "total_tokens": 2110
+  },
+  "latency_ms": 4654,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

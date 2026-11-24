@@ -1,0 +1,53 @@
+{
+  "original_labels": {
+    "cases": 80,
+    "owner_matches": 59,
+    "owner_accuracy": 0.7375,
+    "escalation_true_positives": 10,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_true_negatives": 70,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalations_with_reason": 10,
+    "escalation_reason_coverage": 1.0,
+    "passes": false
+  },
+  "approved_labels": {
+    "cases": 80,
+    "owner_matches": 61,
+    "owner_accuracy": 0.7625,
+    "escalation_true_positives": 10,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_true_negatives": 70,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalations_with_reason": 10,
+    "escalation_reason_coverage": 1.0,
+    "passes": false
+  },
+  "method": "Rescore the same saved production routing predictions. No model calls or routing changes.",
+  "prediction_source_sha256": "f3bf357f3b796e7ca7fe1c8dfdcf1950d98826d558bc91510a3e0d9e713e236a",
+  "correction_ledger": {
+    "approved_on": "2026-11-23",
+    "scope": "Two user-approved frozen owner corrections",
+    "original_freeze": "eval-freeze-v4",
+    "corrections": [
+      {
+        "record_id": "GT-LBS-DM-026",
+        "field": "owner",
+        "before": "Account team (Sales)",
+        "after": "Support L1"
+      },
+      {
+        "record_id": "GT-LBS-DM-094",
+        "field": "owner",
+        "before": "Support L1",
+        "after": "Account team (Sales)"
+      }
+    ],
+    "previous_workbook_sha256": "b0ad6e415cf093ecaefff73b6a0fa0811f8f1d783ba7414a770f44a1c692f4fb",
+    "corrected_workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68"
+  }
+}

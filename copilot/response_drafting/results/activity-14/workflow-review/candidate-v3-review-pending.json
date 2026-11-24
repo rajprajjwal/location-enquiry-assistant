@@ -1,0 +1,20 @@
+[
+  {
+    "record_id": "GT-LBS-AC-213",
+    "query": "We only operate in India. Which autocomplete providers are India-focused, and how do we keep global ones inside India?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether you require a hard geographic restriction or a location bias is acceptable?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need POIs as well as addresses?",
+        "facts": [
+          "Whether points of interest are required in addition to addresses."
+        ]
+      }
+    ],
+    "questions_sha256": "e8056eb267dbd06f0a2bb821db0423cb0405f177cb558c190121df155c7dd48b",
+    "gold_sha256": "3bcc0049a42d465b6c0afe8efe06d1f84e84802ecc75e89d2cc151e965cbe051"
+  }
+]

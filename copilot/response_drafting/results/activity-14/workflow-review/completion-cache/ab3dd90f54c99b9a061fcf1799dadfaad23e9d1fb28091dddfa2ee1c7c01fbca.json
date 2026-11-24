@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Essentials?\",\n      \"evidence\": \"ends in Place Details Essentials?\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Select the applicable session-termination billing rule.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about pricing for Google Autocomplete with 200,000 sessions and 25 requests each, and whether per-request or session pricing is cheaper, assuming every session ends in Place Details Essentials. The missing material fact is the specific Place Details SKU used for session termination, which directly affects the billing rule selection.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Essentials?\",\n      \"evidence\": \"ends in Place Details Essentials?\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Select the applicable session-termination billing rule.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about pricing for Google Autocomplete with 200,000 sessions and 25 requests each, and whether per-request or session pricing is cheaper, assuming every session ends in Place Details Essentials. The missing material fact is the specific Place Details SKU used for session termination, which directly affects the billing rule selection.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1037,
+    "completion_tokens": 183,
+    "total_tokens": 1220
+  },
+  "latency_ms": 4186,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

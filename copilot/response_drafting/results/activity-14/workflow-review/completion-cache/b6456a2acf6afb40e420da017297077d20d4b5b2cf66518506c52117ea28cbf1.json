@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry does not provide specific details about the request or response that could lead to the UNKNOWN_ERROR. The documentation indicates that UNKNOWN_ERROR is a server-side error, which may resolve on its own or require further investigation without additional customer evidence.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry does not provide specific details about the request or response that could lead to the UNKNOWN_ERROR. The documentation indicates that UNKNOWN_ERROR is a server-side error, which may resolve on its own or require further investigation without additional customer evidence.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2294,
+    "completion_tokens": 56,
+    "total_tokens": 2350
+  },
+  "latency_ms": 1601,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

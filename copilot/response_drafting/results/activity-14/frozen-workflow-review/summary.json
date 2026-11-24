@@ -1,0 +1,39 @@
+{
+  "cases": 80,
+  "frozen_cases": 80,
+  "holdout_cases": 0,
+  "current": {
+    "predicted": 44,
+    "gold": 75,
+    "matches": 17,
+    "facts": 34,
+    "gold_facts": 99,
+    "questions_on_empty_gold": 16,
+    "f1": 0.2857142857142857,
+    "precision": 0.38636363636363635,
+    "recall": 0.22666666666666666,
+    "fact_recall": 0.3434343434343434
+  },
+  "prior_frozen": {
+    "predicted": 46,
+    "gold": 75,
+    "matches": 8,
+    "facts": 18,
+    "gold_facts": 99,
+    "questions_on_empty_gold": 24,
+    "f1": 0.1322314049586777,
+    "precision": 0.17391304347826086,
+    "recall": 0.10666666666666667,
+    "fact_recall": 0.18181818181818182
+  },
+  "f1_change_percentage_points": 15.3482880755608,
+  "fact_coverage_change_percentage_points": 16.16161616161616,
+  "question_f1_target": 0.8,
+  "question_f1_target_met": false,
+  "gt_unchanged": true,
+  "schema_valid": 80,
+  "fresh_model_calls": 244,
+  "cached_model_calls": 0,
+  "reviewer_type": "Assistant semantic review with independent assistant cross-check; not independent human acceptance.",
+  "predictions_sha256": "826bfc2184299941f21a5f90e902c79bd718ac90900af0a09d9f4321c6583571"
+}

@@ -1,0 +1,40 @@
+{
+  "cases": 36,
+  "groups": 28,
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "methods": {
+    "integrated": {
+      "predicted": 54,
+      "gold": 65,
+      "matches": 50,
+      "facts": 69,
+      "gold_facts": 84,
+      "questions_on_empty_gold": 1,
+      "f1": 0.8403361344537815,
+      "precision": 0.9259259259259259,
+      "recall": 0.7692307692307693,
+      "fact_recall": 0.8214285714285714
+    },
+    "baseline": {
+      "predicted": 5,
+      "gold": 65,
+      "matches": 0,
+      "facts": 2,
+      "gold_facts": 84,
+      "questions_on_empty_gold": 1,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fact_recall": 0.023809523809523808
+    }
+  },
+  "question_f1_development_threshold": 0.8,
+  "question_f1_development_threshold_met": true,
+  "route_changes": 0,
+  "pending_reply_changes": 0,
+  "reopened_cases": 4,
+  "reopened_preserved": 4,
+  "validation_fallbacks": 2,
+  "independent_human_validation": false
+}

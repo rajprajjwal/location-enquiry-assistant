@@ -1,0 +1,369 @@
+{
+  "cohort": "fresh",
+  "cases": 33,
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "method": "Saved-interpretation replay; previous handoff decisions fixed. Folds are descriptive strata, not independent CV.",
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "cases": 33,
+        "owner_correct": 24,
+        "owner_accuracy": 0.7272727272727273,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 4,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.0,
+        "escalation_recall": null,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 5,
+          "owner_correct": 4,
+          "owner_accuracy": 0.8,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "2": {
+          "cases": 7,
+          "owner_correct": 4,
+          "owner_accuracy": 0.5714285714285714,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 6,
+          "owner_correct": 5,
+          "owner_accuracy": 0.8333333333333334,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 4,
+          "owner_correct": 4,
+          "owner_accuracy": 1.0,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "5": {
+          "cases": 11,
+          "owner_correct": 7,
+          "owner_accuracy": 0.6363636363636364,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 3,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        }
+      },
+      "changes": [],
+      "escalations_preserved": true
+    },
+    "actual_use": {
+      "metrics": {
+        "cases": 33,
+        "owner_correct": 24,
+        "owner_accuracy": 0.7272727272727273,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 4,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.0,
+        "escalation_recall": null,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 5,
+          "owner_correct": 4,
+          "owner_accuracy": 0.8,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "2": {
+          "cases": 7,
+          "owner_correct": 4,
+          "owner_accuracy": 0.5714285714285714,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 6,
+          "owner_correct": 5,
+          "owner_accuracy": 0.8333333333333334,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 4,
+          "owner_correct": 4,
+          "owner_accuracy": 1.0,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "5": {
+          "cases": 11,
+          "owner_correct": 7,
+          "owner_accuracy": 0.6363636363636364,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 3,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        }
+      },
+      "changes": [],
+      "escalations_preserved": true
+    },
+    "public_service_fit": {
+      "metrics": {
+        "cases": 33,
+        "owner_correct": 24,
+        "owner_accuracy": 0.7272727272727273,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 4,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.0,
+        "escalation_recall": null,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 5,
+          "owner_correct": 4,
+          "owner_accuracy": 0.8,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "2": {
+          "cases": 7,
+          "owner_correct": 4,
+          "owner_accuracy": 0.5714285714285714,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 6,
+          "owner_correct": 5,
+          "owner_accuracy": 0.8333333333333334,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 4,
+          "owner_correct": 4,
+          "owner_accuracy": 1.0,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "5": {
+          "cases": 11,
+          "owner_correct": 7,
+          "owner_accuracy": 0.6363636363636364,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 3,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        }
+      },
+      "changes": [],
+      "escalations_preserved": true
+    },
+    "published_billing": {
+      "metrics": {
+        "cases": 33,
+        "owner_correct": 24,
+        "owner_accuracy": 0.7272727272727273,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 4,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.0,
+        "escalation_recall": null,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 5,
+          "owner_correct": 4,
+          "owner_accuracy": 0.8,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "2": {
+          "cases": 7,
+          "owner_correct": 4,
+          "owner_accuracy": 0.5714285714285714,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 6,
+          "owner_correct": 5,
+          "owner_accuracy": 0.8333333333333334,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 4,
+          "owner_correct": 4,
+          "owner_accuracy": 1.0,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "5": {
+          "cases": 11,
+          "owner_correct": 7,
+          "owner_accuracy": 0.6363636363636364,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 3,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        }
+      },
+      "changes": [],
+      "escalations_preserved": true
+    },
+    "combined": {
+      "metrics": {
+        "cases": 33,
+        "owner_correct": 24,
+        "owner_accuracy": 0.7272727272727273,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 4,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.0,
+        "escalation_recall": null,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 5,
+          "owner_correct": 4,
+          "owner_accuracy": 0.8,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "2": {
+          "cases": 7,
+          "owner_correct": 4,
+          "owner_accuracy": 0.5714285714285714,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 6,
+          "owner_correct": 5,
+          "owner_accuracy": 0.8333333333333334,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 4,
+          "owner_correct": 4,
+          "owner_accuracy": 1.0,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "5": {
+          "cases": 11,
+          "owner_correct": 7,
+          "owner_accuracy": 0.6363636363636364,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 3,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.0,
+          "escalation_recall": null,
+          "escalation_reason_coverage": 1.0
+        }
+      },
+      "changes": [],
+      "escalations_preserved": true
+    }
+  }
+}

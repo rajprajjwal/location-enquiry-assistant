@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_quality\", \"reason\":\"The customer reports that Ola Autocomplete suggests a misspelt locality name that offends residents, indicating incorrect or harmful autocomplete output. To address this, the exact query and returned prediction need to be identified to assess and resolve the issue.\"}",
+  "raw": "{\"decision\":\"prediction_quality\", \"reason\":\"The customer reports that Ola Autocomplete suggests a misspelt locality name that offends residents, indicating incorrect or harmful autocomplete output. To address this, the exact query and returned prediction need to be identified to assess and resolve the issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1291,
+    "completion_tokens": 59,
+    "total_tokens": 1350
+  },
+  "latency_ms": 1580,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

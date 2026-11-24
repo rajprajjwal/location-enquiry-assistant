@@ -1,0 +1,9 @@
+{
+  "cases": 36,
+  "question_outputs_reproduced": 36,
+  "initial_snapshots_reproduced": 36,
+  "reopened_outputs_reproduced": 4,
+  "endpoint_calls": 0,
+  "original_gt_unchanged": true,
+  "both_saved_scores_reproduced": true
+}

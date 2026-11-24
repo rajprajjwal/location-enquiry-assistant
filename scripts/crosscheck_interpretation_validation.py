@@ -2,7 +2,7 @@
 """Compare interpretation validation with the dataset validator on GT v2.5.
 
 Purpose: report where the new qualification checks disagree with
-``validator/validate_spec.py`` on the 532 committed gold envelopes.
+``copilot/validation/specification_checks/validate_spec.py`` on the 532 committed gold envelopes.
 Use case: read-only evidence, including the holdout split. No tuning.
 Example: ``python scripts/crosscheck_interpretation_validation.py``
 
@@ -27,7 +27,7 @@ from copilot.validation.rules import (  # noqa: E402
     _schema_errors,
     validate_qualification,
 )
-from validator.validate_spec import (  # noqa: E402
+from copilot.validation.specification_checks.validate_spec import (  # noqa: E402
     load_schemas,
     required_field_violations,
     validator_for,
@@ -170,7 +170,7 @@ def main() -> int:
         "No provider API was called. The dataset validator and the gold files",
         "were not modified.",
         "",
-        "Dataset side: `validator.validate_spec.load_schemas`, `validator_for`,",
+        "Dataset side: `copilot.validation.specification_checks.validate_spec.load_schemas`, `validator_for`,",
         "and `required_field_violations` on `outputs.qualification_details`.",
         "`validate_spec.py` was not executed as a program: that entry point",
         "rewrites gold outputs, the vocabulary diff, and the validator report.",

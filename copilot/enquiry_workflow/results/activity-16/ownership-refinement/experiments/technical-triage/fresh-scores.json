@@ -1,0 +1,58 @@
+{
+  "baseline": {
+    "cases": 33,
+    "owner_correct": 29,
+    "owner_accuracy": 0.8787878787878788,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 3,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.0,
+    "escalation_recall": null,
+    "escalation_reason_coverage": 1.0
+  },
+  "candidate": {
+    "cases": 33,
+    "owner_correct": 30,
+    "owner_accuracy": 0.9090909090909091,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 2,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.0,
+    "escalation_recall": null,
+    "escalation_reason_coverage": 1.0
+  },
+  "changes": [
+    {
+      "record_id": "GT-LBS-DM-062",
+      "query": "Customer message:\n\"Ola Distance Matrix rejects our 8 origins \u00d7 8 destinations request.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": {
+        "owner": "Support L2",
+        "escalate": true,
+        "reason": "The customer is encountering an issue with the Ola Distance Matrix API rejecting an 8x8 request, indicating a potential technical or configuration problem that may require deeper investigation.",
+        "source": "model"
+      },
+      "after": {
+        "owner": "Support L1",
+        "escalate": false,
+        "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+        "ownership_review": {
+          "customer_status": "unknown",
+          "owner": "Support L1",
+          "provisional": true,
+          "status_deferred": false,
+          "confirmation_needed": true,
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+          "suggested_question": "Are you already using this service, or evaluating it as a new customer?"
+        }
+      },
+      "expected": {
+        "owner": "Support L1",
+        "escalate": false
+      },
+      "improved": true
+    }
+  ],
+  "method": "Saved-interpretation replay; existing model classifications retained except eligible first-line assessment cases.",
+  "frozen_cases": 0,
+  "holdout_cases": 0
+}

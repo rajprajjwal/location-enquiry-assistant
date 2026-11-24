@@ -1,0 +1,561 @@
+{
+  "cases": 36,
+  "preserved": {
+    "route": 32,
+    "next_action": 32,
+    "owner": 36,
+    "approvals": 36,
+    "proposed_actions": 36,
+    "active_questions": 32,
+    "pending_reply": 32,
+    "asked": 32,
+    "answered": 36,
+    "awaiting": 32,
+    "clarification_messages": 32
+  },
+  "initial_changes": [
+    {
+      "record_id": "GT-LBS-AC-233",
+      "changes": {
+        "route": {
+          "before": "clarification_needed",
+          "after": "final"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Where will the application operate?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "active_questions": {
+          "before": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "region",
+                "text": "Where will the application operate?"
+              }
+            ]
+          },
+          "after": {
+            "needed": false,
+            "questions": []
+          }
+        },
+        "pending_reply": {
+          "before": {
+            "field": "region",
+            "task": "Our product team is evaluating providers for address autocomplete. They want an LLM assistant to generate client code for public Nominatim and might resell the resulting geocoding data. What should we ask the team about its use case and licensing needs before recommending a provider?"
+          },
+          "after": null
+        },
+        "asked": {
+          "before": [
+            "region"
+          ],
+          "after": []
+        },
+        "awaiting": {
+          "before": [
+            "Awaiting region"
+          ],
+          "after": []
+        },
+        "clarification_messages": {
+          "before": [
+            "Where will the application operate?"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "changes": {
+        "route": {
+          "before": "clarification_needed",
+          "after": "final"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Where will the application operate?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "active_questions": {
+          "before": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "region",
+                "text": "Where will the application operate?"
+              }
+            ]
+          },
+          "after": {
+            "needed": false,
+            "questions": []
+          }
+        },
+        "pending_reply": {
+          "before": {
+            "field": "region",
+            "task": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API?"
+          },
+          "after": null
+        },
+        "asked": {
+          "before": [
+            "region"
+          ],
+          "after": []
+        },
+        "awaiting": {
+          "before": [
+            "Awaiting region"
+          ],
+          "after": []
+        },
+        "clarification_messages": {
+          "before": [
+            "Where will the application operate?"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "changes": {
+        "route": {
+          "before": "clarification_needed",
+          "after": "final"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Which map provider are you using?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "active_questions": {
+          "before": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "provider",
+                "text": "Which map provider are you using?"
+              }
+            ]
+          },
+          "after": {
+            "needed": false,
+            "questions": []
+          }
+        },
+        "pending_reply": {
+          "before": {
+            "field": "provider",
+            "task": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?"
+          },
+          "after": null
+        },
+        "asked": {
+          "before": [
+            "current_provider"
+          ],
+          "after": []
+        },
+        "awaiting": {
+          "before": [
+            "Awaiting current provider"
+          ],
+          "after": []
+        },
+        "clarification_messages": {
+          "before": [
+            "Which map provider are you using?"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "changes": {
+        "route": {
+          "before": "clarification_needed",
+          "after": "final"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "active_questions": {
+          "before": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "after": {
+            "needed": false,
+            "questions": []
+          }
+        },
+        "pending_reply": {
+          "before": {
+            "field": "monthly_volume",
+            "task": "A logistics prospect wants to reverse-geocode driver GPS pings into addresses shown in Hindi, and they may store the results. What should we ask before recommending a provider?"
+          },
+          "after": null
+        },
+        "asked": {
+          "before": [
+            "monthly_volume"
+          ],
+          "after": []
+        },
+        "awaiting": {
+          "before": [
+            "Awaiting monthly volume"
+          ],
+          "after": []
+        },
+        "clarification_messages": {
+          "before": [
+            "What is your expected monthly request volume?"
+          ],
+          "after": []
+        }
+      }
+    }
+  ],
+  "reopened_cases": 4,
+  "reopened_unchanged": 0,
+  "reopened_changes": [
+    {
+      "record_id": "GT-LBS-AC-233",
+      "changes": {
+        "follow_up_needed": {
+          "before": true,
+          "after": false
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "changes": {
+        "follow_up_needed": {
+          "before": true,
+          "after": false
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "changes": {
+        "follow_up_needed": {
+          "before": true,
+          "after": false
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "changes": {
+        "follow_up_needed": {
+          "before": true,
+          "after": false
+        }
+      }
+    }
+  ],
+  "pending_before": 4,
+  "pending_after": 0,
+  "legacy_reopen_checks": [
+    {
+      "record_id": "GT-LBS-AC-233",
+      "outcome": {
+        "reply": "Germany",
+        "snapshot": {
+          "route": "final",
+          "next_action": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer needs qualification of a proposed deployment before selecting a provider."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": false,
+            "questions": []
+          },
+          "pending_reply": null,
+          "asked": [
+            "region"
+          ],
+          "answered": [
+            "region"
+          ],
+          "awaiting": [],
+          "clarification_messages": [
+            "Where will the application operate?"
+          ]
+        },
+        "questions": [
+          {
+            "field": "qualification_peak_rate",
+            "text": "Could you confirm peak requests per second?"
+          },
+          {
+            "field": "qualification_backend_owner",
+            "text": "Could you confirm who will operate the API backend, whether results must be stored, whether results will be redistributed and whether results will be resold?"
+          }
+        ],
+        "critic": {
+          "verdict": "pass",
+          "reason": null,
+          "reviews": [
+            {
+              "verdict": "pass",
+              "reason": null
+            }
+          ]
+        },
+        "step_count": 3
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "outcome": {
+        "reply": "Germany",
+        "snapshot": {
+          "route": "final",
+          "next_action": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": false,
+            "questions": []
+          },
+          "pending_reply": null,
+          "asked": [
+            "region"
+          ],
+          "answered": [
+            "region"
+          ],
+          "awaiting": [],
+          "clarification_messages": [
+            "Where will the application operate?"
+          ]
+        },
+        "questions": [
+          {
+            "field": "qualification_origin_count",
+            "text": "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?"
+          },
+          {
+            "field": "qualification_mapbox_traffic_profile",
+            "text": "Could you confirm whether Mapbox driving-traffic is required?"
+          }
+        ],
+        "critic": {
+          "verdict": "pass",
+          "reason": null,
+          "reviews": [
+            {
+              "verdict": "pass",
+              "reason": null
+            }
+          ]
+        },
+        "step_count": 3
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "outcome": {
+        "reply": "Mapbox",
+        "snapshot": {
+          "route": "final",
+          "next_action": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": false,
+            "questions": []
+          },
+          "pending_reply": null,
+          "asked": [
+            "current_provider"
+          ],
+          "answered": [
+            "current_provider"
+          ],
+          "awaiting": [],
+          "clarification_messages": [
+            "Which map provider are you using?"
+          ]
+        },
+        "questions": [],
+        "critic": {
+          "verdict": "pass",
+          "reason": null,
+          "reviews": [
+            {
+              "verdict": "pass",
+              "reason": null
+            }
+          ]
+        },
+        "step_count": 6
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "outcome": {
+        "reply": "500,000 requests per month",
+        "snapshot": {
+          "route": "final",
+          "next_action": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": false,
+            "questions": []
+          },
+          "pending_reply": null,
+          "asked": [
+            "monthly_volume"
+          ],
+          "answered": [
+            "monthly_volume"
+          ],
+          "awaiting": [],
+          "clarification_messages": [
+            "What is your expected monthly request volume?"
+          ]
+        },
+        "questions": [
+          {
+            "field": "qualification_peak_rate",
+            "text": "Could you confirm peak requests per second?"
+          },
+          {
+            "field": "qualification_storage_required",
+            "text": "Could you confirm whether results must be stored, whether a public community endpoint is acceptable and whether temporary-only geocoding results are acceptable?"
+          }
+        ],
+        "critic": {
+          "verdict": "pass",
+          "reason": null,
+          "reviews": [
+            {
+              "verdict": "pass",
+              "reason": null
+            }
+          ]
+        },
+        "step_count": 3
+      }
+    }
+  ],
+  "new_unique_completions": 0,
+  "endpoint_calls_current_session": 0,
+  "endpoint_errors": [],
+  "excluded_attempts": []
+}

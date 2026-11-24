@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "runtime_and_references_unchanged": true,
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "data_sha256": {
+    "inputs.jsonl": "b8c26d867bca77364d7348957b22ea8b7cda85b7d918f7cefd398f8b1ad39d81",
+    "locked-gold.json": "7c5c44fb2f1d216957585b7edaf765406b791da2c13decd6c05cd0e4d63000fb",
+    "frozen-questions.json": "b5f8fce68f5d751931f74403671bc402dc624bb2df73f167a2a2ecd782518984",
+    "ground-truth-frozen.csv": "00a6727d142f0f00a2d35c2edaea32d4c2ebbcbabf58afe3adda793ca3b3ade1",
+    "frozen-input-manifest.json": "3b206f943999b631f35c7549095bc7ebfd5d86905c7bb28299a4c6375cfe6060"
+  },
+  "ordered_frozen_ids_verified": true,
+  "holdout_cases": 0
+}

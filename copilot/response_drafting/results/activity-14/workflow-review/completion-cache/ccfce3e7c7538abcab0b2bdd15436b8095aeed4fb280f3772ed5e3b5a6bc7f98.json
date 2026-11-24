@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":1.0,\"api\":1.0,\"team\":1.0},\"qualification\":{\"use_case\":{\"value\":\"field-service SaaS company\",\"evidence\":\"We're a Chennai field-service SaaS company.\"},\"region\":{\"value\":\"Chennai\",\"evidence\":\"We're a Chennai field-service SaaS company.\"},\"monthly_volume\":{\"value\":\"50,000 times a month\",\"evidence\":\"compute 3×20 distance matrices about 50,000 times a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":1.0,\"api\":1.0,\"team\":1.0},\"qualification\":{\"use_case\":{\"value\":\"field-service SaaS company\",\"evidence\":\"We're a Chennai field-service SaaS company.\"},\"region\":{\"value\":\"Chennai\",\"evidence\":\"We're a Chennai field-service SaaS company.\"},\"monthly_volume\":{\"value\":\"50,000 times a month\",\"evidence\":\"compute 3×20 distance matrices about 50,000 times a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1506,
+    "completion_tokens": 186,
+    "total_tokens": 1692
+  },
+  "latency_ms": 4290,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

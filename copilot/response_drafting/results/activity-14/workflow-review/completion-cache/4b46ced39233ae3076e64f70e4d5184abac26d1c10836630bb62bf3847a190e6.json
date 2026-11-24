@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_quality\",\"reason\":\"The reported issue involves incorrect or harmful autocomplete output, which requires the exact query and returned prediction to address the problem.\"}",
+  "raw": "{\"decision\":\"prediction_quality\",\"reason\":\"The reported issue involves incorrect or harmful autocomplete output, which requires the exact query and returned prediction to address the problem.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1290,
+    "completion_tokens": 33,
+    "total_tokens": 1323
+  },
+  "latency_ms": 980,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":\"India\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"}],\"reason\":\"The customer's question about cost per billing option requires knowing whether Place Details are called after a selection, which affects the pricing model.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":\"India\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"}],\"reason\":\"The customer's question about cost per billing option requires knowing whether Place Details are called after a selection, which affects the pricing model.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1128,
+    "completion_tokens": 74,
+    "total_tokens": 1202
+  },
+  "latency_ms": 1857,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

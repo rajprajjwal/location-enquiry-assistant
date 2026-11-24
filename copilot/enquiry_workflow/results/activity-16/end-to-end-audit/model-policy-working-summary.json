@@ -1,0 +1,28 @@
+{
+  "cases": 42,
+  "groups": 35,
+  "frozen": 0,
+  "holdout": 0,
+  "baseline": {
+    "cases": 42,
+    "owner_correct": 40,
+    "owner_accuracy": 0.9523809523809523,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": null,
+    "escalation_recall": null,
+    "escalation_reason_coverage": null
+  },
+  "candidate": {
+    "cases": 42,
+    "owner_correct": 35,
+    "owner_accuracy": 0.8333333333333334,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": null,
+    "escalation_recall": null,
+    "escalation_reason_coverage": null
+  }
+}

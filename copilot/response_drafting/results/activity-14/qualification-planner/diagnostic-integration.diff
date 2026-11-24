@@ -1,0 +1,29 @@
+--- a/copilot/diagnostics/planning.py
++++ b/copilot/diagnostics/planning.py
+@@ -92,7 +92,7 @@
+ mention that topic. Include a short reason. Never output a credential value."""
+ 
+ 
+-def plan_staff_follow_up(result, enquiry, *, client=None):
++def _plan_diagnostic_follow_up(result, enquiry, *, client=None):
+     state = DiagnosticState.model_validate(result["diagnostic_context"]["state"])
+     active = result["clarifying_questions"]["questions"]
+     decline = state.facts.get("proceed_without_more_questions")
+@@ -196,3 +196,17 @@
+         "follow_up_selection": {**selection, "retrieved_passages_available": len(result["diagnostic_context"]["retrieved_evidence"])},
+         "outputs": {**result["outputs"], "clarifying_questions": {"needed": bool(questions), "questions": questions}},
+     }
++
++
++def plan_staff_follow_up(result, enquiry, *, client=None):
++    from copilot.qualification.planning import applicable, plan_qualification
++    interpretation = result['diagnostic_context'].get('interpretation', {})
++    state = DiagnosticState.model_validate(result['diagnostic_context']['state'])
++    decisions = allowed_decisions(state, enquiry['query'], interpretation.get('api'))
++    if applicable(result, enquiry) and decisions == ['none']:
++        try:
++            return plan_qualification(result, enquiry, client=client)
++        except (BudgetExceeded, ConfigError, LLMError, ValidationError, TypeError, ValueError) as exc:
++            fallback = _plan_diagnostic_follow_up(result, enquiry, client=client)
++            return {**fallback, 'qualification_plan_error': type(exc).__name__}
++    return _plan_diagnostic_follow_up(result, enquiry, client=client)

@@ -1,0 +1,20 @@
+{
+  "passed": 679,
+  "skipped": 1,
+  "excluded": 5,
+  "skip_reason": "No real local freshness snapshot.",
+  "excluded_reason": "Existing RAG chunking tests require an unavailable BGE tokenizer asset.",
+  "pytest_arguments": [
+    "-q",
+    "-rs",
+    "-p",
+    "no:cacheprovider",
+    "--tb=short",
+    "--ignore=tests/rag/test_chunk_limit.py"
+  ],
+  "additional_dependency_paths": [
+    "/private/tmp/activity19-verification",
+    "/private/tmp/activity7-library-test/deps",
+    "/private/tmp/activity8-drive-hme7nt9n/chroma-deps"
+  ]
+}

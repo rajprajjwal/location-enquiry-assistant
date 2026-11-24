@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume_assumption\",\n      \"value\": true,\n      \"evidence\": \"Free reverse geocoding options for a hobby app with 20,000 lookups a month\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    },\n    {\n      \"fields\": [\"lookup_trigger\"],\n      \"decision_impact\": \"Check public-service usage-policy compatibility for interactive versus periodic use.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about free reverse geocoding options for a hobby app with 20,000 lookups a month. The provided facts include the monthly volume assumption, but the storage requirements and lookup trigger (whether lookups are user-triggered or periodic) are not specified. These factors are critical in determining the appropriate pricing and licensing options.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume_assumption\",\n      \"value\": true,\n      \"evidence\": \"Free reverse geocoding options for a hobby app with 20,000 lookups a month\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    },\n    {\n      \"fields\": [\"lookup_trigger\"],\n      \"decision_impact\": \"Check public-service usage-policy compatibility for interactive versus periodic use.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about free reverse geocoding options for a hobby app with 20,000 lookups a month. The provided facts include the monthly volume assumption, but the storage requirements and lookup trigger (whether lookups are user-triggered or periodic) are not specified. These factors are critical in determining the appropriate pricing and licensing options.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2271,
+    "completion_tokens": 205,
+    "total_tokens": 2476
+  },
+  "latency_ms": 4870,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

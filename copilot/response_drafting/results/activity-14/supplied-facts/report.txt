@@ -1,0 +1,26 @@
+Activity 14 supplied-fact extraction
+
+Inputs: the locked snapshot of sixteen reviewed working-eval enquiries and their histories.
+The current workbook differs from the old manifest. The reviewed snapshot was used to preserve the same inputs.
+
+The deterministic extractor retains explicit customer values with evidence offsets and source turns.
+It excludes assistant assertions, preserves false-valued facts, keeps waypoint bounds distinct from exact counts,
+and derives matrix size from explicit dimensions. Extracted facts are used only after workflow routing.
+
+Extraction result: 38/38 supported reference values correct, with precision and recall of 100%.
+All sixteen cases exactly matched the supported reference fields. Every evidence span was verified.
+These reference values were authored by the assistant and have not had independent review.
+This is a development measurement of supported fields, not exhaustive fact extraction accuracy.
+
+Controlled replay: both repeated candidates were suppressed, with zero of the other nine candidates suppressed.
+The repeated candidates asked monthly versus annual usage and whether User-Agent was absent.
+Documentation questions were retained for a later selector change.
+
+Live paired workflow: all sixteen routes, actions, owners, approvals, active questions and pending states matched.
+Four separate pending conversations reopened and resumed identically.
+Automated checks: 197 passed and four subtests passed.
+
+Live question generation still produced questions on five of nine confirmed-empty cases.
+An Ola follow-up asked which OAuth token was being used. Credential-request wording still needs filtering.
+The extractor does not complete question relevance or missing-fact selection.
+Frozen and holdout cases were excluded.

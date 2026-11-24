@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "record_id": "GT-LBS-RG-034",
+      "query": "Sandbox CRM ticket TKT-35162. Customer wrote:\n\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "expected": [
+        {
+          "question": "Could you share the failing reverse-geocoding request as sent, with the API key and other credentials redacted?",
+          "facts": [
+            "redacted failing reverse-geocoding request as sent"
+          ],
+          "why_it_matters": "The documented missing-key explanation is possible, not confirmed. Inspect the actual request to distinguish a missing key from other denial causes."
+        }
+      ],
+      "actual": [],
+      "observed_error_code": "REQUEST_DENIED",
+      "extracted_error_code": null,
+      "allowed_decisions": [
+        "none"
+      ],
+      "model_proposal": {
+        "decision": "none",
+        "reason": "The customer's issue is already identified as a potential missing API key when using the location_type parameter, which is a known issue with the Google Maps Platform. No further action is required at this stage."
+      },
+      "final_decision": "none",
+      "diagnosis": "Named status is not extracted, so the policy permits only none. In this case the model also treats a possible documented cause as sufficient to skip request evidence."
+    },
+    {
+      "record_id": "GT-LBS-RG-102",
+      "query": "Google Geocode REQUEST_DENIED for reverse geocode with our Places-enabled key.",
+      "expected": [
+        {
+          "question": "Could you share the failing reverse-geocoding request as sent, with the API key and other credentials redacted?",
+          "facts": [
+            "redacted failing reverse-geocoding request as sent"
+          ],
+          "why_it_matters": "Places being enabled does not establish the Geocoding API or restriction configuration. Request evidence supports diagnosis alongside the documented configuration checks."
+        }
+      ],
+      "actual": [],
+      "observed_error_code": "REQUEST_DENIED",
+      "extracted_error_code": null,
+      "allowed_decisions": [
+        "none"
+      ],
+      "model_proposal": {
+        "decision": "request_reproduction",
+        "reason": "The error 'REQUEST_DENIED' for reverse geocode with a Places-enabled key suggests an issue with the API key or its configuration. To diagnose this, we need to reproduce the request to verify if the key is valid and properly configured."
+      },
+      "final_decision": "none",
+      "diagnosis": "Named status is not extracted, so the policy permits only none and suppresses the model request_reproduction proposal."
+    }
+  ],
+  "implementation_changed": false,
+  "next_working_eval_tests": [
+    "Recognize named provider response statuses as shared facts with provenance.",
+    "Allow request evidence when authentication failure is observed and its cause has not been confirmed.",
+    "Keep documented possibilities separate from customer-confirmed causes.",
+    "Preserve existing routes, pending replies, declined questions and known-fact suppression."
+  ]
+}

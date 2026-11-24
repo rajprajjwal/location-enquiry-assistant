@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"poi_required\"],\"decision_impact\":\"Compare coverage for the required result types.\"}],\"reason\":\"The customer's enquiry is about restricting autocomplete results to India on each provider, but the required field 'poi_required' is missing, which is necessary to determine the type of results needed for comparison across providers.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"poi_required\"],\"decision_impact\":\"Compare coverage for the required result types.\"}],\"reason\":\"The customer's enquiry is about restricting autocomplete results to India on each provider, but the required field 'poi_required' is missing, which is necessary to determine the type of results needed for comparison across providers.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1888,
+    "completion_tokens": 73,
+    "total_tokens": 1961
+  },
+  "latency_ms": 1900,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

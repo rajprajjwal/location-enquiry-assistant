@@ -1,0 +1,8 @@
+{
+  "cases_reproduced": 36,
+  "legacy_pending_reopens_reproduced": 4,
+  "scores_reproduced_for_both_unchanged_references": true,
+  "endpoint_calls": 0,
+  "gt_workbook_unchanged": true,
+  "existing_reviewed_reference_unchanged": true
+}

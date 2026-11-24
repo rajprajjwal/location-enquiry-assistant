@@ -1,0 +1,404 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-079",
+    "group": "GT-LBS-DIR-079",
+    "fold": 3,
+    "query": "Our self-hosted OSRM returns HTTP 400 with code 'NoSegment' for Indian coordinates we pass as 12.97,77.59;12.93,77.62.",
+    "history": [],
+    "drafts": [
+      {
+        "question": "Which routing profile is your OSRM instance running, and can you share the redacted request path including the coordinate order?",
+        "facts": [
+          "routing profile",
+          "coordinate order in the failing request"
+        ],
+        "why_it_matters": "Distinguish a coordinate-format issue from a routing-profile issue."
+      }
+    ],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-DIR-097",
+    "group": "GT-LBS-DIR-097",
+    "fold": 4,
+    "query": "Drawing several Google routes with more than 10 waypoints each only shows one route. Is there a 10-waypoint cap?",
+    "history": [],
+    "drafts": [
+      {
+        "question": "When you say only one route is shown, does the raw Directions API return one route or does the app draw only one of several separate responses?",
+        "facts": [
+          "whether the missing routes are absent from the API response or only the display"
+        ],
+        "why_it_matters": "Distinguish API limits from the client display behavior."
+      }
+    ],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-DIR-124",
+    "group": "GT-LBS-DIR-124",
+    "fold": 4,
+    "query": "What will 50,000 Google two-wheeler routes a month cost us in India via the Routes API?",
+    "history": [],
+    "drafts": [],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-AC-223",
+    "group": "GT-LBS-AC-223",
+    "fold": 3,
+    "query": "Can Mapbox Search Box return 20 suggestions per call?",
+    "history": [],
+    "drafts": [],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-RG-086",
+    "group": "GT-LBS-RG-086",
+    "fold": 3,
+    "query": "All Ola reverse-geocode calls fail with 401/403 after we rotated OAuth credentials.",
+    "history": [],
+    "drafts": [
+      {
+        "question": "What exact error message comes back after rotation, and which apps or environments have switched to the new credentials?",
+        "facts": [
+          "exact authentication error message",
+          "environments switched to the new credentials"
+        ],
+        "why_it_matters": "Identify whether the failure affects an environment still using the previous configuration."
+      }
+    ],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-AC-085",
+    "group": "GT-LBS-AC-085",
+    "fold": 4,
+    "query": "Our Nominatim requests get blocked. We don't send any User-Agent.",
+    "history": [],
+    "drafts": [],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-DM-225",
+    "group": "GT-LBS-DM-225",
+    "fold": 5,
+    "query": "Can Google's Routes API give us a transit matrix for 15 stations × 10 offices?",
+    "history": [],
+    "drafts": [],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-RG-062",
+    "group": "GT-LBS-RG-062",
+    "fold": 3,
+    "query": "Mapbox reverse geocoding with limit=5 returns 422.",
+    "history": [],
+    "drafts": [
+      {
+        "question": "Can you share the exact 422 error message from a failing reverse-geocoding response?",
+        "facts": [
+          "exact 422 error message"
+        ],
+        "why_it_matters": "Identify what the API rejected without asking the customer to repeat the supplied limit."
+      }
+    ],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-AC-047",
+    "group": "GT-LBS-AC-047",
+    "fold": 4,
+    "query": "Autocomplete (New) never returns query predictions for us.",
+    "history": [],
+    "drafts": [
+      {
+        "question": "Is the integration sending includeQueryPredictions in the request, and can you share the relevant request fields with credentials removed?",
+        "facts": [
+          "includeQueryPredictions setting"
+        ],
+        "why_it_matters": "Check whether the request asked for query predictions before investigating other causes."
+      }
+    ],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-RG-111",
+    "group": "GT-LBS-RG-111",
+    "fold": 2,
+    "query": "How do we get city/state/country from Mapbox reverse geocoding?",
+    "history": [],
+    "drafts": [],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-RG-099",
+    "group": "GT-LBS-RG-099",
+    "fold": 3,
+    "query": "Why does Google reverse geocoding return ZERO_RESULTS on some GPS coordinates?",
+    "history": [],
+    "drafts": [
+      {
+        "question": "Can you share one representative latitude and longitude that returned ZERO_RESULTS and any result filters sent with it?",
+        "facts": [
+          "failing latitude and longitude",
+          "result filters"
+        ],
+        "why_it_matters": "Reproduce the lookup and see whether filtering excludes nearby results."
+      }
+    ],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-DIR-088",
+    "group": "GT-LBS-DIR-088",
+    "fold": 5,
+    "query": "Looping over 15 markers and calling Google Directions for each pair quickly gives OVER_QUERY_LIMIT. How should we fix it?",
+    "history": [],
+    "drafts": [
+      {
+        "question": "Roughly how many Directions requests per minute reach the entire Google Cloud project while the marker loop runs?",
+        "facts": [
+          "project-wide Directions requests per minute during the error"
+        ],
+        "why_it_matters": "Estimate the actual request burst the project sees."
+      }
+    ],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-AC-111",
+    "group": "GT-LBS-AC-111",
+    "fold": 3,
+    "query": "Google Places autocomplete says 'The provided API key is invalid' with our server key.",
+    "history": [],
+    "drafts": [
+      {
+        "question": "Which Places API version and client platform is the request using, and what application restriction is set for the key?",
+        "facts": [
+          "Places API version",
+          "client platform",
+          "application restriction type"
+        ],
+        "why_it_matters": "Identify the appropriate authorization checks without requesting the key value."
+      }
+    ],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-DM-049",
+    "group": "GT-LBS-DM-049",
+    "fold": 3,
+    "query": "Sandbox CRM ticket TKT-93241. Customer wrote:\n\"Some elements in our Google Distance Matrix response have status NOT_FOUND while others are OK.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "drafts": [
+      {
+        "question": "Can you share one origin and destination that returned NOT_FOUND and how each input was represented?",
+        "facts": [
+          "representative origin and destination",
+          "input representation"
+        ],
+        "why_it_matters": "Identify the record fields and input issue that matter for reproduction."
+      }
+    ],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-DM-125",
+    "group": "GT-LBS-DM-125",
+    "fold": 3,
+    "query": "OSRM table returns durations only. How do we also get distances?",
+    "history": [],
+    "drafts": [],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-DM-046",
+    "group": "GT-LBS-DM-046",
+    "fold": 5,
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Our 10×10 Google Distance Matrix with departure_time=now fails, but works without departure_time."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Exact origin/destination counts?"
+      }
+    ],
+    "drafts": [],
+    "cohort": "original16"
+  },
+  {
+    "record_id": "GT-LBS-AC-125",
+    "group": "GT-LBS-AC-125",
+    "fold": 2,
+    "api": "AC",
+    "query": "For a type-ahead address search box, how do Ola Maps Autocomplete and the public Nominatim endpoint compare for free usage and restrictions?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-AC-226",
+    "group": "GT-LBS-AC-226",
+    "fold": 4,
+    "api": "AC",
+    "query": "Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-AC-094",
+    "group": "GT-LBS-AC-094",
+    "fold": 4,
+    "api": "AC",
+    "query": "How do we restrict autocomplete results to India on each provider?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-AC-209",
+    "group": "GT-LBS-AC-208",
+    "fold": 2,
+    "api": "AC",
+    "query": "I'm setting up Mappls Autosuggest for Sri Lanka. How do I select that country, and what should I do about the zoom parameter I use for India?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-DIR-207",
+    "group": "GT-LBS-DIR-207",
+    "fold": 5,
+    "api": "DIR",
+    "query": "We're a cycling-delivery startup in Pune. Which providers give bicycling directions in India?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-DIR-072",
+    "group": "GT-LBS-DIR-072",
+    "fold": 4,
+    "api": "DIR",
+    "query": "Ola Directions gives a 'shortest' route that's slower than expected through Bengaluru traffic. Which option gives the quickest route?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-DIR-030",
+    "group": "GT-LBS-DIR-028",
+    "fold": 1,
+    "api": "DIR",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Compare Ola Maps and Google for 6,000,000 traffic-aware route requests a month in India. What if we drop live traffic?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Which ETA accuracy do you need at dispatch vs in-trip?"
+      }
+    ],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-DIR-026",
+    "group": "GT-LBS-DIR-025",
+    "fold": 2,
+    "api": "DIR",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "How much would Mapbox Directions cost for 900,000 requests a month?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need driving-traffic, or is the driving profile enough?"
+      }
+    ],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-DM-080",
+    "group": "GT-LBS-DM-080",
+    "fold": 2,
+    "api": "DM",
+    "query": "Can we use router.project-osrm.org table service for our commercial fleet ETA matrix?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-DM-209",
+    "group": "GT-LBS-DM-209",
+    "fold": 3,
+    "api": "DM",
+    "query": "We need walking-time matrices for a campus-delivery robot pilot in India. Which providers support walking?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-DM-067",
+    "group": "GT-LBS-DM-067",
+    "fold": 3,
+    "api": "DM",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Distance Matrix returns 429 when our dispatcher refreshes ETAs every 10 seconds for 200 drivers."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Requests per minute?"
+      }
+    ],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-DM-121",
+    "group": "GT-LBS-DM-120",
+    "fold": 2,
+    "api": "DM",
+    "query": "Google Route Matrix for two-wheelers in India: 120,000 elements a month. Cost?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-RG-105",
+    "group": "GT-LBS-RG-105",
+    "fold": 3,
+    "api": "RG",
+    "query": "How do we get the city name from lat/lng with Google?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-RG-091",
+    "group": "GT-LBS-RG-091",
+    "fold": 5,
+    "api": "RG",
+    "query": "Which reverse geocoders handle Indian boundaries per Indian law?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-RG-217",
+    "group": "GT-LBS-RG-217",
+    "fold": 4,
+    "api": "RG",
+    "query": "What's Google's default reverse geocoding throughput?",
+    "history": [],
+    "cohort": "fresh16"
+  },
+  {
+    "record_id": "GT-LBS-RG-119",
+    "group": "GT-LBS-RG-117",
+    "fold": 4,
+    "api": "RG",
+    "query": "Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)?",
+    "history": [],
+    "cohort": "fresh16"
+  }
+]

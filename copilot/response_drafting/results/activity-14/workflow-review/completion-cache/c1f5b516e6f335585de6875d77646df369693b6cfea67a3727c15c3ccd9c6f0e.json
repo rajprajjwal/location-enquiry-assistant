@@ -1,0 +1,14 @@
+{
+  "text": "{\"pricing\": true, \"items\": [{\"provider\": \"Ola Maps\", \"api\": \"directions\", \"requests\": 300000, \"sessions\": null, \"keystrokes_per_session\": null, \"origins\": null, \"destinations\": null, \"calls\": null, \"traffic\": null, \"basic\": false}]}",
+  "raw": "{\"pricing\": true, \"items\": [{\"provider\": \"Ola Maps\", \"api\": \"directions\", \"requests\": 300000, \"sessions\": null, \"keystrokes_per_session\": null, \"origins\": null, \"destinations\": null, \"calls\": null, \"traffic\": null, \"basic\": false}]}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 77,
+    "total_tokens": 475
+  },
+  "latency_ms": 1873,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The error code REQUEST_DENIED suggests the request might be missing an API key when using location_type=ROOFTOP. To diagnose, we need the actual redacted request to verify if the API key is included and correctly formatted.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The error code REQUEST_DENIED suggests the request might be missing an API key when using location_type=ROOFTOP. To diagnose, we need the actual redacted request to verify if the API key is included and correctly formatted.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2968,
+    "completion_tokens": 58,
+    "total_tokens": 3026
+  },
+  "latency_ms": 1701,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

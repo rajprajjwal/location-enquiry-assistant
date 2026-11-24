@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The customer is sending ~20 matrices of 25×10 per minute, which may exceed the rate limit of 3,000 QPM queries per minute. This could lead to a burst of requests hitting the quota, causing failures at peak times.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The customer is sending ~20 matrices of 25×10 per minute, which may exceed the rate limit of 3,000 QPM queries per minute. This could lead to a burst of requests hitting the quota, causing failures at peak times.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1674,
+    "completion_tokens": 67,
+    "total_tokens": 1741
+  },
+  "latency_ms": 1757,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

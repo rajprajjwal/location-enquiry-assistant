@@ -1,0 +1,42 @@
+{
+  "record_id": "GT-LBS-RG-227",
+  "turn": "recognized provider reply",
+  "source": "Cache-only reproduction of the live working case; no new endpoint calls.",
+  "first_selection": {
+    "ids": [
+      2,
+      4
+    ],
+    "candidate_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "relevance_review_passed": false
+  },
+  "retry_selection": {
+    "ids": [
+      2,
+      4,
+      5,
+      6
+    ],
+    "candidate_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "all_ids_in_range": true,
+    "maximum_selections": 3,
+    "error_type": "too_many_selections"
+  },
+  "saved_error_message_is_misleading": true,
+  "remaining_evidence_gap": "Nominatim documentation is absent from the six candidates for the original four-provider request.",
+  "recommended_next_change": "Separate cardinality from range errors; allow one shared-budget selection repair against unchanged candidates, preserve grounding/relevance validation, and handle missing provider evidence explicitly.",
+  "implemented": false
+}

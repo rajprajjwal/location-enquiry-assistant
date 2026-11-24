@@ -1,0 +1,4715 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "8c84ee0ffaa22cdfc318ab2534d9a7e1990eb172cd06c0337eb6eeb296f54f7e",
+  "gold_sha256": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089",
+  "reviewer": "Assistant semantic review batches 1–5; deterministic zero matches for empty-side cases",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-003",
+      "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+      "gold_sha256": "baa980c044653547dcd9b6727ec34d0c02d177316d5612698ef4c3001d648b6f",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The self-hosted versus managed preference is the same decision and is fully requested."
+    },
+    {
+      "record_id": "GT-LBS-AC-008",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "1c295b15a48c8c447499686078d2aeb430294530a92ef981cb8e575d427fa911",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Both questions ask the same decisions as gold: Place Details after selection and keystroke debouncing, without additional independent requirements."
+    },
+    {
+      "record_id": "GT-LBS-AC-009",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "1c295b15a48c8c447499686078d2aeb430294530a92ef981cb8e575d427fa911",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Both Place Details after selection and keystroke debouncing are asked separately with equivalent meaning."
+    },
+    {
+      "record_id": "GT-LBS-AC-010",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "1c295b15a48c8c447499686078d2aeb430294530a92ef981cb8e575d427fa911",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Both questions are semantic equivalents of the two gold questions and cover each complete atomic requirement."
+    },
+    {
+      "record_id": "GT-LBS-AC-011",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "e65cf5bea8e3035c1ddb235836fc7bb69eba14a9897b9165928b67ad127bed86",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-012",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "e65cf5bea8e3035c1ddb235836fc7bb69eba14a9897b9165928b67ad127bed86",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-015",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-016",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-017",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-018",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-019",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-020",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-021",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "d3c4e61562e15c336a815466dfe5b3b18cda408465256956a02cf6cda7b82a21",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "d3c4e61562e15c336a815466dfe5b3b18cda408465256956a02cf6cda7b82a21",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "d3c4e61562e15c336a815466dfe5b3b18cda408465256956a02cf6cda7b82a21",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "d3c4e61562e15c336a815466dfe5b3b18cda408465256956a02cf6cda7b82a21",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-026",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-027",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-035",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-038",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-043",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-044",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "questions_sha256": "8f4311ea02dad2f6819ebe37b18a2c8376b684f6bd75e7cf2789e753c15fa158",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-049",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-053",
+      "questions_sha256": "f19a59a873e472b3300841914ddba5da2e7314ac6cfd35ae4c7ee092eb710819",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-055",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-056",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-059",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-069",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-072",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-082",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-083",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-084",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-088",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "5faf6d8d2490063a2f52a543620b2d6b13fc2e99b5481a6107da10b0b67a75df",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-090",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "563dc18c34a1f98d83124608b9123b61216abddfd71a9744b5a0d49b4ba4aa85",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-091",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-092",
+      "questions_sha256": "19eadcb05e03ba0b3a46a20171cc0a53dd27d4fe3ff64d856167986002043886",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-093",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "questions_sha256": "fbbc46cfcba235216d90153617f5022592681841c33f99dcef063761aced81f6",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-096",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-099",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-101",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-102",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-103",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-104",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-105",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-106",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-107",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-109",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-110",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-112",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-113",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-114",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-115",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-116",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-117",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-118",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-119",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-120",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-121",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-122",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-123",
+      "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-125",
+      "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-204",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "0dba318967756532d9b45582d55582b9f9d15f6416b96454d8b9c3e8b2fd0dd4",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-208",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-209",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-212",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-213",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "3bcc0049a42d465b6c0afe8efe06d1f84e84802ecc75e89d2cc151e965cbe051",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-216",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-217",
+      "questions_sha256": "19eadcb05e03ba0b3a46a20171cc0a53dd27d4fe3ff64d856167986002043886",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-218",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-219",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-220",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "7c42ed06a2a0acd2104f5f24cd1ed289188f2177e254ba2bcfd0e8ab67279267",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-221",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "7c42ed06a2a0acd2104f5f24cd1ed289188f2177e254ba2bcfd0e8ab67279267",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-224",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-225",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-226",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-227",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "82ea3451ac42f745afd7c592aade5a4dd54da0957c8d1d0204aea1eb9282bfb9",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-228",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "82ea3451ac42f745afd7c592aade5a4dd54da0957c8d1d0204aea1eb9282bfb9",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-AC-233",
+      "questions_sha256": "b4cdc0b52f64f857ba2235f16525c9c845e2b2a8b34ce2aaa37b4987ffccb929",
+      "gold_sha256": "b386fc8f6363ce0a5d72790028a63067d0e8a19616d5d85ca003f681e6f7c7dc",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              2
+            ],
+            [
+              2,
+              2,
+              3
+            ],
+            [
+              2,
+              2,
+              4
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The first question requests peak rate and geography. The second requests backend ownership and the intended storage, redistribution and resale uses that establish which rights are required. Gold does not ask for a retention duration or proof of rights already held."
+    },
+    {
+      "record_id": "GT-LBS-DIR-013",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "5e67aef2f304db84c8e99861822ae9feff3e642ede9d1b67f0302a90d8304e73",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-014",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "5e67aef2f304db84c8e99861822ae9feff3e642ede9d1b67f0302a90d8304e73",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-025",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-026",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-027",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-028",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-029",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-030",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-031",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "6597ce076633a2073b7ee25e8c08f80efd74448a7dea595133db3ac495a432de",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-032",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-033",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-036",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-037",
+      "questions_sha256": "7127f2a4786e61f59387e40fd3670b30fd5ac0a4975b936bf35d48b351d20e5d",
+      "gold_sha256": "041680e73f101906159d49d856f6917928f14c7ade7e3d1f3b10ff91df454b0f",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Traffic needed now versus for future departures is equivalent to traffic at request time versus future-departure requirements."
+    },
+    {
+      "record_id": "GT-LBS-DIR-038",
+      "questions_sha256": "b0ac1e3f3bd821847efc0a0a702964d1426c555d8fd83bb022db71650eedc332",
+      "gold_sha256": "7ca65a8565b2f74a241a55933df49fee159219de42ecec1cf16db38471a0cddc",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The instruction modality choice is asked directly."
+    },
+    {
+      "record_id": "GT-LBS-DIR-040",
+      "questions_sha256": "84128aff16cf9d645a2d368f9f232100e736402b379e955c62a3fb0fce740a98",
+      "gold_sha256": "06f90749e6238e079cb158e0089c87fb7411b4117289f6d0d0f057fc73ab96bc",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The combined question explicitly asks hazardous-goods, vehicle-height and vehicle-weight restrictions, covering all three gold atoms within the same vehicle-restrictions decision."
+    },
+    {
+      "record_id": "GT-LBS-DIR-044",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "24275e99f77e7a070804aea7c5f12a6fdc14dd363fbcc52d9ddc07db74aec847",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-045",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-047",
+      "questions_sha256": "4c613b58b407724288266b3161051e52fdd36bf14218301410c0234172384535",
+      "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              4,
+              1
+            ],
+            [
+              5,
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Monthly API workload means monthly route requests in this Directions enquiry. Traffic, travel/vehicle mode and stops per route are covered. The last question covers an existing Google project, but a generic provider contract or prepaid plan does not establish specifically whether an Ola contract is available, so the last gold group is not fully matched."
+    },
+    {
+      "record_id": "GT-LBS-DIR-048",
+      "questions_sha256": "4c613b58b407724288266b3161051e52fdd36bf14218301410c0234172384535",
+      "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              4,
+              1
+            ],
+            [
+              5,
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Monthly API workload is route-request workload in this Directions context; live traffic, vehicle modes and route-stop requirements match the corresponding gold decisions. The final question covers an existing Google project, but a generic provider contract or prepaid plan does not specifically ask whether an Ola contract is available, so that whole group and its Ola atom do not match."
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "questions_sha256": "4c613b58b407724288266b3161051e52fdd36bf14218301410c0234172384535",
+      "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              4,
+              1
+            ],
+            [
+              5,
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The first four questions cover monthly route workload, traffic, vehicle modes and route stops. Generic provider contract/prepaid wording does not ask specifically about an Ola contract. The primary reference is retained despite the query already mentioning 15–20 outlets."
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "questions_sha256": "761b325b8decb3055d88263ec8c91469319f0662c0c6d890152c6d89eaf5f8f6",
+      "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              4,
+              1
+            ],
+            [
+              4,
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Monthly Directions workload, vehicle modes and stops match three gold decisions. Existing Google project is covered partially by the final combined question; generic provider contract/prepaid-plan wording does not specifically establish Ola-contract availability. No predicted question asks the gold live-traffic requirement; although the query already supplies it, supplied query information is not counted as a predicted-question match."
+    },
+    {
+      "record_id": "GT-LBS-DIR-053",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "16a1fdb0f0520d517a8a9c5d5797262084bdb0592207f4d7f3dd09eaef4b644e",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-055",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "937aca4f1b50deadad22d9ef02e36ce20676918ed6bd366a3677442196eb66fa",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-056",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-057",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-058",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-060",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-061",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-062",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-063",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-064",
+      "questions_sha256": "f19a59a873e472b3300841914ddba5da2e7314ac6cfd35ae4c7ee092eb710819",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-065",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "5bdbeb2e767a9065c08e2789ec6fa2ba0ee78f56fe423d06afa66b4ad05e2a1a",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-070",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-072",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-076",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-078",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-079",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-080",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-086",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "1699e9f8dff672f02ab1818f1008d08dcaf1a8b5855f63ee97f82967e02ffb20",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-087",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "547bb8268bda2c866c016bd2a3750d72262324a14244d3103a7784263454bb2e",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "A redacted failing request asks for request reproduction, not the exact returned status string. REQUEST_DENIED is already in the enquiry, but the unchanged primary reference still asks for that status; no question or fact match is awarded."
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "questions_sha256": "165b79a60e91cf2c94c067292186b3f1fe144098e62afb1049855901ce85e1f3",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-089",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-090",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-092",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-093",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-094",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "questions_sha256": "c12a885329e2fc42cdf482a6b539945a212a666bd6abaedb030048c3443d086e",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-098",
+      "questions_sha256": "b38aaefd0a3727ca1294d38b62c7830c562696c0fbb1e8463e8aa34d652332b3",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-101",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-102",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-105",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-106",
+      "questions_sha256": "f19a59a873e472b3300841914ddba5da2e7314ac6cfd35ae4c7ee092eb710819",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-107",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-109",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-110",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-111",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-114",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-116",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-117",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-118",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-119",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-120",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-121",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "c8abf77f1d392550b55b0641429192c51617f432a1b41d7c9305722c413225b9",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-124",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-125",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-205",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "6fa1caebafd384ba207e128f27f0e00ff6c348adddcb9cc1fec97ee358459108",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-206",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "6fa1caebafd384ba207e128f27f0e00ff6c348adddcb9cc1fec97ee358459108",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-207",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-208",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-211",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "33a5627ee396a5d90387adbdd9598116cd53817574d398fd083ff1524224d7fd",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-212",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "33a5627ee396a5d90387adbdd9598116cd53817574d398fd083ff1524224d7fd",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-213",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "41f894939a0c033d915d017b5ac81f17028bd7431594e962fcd40c8fcbc0323a",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-214",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-215",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "b67a499c26ab61fc6dec19339ac81790a11b2f10aa5f1fe385912c35bfd0dba0",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DIR-218",
+      "questions_sha256": "7127f2a4786e61f59387e40fd3670b30fd5ac0a4975b936bf35d48b351d20e5d",
+      "gold_sha256": "5e1095f6443991defb8b71d8f6326878785b989b7d870a221eebfe220a5debe1",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Asking whether traffic is needed now or for future departures asks about timing. It does not establish whether live traffic is essential versus typical ETAs being acceptable, and it does not ask whether the Google project is new."
+    },
+    {
+      "record_id": "GT-LBS-DIR-219",
+      "questions_sha256": "7127f2a4786e61f59387e40fd3670b30fd5ac0a4975b936bf35d48b351d20e5d",
+      "gold_sha256": "5e1095f6443991defb8b71d8f6326878785b989b7d870a221eebfe220a5debe1",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Current versus future-departure traffic timing does not ask whether live traffic is essential or typical/static ETAs are acceptable. It also does not ask whether the Google Cloud project is new."
+    },
+    {
+      "record_id": "GT-LBS-DIR-220",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "6fe33bd38ba213da3269c2d06df035110e44d93c6ece431926956f0f43c113cd",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-003",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-004",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-007",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "ca87963712c248e05d171545a8292480ce79f0c6c3e2699f6803402d356fb26e",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-008",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "ca87963712c248e05d171545a8292480ce79f0c6c3e2699f6803402d356fb26e",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-009",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "ca87963712c248e05d171545a8292480ce79f0c6c3e2699f6803402d356fb26e",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-010",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "ca87963712c248e05d171545a8292480ce79f0c6c3e2699f6803402d356fb26e",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-011",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "ca87963712c248e05d171545a8292480ce79f0c6c3e2699f6803402d356fb26e",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-012",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "ca87963712c248e05d171545a8292480ce79f0c6c3e2699f6803402d356fb26e",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-013",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "ca87963712c248e05d171545a8292480ce79f0c6c3e2699f6803402d356fb26e",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-017",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The same matrix billing/profile decision is covered: whether traffic-aware ETAs are needed and which travel or vehicle modes are required. Asking the required modes covers whether anything besides driving is needed."
+    },
+    {
+      "record_id": "GT-LBS-DM-018",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The combined question asks whether traffic is required and which vehicle or travel modes are needed, covering whether a mode other than driving is required within the same matrix-feature decision."
+    },
+    {
+      "record_id": "GT-LBS-DM-019",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Both required matrix profile facts are requested: traffic-aware ETAs and travel/vehicle mode. No independent decision beyond the gold group is added."
+    },
+    {
+      "record_id": "GT-LBS-DM-020",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The combined question covers traffic requirements and the required travel mode, including whether that mode differs from driving. No additional independent decision is added."
+    },
+    {
+      "record_id": "GT-LBS-DM-025",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "gold_sha256": "f210c2f3761ed1c22adca7017b8957987ec2921f6a622679558738725c3efba1",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The input representation is requested directly. Adding place IDs as another possible input type remains within the same decision, rather than adding an independent question."
+    },
+    {
+      "record_id": "GT-LBS-DM-030",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "gold_sha256": "f210c2f3761ed1c22adca7017b8957987ec2921f6a622679558738725c3efba1",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The question asks the same input-representation decision as gold. Place IDs add an alternative within that decision, rather than an independent requirement, while coordinates and addresses remain explicitly covered."
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "questions_sha256": "3acb016013beaa7273fe98754e3a99675eb1d6d42b0e2878881f7e84f9858da4",
+      "gold_sha256": "4f73cb57ab66e93890a52bc4972ba4df01eba7a9ed73dd821b0f83fb34c53e51",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Billing-account country does not ask whether all matrices need traffic. The primary reference remains unchanged even though the enquiry already requests with-and-without-traffic comparisons."
+    },
+    {
+      "record_id": "GT-LBS-DM-035",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-036",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-043",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-044",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-045",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-046",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-047",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-048",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "questions_sha256": "21d370e49553abfe2884cda9c1208baf2a2862b8458aa65c540afa1eb833594f",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-050",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-051",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-052",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-056",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-057",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-058",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-060",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-061",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-062",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-065",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-067",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-068",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-069",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-072",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-073",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-075",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-077",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-080",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-086",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "gold_sha256": "c0dc8549533404db021936eaf9e2b349b056a1731e4ee8cee0e1bc16a1af35a5",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Traffic and vehicle-mode requirements do not establish a start date or SLA requirements; neither gold decision is asked."
+    },
+    {
+      "record_id": "GT-LBS-DM-088",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "gold_sha256": "147224a0d2d7a879d48d312d8503f5d5627a4f1c8edd76ade8168a187b9fbe48",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Traffic and travel-mode requirements do not request the usage export needed to inspect the disputed bill."
+    },
+    {
+      "record_id": "GT-LBS-DM-089",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-090",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-091",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-092",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-093",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "bde2db40cb86151d40d8c5862ca6020b550a29690dff654a7674271af4ed3dc7",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-102",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-103",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-104",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-105",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-106",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-107",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-114",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-115",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-116",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-120",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-121",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-124",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-206",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "5d3b26d5fdcc0d3f7c3b6874b59de15233af4bfedce9b181daaf1f76688a3b42",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-207",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "5d3b26d5fdcc0d3f7c3b6874b59de15233af4bfedce9b181daaf1f76688a3b42",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-208",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "5d3b26d5fdcc0d3f7c3b6874b59de15233af4bfedce9b181daaf1f76688a3b42",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-209",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-210",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-211",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "e57e1fa1ce4794da8def1afbeac0394b4fe2a4615b60fbd8f682a9e008c06912",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-212",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "e57e1fa1ce4794da8def1afbeac0394b4fe2a4615b60fbd8f682a9e008c06912",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-216",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "128f0331e5579aa54a88d56394edea60cb689e0c84cadb127c6434d7f997c231",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-217",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "128f0331e5579aa54a88d56394edea60cb689e0c84cadb127c6434d7f997c231",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-219",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-220",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-223",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "questions_sha256": "2548b8ad034e185ff1388733cdb05e0941397e3c9fef421b32905b2959ffb079",
+      "gold_sha256": "2a3aa9fa7b93a57f54738d3ff5f8195163c0c1a0b49ea96f0b3b6df0179912b8",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              2,
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The first question covers origins, destinations and traffic-aware ETAs; the second asks whether Mapbox driving-traffic is required. No question requests the cost-comparison basis, so gold group two remains unmatched."
+    },
+    {
+      "record_id": "GT-LBS-DM-230",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-004",
+      "questions_sha256": "f19a59a873e472b3300841914ddba5da2e7314ac6cfd35ae4c7ee092eb710819",
+      "gold_sha256": "660a69271fc0c07a3d8a42c1e93df26328f6b21abcd4b421f7e8927b7c8c9870",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The failing request and response error do not ask for current aggregate requests per minute or the contract/prepaid-credit arrangement. A request example cannot be credited for these independent facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-008",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Both questions directly match the storage requirement and user-triggered versus periodic lookup decisions."
+    },
+    {
+      "record_id": "GT-LBS-RG-009",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Storage and lookup trigger are asked separately with the same meanings as the two gold questions."
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+      "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The predicted question exactly covers user-triggered versus periodic lookups. Storage is supplied in the enquiry but not asked in a predicted question, so it receives no question-level or atomic-question credit under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-RG-011",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Both storage need and user-triggered versus periodic tracking are explicitly requested."
+    },
+    {
+      "record_id": "GT-LBS-RG-012",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The two predicted questions are semantic equivalents of the two gold questions, without additional independent requested information."
+    },
+    {
+      "record_id": "GT-LBS-RG-013",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "Both independent gold decisions are fully covered: result storage and lookup trigger."
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+      "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The prediction covers lookup trigger versus periodic tracking. The query-supplied storage requirement is not a generated question and is therefore not counted as a match to gold group one."
+    },
+    {
+      "record_id": "GT-LBS-RG-033",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-034",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-035",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-038",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-039",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-040",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-045",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-046",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-061",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "questions_sha256": "f19a59a873e472b3300841914ddba5da2e7314ac6cfd35ae4c7ee092eb710819",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-065",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-079",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-080",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-083",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-085",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "f69e387b405dc267826adf4a2bfee3282d667f622d1b8a93a92ec81277976003",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-087",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-088",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-091",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-092",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-094",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-095",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-097",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-098",
+      "questions_sha256": "840126a30ac956b1b909a1b53e09711a4247bf0bf9e4a72efc7d888b5a91ef5b",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "questions_sha256": "840126a30ac956b1b909a1b53e09711a4247bf0bf9e4a72efc7d888b5a91ef5b",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-100",
+      "questions_sha256": "840126a30ac956b1b909a1b53e09711a4247bf0bf9e4a72efc7d888b5a91ef5b",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-101",
+      "questions_sha256": "840126a30ac956b1b909a1b53e09711a4247bf0bf9e4a72efc7d888b5a91ef5b",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-102",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-103",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-104",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-105",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-106",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-107",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-108",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-109",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-110",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-112",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-115",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-116",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-117",
+      "questions_sha256": "b29c150872af7fb955bdcbb23f99ddfd7ac8a21d561f49d846909f313f38fea8",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-118",
+      "questions_sha256": "b29c150872af7fb955bdcbb23f99ddfd7ac8a21d561f49d846909f313f38fea8",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "questions_sha256": "b29c150872af7fb955bdcbb23f99ddfd7ac8a21d561f49d846909f313f38fea8",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-120",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-121",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-122",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-123",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-124",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-125",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-205",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-206",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-207",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "59e697752a464c74561e946761b13d88d445ea807ad9ecbb5555a5589ef5ac85",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-208",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "59e697752a464c74561e946761b13d88d445ea807ad9ecbb5555a5589ef5ac85",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-209",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "59e697752a464c74561e946761b13d88d445ea807ad9ecbb5555a5589ef5ac85",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-210",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-211",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-214",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-215",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-216",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-217",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-218",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-219",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "fcc5bff24917e5e1ba98decf0d108b49940f179ddd87413e5c38ac6a86960365",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "A failing request as sent does not ask whether traffic spiked or whether a deployment used a new server/domain. Current request headers alone do not establish a recent deployment change."
+    },
+    {
+      "record_id": "GT-LBS-RG-220",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-221",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-222",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-223",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-224",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "ca70651a5149e0c82fdb463d4c96bd0223bc9677869abbc76d10d927c95a10f1",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "deterministic_empty_side",
+      "reason": "No possible match because the gold or predicted question list is empty."
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "questions_sha256": "209f200b860b63e65054ba1d378aacf28d7eb640e6db4d1d82e601bb51d01fbf",
+      "gold_sha256": "442905abd1dcaee50925b78460de98c35eb0e6ac4e6897540fab6adaeb262af7",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "The first question fully requests peak rate and monthly workload. The second requests storage, but public-community-endpoint acceptability does not identify public Nominatim, and temporary-only results do not identify Mapbox temporary geocoding. Those named-provider qualifications are absent from the supplied question context. No result-language question is asked; the primary gold remains unchanged even though Hindi is already supplied."
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "questions_sha256": "210de21c44def89da8f0f65f17b95102d1f74c93084fdb91c3b27036197e387a",
+      "gold_sha256": "374fdca5018becda7d2aba5cee25d5969b259035f7e09a4d826b7ceb08d9c103",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": []
+        }
+      },
+      "review_origin": "assistant_semantic_review",
+      "reason": "No question asks the hard-filter or address-element requirements. The generic other-providers question does not identify the gold exclusion of Google and Nominatim, and neither provider is named in the supplied enquiry/history. Without an explicit exclusion anchor it could be answered with Google or Nominatim, so the specific gold fact is not matched."
+    }
+  ],
+  "review_kind": "Assistant semantic review, not independent human acceptance.",
+  "source_full_predictions_sha256": "45170d5060db7a10c89ba8bc0cb125959e818339e90b59a20f36003ff75ffe62",
+  "review_batches_sha256": {
+    "baseline-review-1.json": "69a5f694b0f7e5c90da9526fa872bec3fed39786f5aa972d3a544c7aa21f4870",
+    "baseline-review-2.json": "ee6c8f42ff8575408f2b94113683319ca65986f76a65f3d5119929ce5efd2444",
+    "baseline-review-3.json": "e4d42111a4fcb850f4100371426a12f97cf3492899370799e32e5a9ec0d9e6b0",
+    "baseline-review-4.json": "c290805bbc11b6a2fdb912ab76f49bea96ac1ae95fbd8be7cdbc26ab39301e1d",
+    "baseline-review-5.json": "0fa95ceb11374b17c8af5e48c79bbde74cb4036cfc885989e8e7e1ac30fbd07e"
+  },
+  "scope": "All 317 fixed working-eval cases; retrospective grouped folds; frozen and holdout excluded."
+}

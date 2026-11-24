@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The documentation explains that the traffic_model parameter affects the duration_in_traffic field, and that best_guess can be longer than optimistic due to integration of live traffic information. The customer's observation is consistent with the documented behavior, so no further action is needed.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The documentation explains that the traffic_model parameter affects the duration_in_traffic field, and that best_guess can be longer than optimistic due to integration of live traffic information. The customer's observation is consistent with the documented behavior, so no further action is needed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2074,
+    "completion_tokens": 59,
+    "total_tokens": 2133
+  },
+  "latency_ms": 1870,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"1,000,000 calls a month\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer has provided the monthly volume but the required details about whether Place Details are called after autocomplete selection and if keystrokes are debounced are missing, which are critical for accurate cost calculation and billing.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"1,000,000 calls a month\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer has provided the monthly volume but the required details about whether Place Details are called after autocomplete selection and if keystrokes are debounced are missing, which are critical for accurate cost calculation and billing.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 914,
+    "completion_tokens": 162,
+    "total_tokens": 1076
+  },
+  "latency_ms": 3725,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume_assumption\",\"value\":4000000,\"evidence\":\"Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)\"}],\"groups\":[{\"fields\":[\"storage_required\"],\"decision_impact\":\"Select temporary versus retained-result licensing and prices.\"},{\"fields\":[\"billing_country\",\"usage_geography\"],\"decision_impact\":\"Qualify the applicable regional price schedule.\"}],\"reason\":\"The customer is comparing Google and Mapbox reverse geocoding services for 4,000,000 lookups a month with display-only use and no storage. The missing material requirements include whether results must be stored, the billing country, and the usage geography, which are critical for determining licensing, pricing, and regional compliance.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume_assumption\",\"value\":4000000,\"evidence\":\"Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)\"}],\"groups\":[{\"fields\":[\"storage_required\"],\"decision_impact\":\"Select temporary versus retained-result licensing and prices.\"},{\"fields\":[\"billing_country\",\"usage_geography\"],\"decision_impact\":\"Qualify the applicable regional price schedule.\"}],\"reason\":\"The customer is comparing Google and Mapbox reverse geocoding services for 4,000,000 lookups a month with display-only use and no storage. The missing material requirements include whether results must be stored, the billing country, and the usage geography, which are critical for determining licensing, pricing, and regional compliance.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2202,
+    "completion_tokens": 175,
+    "total_tokens": 2377
+  },
+  "latency_ms": 5719,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

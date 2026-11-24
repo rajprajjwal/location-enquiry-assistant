@@ -1,0 +1,3299 @@
+# Source history: Deepshikha (434e40e), deepshikha/lbs-copilot. See copilot/enquiry_workflow/source-history.json.
+sources:
+- url: https://developers.google.com/maps/api-security-best-practices
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 9
+- url: https://developers.google.com/maps/billing-and-pricing/pricing-india
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 221
+- url: https://developers.google.com/maps/documentation/directions/get-directions
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 86
+- url: https://developers.google.com/maps/documentation/directions/usage-and-billing
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 6
+- url: https://developers.google.com/maps/documentation/distance-matrix/distance-matrix
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 80
+- url: https://developers.google.com/maps/documentation/distance-matrix/usage-and-billing
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 41
+- url: https://developers.google.com/maps/documentation/geocoding/policies
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 30
+- url: https://developers.google.com/maps/documentation/geocoding/requests-reverse-geocoding
+  aliases:
+  - https://developers.google.com/maps/documentation/geocoding/guides-v3/requests-reverse-geocoding
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 80
+- url: https://developers.google.com/maps/documentation/geocoding/usage-and-billing
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 8
+- url: https://developers.google.com/maps/documentation/places/web-service/legacy/autocomplete
+  provider: Google Maps Platform
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 71
+- url: https://developers.google.com/maps/documentation/places/web-service/place-autocomplete
+  provider: Google Maps Platform
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 18
+- url: https://developers.google.com/maps/documentation/places/web-service/session-pricing
+  provider: Google Maps Platform
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 39
+- url: https://developers.google.com/maps/documentation/routes/compute_route_matrix
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 26
+- url: https://developers.google.com/maps/documentation/routes/coverage-two-wheeled
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 5
+- url: https://developers.google.com/maps/documentation/routes/usage-and-billing
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 63
+- url: https://developers.google.com/maps/faq
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 34
+- url: https://docs.here.com/geocoding-and-search/docs/autosuggest
+  provider: HERE
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 20
+- url: https://docs.here.com/geocoding-and-search/docs/code-autocomplete-country-filter
+  provider: HERE
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 3
+- url: https://docs.here.com/geocoding-and-search/docs/geocode-local-coverage
+  provider: HERE
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 15
+- url: https://docs.here.com/geocoding-and-search/docs/reverse-geocode
+  provider: HERE
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 6
+- url: https://docs.here.com/policies/docs/limits-and-quotas
+  provider: HERE
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 69
+- url: https://docs.here.com/routing/docs/matrix-v8-intro
+  provider: HERE
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 26
+- url: https://docs.here.com/routing/docs/routing-v8-intro
+  provider: HERE
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 3
+- url: https://docs.here.com/routing/docs/routing-v8-navigable-countries
+  provider: HERE
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 16
+- url: https://docs.here.com/routing/docs/routing-v8-traffic-in-routing
+  provider: HERE
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 4
+- url: https://docs.mapbox.com/api/navigation/directions/
+  provider: Mapbox
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 22
+- url: https://docs.mapbox.com/api/navigation/matrix/
+  provider: Mapbox
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 55
+- url: https://docs.mapbox.com/api/search/geocoding/
+  provider: Mapbox
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 41
+- url: https://docs.mapbox.com/api/search/search-box/
+  provider: Mapbox
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 28
+- url: https://github.com/Project-OSRM/osrm-backend/wiki/Demo-server
+  provider: OSRM
+  api: Directions
+  kind: html
+  licence: BSD-2 / project docs
+  fetch_method: httpx
+  gold_citations: 41
+- url: https://maps.olakrutrim.com/
+  provider: Ola Maps
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 1
+- url: https://maps.olakrutrim.com/docs
+  provider: Ola Maps
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 37
+- url: https://maps.olakrutrim.com/openapi/ola-maps-apis-oas.yaml
+  provider: Ola Maps
+  api: general
+  kind: openapi
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 249
+- url: https://maps.olakrutrim.com/pricing/details
+  provider: Ola Maps
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 315
+- url: https://maps.olakrutrim.com/pricing/update-2026
+  provider: Ola Maps
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 49
+- url: https://nominatim.org/release-docs/latest/api/Reverse/
+  provider: OSM Nominatim
+  api: Reverse Geocode
+  kind: html
+  licence: GPL-2 / project docs
+  fetch_method: httpx
+  gold_citations: 18
+- url: https://nominatim.org/release-docs/latest/api/Search/
+  provider: OSM Nominatim
+  api: general
+  kind: html
+  licence: GPL-2 / project docs
+  fetch_method: httpx
+  gold_citations: 2
+- url: https://operations.osmfoundation.org/policies/nominatim/
+  provider: OSM Nominatim
+  api: general
+  kind: html
+  licence: OSMF policy
+  fetch_method: httpx
+  gold_citations: 105
+- url: https://project-osrm.org/docs/v5.24.0/api/
+  provider: OSRM
+  api: Directions
+  kind: html
+  licence: BSD-2 / project docs
+  fetch_method: httpx
+  gold_citations: 34
+- url: https://stackoverflow.com/questions/10174295
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/10653023
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/10923769
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/11231457
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/11912668
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/12479715
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/13042075
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/13587145
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/13836834
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/14654758
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/14659008
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 1
+- url: https://stackoverflow.com/questions/15036007
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/16132591
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/17222386
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/17713874
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/19021320
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/20647087
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/2235655
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/2296377
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/23605262
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/25144508
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/26453387
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 1
+- url: https://stackoverflow.com/questions/27392333
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/27791801
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/31109727
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/31625112
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/33935119
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/34179717
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/35218909
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/36019006
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/36272322
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/38891106
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/39171303
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/39726945
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/40683330
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/41155676
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/41724833
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/41891702
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/42942017
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/4418875
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/44851641
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/45176988
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/45871512
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/46748233
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/47393315
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/47782514
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/48027387
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/49129939
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/50187750
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 1
+- url: https://stackoverflow.com/questions/50398801
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 1
+- url: https://stackoverflow.com/questions/50659938
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/51048769
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/51485115
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/52321735
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/52959432
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/53396859
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/5341023
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/53588002
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/53720616
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/54608214
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/54945260
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/56164932
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/56405576
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 1
+- url: https://stackoverflow.com/questions/56590521
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/57340818
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/58734825
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/64032538
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/7179452
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/75314869
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/78234081
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/8282026
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 0
+- url: https://stackoverflow.com/questions/8779886
+  provider: Stack Overflow
+  api: mixed
+  kind: stackoverflow
+  licence: CC BY-SA 4.0
+  fetch_method: stackexchange_api
+  gold_citations: 1
+- url: https://www.mapbox.com/pricing
+  provider: Mapbox
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 80
+- url: https://www.openstreetmap.org/copyright
+  provider: OSM
+  api: general
+  kind: html
+  licence: ODbL
+  fetch_method: httpx
+  gold_citations: 9
+- url: https://www.rbi.org.in/
+  provider: RBI (FX rate)
+  api: general
+  kind: html
+  licence: public reference
+  fetch_method: playwright
+  gold_citations: 124
+- url: https://developers.google.com/maps/coverage
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 38
+- url: https://developers.google.com/maps/support
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 4
+- url: https://docs.mapbox.com/api/guides
+  provider: Mapbox
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 11
+- url: https://docs.mapbox.com/accounts/guides/tokens
+  provider: Mapbox
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  gold_citations: 7
+- url: https://developer.mappls.com/documentation/sdk/rest-apis/mappls-routing-api/readme
+  provider: Mappls (MapmyIndia)
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 10
+- url: https://developer.mappls.com/documentation/sdk/rest-apis/mappls-distance-matrix-api/readme
+  provider: Mappls (MapmyIndia)
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 23
+- url: https://developer.mappls.com/documentation/sdk/rest-apis/mappls-maps-auto-suggest-api-example/Readme
+  provider: Mappls (MapmyIndia)
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 20
+- url: https://developer.mappls.com/documentation/sdk/rest-apis/mappls-maps-reverse-geocoding-rest-api-example/Readme
+  provider: Mappls (MapmyIndia)
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: playwright
+  gold_citations: 15
+- url: https://download.geofabrik.de/asia/bhutan.html
+  aliases:
+  - https://download.geofabrik.de/asia/bhutan/index.html
+  provider: OSM
+  api: general
+  licence: Geofabrik download page; ODbL 1.0 applies to OSM data
+  kind: html
+  fetch_method: httpx
+  gold_citations: 1
+- url: https://download.geofabrik.de/asia/nepal.html
+  aliases:
+  - https://download.geofabrik.de/asia/nepal/index.html
+  provider: OSM
+  api: general
+  licence: Geofabrik download page; ODbL 1.0 applies to OSM data
+  kind: html
+  fetch_method: httpx
+  gold_citations: 1
+- url: https://github.com/Project-OSRM/osrm-backend
+  provider: OSRM
+  api: Directions
+  licence: BSD-2-Clause / project documentation
+  kind: html
+  fetch_method: httpx
+  gold_citations: 2
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/TopLevel/computeRoutes
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation, CC BY 4.0; code samples Apache 2.0 unless
+    noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/specify_location-rm
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: Google Developers documentation, CC BY 4.0; code samples Apache 2.0 unless
+    noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/migrate-routes-why
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation, CC BY 4.0; code samples Apache 2.0 unless
+    noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/route-modifiers
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation, CC BY 4.0; code samples Apache 2.0 unless
+    noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/places/web-service/using-session-tokens
+  provider: Google Maps Platform
+  api: Autocomplete
+  kind: html
+  licence: Google Developers documentation, CC BY 4.0; code samples Apache 2.0 unless
+    noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/reverse-geocoding
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation, CC BY 4.0; code samples Apache 2.0 unless
+    noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/geocoding-v4-migrate
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation, CC BY 4.0; code samples Apache 2.0 unless
+    noted
+  fetch_method: httpx
+- url: https://docs.mapbox.com/help/dive-deeper/directions/
+  provider: Mapbox
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.mapbox.com/help/getting-started/search/
+  provider: Mapbox
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.mapbox.com/help/dive-deeper/mapbox-data/
+  provider: Mapbox
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.mapbox.com/help/troubleshooting/reporting-a-problem/
+  provider: Mapbox
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://maps.olakrutrim.com/products
+  provider: Ola Maps
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://developer.mappls.com/documentation/sdk/rest-apis/Readme/
+  provider: Mappls (MapmyIndia)
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  aliases:
+  - https://github.com/mappls-api/mappls-rest-apis
+- url: https://about.mappls.com/api/global-api/
+  provider: Mappls (MapmyIndia)
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://project-osrm.org/docs/v26.6.1/http
+  provider: OSRM
+  api: general
+  kind: html
+  licence: BSD-2-Clause / project documentation
+  fetch_method: httpx
+- url: https://project-osrm.org/docs/v26.4.0/tools
+  provider: OSRM
+  api: general
+  kind: html
+  licence: BSD-2-Clause / project documentation
+  fetch_method: httpx
+- url: https://nominatim.org/release-docs/latest/api/Output/
+  provider: OSM Nominatim
+  api: Reverse Geocode
+  kind: html
+  licence: Nominatim project documentation
+  fetch_method: httpx
+- url: https://nominatim.org/release-docs/develop/customize/Settings/
+  provider: OSM Nominatim
+  api: Reverse Geocode
+  kind: html
+  licence: Nominatim project documentation
+  fetch_method: httpx
+- url: https://maps.olakrutrim.com/docs/routing-apis/directions-api
+  provider: Ola Maps
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://maps.olakrutrim.com/docs/routing-apis/distance-matrix-api
+  provider: Ola Maps
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  aliases:
+  - https://maps.olakrutrim.com/krutrim/docs/routing-apis/distance-matrix-api
+- url: https://maps.olakrutrim.com/docs/places-apis/autocomplete-api
+  provider: Ola Maps
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://maps.olakrutrim.com/docs/geocoding/reverse-geocoding-api
+  provider: Ola Maps
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://aws.amazon.com/location/faqs/
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://aws.amazon.com/location/pricing/
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/general/latest/gr/location.html
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/APIReference/API_CalculateRouteMatrix.html
+  provider: Amazon Location Service
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/APIReference/API_CalculateRoutes.html
+  provider: Amazon Location Service
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_Autocomplete.html
+  provider: Amazon Location Service
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_ReverseGeocode.html
+  provider: Amazon Location Service
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/access.html
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/autocomplete.html
+  provider: Amazon Location Service
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/calculate-route-matrix.html
+  provider: Amazon Location Service
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/calculate-routes-how-to.html
+  provider: Amazon Location Service
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/calculate-routes.html
+  provider: Amazon Location Service
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/concepts-how.html
+  provider: Amazon Location Service
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/concepts-where.html
+  provider: Amazon Location Service
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/places-choose-api.html
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/places-querying-biasing.html
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/places-quota-usage.html
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/pricing.html
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/reverse-geocode.html
+  provider: Amazon Location Service
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/routes-quota-usage.html
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.aws.amazon.com/location/latest/developerguide/using-apikeys.html
+  provider: Amazon Location Service
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/billing
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/faq
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/gmp-pricing-glossary
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/india-overview
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/overview
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/pay-as-you-go
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/pricing
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/pricing-categories
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/reporting-and-monitoring
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/sku-details
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/sku-details/legacy
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/sku-details/places
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/billing-and-pricing/sku-details/routes
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/directions
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/choose-a-method
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/choose-fields
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/client-library
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/geocoding-v4-overview
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/get-api-key-v4
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/guides-v3/overview
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/navigation-point-tokens
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/reference/rest/v4/GeocodeLocationResponse
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/reference/rest/v4/GeocodeResult
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/reference/rest/v4/geocode.location
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/start-v4
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/geocoding/support
+  provider: Google Maps Platform
+  api: Reverse Geocode
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/places/web-service/get-api-key
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/places/web-service/place-session-tokens
+  provider: Google Maps Platform
+  api: Autocomplete
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/places/web-service/reference/rest/v1/places/autocomplete
+  provider: Google Maps Platform
+  api: Autocomplete
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/places/web-service/support
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes
+  provider: Google Maps Platform
+  api: general
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/alternative-routes
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/calculate_toll-rm
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/calculate_toll_fees
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/choose_fields
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/client-libraries
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/compute-route-matrix-over
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/compute-route-over
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/compute_route_directions
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/config_trade_offs
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/contact
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/coverage
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/eco-routes
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/faq
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/flyover-narrow
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/get-api-key
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/handle-errors
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/intermed_waypoints
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/localized-values
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/localized-values-rm
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/location_modifiers
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/migrate-routes
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/migrate-routes-preview
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/options-rm
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/pass-through
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/policies
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/FallbackInfo
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/RouteModifiers
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/RouteTravelAdvisory
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/RouteTravelMode
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/RoutingPreference
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/SpeedReadingInterval
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/TollInfo
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/TopLevel/computeRouteMatrix
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/TrafficModel
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/TransitPreferences
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rest/v2/Waypoint
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/reference/rpc/google.maps.routing.v2
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/release-notes
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/report-monitor
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/rm-usecases
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/route-usecases
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/route_two_wheel
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/shorter-distance-routes
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/stop_over
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/traffic-model
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/traffic-opt
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/traffic_on_polylines
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/transit-rm
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/transit-route
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/understand-rm-response
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/understand-route-response
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/vehicles
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/vehicles-rm
+  provider: Google Maps Platform
+  api: Distance Matrix
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/waypoint-types
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://developers.google.com/maps/documentation/routes/web-service-best-practices
+  provider: Google Maps Platform
+  api: Directions
+  kind: html
+  licence: Google Developers documentation; CC BY 4.0, with code samples Apache 2.0
+    unless noted
+  fetch_method: httpx
+- url: https://docs.mapbox.com/api/search/geocoding-v5/
+  provider: Mapbox
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.mapbox.com/help/getting-started/geocoding/
+  provider: Mapbox
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://maps.olakrutrim.com/docs/multilingual-support
+  provider: Ola Maps
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://maps.olakrutrim.com/docs/routing-apis/directions-basic-api
+  provider: Ola Maps
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://maps.olakrutrim.com/docs/routing-apis/distance-matrix-basic-api
+  provider: Ola Maps
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://maps.olakrutrim.com/pricing
+  provider: Ola Maps
+  api: general
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/asynchronous-matrix-download/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/asynchronous-matrix-status/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/asynchronous-matrix-submission/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/discounted-transaction-billing/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/migration-guide/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/multi-customer/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/product-information/faq/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/product-information/introduction/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/product-information/language-support/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/product-information/market-coverage/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/product-information/processing-speed-and-quotas/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/product-information/release-notes/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/matrix-routing-v2-api/documentation/synchronous-matrix/
+  provider: TomTom
+  api: Distance Matrix
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/product-information/region-specific-content/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  aliases:
+  - https://docs.tomtom.com/reverse-geocoding-api/documentation/product-information/region-specific-content
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/product-information/supported-languages/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  aliases:
+  - https://docs.tomtom.com/reverse-geocoding-api/documentation/product-information/supported-languages
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/cross-street-lookup/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/product-information/best-practices/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/product-information/faq/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/product-information/introduction/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/product-information/market-coverage/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/product-information/release-notes/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/reverse-geocode/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v1/product-information/copyrights/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v1/product-information/introduction/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v1/product-information/market-coverage/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v1/product-information/migration-guide/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v1/product-information/region-specific-content/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v1/product-information/release-notes/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v1/reverse-geocode/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v2/product-information/copyrights/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v2/product-information/introduction/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v2/product-information/market-coverage/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v2/product-information/migration-guide/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v2/product-information/region-specific-content/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v2/product-information/release-notes/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-orbis-maps/v2/reverse-geocode/
+  provider: TomTom
+  api: Reverse Geocode
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/product-information/introduction/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  aliases:
+  - https://docs.tomtom.com/routing-api/documentation/product-information/introduction
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/calculate-route/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  aliases:
+  - https://docs.tomtom.com/routing-api/documentation/routing/calculate-route
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/product-information/language-support/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  aliases:
+  - https://docs.tomtom.com/routing-api/documentation/tomtom-maps/product-information/language-support
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/road-shields-notes/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+  aliases:
+  - https://docs.tomtom.com/routing-api/documentation/tomtom-maps/road-shields-notes
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/batch-routing/asynchronous-batch-download/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/batch-routing/asynchronous-batch-submission/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/batch-routing/batch-routing-service/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/batch-routing/processing-speed-and-quotas/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/batch-routing/synchronous-batch/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/guidance-instructions/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/product-information/faq/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/product-information/market-coverage/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/product-information/release-notes/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-maps/v1/routing-service/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v2/calculate-route/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v2/product-information/faq/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v2/product-information/introduction/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v2/product-information/migration-guide/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v2/product-information/region-specific-content/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v2/product-information/release-notes/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v2/routing-service/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v3/calculate-route/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v3/guidance-instructions/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v3/product-information/faq/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v3/product-information/introduction/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v3/product-information/migrate-from-google/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v3/product-information/migration-guide/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v3/routing-service/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/routing-api/documentation/tomtom-orbis-maps/v3/supported-languages/
+  provider: TomTom
+  api: Directions
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/search-api/documentation/autocomplete-service/autocomplete/
+  provider: TomTom
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://docs.tomtom.com/search-api/documentation/tomtom-orbis-maps/product-information/market-coverage/
+  provider: TomTom
+  api: Autocomplete
+  kind: html
+  licence: vendor docs
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route?view=rest-maps-2025-01-01
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route/post-route-directions?view=rest-maps-2025-01-01
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route/post-route-matrix?view=rest-maps-2025-01-01
+  provider: Azure Maps
+  api: Distance Matrix
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route/post-route-matrix-async?view=rest-maps-2025-01-01
+  provider: Azure Maps
+  api: Distance Matrix
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search?view=rest-maps-2026-01-01
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocode-autocomplete?view=rest-maps-2026-01-01
+  provider: Azure Maps
+  api: Autocomplete
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search/get-reverse-geocoding?view=rest-maps-2026-01-01
+  provider: Azure Maps
+  api: Reverse Geocode
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route/get-route-directions?view=rest-maps-1.0
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route/get-route-matrix?view=rest-maps-1.0
+  provider: Azure Maps
+  api: Distance Matrix
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/rest-api-azure-maps
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-routing
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/migrate-route-v1-api
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-qps-rate-limits
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/supported-languages
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/migrate-bing-maps-overview
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://azure.microsoft.com/en-us/pricing/details/azure-maps
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route/post-route-directions-batch?view=rest-maps-2025-01-01
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/routing-coverage
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/authentication-best-practices
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search/get-reverse-geocoding-batch?view=rest-maps-2026-01-01
+  provider: Azure Maps
+  api: Reverse Geocode
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route?view=rest-maps-1.0
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-pricing-tier
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-route-location
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-ev-routing
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search?view=rest-maps-1.0
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route/get-route-directions-batch?view=rest-maps-1.0
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/route/post-route-matrix?view=rest-maps-1.0
+  provider: Azure Maps
+  api: Distance Matrix
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/geocoding-coverage
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/traffic-coverage
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search/get-search-fuzzy?view=rest-maps-1.0
+  provider: Azure Maps
+  api: Autocomplete
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+  aliases:
+  - https://learn.microsoft.com/en-us/rest/api/maps/search/get-search-fuzzy
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/migrate-calculate-route
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/migrate-calculate-truck-route
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-prioritized-routes
+  provider: Azure Maps
+  api: Directions
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search/get-search-address-reverse?view=rest-maps-1.0
+  provider: Azure Maps
+  api: Reverse Geocode
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search/get-search-address-reverse-batch?view=rest-maps-1.0
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search/get-search-address-reverse-cross-street?view=rest-maps-1.0
+  provider: Azure Maps
+  api: general
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://learn.microsoft.com/en-us/rest/api/maps/search/post-search-fuzzy-batch?view=rest-maps-1.0
+  provider: Azure Maps
+  api: Autocomplete
+  kind: html
+  licence: Microsoft Learn documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/route-service-direct
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/travelCostMatrix-service-direct
+  provider: Esri ArcGIS
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/travelCostMatrix-service-job
+  provider: Esri ArcGIS
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/types
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/suggest
+  provider: Esri ArcGIS
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/reverse-geocode
+  provider: Esri ArcGIS
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/service-output
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/response-types
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/mapping-and-location-services/routing-and-directions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/mapping-and-location-services/routing-and-directions/travel-cost-matrix
+  provider: Esri ArcGIS
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/mapping-and-location-services/geocoding
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/route-and-directions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/route-and-directions/find-a-route-and-directions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/solveRoute
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/originDestinationMatrix
+  provider: Esri ArcGIS
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-geocoding/reverseGeocode
+  provider: Esri ArcGIS
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-geocoding/suggest
+  provider: Esri ArcGIS
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/route
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/tutorials/find-a-route-and-directions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/maplibre-gl-js/route-and-directions/find-a-route-and-directions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/services-reference/enterprise/an-overview-of-routing-services
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/services-reference/enterprise/origin-destination-cost-matrix-service
+  provider: Esri ArcGIS
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/services-reference/enterprise/reverse-geocode
+  provider: Esri ArcGIS
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/services-reference/enterprise/suggest
+  provider: Esri ArcGIS
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/get-started
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/network-coverage
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/service-requests
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/service-endpoints
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/getToolInfo-direct
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/getTravelModes-direct
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/retrieveTravelModes-direct
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/route-service-job
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/routing-data-types
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/traffic
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/routing/errorcodes-rest-api
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/mapping-and-location-services/routing-and-directions/route-and-directions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/get-started
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/whats-new-world-geocoding-service
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/service-requests
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/geocode-coverage
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/category-filtering
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/geocode/localized-input-field-names
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/mapping-and-location-services/routing-and-directions/how-to-build-a-routing-app
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/openlayers/route-and-directions/find-a-route-and-directions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/mapping-and-location-services/geocoding/autosuggest
+  provider: Esri ArcGIS
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/mapping-and-location-services/geocoding/reverse-geocoding
+  provider: Esri ArcGIS
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/maplibre-gl-js/geocoding/search-with-autosuggest
+  provider: Esri ArcGIS
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/openlayers/geocode-and-search/search-with-autosuggest
+  provider: Esri ArcGIS
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/geocode-and-search/search-with-autosuggest
+  provider: Esri ArcGIS
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/tutorials/reverse-geocode
+  provider: Esri ArcGIS
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/maplibre-gl-js/geocoding/reverse-geocode
+  provider: Esri ArcGIS
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/openlayers/geocode-and-search/reverse-geocode
+  provider: Esri ArcGIS
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/geocode-and-search/reverse-geocode
+  provider: Esri ArcGIS
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/IEndpointOptions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/IFeature
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/IOriginDestinationMatrixOptions
+  provider: Esri ArcGIS
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/IOriginDestinationMatrixResponse
+  provider: Esri ArcGIS
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/IPoint
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/IPolyline
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/IRequestOptions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-routing/ISolveRouteOptions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-geocoding/IEndpointOptions
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-geocoding/getGeocodeService
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/RouteParameters
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/RouteSolveResult
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/RouteResult
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/sample-code/route
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/routing/routing-intro
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/tutorials/display-directions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/maplibre-gl-js/route-and-directions
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/services-reference/enterprise/route-sync-services
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/services-reference/enterprise/route-async-services
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/security-and-authentication/user-authentication
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/maplibre-gl-js/geocoding
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/DirectionLine
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/DirectionPoint
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/DirectionsFeature
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/DirectionsFeatureSet
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/DirectionsString
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/RouteInfo
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/SuggestLocationsParameters
+  provider: Esri ArcGIS
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/javascript/latest/references/core/rest/support/SuggestionCandidate
+  provider: Esri ArcGIS
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication/how-to-use-an-api-key
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/security-and-authentication/app-authentication
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/security-and-authentication/user-authentication/how-to-implement-user-authentication
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/services-reference/enterprise/routing/getToolInfo-direct
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/services-reference/enterprise/routing/getTravelModes-direct
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/rest/services-reference/enterprise/routing/retrieveTravelModes-direct
+  provider: Esri ArcGIS
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/security-and-authentication/app-authentication/how-to-implement-app-authentication
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/security-and-authentication/app-authentication/client-credentials-flow
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://developers.arcgis.com/documentation/security-and-authentication/user-authentication/tutorials/implement-user-authentication
+  provider: Esri ArcGIS
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/docs
+  provider: Geoapify
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/docs/routing/routing
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/docs/geocoding/address-autocomplete
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/docs/geocoding/reverse-geocoding
+  provider: Geoapify
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/pricing
+  provider: Geoapify
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/routing-api
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/route-matrix-api
+  provider: Geoapify
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/address-autocomplete
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/reverse-geocoding-api
+  provider: Geoapify
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/docs/routing
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/docs/route-matrix
+  provider: Geoapify
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/docs/mcp/reverse-geocode
+  provider: Geoapify
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/docs/mcp/calculate-route
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/docs/mcp/calculate-route-matrix
+  provider: Geoapify
+  api: Distance Matrix
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/addresses/add-address-autocomplete
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/samples/autocomplete/geoapify-geocoder-autocomplete
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/samples/autocomplete/angular-geoapify-geocoder-autocomplete
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/samples/autocomplete/react-geoapify-geocoder-autocomplete
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/tutorial/add-map-with-address-autocomplete-to-wordpress
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/tutorial/reverse-geocoding-python
+  provider: Geoapify
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/tutorial/reverse-geocoding-javascript-tutorial
+  provider: Geoapify
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/tutorial/creating-a-printable-version-of-driving-directions
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/tutorial/how-to-use-route-directions-api
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/tutorial/how-to-add-driving-directions-to-wordpress-website
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/routing/plan-bicycle-route
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/address-autocomplete-component-npm-package
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/address-autocomplete-with-built-in-places-support
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/location-autocomplete-with-angular
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/routing/identify-route-administrative-areas
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/samples/autocomplete/autocomplete-tutorial
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/what-is-reverse-geocoding
+  provider: Geoapify
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/geocoding-vs-reverse-geocoding
+  provider: Geoapify
+  api: Reverse Geocode
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/routing/multiple-stops-route
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/routing/avoid-tolls-highways-ferries
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/routing/route-around-road-closure
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/routing/traffic-route-times
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/routing/turn-by-turn-directions
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/routing
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/address-field-with-autocomplete-step-by-step-tutorial-with-jsfiddle-example
+  provider: Geoapify
+  api: Autocomplete
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/maps-geocoding-routing-apis-gdpr-compliant-application
+  provider: Geoapify
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/exceeding-google-geocoding-api-rate-limit-with-over_query_limit-status
+  provider: Geoapify
+  api: general
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/optimizing-routes-with-international-speed-limits
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/truck-routing-with-routing-api
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://www.geoapify.com/openstreetmap-routing
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx
+- url: https://apidocs.geoapify.com/how-to/routing/handle-unreachable-waypoints
+  provider: Geoapify
+  api: Directions
+  kind: html
+  licence: Official provider documentation
+  fetch_method: httpx

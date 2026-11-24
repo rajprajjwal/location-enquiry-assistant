@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The Geocoding API's autocomplete feature sends a request for each keystroke, leading to a burst of requests when users type, which explains the explosion in request counts.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The Geocoding API's autocomplete feature sends a request for each keystroke, leading to a burst of requests when users type, which explains the explosion in request counts.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2352,
+    "completion_tokens": 46,
+    "total_tokens": 2398
+  },
+  "latency_ms": 1369,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

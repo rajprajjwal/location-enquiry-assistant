@@ -1,0 +1,448 @@
+{
+  "reviewer_type": "assistant",
+  "source_gold_sha256": "7c5c44fb2f1d216957585b7edaf765406b791da2c13decd6c05cd0e4d63000fb",
+  "scope": "Cases at ordered frozen indices 40 through 79; actual integrated questions only. No GT or application edits.",
+  "status": "complete_actual_question_semantic_review",
+  "assigned_record_ids": [
+    "GT-LBS-DM-026",
+    "GT-LBS-DM-027",
+    "GT-LBS-DM-059",
+    "GT-LBS-DM-085",
+    "GT-LBS-DM-087",
+    "GT-LBS-DM-094",
+    "GT-LBS-DM-097",
+    "GT-LBS-DM-117",
+    "GT-LBS-DM-118",
+    "GT-LBS-DM-201",
+    "GT-LBS-DM-214",
+    "GT-LBS-DM-218",
+    "GT-LBS-DM-221",
+    "GT-LBS-DM-222",
+    "GT-LBS-DM-224",
+    "GT-LBS-DM-226",
+    "GT-LBS-DM-227",
+    "GT-LBS-DM-231",
+    "GT-LBS-DM-232",
+    "GT-LBS-DM-233",
+    "GT-LBS-RG-001",
+    "GT-LBS-RG-005",
+    "GT-LBS-RG-006",
+    "GT-LBS-RG-007",
+    "GT-LBS-RG-015",
+    "GT-LBS-RG-016",
+    "GT-LBS-RG-021",
+    "GT-LBS-RG-082",
+    "GT-LBS-RG-084",
+    "GT-LBS-RG-201",
+    "GT-LBS-RG-212",
+    "GT-LBS-RG-213",
+    "GT-LBS-RG-225",
+    "GT-LBS-RG-226",
+    "GT-LBS-RG-231",
+    "GT-LBS-RG-232",
+    "GT-LBS-RG-233",
+    "GT-LBS-RG-234",
+    "GT-LBS-RG-235",
+    "GT-LBS-RG-236"
+  ],
+  "cases": [
+    {
+      "record_id": "GT-LBS-DM-026",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. The gold input-representation question is unmatched; supplied query facts do not earn question credit."
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "whole": [
+        [
+          1,
+          1
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "notes": "The single question asks the same input-representation decision. Adding place IDs as an available representation does not introduce an independent decision; whole group and its one atom match."
+    },
+    {
+      "record_id": "GT-LBS-DM-059",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    },
+    {
+      "record_id": "GT-LBS-DM-085",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question requests the endpoint or sample origin-destination pairs; handoff output is not a question match."
+    },
+    {
+      "record_id": "GT-LBS-DM-087",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question requests when the usage spike began."
+    },
+    {
+      "record_id": "GT-LBS-DM-094",
+      "questions_sha256": "2548b8ad034e185ff1388733cdb05e0941397e3c9fef421b32905b2959ffb079",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold has no questions. Both generated qualification questions remain unmatched and count as questions on an empty-gold case."
+    },
+    {
+      "record_id": "GT-LBS-DM-097",
+      "questions_sha256": "165b79a60e91cf2c94c067292186b3f1fe144098e62afb1049855901ce85e1f3",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold has no questions. The generated failing-request/isolation question remains unmatched."
+    },
+    {
+      "record_id": "GT-LBS-DM-117",
+      "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold has no questions. The generated billing-country and usage-geography question remains unmatched."
+    },
+    {
+      "record_id": "GT-LBS-DM-118",
+      "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold has no questions. The generated billing-country and usage-geography question remains unmatched."
+    },
+    {
+      "record_id": "GT-LBS-DM-201",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question asks about traffic in the new country or monthly origin-destination pairs."
+    },
+    {
+      "record_id": "GT-LBS-DM-214",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question asks for coordinate versus address/place-ID inputs."
+    },
+    {
+      "record_id": "GT-LBS-DM-218",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question asks for the coordinate count in the failing request."
+    },
+    {
+      "record_id": "GT-LBS-DM-221",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "whole": [],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "notes": "The generated bundle requests live traffic plus an independent vehicle/travel-mode decision. It covers the traffic atom but is not equivalent to the single-decision gold question in granularity."
+    },
+    {
+      "record_id": "GT-LBS-DM-222",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "whole": [],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "notes": "The generated bundle requests live traffic plus an independent vehicle/travel-mode decision. It covers the traffic atom but is not equivalent to the single-decision gold question in granularity."
+    },
+    {
+      "record_id": "GT-LBS-DM-224",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    },
+    {
+      "record_id": "GT-LBS-DM-226",
+      "questions_sha256": "2548b8ad034e185ff1388733cdb05e0941397e3c9fef421b32905b2959ffb079",
+      "whole": [],
+      "facts": [
+        [
+          1,
+          3,
+          2
+        ]
+      ],
+      "notes": "The first bundle explicitly asks whether live-traffic ETAs are required, covering required traffic capability only. It does not request volume, display, retention, redistribution, billing country/billing location, or Legacy enablement. The Mapbox-profile question does not match those Google-specific requirements. No whole gold group is covered."
+    },
+    {
+      "record_id": "GT-LBS-DM-227",
+      "questions_sha256": "2548b8ad034e185ff1388733cdb05e0941397e3c9fef421b32905b2959ffb079",
+      "whole": [],
+      "facts": [],
+      "notes": "Generic origin/destination counts do not distinguish typical from maximum counts. Neither bundle requests hourly/monthly matrix frequency, peak concurrency, departure-time conditions or request splitting. Live-traffic yes/no and a Mapbox-profile yes/no are narrower than the requested traffic-condition profile; no whole group or exact original atom is credited because the frozen traffic-condition proposition requires the condition profile rather than a single live-traffic or provider-profile yes/no. This actual-text adjudication was checked against the prelocked criterion."
+    },
+    {
+      "record_id": "GT-LBS-DM-231",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    },
+    {
+      "record_id": "GT-LBS-DM-232",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    },
+    {
+      "record_id": "GT-LBS-DM-233",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question asks whether the monthly total includes all billing-account projects."
+    },
+    {
+      "record_id": "GT-LBS-RG-001",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions; the user explicitly declines further clarification."
+    },
+    {
+      "record_id": "GT-LBS-RG-005",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "whole": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "notes": "Two separate questions request exactly storage necessity and user-triggered versus periodic lookup use. Each matches the corresponding gold question and atom."
+    },
+    {
+      "record_id": "GT-LBS-RG-006",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "whole": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "notes": "Two separate questions request exactly storage necessity and user-triggered versus periodic lookup use. Each matches the corresponding gold question and atom."
+    },
+    {
+      "record_id": "GT-LBS-RG-007",
+      "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+      "whole": [
+        [
+          1,
+          2
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "notes": "The lookup-trigger question exactly matches gold question2 and its atom. Storage is supplied in the query and is not asked again; under the unchanged frozen reference that supplied fact does not earn question1 credit."
+    },
+    {
+      "record_id": "GT-LBS-RG-015",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold has no questions. The generated storage question remains unmatched."
+    },
+    {
+      "record_id": "GT-LBS-RG-016",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold has no questions. The generated storage question remains unmatched."
+    },
+    {
+      "record_id": "GT-LBS-RG-021",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold has no questions. The generated storage question remains unmatched."
+    },
+    {
+      "record_id": "GT-LBS-RG-082",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    },
+    {
+      "record_id": "GT-LBS-RG-084",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    },
+    {
+      "record_id": "GT-LBS-RG-201",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question asks for monthly volume or result-storage needs; no whole/atomic credit."
+    },
+    {
+      "record_id": "GT-LBS-RG-212",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    },
+    {
+      "record_id": "GT-LBS-RG-213",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    },
+    {
+      "record_id": "GT-LBS-RG-225",
+      "questions_sha256": "98101ae5f411e04c7c24a901a3849b6ddc2da4ad177343780dcac93111e4bc1c",
+      "whole": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          3,
+          3,
+          1
+        ]
+      ],
+      "notes": "Predicted1 exactly covers gold1 monthly volume plus peak rate, and predicted2 exactly covers gold4 languages. Predicted3 covers the gold3 storage atom but bundles separate public-endpoint and temporary-results decisions, so no whole gold3 match at the frozen granularity. Those alternatives do not ask whether self-hosting is acceptable. Countries are already supplied but not asked; unchanged gold2 receives no question credit."
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question asks about the permanent parameter or payment/enterprise eligibility."
+    },
+    {
+      "record_id": "GT-LBS-RG-231",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question requests exposed-token type, prior rotation/deletion, or trial/payment-method restrictions."
+    },
+    {
+      "record_id": "GT-LBS-RG-232",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question requests returned location_type, Enhanced Support, prior technical support case, or prior Maps feedback."
+    },
+    {
+      "record_id": "GT-LBS-RG-233",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question asks about stored payload scope, display-map context, or prior custom-license contact. The query already specifies full payloads and non-Google display, but those supplied facts do not earn question credit under the unchanged frozen reference."
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question asks for coordinates per request or batch-endpoint versus looping scope. The existing customer request itself does not earn generated-question credit."
+    },
+    {
+      "record_id": "GT-LBS-RG-235",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    },
+    {
+      "record_id": "GT-LBS-RG-236",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Empty gold list and no generated questions."
+    }
+  ],
+  "counts": {
+    "cases": 40,
+    "predicted_questions": 23,
+    "gold_questions": 42,
+    "gold_facts": 58,
+    "whole_matches": 8,
+    "covered_facts": 13
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"poi_required\"],\n      \"decision_impact\": \"Compare coverage for the required result types.\"\n    }\n  ],\n  \"reason\": \"The customer is seeking to identify India-focused autocomplete providers and methods to keep global providers within India. The decision to compare coverage for required result types depends on whether points of interest are needed, which is a missing material requirement.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"poi_required\"],\n      \"decision_impact\": \"Compare coverage for the required result types.\"\n    }\n  ],\n  \"reason\": \"The customer is seeking to identify India-focused autocomplete providers and methods to keep global providers within India. The decision to compare coverage for required result types depends on whether points of interest are needed, which is a missing material requirement.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2036,
+    "completion_tokens": 124,
+    "total_tokens": 2160
+  },
+  "latency_ms": 3036,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

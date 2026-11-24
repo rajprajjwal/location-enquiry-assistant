@@ -1,7 +1,7 @@
 # Purpose: run the interpretation step against the in-tree validation package.
 # Use case: pull requests on feat/interpretation-step, without editing the
 # Knowledge & Validation workflow.
-# Example: INTERPRET_VALIDATION=real pytest tests/interpret tests/llm tests/validation
+# Example: INTERPRET_VALIDATION=real pytest tests/enquiry_interpretation tests/model_gateway tests/validation
 name: interpretation-step
 
 on:
@@ -22,4 +22,4 @@ jobs:
       - name: Run interpretation and validation tests against in-tree rules
         env:
           INTERPRET_VALIDATION: real
-        run: python -m pytest -q tests/interpret tests/llm tests/validation
+        run: python -m pytest -q tests/enquiry_interpretation tests/model_gateway tests/validation

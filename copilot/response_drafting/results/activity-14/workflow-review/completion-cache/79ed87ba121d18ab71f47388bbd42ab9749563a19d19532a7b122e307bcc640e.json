@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"matrix_input\", \"reason\":\"The issue might be related to how the 'lat, lng' coordinates are formatted in the request. The documentation indicates that specific formats like 'rectangle:south,west|north,east' or 'circle:radius@lat,lng' are expected for certain parameters, and using a space-separated 'lat, lng' might not be valid for the Distance Matrix API.\"}",
+  "raw": "{\"decision\":\"matrix_input\", \"reason\":\"The issue might be related to how the 'lat, lng' coordinates are formatted in the request. The documentation indicates that specific formats like 'rectangle:south,west|north,east' or 'circle:radius@lat,lng' are expected for certain parameters, and using a space-separated 'lat, lng' might not be valid for the Distance Matrix API.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1688,
+    "completion_tokens": 85,
+    "total_tokens": 1773
+  },
+  "latency_ms": 2145,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

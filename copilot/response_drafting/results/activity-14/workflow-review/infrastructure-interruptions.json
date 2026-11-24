@@ -1,0 +1,11 @@
+{
+  "record_id": "GT-LBS-RG-065",
+  "cause": "Evaluation process was stopped by job control (ps status Ts); wall clock expired while suspended.",
+  "original_elapsed_ms": 329994,
+  "action": "Same case rerun using the identical locked baseline code. All317caseIDsretained.",
+  "original_predictions": "baseline/predictions.initial.jsonl",
+  "recovery": "baseline-recovery/predictions.jsonl",
+  "initial_status": "escalated",
+  "recovered_status": "escalated",
+  "other_runtime_errors": "Endpoint429 and tool-timeout events are retained; no performance failures removed from the cohort."
+}

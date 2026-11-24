@@ -1,0 +1,601 @@
+{
+  "status": "locked_assistant_reviewed_working_reference",
+  "review_kind": "Original working GT question text unchanged; assistant-derived atomic fact decomposition before predictions. Supplied-fact contradictions are retained in primary scoring.",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-003",
+      "group": "GT-LBS-AC-003",
+      "fold": 5,
+      "questions": [
+        {
+          "question": "Are you open to self-hosting, or do you want a managed API?",
+          "facts": [
+            "hosting_preference"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-008",
+      "group": "GT-LBS-AC-008",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Do you call Place Details after selection?",
+          "facts": [
+            "details_completion"
+          ]
+        },
+        {
+          "question": "Do you debounce keystrokes?",
+          "facts": [
+            "debouncing"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-009",
+      "group": "GT-LBS-AC-008",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Do you call Place Details after selection?",
+          "facts": [
+            "details_completion"
+          ]
+        },
+        {
+          "question": "Do you debounce keystrokes?",
+          "facts": [
+            "debouncing"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-010",
+      "group": "GT-LBS-AC-010",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Do you call Place Details after selection?",
+          "facts": [
+            "details_completion"
+          ]
+        },
+        {
+          "question": "Do you debounce keystrokes?",
+          "facts": [
+            "debouncing"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-021",
+      "group": "GT-LBS-AC-021",
+      "fold": 3,
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "group": "GT-LBS-AC-021",
+      "fold": 3,
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "group": "GT-LBS-AC-021",
+      "fold": 3,
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "group": "GT-LBS-AC-021",
+      "fold": 3,
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-233",
+      "group": "GT-LBS-AC-233",
+      "fold": 2,
+      "questions": [
+        {
+          "question": "What peak rate and geographic coverage does type-ahead need?",
+          "facts": [
+            "peak_rate",
+            "region"
+          ]
+        },
+        {
+          "question": "Who operates the API backend and what result retention, redistribution, or resale rights are required?",
+          "facts": [
+            "backend_owner",
+            "storage_required",
+            "redistribution_required",
+            "resale_required"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-036",
+      "group": "GT-LBS-DIR-036",
+      "fold": 5,
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-037",
+      "group": "GT-LBS-DIR-037",
+      "fold": 2,
+      "questions": [
+        {
+          "question": "Do you need traffic at request time or for future departures?",
+          "facts": [
+            "departure_time_mode"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-038",
+      "group": "GT-LBS-DIR-038",
+      "fold": 1,
+      "questions": [
+        {
+          "question": "Voice or text instructions?",
+          "facts": [
+            "instruction_modality"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-040",
+      "group": "GT-LBS-DIR-040",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Do you need hazmat or height/weight restrictions?",
+          "facts": [
+            "hazmat_required",
+            "vehicle_dimensions"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-047",
+      "group": "GT-LBS-DIR-047",
+      "fold": 1,
+      "questions": [
+        {
+          "question": "How many route requests per month?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": "Do you need live-traffic ETAs?",
+          "facts": [
+            "traffic_required"
+          ]
+        },
+        {
+          "question": "Which vehicle types?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": "How many stops per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": "Existing Google project or Ola contract?",
+          "facts": [
+            "existing_project",
+            "commercial_plan"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-048",
+      "group": "GT-LBS-DIR-048",
+      "fold": 2,
+      "questions": [
+        {
+          "question": "How many route requests per month?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": "Do you need live-traffic ETAs?",
+          "facts": [
+            "traffic_required"
+          ]
+        },
+        {
+          "question": "Which vehicle types?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": "How many stops per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": "Existing Google project or Ola contract?",
+          "facts": [
+            "existing_project",
+            "commercial_plan"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "group": "GT-LBS-DIR-049",
+      "fold": 2,
+      "questions": [
+        {
+          "question": "How many route requests per month?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": "Do you need live-traffic ETAs?",
+          "facts": [
+            "traffic_required"
+          ]
+        },
+        {
+          "question": "Which vehicle types?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": "Will the 15–20 outlets be visited in one route, and how many must be included in one request?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": "Existing Google project or Ola contract?",
+          "facts": [
+            "existing_project",
+            "commercial_plan"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "group": "GT-LBS-DIR-050",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "How many route requests per month?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": "Which vehicle types?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": "How many stops per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": "Existing Google project or Ola contract?",
+          "facts": [
+            "existing_project",
+            "commercial_plan"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-017",
+      "group": "GT-LBS-DM-017",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Do you need traffic or a travel mode other than driving?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-018",
+      "group": "GT-LBS-DM-017",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Do you need traffic or a travel mode other than driving?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-019",
+      "group": "GT-LBS-DM-017",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Do you need traffic or a travel mode other than driving?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-020",
+      "group": "GT-LBS-DM-017",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Do you need traffic or a travel mode other than driving?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-025",
+      "group": "GT-LBS-DM-025",
+      "fold": 5,
+      "questions": [
+        {
+          "question": "Are inputs coordinates or addresses?",
+          "facts": [
+            "input_type"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-030",
+      "group": "GT-LBS-DM-025",
+      "fold": 5,
+      "questions": [
+        {
+          "question": "Are inputs coordinates or addresses?",
+          "facts": [
+            "input_type"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "group": "GT-LBS-DM-034",
+      "fold": 2,
+      "questions": [
+        {
+          "question": "Which country is your billing account based in?",
+          "facts": [
+            "billing_country"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "group": "GT-LBS-DM-228",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "How many origins and destinations per request, and do they need traffic-aware ETAs?",
+          "facts": [
+            "origin_count",
+            "destination_count",
+            "traffic_required"
+          ]
+        },
+        {
+          "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+          "facts": [
+            "mapbox_traffic_profile"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-230",
+      "group": "GT-LBS-DM-230",
+      "fold": 2,
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-008",
+      "group": "GT-LBS-RG-008",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Do you need to store results?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-009",
+      "group": "GT-LBS-RG-009",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Do you need to store results?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "group": "GT-LBS-RG-010",
+      "fold": 5,
+      "questions": [
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-011",
+      "group": "GT-LBS-RG-011",
+      "fold": 5,
+      "questions": [
+        {
+          "question": "Do you need to store results?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-012",
+      "group": "GT-LBS-RG-012",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Do you need to store results?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-013",
+      "group": "GT-LBS-RG-013",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Do you need to store results?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "group": "GT-LBS-RG-014",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "group": "GT-LBS-RG-227",
+      "fold": 5,
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "group": "GT-LBS-RG-228",
+      "fold": 5,
+      "questions": [
+        {
+          "question": "What peak rate and monthly volume do they need?",
+          "facts": [
+            "peak_rate",
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": "Will results be stored, and is public Nominatim or Mapbox temporary geocoding acceptable?",
+          "facts": [
+            "storage_required",
+            "public_service_acceptable",
+            "temporary_results_acceptable"
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "group": "GT-LBS-RG-230",
+      "fold": 1,
+      "questions": [
+        {
+          "question": "Which providers should we evaluate?",
+          "facts": [
+            "alternative_providers"
+          ]
+        }
+      ]
+    }
+  ],
+  "independent_human_acceptance": false,
+  "scope": "Separate development reference only; original GT is unchanged. No new workload or retention-duration requirements were silently added."
+}

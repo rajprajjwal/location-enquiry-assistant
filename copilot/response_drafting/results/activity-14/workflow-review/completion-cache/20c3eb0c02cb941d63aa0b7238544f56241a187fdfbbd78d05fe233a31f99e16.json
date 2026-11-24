@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"human_handoff\",\"sub_intent\":\"production_incident\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "raw": "{\"intent\":\"human_handoff\",\"sub_intent\":\"production_incident\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1366,
+    "completion_tokens": 50,
+    "total_tokens": 1416
+  },
+  "latency_ms": 1293,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

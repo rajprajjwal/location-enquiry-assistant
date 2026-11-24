@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"discovery_qualification\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"real-estate portal\",\"evidence\":\"Our Chandigarh real-estate portal\"},\"region\":{\"value\":\"India\",\"evidence\":\"in India\"},\"monthly_volume\":{\"value\":\"400,000 reverse-geocoding lookups a month\",\"evidence\":\"400,000 reverse-geocoding lookups a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"store the addresses\",\"evidence\":\"we must store the addresses\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"discovery_qualification\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"real-estate portal\",\"evidence\":\"Our Chandigarh real-estate portal\"},\"region\":{\"value\":\"India\",\"evidence\":\"in India\"},\"monthly_volume\":{\"value\":\"400,000 reverse-geocoding lookups a month\",\"evidence\":\"400,000 reverse-geocoding lookups a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"store the addresses\",\"evidence\":\"we must store the addresses\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1427,
+    "completion_tokens": 190,
+    "total_tokens": 1617
+  },
+  "latency_ms": 4381,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

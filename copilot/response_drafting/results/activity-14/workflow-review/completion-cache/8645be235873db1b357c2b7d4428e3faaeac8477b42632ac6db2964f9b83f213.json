@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The issue might be related to how the duration_in_traffic is displayed or interpreted in the response. The documentation indicates that the duration_in_traffic is returned when specific conditions are met, such as including a valid departure_time parameter. The response example shows duration_in_traffic values, suggesting that the data is available. The problem might be in how the results are being rendered or displayed, not in the data itself.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The issue might be related to how the duration_in_traffic is displayed or interpreted in the response. The documentation indicates that the duration_in_traffic is returned when specific conditions are met, such as including a valid departure_time parameter. The response example shows duration_in_traffic values, suggesting that the data is available. The problem might be in how the results are being rendered or displayed, not in the data itself.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2251,
+    "completion_tokens": 90,
+    "total_tokens": 2341
+  },
+  "latency_ms": 2983,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

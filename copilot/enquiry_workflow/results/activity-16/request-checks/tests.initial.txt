@@ -1,0 +1,83 @@
+.................................................................... [  8%]
+........................................................................ [ 18%]
+........................................................................ [ 27%]
+........................................................................ [ 36%]
+....................F................................................... [ 46%]
+........................................................................ [ 55%]
+........................................................................ [ 64%]
+........................................................................ [ 74%]
+.............................FFFF....................................... [ 83%]
+......................s........................................................................................................       [100%]
+=================================== FAILURES ===================================
+_ test_mentions_and_possible_usage_do_not_confirm_a_current_provider[We migrated from Mapbox to Google last year.] _
+tests/enquiry_workflow/test_provider_evidence.py:37: in test_mentions_and_possible_usage_do_not_confirm_a_current_provider
+    assert current_provider_hit(query) is None
+E   AssertionError: assert {'value': 'Google Maps Platform', 'span': 'Google', 'evidence': 'We migrated from Mapbox to Google', 'start': 0, ...} is None
+E    +  where {'value': 'Google Maps Platform', 'span': 'Google', 'evidence': 'We migrated from Mapbox to Google', 'start': 0, ...} = current_provider_hit('We migrated from Mapbox to Google last year.')
+_ test_stripped_quote_cannot_promote_a_limit_question_or_assumption[The docs include 20,000 requests per month for free.] _
+tests/enquiry_workflow/test_workload_binding.py:31: in test_stripped_quote_cannot_promote_a_limit_question_or_assumption
+    plan = QualificationPlan.model_validate({'reason': 'Test quote binding.', 'supplied_facts': [
+E   pydantic_core._pydantic_core.ValidationError: 4 validation errors for QualificationPlan
+E   supplied_facts.0.value.str
+E     Input should be a valid string [type=string_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/string_type
+E   supplied_facts.0.value.bool
+E     Input should be a valid boolean [type=bool_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/bool_type
+E   supplied_facts.0.value.int
+E     Input should be a valid integer [type=int_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/int_type
+E   supplied_facts.0.value.float
+E     Input should be a valid number [type=float_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/float_type
+_ test_stripped_quote_cannot_promote_a_limit_question_or_assumption[The API supports 20,000 requests per month.] _
+tests/enquiry_workflow/test_workload_binding.py:31: in test_stripped_quote_cannot_promote_a_limit_question_or_assumption
+    plan = QualificationPlan.model_validate({'reason': 'Test quote binding.', 'supplied_facts': [
+E   pydantic_core._pydantic_core.ValidationError: 4 validation errors for QualificationPlan
+E   supplied_facts.0.value.str
+E     Input should be a valid string [type=string_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/string_type
+E   supplied_facts.0.value.bool
+E     Input should be a valid boolean [type=bool_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/bool_type
+E   supplied_facts.0.value.int
+E     Input should be a valid integer [type=int_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/int_type
+E   supplied_facts.0.value.float
+E     Input should be a valid number [type=float_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/float_type
+_ test_stripped_quote_cannot_promote_a_limit_question_or_assumption[Do we send 20,000 requests per month?] _
+tests/enquiry_workflow/test_workload_binding.py:31: in test_stripped_quote_cannot_promote_a_limit_question_or_assumption
+    plan = QualificationPlan.model_validate({'reason': 'Test quote binding.', 'supplied_facts': [
+E   pydantic_core._pydantic_core.ValidationError: 4 validation errors for QualificationPlan
+E   supplied_facts.0.value.str
+E     Input should be a valid string [type=string_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/string_type
+E   supplied_facts.0.value.bool
+E     Input should be a valid boolean [type=bool_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/bool_type
+E   supplied_facts.0.value.int
+E     Input should be a valid integer [type=int_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/int_type
+E   supplied_facts.0.value.float
+E     Input should be a valid number [type=float_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/float_type
+_ test_stripped_quote_cannot_promote_a_limit_question_or_assumption[If we send 20,000 requests per month, what would it cost?] _
+tests/enquiry_workflow/test_workload_binding.py:31: in test_stripped_quote_cannot_promote_a_limit_question_or_assumption
+    plan = QualificationPlan.model_validate({'reason': 'Test quote binding.', 'supplied_facts': [
+E   pydantic_core._pydantic_core.ValidationError: 4 validation errors for QualificationPlan
+E   supplied_facts.0.value.str
+E     Input should be a valid string [type=string_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/string_type
+E   supplied_facts.0.value.bool
+E     Input should be a valid boolean [type=bool_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/bool_type
+E   supplied_facts.0.value.int
+E     Input should be a valid integer [type=int_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/int_type
+E   supplied_facts.0.value.float
+E     Input should be a valid number [type=float_type, input_value={'raw': '20,000 requests ...': 'requests_per_month'}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.14/v/float_type
+=========================== short test summary info ============================
+SKIPPED [1] tests/rag/test_freshness.py:77: no local snapshot
+5 failed, 765 passed, 1 skipped, 15 subtests passed in 8.30s

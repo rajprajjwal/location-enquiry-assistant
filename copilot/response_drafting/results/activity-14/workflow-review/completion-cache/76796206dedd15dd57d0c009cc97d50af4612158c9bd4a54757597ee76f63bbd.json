@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": \"advanced_support\", \"reason\": \"The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation.\"}",
+  "raw": "{\"category\": \"advanced_support\", \"reason\": \"The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 281,
+    "completion_tokens": 46,
+    "total_tokens": 327
+  },
+  "latency_ms": 1181,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

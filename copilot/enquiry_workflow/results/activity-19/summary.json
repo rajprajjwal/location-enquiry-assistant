@@ -1,0 +1,41 @@
+{
+  "cases": 80,
+  "raw_statuses": {
+    "final": 62,
+    "escalated": 14,
+    "clarification_needed": 4
+  },
+  "terminal_kinds": {
+    "final": 66,
+    "escalated": 14
+  },
+  "max_steps": 10,
+  "runs_over_ten_steps": 0,
+  "completed_final_or_escalated": 80,
+  "literal_final_or_escalated_statuses": 76,
+  "critic_verdict_logged": 80,
+  "critic_verdict_counts": {
+    "pass": 62,
+    "not_run": 14,
+    "needs_human": 4
+  },
+  "schema_valid": 80,
+  "adversarial_loop_passed": true,
+  "gt_unchanged": true,
+  "passed": true,
+  "turn_level_passed": true,
+  "strict_status_passed": false,
+  "acceptance_convention": "100% of queries terminate within 10 steps with a valid answer, clarification request, or escalation.",
+  "focused_tests_passed": 13,
+  "version_lock_verified_after_run": true,
+  "activity_status": "complete",
+  "clarifications_as_final": true,
+  "acceptance_approval": {
+    "approved_on": "2026-11-23",
+    "approval_source": "Explicit user approval in this conversation",
+    "criterion": "100% of queries terminate within 10 steps with a valid answer, clarification request, or escalation.",
+    "clarifications_as_final": true,
+    "per_record_sha256": "680e731afba8051394178effcfe82122fd7a43a53873ab6ae5143f023e7d3746",
+    "assessment_method": "Apply the approved acceptance convention to the existing verified 80-case run."
+  }
+}

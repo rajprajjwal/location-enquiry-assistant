@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The enquiry indicates that the traffic results from the Google Distance Matrix are inaccurate. This could be due to missing or incorrect parameters such as departure_time or traffic_model, which are essential for accurate traffic-aware results. The retrieved evidence suggests that the departure_time must be set to the current time or a future time to receive traffic-informed results. Without these parameters, the results may not reflect real-time traffic conditions, leading to inaccuracies.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The enquiry indicates that the traffic results from the Google Distance Matrix are inaccurate. This could be due to missing or incorrect parameters such as departure_time or traffic_model, which are essential for accurate traffic-aware results. The retrieved evidence suggests that the departure_time must be set to the current time or a future time to receive traffic-informed results. Without these parameters, the results may not reflect real-time traffic conditions, leading to inaccuracies.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2115,
+    "completion_tokens": 96,
+    "total_tokens": 2211
+  },
+  "latency_ms": 2523,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

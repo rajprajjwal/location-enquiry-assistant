@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"geographic_matching\"],\"decision_impact\":\"The missing customer fact of whether a hard geographic restriction or a location bias is acceptable affects the decision on how to restrict autocomplete results to India on each provider.\"}],\"reason\":\"The customer's enquiry requires determining if they need a hard geographic restriction or a location bias to restrict autocomplete results to India on each provider, which is a missing material decision.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"geographic_matching\"],\"decision_impact\":\"The missing customer fact of whether a hard geographic restriction or a location bias is acceptable affects the decision on how to restrict autocomplete results to India on each provider.\"}],\"reason\":\"The customer's enquiry requires determining if they need a hard geographic restriction or a location bias to restrict autocomplete results to India on each provider, which is a missing material decision.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1898,
+    "completion_tokens": 90,
+    "total_tokens": 1988
+  },
+  "latency_ms": 2357,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

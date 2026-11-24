@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"India\"},\"monthly_volume\":{\"value\":\"200,000 sessions with 12 requests each\",\"evidence\":\"200,000 sessions with 12 requests each\"},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":\"Google Autocomplete (New)\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"India\"},\"monthly_volume\":{\"value\":\"200,000 sessions with 12 requests each\",\"evidence\":\"200,000 sessions with 12 requests each\"},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":\"Google Autocomplete (New)\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1341,
+    "completion_tokens": 171,
+    "total_tokens": 1512
+  },
+  "latency_ms": 3954,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

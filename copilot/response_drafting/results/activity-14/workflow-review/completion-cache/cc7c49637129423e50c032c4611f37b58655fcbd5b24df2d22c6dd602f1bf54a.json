@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":\"100,000 times a month\",\"evidence\":\"100,000 times a month\"},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":\"100,000 times a month\",\"evidence\":\"100,000 times a month\"},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1386,
+    "completion_tokens": 161,
+    "total_tokens": 1547
+  },
+  "latency_ms": 3742,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

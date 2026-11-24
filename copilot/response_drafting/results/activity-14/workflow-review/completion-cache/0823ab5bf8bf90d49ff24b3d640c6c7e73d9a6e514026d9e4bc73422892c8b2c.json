@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry is asking about whether OSRM's route service returns alternative routes and full geometry. The retrieved evidence from the OSRM documentation confirms that the 'alternatives' parameter can be used to request alternative routes, and the 'overview' parameter can be set to 'full' to get full geometry. The 'geometries' parameter also allows specifying the format of the geometry. Therefore, the question is answered by the documentation without needing further customer input or action.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry is asking about whether OSRM's route service returns alternative routes and full geometry. The retrieved evidence from the OSRM documentation confirms that the 'alternatives' parameter can be used to request alternative routes, and the 'overview' parameter can be set to 'full' to get full geometry. The 'geometries' parameter also allows specifying the format of the geometry. Therefore, the question is answered by the documentation without needing further customer input or action.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2108,
+    "completion_tokens": 102,
+    "total_tokens": 2210
+  },
+  "latency_ms": 3985,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

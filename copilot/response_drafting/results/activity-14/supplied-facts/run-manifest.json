@@ -1,0 +1,109 @@
+{
+  "methods": [
+    "previous_app",
+    "staff_selector"
+  ],
+  "retrieval": "BM25",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "input_source": "Locked review packet verified against the saved working-eval cohort",
+  "review_packet_sha256": "1c7d50e3b992820969a0f0e883a2a16b75539cb913e4e36f3cdb3fcd8e088c94",
+  "locked_labels_sha256": "8a4de740bcb26c974540c298772f3f70484a97888fb18be3d6f0b5111bb39940",
+  "working_cohort_sha256": "59ada638b0147cdc67f4c0e6c01cc5d1fd30e50968bec37206aee2d876d5005f",
+  "original_workbook_sha256": "59518ab0d5df4a7d4ed176603b78e9b247352581f66e63496c972179bf770113",
+  "current_workbook_sha256": "b0ad6e415cf093ecaefff73b6a0fa0811f8f1d783ba7414a770f44a1c692f4fb",
+  "source_digests": {
+    "copilot/enquiry_workflow/workflow.py": "80f48bc7cf278056552559a0ed10b99c316782cbaa2b8d1b444894746ec2cc22",
+    "copilot/enquiry_workflow/cases.py": "1ff50f12796b634be707d6bd6cc26166dc6631d3a3fc0eff9ae6a882c757eb4c",
+    "copilot/response_drafting/drafter.py": "f6ca64d3c7256ff490a4f34037da63a6796ffca43db33055e902d405aefcf8de",
+    "copilot/response_drafting/schemas.py": "fe401c05a420999627c3ee45271e1ceb57ab5feab65c66d80a7f49c8c176cdd6",
+    "copilot/response_drafting/follow_up_questions.py": "254c5f7d9a358ab91a3a25618de8e19a48dbb51b605ee0cb4dfea724ed3ad7a3",
+    "copilot/response_drafting/follow_up_decisions.py": "f18a0e89d0237574467bc5ad54704ca87a06073b194d8d16c1844f59e075c3d7"
+  },
+  "grouped_cases": [
+    {
+      "id": "GT-LBS-DIR-079",
+      "group": "GT-LBS-DIR-079",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DIR-097",
+      "group": "GT-LBS-DIR-097",
+      "fold": 4
+    },
+    {
+      "id": "GT-LBS-DIR-124",
+      "group": "GT-LBS-DIR-124",
+      "fold": 4
+    },
+    {
+      "id": "GT-LBS-AC-223",
+      "group": "GT-LBS-AC-223",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-RG-086",
+      "group": "GT-LBS-RG-086",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-AC-085",
+      "group": "GT-LBS-AC-085",
+      "fold": 4
+    },
+    {
+      "id": "GT-LBS-DM-225",
+      "group": "GT-LBS-DM-225",
+      "fold": 5
+    },
+    {
+      "id": "GT-LBS-RG-062",
+      "group": "GT-LBS-RG-062",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-AC-047",
+      "group": "GT-LBS-AC-047",
+      "fold": 4
+    },
+    {
+      "id": "GT-LBS-RG-111",
+      "group": "GT-LBS-RG-111",
+      "fold": 2
+    },
+    {
+      "id": "GT-LBS-RG-099",
+      "group": "GT-LBS-RG-099",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DIR-088",
+      "group": "GT-LBS-DIR-088",
+      "fold": 5
+    },
+    {
+      "id": "GT-LBS-AC-111",
+      "group": "GT-LBS-AC-111",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DM-049",
+      "group": "GT-LBS-DM-049",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DM-125",
+      "group": "GT-LBS-DM-125",
+      "fold": 3
+    },
+    {
+      "id": "GT-LBS-DM-046",
+      "group": "GT-LBS-DM-046",
+      "fold": 5
+    }
+  ],
+  "scoring_status": "reviewed_working_eval_development_fact_extraction",
+  "baseline_selector_sha256": "155e5530fad027764e65d53dc37d6f0df4738c04507752ee9f70a071250f3122",
+  "extractor_sha256": "29c1e7660a13585017079548dd4ed209688c3bf0ffa25f71389e636aa627a8a8",
+  "fact_replay_sha256": "5423e52aeaed464e752a297c52a2f9536698a1597c4d3ae9c9483204eb0f1e09"
+}

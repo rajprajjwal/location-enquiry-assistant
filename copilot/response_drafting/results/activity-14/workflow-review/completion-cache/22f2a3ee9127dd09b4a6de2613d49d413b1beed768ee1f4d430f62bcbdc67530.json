@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\",\"reason\":\"The customer switched from Mapbox's address box (which likely uses the Search Box API with autocomplete) to the Geocoding API. The Geocoding API's autocomplete feature causes each keystroke to count as a separate request, leading to an explosion in request counts. To diagnose this, we need to inspect the actual redacted request to confirm the behavior and verify if autocomplete is enabled.\"}",
+  "raw": "{\"decision\":\"request_reproduction\",\"reason\":\"The customer switched from Mapbox's address box (which likely uses the Search Box API with autocomplete) to the Geocoding API. The Geocoding API's autocomplete feature causes each keystroke to count as a separate request, leading to an explosion in request counts. To diagnose this, we need to inspect the actual redacted request to confirm the behavior and verify if autocomplete is enabled.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2298,
+    "completion_tokens": 89,
+    "total_tokens": 2387
+  },
+  "latency_ms": 2306,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

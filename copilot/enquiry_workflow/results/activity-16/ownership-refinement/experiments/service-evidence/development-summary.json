@@ -1,0 +1,437 @@
+{
+  "cohort": "development",
+  "cases": 185,
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "method": "Saved-interpretation replay; previous handoff decisions fixed. Folds are descriptive strata, not independent CV.",
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "cases": 185,
+        "owner_correct": 175,
+        "owner_accuracy": 0.9459459459459459,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 2,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.8181818181818182,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 42,
+          "owner_correct": 40,
+          "owner_accuracy": 0.9523809523809523,
+          "escalation_true_positives": 4,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 1.0,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "2": {
+          "cases": 39,
+          "owner_correct": 38,
+          "owner_accuracy": 0.9743589743589743,
+          "escalation_true_positives": 2,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.6666666666666666,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 32,
+          "owner_correct": 29,
+          "owner_accuracy": 0.90625,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 39,
+          "owner_correct": 36,
+          "owner_accuracy": 0.9230769230769231,
+          "escalation_true_positives": 3,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.75,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "5": {
+          "cases": 33,
+          "owner_correct": 32,
+          "owner_accuracy": 0.9696969696969697,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        }
+      },
+      "changes": [],
+      "escalations_preserved": true
+    },
+    "actual_use": {
+      "metrics": {
+        "cases": 185,
+        "owner_correct": 177,
+        "owner_accuracy": 0.9567567567567568,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 2,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.8181818181818182,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 42,
+          "owner_correct": 41,
+          "owner_accuracy": 0.9761904761904762,
+          "escalation_true_positives": 4,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 1.0,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "2": {
+          "cases": 39,
+          "owner_correct": 38,
+          "owner_accuracy": 0.9743589743589743,
+          "escalation_true_positives": 2,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.6666666666666666,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 32,
+          "owner_correct": 29,
+          "owner_accuracy": 0.90625,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 39,
+          "owner_correct": 37,
+          "owner_accuracy": 0.9487179487179487,
+          "escalation_true_positives": 3,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.75,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "5": {
+          "cases": 33,
+          "owner_correct": 32,
+          "owner_accuracy": 0.9696969696969697,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        }
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-DIR-118",
+          "query": "Google Directions: we always send 15 waypoints. Which SKU and what's the rate for 200,000 requests in India?",
+          "before": "Account team (Sales)",
+          "after": "Support L1",
+          "expected": "Support L1",
+          "improved": true
+        },
+        {
+          "record_id": "GT-LBS-RG-098",
+          "query": "Google reverse geocoding gives ZERO_RESULTS for some Indian coordinates outside Delhi and Mumbai.",
+          "before": "Account team (Sales)",
+          "after": "Support L1",
+          "expected": "Support L1",
+          "improved": true
+        }
+      ],
+      "escalations_preserved": true
+    },
+    "public_service_fit": {
+      "metrics": {
+        "cases": 185,
+        "owner_correct": 176,
+        "owner_accuracy": 0.9513513513513514,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 2,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.8181818181818182,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 42,
+          "owner_correct": 40,
+          "owner_accuracy": 0.9523809523809523,
+          "escalation_true_positives": 4,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 1.0,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "2": {
+          "cases": 39,
+          "owner_correct": 38,
+          "owner_accuracy": 0.9743589743589743,
+          "escalation_true_positives": 2,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.6666666666666666,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 32,
+          "owner_correct": 29,
+          "owner_accuracy": 0.90625,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 39,
+          "owner_correct": 36,
+          "owner_accuracy": 0.9230769230769231,
+          "escalation_true_positives": 3,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.75,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "5": {
+          "cases": 33,
+          "owner_correct": 33,
+          "owner_accuracy": 1.0,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        }
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-AC-003",
+          "query": "To save money, can our mobile app call the public Nominatim server directly for type-ahead address search? We have about 20 searches per second at peak.",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "expected": "Account team (Sales)",
+          "improved": true
+        }
+      ],
+      "escalations_preserved": true
+    },
+    "published_billing": {
+      "metrics": {
+        "cases": 185,
+        "owner_correct": 176,
+        "owner_accuracy": 0.9513513513513514,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 2,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.8181818181818182,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 42,
+          "owner_correct": 40,
+          "owner_accuracy": 0.9523809523809523,
+          "escalation_true_positives": 4,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 1.0,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "2": {
+          "cases": 39,
+          "owner_correct": 38,
+          "owner_accuracy": 0.9743589743589743,
+          "escalation_true_positives": 2,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.6666666666666666,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 32,
+          "owner_correct": 29,
+          "owner_accuracy": 0.90625,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 39,
+          "owner_correct": 37,
+          "owner_accuracy": 0.9487179487179487,
+          "escalation_true_positives": 3,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.75,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "5": {
+          "cases": 33,
+          "owner_correct": 32,
+          "owner_accuracy": 0.9696969696969697,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        }
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-DIR-033",
+          "query": "Sandbox CRM opportunity OPP-74655. Customer wrote:\n\"Does Google give us free Directions calls in India, and what happens if we exceed it without a card on file?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+          "before": "Account team (Sales)",
+          "after": "Support L1",
+          "expected": "Support L1",
+          "improved": true
+        }
+      ],
+      "escalations_preserved": true
+    },
+    "combined": {
+      "metrics": {
+        "cases": 185,
+        "owner_correct": 179,
+        "owner_accuracy": 0.9675675675675676,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 2,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.8181818181818182,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "folds": {
+        "1": {
+          "cases": 42,
+          "owner_correct": 41,
+          "owner_accuracy": 0.9761904761904762,
+          "escalation_true_positives": 4,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 1.0,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "2": {
+          "cases": 39,
+          "owner_correct": 38,
+          "owner_accuracy": 0.9743589743589743,
+          "escalation_true_positives": 2,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.6666666666666666,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "3": {
+          "cases": 32,
+          "owner_correct": 29,
+          "owner_accuracy": 0.90625,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        },
+        "4": {
+          "cases": 39,
+          "owner_correct": 38,
+          "owner_accuracy": 0.9743589743589743,
+          "escalation_true_positives": 3,
+          "escalation_false_positives": 1,
+          "escalation_false_negatives": 0,
+          "escalation_precision": 0.75,
+          "escalation_recall": 1.0,
+          "escalation_reason_coverage": 1.0
+        },
+        "5": {
+          "cases": 33,
+          "owner_correct": 33,
+          "owner_accuracy": 1.0,
+          "escalation_true_positives": 0,
+          "escalation_false_positives": 0,
+          "escalation_false_negatives": 0,
+          "escalation_precision": null,
+          "escalation_recall": null,
+          "escalation_reason_coverage": null
+        }
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-AC-003",
+          "query": "To save money, can our mobile app call the public Nominatim server directly for type-ahead address search? We have about 20 searches per second at peak.",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "expected": "Account team (Sales)",
+          "improved": true
+        },
+        {
+          "record_id": "GT-LBS-DIR-033",
+          "query": "Sandbox CRM opportunity OPP-74655. Customer wrote:\n\"Does Google give us free Directions calls in India, and what happens if we exceed it without a card on file?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+          "before": "Account team (Sales)",
+          "after": "Support L1",
+          "expected": "Support L1",
+          "improved": true
+        },
+        {
+          "record_id": "GT-LBS-DIR-118",
+          "query": "Google Directions: we always send 15 waypoints. Which SKU and what's the rate for 200,000 requests in India?",
+          "before": "Account team (Sales)",
+          "after": "Support L1",
+          "expected": "Support L1",
+          "improved": true
+        },
+        {
+          "record_id": "GT-LBS-RG-098",
+          "query": "Google reverse geocoding gives ZERO_RESULTS for some Indian coordinates outside Delhi and Mumbai.",
+          "before": "Account team (Sales)",
+          "after": "Support L1",
+          "expected": "Support L1",
+          "improved": true
+        }
+      ],
+      "escalations_preserved": true
+    }
+  }
+}

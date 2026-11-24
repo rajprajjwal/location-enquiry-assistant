@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to an API key restriction not being properly configured for their Android app, which is causing the 'This IP, site or mobile application is not authorized to use this API key' error. The diagnostic plan does not require further action as the customer has already identified the problem and is awaiting approval to proceed with any changes.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to an API key restriction not being properly configured for their Android app, which is causing the 'This IP, site or mobile application is not authorized to use this API key' error. The diagnostic plan does not require further action as the customer has already identified the problem and is awaiting approval to proceed with any changes.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2056,
+    "completion_tokens": 78,
+    "total_tokens": 2134
+  },
+  "latency_ms": 2079,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

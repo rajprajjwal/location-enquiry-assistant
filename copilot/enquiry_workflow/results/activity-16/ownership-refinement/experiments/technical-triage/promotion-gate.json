@@ -1,0 +1,12 @@
+{
+  "candidate": "routine first-line assessment",
+  "required": [
+    "development owner accuracy improves with no owner regressions",
+    "no development escalation false negatives introduced",
+    "fresh owner accuracy is non-inferior with no owner regressions",
+    "fresh escalation precision and recall do not regress where defined",
+    "candidate and baseline hashes unchanged",
+    "explicit requests, incidents and deferred cases preserved by tests"
+  ],
+  "on_failure": "do not promote"
+}

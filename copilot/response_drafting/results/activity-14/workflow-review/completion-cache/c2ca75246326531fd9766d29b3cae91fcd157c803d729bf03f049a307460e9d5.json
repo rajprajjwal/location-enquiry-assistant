@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"The required matrix features must be confirmed to apply the documented price and limits.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"The required vehicle or travel modes must be confirmed to apply the documented price and limits.\"\n    }\n  ],\n  \"reason\": \"The customer has not provided the required fields 'traffic_required' and 'travel_mode' which are essential for determining the applicable pricing and limits for the Distance Matrix API.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"The required matrix features must be confirmed to apply the documented price and limits.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"The required vehicle or travel modes must be confirmed to apply the documented price and limits.\"\n    }\n  ],\n  \"reason\": \"The customer has not provided the required fields 'traffic_required' and 'travel_mode' which are essential for determining the applicable pricing and limits for the Distance Matrix API.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1372,
+    "completion_tokens": 126,
+    "total_tokens": 1498
+  },
+  "latency_ms": 2994,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

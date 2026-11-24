@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The customer is sending 10 requests per second, which exceeds the recommended limit of 1 request per second for the OSRM demo server. This could result in throttling or blocking of requests.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The customer is sending 10 requests per second, which exceeds the recommended limit of 1 request per second for the OSRM demo server. This could result in throttling or blocking of requests.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2523,
+    "completion_tokens": 52,
+    "total_tokens": 2575
+  },
+  "latency_ms": 1560,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,5 +1,5 @@
 ﻿group,category,record_a,split_a,frozen_a,record_b,split_b,frozen_b,cosine_similarity,same_template_family,normalized_exact_match,decision,review_note
-G012,cross_split,GT-LBS-DIR-010,holdout,False,GT-LBS-DIR-012,eval,True,0.901420,False,False,,
+G012,cross_split,GT-LBS-DIR-010,holdout,False,GT-LBS-DIR-012,eval,True,0.901420,False,False,exclude_holdout_case,Approved 2026-11-21 by the project owner. Keep GT-LBS-DIR-012 in the frozen set. Exclude holdout record GT-LBS-DIR-010 from scored holdout runs.
 G020,cross_split,GT-LBS-DM-006,holdout,False,GT-LBS-DM-009,eval,False,0.939785,False,False,,
 G020,cross_split,GT-LBS-DM-006,holdout,False,GT-LBS-DM-012,eval,False,0.926891,False,False,,
 G019,cross_split,GT-LBS-DM-001,holdout,False,GT-LBS-DM-044,eval,False,0.925259,False,False,,

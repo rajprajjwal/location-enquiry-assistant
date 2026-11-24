@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":{\"raw\":\"400,000 sessions a month\",\"requests_per_month\":400000,\"unit\":\"sessions_per_month\"},\"evidence\":\"400,000 sessions a month\"},{\"field\":\"region\",\"value\":\"India\",\"evidence\":\"qualification_details.region\"},{\"field\":\"details_completion\",\"value\":true,\"evidence\":\"ending in Place Details Essentials\"},{\"field\":\"details_sku\",\"value\":\"Place Details Essentials\",\"evidence\":\"ending in Place Details Essentials\"}],\"groups\":[{\"fields\":[\"details_sku\"],\"decision_impact\":\"Select the applicable session-termination billing rule.\"}],\"reason\":\"The details_sku field is required to determine the applicable session-termination billing rule, which affects the cost calculation.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":{\"raw\":\"400,000 sessions a month\",\"requests_per_month\":400000,\"unit\":\"sessions_per_month\"},\"evidence\":\"400,000 sessions a month\"},{\"field\":\"region\",\"value\":\"India\",\"evidence\":\"qualification_details.region\"},{\"field\":\"details_completion\",\"value\":true,\"evidence\":\"ending in Place Details Essentials\"},{\"field\":\"details_sku\",\"value\":\"Place Details Essentials\",\"evidence\":\"ending in Place Details Essentials\"}],\"groups\":[{\"fields\":[\"details_sku\"],\"decision_impact\":\"Select the applicable session-termination billing rule.\"}],\"reason\":\"The details_sku field is required to determine the applicable session-termination billing rule, which affects the cost calculation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1276,
+    "completion_tokens": 159,
+    "total_tokens": 1435
+  },
+  "latency_ms": 3732,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

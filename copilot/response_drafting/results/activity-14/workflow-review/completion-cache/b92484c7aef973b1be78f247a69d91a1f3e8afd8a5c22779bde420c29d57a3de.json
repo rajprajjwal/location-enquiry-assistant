@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the use of the 'via:' prefix in the Directions API request, which can lead to ZERO_RESULTS if the waypoint is not accessible. The documentation indicates that using 'via:' creates a strict interpretation of the waypoint, which may result in route calculation failures. The customer's problem is a known behavior of the API and does not require further escalation or additional information. The issue can be resolved by ensuring the waypoints are accessible and correctly formatted.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the use of the 'via:' prefix in the Directions API request, which can lead to ZERO_RESULTS if the waypoint is not accessible. The documentation indicates that using 'via:' creates a strict interpretation of the waypoint, which may result in route calculation failures. The customer's problem is a known behavior of the API and does not require further escalation or additional information. The issue can be resolved by ensuring the waypoints are accessible and correctly formatted.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2338,
+    "completion_tokens": 103,
+    "total_tokens": 2441
+  },
+  "latency_ms": 2625,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,6 @@
+{
+  "before_sha256": "54eec40466eea8fbd9e40a03b2955e4a72d72172ab1762266c1bf33ec7a62109",
+  "after_sha256": "91ffcf3ef6b12bdd38669056194ada7004f54e66ee6ec648e6a184501cb85425",
+  "reason": "Negative-control review: recognize spaced hand-off and transfer requests as explicit requests; no gold-label-driven tuning.",
+  "prediction_equivalence_check": "All 251 working owner/escalation predictions match the pre-hardening candidate."
+}

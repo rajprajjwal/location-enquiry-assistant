@@ -1,0 +1,152 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-050",
+    "query": "Hi, we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?",
+    "history": [],
+    "questions": [
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm expected monthly API workload?",
+      "Could you confirm maximum stops or waypoints per route?",
+      "Could you confirm whether you already have an enabled Google project and whether you have an Ola Maps contract?"
+    ],
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "The number of route requests per month."
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "Whether live-traffic ETAs are required."
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "The vehicle types."
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "The number of stops per route."
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "Whether an existing Google project is available.",
+          "Whether an Ola contract is available."
+        ]
+      }
+    ],
+    "questions_sha256": "76d5ea8a846dc8dba7cfa47ec91185e1d7ab87984b64a7c5d7d230fd58ea1999",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d"
+  },
+  {
+    "record_id": "GT-LBS-DIR-205",
+    "query": "Can we get traffic-aware ETAs for driving routes in Nepal as well as India? Compare the providers you know.",
+    "history": [],
+    "questions": [
+      "Could you confirm required traffic conditions, such as live, predicted or standard estimates?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need live traffic, or are historical/typical ETAs enough?",
+        "facts": [
+          "Whether live traffic is required or historical/typical ETAs are sufficient."
+        ]
+      }
+    ],
+    "questions_sha256": "3d143c78118f37d41bce17512caaa5597b142ca78193b248eddea640b008d540",
+    "gold_sha256": "6fa1caebafd384ba207e128f27f0e00ff6c348adddcb9cc1fec97ee358459108"
+  },
+  {
+    "record_id": "GT-LBS-DIR-206",
+    "query": "Can we get traffic-aware ETAs for driving routes in Sri Lanka as well as India? Compare the providers you know.",
+    "history": [],
+    "questions": [
+      "Could you confirm required traffic conditions, such as live, predicted or standard estimates?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need live traffic, or are historical/typical ETAs enough?",
+        "facts": [
+          "Whether live traffic is required or historical/typical ETAs are sufficient."
+        ]
+      }
+    ],
+    "questions_sha256": "3d143c78118f37d41bce17512caaa5597b142ca78193b248eddea640b008d540",
+    "gold_sha256": "6fa1caebafd384ba207e128f27f0e00ff6c348adddcb9cc1fec97ee358459108"
+  },
+  {
+    "record_id": "GT-LBS-DIR-211",
+    "query": "At peak we fire about 500 directions requests per minute from one backend. Which provider limits will we hit?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether traffic is spread across several API keys or tokens?"
+    ],
+    "gold": [
+      {
+        "question": "Is the load spread across several API keys/tokens?",
+        "facts": [
+          "Whether the load is spread across several API keys or tokens."
+        ]
+      }
+    ],
+    "questions_sha256": "2378b8b01a7af20ffb9527e351159264af5c568b786eb4da3e8febfe5378c560",
+    "gold_sha256": "33a5627ee396a5d90387adbdd9598116cd53817574d398fd083ff1524224d7fd"
+  },
+  {
+    "record_id": "GT-LBS-DIR-212",
+    "query": "At peak we fire about 6,000 directions requests per minute from one backend. Which provider limits will we hit?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether traffic is spread across several API keys or tokens?"
+    ],
+    "gold": [
+      {
+        "question": "Is the load spread across several API keys/tokens?",
+        "facts": [
+          "Whether the load is spread across several API keys or tokens."
+        ]
+      }
+    ],
+    "questions_sha256": "2378b8b01a7af20ffb9527e351159264af5c568b786eb4da3e8febfe5378c560",
+    "gold_sha256": "33a5627ee396a5d90387adbdd9598116cd53817574d398fd083ff1524224d7fd"
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "query": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API?",
+    "history": [],
+    "questions": [
+      "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?"
+    ],
+    "gold": [
+      {
+        "question": "How many origins and destinations per request, and do they need traffic-aware ETAs?",
+        "facts": [
+          "The number of origins per request.",
+          "The number of destinations per request.",
+          "Whether traffic-aware ETAs are required."
+        ]
+      },
+      {
+        "question": "Should cost be compared per pair (Ola) or per element/request (Google/Mapbox)?",
+        "facts": [
+          "The requested cost-comparison basis: pairs, elements or requests."
+        ]
+      },
+      {
+        "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+        "facts": [
+          "Whether Mapbox driving-traffic will be used."
+        ]
+      }
+    ],
+    "questions_sha256": "173f4b73dc29f30fd8ea50d55e95248ead089a57e1b5b45cd77175f346790483",
+    "gold_sha256": "2a3aa9fa7b93a57f54738d3ff5f8195163c0c1a0b49ea96f0b3b6df0179912b8"
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "before_sha256": {
+    "copilot/diagnostics/policy.py": "d6ba39fdea65ce3286899b64d056a14aaa3369bd48c1568157dfb100faea1580",
+    "copilot/safety/escalation.py": "914b08fda8231ebedb123cd05269496cd3ecec85c5a21e366dcedc6160562fcb",
+    "copilot/safety/escalation_policy.py": "31d5e5ca6b2973614bbc50cee53b24fe23fb3747aa516fa01ed01be47c342e64",
+    "copilot/enquiry_workflow/escalation.py": "2465d8d2cbf5ab361d879c52d737b593e15d57cf52a1663d7980d4e3619b127d",
+    "copilot/enquiry_workflow/cases.py": "8e47af54c9054693811de88d4e5692b0dbb5f22644e4b11f57b1651f24e91981",
+    "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77"
+  },
+  "edited_scope": [
+    "copilot/diagnostics/policy.py",
+    "copilot/safety/incident_evidence.py",
+    "tests/enquiry_workflow/test_incident_evidence.py"
+  ],
+  "after_sha256": {
+    "copilot/diagnostics/policy.py": "f8e9ab74a7afccd5f9d4369733c1c4850ee6b6682372e00538e396ab2379994e",
+    "copilot/safety/escalation.py": "914b08fda8231ebedb123cd05269496cd3ecec85c5a21e366dcedc6160562fcb",
+    "copilot/safety/escalation_policy.py": "31d5e5ca6b2973614bbc50cee53b24fe23fb3747aa516fa01ed01be47c342e64",
+    "copilot/enquiry_workflow/escalation.py": "2465d8d2cbf5ab361d879c52d737b593e15d57cf52a1663d7980d4e3619b127d",
+    "copilot/enquiry_workflow/cases.py": "8e47af54c9054693811de88d4e5692b0dbb5f22644e4b11f57b1651f24e91981",
+    "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77"
+  },
+  "owned_sha256": {
+    "copilot/diagnostics/policy.py": "f8e9ab74a7afccd5f9d4369733c1c4850ee6b6682372e00538e396ab2379994e",
+    "copilot/safety/incident_evidence.py": "6529c88e675b2534291538591d91e002fa6ecf03f0083fbfd0ae72be1aaa4751",
+    "tests/enquiry_workflow/test_incident_evidence.py": "29fd8ab63da5610be2921cbf45e493c6ec47060122ade5d5ddcd8fa2445ca167"
+  },
+  "protected_files_unchanged": {
+    "copilot/safety/escalation.py": true,
+    "copilot/safety/escalation_policy.py": true,
+    "copilot/enquiry_workflow/escalation.py": true,
+    "copilot/enquiry_workflow/cases.py": true,
+    "copilot/config/escalation_rules.yaml": true
+  },
+  "running_candidate_policy_unchanged": true,
+  "tests": {
+    "passed": 95,
+    "failed": 0,
+    "command": ".venv/bin/python -B -m pytest -q tests/enquiry_workflow/test_incident_evidence.py tests/enquiry_workflow/test_additional_diagnostic_evidence.py tests/enquiry_workflow/test_diagnostics.py tests/enquiry_workflow/test_request_denied.py tests/enquiry_workflow/test_routine_triage.py -p no:cacheprovider"
+  },
+  "scope": "Only diagnostics/policy.py, new safety/incident_evidence.py and new incident-evidence tests. No A16 ownership, case flow, escalation matcher, YAML, GT, frozen/holdout or running candidate runtime writes.",
+  "status": "Owned source stable for candidate v2 snapshot.",
+  "core_regressions": [
+    {
+      "decision": "credit_restoration",
+      "allowed": [
+        "credit_restoration"
+      ],
+      "selected": "credit_restoration",
+      "questions": [
+        {
+          "field": "credit_restoration",
+          "text": "Which account reference is affected? Please do not share credentials."
+        }
+      ],
+      "controls_unchanged": true
+    },
+    {
+      "decision": "prediction_quality",
+      "allowed": [
+        "prediction_quality"
+      ],
+      "selected": "prediction_quality",
+      "questions": [
+        {
+          "field": "prediction_quality",
+          "text": "Could you share the exact search query and the incorrect prediction returned for it, with personal details removed?"
+        }
+      ],
+      "controls_unchanged": true
+    },
+    {
+      "decision": "credential_exposure",
+      "allowed": [
+        "credential_exposure"
+      ],
+      "selected": "credential_exposure",
+      "questions": [
+        {
+          "field": "exposure_time",
+          "text": "When was the credential first exposed publicly?"
+        },
+        {
+          "field": "unusual_usage_spikes",
+          "text": "Have you noticed any unusual usage or traffic spikes since the exposure?"
+        }
+      ],
+      "controls_unchanged": true
+    }
+  ],
+  "working52_regression": "working52-policy-regression.json",
+  "inputs52_sha256": "051d992d13551c1ca2f7973ed151ba480bd5df1c14e9ad557279511262f21651"
+}

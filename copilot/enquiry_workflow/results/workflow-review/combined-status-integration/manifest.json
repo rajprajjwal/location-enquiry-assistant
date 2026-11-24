@@ -1,0 +1,37 @@
+{
+  "before_sha256": {
+    "copilot/enquiry_workflow/cases.py": "8e47af54c9054693811de88d4e5692b0dbb5f22644e4b11f57b1651f24e91981",
+    "copilot/enquiry_workflow/ownership_status.py": "f284ff05453dbd003311f0e184f612de92ec45002a27fd3281af77de4be6c7b4",
+    "copilot/enquiry_workflow/case_memory.py": "a4e646946280193a39552e6371a715a89556efb81a798300a6060f55f7c76283",
+    "copilot/enquiry_workflow/escalation.py": "2465d8d2cbf5ab361d879c52d737b593e15d57cf52a1663d7980d4e3619b127d",
+    "copilot/config/escalation_policy.yaml": "465e9205086b2ac00b892713d517c406154b0e66dd040b450bb2146dbb108621",
+    "copilot/qualification/finalization.py": "48387b114a84b1ade7a2bd5a5e431b68a6ab65833ceeea22330919972a781d4b"
+  },
+  "after_sha256": {
+    "copilot/enquiry_workflow/cases.py": "8ffd158bf26a8bf368c1fc4a113deab9bfdbb573f149cdbd70eb6043be720cd6",
+    "copilot/enquiry_workflow/ownership_status.py": "6fe4888cb7356619deb88ae508663d728321979d6b0b7dcf5c5328c1df98e2fc",
+    "copilot/enquiry_workflow/case_memory.py": "a4e646946280193a39552e6371a715a89556efb81a798300a6060f55f7c76283",
+    "copilot/enquiry_workflow/escalation.py": "11eccdfe0ef5bfee0e400526ca56bdce41f7f2568cff64e934eeae7f220d3927",
+    "copilot/config/escalation_policy.yaml": "465e9205086b2ac00b892713d517c406154b0e66dd040b450bb2146dbb108621",
+    "copilot/qualification/finalization.py": "48387b114a84b1ade7a2bd5a5e431b68a6ab65833ceeea22330919972a781d4b",
+    "copilot/enquiry_workflow/workflow.py": "5d7b9d200b45744de9de76a5593e72b4eae636844cf4ef58074535895b0292bf",
+    "tests/enquiry_workflow/test_pending_customer_status.py": "bb523faf50df715c83d2995a7f6edb3eb9cf625ec0882f8a1379f5edf1443bf6",
+    "docs/ownership-routing.md": "4804ce1486ecd0176052c49f8459229611e021b1366181faaebbb06ca7e7e0fa"
+  },
+  "sealed_candidate_v1_cases_sha256": "4aabc98fb728a3a9c2ab0b37453c4ad5d45085fa17d6968e85f3cbcd1e14576e",
+  "sealed_candidate_v1_predictions_sha256": "4e0cb1ac057c37653a7b385e49b9d580f50e9179dbf500f35f17abd93b20b875",
+  "scope": "Production-only narrow customer-status reply binding. Controlled working-eval benchmarks retain baseline ownership code and are separate from this integration check.",
+  "routing_before_reconstruction_verified": true,
+  "reconstructed_before_sha256": {
+    "copilot/enquiry_workflow/workflow.py": "6bc8eecd88ede83f44f8411f930f3be590efcdd69934b3cc8c22c3a67f4dea82"
+  },
+  "reconstructed_before_provenance": "workflow.py removes only the optional ownership_query argument and forwarding introduced by this integration fix; no audit-start workflow snapshot existed.",
+  "approved_policy_and_finalizer_byte_unchanged": {
+    "copilot/enquiry_workflow/case_memory.py": true,
+    "copilot/config/escalation_policy.yaml": true,
+    "copilot/qualification/finalization.py": true
+  },
+  "routing_boundary_change": "escalation.py accepts a separate raw status reply only for ownership review; its restored enquiry, escalation rules and approval decisions retain the original task.",
+  "sealed_candidate_v1_cases_sha256_current": "4aabc98fb728a3a9c2ab0b37453c4ad5d45085fa17d6968e85f3cbcd1e14576e",
+  "sealed_candidate_v1_predictions_sha256_current": "4e0cb1ac057c37653a7b385e49b9d580f50e9179dbf500f35f17abd93b20b875"
+}

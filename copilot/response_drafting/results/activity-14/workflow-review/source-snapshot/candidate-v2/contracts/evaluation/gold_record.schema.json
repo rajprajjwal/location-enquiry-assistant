@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://capstone.local/lbs-copilot/contracts/gold_record/v0.1.0",
+  "title": "GoldRecord",
+  "description": "One labeled evaluation case with the customer input, expected interpretation, reference answer, evidence, and workflow expectations.",
+  "x-spec-version": "0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "split",
+    "frozen_core",
+    "bucket",
+    "input",
+    "expected_interpretation",
+    "context",
+    "reference_answer",
+    "cited_doc_spans",
+    "rubric",
+    "gold_clarifying_questions",
+    "escalation",
+    "expected_tools",
+    "gold_tool_trace"
+  ],
+  "properties": {
+    "record_id": {"$ref": "#/$defs/nonblank"},
+    "split": {"$ref": "https://capstone.local/lbs-copilot/schemas/envelope/v1.0.0#/properties/split"},
+    "frozen_core": {"type": "boolean"},
+    "bucket": {"$ref": "https://capstone.local/lbs-copilot/schemas/envelope/v1.0.0#/properties/bucket"},
+    "input": {
+      "$ref": "https://capstone.local/lbs-copilot/contracts/interpretation_input/v0.1.0",
+      "required": ["record_id", "history", "known_facts"],
+      "properties": {"record_id": {"$ref": "#/$defs/nonblank"}}
+    },
+    "expected_interpretation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intent", "sub_intent", "api", "team", "qualification_details"],
+      "properties": {
+        "intent": {"$ref": "https://capstone.local/lbs-copilot/schemas/envelope/v1.0.0#/properties/intent"},
+        "sub_intent": {"$ref": "https://capstone.local/lbs-copilot/schemas/envelope/v1.0.0#/properties/sub_intent"},
+        "api": {"$ref": "https://capstone.local/lbs-copilot/schemas/envelope/v1.0.0#/properties/api"},
+        "team": {"$ref": "https://capstone.local/lbs-copilot/schemas/envelope/v1.0.0#/properties/team"},
+        "qualification_details": {"$ref": "https://capstone.local/lbs-copilot/schemas/qualification_details/v1.0.0"}
+      }
+    },
+    "context": {"$ref": "#/$defs/nonblank"},
+    "reference_answer": {"$ref": "#/$defs/nonblank"},
+    "cited_doc_spans": {
+      "$ref": "https://capstone.local/lbs-copilot/schemas/response_draft/v1.0.0#/properties/citations",
+      "minItems": 1
+    },
+    "rubric": {"$ref": "#/$defs/nonblank"},
+    "gold_clarifying_questions": {"$ref": "https://capstone.local/lbs-copilot/schemas/clarifying_questions/v1.0.0"},
+    "escalation": {"$ref": "https://capstone.local/lbs-copilot/schemas/responsible_role/v1.0.0"},
+    "expected_tools": {"$ref": "https://capstone.local/lbs-copilot/schemas/envelope/v1.0.0#/properties/tools_expected"},
+    "gold_tool_trace": {
+      "description": "Recorded sequence of expected sandbox calls and outcomes. Null when there are no tool calls.",
+      "oneOf": [{"$ref": "#/$defs/nonblank"}, {"type": "null"}]
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"frozen_core": {"const": true}}},
+      "then": {"properties": {"split": {"const": "eval"}}}
+    },
+    {
+      "if": {"properties": {"expected_tools": {"minItems": 1}}},
+      "then": {"properties": {"gold_tool_trace": {"$ref": "#/$defs/nonblank"}}},
+      "else": {"properties": {"gold_tool_trace": {"type": "null"}}}
+    }
+  ],
+  "$defs": {
+    "nonblank": {"type": "string", "pattern": "\\S"}
+  }
+}

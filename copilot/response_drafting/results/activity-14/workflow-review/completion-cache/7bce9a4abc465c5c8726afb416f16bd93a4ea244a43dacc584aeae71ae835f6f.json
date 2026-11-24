@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":{\"requests_per_month\":500000,\"unit\":\"sessions_per_month\"},\"evidence\":\"500,000 address-search sessions a month\"},{\"field\":\"region\",\"value\":\"Kolkata\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"debouncing\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"},{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"}],\"reason\":\"The monthly volume and region are provided, but the decisions related to debouncing and details completion are missing, which are necessary for accurate cost calculation.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":{\"requests_per_month\":500000,\"unit\":\"sessions_per_month\"},\"evidence\":\"500,000 address-search sessions a month\"},{\"field\":\"region\",\"value\":\"Kolkata\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"debouncing\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"},{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"}],\"reason\":\"The monthly volume and region are provided, but the decisions related to debouncing and details completion are missing, which are necessary for accurate cost calculation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1400,
+    "completion_tokens": 141,
+    "total_tokens": 1541
+  },
+  "latency_ms": 3338,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

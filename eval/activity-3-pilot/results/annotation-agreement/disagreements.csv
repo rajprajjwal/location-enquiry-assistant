@@ -1,0 +1,4 @@
+﻿pilot_id,field,Update_A,Update_P,agree
+P08,intent,capability_match,sales_qualification,False
+P10,intent,pricing_comparison,pricing_quote,False
+P10,api,autocomplete,directions,False

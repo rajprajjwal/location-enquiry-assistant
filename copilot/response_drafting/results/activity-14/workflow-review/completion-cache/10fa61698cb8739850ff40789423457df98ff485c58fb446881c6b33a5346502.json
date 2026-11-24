@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The error OVER_QUERY_LIMIT suggests the API quota is being exceeded. Inspect one request and test it in isolation to identify if the burst of requests is hitting the quota limit.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The error OVER_QUERY_LIMIT suggests the API quota is being exceeded. Inspect one request and test it in isolation to identify if the burst of requests is hitting the quota limit.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2071,
+    "completion_tokens": 47,
+    "total_tokens": 2118
+  },
+  "latency_ms": 1382,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

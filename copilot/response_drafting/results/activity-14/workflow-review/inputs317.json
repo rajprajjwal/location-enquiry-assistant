@@ -1,0 +1,3134 @@
+[
+  {
+    "record_id": "GT-LBS-AC-003",
+    "query": "To save money, can our mobile app call the public Nominatim server directly for type-ahead address search? We have about 20 searches per second at peak.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-AC-003",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-008",
+    "query": "Our Mumbai food-delivery platform app expects 150,000 address-search sessions a month, averaging 12 keystrokes each. What would autocomplete cost on each provider, in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-AC-008",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-009",
+    "query": "Our Chennai field-service SaaS company app expects 300,000 address-search sessions a month, averaging 9 keystrokes each. What would autocomplete cost on each provider, in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-AC-008",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-010",
+    "query": "Our Kolkata two-wheeler rental company app expects 500,000 address-search sessions a month, averaging 15 keystrokes each. What would autocomplete cost on each provider, in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-AC-010",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-011",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Our Ahmedabad pharma distributor app expects 800,000 address-search sessions a month, averaging 7 keystrokes each. What would autocomplete cost on each provider, in INR?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you call Place Details after selection?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-AC-008",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-012",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Our Jaipur tour operator app expects 1,000,000 address-search sessions a month, averaging 10 keystrokes each. What would autocomplete cost on each provider, in INR?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you call Place Details after selection?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-AC-012",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-015",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Maps Autocomplete: 30,000 users a month typing ~8 characters each. What does that cost?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Average keystrokes before selection?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-AC-015",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-016",
+    "query": "Not sure. Answer with the details from my first message and note where that choice would change things.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Maps Autocomplete: 100,000 users a month typing ~10 characters each (we already debounce). What does that cost?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Average keystrokes before selection?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-AC-015",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-017",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Maps Autocomplete: 400,000 users a month typing ~6 characters each. What does that cost?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Average keystrokes before selection?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-AC-015",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-018",
+    "query": "Not sure. Answer with the details from my first message and note where that choice would change things.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Maps Autocomplete: 1,000,000 users a month typing ~12 characters each (we already debounce). What does that cost?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Average keystrokes before selection?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-AC-015",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-019",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Maps Autocomplete: 2,000,000 users a month typing ~8 characters each. What does that cost?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Average keystrokes before selection?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-AC-015",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-020",
+    "query": "Not sure. Answer with the details from my first message and note where that choice would change things.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Maps Autocomplete: 50,000 users a month typing ~4 characters each. What does that cost?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Average keystrokes before selection?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-AC-015",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-021",
+    "query": "Google Places Autocomplete (New) in India: 50,000 sessions a month, ~8 requests each, ending in Place Details Essentials. Sessions vs no sessions: what's the cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-AC-021",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-022",
+    "query": "Google Places Autocomplete (New) in India: 200,000 sessions a month, ~15 requests each, ending in Place Details Essentials. Sessions vs no sessions: what's the cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-AC-021",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-023",
+    "query": "Google Places Autocomplete (New) in India: 1,000,000 sessions a month, ~10 requests each, ending in Place Details Essentials. Sessions vs no sessions: what's the cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-AC-021",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-024",
+    "query": "Google Places Autocomplete (New) in India: 400,000 sessions a month, ~5 requests each, ending in Place Details Essentials. Sessions vs no sessions: what's the cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-AC-021",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-026",
+    "query": "Sandbox CRM opportunity OPP-21025. Customer wrote:\n\"We're still on Place Autocomplete (Legacy) in India: 80,000 sessions × 7 requests. Cost per billing option?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-AC-026",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-027",
+    "query": "Sandbox CRM opportunity OPP-58418. Customer wrote:\n\"We're still on Place Autocomplete (Legacy) in India: 300,000 sessions × 9 requests. Cost per billing option?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-AC-026",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-035",
+    "query": "Our Google Place Autocomplete bill is per keystroke even though we pass a sessiontoken.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-035",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-038",
+    "query": "Sandbox CRM ticket TKT-65310. Customer wrote:\n\"We show Google autocomplete predictions in a plain dropdown without a map. Any display requirements?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-AC-038",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-043",
+    "query": "Google Place Autocomplete returns ZERO_RESULTS for short inputs like 'Ko' with strictbounds around Kochi.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-043",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-044",
+    "query": "Sandbox CRM opportunity OPP-56568. Customer wrote: \"Will Google bill our Place Autocomplete and the final Place Details call as one session if their API keys belong to two different Google Cloud projects?\" Draft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-AC-044",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-047",
+    "query": "Autocomplete (New) never returns query predictions for us.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-047",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-049",
+    "query": "If our Autocomplete (New) session ends with Place Details Pro, do we still pay for the 12 autocomplete requests?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-049",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-053",
+    "query": "Ola Autocomplete returns 400 'Invalid param input: input length, must be >0'.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-053",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-055",
+    "query": "We set radius=5000 on Ola Autocomplete but still see far-away results.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-055",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-056",
+    "query": "Ola Autocomplete with types=hospital returns nothing for some queries.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-056",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-059",
+    "query": "Ola Autocomplete returns 429 during a marketing push.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-059",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-069",
+    "query": "Mapbox Search Box rejects our long pasted addresses.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-069",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-072",
+    "query": "Sandbox CRM opportunity OPP-24830. Customer wrote:\n\"Are Mapbox /category searches billed per session too?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-AC-072",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-082",
+    "query": "What rate can we hit the public Nominatim search API at?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-082",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-083",
+    "query": "Sandbox CRM ticket TKT-31827. Customer wrote: \"We're an AI assistant product. Can our chatbot recommend the public Nominatim API for showing address suggestions as users type? What usage-policy rules apply?\" Draft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-AC-083",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-084",
+    "query": "How do we limit Nominatim search to India and get up to 50 results?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-084",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-085",
+    "query": "Our Nominatim requests get blocked. We don't send any User-Agent.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-085",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-088",
+    "query": "Our prepaid Ola credits ran out and autocomplete stopped for paying users. Can you restore it now?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-AC-088",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-090",
+    "query": "A customer reports Ola Autocomplete suggests a misspelt locality name that offends residents. What do we do?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-AC-090",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-091",
+    "query": "Our Google Places bill exceeded our budget by 10× after a bot attack on our search box.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-AC-091",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-092",
+    "query": "Which autocomplete APIs support session-based pricing?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-092",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-093",
+    "query": "Which autocomplete APIs handle Indian-language input?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-093",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-094",
+    "query": "How do we restrict autocomplete results to India on each provider?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-094",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-096",
+    "query": "We need POI (shops, restaurants) suggestions, not just addresses. Which APIs?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-096",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-099",
+    "query": "Google Places Autocomplete: we need results from 5 countries (CH, FR, DE, AT, IT). Is only one country allowed?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-099",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-101",
+    "query": "Google Places Autocomplete returns non-cities when we pass types=geocode and types=regions.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-101",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-102",
+    "query": "How do we use multiple types in Google Places Autocomplete?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-102",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-103",
+    "query": "Google Places Autocomplete 'types' only seems to work with establishment.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-103",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-104",
+    "query": "Limit Google Places autocomplete to UK addresses only.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-104",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-105",
+    "query": "Restrict Google Places Autocomplete to one city's streets.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-105",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-106",
+    "query": "Sandbox CRM ticket TKT-14147. Customer wrote:\n\"How do we generate a Google Places session token? Can it be any random string?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-AC-106",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-107",
+    "query": "How should we use Google Places session tokens correctly with the Java client?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-107",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-109",
+    "query": "Do we need session tokens with Google autocomplete?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-109",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-110",
+    "query": "Google Places Autocomplete REQUEST_DENIED on Android even with the right key.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-110",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-111",
+    "query": "Google Places autocomplete says 'The provided API key is invalid' with our server key.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-AC-111",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-112",
+    "query": "Restrict Google Place Autocomplete to India.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-112",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-113",
+    "query": "Restrict Google Place Autocomplete to Nepal.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-113",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-114",
+    "query": "Restrict Google Place Autocomplete to Bangladesh.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-114",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-115",
+    "query": "Restrict Google Place Autocomplete to Sri Lanka.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-AC-115",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-116",
+    "query": "Ola Place Details after autocomplete selection: 150,000 calls a month. Cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-116",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-117",
+    "query": "Ola Place Details after autocomplete selection: 1,000,000 calls a month. Cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-116",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-118",
+    "query": "Ola Place Details after autocomplete selection: 6,000,000 calls a month. Cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-116",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-119",
+    "query": "Google Autocomplete (New), India: 200,000 sessions with 3 requests each. Is per-request or session pricing cheaper, assuming every session ends in Place Details Essentials?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-119",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-120",
+    "query": "Google Autocomplete (New), India: 200,000 sessions with 12 requests each. Is per-request or session pricing cheaper, assuming every session ends in Place Details Essentials?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-119",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-121",
+    "query": "Google Autocomplete (New), India: 200,000 sessions with 25 requests each. Is per-request or session pricing cheaper, assuming every session ends in Place Details Essentials?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-119",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-122",
+    "query": "Ola vs Mapbox autocomplete for 100,000 sessions × 8 keystrokes a month?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-122",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-123",
+    "query": "Ola vs Mapbox autocomplete for 400,000 sessions × 10 keystrokes a month?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-AC-122",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-125",
+    "query": "For a type-ahead address search box, how do Ola Maps Autocomplete and the public Nominatim endpoint compare for free usage and restrictions?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-125",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-204",
+    "query": "Our marketplace operates in 20 countries. Can one autocomplete request be restricted to all 20?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-AC-204",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-208",
+    "query": "I'm configuring Mappls Autosuggest for Nepal. Which country setting should I use, and can I keep the same zoom parameter I use for India?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-AC-208",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-209",
+    "query": "I'm setting up Mappls Autosuggest for Sri Lanka. How do I select that country, and what should I do about the zoom parameter I use for India?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-AC-208",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-212",
+    "query": "We're launching in Dubai. Is Ola Maps Autocomplete an option there?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-AC-212",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-213",
+    "query": "We only operate in India. Which autocomplete providers are India-focused, and how do we keep global ones inside India?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-AC-213",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-AC-216",
+    "query": "Our Mapbox address box shows autocomplete suggestions while users type. After we switched it to the Geocoding API, request counts exploded. Why is this happening?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-AC-216",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-217",
+    "query": "Does Mapbox Geocoding bill one request per keystroke when used for type-ahead?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-AC-216",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-218",
+    "query": "Can our web app call nominatim.openstreetmap.org on every keystroke for suggestions?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-AC-218",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-219",
+    "query": "Our mobile app uses public Nominatim for live address suggestions and got blocked. Why?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-AC-218",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-AC-220",
+    "query": "Ola Autocomplete returns 429 during our sale traffic. How do we reduce calls?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-AC-220",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-221",
+    "query": "We hit Ola rate limits from our search box. Any guidance in the docs?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-AC-220",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-223",
+    "query": "Can Mapbox Search Box return 20 suggestions per call?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-AC-223",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-224",
+    "query": "Do Mapbox Search Box autocomplete /suggest and /retrieve calls need a session token?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-224",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-225",
+    "query": "Our Mapbox Search Box /retrieve calls fail validation. Do we need a session parameter?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-224",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-AC-226",
+    "query": "Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-226",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-AC-227",
+    "query": "How do I keep Ola Autocomplete results inside a 5 km radius of the user?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-227",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-228",
+    "query": "Can Ola Autocomplete strictly restrict to a circle around a city centre?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-AC-227",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-AC-233",
+    "query": "Our product team is evaluating providers for address autocomplete. They want an LLM assistant to generate client code for public Nominatim and might resell the resulting geocoding data. What should we ask the team about its use case and licensing needs before recommending a provider?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-AC-233",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-013",
+    "query": "We're a Jaipur tour operator and expect about 9,500,000 route (directions) requests a month, all in India. Which routing APIs could we use, and what would each cost per month in rupees?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DIR-013",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-014",
+    "query": "We're a Kochi school-bus tracking provider and expect about 12,000,000 route (directions) requests a month, all in India. Which routing APIs could we use, and what would each cost per month in rupees?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DIR-014",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-025",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "How much would Mapbox Directions cost for 250,000 requests a month?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need driving-traffic, or is the driving profile enough?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DIR-025",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-026",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "How much would Mapbox Directions cost for 900,000 requests a month?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need driving-traffic, or is the driving profile enough?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DIR-025",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-027",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "How much would Mapbox Directions cost for 3,000,000 requests a month?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need driving-traffic, or is the driving profile enough?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DIR-025",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-028",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Compare Ola Maps and Google for 1,000,000 traffic-aware route requests a month in India. What if we drop live traffic?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Which ETA accuracy do you need at dispatch vs in-trip?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DIR-028",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-029",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Compare Ola Maps and Google for 3,000,000 traffic-aware route requests a month in India. What if we drop live traffic?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Which ETA accuracy do you need at dispatch vs in-trip?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DIR-028",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-030",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Compare Ola Maps and Google for 6,000,000 traffic-aware route requests a month in India. What if we drop live traffic?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Which ETA accuracy do you need at dispatch vs in-trip?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DIR-028",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-031",
+    "query": "Which routing / directions APIs have a free monthly allowance, and how big is it?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DIR-031",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-032",
+    "query": "Sandbox CRM opportunity OPP-19566. Customer wrote:\n\"Is Ola Maps Directions free for a small app doing about 60,000 requests a month? Do we need to buy credits?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DIR-032",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-033",
+    "query": "Sandbox CRM opportunity OPP-74655. Customer wrote:\n\"Does Google give us free Directions calls in India, and what happens if we exceed it without a card on file?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DIR-033",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-036",
+    "query": "Does Ola Maps Directions support auto-rickshaw routing for our three-wheeler fleet?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DIR-036",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-037",
+    "query": "Which directions APIs give traffic-aware ETAs in Indian cities, and what do we have to set to get them?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DIR-037",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-038",
+    "query": "Our drivers need turn-by-turn instructions in Hindi, Tamil and Kannada. Which directions APIs can do that?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DIR-038",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-040",
+    "query": "We run 16-tonne trucks between Indian warehouses. Which routing APIs support truck routing?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DIR-040",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-044",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We're on Ola Maps self-service. Our credit balance went negative on 5 September. Will routing calls stop?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Are you on a contract?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DIR-044",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-045",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "If we split Google Directions traffic across three Cloud projects, does each project get its own 70,000 free requests in India?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Are the projects on the same billing account?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DIR-045",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-047",
+    "query": "Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DIR-047",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "query": "Hi, we're an intercity bus aggregator and want a directions/routing API for route previews between cities. What do you recommend?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DIR-048",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-049",
+    "query": "Hi, we're a field-sales app for FMCG reps in UP and want a directions/routing API for daily beat plans with 15–20 outlets. What do you recommend?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DIR-049",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-050",
+    "query": "Hi, we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DIR-050",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-053",
+    "query": "Sandbox CRM ticket TKT-94289. Customer wrote:\n\"Directions requests from our Android app return 'This IP, site or mobile application is not authorized to use this API key'. The key is restricted to our package name.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DIR-053",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-055",
+    "query": "Customer message:\n\"Our Google Directions request with a via: waypoint returns ZERO_RESULTS, but without 'via:' the route works.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DIR-055",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-056",
+    "query": "Sandbox CRM ticket TKT-53224. Customer wrote:\n\"We set alternatives=true on Google Directions but only ever get one route. Our requests have 3 waypoints.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DIR-056",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-057",
+    "query": "Customer message:\n\"Our Google Directions URL has 23 lat/lng waypoints and sometimes gets rejected as too long. Options?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DIR-057",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-058",
+    "query": "Customer message:\n\"Can Google Directions avoid tolls and highways for our two-wheeler riders?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DIR-058",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-060",
+    "query": "Customer message:\n\"Google Directions walking routes in old Delhi show a 'warnings' array. Can we hide it in our UI?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DIR-060",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-061",
+    "query": "Customer message:\n\"Google Directions shows '12.4 mi' text for some users even though our app is Indian. And are distance values in miles too?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DIR-061",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-062",
+    "query": "Sandbox CRM ticket TKT-52674. Customer wrote:\n\"Our Google Directions results for the same origin/destination change slightly from week to week without departure_time. Is that a bug?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DIR-062",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-063",
+    "query": "Customer message:\n\"Our Google Directions start point snaps onto the wrong side of a divided road when we send raw lat/lng. How can we improve it?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DIR-063",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-064",
+    "query": "Customer message:\n\"Ola Directions returns 400 with reason 'Invalid/missing origin'. We send origin=77.5946,12.9716.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DIR-064",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-065",
+    "query": "Customer message:\n\"We send traffic_metadata=true to Ola Directions but travel_advisory never appears in the response.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DIR-065",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-070",
+    "query": "Which fields in the Ola Directions response give the distance in meters and duration in seconds, and how do we draw the route?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DIR-070",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-072",
+    "query": "Ola Directions gives a 'shortest' route that's slower than expected through Bengaluru traffic. Which option gives the quickest route?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DIR-072",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-076",
+    "query": "Sandbox CRM ticket TKT-62658. Customer wrote: \"For one trip, the Mapbox Directions API's driving-traffic ETA in a tier-3 town looks identical to the plain driving profile. Why?\" Draft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DIR-076",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-078",
+    "query": "How do we make Mapbox Directions avoid a dangerous level crossing near our depot?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DIR-078",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-079",
+    "query": "Our self-hosted OSRM returns HTTP 400 with code 'NoSegment' for Indian coordinates we pass as 12.97,77.59;12.93,77.62.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-079",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-080",
+    "query": "Sandbox CRM ticket TKT-48622. Customer wrote: \"Our script calls the OSRM /route endpoint at router.project-osrm.org for driving directions and gets throttled and blocked. We send about 10 requests per second.\" Draft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DIR-080",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-086",
+    "query": "A developer accidentally pushed our Ola Maps API key to a public GitHub repo. What should we do right now?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DIR-086",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-087",
+    "query": "Google Directions calls from our backend fail with REQUEST_DENIED since this morning, and our card expired yesterday.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-087",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-088",
+    "query": "Looping over 15 markers and calling Google Directions for each pair quickly gives OVER_QUERY_LIMIT. How should we fix it?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-088",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-089",
+    "query": "Google Directions with mode=transit returns OVER_QUERY_LIMIT after only 3 quick requests. Why so few?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-089",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-090",
+    "query": "Google Directions works for driving and walking, but transit always returns ZERO_RESULTS with our arrival_time. What's wrong?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-090",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-092",
+    "query": "Google Directions with waypoints returns ZERO_RESULTS while origin→destination alone works.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-092",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-093",
+    "query": "A Google Directions call with two waypoints returns ZERO_RESULTS, but the same trip works on google.com/maps. Why?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-093",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-094",
+    "query": "Our Android app gets REQUEST_DENIED from the Google Directions web service even though Maps renders fine.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-094",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-097",
+    "query": "Drawing several Google routes with more than 10 waypoints each only shows one route. Is there a 10-waypoint cap?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DIR-097",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-098",
+    "query": "We need to optimize the order of more than 10 delivery addresses with Google Directions.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DIR-098",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-101",
+    "query": "We want Google driving distances not to vary with current traffic. How do we prevent traffic influence?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DIR-101",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-102",
+    "query": "Can Google Directions give duration_in_traffic with waypoints and optimize?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DIR-102",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-105",
+    "query": "How can Mapbox Directions avoid passing through certain coordinates?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DIR-105",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-106",
+    "query": "Ola Directions Basic returns 422 for a route from Colombo to Kandy. Is something wrong with our request?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DIR-106",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-107",
+    "query": "Our Ola Directions request with 30 waypoints is rejected. What's the limit?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DIR-107",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-109",
+    "query": "Our Google Directions durations with traffic_model=optimistic are sometimes longer than best_guess. Is that a bug?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-109",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-110",
+    "query": "Mapbox Directions fails for our test route Kanyakumari→Leh→Kanyakumari→Leh→Kanyakumari (four legs). Is there a distance cap?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DIR-110",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DIR-111",
+    "query": "Does OSRM's trip service give an optimal delivery order for 15 stops?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DIR-111",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-114",
+    "query": "Do all the routing providers support walking and cycling directions in India?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DIR-114",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-116",
+    "query": "How much does the Ola Maps Route Optimizer cost for 300,000 optimisation requests a month?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DIR-116",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-117",
+    "query": "What would 250,000 requests a month to the Mapbox Directions API cost in rupees for point-to-point driving routes?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DIR-117",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-118",
+    "query": "Google Directions: we always send 15 waypoints. Which SKU and what's the rate for 200,000 requests in India?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DIR-118",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-119",
+    "query": "Does OSRM's route service return alternative routes and full geometry?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DIR-119",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-120",
+    "query": "Mapbox turn-by-turn instructions come back in English though we set language=hi. Why?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DIR-120",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-121",
+    "query": "We're on Ola's prepaid credits and our balance hit zero on 5 September 2026. Will Directions stop?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DIR-121",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-124",
+    "query": "What will 50,000 Google two-wheeler routes a month cost us in India via the Routes API?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DIR-124",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-125",
+    "query": "What do the congestion numbers in Ola's travel_advisory mean?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DIR-125",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DIR-205",
+    "query": "Can we get traffic-aware ETAs for driving routes in Nepal as well as India? Compare the providers you know.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DIR-205",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-206",
+    "query": "Can we get traffic-aware ETAs for driving routes in Sri Lanka as well as India? Compare the providers you know.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DIR-205",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DIR-207",
+    "query": "We're a cycling-delivery startup in Pune. Which providers give bicycling directions in India?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DIR-207",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-208",
+    "query": "We're a bicycle courier service expanding from India to Jakarta. Which providers give bicycling directions in Indonesia?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DIR-207",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-211",
+    "query": "At peak we fire about 500 directions requests per minute from one backend. Which provider limits will we hit?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DIR-211",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-212",
+    "query": "At peak we fire about 6,000 directions requests per minute from one backend. Which provider limits will we hit?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DIR-211",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-213",
+    "query": "Since this morning our Mapbox Directions calls return HTTP 429 Too Many Requests. We use one token for all services. What's going on?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DIR-213",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-214",
+    "query": "Ola Maps Directions started returning '429 Reached monthly/minute rate limits'. Is this billing or throttling, and what do we do?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DIR-214",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-215",
+    "query": "What request-rate ceiling and usage limits apply to the public OSRM /route endpoint for our planned production delivery app?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DIR-215",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DIR-218",
+    "query": "For a quick-commerce app in Bengaluru, which directions options account for live traffic, and which are static?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DIR-218",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-219",
+    "query": "For a cab aggregator in Delhi, which directions options account for live traffic, and which are static?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DIR-218",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DIR-220",
+    "query": "Do any of these routing APIs plan EV routes with charging stops?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DIR-220",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-003",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We're migrating from Mapbox Matrix. With driving-traffic and 12 coordinates we get a 422, and with fewer coordinates some durations come back null. Coordinates are sent as lat,lon like Google."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Can you share one failing request (token removed)?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-003",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-004",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "The Google Distance Matrix API returns status OK, but the element says ZERO_RESULTS for a trip in Texas. Is my quota exhausted?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Please share the exact origin and destination coordinates."
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-004",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-007",
+    "query": "Not sure. Answer with the details from my first message and note where that choice would change things.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We're a Chennai field-service SaaS company. We compute 3×20 distance matrices about 50,000 times a month. Which matrix APIs fit, and what would each cost in rupees?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need traffic-aware durations?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-007",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-008",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We're a Kolkata two-wheeler rental company. We compute 1×25 distance matrices about 100,000 times a month. Which matrix APIs fit, and what would each cost in rupees?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need traffic-aware durations?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-007",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-009",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We're a Ahmedabad pharma distributor. We compute 8×8 distance matrices about 5,000 times a month with live-traffic travel times. Which matrix APIs fit, and what would each cost in rupees?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need traffic-aware durations?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-007",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-010",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We're a Jaipur tour operator. We compute 20×20 distance matrices about 10,000 times a month. Which matrix APIs fit, and what would each cost in rupees?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need traffic-aware durations?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-007",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-011",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We're a Kochi school-bus tracking provider. We compute 2×10 distance matrices about 300,000 times a month. Which matrix APIs fit, and what would each cost in rupees?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need traffic-aware durations?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-007",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-012",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We're a Lucknow e-commerce returns operator. We compute 5×10 distance matrices about 200,000 times a month with live-traffic travel times. Which matrix APIs fit, and what would each cost in rupees?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need traffic-aware durations?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-007",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-013",
+    "query": "I don't know yet. Please proceed on what I already said.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We're a Indore agri-input distributor. We compute 4×4 distance matrices about 50,000 times a month. Which matrix APIs fit, and what would each cost in rupees?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you need traffic-aware durations?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-007",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-017",
+    "query": "Ola Maps Distance Matrix: we'd send 10 origins × 5 destinations about 2,000 times a month. How many API calls per matrix and what's the monthly cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DM-017",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-018",
+    "query": "Ola Maps Distance Matrix: we'd send 5 origins × 10 destinations about 20,000 times a month. How many API calls per matrix and what's the monthly cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DM-017",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-019",
+    "query": "Ola Maps Distance Matrix: we'd send 7 origins × 7 destinations about 30,000 times a month. How many API calls per matrix and what's the monthly cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DM-017",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-020",
+    "query": "Ola Maps Distance Matrix: we'd send 2 origins × 25 destinations about 100,000 times a month. How many API calls per matrix and what's the monthly cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DM-017",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-025",
+    "query": "Google Maps Platform quote: 10×10 matrices, 5,000 per month in India, existing project.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DM-025",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-030",
+    "query": "Google Maps Platform quote: 10×10 matrices, 120,000 per month in India, existing project.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DM-025",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-034",
+    "query": "Ola Maps vs Google for 10×10 matrices, 10,000 a month in India, with and without traffic. Which is cheaper?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DM-034",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-035",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Maps vs Google for 5×5 matrices, 100,000 a month in India, with and without traffic. Which is cheaper?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Traffic needed for all matrices?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-034",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-036",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Maps vs Google for 20×10 matrices, 20,000 a month in India, with and without traffic. Which is cheaper?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Traffic needed for all matrices?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-034",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-043",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We send 300 Google Distance Matrix requests a day with 2 origins and 3 destinations. Do we stay in the India free cap?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Do you use departure_time or side_of_road/heading?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-043",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-044",
+    "query": "Sandbox CRM ticket TKT-54746. Customer wrote:\n\"Google Distance Matrix returns MAX_ELEMENTS_EXCEEDED for our 15×10 request. Why?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DM-044",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-045",
+    "query": "Sandbox CRM ticket TKT-63953. Customer wrote:\n\"Google Distance Matrix gives MAX_DIMENSIONS_EXCEEDED with 30 destinations and 1 origin, even though that's only 30 elements.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DM-044",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-046",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Our 10×10 Google Distance Matrix with departure_time=now fails, but works without departure_time."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Exact origin/destination counts?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-046",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-047",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Google Distance Matrix returns OVER_DAILY_LIMIT. We haven't set any quota."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Is billing linked to this project?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-047",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-048",
+    "query": "Sandbox CRM ticket TKT-76182. Customer wrote:\n\"We get UNKNOWN_ERROR occasionally from Google Distance Matrix. Should we raise a ticket?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DM-048",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-049",
+    "query": "Sandbox CRM ticket TKT-93241. Customer wrote:\n\"Some elements in our Google Distance Matrix response have status NOT_FOUND while others are OK.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DM-049",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-050",
+    "query": "Customer message:\n\"A Google Distance Matrix element returns MAX_ROUTE_LENGTH_EXCEEDED for a Kanyakumari–Srinagar pair. Can we raise the limit?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-050",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-051",
+    "query": "Customer message:\n\"Google Distance Matrix doesn't return duration_in_traffic even though we pass traffic_model=best_guess.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-051",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-052",
+    "query": "Sandbox CRM ticket TKT-56005. Customer wrote:\n\"Can we parse Google Distance Matrix origin_addresses into street/city fields for our CRM?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DM-052",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-056",
+    "query": "Customer message:\n\"Google Compute Route Matrix rejects our 30×30 request. Isn't the limit 625?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-056",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-057",
+    "query": "Customer message:\n\"Compute Route Matrix with routingPreference TRAFFIC_AWARE_OPTIMAL fails on a 20×10 matrix.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-057",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-058",
+    "query": "Customer message:\n\"Our Compute Route Matrix calls start failing at peak when we send ~20 matrices of 25×10 per minute.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-058",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-060",
+    "query": "Customer message:\n\"Our Google Distance Matrix request uses 'lat, lng' with a space and returns odd results.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-060",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-061",
+    "query": "Customer message:\n\"Google Distance Matrix returns REQUEST_DENIED from our Node.js backend.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-061",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-062",
+    "query": "Customer message:\n\"Ola Distance Matrix rejects our 8 origins × 8 destinations request.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-062",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-065",
+    "query": "What units are Ola Distance Matrix distances and durations in?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DM-065",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-067",
+    "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Ola Distance Matrix returns 429 when our dispatcher refreshes ETAs every 10 seconds for 200 drivers."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Requests per minute?"
+      }
+    ],
+    "known_facts": [],
+    "bucket": "history",
+    "group": "GT-LBS-DM-067",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-068",
+    "query": "Do we authenticate Ola Distance Matrix with a header or a query param?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DM-068",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-069",
+    "query": "Is Ola Distance Matrix billed per request or per pair?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DM-069",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-072",
+    "query": "Some Mapbox Matrix cells come back null. Is the response broken?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DM-072",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-073",
+    "query": "Mapbox Matrix only returns durations. How do we get distances?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DM-073",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-075",
+    "query": "For one Mapbox Matrix request with 20 coordinates, how does Mapbox count the billable units? Is this request charged once or based on the matrix elements returned?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DM-075",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-077",
+    "query": "Sandbox CRM ticket TKT-36637. Customer wrote:\n\"Mapbox Matrix gives strange results for Indian cities; our coordinates are 12.97,77.59.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-DM-077",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-080",
+    "query": "Can we use router.project-osrm.org table service for our commercial fleet ETA matrix?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DM-080",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-086",
+    "query": "We plan 80M Ola Distance Matrix pairs a month and want a committed-use price.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-086",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-088",
+    "query": "Ola billing shows Distance Matrix charges higher than our request count × rate. Is Ola overcharging?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-DM-088",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-089",
+    "query": "Which matrix APIs give traffic-aware durations, and what's the catch for each?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DM-089",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-090",
+    "query": "Which matrix APIs work with addresses instead of coordinates?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DM-090",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-091",
+    "query": "Which providers' matrix APIs support travel modes beyond driving?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DM-091",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-092",
+    "query": "We need a 500×500 matrix nightly for depot planning. Which provider handles that in fewest calls?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DM-092",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-093",
+    "query": "Does Ola Maps cover a Distance Matrix between Indian cities and Kathmandu?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DM-093",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-102",
+    "query": "Google Distance Matrix transit with UK postcodes returns ZERO_RESULTS.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DM-102",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-103",
+    "query": "Can Google Distance Matrix give traffic duration using arrival_time instead of departure_time?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DM-103",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-104",
+    "query": "How do we pass a future departure_time to Google Distance Matrix?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DM-104",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-DM-105",
+    "query": "Google Distance Matrix departure_time traffic results look inaccurate.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DM-105",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-106",
+    "query": "Google Distance Matrix duration_in_traffic doesn't match the Google Maps app.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DM-106",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-107",
+    "query": "Google Distance Matrix gives impossibly short duration_in_traffic.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-DM-107",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-114",
+    "query": "Existing Google project: 150,000 traffic-aware Distance Matrix elements a month in India. Cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DM-114",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-115",
+    "query": "Existing Google project: 1,500,000 traffic-aware Distance Matrix elements a month in India. Cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DM-114",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-116",
+    "query": "Existing Google project: 6,000,000 traffic-aware Distance Matrix elements a month in India. Cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DM-114",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-120",
+    "query": "Google Route Matrix for two-wheelers in India: 7,000 elements a month. Cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DM-120",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-121",
+    "query": "Google Route Matrix for two-wheelers in India: 120,000 elements a month. Cost?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-DM-120",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-124",
+    "query": "How do we self-host OSRM for a matrix service, and what licence applies to the data?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DM-124",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-125",
+    "query": "OSRM table returns durations only. How do we also get distances?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-DM-125",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-206",
+    "query": "For dispatch in Nepal, we need traffic-aware travel times in a matrix. Who can do that?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DM-206",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-207",
+    "query": "For dispatch in Sri Lanka, we need traffic-aware travel times in a matrix. Who can do that?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DM-206",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-208",
+    "query": "For dispatch in Indonesia, we need traffic-aware travel times in a matrix. Who can do that?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DM-206",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-209",
+    "query": "We need walking-time matrices for a campus-delivery robot pilot in India. Which providers support walking?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DM-209",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-210",
+    "query": "We need walking-time matrices for a campus-delivery robot pilot in Thailand. Which providers support walking?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DM-209",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-211",
+    "query": "Would a self-hosted OSRM distance matrix backed by OpenStreetMap cover routes within Bhutan? What geographic coverage limitations are documented for that setup?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DM-211",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-212",
+    "query": "For a self-hosted OSRM distance matrix, can OpenStreetMap provide route coverage in Nepal? Which geographic coverage limits should we plan for?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-DM-211",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-216",
+    "query": "Our dispatcher recalculates about 2,000 matrix elements per minute. Which per-minute limits apply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DM-216",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-217",
+    "query": "Our dispatcher recalculates about 20,000 matrix elements per minute. Which per-minute limits apply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DM-216",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-219",
+    "query": "Ola Distance Matrix rejects our call with 8 origins and 8 destinations. Why?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DM-219",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-DM-220",
+    "query": "We want the most accurate traffic ETAs in a 12×12 matrix. Any limit we should know about?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-DM-220",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-DM-223",
+    "query": "Does Mappls' distance matrix let us choose shortest vs optimal routes, and use live traffic?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DM-223",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-225",
+    "query": "Can Google's Routes API give us a transit matrix for 15 stations × 10 offices?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-DM-225",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "query": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DM-228",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-DM-230",
+    "query": "To get traffic-aware trip durations from Google Distance Matrix, what does official documentation say we must set, and what element cap applies to those requests?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-DM-230",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-004",
+    "query": "Since this morning, Ola reverse-geocode returns '429 Reached monthly/minute rate limits' for most calls, and a few return 400 INVALID_LATLNG. Production is degraded. Help!",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-004",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-008",
+    "query": "Our Jaipur tour operator needs about 1,500,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-008",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-009",
+    "query": "Our Kochi school-bus tracking provider needs about 3,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-009",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-010",
+    "query": "Our Lucknow e-commerce returns operator needs about 4,500,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-010",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-011",
+    "query": "Our Indore agri-input distributor needs about 7,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-011",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-012",
+    "query": "Our Coimbatore home-services marketplace needs about 9,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-012",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-013",
+    "query": "Our Bhubaneswar ambulance dispatch service needs about 12,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-013",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-014",
+    "query": "Our Chandigarh real-estate portal needs about 400,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-014",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-033",
+    "query": "Customer message:\n\"We added result_type=street_address and now some points return ZERO_RESULTS.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-033",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-034",
+    "query": "Sandbox CRM ticket TKT-35162. Customer wrote:\n\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-RG-034",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-035",
+    "query": "Customer message:\n\"Google reverse geocoding gives the neighbour's house number. Is the API wrong?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-035",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-038",
+    "query": "Sandbox CRM ticket TKT-77826. Customer wrote:\n\"We reverse-geocode coordinates for rural customer locations with Google. When the result has no street address, what can we show?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-RG-038",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-039",
+    "query": "Customer message:\n\"Which Google reverse-geocode result should we display?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-039",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-040",
+    "query": "Customer message:\n\"Google reverse geocoding returns INVALID_REQUEST.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-040",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-045",
+    "query": "Customer message:\n\"How do we get the city from Google reverse geocoding?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-045",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-046",
+    "query": "Customer message:\n\"Return only the locality for a coordinate with Google reverse geocoding.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-046",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-061",
+    "query": "Mapbox reverse geocoding returns places in the Arctic for our Indian points.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-061",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-062",
+    "query": "Mapbox reverse geocoding with limit=5 returns 422.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-062",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-065",
+    "query": "A Mapbox Geocoding v6 batch job that reverse-geocodes our coordinates returns HTTP 429. What should we check?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-065",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-079",
+    "query": "Nominatim reverse sometimes returns a street 100 m away.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-079",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-080",
+    "query": "Nominatim reverse returns one result only. Can we get alternatives?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-080",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-083",
+    "query": "What attribution do we need when displaying results from the public Nominatim Reverse API?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-083",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-085",
+    "query": "PRODUCTION: Ola reverse geocode returns wrong city names (Mumbai points labelled 'Pune') since this morning.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-085",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-086",
+    "query": "All Ola reverse-geocode calls fail with 401/403 after we rotated OAuth credentials.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-086",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-087",
+    "query": "A government client wants 100M reverse geocodes a month with on-prem deployment.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-087",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-088",
+    "query": "A user reports Ola reverse geocoding shows their home in the wrong pin code.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "ownership",
+    "group": "GT-LBS-RG-088",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-091",
+    "query": "Which reverse geocoders handle Indian boundaries per Indian law?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-091",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-092",
+    "query": "Which reverse geocoders give a precision indicator?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-092",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-094",
+    "query": "Which reverse geocoders give POI names at a coordinate?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-094",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-095",
+    "query": "Which reverse geocoders support plus codes or a fallback for addressless rural points?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-095",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-096",
+    "query": "Free reverse geocoding options for a hobby app with 20,000 lookups a month?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-RG-096",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-097",
+    "query": "Which reverse geocoders accept language preferences?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-097",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-098",
+    "query": "Google reverse geocoding gives ZERO_RESULTS for some Indian coordinates outside Delhi and Mumbai.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-098",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-099",
+    "query": "Why does Google reverse geocoding return ZERO_RESULTS on some GPS coordinates?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-099",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-100",
+    "query": "Sandbox CRM ticket TKT-71137. Customer wrote:\n\"Coordinates from Google forward geocoding give ZERO_RESULTS in reverse geocoding.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "updates",
+    "group": "GT-LBS-RG-100",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-101",
+    "query": "Google reverse geocoding returns ZERO_RESULTS on the phone but works in the browser.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-101",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-102",
+    "query": "Google Geocode REQUEST_DENIED for reverse geocode with our Places-enabled key.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-102",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-103",
+    "query": "After adding a key restriction, Google reverse geocoding says 'not authorized'.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-103",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-104",
+    "query": "What's the Google Geocoding API request limit for reverse-geocoding coordinates?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-RG-104",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-105",
+    "query": "How do we get the city name from lat/lng with Google?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-105",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-106",
+    "query": "How do we get country, state and city from Google reverse geocoding results?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-106",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-107",
+    "query": "Retrieve only the postal code with Google reverse geocoding.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-107",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-108",
+    "query": "Return Google reverse geocoding results only in English.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-108",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-109",
+    "query": "Google reverse geocode doesn't return the exact known address.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-109",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-110",
+    "query": "Google geocoding then reverse geocoding gives a different address.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-110",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-111",
+    "query": "How do we get city/state/country from Mapbox reverse geocoding?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-111",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-112",
+    "query": "How many calls can our mobile app make to Nominatim for users' current address?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-112",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-115",
+    "query": "Reverse geocoding 10,000 points with geopy + Nominatim hits limits.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-115",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-116",
+    "query": "Nominatim reverse returns Thai characters incorrectly.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "interpretation",
+    "group": "GT-LBS-RG-116",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-117",
+    "query": "Google vs Mapbox reverse geocoding for 500,000 lookups a month (display only, no storage)?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-RG-117",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-118",
+    "query": "Google vs Mapbox reverse geocoding for 2,000,000 lookups a month (display only, no storage)?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-RG-117",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-119",
+    "query": "Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-RG-117",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-120",
+    "query": "Ola vs Mapbox reverse geocoding when we must store 300,000 results a month?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-RG-120",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-121",
+    "query": "Ola vs Mapbox reverse geocoding when we must store 900,000 results a month?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "pricecompare",
+    "group": "GT-LBS-RG-120",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-122",
+    "query": "Filter Google reverse geocoding to location_type=ROOFTOP only.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-122",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-123",
+    "query": "Filter Google reverse geocoding to location_type=RANGE_INTERPOLATED only.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-123",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-124",
+    "query": "Filter Google reverse geocoding to location_type=GEOMETRIC_CENTER only.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-124",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-125",
+    "query": "Filter Google reverse geocoding to location_type=APPROXIMATE only.",
+    "history": [],
+    "known_facts": [],
+    "bucket": "docs",
+    "group": "GT-LBS-RG-123",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-205",
+    "query": "Our map shows disputed borders for Indian users. Can Mapbox reverse geocoding return India's view of boundaries?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-RG-205",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-206",
+    "query": "Which worldview should our India-only app set when it sends coordinates to Mapbox Reverse Geocoding?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-RG-205",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-207",
+    "query": "Can reverse-geocoded addresses come back in Hindi for our delivery app?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-RG-207",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-208",
+    "query": "Can reverse-geocoded addresses come back in Bengali for our delivery app?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-RG-207",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-209",
+    "query": "Can reverse-geocoded addresses come back in Telugu for our delivery app?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-RG-207",
+    "fold": 3
+  },
+  {
+    "record_id": "GT-LBS-RG-210",
+    "query": "Will Mappls reverse geocoding give us the same detailed response in Nepal as in India?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-RG-210",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-211",
+    "query": "Will Mappls reverse geocoding give us the same detailed response in Bangladesh as in India?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "coveragecompare",
+    "group": "GT-LBS-RG-210",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-214",
+    "query": "Can we reverse geocode every 100 m grid cell of Mumbai using the public Nominatim server?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-RG-214",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-215",
+    "query": "Our app polls public Nominatim reverse every 30 seconds per user. Is that allowed?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-RG-214",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-216",
+    "query": "We want to batch reverse-geocode 2 million historical GPS points with nominatim.openstreetmap.org. OK?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-RG-214",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-217",
+    "query": "What's Google's default reverse geocoding throughput?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-RG-217",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-218",
+    "query": "For Google Reverse Geocoding, do our browser and server requests count together toward the per-minute quota?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-RG-217",
+    "fold": 4
+  },
+  {
+    "record_id": "GT-LBS-RG-219",
+    "query": "Mappls reverse geocoding suddenly returns 403 Forbidden. What should we check?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-RG-219",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-220",
+    "query": "Ola reverse geocoding gives '429 Reached monthly/minute rate limits'. Fix?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "limitscompare",
+    "group": "GT-LBS-RG-220",
+    "fold": 1
+  },
+  {
+    "record_id": "GT-LBS-RG-221",
+    "query": "How do I get only the city name from Nominatim reverse?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-221",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-222",
+    "query": "Can Nominatim reverse return just the suburb instead of the full address?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-221",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-223",
+    "query": "Mapbox reverse geocoding errors when we pass limit=3. Why?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-223",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-224",
+    "query": "Can we store Mapbox reverse-geocoding results in our database and show them on a Google map?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "capabilitycompare",
+    "group": "GT-LBS-RG-224",
+    "fold": 2
+  },
+  {
+    "record_id": "GT-LBS-RG-227",
+    "query": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-227",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-228",
+    "query": "A logistics prospect wants to reverse-geocode driver GPS pings into addresses shown in Hindi, and they may store the results. What should we ask before recommending a provider?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-228",
+    "fold": 5
+  },
+  {
+    "record_id": "GT-LBS-RG-230",
+    "query": "A prospect says they only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision, and they need an address broken into elements. What should we ask, and which documented parameters matter?",
+    "history": [],
+    "known_facts": [],
+    "bucket": "qualification",
+    "group": "GT-LBS-RG-230",
+    "fold": 1
+  }
+]

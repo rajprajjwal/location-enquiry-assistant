@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": \"data_quality\", \"reason\": \"The customer is reporting an address-quality issue with Google reverse geocoding results.\"}",
+  "raw": "{\"category\": \"data_quality\", \"reason\": \"The customer is reporting an address-quality issue with Google reverse geocoding results.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 278,
+    "completion_tokens": 29,
+    "total_tokens": 307
+  },
+  "latency_ms": 847,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

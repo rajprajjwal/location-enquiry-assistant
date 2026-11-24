@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"geographic_matching\",\n      \"value\": \"whether you require a hard geographic restriction or a location bias is acceptable\",\n      \"evidence\": \"whether you require a hard geographic restriction or a location bias is acceptable\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"geographic_matching\"],\n      \"decision_impact\": \"Distinguish exclusion of out-of-area results from geographic ranking preferences.\"\n    }\n  ],\n  \"reason\": \"The customer is asking if one autocomplete request can be restricted to all 20 countries, which requires determining if a hard geographic restriction or a location bias is acceptable.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"geographic_matching\",\n      \"value\": \"whether you require a hard geographic restriction or a location bias is acceptable\",\n      \"evidence\": \"whether you require a hard geographic restriction or a location bias is acceptable\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"geographic_matching\"],\n      \"decision_impact\": \"Distinguish exclusion of out-of-area results from geographic ranking preferences.\"\n    }\n  ],\n  \"reason\": \"The customer is asking if one autocomplete request can be restricted to all 20 countries, which requires determining if a hard geographic restriction or a location bias is acceptable.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1977,
+    "completion_tokens": 143,
+    "total_tokens": 2120
+  },
+  "latency_ms": 3434,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

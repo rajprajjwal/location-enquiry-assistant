@@ -1,0 +1,113 @@
+{
+  "status": "assistant_review_proposals_not_applied",
+  "scope": "Selected working-eval qualification cases only. Original questions remain the scoring reference; no workbook edits.",
+  "independent_human_acceptance": false,
+  "proposals": [
+    {
+      "record_ids": [
+        "GT-LBS-AC-021",
+        "GT-LBS-AC-022",
+        "GT-LBS-AC-023",
+        "GT-LBS-AC-024"
+      ],
+      "field": "details_sku",
+      "classification": "explicit_supplied",
+      "excerpt": "ending in Place Details Essentials",
+      "proposal": "Remove the repeated question asking for the terminating SKU."
+    },
+    {
+      "record_ids": [
+        "GT-LBS-RG-010",
+        "GT-LBS-RG-014"
+      ],
+      "field": "storage_required",
+      "classification": "explicit_supplied",
+      "excerpt": "we must store the addresses",
+      "proposal": "Remove the storage yes/no question and retain the lookup-trigger question."
+    },
+    {
+      "record_ids": [
+        "GT-LBS-DIR-050"
+      ],
+      "field": "traffic_required",
+      "classification": "explicit_supplied",
+      "excerpt": "fastest route under live traffic",
+      "proposal": "Remove the question asking whether live traffic is needed."
+    },
+    {
+      "record_ids": [
+        "GT-LBS-DIR-049"
+      ],
+      "field": "max_stops",
+      "classification": "ambiguous",
+      "excerpt": "daily beat plans with 15–20 outlets",
+      "proposal": "Ask whether those outlets are visited in one route and must be submitted together. Do not assume the daily outlet count is a per-request waypoint count."
+    },
+    {
+      "record_ids": [
+        "GT-LBS-RG-228"
+      ],
+      "field": "languages",
+      "classification": "explicit_supplied",
+      "excerpt": "addresses shown in Hindi",
+      "proposal": "Remove the repeated language question; retain workload and storage confirmation because volumes are missing and may store is uncertain."
+    },
+    {
+      "record_ids": [
+        "GT-LBS-RG-230"
+      ],
+      "fields": [
+        "rooftop_hard_filter",
+        "address_elements_required"
+      ],
+      "classification": "explicit_supplied",
+      "excerpts": [
+        "only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision",
+        "they need an address broken into elements"
+      ],
+      "proposal": "Remove repeated precision and breakdown confirmations. If provider selection is needed, ask which providers to evaluate without presupposing Google and Nominatim."
+    },
+    {
+      "record_ids": [
+        "GT-LBS-DM-034"
+      ],
+      "field": "traffic_scope",
+      "classification": "explicit_supplied_alternatives",
+      "excerpt": "with and without traffic",
+      "proposal": "Compare both requested scenarios instead of asking the customer to choose one."
+    },
+    {
+      "record_ids": [
+        "GT-LBS-DM-228"
+      ],
+      "field": "billing_basis",
+      "classification": "documentation_derived",
+      "proposal": "Obtain billing units from provider documentation. Ask for monthly and peak matrix request frequency, then normalize equivalent workloads."
+    }
+  ],
+  "implementation_observations_not_label_edits": [
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "field": "max_stops",
+      "observation": "A daily outlet count does not establish one route or one request. Existing inference may suppress a legitimate route-size question. No change included in this validation-repair comparison."
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "field": "usage_geography",
+      "observation": "The customer already places matrix usage in India, but the candidate asks again for usage geography together with billing country. Review operating-region to usage-geography fact binding separately."
+    },
+    {
+      "record_id": "GT-LBS-AC-233",
+      "field": "storage_required",
+      "observation": "The matched yes/no storage question does not independently demonstrate retention-duration or licensing-rights coverage."
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "fields": [
+        "provider",
+        "current_provider"
+      ],
+      "observation": "On reopen, both before and after ask for the map provider again after Mapbox was supplied. Answered state uses current_provider while pending_reply uses provider. Preservation passes because both versions share this existing alias-binding defect; it does not prove the follow-up is correct."
+    }
+  ]
+}

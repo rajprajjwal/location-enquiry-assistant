@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"coverage_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"our app is Indian\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":\"Google Directions\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"coverage_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"our app is Indian\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":\"Google Directions\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1330,
+    "completion_tokens": 145,
+    "total_tokens": 1475
+  },
+  "latency_ms": 5548,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

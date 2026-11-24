@@ -1,0 +1,92 @@
+{
+  "cohort": "fresh",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "cases": 26,
+        "owner_correct": 26,
+        "owner_accuracy": 1.0,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 0,
+        "escalation_false_negatives": 0,
+        "escalation_precision": null,
+        "escalation_recall": null,
+        "escalation_reason_coverage": null
+      },
+      "changes": []
+    },
+    "technical_checks": {
+      "metrics": {
+        "cases": 26,
+        "owner_correct": 26,
+        "owner_accuracy": 1.0,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 0,
+        "escalation_false_negatives": 0,
+        "escalation_precision": null,
+        "escalation_recall": null,
+        "escalation_reason_coverage": null
+      },
+      "changes": []
+    },
+    "personal_use": {
+      "metrics": {
+        "cases": 26,
+        "owner_correct": 26,
+        "owner_accuracy": 1.0,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 0,
+        "escalation_false_negatives": 0,
+        "escalation_precision": null,
+        "escalation_recall": null,
+        "escalation_reason_coverage": null
+      },
+      "changes": []
+    },
+    "country_settings": {
+      "metrics": {
+        "cases": 26,
+        "owner_correct": 26,
+        "owner_accuracy": 1.0,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 0,
+        "escalation_false_negatives": 0,
+        "escalation_precision": null,
+        "escalation_recall": null,
+        "escalation_reason_coverage": null
+      },
+      "changes": []
+    },
+    "free_allowance": {
+      "metrics": {
+        "cases": 26,
+        "owner_correct": 26,
+        "owner_accuracy": 1.0,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 0,
+        "escalation_false_negatives": 0,
+        "escalation_precision": null,
+        "escalation_recall": null,
+        "escalation_reason_coverage": null
+      },
+      "changes": []
+    },
+    "combined": {
+      "metrics": {
+        "cases": 26,
+        "owner_correct": 26,
+        "owner_accuracy": 1.0,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 0,
+        "escalation_false_negatives": 0,
+        "escalation_precision": null,
+        "escalation_recall": null,
+        "escalation_reason_coverage": null
+      },
+      "changes": []
+    }
+  },
+  "method": "Saved-interpretation replay; cached model handoffs retained except explicit first-line rule eligibility."
+}

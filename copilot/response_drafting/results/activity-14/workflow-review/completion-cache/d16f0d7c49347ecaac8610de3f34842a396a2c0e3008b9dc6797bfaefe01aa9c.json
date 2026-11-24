@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"travel_mode\",\n      \"value\": \"Boolean\",\n      \"evidence\": \"whether live-traffic ETAs are required\"\n    },\n    {\n      \"field\": \"traffic_required\",\n      \"value\": \"Boolean\",\n      \"evidence\": \"whether live-traffic ETAs are required\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Check the required matrix features before applying the documented price and limits.\"\n    },\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Check the required matrix features before applying the documented price and limits.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about the billing model for the Ola Distance Matrix API, which is billed per pair of origins and destinations. The applicable_decisions require understanding the required matrix features, such as travel mode and traffic requirements, to determine the pricing and limits.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"travel_mode\",\n      \"value\": \"Boolean\",\n      \"evidence\": \"whether live-traffic ETAs are required\"\n    },\n    {\n      \"field\": \"traffic_required\",\n      \"value\": \"Boolean\",\n      \"evidence\": \"whether live-traffic ETAs are required\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Check the required matrix features before applying the documented price and limits.\"\n    },\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Check the required matrix features before applying the documented price and limits.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about the billing model for the Ola Distance Matrix API, which is billed per pair of origins and destinations. The applicable_decisions require understanding the required matrix features, such as travel mode and traffic requirements, to determine the pricing and limits.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2437,
+    "completion_tokens": 209,
+    "total_tokens": 2646
+  },
+  "latency_ms": 4972,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,359 @@
+{
+  "scope": "First 78 completed baseline working-eval records; this is an autocomplete-heavy prefix, not a representative full-run score.",
+  "records": 78,
+  "correct": {
+    "api": 72,
+    "intent": 68
+  },
+  "failures": [
+    {
+      "record_id": "GT-LBS-AC-003",
+      "query": "To save money, can our mobile app call the public Nominatim server directly for type-ahead address search? We have about 20 searches per second at peak.",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "sales_qualification"
+      },
+      "actual": {
+        "api": "autocomplete",
+        "intent": "capability_match"
+      },
+      "mismatched_fields": [
+        "intent"
+      ],
+      "assessment": {
+        "intent": "Ambiguous sales-qualification versus capability boundary. The existing hosting follow-up is appropriate; do not change behaviour merely to force the intent label."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": [
+        "Could you confirm whether self-hosting is acceptable or a managed API is required?"
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-072",
+      "query": "Sandbox CRM opportunity OPP-24830. Customer wrote:\n\"Are Mapbox /category searches billed per session too?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "pricing_quote"
+      },
+      "actual": {
+        "api": "reverse_geocode",
+        "intent": "pricing_quote"
+      },
+      "mismatched_fields": [
+        "api"
+      ],
+      "assessment": {
+        "api": "Reverse geocoding is not supported by the /category-search enquiry. The original autocomplete bucket is a broad product grouping; category search is not itself type-ahead. Do not invent an autocomplete alias from the record ID."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": [
+        "Could you confirm whether results must be stored?"
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-082",
+      "query": "What rate can we hit the public Nominatim search API at?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "coverage_limits"
+      },
+      "actual": {
+        "api": "reverse_geocode",
+        "intent": "coverage_limits"
+      },
+      "mismatched_fields": [
+        "api"
+      ],
+      "assessment": {
+        "api": "Explicit Nominatim search is not reverse geocoding, but the query does not say interactive type-ahead. Original autocomplete label is scope-ambiguous; preserve primary scoring."
+      },
+      "route": "escalated",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-084",
+      "query": "How do we limit Nominatim search to India and get up to 50 results?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      },
+      "actual": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to"
+      },
+      "mismatched_fields": [
+        "api"
+      ],
+      "assessment": {
+        "api": "Nominatim forward search is not reverse geocoding. No typing or suggestion requirement is stated, so do not globally map the provider to autocomplete."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "query": "Our Nominatim requests get blocked. We don't send any User-Agent.",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "troubleshooting"
+      },
+      "actual": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      },
+      "mismatched_fields": [
+        "api"
+      ],
+      "assessment": {
+        "api": "Nominatim requests and a missing User-Agent do not identify search versus reverse. Original API is not inferable from the supplied query; no record-specific correction."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-091",
+      "query": "Our Google Places bill exceeded our budget by 10× after a bot attack on our search box.",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "human_handoff"
+      },
+      "actual": {
+        "api": null,
+        "intent": "human_handoff"
+      },
+      "mismatched_fields": [
+        "api"
+      ],
+      "assessment": {
+        "api": "Google Places search-box context provides a clear autocomplete cue. Fixed by a general product/operation alias."
+      },
+      "route": "escalated",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-092",
+      "query": "Which autocomplete APIs support session-based pricing?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "capability_match"
+      },
+      "actual": {
+        "api": "autocomplete",
+        "intent": "pricing_quote"
+      },
+      "mismatched_fields": [
+        "intent"
+      ],
+      "assessment": {
+        "intent": "Clear capability question about session-pricing support, not a requested estimate. Current quote classification contributes two unnecessary staff questions about debouncing and Place Details."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": [
+        "Could you confirm whether you debounce keystrokes?",
+        "Could you confirm whether you call Place Details after a selection?"
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "query": "How do we restrict autocomplete results to India on each provider?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "capability_match"
+      },
+      "actual": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      },
+      "mismatched_fields": [
+        "intent"
+      ],
+      "assessment": {
+        "intent": "Docs-how-to versus comparative capability is a legitimate boundary. The blocking current-provider question is separately inappropriate for a request covering each provider."
+      },
+      "route": "clarification_needed",
+      "pending_reply": {
+        "field": "provider",
+        "task": "How do we restrict autocomplete results to India on each provider?"
+      },
+      "staff_questions": [
+        "Which map provider are you using?"
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-099",
+      "query": "Google Places Autocomplete: we need results from 5 countries (CH, FR, DE, AT, IT). Is only one country allowed?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      },
+      "actual": {
+        "api": "autocomplete",
+        "intent": "coverage_limits"
+      },
+      "mismatched_fields": [
+        "intent"
+      ],
+      "assessment": {
+        "intent": "Original docs-how-to label is debatable: the user explicitly asks whether only one country is allowed. Coverage-limits is semantically defensible. Preserve the original label and report the conflict."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-103",
+      "query": "Google Places Autocomplete 'types' only seems to work with establishment.",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "troubleshooting"
+      },
+      "actual": {
+        "api": "autocomplete",
+        "intent": "capability_match"
+      },
+      "mismatched_fields": [
+        "intent"
+      ],
+      "assessment": {
+        "intent": "Clear observed parameter malfunction: types only seems to work with establishment. Troubleshooting is supported more directly than capability matching."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-109",
+      "query": "Do we need session tokens with Google autocomplete?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "pricing_quote"
+      },
+      "actual": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      },
+      "mismatched_fields": [
+        "intent"
+      ],
+      "assessment": {
+        "intent": "Original pricing-quote label is under-supported by the standalone question about needing session tokens. Docs-how-to is defensible; no price calculation or workload is requested."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-204",
+      "query": "Our marketplace operates in 20 countries. Can one autocomplete request be restricted to all 20?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "coverage_limits"
+      },
+      "actual": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      },
+      "mismatched_fields": [
+        "intent"
+      ],
+      "assessment": {
+        "intent": "Clear per-request country-restriction capacity question. Coverage-limits is more specific than generic parameter guidance."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-212",
+      "query": "We're launching in Dubai. Is Ola Maps Autocomplete an option there?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "coverage_limits"
+      },
+      "actual": {
+        "api": "autocomplete",
+        "intent": "capability_match"
+      },
+      "mismatched_fields": [
+        "intent"
+      ],
+      "assessment": {
+        "intent": "Availability in Dubai is a geographic-coverage question; coverage-limits is more specific than a generic capability label."
+      },
+      "route": "escalated",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-218",
+      "query": "Can our web app call nominatim.openstreetmap.org on every keystroke for suggestions?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      },
+      "actual": {
+        "api": "autocomplete",
+        "intent": "capability_match"
+      },
+      "mismatched_fields": [
+        "intent"
+      ],
+      "assessment": {
+        "intent": "Permitted use of public Nominatim on every keystroke is an official usage-policy question, rather than a generic product capability. The current escalation also warrants separate grounding/relevance review."
+      },
+      "route": "escalated",
+      "pending_reply": null,
+      "staff_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-219",
+      "query": "Our mobile app uses public Nominatim for live address suggestions and got blocked. Why?",
+      "history": [],
+      "expected": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      },
+      "actual": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      },
+      "mismatched_fields": [
+        "api",
+        "intent"
+      ],
+      "assessment": {
+        "api": "Live address suggestions provide an explicit autocomplete cue. Fixed by a general interactive-suggestion alias.",
+        "intent": "Original docs-how-to label is debatable because the user reports an integration that got blocked. Troubleshooting is semantically defensible; preserve the original label."
+      },
+      "route": "final",
+      "pending_reply": null,
+      "staff_questions": []
+    }
+  ],
+  "reference_sha256": "4c8a08245b1b46b6e0250cc124b9f23c5231a582a36a22e3348272e9f8c34c6d",
+  "prediction_prefix_sha256": "899605c4820e9e47c9994bb84ef0239148e408b1808db165b278be6953718dd8",
+  "label_changes": 0,
+  "frozen_records": 0,
+  "holdout_records": 0
+}

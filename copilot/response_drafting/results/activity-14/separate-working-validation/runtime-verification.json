@@ -1,0 +1,12 @@
+{
+  "evaluated_runtime": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/pricing-qualification/runtime",
+  "evaluated_snapshot_unchanged": true,
+  "live_files_changed_since_snapshot": [
+    "copilot/model_gateway/client.py",
+    "copilot/enquiry_workflow/cases.py",
+    "copilot/enquiry_workflow/workflow.py",
+    "copilot/registered_tools/tool_registry.py",
+    "copilot/enquiry_interpretation/interpret.py"
+  ],
+  "note": "The paired validation deliberately used the locked runtime. New live reliability instrumentation was not part of this validation and was left untouched."
+}

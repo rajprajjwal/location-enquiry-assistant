@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"400,000 sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": true,\n      \"evidence\": \"ending in Place Details Essentials\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Select the applicable session-termination billing rule.\"\n    }\n  ],\n  \"reason\": \"The provided facts include the monthly volume, region, and details SKU, which are necessary for determining the cost. However, the exact session-termination billing rule for the selected details SKU is not explicitly confirmed, which affects the pricing calculation.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"400,000 sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": true,\n      \"evidence\": \"ending in Place Details Essentials\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Select the applicable session-termination billing rule.\"\n    }\n  ],\n  \"reason\": \"The provided facts include the monthly volume, region, and details SKU, which are necessary for determining the cost. However, the exact session-termination billing rule for the selected details SKU is not explicitly confirmed, which affects the pricing calculation.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1127,
+    "completion_tokens": 192,
+    "total_tokens": 1319
+  },
+  "latency_ms": 4438,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "record_id": "GT-LBS-RG-219",
+    "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+    "gold_sha256": "fcc5bff24917e5e1ba98decf0d108b49940f179ddd87413e5c38ac6a86960365",
+    "whole": [],
+    "facts": [],
+    "reason": "A failing request as sent does not ask whether traffic spiked or whether a deployment used a new server/domain. Current request headers alone do not establish a recent deployment change."
+  },
+  {
+    "record_id": "GT-LBS-RG-228",
+    "questions_sha256": "209f200b860b63e65054ba1d378aacf28d7eb640e6db4d1d82e601bb51d01fbf",
+    "gold_sha256": "442905abd1dcaee50925b78460de98c35eb0e6ac4e6897540fab6adaeb262af7",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "reason": "The first question fully requests peak rate and monthly workload. The second requests storage, but public-community-endpoint acceptability does not identify public Nominatim, and temporary-only results do not identify Mapbox temporary geocoding. Those named-provider qualifications are absent from the supplied question context. No result-language question is asked; the primary gold remains unchanged even though Hindi is already supplied."
+  },
+  {
+    "record_id": "GT-LBS-RG-230",
+    "questions_sha256": "210de21c44def89da8f0f65f17b95102d1f74c93084fdb91c3b27036197e387a",
+    "gold_sha256": "374fdca5018becda7d2aba5cee25d5969b259035f7e09a4d826b7ceb08d9c103",
+    "whole": [],
+    "facts": [],
+    "reason": "No question asks the hard-filter or address-element requirements. The generic other-providers question does not identify the gold exclusion of Google and Nominatim, and neither provider is named in the supplied enquiry/history. Without an explicit exclusion anchor it could be answered with Google or Nominatim, so the specific gold fact is not matched."
+  }
+]

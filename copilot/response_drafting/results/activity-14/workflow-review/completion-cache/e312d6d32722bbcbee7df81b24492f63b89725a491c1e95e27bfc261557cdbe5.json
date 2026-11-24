@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The Ola Maps Distance Matrix API has a maximum limit of 50 pairs per request (origins × destinations ≤ 50). The customer is sending 8 origins and 8 destinations, resulting in 64 pairs, which exceeds the limit. This likely causes the API to reject the request.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The Ola Maps Distance Matrix API has a maximum limit of 50 pairs per request (origins × destinations ≤ 50). The customer is sending 8 origins and 8 destinations, resulting in 64 pairs, which exceeds the limit. This likely causes the API to reject the request.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1752,
+    "completion_tokens": 72,
+    "total_tokens": 1824
+  },
+  "latency_ms": 1878,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The customer is experiencing failures during peak times when sending a high volume of route matrix requests. This suggests a potential rate limiting or quota issue, which can be investigated by inspecting one request and testing it in isolation.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The customer is experiencing failures during peak times when sending a high volume of route matrix requests. This suggests a potential rate limiting or quota issue, which can be investigated by inspecting one request and testing it in isolation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1476,
+    "completion_tokens": 55,
+    "total_tokens": 1531
+  },
+  "latency_ms": 1490,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry identifies the configuration fix as the customer reports a misspelt locality name that offends residents, which is a content or data issue rather than a technical configuration problem.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry identifies the configuration fix as the customer reports a misspelt locality name that offends residents, which is a content or data issue rather than a technical configuration problem.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1236,
+    "completion_tokens": 44,
+    "total_tokens": 1280
+  },
+  "latency_ms": 8611,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

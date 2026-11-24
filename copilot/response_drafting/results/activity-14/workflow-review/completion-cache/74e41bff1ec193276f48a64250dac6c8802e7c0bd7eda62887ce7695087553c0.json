@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": null, \"reason\": \"The enquiry is about a technical decision regarding display of geocode results, which does not require a formal handoff.\"}",
+  "raw": "{\"category\": null, \"reason\": \"The enquiry is about a technical decision regarding display of geocode results, which does not require a formal handoff.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 272,
+    "completion_tokens": 34,
+    "total_tokens": 306
+  },
+  "latency_ms": 940,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

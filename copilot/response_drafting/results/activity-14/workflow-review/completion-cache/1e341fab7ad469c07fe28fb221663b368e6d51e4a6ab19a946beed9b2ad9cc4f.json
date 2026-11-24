@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"usage_geography\",\n      \"value\": \"India\",\n      \"evidence\": \"matrices, 120,000 per month in India\"\n    },\n    {\n      \"field\": \"origin_count\",\n      \"value\": 10,\n      \"evidence\": \"10\\u00d710\"\n    },\n    {\n      \"field\": \"destination_count\",\n      \"value\": 10,\n      \"evidence\": \"10\\u00d710\"\n    },\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": {\n        \"raw\": \"matrices, 120,000 per month\",\n        \"requests_per_month\": 120000,\n        \"unit\": \"matrices_per_month\"\n      },\n      \"evidence\": \"matrices, 120,000 per month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"input_type\"],\n      \"decision_impact\": \"Choose the correct request representation and applicable processing constraints.\"\n    }\n  ],\n  \"reason\": \"The input_type is required to determine the correct request representation and applicable processing constraints for the Distance Matrix API.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"usage_geography\",\n      \"value\": \"India\",\n      \"evidence\": \"matrices, 120,000 per month in India\"\n    },\n    {\n      \"field\": \"origin_count\",\n      \"value\": 10,\n      \"evidence\": \"10\\u00d710\"\n    },\n    {\n      \"field\": \"destination_count\",\n      \"value\": 10,\n      \"evidence\": \"10\\u00d710\"\n    },\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": {\n        \"raw\": \"matrices, 120,000 per month\",\n        \"requests_per_month\": 120000,\n        \"unit\": \"matrices_per_month\"\n      },\n      \"evidence\": \"matrices, 120,000 per month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"input_type\"],\n      \"decision_impact\": \"Choose the correct request representation and applicable processing constraints.\"\n    }\n  ],\n  \"reason\": \"The input_type is required to determine the correct request representation and applicable processing constraints for the Distance Matrix API.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2416,
+    "completion_tokens": 299,
+    "total_tokens": 2715
+  },
+  "latency_ms": 6947,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

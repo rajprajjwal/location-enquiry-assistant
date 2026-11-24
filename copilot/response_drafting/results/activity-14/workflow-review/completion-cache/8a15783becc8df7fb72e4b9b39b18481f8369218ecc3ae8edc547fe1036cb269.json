@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the Google Distance Matrix API not returning the expected duration_in_traffic despite using the traffic_model=best_guess parameter. The documentation indicates that the traffic_model parameter may only be specified for driving directions where the request includes a departure_time. The customer's issue may be due to not including a departure_time in their request, which is a configuration issue. Since the enquiry already identifies the configuration fix, no further action is needed.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the Google Distance Matrix API not returning the expected duration_in_traffic despite using the traffic_model=best_guess parameter. The documentation indicates that the traffic_model parameter may only be specified for driving directions where the request includes a departure_time. The customer's issue may be due to not including a departure_time in their request, which is a configuration issue. Since the enquiry already identifies the configuration fix, no further action is needed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2128,
+    "completion_tokens": 99,
+    "total_tokens": 2227
+  },
+  "latency_ms": 2543,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

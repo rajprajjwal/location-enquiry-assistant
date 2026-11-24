@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume_assumption\",\n      \"value\": true,\n      \"evidence\": \"Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    },\n    {\n      \"fields\": [\"billing_country\", \"usage_geography\"],\n      \"decision_impact\": \"Qualify the applicable regional price schedule.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing pricing for reverse geocoding services, but the required facts about storage needs, billing country, and usage geography are missing, which are critical for determining the appropriate licensing, pricing, and regional compliance.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume_assumption\",\n      \"value\": true,\n      \"evidence\": \"Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    },\n    {\n      \"fields\": [\"billing_country\", \"usage_geography\"],\n      \"decision_impact\": \"Qualify the applicable regional price schedule.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing pricing for reverse geocoding services, but the required facts about storage needs, billing country, and usage geography are missing, which are critical for determining the appropriate licensing, pricing, and regional compliance.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1882,
+    "completion_tokens": 185,
+    "total_tokens": 2067
+  },
+  "latency_ms": 4392,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

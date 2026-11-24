@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_quote\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{}}",
+  "raw": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_quote\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1307,
+    "completion_tokens": 48,
+    "total_tokens": 1355
+  },
+  "latency_ms": 1234,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

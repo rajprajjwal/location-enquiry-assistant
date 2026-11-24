@@ -1,0 +1,35 @@
+{
+  "baseline": {
+    "cases": 42,
+    "owner_correct": 40,
+    "owner_accuracy": 0.9523809523809523,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": null,
+    "escalation_recall": null,
+    "escalation_reason_coverage": null
+  },
+  "candidate": {
+    "cases": 42,
+    "owner_correct": 41,
+    "owner_accuracy": 0.9761904761904762,
+    "escalation_true_positives": 0,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": null,
+    "escalation_recall": null,
+    "escalation_reason_coverage": null
+  },
+  "changes": [
+    {
+      "record_id": "GT-LBS-RG-096",
+      "query": "Free reverse geocoding options for a hobby app with 20,000 lookups a month?",
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Support L1"
+    }
+  ],
+  "frozen_cases": 0,
+  "holdout_cases": 0
+}

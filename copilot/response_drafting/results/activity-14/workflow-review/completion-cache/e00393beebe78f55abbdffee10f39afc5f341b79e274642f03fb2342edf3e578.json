@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The Directions URL with 23 waypoints may be exceeding the URL length limit. To diagnose, we need the actual request to check for encoding issues or URL length.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The Directions URL with 23 waypoints may be exceeding the URL length limit. To diagnose, we need the actual request to check for encoding issues or URL length.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1396,
+    "completion_tokens": 45,
+    "total_tokens": 1441
+  },
+  "latency_ms": 1278,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

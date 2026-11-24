@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The error 'NoSegment' indicates that the coordinates could not snap to a street segment. To diagnose this, we need the actual request that was sent to the OSRM server, as it may involve specific formatting or parameters that are not evident from the coordinates alone.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The error 'NoSegment' indicates that the coordinates could not snap to a street segment. To diagnose this, we need the actual request that was sent to the OSRM server, as it may involve specific formatting or parameters that are not evident from the coordinates alone.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2894,
+    "completion_tokens": 65,
+    "total_tokens": 2959
+  },
+  "latency_ms": 1866,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

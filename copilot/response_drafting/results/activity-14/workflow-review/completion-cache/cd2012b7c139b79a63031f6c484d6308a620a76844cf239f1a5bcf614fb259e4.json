@@ -1,0 +1,14 @@
+{
+  "text": "{\"pricing\": true, \"items\": [{\"provider\": \"Mapbox\", \"api\": \"directions\", \"requests\": 3000000, \"sessions\": null, \"keystrokes_per_session\": null, \"origins\": null, \"destinations\": null, \"calls\": null, \"traffic\": null, \"basic\": false}]}",
+  "raw": "{\"pricing\": true, \"items\": [{\"provider\": \"Mapbox\", \"api\": \"directions\", \"requests\": 3000000, \"sessions\": null, \"keystrokes_per_session\": null, \"origins\": null, \"destinations\": null, \"calls\": null, \"traffic\": null, \"basic\": false}]}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 77,
+    "total_tokens": 493
+  },
+  "latency_ms": 1861,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

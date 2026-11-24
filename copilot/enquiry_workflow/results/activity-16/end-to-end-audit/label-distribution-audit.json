@@ -1,0 +1,78 @@
+[
+  {
+    "cohort": "working",
+    "unknown_status_expected_owners_by_interpreted_intent": {
+      "docs_how_to": {
+        "Support L1": 41,
+        "Account team (Sales)": 2
+      },
+      "null": {
+        "Support L1": 3
+      },
+      "pricing_comparison": {
+        "Account team (Sales)": 30,
+        "Support L1": 4
+      },
+      "troubleshooting": {
+        "Support L1": 35,
+        "Maps engineering": 2,
+        "Support L2": 1
+      },
+      "capability_match": {
+        "Account team (Sales)": 16,
+        "Support L1": 23
+      },
+      "coverage_limits": {
+        "Support L1": 15,
+        "Account team (Sales)": 5
+      },
+      "sales_qualification": {
+        "Account team (Sales)": 14,
+        "Support L1": 1
+      },
+      "pricing_quote": {
+        "Account team (Sales)": 3,
+        "Support L1": 37
+      },
+      "human_handoff": {
+        "Maps engineering": 1,
+        "Support L2": 2,
+        "Account team (Sales)": 2,
+        "Support L1": 7
+      }
+    }
+  },
+  {
+    "cohort": "frozen",
+    "unknown_status_expected_owners_by_interpreted_intent": {
+      "pricing_comparison": {
+        "Account team (Sales)": 9,
+        "Support L1": 2
+      },
+      "docs_how_to": {
+        "Support L1": 7,
+        "Account team (Sales)": 4
+      },
+      "pricing_quote": {
+        "Support L1": 4,
+        "Account team (Sales)": 5
+      },
+      "capability_match": {
+        "Support L1": 7,
+        "Account team (Sales)": 7
+      },
+      "coverage_limits": {
+        "Support L1": 3
+      },
+      "sales_qualification": {
+        "Account team (Sales)": 4
+      },
+      "troubleshooting": {
+        "Support L1": 7
+      },
+      "null": {
+        "Support L1": 1
+      }
+    }
+  }
+]

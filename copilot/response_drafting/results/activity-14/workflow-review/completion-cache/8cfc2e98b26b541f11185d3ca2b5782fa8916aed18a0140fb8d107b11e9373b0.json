@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Pro\",\n      \"evidence\": \"ends with Place Details Pro\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about billing for Autocomplete (New) requests when a session ends with a Place Details Pro request. The decision impact is to determine how autocomplete sessions end for billing, which is necessary to confirm if the 12 Autocomplete requests are billed.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Pro\",\n      \"evidence\": \"ends with Place Details Pro\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about billing for Autocomplete (New) requests when a session ends with a Place Details Pro request. The decision impact is to determine how autocomplete sessions end for billing, which is necessary to confirm if the 12 Autocomplete requests are billed.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2053,
+    "completion_tokens": 139,
+    "total_tokens": 2192
+  },
+  "latency_ms": 3381,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

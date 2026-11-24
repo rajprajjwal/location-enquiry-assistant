@@ -1,0 +1,224 @@
+{
+  "record_id": "GT-LBS-RG-213",
+  "result": {
+    "status": "final",
+    "ownership_review": {
+      "customer_status": "unknown",
+      "owner": "Support L1",
+      "provisional": true,
+      "status_deferred": false,
+      "confirmation_needed": true,
+      "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for a documented product limit or behavior.",
+      "suggested_question": "Are you already using this service, or evaluating it as a new customer?"
+    },
+    "clarifying_questions": {
+      "needed": false,
+      "questions": []
+    },
+    "response_draft": {
+      "draft_text": "Mapbox | Geocoding API | API Docs | Mapbox > Geocoding restrictions and rate limits \u200b\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 1000 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .\n\nMapbox | Geocoding v5 API | API Docs | Mapbox > Geocoding restrictions and rate limits\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 600 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .\n\nMapbox | API Docs | Mapbox > Rate limits \u200b\n\nEach Mapbox API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a HTTP 429 Too Many Requests response from the API. If you need a rate limit that is higher than the default, contact the Mapbox sales team .\n\nThe following table lists the default rate limit for each API. Note that all rate limits are counted per access token , not per account.",
+      "citations": [
+        {
+          "url": "https://docs.mapbox.com/api/search/geocoding/",
+          "span": "Mapbox | Geocoding API | API Docs | Mapbox > Geocoding restrictions and rate limits \u200b\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 1000 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .",
+          "supports_claim": "Mapbox | Geocoding API | API Docs | Mapbox > Geocoding restrictions and rate limits \u200b\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 1000 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://docs.mapbox.com/api/search/geocoding-v5/",
+          "span": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Geocoding restrictions and rate limits\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 600 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .",
+          "supports_claim": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Geocoding restrictions and rate limits\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 600 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://docs.mapbox.com/api/guides",
+          "span": "Mapbox | API Docs | Mapbox > Rate limits \u200b\n\nEach Mapbox API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a HTTP 429 Too Many Requests response from the API. If you need a rate limit that is higher than the default, contact the Mapbox sales team .\n\nThe following table lists the default rate limit for each API. Note that all rate limits are counted per access token , not per account.",
+          "supports_claim": "Mapbox | API Docs | Mapbox > Rate limits \u200b\n\nEach Mapbox API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a HTTP 429 Too Many Requests response from the API. If you need a rate limit that is higher than the default, contact the Mapbox sales team .\n\nThe following table lists the default rate limit for each API. Note that all rate limits are counted per access token , not per account.",
+          "quote_or_summary": "verbatim"
+        }
+      ],
+      "is_refusal": false,
+      "refusal": null
+    },
+    "outputs": {
+      "response_draft": {
+        "draft_text": "Mapbox | Geocoding API | API Docs | Mapbox > Geocoding restrictions and rate limits \u200b\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 1000 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .\n\nMapbox | Geocoding v5 API | API Docs | Mapbox > Geocoding restrictions and rate limits\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 600 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .\n\nMapbox | API Docs | Mapbox > Rate limits \u200b\n\nEach Mapbox API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a HTTP 429 Too Many Requests response from the API. If you need a rate limit that is higher than the default, contact the Mapbox sales team .\n\nThe following table lists the default rate limit for each API. Note that all rate limits are counted per access token , not per account.",
+        "citations": [
+          {
+            "url": "https://docs.mapbox.com/api/search/geocoding/",
+            "span": "Mapbox | Geocoding API | API Docs | Mapbox > Geocoding restrictions and rate limits \u200b\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 1000 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .",
+            "supports_claim": "Mapbox | Geocoding API | API Docs | Mapbox > Geocoding restrictions and rate limits \u200b\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 1000 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://docs.mapbox.com/api/search/geocoding-v5/",
+            "span": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Geocoding restrictions and rate limits\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 600 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .",
+            "supports_claim": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Geocoding restrictions and rate limits\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 600 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us .",
+            "quote_or_summary": "verbatim"
+          },
+          {
+            "url": "https://docs.mapbox.com/api/guides",
+            "span": "Mapbox | API Docs | Mapbox > Rate limits \u200b\n\nEach Mapbox API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a HTTP 429 Too Many Requests response from the API. If you need a rate limit that is higher than the default, contact the Mapbox sales team .\n\nThe following table lists the default rate limit for each API. Note that all rate limits are counted per access token , not per account.",
+            "supports_claim": "Mapbox | API Docs | Mapbox > Rate limits \u200b\n\nEach Mapbox API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a HTTP 429 Too Many Requests response from the API. If you need a rate limit that is higher than the default, contact the Mapbox sales team .\n\nThe following table lists the default rate limit for each API. Note that all rate limits are counted per access token , not per account.",
+            "quote_or_summary": "verbatim"
+          }
+        ],
+        "is_refusal": false,
+        "refusal": null
+      },
+      "clarifying_questions": {
+        "needed": false,
+        "questions": []
+      },
+      "qualification_details": {
+        "use_case_api": {
+          "api": "reverse_geocode",
+          "use_case": null
+        },
+        "region": null,
+        "monthly_volume": null,
+        "current_provider": null,
+        "timeline": null,
+        "budget": null,
+        "technical_constraints": null,
+        "decision_maker": null,
+        "missing_required_fields": [
+          "region",
+          "monthly_volume",
+          "current_provider",
+          "timeline"
+        ],
+        "complete": false
+      },
+      "proposed_record_update": {
+        "applicable": false,
+        "requires_human_approval": false,
+        "approval_status": "not_applicable",
+        "executed": false,
+        "proposal": null
+      },
+      "comparison": {
+        "applicable": false,
+        "providers": [],
+        "dimensions": [],
+        "assumptions": [],
+        "source_urls": []
+      },
+      "responsible_role": {
+        "owner": "Support L1",
+        "team": "Support",
+        "should_escalate": false,
+        "severity": "SEV4",
+        "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for a documented product limit or behavior."
+      },
+      "next_action": {
+        "action_type": "answer_directly",
+        "description": "Review the drafted reply.",
+        "requires_human_approval": false,
+        "approval_status": "not_applicable",
+        "executed": false
+      }
+    },
+    "proposed_actions": [],
+    "step_count": 4,
+    "steps": [
+      {
+        "step": 1,
+        "action": "plan",
+        "status": "completed",
+        "latency_ms": 2
+      },
+      {
+        "step": 2,
+        "action": "document_search",
+        "status": "completed",
+        "latency_ms": 885
+      },
+      {
+        "step": 3,
+        "action": "draft",
+        "status": "completed",
+        "latency_ms": 558
+      },
+      {
+        "step": 4,
+        "action": "critic",
+        "status": "completed",
+        "latency_ms": 446
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool_name": "document_search",
+        "registered": true,
+        "invocation_timestamp": "2026-11-23T14:46:52.001757+00:00",
+        "input_metadata": {
+          "field_count": 2,
+          "collection_sizes": []
+        },
+        "input_validation": "passed",
+        "output_validation": "passed",
+        "validation_result": "passed",
+        "execution_status": "success",
+        "output_metadata": {
+          "field_count": 1,
+          "collection_sizes": [
+            6
+          ]
+        },
+        "error_details": null,
+        "execution_duration_ms": 885.04
+      }
+    ],
+    "critic": {
+      "verdict": "pass",
+      "reason": null,
+      "reviews": [
+        {
+          "verdict": "pass",
+          "reason": null
+        }
+      ]
+    },
+    "retrieved_evidence": [
+      {
+        "source_url": "https://docs.mapbox.com/accounts/guides/tokens",
+        "relevant_passage": "Mapbox | Token management | Accounts and pricing | Mapbox > Troubleshooting URL restrictions \u200b\n\n- Verify allowed URLs don't contain unsupported characters . Check the strings you have added to the token's allowed list for wildcard characters and/or IP addresses, which are not supported.\n\n- Add api.mapbox.com as an allowedURL . Depending on the use case, you might need to add api.mapbox.com to your access token's allowed list. For example, if you are generating a URL with the Mapbox Studio Share Button or using an iFrame that points to api.mapbox.com , with a restricted token, you should include api.mapbox.com on the token's allowed list.\n\nIf I cannot resolve my issue, what information should I include in my support request?\n\nWe're happy to help with your questions . We can provide the most prompt resolution when you include the following information with your request:\n\n- Account ID or registered email address\n\n- Token name or ID\n\n- Browser(s) and versions\n\n- Full failing API request (if possible)\n\n- Screenshot of a failing request, including the referer header of the request (with developer tools / inspect)\n\n- Description of expected behavior, actual behavior, and things you have tried to mediate the situation\n\nWe'll try to diagnose the issue and provide tips that help you produce the desired behavior.\n\nWas this page helpful? Yes No"
+      },
+      {
+        "source_url": "https://docs.mapbox.com/api/search/geocoding/",
+        "relevant_passage": "Mapbox | Geocoding API | API Docs | Mapbox > Geocoding restrictions and rate limits \u200b\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 1000 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us ."
+      },
+      {
+        "source_url": "https://docs.mapbox.com/api/search/geocoding-v5/",
+        "relevant_passage": "Mapbox | Geocoding v5 API | API Docs | Mapbox > Geocoding restrictions and rate limits\n\nTo protect the Geocoding API and maximize service stability, Mapbox rate limits Geocoding API requests.\n\n- The default Geocoding API rate limit is 600 requests per minute, but can be adjusted on a per-account basis. Mapbox may automatically adjust customer rate limits to accommodate high traffic applications, or prevent abuse, if deemed appropriate.\n\n- An HTTP error code of 429 will be returned if the rate limit is reached.\n\n- If you require a higher rate limit, contact us ."
+      },
+      {
+        "source_url": "https://docs.mapbox.com/api/guides",
+        "relevant_passage": "Mapbox | API Docs | Mapbox > Rate limits \u200b\n\nEach Mapbox API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a HTTP 429 Too Many Requests response from the API. If you need a rate limit that is higher than the default, contact the Mapbox sales team .\n\nThe following table lists the default rate limit for each API. Note that all rate limits are counted per access token , not per account."
+      },
+      {
+        "source_url": "https://docs.mapbox.com/api/guides",
+        "relevant_passage": "Mapbox | API Docs | Mapbox > Rate limit headers \u200b\n\nMapbox API responses may contain the following rate limit headers:\n\n| Header | Description |\n| X-Rate-Limit-Interval | The length of the rate-limiting interval, in seconds. This will always be 60 . |\n| X-Rate-Limit-Limit | The maximum number of requests you can make in the current interval before reaching the limit. The rate limit for each individual API is listed in the rate limits section. |\n| X-Rate-Limit-Reset | A Unix timestamp that shows when the current interval will end and the rate limit counter will reset. |\n\nThe presence of these headers is expected and does not mean there is an error condition."
+      },
+      {
+        "source_url": "https://docs.mapbox.com/api/guides",
+        "relevant_passage": "Mapbox | API Docs | Mapbox > Rate limits \u200b\n\nThe following table lists the default rate limit for each API. Note that all rate limits are counted per access token , not per account.\n\n| API | Default coordinates per request | Default requests per minute |\n| Vector Tiles API | N/A | 100,000 requests per minute |\n| Raster Tiles API | N/A | 100,000 requests per minute |\n| Static Images API | N/A | 1,250 requests per minute |\n| Static Tiles API | N/A | 6,000 requests per minute |\n| Styles API (Read) | N/A | 2,000 requests per minute |\n| Styles API (Write) | N/A | 50 requests per minute |\n| Tilequery API | N/A | 600 requests per minute |\n| Uploads API | N/A | 60 requests per minute |\n| Mapbox Tiling Service (Read) | N/A | 3,000 requests per minute |\n| Mapbox Tiling Service (Write) | N/A | 100 requests per minute |\n| Mapbox Tiling Service (Publish) | N/A | 2 requests per minute |\n| Datasets API (Read) | N/A | 480 requests per minute |\n| Datasets API (Write) | N/A | 40 requests per minute |\n| Directions API | 25 coordinates per request | 300 requests per minute |\n| Isochrone API | 1 coordinates per request | 300 requests per minute |\n| Map Matching API | 100 coordinates per request | 300 requests per minute |\n| Matrix API ( driving , walking , and cycling profiles) | 25 coordinates per request | 60 requests per minute |\n| Matrix API ( driving-traffic profile) | 10 coordinates per request | 30 requests per minute |\n| Optimization API | 12 coordinates per request | 300 requests per minute |\n| Geocoding API | N/A | 1000 requests per minute |\n| Geocoding v5 API | N/A | 600 requests per minute |\n| Tokens API | N/A | 100 requests per minute |"
+      }
+    ]
+  },
+  "calls": [
+    {
+      "latency_ms": 3869,
+      "finish_reason": "stop"
+    },
+    {
+      "latency_ms": 558,
+      "finish_reason": "stop"
+    },
+    {
+      "latency_ms": 434,
+      "finish_reason": "stop"
+    }
+  ]
+}

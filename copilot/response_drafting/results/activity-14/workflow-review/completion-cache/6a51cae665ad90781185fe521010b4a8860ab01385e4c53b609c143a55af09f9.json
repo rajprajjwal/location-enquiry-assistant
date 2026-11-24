@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about the cost per billing option for Autocomplete (Legacy) in India with 300,000 sessions and 9 requests. The missing material decisions are whether Place Details are called after a selection and if keystrokes are debounced, as these affect the number of billable requests and the overall cost calculation.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is asking about the cost per billing option for Autocomplete (Legacy) in India with 300,000 sessions and 9 requests. The missing material decisions are whether Place Details are called after a selection and if keystrokes are debounced, as these affect the number of billable requests and the overall cost calculation.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1170,
+    "completion_tokens": 182,
+    "total_tokens": 1352
+  },
+  "latency_ms": 4304,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

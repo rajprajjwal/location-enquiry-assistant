@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"traffic_required\",\n      \"value\": true,\n      \"evidence\": \"under live traffic\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"Hyderabad\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"monthly_volume\"],\n      \"decision_impact\": \"Estimate the recurring workload and cost.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Determine vehicle-specific routing support.\"\n    },\n    {\n      \"fields\": [\"max_stops\"],\n      \"decision_impact\": \"Check route shape against waypoint limits.\"\n    },\n    {\n      \"fields\": [\"existing_project\", \"commercial_plan\"],\n      \"decision_impact\": \"Establish product eligibility and applicable commercial terms.\"\n    }\n  ],\n  \"reason\": \"The customer has specified the need for live traffic routing but has not provided details on monthly API usage, travel mode, maximum stops, or project/commercial plan status, which are critical for estimating workload, selecting appropriate routing features, and determining eligibility for the service.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"traffic_required\",\n      \"value\": true,\n      \"evidence\": \"under live traffic\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"Hyderabad\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"monthly_volume\"],\n      \"decision_impact\": \"Estimate the recurring workload and cost.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Determine vehicle-specific routing support.\"\n    },\n    {\n      \"fields\": [\"max_stops\"],\n      \"decision_impact\": \"Check route shape against waypoint limits.\"\n    },\n    {\n      \"fields\": [\"existing_project\", \"commercial_plan\"],\n      \"decision_impact\": \"Establish product eligibility and applicable commercial terms.\"\n    }\n  ],\n  \"reason\": \"The customer has specified the need for live traffic routing but has not provided details on monthly API usage, travel mode, maximum stops, or project/commercial plan status, which are critical for estimating workload, selecting appropriate routing features, and determining eligibility for the service.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1891,
+    "completion_tokens": 245,
+    "total_tokens": 2136
+  },
+  "latency_ms": 5700,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

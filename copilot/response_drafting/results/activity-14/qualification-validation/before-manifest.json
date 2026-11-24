@@ -1,0 +1,10 @@
+{
+  "sources": {
+    "copilot/qualification/planning.py": "48bbfd8cff61405d6d7aa909bc96640c76adef2d51fb13dba48865a2551b9cdc",
+    "copilot/qualification/contract.py": "4b65e2cca094a54cf29e5f9959e2db9fc8f2c26c407827961ced89b33854d645",
+    "copilot/model_gateway/reliability.py": "fbf7e3ae321b17673fb125c9780a37d8c2c5322cdc1622ad0ed1701b51c233b5"
+  },
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "frozen_cases": 0,
+  "holdout_cases": 0
+}

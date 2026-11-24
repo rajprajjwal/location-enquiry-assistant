@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"human_handoff\",\"sub_intent\":null,\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "raw": "{\"intent\":\"human_handoff\",\"sub_intent\":null,\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1359,
+    "completion_tokens": 48,
+    "total_tokens": 1407
+  },
+  "latency_ms": 1248,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,129 @@
+[
+  {
+    "record_id": "GT-LBS-AC-088",
+    "query": "Our prepaid Ola credits ran out and autocomplete stopped for paying users. Can you restore it now?",
+    "history": [],
+    "questions": [
+      "Which account reference is affected? Please do not share credentials."
+    ],
+    "gold": [
+      {
+        "question": "Account ID?",
+        "facts": [
+          "The account ID."
+        ]
+      }
+    ],
+    "questions_sha256": "46e6ad2bde8a899c9bdc94e0f053bad50b0c05cb521240c5405f645c49db4160",
+    "gold_sha256": "5faf6d8d2490063a2f52a543620b2d6b13fc2e99b5481a6107da10b0b67a75df"
+  },
+  {
+    "record_id": "GT-LBS-AC-090",
+    "query": "A customer reports Ola Autocomplete suggests a misspelt locality name that offends residents. What do we do?",
+    "history": [],
+    "questions": [
+      "Could you share the exact search query and the incorrect prediction returned for it, with personal details removed?"
+    ],
+    "gold": [
+      {
+        "question": "Exact query and prediction?",
+        "facts": [
+          "The exact query submitted.",
+          "The prediction returned for that query."
+        ]
+      }
+    ],
+    "questions_sha256": "06e06d11d8d706256582cd9759d243f934f75dadc5019fdf28ccb16d9f0c8c14",
+    "gold_sha256": "563dc18c34a1f98d83124608b9123b61216abddfd71a9744b5a0d49b4ba4aa85"
+  },
+  {
+    "record_id": "GT-LBS-AC-204",
+    "query": "Our marketplace operates in 20 countries. Can one autocomplete request be restricted to all 20?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether you require a hard geographic restriction or a location bias is acceptable?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need hard restriction or just a bias toward those countries?",
+        "facts": [
+          "Whether a hard country restriction or a geographic bias is required."
+        ]
+      }
+    ],
+    "questions_sha256": "e8056eb267dbd06f0a2bb821db0423cb0405f177cb558c190121df155c7dd48b",
+    "gold_sha256": "0dba318967756532d9b45582d55582b9f9d15f6416b96454d8b9c3e8b2fd0dd4"
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "query": "Hi, we're an intercity bus aggregator and want a directions/routing API for route previews between cities. What do you recommend?",
+    "history": [],
+    "questions": [
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm maximum stops or waypoints per route?",
+      "Could you confirm expected monthly API workload?",
+      "Could you confirm whether your Google Cloud project is new or existing and whether you have an Ola Maps contract?"
+    ],
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "The number of route requests per month."
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "Whether live-traffic ETAs are required."
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "The vehicle types."
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "The number of stops per route."
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "Whether an existing Google project is available.",
+          "Whether an Ola contract is available."
+        ]
+      }
+    ],
+    "questions_sha256": "e9b91928c64041800d6b877fb7c6f680deceb226d1c7c01f02b5f4ea9955cf71",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d"
+  },
+  {
+    "record_id": "GT-LBS-DIR-086",
+    "query": "A developer accidentally pushed our Ola Maps API key to a public GitHub repo. What should we do right now?",
+    "history": [],
+    "questions": [
+      "When was the credential first exposed publicly?",
+      "Have you noticed any unusual usage or traffic spikes since the exposure?"
+    ],
+    "gold": [
+      {
+        "question": "When was the key exposed?",
+        "facts": [
+          "When the key was exposed."
+        ]
+      },
+      {
+        "question": "Any unusual usage spikes?",
+        "facts": [
+          "Whether unusual usage spikes occurred."
+        ]
+      }
+    ],
+    "questions_sha256": "365d15743fa5d31c7e300b2aea88a9cbe4016823243716d3b22857db21db04b2",
+    "gold_sha256": "1699e9f8dff672f02ab1818f1008d08dcaf1a8b5855f63ee97f82967e02ffb20"
+  }
+]

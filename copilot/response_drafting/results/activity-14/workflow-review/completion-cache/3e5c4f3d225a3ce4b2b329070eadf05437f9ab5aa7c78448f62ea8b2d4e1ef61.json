@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": \"advanced_support\", \"reason\": \"The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation.\"}",
+  "raw": "{\"category\": \"advanced_support\", \"reason\": \"The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 289,
+    "completion_tokens": 38,
+    "total_tokens": 327
+  },
+  "latency_ms": 1008,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

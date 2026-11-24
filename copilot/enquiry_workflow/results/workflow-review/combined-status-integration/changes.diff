@@ -1,0 +1,179 @@
+--- before/copilot/enquiry_workflow/cases.py
++++ after/copilot/enquiry_workflow/cases.py
+@@ -11,6 +11,7 @@
+ from .approval_sources import backfill_approval_sources
+ from .case_memory import interpretation_facts, load_conversation, turn_event
+ from .providers import bind_confirmed_provider, provider_reply
++from .ownership_status import customer_status_reply
+ from .sandbox_updates import record_target
+ from .workflow import run_enquiry
+ from copilot.model_gateway.reliability import query_scope, active_query
+@@ -49,7 +50,16 @@
+     task = query
+     confirmed_field = None
+     confirmed_provider = None
+-    if pending and pending["field"] in {"provider", "current_provider"}:
++    ownership_query = None
++    if pending and pending['field'] == 'customer_status':
++        question = history[-1]['text'] if history and history[-1]['role'] == 'assistant' else ''
++        status_reply = customer_status_reply(query, question, bound=True)
++        if status_reply is not None:
++            effective_status = status_reply
++            task = pending['task']
++            ownership_query = query
++            confirmed_field = 'customer_status'
++    elif pending and pending["field"] in {"provider", "current_provider"}:
+         provider = provider_reply(query)
+         if provider:
+             task = f"{pending['task']} Provider: {provider}."
+@@ -85,6 +95,7 @@
+         record_snapshot=sandbox.get(con, target) if target else None,
+         confirmed_customer_status=effective_status,
+         confirmed_provider=confirmed_provider,
++        ownership_query=ownership_query,
+     )
+     if shared is not None:
+         result = {**result, "diagnostic_context": {
+@@ -168,6 +179,8 @@
+     observed_status, observed_deferral = review_customer_status(
+         query, last_question, interpretation, confirmed_customer_status,
+     )
++    if confirmed_field == 'customer_status':
++        observed_status, observed_deferral = effective_status, False
+     # Store new evidence only; deleting its source must remove the confirmation.
+     if observed_status != "unknown" or observed_deferral:
+         event["ownership_status"] = {
+@@ -176,6 +189,9 @@
+             "source": "staff_confirmation" if observed_status == confirmed_customer_status else "customer_message",
+             "confirmed_status_input": confirmed_customer_status,
+         }
++        if confirmed_field == 'customer_status':
++            event['ownership_status']['source'] = 'customer_message'
++            event['ownership_status']['reply_binding'] = 'pending_customer_status'
+     if shared is not None:
+         event["diagnostic_state"] = shared.model_dump(mode="json")
+     result["reliability"] = active_query().snapshot()
+--- before/copilot/enquiry_workflow/ownership_status.py
++++ after/copilot/enquiry_workflow/ownership_status.py
+@@ -12,6 +12,48 @@
+     r"|\balready\b.{0,45}\b(?:using|use|customer)\b",
+     re.I,
+ )
++_CUSTOMER_QUESTION = re.compile(
++    r"\b(?:new|existing)\b.{0,60}\bcustomer\b|\balready\b.{0,45}\bcustomer\b", re.I,
++)
++_USAGE_QUESTION = re.compile(r"\balready\b.{0,45}\b(?:using|use)\b", re.I)
++_SETUP_TARGET = re.compile(r"\b(?:project|(?:api[ -]?)?key|token|credential|account|setup)\b", re.I)
++
++
++def _customer_relationship_question(question):
++    if _CUSTOMER_QUESTION.search(question):
++        return True
++    usage = _USAGE_QUESTION.search(question)
++    if not usage:
++        return False
++    target = re.split(r"[?,;]|\b(?:with|through|via|under|for)\b", question[usage.end():], maxsplit=1, flags=re.I)[0]
++    return bool(target.strip()) and not _SETUP_TARGET.search(target)
++
++
++def customer_status_reply(query, question='', *, bound=False):
++    """Bind a short answer only to one customer-status question."""
++    if not bound and not _customer_relationship_question(question):
++        return None
++    if question and (not _customer_relationship_question(question) or question.count('?') > 1
++        or ';' in question or re.search(
++            r'\b(?:and|also|or)\s+(?:what|which|how|when|where|why|do|does|should|can|is|are|would|will|have)\b'
++            r'|\band\b.{0,60}\b(?:monthly volume|currency|requests|rate|region|country|budget|timeline)\b',
++            question, re.I,
++        )):
++        return None
++    answer = query.strip().casefold().rstrip('.!')
++    if answer in {'existing', 'existing customer', 'already using it'}:
++        return 'existing'
++    if answer in {'new', 'new customer', 'evaluating it'}:
++        return 'new'
++    if answer not in {'yes', 'no'} or not question:
++        return None
++    # A yes/no answer cannot resolve an either/or choice or a negated question.
++    if re.search(r"\b(?:new|not|never|no longer)\b|n't\b", question, re.I):
++        return None
++    existing = re.search(r'\bexisting\s+customer\b|\balready\b.{0,35}\b(?:using|use)\b', question, re.I)
++    if existing:
++        return 'existing' if answer == 'yes' else 'new'
++    return None
+ 
+ 
+ def review_customer_status(query, history, interpretation, confirmed_customer_status=None):
+@@ -36,12 +78,9 @@
+         if turn["role"] != "user":
+             continue
+         explicit = customer_status(customer_question(text))
+-        if _STATUS_QUESTION.search(previous_assistant):
+-            answer = text.strip().lower().rstrip(".!")
+-            if answer in {"existing", "existing customer", "already using it"}:
+-                explicit = "existing"
+-            elif answer in {"new", "new customer", "evaluating it"}:
+-                explicit = "new"
++        reply = customer_status_reply(text, previous_assistant)
++        if reply is not None:
++            explicit = reply
+         if confirmed and index < len(turns) - 1:
+             previous_assistant = ""
+             continue
+--- before/copilot/enquiry_workflow/workflow.py
++++ after/copilot/enquiry_workflow/workflow.py
+@@ -734,6 +734,7 @@
+     record_snapshot: dict | None = None,
+     confirmed_customer_status: str | None = None,
+     confirmed_provider: str | None = None,
++    ownership_query: str | None = None,
+ ) -> dict[str, Any]:
+     """Run one enquiry using validated Activity 2 output and optional retrieval."""
+     state: _State = {"steps": [], "reviews": [], "last_search": None}
+@@ -746,7 +747,7 @@
+     except ReliabilityError as exc:
+         return _result({**state, "terminal_reason": str(exc)}, interpretation=interpretation, query=query)
+     routing = route_enquiry(query, interpretation, history=history, client=client,
+-                            confirmed_customer_status=confirmed_customer_status)
++                            confirmed_customer_status=confirmed_customer_status, ownership_query=ownership_query)
+     earlier = prior_customer_question(history)
+     latest = customer_question(enquiry["query"])
+     question = documentation_context(latest, earlier)
+--- before/copilot/enquiry_workflow/escalation.py
++++ after/copilot/enquiry_workflow/escalation.py
+@@ -86,6 +86,7 @@
+ 
+ def _route_enquiry(
+     query: str, interpretation: InterpretationOutput, *, history=(), client: LLMClient | None = None, confirmed_customer_status=None,
++    ownership_query: str | None = None,
+ ) -> RoutingDecision:
+     """Use approved rules for clear signals and bounded model classification for uncertain handoffs."""
+     match = _CUSTOMER_MESSAGE.match(query)
+@@ -105,7 +106,8 @@
+     provider_count = len(detect(context)["providers"])
+     from .ownership_status import review_customer_status
+ 
+-    customer_status, status_deferred = review_customer_status(query, history, interpretation, confirmed_customer_status)
++    status_query = query if ownership_query is None else ownership_query
++    customer_status, status_deferred = review_customer_status(status_query, history, interpretation, confirmed_customer_status)
+     role = escalation_policy.routine_owner(
+         context, interpretation, provider_count=provider_count,
+         customer_status_override=customer_status,
+@@ -142,13 +144,15 @@
+ 
+ def route_enquiry(
+     query: str, interpretation: InterpretationOutput, *, history=(), client: LLMClient | None = None, confirmed_customer_status=None,
++    ownership_query: str | None = None,
+ ) -> RoutingDecision:
+     """Expose provisional ownership while keeping the selected route intact."""
+     from .ownership_status import ownership_review
+ 
+     routing = _route_enquiry(query, interpretation, history=history, client=client,
+-                             confirmed_customer_status=confirmed_customer_status)
+-    review = ownership_review(query, history, interpretation, routing, confirmed_customer_status)
++                             confirmed_customer_status=confirmed_customer_status, ownership_query=ownership_query)
++    status_query = query if ownership_query is None else ownership_query
++    review = ownership_review(status_query, history, interpretation, routing, confirmed_customer_status)
+     return {**routing, "reason": review["reason"], "ownership_review": review}
+ 
+ 

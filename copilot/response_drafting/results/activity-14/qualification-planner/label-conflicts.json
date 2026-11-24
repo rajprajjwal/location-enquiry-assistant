@@ -1,0 +1,37 @@
+{
+  "status": "pre_prediction_audit_not_a_GT_edit",
+  "conflicts": {
+    "GT-LBS-AC-021": [
+      "details_sku"
+    ],
+    "GT-LBS-AC-022": [
+      "details_sku"
+    ],
+    "GT-LBS-AC-023": [
+      "details_sku"
+    ],
+    "GT-LBS-AC-024": [
+      "details_sku"
+    ],
+    "GT-LBS-RG-010": [
+      "storage_required"
+    ],
+    "GT-LBS-RG-014": [
+      "storage_required"
+    ],
+    "GT-LBS-DIR-050": [
+      "traffic_required"
+    ],
+    "GT-LBS-DIR-049": [
+      "max_stops"
+    ],
+    "GT-LBS-RG-228": [
+      "languages"
+    ],
+    "GT-LBS-RG-230": [
+      "rooftop_hard_filter",
+      "address_elements_required"
+    ]
+  },
+  "note": "Primary score retains every original question. Explicitly supplied requirements should not be asked again. Some remaining questions also need independent review of materiality."
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"150,000 address-search sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"Mumbai\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The cost calculation for autocomplete depends on whether Place Details are called after a selection and if keystrokes are debounced, which affects the number of billable requests.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"150,000 address-search sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"Mumbai\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The cost calculation for autocomplete depends on whether Place Details are called after a selection and if keystrokes are debounced, which affects the number of billable requests.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1391,
+    "completion_tokens": 183,
+    "total_tokens": 1574
+  },
+  "latency_ms": 4255,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

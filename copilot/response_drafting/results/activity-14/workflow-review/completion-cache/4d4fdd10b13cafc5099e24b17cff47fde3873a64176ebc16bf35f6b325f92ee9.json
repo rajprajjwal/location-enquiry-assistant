@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"docs_how_to\",\"sub_intent\":\"parameter_question\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"docs_how_to\",\"sub_intent\":\"parameter_question\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1353,
+    "completion_tokens": 142,
+    "total_tokens": 1495
+  },
+  "latency_ms": 3311,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

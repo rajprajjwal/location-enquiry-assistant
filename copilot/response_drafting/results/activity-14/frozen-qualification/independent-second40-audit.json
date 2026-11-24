@@ -1,0 +1,404 @@
+{
+  "reviewer_type": "assistant_independent_semantic_crosscheck",
+  "source_gold_sha256": "7c5c44fb2f1d216957585b7edaf765406b791da2c13decd6c05cd0e4d63000fb",
+  "scope": "Last40 frozen cases independently judged before reading second-review annotations. No app, GT, cohort or threshold edits.",
+  "cases": [
+    {
+      "record_id": "GT-LBS-DM-026",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+      "whole": [
+        [
+          1,
+          1
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "notes": "Coordinates/addresses/placeIDs asks the same input-representation decision as coordinates-versus-addresses; the additional place-ID option does not add an independent decision. One whole match and its atom."
+    },
+    {
+      "record_id": "GT-LBS-DM-059",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-085",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-087",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-094",
+      "questions_sha256": "2548b8ad034e185ff1388733cdb05e0941397e3c9fef421b32905b2959ffb079",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold question list is empty; generated questions stay unmatched under unchanged gold."
+    },
+    {
+      "record_id": "GT-LBS-DM-097",
+      "questions_sha256": "165b79a60e91cf2c94c067292186b3f1fe144098e62afb1049855901ce85e1f3",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold question list is empty; generated questions stay unmatched under unchanged gold."
+    },
+    {
+      "record_id": "GT-LBS-DM-117",
+      "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold question list is empty; generated questions stay unmatched under unchanged gold."
+    },
+    {
+      "record_id": "GT-LBS-DM-118",
+      "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold question list is empty; generated questions stay unmatched under unchanged gold."
+    },
+    {
+      "record_id": "GT-LBS-DM-201",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-214",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-218",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-221",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "whole": [],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "notes": "Live-traffic requirement is explicitly requested and earns its atom. The same prediction independently asks vehicle/travel mode, so it does not preserve the standalone gold question granularity."
+    },
+    {
+      "record_id": "GT-LBS-DM-222",
+      "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+      "whole": [],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "notes": "Live-traffic requirement is explicitly requested and earns its atom. Vehicle/travel mode is an additional independent decision bundled into the prediction, so no whole-question match."
+    },
+    {
+      "record_id": "GT-LBS-DM-224",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-226",
+      "questions_sha256": "2548b8ad034e185ff1388733cdb05e0941397e3c9fef421b32905b2959ffb079",
+      "whole": [],
+      "facts": [
+        [
+          1,
+          3,
+          2
+        ]
+      ],
+      "notes": "The first prediction requests the prospect's live-traffic capability and earns gold3/fact2. Matrix dimensions are not workload volume. No billing location, Legacy product enablement, display, retention/redistribution rights are requested. Mapbox-profile selection does not substitute for the Google product facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-227",
+      "questions_sha256": "2548b8ad034e185ff1388733cdb05e0941397e3c9fef421b32905b2959ffb079",
+      "whole": [],
+      "facts": [],
+      "notes": "No atomic credit: a generic origin/destination count does not request typical and maximum counts separately; hourly/monthly matrix operation frequency and concurrency are absent. A generic yes/no live-traffic question and Mapbox-profile yes/no do not establish the requested traffic-condition profile, departure-time conditions, or permission to split. This applies the prelocked contextual/narrow mapping and preserves the original meanings."
+    },
+    {
+      "record_id": "GT-LBS-DM-231",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-232",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-DM-233",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-001",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-005",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "whole": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "notes": "Storage and lookup trigger questions are equivalent in meaning and granularity to the two gold questions."
+    },
+    {
+      "record_id": "GT-LBS-RG-006",
+      "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+      "whole": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "notes": "Storage and user-triggered-versus-periodic lookup questions match both complete gold questions."
+    },
+    {
+      "record_id": "GT-LBS-RG-007",
+      "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+      "whole": [
+        [
+          1,
+          2
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "notes": "Only the lookup-trigger question matches. Storage is supplied in the input but not asked, so it remains a miss under unchanged frozen gold."
+    },
+    {
+      "record_id": "GT-LBS-RG-015",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold question list is empty; generated questions stay unmatched under unchanged gold."
+    },
+    {
+      "record_id": "GT-LBS-RG-016",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold question list is empty; generated questions stay unmatched under unchanged gold."
+    },
+    {
+      "record_id": "GT-LBS-RG-021",
+      "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen gold question list is empty; generated questions stay unmatched under unchanged gold."
+    },
+    {
+      "record_id": "GT-LBS-RG-082",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-084",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-201",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-212",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-213",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-225",
+      "questions_sha256": "98101ae5f411e04c7c24a901a3849b6ddc2da4ad177343780dcac93111e4bc1c",
+      "whole": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          3,
+          3,
+          1
+        ]
+      ],
+      "notes": "Monthly workload plus peak request rate matches gold1, and output languages matches gold4. Bundled storage/public-endpoint/temporary-result question earns only the storage atom; the extra decisions preclude an equivalent-granularity whole match to gold3. Public endpoint acceptance does not establish self-hosting acceptance. Countries were supplied, not asked."
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-231",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-232",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-233",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-235",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    },
+    {
+      "record_id": "GT-LBS-RG-236",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question; supplied or documented facts are not scored as requested facts."
+    }
+  ],
+  "independent_human_acceptance": false,
+  "comparison_to_primary_review": {
+    "compared": 40,
+    "primary_cases": 40,
+    "disagreements": [],
+    "same_gold_hash": true
+  }
+}

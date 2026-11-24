@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":\"3,000,000\",\"evidence\":\"3,000,000 requests a month\"},\"current_provider\":{\"value\":\"Mapbox\",\"evidence\":\"Mapbox Directions\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":\"3,000,000\",\"evidence\":\"3,000,000 requests a month\"},\"current_provider\":{\"value\":\"Mapbox\",\"evidence\":\"Mapbox Directions\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1395,
+    "completion_tokens": 162,
+    "total_tokens": 1557
+  },
+  "latency_ms": 3800,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

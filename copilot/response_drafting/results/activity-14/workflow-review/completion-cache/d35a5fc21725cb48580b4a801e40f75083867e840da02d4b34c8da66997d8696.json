@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The reverse geocoding response includes a formatted address, but the customer reports an incorrect house number. This suggests a rendering issue rather than an API error, requiring inspection of how the results are displayed.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The reverse geocoding response includes a formatted address, but the customer reports an incorrect house number. This suggests a rendering issue rather than an API error, requiring inspection of how the results are displayed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2095,
+    "completion_tokens": 50,
+    "total_tokens": 2145
+  },
+  "latency_ms": 1415,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry identifies the issue of an API key being exposed, which is a security concern rather than a diagnostic or configuration issue. No specific diagnostic decision is required as the action needed is to remove the key from the public repository and secure it.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry identifies the issue of an API key being exposed, which is a security concern rather than a diagnostic or configuration issue. No specific diagnostic decision is required as the action needed is to remove the key from the public repository and secure it.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1451,
+    "completion_tokens": 57,
+    "total_tokens": 1508
+  },
+  "latency_ms": 2947,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

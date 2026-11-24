@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\",\"reason\":\"The customer mentioned that their Nominatim requests get blocked and they don't send any User-Agent. According to the Nominatim Usage Policy, providing a valid HTTP Referer or User-Agent is required. To diagnose the issue, we need to reproduce the request to check if the absence of a User-Agent is causing the block.\"}",
+  "raw": "{\"decision\":\"request_reproduction\",\"reason\":\"The customer mentioned that their Nominatim requests get blocked and they don't send any User-Agent. According to the Nominatim Usage Policy, providing a valid HTTP Referer or User-Agent is required. To diagnose the issue, we need to reproduce the request to check if the absence of a User-Agent is causing the block.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1741,
+    "completion_tokens": 79,
+    "total_tokens": 1820
+  },
+  "latency_ms": 2068,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

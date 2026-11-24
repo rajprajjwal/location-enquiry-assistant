@@ -1,0 +1,10 @@
+[
+  {
+    "record_id": "GT-LBS-AC-213",
+    "questions_sha256": "e8056eb267dbd06f0a2bb821db0423cb0405f177cb558c190121df155c7dd48b",
+    "gold_sha256": "3bcc0049a42d465b6c0afe8efe06d1f84e84802ecc75e89d2cc151e965cbe051",
+    "whole": [],
+    "facts": [],
+    "reason": "Hard geographic restriction versus bias concerns where results may appear. It does not ask whether points of interest are required in addition to addresses. The new question is relevant to the actual India-restriction enquiry, but the unchanged primary gold requests a different preference; no primary match is awarded."
+  }
+]

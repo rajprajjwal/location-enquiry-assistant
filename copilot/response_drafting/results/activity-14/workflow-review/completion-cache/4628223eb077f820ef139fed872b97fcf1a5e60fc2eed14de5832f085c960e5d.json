@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_request\",\"reason\":\"The enquiry indicates that the expected autocomplete query predictions are not being returned when using types=geocode and types=regions, which suggests an issue with the provider's response or the request parameters. The documentation mentions that the includedPrimaryTypes parameter can be used to filter results, but the specific issue with non-cities being returned requires inspecting the provider's response and request body to determine the cause.\"}",
+  "raw": "{\"decision\":\"prediction_request\",\"reason\":\"The enquiry indicates that the expected autocomplete query predictions are not being returned when using types=geocode and types=regions, which suggests an issue with the provider's response or the request parameters. The documentation mentions that the includedPrimaryTypes parameter can be used to filter results, but the specific issue with non-cities being returned requires inspecting the provider's response and request body to determine the cause.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1825,
+    "completion_tokens": 89,
+    "total_tokens": 1914
+  },
+  "latency_ms": 2364,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

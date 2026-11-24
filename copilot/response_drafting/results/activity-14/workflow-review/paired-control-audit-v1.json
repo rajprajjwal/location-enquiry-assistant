@@ -1,0 +1,5253 @@
+{
+  "audit": "Full paired workflow-control audit, candidate v1",
+  "created_at_utc": "2026-11-24T16:03:38.798473+00:00",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "input_files": {
+    "baseline": {
+      "path": "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/response_drafting/results/activity-14/workflow-review/baseline/predictions.jsonl",
+      "sha256": "45170d5060db7a10c89ba8bc0cb125959e818339e90b59a20f36003ff75ffe62"
+    },
+    "candidate_v1": {
+      "path": "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/response_drafting/results/activity-14/workflow-review/candidate/predictions.jsonl",
+      "sha256": "4e0cb1ac057c37653a7b385e49b9d580f50e9179dbf500f35f17abd93b20b875"
+    },
+    "baseline_score_projection": {
+      "path": "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/response_drafting/results/activity-14/workflow-review/baseline-score-predictions.jsonl",
+      "sha256": "8c84ee0ffaa22cdfc318ab2534d9a7e1990eb172cd06c0337eb6eeb296f54f7e"
+    },
+    "inputs": {
+      "path": "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/response_drafting/results/activity-14/workflow-review/inputs317.json",
+      "sha256": "eae0cf7b2da650fa7f6da6fccb28ef516ab0dcfd27fc94767f596c26b4458380"
+    },
+    "interpretation_reference": {
+      "path": "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/response_drafting/results/activity-14/workflow-review/working-interpretation-reference.json",
+      "sha256": "4c8a08245b1b46b6e0250cc124b9f23c5231a582a36a22e3348272e9f8c34c6d"
+    },
+    "baseline_initial": {
+      "path": "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/response_drafting/results/activity-14/workflow-review/baseline/predictions.initial.jsonl",
+      "sha256": "270dcedda060c351237d8eade029428310aad3910cea411cd0a9215e4a52c30c"
+    },
+    "baseline_recovery": {
+      "path": "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/response_drafting/results/activity-14/workflow-review/baseline-recovery/predictions.jsonl",
+      "sha256": "bbe9839a04b8065185ba351186c67c7a6041a1411861acd67ff35e5f8e5d250c"
+    }
+  },
+  "normalization": "Snapshots already omit database case/trace/approval IDs. Semantic record IDs and all action/approval payload fields are retained. Owner identity excludes only its reason; reason differences are reported separately.",
+  "summary": {
+    "records": 317,
+    "any_snapshot_change": 27,
+    "snapshot_unchanged": 290,
+    "meaningful_control_changes": 13,
+    "route_changes": 8,
+    "next_action_changes": 9,
+    "owner_object_changes": 24,
+    "owner_identity_changes": 6,
+    "owner_reason_only_changes": 18,
+    "proposal_payload_changes": 10,
+    "approval_payload_changes": 10,
+    "formal_handoff_removed": 6,
+    "active_question_changes": 1,
+    "pending_reply_changes": 1,
+    "asked_memory_changes": 1,
+    "answered_memory_changes": 0,
+    "awaiting_memory_changes": 1,
+    "interpretation_changes": 25
+  },
+  "quality": {
+    "baseline": {
+      "route_counts": {
+        "final": 254,
+        "escalated": 61,
+        "clarification_needed": 2
+      },
+      "schema_valid": 317,
+      "api_correct": 305,
+      "intent_correct": 240,
+      "denominator": 317,
+      "reliability_events": [
+        {
+          "record_id": "GT-LBS-AC-043",
+          "kind": "model_error",
+          "step": "draft:3",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        },
+        {
+          "record_id": "GT-LBS-AC-043",
+          "kind": "model_error",
+          "step": "draft:3",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        },
+        {
+          "record_id": "GT-LBS-AC-043",
+          "kind": "model_error",
+          "step": "draft:3",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        },
+        {
+          "record_id": "GT-LBS-AC-043",
+          "kind": "model_error",
+          "step": "case",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        },
+        {
+          "record_id": "GT-LBS-AC-043",
+          "kind": "model_error",
+          "step": "case",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        },
+        {
+          "record_id": "GT-LBS-AC-043",
+          "kind": "model_error",
+          "step": "case",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        },
+        {
+          "record_id": "GT-LBS-AC-044",
+          "kind": "model_error",
+          "step": "interpretation",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        },
+        {
+          "record_id": "GT-LBS-AC-090",
+          "kind": "model_error",
+          "step": "case",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        },
+        {
+          "record_id": "GT-LBS-AC-090",
+          "kind": "model_error",
+          "step": "case",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        },
+        {
+          "record_id": "GT-LBS-DM-012",
+          "kind": "tool_timeout",
+          "step": "calculate_pricing:2"
+        },
+        {
+          "record_id": "GT-LBS-DM-012",
+          "kind": "model_error",
+          "step": "calculate_pricing:2",
+          "error_type": "ToolTimeout",
+          "status_code": null
+        },
+        {
+          "record_id": "GT-LBS-RG-079",
+          "kind": "model_error",
+          "step": "interpretation",
+          "error_type": "RateLimitError",
+          "status_code": 429
+        }
+      ],
+      "follow_up_failures": [
+        {
+          "record_id": "GT-LBS-AC-043",
+          "status": "invalid_plan",
+          "error_type": "LLMError",
+          "retrieved_passages_available": 7
+        },
+        {
+          "record_id": "GT-LBS-DIR-065",
+          "status": "invalid_plan",
+          "error_type": "ValidationError",
+          "retrieved_passages_available": 5
+        },
+        {
+          "record_id": "GT-LBS-DIR-076",
+          "status": "invalid_plan",
+          "error_type": "ValidationError",
+          "retrieved_passages_available": 5
+        },
+        {
+          "record_id": "GT-LBS-DM-044",
+          "status": "invalid_plan",
+          "error_type": "ValidationError",
+          "retrieved_passages_available": 5
+        },
+        {
+          "record_id": "GT-LBS-DM-077",
+          "status": "invalid_plan",
+          "error_type": "ValidationError",
+          "retrieved_passages_available": 6
+        }
+      ],
+      "recorded_model_call_errors": [
+        {
+          "record_id": "GT-LBS-AC-043",
+          "error_type": "LLMError"
+        },
+        {
+          "record_id": "GT-LBS-AC-043",
+          "error_type": "LLMError"
+        },
+        {
+          "record_id": "GT-LBS-DM-012",
+          "error_type": "BudgetExceeded"
+        },
+        {
+          "record_id": "GT-LBS-RG-065",
+          "error_type": "BudgetExceeded"
+        },
+        {
+          "record_id": "GT-LBS-RG-065",
+          "error_type": "BudgetExceeded"
+        }
+      ],
+      "execution": {
+        "records": 317,
+        "live_calls": 1124,
+        "cached_calls": 0,
+        "schema_valid": 317
+      },
+      "model_log_sha256": "77ceb988d9a7b13e1793458f8ff3086e3e34994324e547c265973fce139d90a1",
+      "api_accuracy": 0.9621451104100947,
+      "intent_accuracy": 0.7570977917981072
+    },
+    "candidate_v1": {
+      "route_counts": {
+        "final": 262,
+        "escalated": 54,
+        "clarification_needed": 1
+      },
+      "schema_valid": 317,
+      "api_correct": 307,
+      "intent_correct": 252,
+      "denominator": 317,
+      "reliability_events": [],
+      "follow_up_failures": [],
+      "recorded_model_call_errors": [],
+      "execution": {
+        "records": 317,
+        "live_calls": 234,
+        "cached_calls": 901,
+        "schema_valid": 317
+      },
+      "model_log_sha256": "9518d3849ab2ad091f4696fdb66ab9cb5ddbefd7789a91789b1a58dfaf54153d",
+      "api_accuracy": 0.9684542586750788,
+      "intent_accuracy": 0.7949526813880127
+    }
+  },
+  "interpretation_changes": [
+    {
+      "record_id": "GT-LBS-AC-072",
+      "baseline": {
+        "api": "reverse_geocode",
+        "intent": "pricing_quote"
+      },
+      "candidate": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to"
+      },
+      "gold": {
+        "api": "autocomplete",
+        "intent": "pricing_quote"
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-091",
+      "baseline": {
+        "api": null,
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "autocomplete",
+        "intent": "human_handoff"
+      },
+      "gold": {
+        "api": "autocomplete",
+        "intent": "human_handoff"
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-219",
+      "baseline": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      },
+      "candidate": {
+        "api": "autocomplete",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-055",
+      "baseline": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-057",
+      "baseline": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "candidate": {
+        "api": "directions",
+        "intent": "coverage_limits"
+      },
+      "gold": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-058",
+      "baseline": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "directions",
+        "intent": "capability_match"
+      },
+      "gold": {
+        "api": "directions",
+        "intent": "docs_how_to"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-060",
+      "baseline": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "directions",
+        "intent": "docs_how_to"
+      },
+      "gold": {
+        "api": "directions",
+        "intent": "docs_how_to"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-061",
+      "baseline": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "directions",
+        "intent": "coverage_limits"
+      },
+      "gold": {
+        "api": "directions",
+        "intent": "docs_how_to"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-064",
+      "baseline": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-065",
+      "baseline": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-076",
+      "baseline": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "candidate": {
+        "api": "directions",
+        "intent": "capability_match"
+      },
+      "gold": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-080",
+      "baseline": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "candidate": {
+        "api": "directions",
+        "intent": "coverage_limits"
+      },
+      "gold": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-050",
+      "baseline": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-051",
+      "baseline": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-056",
+      "baseline": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "distance_matrix",
+        "intent": "coverage_limits"
+      },
+      "gold": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-057",
+      "baseline": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-058",
+      "baseline": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-060",
+      "baseline": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-061",
+      "baseline": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-062",
+      "baseline": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-033",
+      "baseline": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "autocomplete",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-035",
+      "baseline": {
+        "api": "reverse_geocode",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-039",
+      "baseline": {
+        "api": "reverse_geocode",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to"
+      },
+      "gold": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-040",
+      "baseline": {
+        "api": "reverse_geocode",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      },
+      "gold": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-046",
+      "baseline": {
+        "api": "reverse_geocode",
+        "intent": "human_handoff"
+      },
+      "candidate": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to"
+      },
+      "gold": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to"
+      }
+    }
+  ],
+  "infrastructure_recovery": {
+    "record_id": "GT-LBS-RG-065",
+    "cause": "Evaluation process was stopped by job control (ps status Ts); wall clock expired while suspended.",
+    "original_elapsed_ms": 329994,
+    "action": "Same case rerun using the identical locked baseline code. All317caseIDsretained.",
+    "original_predictions": "baseline/predictions.initial.jsonl",
+    "recovery": "baseline-recovery/predictions.jsonl",
+    "initial_status": "escalated",
+    "recovered_status": "escalated",
+    "other_runtime_errors": "Endpoint429 and tool-timeout events are retained; no performance failures removed from the cohort.",
+    "primary_row_is_recovered_row": true,
+    "primary_and_candidate_routes": [
+      "escalated",
+      "escalated"
+    ],
+    "initial_critic": {
+      "verdict": "not_run",
+      "reason": "Enquiry deadline reached.",
+      "reviews": []
+    },
+    "recovered_critic": {
+      "verdict": "needs_human",
+      "reason": "The cited passage does not directly answer the enquiry.",
+      "reviews": [
+        {
+          "verdict": "revise",
+          "reason": "The cited passage does not directly answer the enquiry."
+        },
+        {
+          "verdict": "revise",
+          "reason": "The cited passage does not directly answer the enquiry."
+        }
+      ]
+    }
+  },
+  "records_with_snapshot_changes": [
+    {
+      "record_id": "GT-LBS-AC-043",
+      "query": "Google Place Autocomplete returns ZERO_RESULTS for short inputs like 'Ko' with strictbounds around Kochi.",
+      "changed_fields": [
+        "route",
+        "next_action",
+        "owner"
+      ],
+      "meaningful_control_fields": [
+        "route",
+        "next_action"
+      ],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "autocomplete",
+        "intent": "troubleshooting"
+      },
+      "candidate_interpretation": {
+        "api": "autocomplete",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "autocomplete",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "LLMError",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "LLMError"
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "An existing customer needs service guidance."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.next_action.action_type",
+          "before": "refuse",
+          "after": "answer_directly"
+        },
+        {
+          "path": "snapshot.next_action.description",
+          "before": "LLMError",
+          "after": "Review the drafted reply."
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "LLMError",
+          "after": "An existing customer needs service guidance."
+        },
+        {
+          "path": "snapshot.route",
+          "before": "escalated",
+          "after": "final"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "not_run",
+        "reason": "LLMError",
+        "reviews": []
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Baseline exhausted HTTP429 retries during draft and follow-up, producing LLMError; candidate completed. This recovery is an operational effect and is not solely a follow-up-planner improvement.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "query": "How do we restrict autocomplete results to India on each provider?",
+      "changed_fields": [
+        "route",
+        "next_action",
+        "active_questions",
+        "pending_reply",
+        "asked",
+        "awaiting"
+      ],
+      "meaningful_control_fields": [
+        "route",
+        "next_action",
+        "active_questions",
+        "pending_reply",
+        "asked",
+        "awaiting"
+      ],
+      "owner_identity_changed": false,
+      "owner_reason_only": false,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      },
+      "candidate_interpretation": {
+        "api": "autocomplete",
+        "intent": "docs_how_to"
+      },
+      "gold_interpretation": {
+        "api": "autocomplete",
+        "intent": "capability_match",
+        "team": "Sales"
+      },
+      "baseline_snapshot": {
+        "route": "clarification_needed",
+        "next_action": {
+          "action_type": "ask_clarifying_questions",
+          "description": "Which map provider are you using?",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": true,
+          "questions": [
+            {
+              "field": "provider",
+              "text": "Which map provider are you using?"
+            }
+          ]
+        },
+        "pending_reply": {
+          "field": "provider",
+          "task": "How do we restrict autocomplete results to India on each provider?"
+        },
+        "asked": [
+          "current_provider"
+        ],
+        "answered": [],
+        "awaiting": [
+          "Awaiting current provider"
+        ]
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.active_questions.needed",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.active_questions.questions",
+          "before": [
+            {
+              "field": "provider",
+              "text": "Which map provider are you using?"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.asked",
+          "before": [
+            "current_provider"
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.awaiting",
+          "before": [
+            "Awaiting current provider"
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.next_action.action_type",
+          "before": "ask_clarifying_questions",
+          "after": "answer_directly"
+        },
+        {
+          "path": "snapshot.next_action.description",
+          "before": "Which map provider are you using?",
+          "after": "Review the drafted reply."
+        },
+        {
+          "path": "snapshot.pending_reply",
+          "before": {
+            "field": "provider",
+            "task": "How do we restrict autocomplete results to India on each provider?"
+          },
+          "after": null
+        },
+        {
+          "path": "snapshot.route",
+          "before": "clarification_needed",
+          "after": "final"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "not_run",
+        "reason": "Provider clarification needed.",
+        "reviews": []
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The model found no passage that answered the enquiry."
+          },
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "The explicit each-provider enquiry no longer triggers a blocking single-provider clarification. Its active question, pending reply and asked/awaiting state are removed; this is a deliberate core-route fix, not control preservation."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-055",
+      "query": "Customer message:\n\"Our Google Directions request with a via: waypoint returns ZERO_RESULTS, but without 'via:' the route works.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "A routine request-parameter or limit check needs first-line assessment before a formal handoff."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "An existing customer needs service guidance."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "A routine request-parameter or limit check needs first-line assessment before a formal handoff.",
+          "after": "An existing customer needs service guidance."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-057",
+      "query": "Customer message:\n\"Our Google Directions URL has 23 lat/lng waypoints and sometimes gets rejected as too long. Options?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "coverage_limits"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The model found no passage that answered the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The model found no passage that answered the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The model found no passage that answered the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for a documented product limit or behavior. The model found no passage that answered the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The model found no passage that answered the enquiry.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for a documented product limit or behavior. The model found no passage that answered the enquiry."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "needs_human",
+        "reason": "The model found no passage that answered the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The model found no passage that answered the enquiry."
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "needs_human",
+        "reason": "The model found no passage that answered the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The model found no passage that answered the enquiry."
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-058",
+      "query": "Customer message:\n\"Can Google Directions avoid tolls and highways for our two-wheeler riders?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "capability_match"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "docs_how_to",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. The question is about route preferences in Google Directions and does not indicate a need for a human handoff or intervention."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. no escalation (support)"
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. The question is about route preferences in Google Directions and does not indicate a need for a human handoff or intervention.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. no escalation (support)"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-060",
+      "query": "Customer message:\n\"Google Directions walking routes in old Delhi show a 'warnings' array. Can we hide it in our UI?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "docs_how_to"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "docs_how_to",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. The customer is asking about modifying UI elements based on data from Google Directions, which is a routine UI/UX question and does not require a formal handoff."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. The customer is asking about modifying UI elements based on data from Google Directions, which is a routine UI/UX question and does not require a formal handoff.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-061",
+      "query": "Customer message:\n\"Google Directions shows '12.4 mi' text for some users even though our app is Indian. And are distance values in miles too?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "route",
+        "next_action",
+        "owner",
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "route",
+        "next_action",
+        "proposed_actions",
+        "approvals",
+        "owner_identity"
+      ],
+      "owner_identity_changed": true,
+      "owner_reason_only": false,
+      "formal_handoff_removed": true,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "coverage_limits"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "docs_how_to",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "propose_escalation",
+          "description": "Ask a reviewer to approve handoff to Support L2.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false,
+          "escalation": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation."
+          }
+        },
+        "owner": {
+          "owner": "Support L2",
+          "team": "Support",
+          "should_escalate": true,
+          "severity": "SEV3",
+          "reason": "The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_escalation",
+            "description": "Ask a reviewer to approve handoff to Support L2.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "escalation": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation."
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "escalation",
+            "payload": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation."
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Account team (Sales)",
+          "team": "Sales",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Account team (Sales). This enquiry needs commercial qualification or geographic coverage confirmation."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals",
+          "before": [
+            {
+              "type": "escalation",
+              "payload": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation."
+              },
+              "status": "pending"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.next_action.action_type",
+          "before": "propose_escalation",
+          "after": "answer_directly"
+        },
+        {
+          "path": "snapshot.next_action.approval_status",
+          "before": "pending",
+          "after": "not_applicable"
+        },
+        {
+          "path": "snapshot.next_action.description",
+          "before": "Ask a reviewer to approve handoff to Support L2.",
+          "after": "Review the drafted reply."
+        },
+        {
+          "path": "snapshot.next_action.escalation",
+          "before": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation."
+          },
+          "after": null
+        },
+        {
+          "path": "snapshot.next_action.requires_human_approval",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.owner.owner",
+          "before": "Support L2",
+          "after": "Account team (Sales)"
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation.",
+          "after": "Customer status is unknown. Provisional owner: Account team (Sales). This enquiry needs commercial qualification or geographic coverage confirmation."
+        },
+        {
+          "path": "snapshot.owner.severity",
+          "before": "SEV3",
+          "after": "SEV4"
+        },
+        {
+          "path": "snapshot.owner.should_escalate",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.owner.team",
+          "before": "Support",
+          "after": "Sales"
+        },
+        {
+          "path": "snapshot.proposed_actions",
+          "before": [
+            {
+              "action_type": "propose_escalation",
+              "description": "Ask a reviewer to approve handoff to Support L2.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "escalation": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation."
+              }
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.route",
+          "before": "escalated",
+          "after": "final"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "not_run",
+        "reason": "The customer reports an inconsistency in distance units and values displayed in Google Directions, which may indicate an address-quality issue requiring support investigation.",
+        "reviews": []
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Formal handoff and its pending approval disappear. The result must not be described as ownership/action invariant even if the coarse route remains escalated.",
+        "Candidate responsible team differs from the original working primary-team label; this is a review flag, not an owner-accuracy score."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-064",
+      "query": "Customer message:\n\"Ola Directions returns 400 with reason 'Invalid/missing origin'. We send origin=77.5946,12.9716.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-065",
+      "query": "Customer message:\n\"We send traffic_metadata=true to Ola Directions but travel_advisory never appears in the response.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "route",
+        "next_action",
+        "owner",
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "route",
+        "next_action",
+        "proposed_actions",
+        "approvals",
+        "owner_identity"
+      ],
+      "owner_identity_changed": true,
+      "owner_reason_only": false,
+      "formal_handoff_removed": true,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "propose_escalation",
+          "description": "Ask a reviewer to approve handoff to Support L2.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false,
+          "escalation": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation."
+          }
+        },
+        "owner": {
+          "owner": "Support L2",
+          "team": "Support",
+          "should_escalate": true,
+          "severity": "SEV3",
+          "reason": "The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_escalation",
+            "description": "Ask a reviewer to approve handoff to Support L2.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "escalation": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation."
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "escalation",
+            "payload": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation."
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "An existing customer needs service guidance."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals",
+          "before": [
+            {
+              "type": "escalation",
+              "payload": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation."
+              },
+              "status": "pending"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.next_action.action_type",
+          "before": "propose_escalation",
+          "after": "answer_directly"
+        },
+        {
+          "path": "snapshot.next_action.approval_status",
+          "before": "pending",
+          "after": "not_applicable"
+        },
+        {
+          "path": "snapshot.next_action.description",
+          "before": "Ask a reviewer to approve handoff to Support L2.",
+          "after": "Review the drafted reply."
+        },
+        {
+          "path": "snapshot.next_action.escalation",
+          "before": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation."
+          },
+          "after": null
+        },
+        {
+          "path": "snapshot.next_action.requires_human_approval",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.owner.owner",
+          "before": "Support L2",
+          "after": "Support L1"
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation.",
+          "after": "An existing customer needs service guidance."
+        },
+        {
+          "path": "snapshot.owner.severity",
+          "before": "SEV3",
+          "after": "SEV4"
+        },
+        {
+          "path": "snapshot.owner.should_escalate",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.proposed_actions",
+          "before": [
+            {
+              "action_type": "propose_escalation",
+              "description": "Ask a reviewer to approve handoff to Support L2.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "escalation": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation."
+              }
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.route",
+          "before": "escalated",
+          "after": "final"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "not_run",
+        "reason": "The customer is reporting an issue with missing travel advisory data in the Ola Directions response despite sending traffic_metadata=true, indicating a potential technical issue requiring second-line investigation.",
+        "reviews": []
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Formal handoff and its pending approval disappear. The result must not be described as ownership/action invariant even if the coarse route remains escalated."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-076",
+      "query": "Sandbox CRM ticket TKT-62658. Customer wrote: \"For one trip, the Mapbox Directions API's driving-traffic ETA in a tier-3 town looks identical to the plain driving profile. Why?\" Draft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "changed_fields": [
+        "owner",
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "proposed_actions",
+        "approvals"
+      ],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "capability_match"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "propose_record_update",
+          "description": "Review the proposed change to TKT-62658.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_record_update",
+            "description": "Review the proposed change to TKT-62658.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "record_update": {
+              "record_id": "TKT-62658",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "directions",
+                "category": "accuracy_question",
+                "providers": "Mapbox",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "directions"
+                },
+                "category": {
+                  "old": null,
+                  "new": "accuracy_question"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Mapbox"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "record_update",
+            "payload": {
+              "record_id": "TKT-62658",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "directions",
+                "category": "accuracy_question",
+                "providers": "Mapbox",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "directions"
+                },
+                "category": {
+                  "old": null,
+                  "new": "accuracy_question"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Mapbox"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "propose_record_update",
+          "description": "Review the proposed change to TKT-62658.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. no escalation (support)"
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_record_update",
+            "description": "Review the proposed change to TKT-62658.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "record_update": {
+              "record_id": "TKT-62658",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "directions",
+                "category": "capability_match",
+                "providers": "Mapbox",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "directions"
+                },
+                "category": {
+                  "old": null,
+                  "new": "capability_match"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Mapbox"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "record_update",
+            "payload": {
+              "record_id": "TKT-62658",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "directions",
+                "category": "capability_match",
+                "providers": "Mapbox",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "directions"
+                },
+                "category": {
+                  "old": null,
+                  "new": "capability_match"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Mapbox"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals[0].payload.diff.category.new",
+          "before": "accuracy_question",
+          "after": "capability_match"
+        },
+        {
+          "path": "snapshot.approvals[0].payload.fields.category",
+          "before": "accuracy_question",
+          "after": "capability_match"
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. no escalation (support)"
+        },
+        {
+          "path": "snapshot.proposed_actions[0].record_update.diff.category.new",
+          "before": "accuracy_question",
+          "after": "capability_match"
+        },
+        {
+          "path": "snapshot.proposed_actions[0].record_update.fields.category",
+          "before": "accuracy_question",
+          "after": "capability_match"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "The sandbox update changes its category based on interpretation sub-intent; record target, approval requirement and pending status remain unchanged.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-080",
+      "query": "Sandbox CRM ticket TKT-48622. Customer wrote: \"Our script calls the OSRM /route endpoint at router.project-osrm.org for driving directions and gets throttled and blocked. We send about 10 requests per second.\" Draft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "changed_fields": [
+        "owner",
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "proposed_actions",
+        "approvals"
+      ],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "coverage_limits"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "propose_record_update",
+          "description": "Review the proposed change to TKT-48622.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_record_update",
+            "description": "Review the proposed change to TKT-48622.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "record_update": {
+              "record_id": "TKT-48622",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "directions",
+                "category": "coverage_error",
+                "providers": "OSRM",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "directions"
+                },
+                "category": {
+                  "old": null,
+                  "new": "coverage_error"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "OSRM"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "record_update",
+            "payload": {
+              "record_id": "TKT-48622",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "directions",
+                "category": "coverage_error",
+                "providers": "OSRM",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "directions"
+                },
+                "category": {
+                  "old": null,
+                  "new": "coverage_error"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "OSRM"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "propose_record_update",
+          "description": "Review the proposed change to TKT-48622.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for a documented product limit or behavior."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_record_update",
+            "description": "Review the proposed change to TKT-48622.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "record_update": {
+              "record_id": "TKT-48622",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "directions",
+                "category": "limits_question",
+                "providers": "OSRM",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "directions"
+                },
+                "category": {
+                  "old": null,
+                  "new": "limits_question"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "OSRM"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "record_update",
+            "payload": {
+              "record_id": "TKT-48622",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "directions",
+                "category": "limits_question",
+                "providers": "OSRM",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "directions"
+                },
+                "category": {
+                  "old": null,
+                  "new": "limits_question"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "OSRM"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals[0].payload.diff.category.new",
+          "before": "coverage_error",
+          "after": "limits_question"
+        },
+        {
+          "path": "snapshot.approvals[0].payload.fields.category",
+          "before": "coverage_error",
+          "after": "limits_question"
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for a documented product limit or behavior."
+        },
+        {
+          "path": "snapshot.proposed_actions[0].record_update.diff.category.new",
+          "before": "coverage_error",
+          "after": "limits_question"
+        },
+        {
+          "path": "snapshot.proposed_actions[0].record_update.fields.category",
+          "before": "coverage_error",
+          "after": "limits_question"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "The sandbox update changes its category based on interpretation sub-intent; record target, approval requirement and pending status remain unchanged.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-205",
+      "query": "Can we get traffic-aware ETAs for driving routes in Nepal as well as India? Compare the providers you know.",
+      "changed_fields": [
+        "route",
+        "next_action",
+        "owner"
+      ],
+      "meaningful_control_fields": [
+        "route",
+        "next_action"
+      ],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "pricing_comparison"
+      },
+      "candidate_interpretation": {
+        "api": "directions",
+        "intent": "pricing_comparison"
+      },
+      "gold_interpretation": {
+        "api": "directions",
+        "intent": "coverage_limits",
+        "team": "Sales"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The cited passage does not directly answer the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Account team (Sales)",
+          "team": "Sales",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement. The cited passage does not directly answer the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Account team (Sales)",
+          "team": "Sales",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.next_action.action_type",
+          "before": "refuse",
+          "after": "answer_directly"
+        },
+        {
+          "path": "snapshot.next_action.description",
+          "before": "The cited passage does not directly answer the enquiry.",
+          "after": "Review the drafted reply."
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement. The cited passage does not directly answer the enquiry.",
+          "after": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+        },
+        {
+          "path": "snapshot.route",
+          "before": "escalated",
+          "after": "final"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "needs_human",
+        "reason": "The cited passage does not directly answer the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "The candidate emits an explicitly labelled partial, citation-grounded answer where baseline failed the relevance critic. It is final for staff review, not proof of complete country/provider coverage.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "query": "Sandbox CRM ticket TKT-93241. Customer wrote:\n\"Some elements in our Google Distance Matrix response have status NOT_FOUND while others are OK.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "changed_fields": [
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "proposed_actions",
+        "approvals"
+      ],
+      "owner_identity_changed": false,
+      "owner_reason_only": false,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "candidate_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "propose_record_update",
+          "description": "Review the proposed change to TKT-93241.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_record_update",
+            "description": "Review the proposed change to TKT-93241.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "record_update": {
+              "record_id": "TKT-93241",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "distance_matrix",
+                "category": "error_resolution",
+                "providers": "Google Maps Platform",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "distance_matrix"
+                },
+                "category": {
+                  "old": null,
+                  "new": "error_resolution"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Google Maps Platform"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "record_update",
+            "payload": {
+              "record_id": "TKT-93241",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "distance_matrix",
+                "category": "error_resolution",
+                "providers": "Google Maps Platform",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "distance_matrix"
+                },
+                "category": {
+                  "old": null,
+                  "new": "error_resolution"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Google Maps Platform"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "propose_record_update",
+          "description": "Review the proposed change to TKT-93241.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_record_update",
+            "description": "Review the proposed change to TKT-93241.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "record_update": {
+              "record_id": "TKT-93241",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "distance_matrix",
+                "category": "accuracy_question",
+                "providers": "Google Maps Platform",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "distance_matrix"
+                },
+                "category": {
+                  "old": null,
+                  "new": "accuracy_question"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Google Maps Platform"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "record_update",
+            "payload": {
+              "record_id": "TKT-93241",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "distance_matrix",
+                "category": "accuracy_question",
+                "providers": "Google Maps Platform",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "distance_matrix"
+                },
+                "category": {
+                  "old": null,
+                  "new": "accuracy_question"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Google Maps Platform"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals[0].payload.diff.category.new",
+          "before": "error_resolution",
+          "after": "accuracy_question"
+        },
+        {
+          "path": "snapshot.approvals[0].payload.fields.category",
+          "before": "error_resolution",
+          "after": "accuracy_question"
+        },
+        {
+          "path": "snapshot.proposed_actions[0].record_update.diff.category.new",
+          "before": "error_resolution",
+          "after": "accuracy_question"
+        },
+        {
+          "path": "snapshot.proposed_actions[0].record_update.fields.category",
+          "before": "error_resolution",
+          "after": "accuracy_question"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "The sandbox update changes its category based on interpretation sub-intent; record target, approval requirement and pending status remain unchanged."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-050",
+      "query": "Customer message:\n\"A Google Distance Matrix element returns MAX_ROUTE_LENGTH_EXCEEDED for a Kanyakumari–Srinagar pair. Can we raise the limit?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The cited passage does not directly answer the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff. The cited passage does not directly answer the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The cited passage does not directly answer the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The cited passage does not directly answer the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff. The cited passage does not directly answer the enquiry.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The cited passage does not directly answer the enquiry."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "needs_human",
+        "reason": "The cited passage does not directly answer the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "needs_human",
+        "reason": "The cited passage does not directly answer the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-051",
+      "query": "Customer message:\n\"Google Distance Matrix doesn't return duration_in_traffic even though we pass traffic_model=best_guess.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "A routine request-parameter or limit check needs first-line assessment before a formal handoff."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "An existing customer needs service guidance."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "A routine request-parameter or limit check needs first-line assessment before a formal handoff.",
+          "after": "An existing customer needs service guidance."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-056",
+      "query": "Customer message:\n\"Google Compute Route Matrix rejects our 30×30 request. Isn't the limit 625?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "distance_matrix",
+        "intent": "coverage_limits"
+      },
+      "gold_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for a documented product limit or behavior."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for a documented product limit or behavior."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-057",
+      "query": "Customer message:\n\"Compute Route Matrix with routingPreference TRAFFIC_AWARE_OPTIMAL fails on a 20×10 matrix.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "route",
+        "next_action",
+        "owner",
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "route",
+        "next_action",
+        "proposed_actions",
+        "approvals",
+        "owner_identity"
+      ],
+      "owner_identity_changed": true,
+      "owner_reason_only": false,
+      "formal_handoff_removed": true,
+      "baseline_interpretation": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "propose_escalation",
+          "description": "Ask a reviewer to approve handoff to Support L2.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false,
+          "escalation": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation."
+          }
+        },
+        "owner": {
+          "owner": "Support L2",
+          "team": "Support",
+          "should_escalate": true,
+          "severity": "SEV3",
+          "reason": "The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_escalation",
+            "description": "Ask a reviewer to approve handoff to Support L2.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "escalation": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation."
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "escalation",
+            "payload": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation."
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals",
+          "before": [
+            {
+              "type": "escalation",
+              "payload": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation."
+              },
+              "status": "pending"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.next_action.action_type",
+          "before": "propose_escalation",
+          "after": "answer_directly"
+        },
+        {
+          "path": "snapshot.next_action.approval_status",
+          "before": "pending",
+          "after": "not_applicable"
+        },
+        {
+          "path": "snapshot.next_action.description",
+          "before": "Ask a reviewer to approve handoff to Support L2.",
+          "after": "Review the drafted reply."
+        },
+        {
+          "path": "snapshot.next_action.escalation",
+          "before": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation."
+          },
+          "after": null
+        },
+        {
+          "path": "snapshot.next_action.requires_human_approval",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.owner.owner",
+          "before": "Support L2",
+          "after": "Support L1"
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        {
+          "path": "snapshot.owner.severity",
+          "before": "SEV3",
+          "after": "SEV4"
+        },
+        {
+          "path": "snapshot.owner.should_escalate",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.proposed_actions",
+          "before": [
+            {
+              "action_type": "propose_escalation",
+              "description": "Ask a reviewer to approve handoff to Support L2.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "escalation": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation."
+              }
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.route",
+          "before": "escalated",
+          "after": "final"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "not_run",
+        "reason": "The issue involves a technical failure in computing a Route Matrix with a specific routing preference, indicating a need for second-line investigation.",
+        "reviews": []
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Formal handoff and its pending approval disappear. The result must not be described as ownership/action invariant even if the coarse route remains escalated."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-058",
+      "query": "Customer message:\n\"Our Compute Route Matrix calls start failing at peak when we send ~20 matrices of 25×10 per minute.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "route",
+        "next_action",
+        "owner",
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "route",
+        "next_action",
+        "proposed_actions",
+        "approvals",
+        "owner_identity"
+      ],
+      "owner_identity_changed": true,
+      "owner_reason_only": false,
+      "formal_handoff_removed": true,
+      "baseline_interpretation": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "propose_escalation",
+          "description": "Ask a reviewer to approve handoff to Support L2.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false,
+          "escalation": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation."
+          }
+        },
+        "owner": {
+          "owner": "Support L2",
+          "team": "Support",
+          "should_escalate": true,
+          "severity": "SEV3",
+          "reason": "The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_escalation",
+            "description": "Ask a reviewer to approve handoff to Support L2.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "escalation": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation."
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "escalation",
+            "payload": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation."
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "An existing customer needs service guidance."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals",
+          "before": [
+            {
+              "type": "escalation",
+              "payload": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation."
+              },
+              "status": "pending"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.next_action.action_type",
+          "before": "propose_escalation",
+          "after": "answer_directly"
+        },
+        {
+          "path": "snapshot.next_action.approval_status",
+          "before": "pending",
+          "after": "not_applicable"
+        },
+        {
+          "path": "snapshot.next_action.description",
+          "before": "Ask a reviewer to approve handoff to Support L2.",
+          "after": "Review the drafted reply."
+        },
+        {
+          "path": "snapshot.next_action.escalation",
+          "before": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation."
+          },
+          "after": null
+        },
+        {
+          "path": "snapshot.next_action.requires_human_approval",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.owner.owner",
+          "before": "Support L2",
+          "after": "Support L1"
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation.",
+          "after": "An existing customer needs service guidance."
+        },
+        {
+          "path": "snapshot.owner.severity",
+          "before": "SEV3",
+          "after": "SEV4"
+        },
+        {
+          "path": "snapshot.owner.should_escalate",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.proposed_actions",
+          "before": [
+            {
+              "action_type": "propose_escalation",
+              "description": "Ask a reviewer to approve handoff to Support L2.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "escalation": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation."
+              }
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.route",
+          "before": "escalated",
+          "after": "final"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "not_run",
+        "reason": "The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation.",
+        "reviews": []
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Formal handoff and its pending approval disappear. The result must not be described as ownership/action invariant even if the coarse route remains escalated."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-060",
+      "query": "Customer message:\n\"Our Google Distance Matrix request uses 'lat, lng' with a space and returns odd results.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "next_action",
+        "owner",
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "next_action",
+        "proposed_actions",
+        "approvals",
+        "owner_identity"
+      ],
+      "owner_identity_changed": true,
+      "owner_reason_only": false,
+      "formal_handoff_removed": true,
+      "baseline_interpretation": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "propose_escalation",
+          "description": "Ask a reviewer to approve handoff to Support L2.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false,
+          "escalation": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The issue involves a specific technical behavior of the Google Distance Matrix API and may require deeper investigation or technical expertise."
+          }
+        },
+        "owner": {
+          "owner": "Support L2",
+          "team": "Support",
+          "should_escalate": true,
+          "severity": "SEV3",
+          "reason": "The issue involves a specific technical behavior of the Google Distance Matrix API and may require deeper investigation or technical expertise."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_escalation",
+            "description": "Ask a reviewer to approve handoff to Support L2.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "escalation": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The issue involves a specific technical behavior of the Google Distance Matrix API and may require deeper investigation or technical expertise."
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "escalation",
+            "payload": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The issue involves a specific technical behavior of the Google Distance Matrix API and may require deeper investigation or technical expertise."
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The model found no passage that answered the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The model found no passage that answered the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals",
+          "before": [
+            {
+              "type": "escalation",
+              "payload": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The issue involves a specific technical behavior of the Google Distance Matrix API and may require deeper investigation or technical expertise."
+              },
+              "status": "pending"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.next_action.action_type",
+          "before": "propose_escalation",
+          "after": "refuse"
+        },
+        {
+          "path": "snapshot.next_action.approval_status",
+          "before": "pending",
+          "after": "not_applicable"
+        },
+        {
+          "path": "snapshot.next_action.description",
+          "before": "Ask a reviewer to approve handoff to Support L2.",
+          "after": "The model found no passage that answered the enquiry."
+        },
+        {
+          "path": "snapshot.next_action.escalation",
+          "before": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The issue involves a specific technical behavior of the Google Distance Matrix API and may require deeper investigation or technical expertise."
+          },
+          "after": null
+        },
+        {
+          "path": "snapshot.next_action.requires_human_approval",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.owner.owner",
+          "before": "Support L2",
+          "after": "Support L1"
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "The issue involves a specific technical behavior of the Google Distance Matrix API and may require deeper investigation or technical expertise.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The model found no passage that answered the enquiry."
+        },
+        {
+          "path": "snapshot.owner.severity",
+          "before": "SEV3",
+          "after": "SEV4"
+        },
+        {
+          "path": "snapshot.owner.should_escalate",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.proposed_actions",
+          "before": [
+            {
+              "action_type": "propose_escalation",
+              "description": "Ask a reviewer to approve handoff to Support L2.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "escalation": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The issue involves a specific technical behavior of the Google Distance Matrix API and may require deeper investigation or technical expertise."
+              }
+            }
+          ],
+          "after": []
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "not_run",
+        "reason": "The issue involves a specific technical behavior of the Google Distance Matrix API and may require deeper investigation or technical expertise.",
+        "reviews": []
+      },
+      "candidate_critic": {
+        "verdict": "needs_human",
+        "reason": "The model found no passage that answered the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The model found no passage that answered the enquiry."
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Formal handoff and its pending approval disappear. The result must not be described as ownership/action invariant even if the coarse route remains escalated."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-061",
+      "query": "Customer message:\n\"Google Distance Matrix returns REQUEST_DENIED from our Node.js backend.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "A routine request-parameter or limit check needs first-line assessment before a formal handoff."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "An existing customer needs service guidance."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "A routine request-parameter or limit check needs first-line assessment before a formal handoff.",
+          "after": "An existing customer needs service guidance."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-062",
+      "query": "Customer message:\n\"Ola Distance Matrix rejects our 8 origins × 8 destinations request.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "distance_matrix",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "distance_matrix",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The model found no passage that answered the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff. The model found no passage that answered the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The model found no passage that answered the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The model found no passage that answered the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff. The model found no passage that answered the enquiry.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The model found no passage that answered the enquiry."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "needs_human",
+        "reason": "The model found no passage that answered the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The model found no passage that answered the enquiry."
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "needs_human",
+        "reason": "The model found no passage that answered the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The model found no passage that answered the enquiry."
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-033",
+      "query": "Customer message:\n\"We added result_type=street_address and now some points return ZERO_RESULTS.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "directions",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "autocomplete",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. A routine request-parameter or limit check needs first-line assessment before a formal handoff.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-034",
+      "query": "Sandbox CRM ticket TKT-35162. Customer wrote:\n\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "changed_fields": [
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "proposed_actions",
+        "approvals"
+      ],
+      "owner_identity_changed": false,
+      "owner_reason_only": false,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      },
+      "candidate_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "propose_record_update",
+          "description": "Review the proposed change to TKT-35162.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "An existing customer needs service guidance."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_record_update",
+            "description": "Review the proposed change to TKT-35162.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "record_update": {
+              "record_id": "TKT-35162",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "reverse_geocode",
+                "category": "error_resolution",
+                "providers": "Google Maps Platform",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "reverse_geocode"
+                },
+                "category": {
+                  "old": null,
+                  "new": "error_resolution"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Google Maps Platform"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "record_update",
+            "payload": {
+              "record_id": "TKT-35162",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "reverse_geocode",
+                "category": "error_resolution",
+                "providers": "Google Maps Platform",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "reverse_geocode"
+                },
+                "category": {
+                  "old": null,
+                  "new": "error_resolution"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Google Maps Platform"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "propose_record_update",
+          "description": "Review the proposed change to TKT-35162.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "An existing customer needs service guidance."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_record_update",
+            "description": "Review the proposed change to TKT-35162.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "record_update": {
+              "record_id": "TKT-35162",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "reverse_geocode",
+                "category": "parameter_question",
+                "providers": "Google Maps Platform",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "reverse_geocode"
+                },
+                "category": {
+                  "old": null,
+                  "new": "parameter_question"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Google Maps Platform"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "record_update",
+            "payload": {
+              "record_id": "TKT-35162",
+              "mode": "propose",
+              "fields": {
+                "status": "solution_proposed",
+                "owner": "Support L1",
+                "api": "reverse_geocode",
+                "category": "parameter_question",
+                "providers": "Google Maps Platform",
+                "severity": "SEV4"
+              },
+              "diff": {
+                "status": {
+                  "old": null,
+                  "new": "solution_proposed"
+                },
+                "owner": {
+                  "old": null,
+                  "new": "Support L1"
+                },
+                "api": {
+                  "old": null,
+                  "new": "reverse_geocode"
+                },
+                "category": {
+                  "old": null,
+                  "new": "parameter_question"
+                },
+                "providers": {
+                  "old": null,
+                  "new": "Google Maps Platform"
+                },
+                "severity": {
+                  "old": null,
+                  "new": "SEV4"
+                }
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals[0].payload.diff.category.new",
+          "before": "error_resolution",
+          "after": "parameter_question"
+        },
+        {
+          "path": "snapshot.approvals[0].payload.fields.category",
+          "before": "error_resolution",
+          "after": "parameter_question"
+        },
+        {
+          "path": "snapshot.proposed_actions[0].record_update.diff.category.new",
+          "before": "error_resolution",
+          "after": "parameter_question"
+        },
+        {
+          "path": "snapshot.proposed_actions[0].record_update.fields.category",
+          "before": "error_resolution",
+          "after": "parameter_question"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "The sandbox update changes its category based on interpretation sub-intent; record target, approval requirement and pending status remain unchanged."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-035",
+      "query": "Customer message:\n\"Google reverse geocoding gives the neighbour's house number. Is the API wrong?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "route",
+        "next_action",
+        "owner",
+        "proposed_actions",
+        "approvals"
+      ],
+      "meaningful_control_fields": [
+        "route",
+        "next_action",
+        "proposed_actions",
+        "approvals",
+        "owner_identity"
+      ],
+      "owner_identity_changed": true,
+      "owner_reason_only": false,
+      "formal_handoff_removed": true,
+      "baseline_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "propose_escalation",
+          "description": "Ask a reviewer to approve handoff to Support L2.",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false,
+          "escalation": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The customer is reporting an address-quality issue with Google reverse geocoding results."
+          }
+        },
+        "owner": {
+          "owner": "Support L2",
+          "team": "Support",
+          "should_escalate": true,
+          "severity": "SEV3",
+          "reason": "The customer is reporting an address-quality issue with Google reverse geocoding results."
+        },
+        "proposed_actions": [
+          {
+            "action_type": "propose_escalation",
+            "description": "Ask a reviewer to approve handoff to Support L2.",
+            "requires_human_approval": true,
+            "approval_status": "pending",
+            "executed": false,
+            "escalation": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The customer is reporting an address-quality issue with Google reverse geocoding results."
+            }
+          }
+        ],
+        "approvals": [
+          {
+            "type": "escalation",
+            "payload": {
+              "severity": "SEV3",
+              "owner": "Support L2",
+              "summary": "The customer is reporting an address-quality issue with Google reverse geocoding results."
+            },
+            "status": "pending"
+          }
+        ],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.approvals",
+          "before": [
+            {
+              "type": "escalation",
+              "payload": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The customer is reporting an address-quality issue with Google reverse geocoding results."
+              },
+              "status": "pending"
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.next_action.action_type",
+          "before": "propose_escalation",
+          "after": "answer_directly"
+        },
+        {
+          "path": "snapshot.next_action.approval_status",
+          "before": "pending",
+          "after": "not_applicable"
+        },
+        {
+          "path": "snapshot.next_action.description",
+          "before": "Ask a reviewer to approve handoff to Support L2.",
+          "after": "Review the drafted reply."
+        },
+        {
+          "path": "snapshot.next_action.escalation",
+          "before": {
+            "severity": "SEV3",
+            "owner": "Support L2",
+            "summary": "The customer is reporting an address-quality issue with Google reverse geocoding results."
+          },
+          "after": null
+        },
+        {
+          "path": "snapshot.next_action.requires_human_approval",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.owner.owner",
+          "before": "Support L2",
+          "after": "Support L1"
+        },
+        {
+          "path": "snapshot.owner.reason",
+          "before": "The customer is reporting an address-quality issue with Google reverse geocoding results.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        {
+          "path": "snapshot.owner.severity",
+          "before": "SEV3",
+          "after": "SEV4"
+        },
+        {
+          "path": "snapshot.owner.should_escalate",
+          "before": true,
+          "after": false
+        },
+        {
+          "path": "snapshot.proposed_actions",
+          "before": [
+            {
+              "action_type": "propose_escalation",
+              "description": "Ask a reviewer to approve handoff to Support L2.",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false,
+              "escalation": {
+                "severity": "SEV3",
+                "owner": "Support L2",
+                "summary": "The customer is reporting an address-quality issue with Google reverse geocoding results."
+              }
+            }
+          ],
+          "after": []
+        },
+        {
+          "path": "snapshot.route",
+          "before": "escalated",
+          "after": "final"
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "not_run",
+        "reason": "The customer is reporting an address-quality issue with Google reverse geocoding results.",
+        "reviews": []
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Formal handoff and its pending approval disappear. The result must not be described as ownership/action invariant even if the coarse route remains escalated."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-039",
+      "query": "Customer message:\n\"Which Google reverse-geocode result should we display?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to"
+      },
+      "gold_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. The enquiry is about a technical decision regarding display of geocode results, which does not require a formal handoff."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. The enquiry is about a technical decision regarding display of geocode results, which does not require a formal handoff.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-040",
+      "query": "Customer message:\n\"Google reverse geocoding returns INVALID_REQUEST.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting"
+      },
+      "gold_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "troubleshooting",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "A routine request-parameter or limit check needs first-line assessment before a formal handoff."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "final",
+        "next_action": {
+          "action_type": "answer_directly",
+          "description": "Review the drafted reply.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "An existing customer needs service guidance."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "A routine request-parameter or limit check needs first-line assessment before a formal handoff.",
+          "after": "An existing customer needs service guidance."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-046",
+      "query": "Customer message:\n\"Return only the locality for a coordinate with Google reverse geocoding.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "changed_fields": [
+        "owner"
+      ],
+      "meaningful_control_fields": [],
+      "owner_identity_changed": false,
+      "owner_reason_only": true,
+      "formal_handoff_removed": false,
+      "baseline_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "human_handoff"
+      },
+      "candidate_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to"
+      },
+      "gold_interpretation": {
+        "api": "reverse_geocode",
+        "intent": "docs_how_to",
+        "team": "Support"
+      },
+      "baseline_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The cited passage does not directly answer the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. The request is for a specific data extraction task using a known API and does not require human intervention. The cited passage does not directly answer the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "candidate_snapshot": {
+        "route": "escalated",
+        "next_action": {
+          "action_type": "refuse",
+          "description": "The cited passage does not directly answer the enquiry.",
+          "requires_human_approval": false,
+          "approval_status": "not_applicable",
+          "executed": false
+        },
+        "owner": {
+          "owner": "Support L1",
+          "team": "Support",
+          "should_escalate": false,
+          "severity": "SEV4",
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The cited passage does not directly answer the enquiry."
+        },
+        "proposed_actions": [],
+        "approvals": [],
+        "active_questions": {
+          "needed": false,
+          "questions": []
+        },
+        "pending_reply": null,
+        "asked": [],
+        "answered": [],
+        "awaiting": []
+      },
+      "snapshot_deltas": [
+        {
+          "path": "snapshot.owner.reason",
+          "before": "Customer status is unknown. Provisional owner: Support L1. The request is for a specific data extraction task using a known API and does not require human intervention. The cited passage does not directly answer the enquiry.",
+          "after": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The cited passage does not directly answer the enquiry."
+        }
+      ],
+      "baseline_critic": {
+        "verdict": "needs_human",
+        "reason": "The cited passage does not directly answer the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          }
+        ]
+      },
+      "candidate_critic": {
+        "verdict": "needs_human",
+        "reason": "The cited passage does not directly answer the enquiry.",
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          },
+          {
+            "verdict": "revise",
+            "reason": "The cited passage does not directly answer the enquiry."
+          }
+        ]
+      },
+      "diagnosis": [
+        "Customer-only wrapper interpretation changes the API/intent supplied to unchanged ownership/escalation policy; controls can therefore change upstream of follow-up wording.",
+        "Owner/team/severity/escalation identity is unchanged; only the owner reason differs."
+      ]
+    }
+  ],
+  "limits": [
+    "The primary comparison uses the recovered baseline row only for the documented suspended-process case. Other endpoint and tool failures remain included.",
+    "Candidate uses exact-request response caching, so cached latency/cost and endpoint-error exposure are not comparable to a wholly fresh live baseline.",
+    "A routine final route may contain an explicit partial draft; final is not an independent answer-completeness judgement.",
+    "Responsibility changes originate in upstream interpretation/core routing, not only staff-question rendering. Control invariance is not met for the full holistic candidate.",
+    "Production Activity 16 changes remain excluded from this controlled primary v1 benchmark."
+  ]
+}

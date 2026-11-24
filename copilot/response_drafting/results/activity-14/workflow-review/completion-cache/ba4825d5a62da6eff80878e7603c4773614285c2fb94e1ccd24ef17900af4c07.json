@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"limits_question\",\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "raw": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"limits_question\",\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1287,
+    "completion_tokens": 49,
+    "total_tokens": 1336
+  },
+  "latency_ms": 1491,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

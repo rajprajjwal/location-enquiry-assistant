@@ -17,3 +17,17 @@ __pycache__/
 TRACKB_API_KEY
 # Generated scratch (reports and gold JSON are committed)
 .pytest_cache/
+
+# Rebuildable retrieval files.
+copilot/rag/data/chroma/
+copilot/rag/data/raw/
+
+# Local review database.
+copilot/case_storage/data/lbs.db*
+
+copilot/model_gateway/assets/
+
+# Local databases and rebuildable indexes inside verification snapshots.
+copilot/**/results/**/*.db
+copilot/**/results/**/*.db-*
+copilot/**/results/**/data/chroma/

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\",\"reason\":\"The error 'NoSegment' indicates that the coordinates provided could not snap to a street segment. To diagnose this, we need to reproduce the request with the exact coordinates and inspect the redacted request to identify the root cause.\"}",
+  "raw": "{\"decision\":\"request_reproduction\",\"reason\":\"The error 'NoSegment' indicates that the coordinates provided could not snap to a street segment. To diagnose this, we need to reproduce the request with the exact coordinates and inspect the redacted request to identify the root cause.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2948,
+    "completion_tokens": 56,
+    "total_tokens": 3004
+  },
+  "latency_ms": 2091,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,108 @@
+Completed fresh-case review decisions
+
+Two labels were approved by the user. Fourteen labels were reviewed by the assistant under explicit delegation.
+The result is an assistant-reviewed exploratory label set. Independent human review is complete for two cases.
+
+1. GT-LBS-AC-125
+Reviewer — assistant
+Enquiry — For a type-ahead address search box, how do Ola Maps Autocomplete and the public Nominatim endpoint compare for free usage and restrictions?
+Follow-up — Empty list.
+Reason — Compare documented free usage and restrictions. Workload details are needed for an estimate, while this enquiry asks for a general comparison.
+
+2. GT-LBS-AC-226
+Reviewer — assistant
+Enquiry — Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?
+Follow-up — Empty list.
+Reason — The provider, API and requested POI capability are specified. Explain documented product capabilities and relevant alternatives.
+
+3. GT-LBS-AC-094
+Reviewer — assistant
+Enquiry — How do we restrict autocomplete results to India on each provider?
+Follow-up — Empty list.
+Reason — Explain country restriction parameters for the project’s selected providers and state that provider scope in the answer.
+
+4. GT-LBS-AC-209
+Reviewer — assistant
+Enquiry — I'm setting up Mappls Autosuggest for Sri Lanka. How do I select that country, and what should I do about the zoom parameter I use for India?
+Follow-up — Empty list.
+Reason — The provider, target country and parameter question are explicit. Explain documented country selection and zoom behavior.
+
+5. GT-LBS-DIR-207
+Reviewer — assistant
+Enquiry — We're a cycling-delivery startup in Pune. Which providers give bicycling directions in India?
+Follow-up — Empty list.
+Reason — Travel mode, geography and the capability being compared are supplied. Give a documentation-based comparison.
+
+6. GT-LBS-DIR-072
+Reviewer — assistant
+Enquiry — Ola Directions gives a 'shortest' route that's slower than expected through Bengaluru traffic. Which option gives the quickest route?
+Follow-up — Empty list.
+Reason — The provider, current option and desired routing objective are specified. Explain the documented route option and any evidence limits.
+
+7. GT-LBS-DIR-030
+Reviewer — assistant
+Enquiry — I don't know yet. Please proceed on what I already said.
+History — user: Compare Ola Maps and Google for 6,000,000 traffic-aware route requests a month in India. What if we drop live traffic?
+History — assistant: Before I answer, one question: Which ETA accuracy do you need at dispatch vs in-trip?
+Follow-up — Empty list.
+Reason — The customer declined the ETA-accuracy follow-up and asked to proceed. Use the supplied volume and country, comparing the two traffic assumptions.
+
+8. GT-LBS-DIR-026
+Reviewer — assistant
+Enquiry — Let's leave that open for now; answer based on my earlier message.
+History — user: How much would Mapbox Directions cost for 900,000 requests a month?
+History — assistant: Before I answer, one question: Do you need driving-traffic, or is the driving profile enough?
+Follow-up — Empty list.
+Reason — The customer declined the profile choice. Provide both documented profile scenarios or a clearly stated assumption.
+
+9. GT-LBS-DM-080
+Reviewer — assistant
+Enquiry — Can we use router.project-osrm.org table service for our commercial fleet ETA matrix?
+Follow-up — Empty list.
+Reason — The endpoint and commercial purpose are explicit. Explain documented service terms, usage limits and suitability without requesting fleet diagnostics.
+
+10. GT-LBS-DM-209
+Reviewer — assistant
+Enquiry — We need walking-time matrices for a campus-delivery robot pilot in India. Which providers support walking?
+Follow-up — Empty list.
+Reason — The API capability, travel mode, purpose and country are specified. Compare documented walking-matrix support.
+
+11. GT-LBS-DM-067
+Reviewer — assistant
+Enquiry — Not decided yet. Go ahead with what I told you and state any assumption you make.
+History — user: Ola Distance Matrix returns 429 when our dispatcher refreshes ETAs every 10 seconds for 200 drivers.
+History — assistant: Before I answer, one question: Requests per minute?
+Follow-up — Empty list.
+Reason — Requests per minute was already asked and declined. Proceed with explicit assumptions about refreshes and batching, and avoid repeating that question.
+
+12. GT-LBS-DM-121
+Reviewer — assistant
+Enquiry — Google Route Matrix for two-wheelers in India: 120,000 elements a month. Cost?
+Follow-up — Empty list.
+Reason — The provider, product, mode, country, monthly volume and billing unit are supplied. State any remaining SKU assumptions in the estimate.
+
+13. GT-LBS-RG-105
+Reviewer — assistant
+Enquiry — How do we get the city name from lat/lng with Google?
+Follow-up — Empty list.
+Reason — This is a documented response-parsing question. Explain how to identify the city field and handle missing values using an example.
+
+14. GT-LBS-RG-091
+Reviewer — user
+Enquiry — Which reverse geocoders handle Indian boundaries per Indian law?
+Follow-up — Empty list.
+Reason — User approved the empty follow-up list in chat. Compare documented provider positions and flag compliance claims requiring further evidence.
+
+15. GT-LBS-RG-217
+Reviewer — assistant
+Enquiry — What's Google's default reverse geocoding throughput?
+Follow-up — Empty list.
+Reason — Report documented throughput with an explicit API version and distinguish published defaults from project-specific settings. Give separate version scopes where necessary.
+
+16. GT-LBS-RG-119
+Reviewer — user
+Enquiry — Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)?
+Follow-up — Which country is your billing account based in, and where will most reverse-geocoding lookups be used?
+Missing facts — billing account country, primary usage geography
+Reason — User approved the question about billing account country and primary usage geography in chat.
+

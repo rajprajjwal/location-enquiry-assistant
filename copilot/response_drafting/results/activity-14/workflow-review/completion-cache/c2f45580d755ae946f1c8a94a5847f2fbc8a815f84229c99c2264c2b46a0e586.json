@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The discrepancy in duration_in_traffic between the Google Distance Matrix API and the Google Maps app is due to differences in how each service handles traffic data. The Google Maps app uses the Routes API, which returns duration considering traffic conditions, while the Distance Matrix API's duration_in_traffic is only available under specific conditions. The diagnostic plan should check the raw API response to distinguish between the actual data and rendering differences.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The discrepancy in duration_in_traffic between the Google Distance Matrix API and the Google Maps app is due to differences in how each service handles traffic data. The Google Maps app uses the Routes API, which returns duration considering traffic conditions, while the Distance Matrix API's duration_in_traffic is only available under specific conditions. The diagnostic plan should check the raw API response to distinguish between the actual data and rendering differences.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1775,
+    "completion_tokens": 90,
+    "total_tokens": 1865
+  },
+  "latency_ms": 2286,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

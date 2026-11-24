@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"human_handoff\",\"sub_intent\":\"production_incident\",\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{}}",
+  "raw": "{\"intent\":\"human_handoff\",\"sub_intent\":\"production_incident\",\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1351,
+    "completion_tokens": 52,
+    "total_tokens": 1403
+  },
+  "latency_ms": 1331,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

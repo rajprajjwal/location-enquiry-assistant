@@ -1,0 +1,655 @@
+{
+  "cases": 16,
+  "gold_origin": "Assistant-authored reference for the extractor's supported fields, not independently reviewed",
+  "scope": "Explicit values and derived matrix size. Documentation classification and general missing-fact selection are outside this measurement.",
+  "reference": {
+    "GT-LBS-DIR-079": {
+      "provider": "OSRM",
+      "coordinates": "12.97,77.59;12.93,77.62",
+      "http_status": [
+        "400"
+      ],
+      "error_code": "NoSegment"
+    },
+    "GT-LBS-DIR-097": {
+      "provider": "Google Maps Platform",
+      "waypoint_lower_bound_exclusive": 10
+    },
+    "GT-LBS-DIR-124": {
+      "provider": "Google Maps Platform",
+      "workload": 50000,
+      "workload_period": "month"
+    },
+    "GT-LBS-AC-223": {
+      "provider": "Mapbox"
+    },
+    "GT-LBS-RG-086": {
+      "provider": "Ola Maps",
+      "http_status": [
+        "401",
+        "403"
+      ],
+      "failure_after_credential_rotation": true
+    },
+    "GT-LBS-AC-085": {
+      "provider": "OSM Nominatim",
+      "user_agent_present": false
+    },
+    "GT-LBS-DM-225": {
+      "provider": "Google Maps Platform",
+      "origin_count": 15,
+      "destination_count": 10,
+      "matrix_elements": 150
+    },
+    "GT-LBS-RG-062": {
+      "provider": "Mapbox",
+      "http_status": [
+        "422"
+      ],
+      "limit_parameter": 5
+    },
+    "GT-LBS-AC-047": {},
+    "GT-LBS-RG-111": {
+      "provider": "Mapbox"
+    },
+    "GT-LBS-RG-099": {
+      "provider": "Google Maps Platform",
+      "error_code": "ZERO_RESULTS"
+    },
+    "GT-LBS-DIR-088": {
+      "provider": "Google Maps Platform",
+      "error_code": "OVER_QUERY_LIMIT"
+    },
+    "GT-LBS-AC-111": {
+      "provider": "Google Maps Platform"
+    },
+    "GT-LBS-DM-049": {
+      "provider": "Google Maps Platform",
+      "error_code": "NOT_FOUND",
+      "ticket_id": "TKT-93241"
+    },
+    "GT-LBS-DM-125": {
+      "provider": "OSRM"
+    },
+    "GT-LBS-DM-046": {
+      "provider": "Google Maps Platform",
+      "origin_count": 10,
+      "destination_count": 10,
+      "matrix_elements": 100,
+      "departure_time": "now",
+      "proceed_without_more_questions": true
+    }
+  },
+  "extraction": {
+    "correct_values": 38,
+    "expected_values": 38,
+    "predicted_values": 38,
+    "precision": 1.0,
+    "recall": 1.0,
+    "exact_cases": 16,
+    "case_accuracy": 1.0,
+    "evidence_spans_valid": true
+  },
+  "fixed_candidate_replay": {
+    "candidates": 11,
+    "repeated_candidates": 2,
+    "repeated_suppressed": 2,
+    "other_candidates_suppressed": 0,
+    "per_candidate": [
+      {
+        "record_id": "GT-LBS-DIR-079",
+        "question": "Are the coordinates being passed in the correct format (e.g., latitude,longitude pairs separated by semicolons)?",
+        "repeats_supplied_fact": false,
+        "suppressed": false
+      },
+      {
+        "record_id": "GT-LBS-DIR-097",
+        "question": "Does the API documentation mention a limit on the number of waypoints per route?",
+        "repeats_supplied_fact": false,
+        "suppressed": false
+      },
+      {
+        "record_id": "GT-LBS-DIR-124",
+        "question": "Are you planning to use 50,000 routes for a monthly or annual period?",
+        "repeats_supplied_fact": true,
+        "suppressed": true
+      },
+      {
+        "record_id": "GT-LBS-AC-223",
+        "question": "Does the Mapbox Search Box API allow specifying a maximum number of results per call, and what is the default or maximum limit?",
+        "repeats_supplied_fact": false,
+        "suppressed": false
+      },
+      {
+        "record_id": "GT-LBS-RG-086",
+        "question": "When did you rotate the OAuth credentials?",
+        "repeats_supplied_fact": false,
+        "suppressed": false
+      },
+      {
+        "record_id": "GT-LBS-AC-085",
+        "question": "Are you not sending a User-Agent header with your Nominatim requests?",
+        "repeats_supplied_fact": true,
+        "suppressed": true
+      },
+      {
+        "record_id": "GT-LBS-AC-047",
+        "question": "Can you provide examples of the queries that are not returning predictions?",
+        "repeats_supplied_fact": false,
+        "suppressed": false
+      },
+      {
+        "record_id": "GT-LBS-RG-111",
+        "question": "What is the structure of the Mapbox reverse geocoding response you're receiving?",
+        "repeats_supplied_fact": false,
+        "suppressed": false
+      },
+      {
+        "record_id": "GT-LBS-RG-099",
+        "question": "What are the specific GPS coordinates that are returning ZERO_RESULTS?",
+        "repeats_supplied_fact": false,
+        "suppressed": false
+      },
+      {
+        "record_id": "GT-LBS-AC-111",
+        "question": "Is the API key still active and correctly configured for the Google Places Autocomplete service?",
+        "repeats_supplied_fact": false,
+        "suppressed": false
+      },
+      {
+        "record_id": "GT-LBS-DM-125",
+        "question": "Are you using the correct output format or parameters to retrieve distances from the OSRM table?",
+        "repeats_supplied_fact": false,
+        "suppressed": false
+      }
+    ]
+  },
+  "packet_sha256": "1c7d50e3b992820969a0f0e883a2a16b75539cb913e4e36f3cdb3fcd8e088c94",
+  "baseline_predictions_sha256": "43ee9755803f686d0817289980358c23609d476b66458341a9a9f7107be602fe",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "per_case": [
+    {
+      "record_id": "GT-LBS-DIR-079",
+      "expected": {
+        "provider": "OSRM",
+        "coordinates": "12.97,77.59;12.93,77.62",
+        "http_status": [
+          "400"
+        ],
+        "error_code": "NoSegment"
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "OSRM",
+          "source": "query",
+          "evidence": "OSRM",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "field": "coordinates",
+          "value": "12.97,77.59;12.93,77.62",
+          "source": "query",
+          "evidence": "12.97,77.59;12.93,77.62",
+          "start": 94,
+          "end": 117
+        },
+        {
+          "field": "http_status",
+          "value": [
+            "400"
+          ],
+          "source": "query",
+          "evidence": "HTTP 400",
+          "start": 29,
+          "end": 37
+        },
+        {
+          "field": "error_code",
+          "value": "NoSegment",
+          "source": "query",
+          "evidence": "NoSegment",
+          "start": 49,
+          "end": 58
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "expected": {
+        "provider": "Google Maps Platform",
+        "waypoint_lower_bound_exclusive": 10
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "field": "waypoint_lower_bound_exclusive",
+          "value": 10,
+          "source": "query",
+          "evidence": "more than 10 waypoints",
+          "start": 35,
+          "end": 57
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-124",
+      "expected": {
+        "provider": "Google Maps Platform",
+        "workload": 50000,
+        "workload_period": "month"
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 17,
+          "end": 23
+        },
+        {
+          "field": "workload",
+          "value": 50000,
+          "source": "query",
+          "evidence": "50,000 Google two-wheeler routes a month",
+          "start": 10,
+          "end": 50
+        },
+        {
+          "field": "workload_period",
+          "value": "month",
+          "source": "query",
+          "evidence": "50,000 Google two-wheeler routes a month",
+          "start": 10,
+          "end": 50
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "expected": {
+        "provider": "Mapbox"
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 4,
+          "end": 10
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "expected": {
+        "provider": "Ola Maps",
+        "http_status": [
+          "401",
+          "403"
+        ],
+        "failure_after_credential_rotation": true
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Ola Maps",
+          "source": "query",
+          "evidence": "Ola",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "field": "http_status",
+          "value": [
+            "401",
+            "403"
+          ],
+          "source": "query",
+          "evidence": "fail with 401/403",
+          "start": 30,
+          "end": 47
+        },
+        {
+          "field": "failure_after_credential_rotation",
+          "value": true,
+          "source": "query",
+          "evidence": "after we rotated OAuth credentials",
+          "start": 48,
+          "end": 82
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "expected": {
+        "provider": "OSM Nominatim",
+        "user_agent_present": false
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "OSM Nominatim",
+          "source": "query",
+          "evidence": "Nominatim",
+          "start": 4,
+          "end": 13
+        },
+        {
+          "field": "user_agent_present",
+          "value": false,
+          "source": "query",
+          "evidence": "don't send any User-Agent",
+          "start": 39,
+          "end": 64
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "expected": {
+        "provider": "Google Maps Platform",
+        "origin_count": 15,
+        "destination_count": 10,
+        "matrix_elements": 150
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 4,
+          "end": 10
+        },
+        {
+          "field": "origin_count",
+          "value": 15,
+          "source": "query",
+          "evidence": "15 stations \u00d7 10 offices",
+          "start": 53,
+          "end": 77
+        },
+        {
+          "field": "destination_count",
+          "value": 10,
+          "source": "query",
+          "evidence": "15 stations \u00d7 10 offices",
+          "start": 53,
+          "end": 77
+        },
+        {
+          "field": "matrix_elements",
+          "value": 150,
+          "source": "query",
+          "evidence": "15 stations \u00d7 10 offices",
+          "start": 53,
+          "end": 77
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "expected": {
+        "provider": "Mapbox",
+        "http_status": [
+          "422"
+        ],
+        "limit_parameter": 5
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "field": "http_status",
+          "value": [
+            "422"
+          ],
+          "source": "query",
+          "evidence": "returns 422",
+          "start": 38,
+          "end": 49
+        },
+        {
+          "field": "limit_parameter",
+          "value": 5,
+          "source": "query",
+          "evidence": "limit=5",
+          "start": 30,
+          "end": 37
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "expected": {},
+      "extracted": [],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "expected": {
+        "provider": "Mapbox"
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 38,
+          "end": 44
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "expected": {
+        "provider": "Google Maps Platform",
+        "error_code": "ZERO_RESULTS"
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 9,
+          "end": 15
+        },
+        {
+          "field": "error_code",
+          "value": "ZERO_RESULTS",
+          "source": "query",
+          "evidence": "ZERO_RESULTS",
+          "start": 41,
+          "end": 53
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "expected": {
+        "provider": "Google Maps Platform",
+        "error_code": "OVER_QUERY_LIMIT"
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 36,
+          "end": 42
+        },
+        {
+          "field": "error_code",
+          "value": "OVER_QUERY_LIMIT",
+          "source": "query",
+          "evidence": "OVER_QUERY_LIMIT",
+          "start": 82,
+          "end": 98
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "expected": {
+        "provider": "Google Maps Platform"
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "expected": {
+        "provider": "Google Maps Platform",
+        "error_code": "NOT_FOUND",
+        "ticket_id": "TKT-93241"
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Google Maps Platform",
+          "source": "query",
+          "evidence": "Google",
+          "start": 68,
+          "end": 74
+        },
+        {
+          "field": "error_code",
+          "value": "NOT_FOUND",
+          "source": "query",
+          "evidence": "NOT_FOUND",
+          "start": 112,
+          "end": 121
+        },
+        {
+          "field": "ticket_id",
+          "value": "TKT-93241",
+          "source": "query",
+          "evidence": "TKT-93241",
+          "start": 19,
+          "end": 28
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "expected": {
+        "provider": "OSRM"
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "OSRM",
+          "source": "query",
+          "evidence": "OSRM",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "exact": true
+    },
+    {
+      "record_id": "GT-LBS-DM-046",
+      "expected": {
+        "provider": "Google Maps Platform",
+        "origin_count": 10,
+        "destination_count": 10,
+        "matrix_elements": 100,
+        "departure_time": "now",
+        "proceed_without_more_questions": true
+      },
+      "extracted": [
+        {
+          "field": "provider",
+          "value": "Google Maps Platform",
+          "source": "history[0]",
+          "evidence": "Google",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "field": "origin_count",
+          "value": 10,
+          "source": "history[0]",
+          "evidence": "10\u00d710",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "field": "destination_count",
+          "value": 10,
+          "source": "history[0]",
+          "evidence": "10\u00d710",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "field": "matrix_elements",
+          "value": 100,
+          "source": "history[0]",
+          "evidence": "10\u00d710",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "field": "departure_time",
+          "value": "now",
+          "source": "history[0]",
+          "evidence": "departure_time=now",
+          "start": 38,
+          "end": 56
+        },
+        {
+          "field": "proceed_without_more_questions",
+          "value": true,
+          "source": "query",
+          "evidence": "answer based on my earlier message",
+          "start": 31,
+          "end": 65
+        }
+      ],
+      "exact": true
+    }
+  ]
+}

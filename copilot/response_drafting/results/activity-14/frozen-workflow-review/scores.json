@@ -1,0 +1,14 @@
+{
+  "updated": {
+    "predicted": 44,
+    "gold": 75,
+    "matches": 17,
+    "facts": 34,
+    "gold_facts": 99,
+    "questions_on_empty_gold": 16,
+    "f1": 0.2857142857142857,
+    "precision": 0.38636363636363635,
+    "recall": 0.22666666666666666,
+    "fact_recall": 0.3434343434343434
+  }
+}

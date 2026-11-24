@@ -1,0 +1,1074 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "7583b2450ab86bf46ddd3f8245f4f27b14687bc84a9748c062ece891c8e52c46",
+  "gold_sha256": "7178465f7ff5668097b30f609e3fcffdc189593609d4cb9b4bae8a686611cb33",
+  "reviewer": "Assistant semantic inspection with reproducible canonical-fact alignment of rendered questions",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-003",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-008",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-009",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-010",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-021",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-233",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              3,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              3,
+              2,
+              1
+            ],
+            [
+              3,
+              2,
+              2
+            ],
+            [
+              3,
+              2,
+              3
+            ],
+            [
+              3,
+              2,
+              4
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-036",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-037",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-038",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-040",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-047",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-048",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              5,
+              1
+            ],
+            [
+              3,
+              5,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              5,
+              1
+            ],
+            [
+              4,
+              5,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              5,
+              1
+            ],
+            [
+              3,
+              5,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-017",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-018",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-019",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-020",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-025",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-030",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              3,
+              3
+            ]
+          ],
+          "facts": [
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-230",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-008",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-009",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-011",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-012",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-013",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              2,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ],
+            [
+              3,
+              3,
+              2
+            ],
+            [
+              3,
+              3,
+              3
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Canonical fact alignment of the saved text, semantically inspected. Whole match requires equal grouped facts; partial facts scored separately."
+        }
+      }
+    }
+  ]
+}

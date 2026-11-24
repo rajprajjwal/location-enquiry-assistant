@@ -1,0 +1,341 @@
+{
+  "cases": 80,
+  "comparison": "Historical prior frozen-locked integrated snapshot.",
+  "preserved": {
+    "route": 75,
+    "next_action": 75,
+    "owner": 79,
+    "approvals": 80,
+    "proposed_actions": 80,
+    "active_questions": 76,
+    "pending_reply": 76,
+    "asked": 76,
+    "answered": 80,
+    "awaiting": 76,
+    "clarification_messages": 76
+  },
+  "routes_before": {
+    "final": 61,
+    "escalated": 15,
+    "clarification_needed": 4
+  },
+  "routes_after": {
+    "final": 66,
+    "escalated": 14
+  },
+  "pending_before": 4,
+  "pending_after": 0,
+  "changes": [
+    {
+      "record_id": "GT-LBS-AC-229",
+      "changes": {
+        "route": {
+          "before": "clarification_needed",
+          "after": "final"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Where will the application operate?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "active_questions": {
+          "before": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "region",
+                "text": "Where will the application operate?"
+              }
+            ]
+          },
+          "after": {
+            "needed": false,
+            "questions": []
+          }
+        },
+        "pending_reply": {
+          "before": {
+            "field": "region",
+            "task": "A no-code platform vendor wants to wire public Nominatim into generated apps for address autocomplete. What should we ask this prospect about their use case, deployment and licensing before recommending a provider?"
+          },
+          "after": null
+        },
+        "asked": {
+          "before": [
+            "region"
+          ],
+          "after": []
+        },
+        "awaiting": {
+          "before": [
+            "Awaiting region"
+          ],
+          "after": []
+        },
+        "clarification_messages": {
+          "before": [
+            "Where will the application operate?"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-231",
+      "changes": {
+        "route": {
+          "before": "clarification_needed",
+          "after": "final"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "active_questions": {
+          "before": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "after": {
+            "needed": false,
+            "questions": []
+          }
+        },
+        "pending_reply": {
+          "before": {
+            "field": "monthly_volume",
+            "task": "A checkout-form vendor in India wants address autocomplete and may store the chosen coordinates. What should we ask before recommending Google, Ola, Mapbox Search Box, or public Nominatim?"
+          },
+          "after": null
+        },
+        "asked": {
+          "before": [
+            "monthly_volume"
+          ],
+          "after": []
+        },
+        "awaiting": {
+          "before": [
+            "Awaiting monthly volume"
+          ],
+          "after": []
+        },
+        "clarification_messages": {
+          "before": [
+            "What is your expected monthly request volume?"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "changes": {
+        "route": {
+          "before": "escalated",
+          "after": "final"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "refuse",
+            "description": "The cited passage does not directly answer the enquiry.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "owner": {
+          "before": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. The cited passage does not directly answer the enquiry."
+          },
+          "after": {
+            "owner": "Support L1",
+            "team": "Support",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+          }
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-226",
+      "changes": {
+        "route": {
+          "before": "clarification_needed",
+          "after": "final"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "active_questions": {
+          "before": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "after": {
+            "needed": false,
+            "questions": []
+          }
+        },
+        "pending_reply": {
+          "before": {
+            "field": "monthly_volume",
+            "task": "A prospect is evaluating Google Distance Matrix for an India-only app. What should we confirm about their intended use and licensing before recommending it, including which published price list would apply?"
+          },
+          "after": null
+        },
+        "asked": {
+          "before": [
+            "monthly_volume"
+          ],
+          "after": []
+        },
+        "awaiting": {
+          "before": [
+            "Awaiting monthly volume"
+          ],
+          "after": []
+        },
+        "clarification_messages": {
+          "before": [
+            "What is your expected monthly request volume?"
+          ],
+          "after": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-225",
+      "changes": {
+        "route": {
+          "before": "clarification_needed",
+          "after": "final"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "active_questions": {
+          "before": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "after": {
+            "needed": false,
+            "questions": []
+          }
+        },
+        "pending_reply": {
+          "before": {
+            "field": "monthly_volume",
+            "task": "A prospect says: 'We need reverse geocoding for a delivery app in India and Nepal.' What should we ask before recommending a provider?"
+          },
+          "after": null
+        },
+        "asked": {
+          "before": [
+            "monthly_volume"
+          ],
+          "after": []
+        },
+        "awaiting": {
+          "before": [
+            "Awaiting monthly volume"
+          ],
+          "after": []
+        },
+        "clarification_messages": {
+          "before": [
+            "What is your expected monthly request volume?"
+          ],
+          "after": []
+        }
+      }
+    }
+  ],
+  "old_reopened_cases": 4,
+  "current_reopened_cases": 0,
+  "paired_reopened_cases": 0,
+  "paired_reopened_unchanged": 0,
+  "followups": [],
+  "schema_valid": 80,
+  "endpoint_calls": 0,
+  "captured_model_replies": 239,
+  "holdout_cases": 0,
+  "code_and_gold_verified_after_run": true
+}

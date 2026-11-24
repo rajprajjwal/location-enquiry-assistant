@@ -1,0 +1,356 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "958940a3ddee347d93cacd3341a66ff71ad1e2b19b7861dc10f14d01ff160fe7",
+  "gold_sha256": "f85624a7d42d755c953908fc428c89949eac7355819765b2b952e0ae80d0de46",
+  "reviewer": "Assistant semantic review; reference labels contain two user approvals and fourteen delegated assistant decisions",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-125",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "What are the free usage restrictions and rate limiting policies for Ola Maps Autocomplete and Nominatim?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-226",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "What specific configuration or parameters are needed to restrict autocomplete results to India on each provider?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-209",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "How do you select the country for Mappls Autosuggest configuration?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-207",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "Do you need real-time traffic updates, offline access, or route optimization for your deliveries?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-072",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "What is the duration of the route provided by Ola Directions?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-030",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-026",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-080",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "Is the service intended for commercial use?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-209",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "Which providers support walking-time matrices for the campus-delivery robot pilot in India?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-067",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-121",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-105",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "What are the specific latitude and longitude values you want to use for the reverse geocode lookup?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-091",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-217",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question for this case."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "Correct empty list."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [],
+        "integrated": []
+      },
+      "approved_questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "RG-119 asks about already supplied display/storage constraints, not billing country or usage geography."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "The approved pricing-qualification question is absent."
+        }
+      },
+      "reviewed_questions": {
+        "baseline": [
+          "Are there any specific features or constraints beyond basic reverse geocoding, such as display-only requirements or data storage limitations?"
+        ],
+        "integrated": []
+      },
+      "approved_questions": [
+        {
+          "question": "Which country is your billing account based in, and where will most reverse-geocoding lookups be used?",
+          "facts": [
+            "billing account country",
+            "primary usage geography"
+          ],
+          "why_it_matters": "Determine the applicable pricing schedule before comparing Google and Mapbox for the same workload."
+        }
+      ]
+    }
+  ],
+  "review_kind": "assistant_reviewed_exploratory"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"capability_fit\",\"api\":\"directions\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"optimize the order of more than 10 delivery addresses\",\"evidence\":\"We need to optimize the order of more than 10 delivery addresses with Google Directions.\"},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":\"with Google Directions\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"capability_fit\",\"api\":\"directions\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"optimize the order of more than 10 delivery addresses\",\"evidence\":\"We need to optimize the order of more than 10 delivery addresses with Google Directions.\"},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Google Maps Platform\",\"evidence\":\"with Google Directions\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1319,
+    "completion_tokens": 171,
+    "total_tokens": 1490
+  },
+  "latency_ms": 3998,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

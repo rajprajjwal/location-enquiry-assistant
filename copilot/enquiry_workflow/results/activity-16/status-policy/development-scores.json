@@ -1,0 +1,193 @@
+{
+  "cohort": "development",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "cases": 277,
+        "owner_correct": 269,
+        "owner_accuracy": 0.9711191335740073,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 1,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.9,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [],
+      "status_changes": []
+    },
+    "explicit_status": {
+      "metrics": {
+        "cases": 277,
+        "owner_correct": 269,
+        "owner_accuracy": 0.9711191335740073,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 1,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.9,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [],
+      "status_changes": [
+        {
+          "record_id": "GT-LBS-DM-114",
+          "before": "unknown",
+          "after": "existing"
+        },
+        {
+          "record_id": "GT-LBS-DM-115",
+          "before": "unknown",
+          "after": "existing"
+        },
+        {
+          "record_id": "GT-LBS-DM-116",
+          "before": "unknown",
+          "after": "existing"
+        }
+      ]
+    },
+    "billing_continuation": {
+      "metrics": {
+        "cases": 277,
+        "owner_correct": 269,
+        "owner_accuracy": 0.9711191335740073,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 0,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 1.0,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-DIR-044",
+          "query": "I don't know yet. Please proceed on what I already said.",
+          "before": {
+            "owner": "Account team (Sales)",
+            "escalate": true,
+            "reason": "The customer mentioned their credit balance went negative on 5 September and is asking about routing calls stopping, which indicates a potential billing issue.",
+            "approval": {
+              "action_type": "propose_escalation",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false
+            },
+            "ownership_review": {
+              "customer_status": "unknown",
+              "owner": "Account team (Sales)",
+              "provisional": false,
+              "status_deferred": false,
+              "confirmation_needed": false,
+              "reason": "The customer mentioned their credit balance went negative on 5 September and is asking about routing calls stopping, which indicates a potential billing issue.",
+              "suggested_question": null
+            }
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "escalate": false,
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer continued a billing-policy question; no service interruption or human intervention is established.",
+            "ownership_review": {
+              "customer_status": "unknown",
+              "owner": "Account team (Sales)",
+              "provisional": true,
+              "status_deferred": false,
+              "confirmation_needed": true,
+              "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer continued a billing-policy question; no service interruption or human intervention is established.",
+              "suggested_question": "Are you already using this service, or evaluating it as a new customer?"
+            }
+          },
+          "expected": {
+            "owner": "Account team (Sales)",
+            "escalate": false
+          },
+          "owner_regression": false
+        }
+      ],
+      "status_changes": []
+    },
+    "combined": {
+      "metrics": {
+        "cases": 277,
+        "owner_correct": 269,
+        "owner_accuracy": 0.9711191335740073,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 0,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 1.0,
+        "escalation_recall": 1.0,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [
+        {
+          "record_id": "GT-LBS-DIR-044",
+          "query": "I don't know yet. Please proceed on what I already said.",
+          "before": {
+            "owner": "Account team (Sales)",
+            "escalate": true,
+            "reason": "The customer mentioned their credit balance went negative on 5 September and is asking about routing calls stopping, which indicates a potential billing issue.",
+            "approval": {
+              "action_type": "propose_escalation",
+              "requires_human_approval": true,
+              "approval_status": "pending",
+              "executed": false
+            },
+            "ownership_review": {
+              "customer_status": "unknown",
+              "owner": "Account team (Sales)",
+              "provisional": false,
+              "status_deferred": false,
+              "confirmation_needed": false,
+              "reason": "The customer mentioned their credit balance went negative on 5 September and is asking about routing calls stopping, which indicates a potential billing issue.",
+              "suggested_question": null
+            }
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "escalate": false,
+            "reason": "The customer continued a billing-policy question; no service interruption or human intervention is established.",
+            "ownership_review": {
+              "customer_status": "existing",
+              "owner": "Account team (Sales)",
+              "provisional": false,
+              "status_deferred": false,
+              "confirmation_needed": false,
+              "reason": "The customer continued a billing-policy question; no service interruption or human intervention is established.",
+              "suggested_question": null
+            }
+          },
+          "expected": {
+            "owner": "Account team (Sales)",
+            "escalate": false
+          },
+          "owner_regression": false
+        }
+      ],
+      "status_changes": [
+        {
+          "record_id": "GT-LBS-DIR-044",
+          "before": "unknown",
+          "after": "existing"
+        },
+        {
+          "record_id": "GT-LBS-DM-114",
+          "before": "unknown",
+          "after": "existing"
+        },
+        {
+          "record_id": "GT-LBS-DM-115",
+          "before": "unknown",
+          "after": "existing"
+        },
+        {
+          "record_id": "GT-LBS-DM-116",
+          "before": "unknown",
+          "after": "existing"
+        }
+      ]
+    }
+  },
+  "method": "Saved-interpretation replay, preserving cached handoffs except rule-evidenced billing continuation."
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "record_id": "GT-LBS-RG-219",
+    "query": "Mappls reverse geocoding suddenly returns 403 Forbidden. What should we check?",
+    "history": [],
+    "questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "gold": [
+      {
+        "question": "Did traffic spike, or did you deploy from a new server/domain?",
+        "facts": [
+          "Whether traffic spiked.",
+          "Whether a deployment used a new server or domain."
+        ]
+      }
+    ],
+    "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+    "gold_sha256": "fcc5bff24917e5e1ba98decf0d108b49940f179ddd87413e5c38ac6a86960365"
+  },
+  {
+    "record_id": "GT-LBS-RG-228",
+    "query": "A logistics prospect wants to reverse-geocode driver GPS pings into addresses shown in Hindi, and they may store the results. What should we ask before recommending a provider?",
+    "history": [],
+    "questions": [
+      "Could you confirm peak requests per second and expected monthly API workload?",
+      "Could you confirm whether results must be stored, whether a public community endpoint is acceptable and whether temporary-only geocoding results are acceptable?"
+    ],
+    "gold": [
+      {
+        "question": "What peak rate and monthly volume do they need?",
+        "facts": [
+          "The required peak request rate.",
+          "The required monthly volume."
+        ]
+      },
+      {
+        "question": "Must results be in Hindi or another language?",
+        "facts": [
+          "The required result language, including whether Hindi is required."
+        ]
+      },
+      {
+        "question": "Will results be stored, and is public Nominatim or Mapbox temporary geocoding acceptable?",
+        "facts": [
+          "Whether results will be stored.",
+          "Whether public Nominatim is acceptable.",
+          "Whether Mapbox temporary geocoding is acceptable."
+        ]
+      }
+    ],
+    "questions_sha256": "209f200b860b63e65054ba1d378aacf28d7eb640e6db4d1d82e601bb51d01fbf",
+    "gold_sha256": "442905abd1dcaee50925b78460de98c35eb0e6ac4e6897540fab6adaeb262af7"
+  },
+  {
+    "record_id": "GT-LBS-RG-230",
+    "query": "A prospect says they only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision, and they need an address broken into elements. What should we ask, and which documented parameters matter?",
+    "history": [],
+    "questions": [
+      "Could you confirm other providers you want to consider?"
+    ],
+    "gold": [
+      {
+        "question": "Is street-address / rooftop precision a hard filter, and is an address-element breakdown required?",
+        "facts": [
+          "Whether street-address/rooftop precision is a hard filter.",
+          "Whether an address-element breakdown is required."
+        ]
+      },
+      {
+        "question": "Which provider are they considering besides Google and Nominatim?",
+        "facts": [
+          "The providers being considered besides Google and Nominatim."
+        ]
+      }
+    ],
+    "questions_sha256": "210de21c44def89da8f0f65f17b95102d1f74c93084fdb91c3b27036197e387a",
+    "gold_sha256": "374fdca5018becda7d2aba5cee25d5969b259035f7e09a4d826b7ceb08d9c103"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"UP\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"monthly_volume\"],\n      \"decision_impact\": \"Estimate the recurring workload and cost.\"\n    },\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing capability.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Determine vehicle-specific routing support.\"\n    },\n    {\n      \"fields\": [\"max_stops\"],\n      \"decision_impact\": \"Check route shape against waypoint limits.\"\n    },\n    {\n      \"fields\": [\"existing_project\", \"ola_contract\"],\n      \"decision_impact\": \"Establish product eligibility and applicable commercial terms.\"\n    }\n  ],\n  \"reason\": \"The customer's requirements for a directions/routing API for daily beat plans with 15–20 outlets require understanding of workload, traffic-aware routing, vehicle-specific support, waypoint limits, and eligibility for commercial terms.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"UP\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"monthly_volume\"],\n      \"decision_impact\": \"Estimate the recurring workload and cost.\"\n    },\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing capability.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Determine vehicle-specific routing support.\"\n    },\n    {\n      \"fields\": [\"max_stops\"],\n      \"decision_impact\": \"Check route shape against waypoint limits.\"\n    },\n    {\n      \"fields\": [\"existing_project\", \"ola_contract\"],\n      \"decision_impact\": \"Establish product eligibility and applicable commercial terms.\"\n    }\n  ],\n  \"reason\": \"The customer's requirements for a directions/routing API for daily beat plans with 15–20 outlets require understanding of workload, traffic-aware routing, vehicle-specific support, waypoint limits, and eligibility for commercial terms.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2182,
+    "completion_tokens": 235,
+    "total_tokens": 2417
+  },
+  "latency_ms": 5519,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,68 @@
+{
+  "cohort": "fresh-partial",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "cases": 7,
+        "owner_correct": 5,
+        "owner_accuracy": 0.7142857142857143,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 1,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.0,
+        "escalation_recall": null,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [],
+      "status_changes": []
+    },
+    "explicit_status": {
+      "metrics": {
+        "cases": 7,
+        "owner_correct": 5,
+        "owner_accuracy": 0.7142857142857143,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 1,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.0,
+        "escalation_recall": null,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [],
+      "status_changes": []
+    },
+    "billing_continuation": {
+      "metrics": {
+        "cases": 7,
+        "owner_correct": 5,
+        "owner_accuracy": 0.7142857142857143,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 1,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.0,
+        "escalation_recall": null,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [],
+      "status_changes": []
+    },
+    "combined": {
+      "metrics": {
+        "cases": 7,
+        "owner_correct": 5,
+        "owner_accuracy": 0.7142857142857143,
+        "escalation_true_positives": 0,
+        "escalation_false_positives": 1,
+        "escalation_false_negatives": 0,
+        "escalation_precision": 0.0,
+        "escalation_recall": null,
+        "escalation_reason_coverage": 1.0
+      },
+      "changes": [],
+      "status_changes": []
+    }
+  },
+  "method": "Saved-interpretation replay, preserving cached handoffs except rule-evidenced billing continuation."
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"vehicle_dimensions\"],\n      \"decision_impact\": \"Determine the vehicle restrictions that the routing product must enforce.\"\n    }\n  ],\n  \"reason\": \"The customer is running 16-tonne trucks between Indian warehouses, which requires knowing the vehicle dimensions to select the appropriate routing API that supports their specific truck specifications.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"vehicle_dimensions\"],\n      \"decision_impact\": \"Determine the vehicle restrictions that the routing product must enforce.\"\n    }\n  ],\n  \"reason\": \"The customer is running 16-tonne trucks between Indian warehouses, which requires knowing the vehicle dimensions to select the appropriate routing API that supports their specific truck specifications.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1960,
+    "completion_tokens": 117,
+    "total_tokens": 2077
+  },
+  "latency_ms": 3550,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"current_provider\",\n      \"value\": \"Google Maps Platform\",\n      \"evidence\": \"Our Google\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is inquiring about billing for Google Place Autocomplete, specifically whether the bill is per keystroke even when a sessiontoken is used. The documentation indicates that the session concludes when a place is selected and Place Details is called, which affects billing. Additionally, the customer's use of a sessiontoken may influence how keystrokes are converted into billable requests, depending on debouncing practices.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"current_provider\",\n      \"value\": \"Google Maps Platform\",\n      \"evidence\": \"Our Google\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is inquiring about billing for Google Place Autocomplete, specifically whether the bill is per keystroke even when a sessiontoken is used. The documentation indicates that the session concludes when a place is selected and Place Details is called, which affects billing. Additionally, the customer's use of a sessiontoken may influence how keystrokes are converted into billable requests, depending on debouncing practices.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1669,
+    "completion_tokens": 194,
+    "total_tokens": 1863
+  },
+  "latency_ms": 4519,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

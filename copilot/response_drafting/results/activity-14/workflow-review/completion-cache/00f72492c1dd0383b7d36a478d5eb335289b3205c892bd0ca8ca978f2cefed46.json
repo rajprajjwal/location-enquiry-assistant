@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_quality\",\"reason\":\"The customer mentioned that they set radius=5000 but still see far-away results. The documentation indicates that the API may return zero results if no type is matched, but it does not mention a 'radius' parameter. This suggests that the parameter might not be correctly applied or the API does not support it, leading to incorrect or harmful autocomplete output.\"}",
+  "raw": "{\"decision\":\"prediction_quality\",\"reason\":\"The customer mentioned that they set radius=5000 but still see far-away results. The documentation indicates that the API may return zero results if no type is matched, but it does not mention a 'radius' parameter. This suggests that the parameter might not be correctly applied or the API does not support it, leading to incorrect or harmful autocomplete output.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1539,
+    "completion_tokens": 82,
+    "total_tokens": 1621
+  },
+  "latency_ms": 2076,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

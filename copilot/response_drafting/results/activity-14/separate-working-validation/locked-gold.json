@@ -1,0 +1,243 @@
+{
+  "status": "locked",
+  "case_sha256": "2988975e329c8fe7453e94524d26caf261ada62b6937b4283a017eeabc3a9856",
+  "review_kind": "Assistant review before predictions under explicit user delegation. No independent human review.",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-027",
+      "group": "GT-LBS-AC-026",
+      "fold": 5,
+      "query": "Sandbox CRM opportunity OPP-58418. Customer wrote:\n\"We're still on Place Autocomplete (Legacy) in India: 300,000 sessions × 9 requests. Cost per billing option?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Compare the explicitly requested legacy billing options with stated session assumptions. Propose only sandbox updates supported by the enquiry."
+    },
+    {
+      "record_id": "GT-LBS-AC-084",
+      "group": "GT-LBS-AC-084",
+      "fold": 5,
+      "query": "How do we limit Nominatim search to India and get up to 50 results?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Country restriction and requested result count can be answered from the documented parameters and public-service limits."
+    },
+    {
+      "record_id": "GT-LBS-AC-099",
+      "group": "GT-LBS-AC-099",
+      "fold": 5,
+      "query": "Google Places Autocomplete: we need results from 5 countries (CH, FR, DE, AT, IT). Is only one country allowed?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The specified five countries and product are enough to explain documented country-restriction support."
+    },
+    {
+      "record_id": "GT-LBS-AC-114",
+      "group": "GT-LBS-AC-114",
+      "fold": 2,
+      "query": "Restrict Google Place Autocomplete to Bangladesh.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider and desired country are supplied. Give documented configuration."
+    },
+    {
+      "record_id": "GT-LBS-AC-118",
+      "group": "GT-LBS-AC-116",
+      "fold": 5,
+      "query": "Ola Place Details after autocomplete selection: 6,000,000 calls a month. Cost?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider, operation and monthly workload are supplied. Address the scope boundary and give documented guidance or a conditional quote."
+    },
+    {
+      "record_id": "GT-LBS-AC-121",
+      "group": "GT-LBS-AC-119",
+      "fold": 1,
+      "query": "Google Autocomplete (New), India: 200,000 sessions with 25 requests each. Is per-request or session pricing cheaper, assuming every session ends in Place Details Essentials?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The product, country, session counts, request counts and terminating SKU assumption are supplied. Compare stated billing options conditionally."
+    },
+    {
+      "record_id": "GT-LBS-AC-122",
+      "group": "GT-LBS-AC-122",
+      "fold": 1,
+      "query": "Ola vs Mapbox autocomplete for 100,000 sessions × 8 keystrokes a month?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Session and keystroke counts permit a conditional comparison of documented billing options. State token and completed-session assumptions."
+    },
+    {
+      "record_id": "GT-LBS-AC-216",
+      "group": "GT-LBS-AC-216",
+      "fold": 4,
+      "query": "Our Mapbox address box shows autocomplete suggestions while users type. After we switched it to the Geocoding API, request counts exploded. Why is this happening?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The switch to per-request Geocoding in a typeahead box explains request multiplication. Give documented debounce and session-based alternatives."
+    },
+    {
+      "record_id": "GT-LBS-AC-224",
+      "group": "GT-LBS-AC-224",
+      "fold": 5,
+      "query": "Do Mapbox Search Box autocomplete /suggest and /retrieve calls need a session token?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Session-token requirements are a documentation question with a specified product."
+    },
+    {
+      "record_id": "GT-LBS-DM-045",
+      "group": "GT-LBS-DM-044",
+      "fold": 3,
+      "query": "Sandbox CRM ticket TKT-63953. Customer wrote:\n\"Google Distance Matrix gives MAX_DIMENSIONS_EXCEEDED with 30 destinations and 1 origin, even though that's only 30 elements.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The exact dimensions and error are supplied. Explain dimensional limits from documentation, and propose sandbox changes only."
+    },
+    {
+      "record_id": "GT-LBS-RG-034",
+      "group": "GT-LBS-RG-034",
+      "fold": 5,
+      "query": "Sandbox CRM ticket TKT-35162. Customer wrote:\n\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [
+        {
+          "question": "Could you share the failing reverse-geocoding request as sent, with the API key and other credentials redacted?",
+          "facts": [
+            "redacted failing reverse-geocoding request as sent"
+          ],
+          "why_it_matters": "The documented missing-key explanation is possible, not confirmed. Inspect the actual request to distinguish a missing key from other denial causes."
+        }
+      ],
+      "rationale": "The documented missing-key explanation is possible, not confirmed. Inspect the actual request to distinguish a missing key from other denial causes."
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "group": "GT-LBS-RG-096",
+      "fold": 3,
+      "query": "Free reverse geocoding options for a hobby app with 20,000 lookups a month?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The workload and hobby use are enough to compare public-service usage policies and conditional alternatives."
+    },
+    {
+      "record_id": "GT-LBS-RG-102",
+      "group": "GT-LBS-RG-102",
+      "fold": 3,
+      "query": "Google Geocode REQUEST_DENIED for reverse geocode with our Places-enabled key.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [
+        {
+          "question": "Could you share the failing reverse-geocoding request as sent, with the API key and other credentials redacted?",
+          "facts": [
+            "redacted failing reverse-geocoding request as sent"
+          ],
+          "why_it_matters": "Places being enabled does not establish the Geocoding API or restriction configuration. Request evidence supports diagnosis alongside the documented configuration checks."
+        }
+      ],
+      "rationale": "Places being enabled does not establish the Geocoding API or restriction configuration. Request evidence supports diagnosis alongside the documented configuration checks."
+    },
+    {
+      "record_id": "GT-LBS-RG-120",
+      "group": "GT-LBS-RG-120",
+      "fold": 1,
+      "query": "Ola vs Mapbox reverse geocoding when we must store 300,000 results a month?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The providers, reverse-geocoding operation, stored-result requirement and monthly count are supplied. Compare permanent-storage terms and applicable billing assumptions."
+    },
+    {
+      "record_id": "GT-LBS-RG-123",
+      "group": "GT-LBS-RG-123",
+      "fold": 2,
+      "query": "Filter Google reverse geocoding to location_type=RANGE_INTERPOLATED only.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider and desired location_type are supplied. Show the documented filter."
+    },
+    {
+      "record_id": "GT-LBS-RG-124",
+      "group": "GT-LBS-RG-124",
+      "fold": 2,
+      "query": "Filter Google reverse geocoding to location_type=GEOMETRIC_CENTER only.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider and desired location_type are supplied. Show the documented filter."
+    },
+    {
+      "record_id": "GT-LBS-RG-205",
+      "group": "GT-LBS-RG-205",
+      "fold": 1,
+      "query": "Our map shows disputed borders for Indian users. Can Mapbox reverse geocoding return India's view of boundaries?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Explain documented worldview support and constraints. Avoid an unsupported compliance guarantee."
+    },
+    {
+      "record_id": "GT-LBS-RG-211",
+      "group": "GT-LBS-RG-210",
+      "fold": 2,
+      "query": "Will Mappls reverse geocoding give us the same detailed response in Bangladesh as in India?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider and countries are supplied. Explain documented coverage differences and uncertainty."
+    },
+    {
+      "record_id": "GT-LBS-RG-216",
+      "group": "GT-LBS-RG-214",
+      "fold": 5,
+      "query": "We want to batch reverse-geocode 2 million historical GPS points with nominatim.openstreetmap.org. OK?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The named public endpoint and bulk historical workload are sufficient to explain the usage policy and alternatives."
+    },
+    {
+      "record_id": "GT-LBS-RG-222",
+      "group": "GT-LBS-RG-221",
+      "fold": 5,
+      "query": "Can Nominatim reverse return just the suburb instead of the full address?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Explain documented reverse-response address fields and client extraction of the suburb, including absent-field handling."
+    }
+  ]
+}

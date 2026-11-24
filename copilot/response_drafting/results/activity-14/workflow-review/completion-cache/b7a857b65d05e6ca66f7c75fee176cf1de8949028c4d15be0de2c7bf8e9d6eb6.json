@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"accuracy_question\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "raw": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"accuracy_question\",\"api\":\"autocomplete\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1322,
+    "completion_tokens": 48,
+    "total_tokens": 1370
+  },
+  "latency_ms": 1257,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

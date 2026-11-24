@@ -1,0 +1,78 @@
+{
+  "review_kind": "Assistant semantic equivalence review, not independent human review. Consistent with prior baseline credit for existing-project wording.",
+  "previous_predictions_sha256": "4e0cb1ac057c37653a7b385e49b9d580f50e9179dbf500f35f17abd93b20b875",
+  "current_predictions_sha256": "badbc2784d9c628cb57bb3851ce3a2f57d893fd3fd3399cf876e8186d2ea36ba",
+  "gold_sha256": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089",
+  "cases": [
+    {
+      "record_id": "GT-LBS-DIR-013",
+      "old_questions_sha256": "0e263f05fe474e912f63da527142e2ac01b84ebdb4d5a4e8b0ed2e49c3b510b5",
+      "new_questions_sha256": "c5c9fc67cf5e38b7d4972f3cf3e28ab9868948777be5f0e27ee15fb5fc1092f8",
+      "context_sha256": "122fd4788650d4188beaaff84dffd333116298f8455643949705e95d2faaf9f4",
+      "gold_sha256": "5e67aef2f304db84c8e99861822ae9feff3e642ede9d1b67f0302a90d8304e73",
+      "old_to_new_prediction_indices": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "reason": "Actual question lists independently compared. Only the Google project wording changed to explicit new/existing; same previously credited project-eligibility fact, no added or removed decision."
+    },
+    {
+      "record_id": "GT-LBS-DIR-014",
+      "old_questions_sha256": "0e263f05fe474e912f63da527142e2ac01b84ebdb4d5a4e8b0ed2e49c3b510b5",
+      "new_questions_sha256": "c5c9fc67cf5e38b7d4972f3cf3e28ab9868948777be5f0e27ee15fb5fc1092f8",
+      "context_sha256": "4dca58b331a18f015e8ef47c1a694e553dfbce06222fd594d942aa44b004d740",
+      "gold_sha256": "5e67aef2f304db84c8e99861822ae9feff3e642ede9d1b67f0302a90d8304e73",
+      "old_to_new_prediction_indices": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "reason": "Actual question lists independently compared. Only the Google project wording changed to explicit new/existing; same previously credited project-eligibility fact, no added or removed decision."
+    },
+    {
+      "record_id": "GT-LBS-DIR-047",
+      "old_questions_sha256": "82eea74c312a08d77c6631fb5f2fff222d073ed98e02fe114b2691fb642e6909",
+      "new_questions_sha256": "9f214f2fceb8cad6826e2315ee9e0d1f530689bd660b8b04300e1234bd0139e2",
+      "context_sha256": "4f79dd4898c6ab447a797366d31641f757405e54805c7f3f3036704e35cb0829",
+      "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+      "old_to_new_prediction_indices": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      },
+      "reason": "Actual question lists independently compared. Only the Google project wording changed to explicit new/existing; same previously credited project-eligibility fact, no added or removed decision."
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "old_questions_sha256": "0e6f104bd12cc35c9fe9b5323eff9e82c865f85ecf21678f91b2ec2d0db81505",
+      "new_questions_sha256": "e9d02cbef94e58e0b1dbff17aee75ded79c6c3db13cc69aa7af463248918933b",
+      "context_sha256": "e4faa174d08fb91eedfa5388784e84e80f8dc30443840accff5a8b2cad0be5d5",
+      "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+      "old_to_new_prediction_indices": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      },
+      "reason": "Actual question lists independently compared. Only the Google project wording changed to explicit new/existing; same previously credited project-eligibility fact, no added or removed decision."
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "old_questions_sha256": "76d5ea8a846dc8dba7cfa47ec91185e1d7ab87984b64a7c5d7d230fd58ea1999",
+      "new_questions_sha256": "2d902e3a6c1793b2ae327262bc811c3aa28077496f4ec35f4be318d96dcd1ec6",
+      "context_sha256": "5a65a8d6a0c0cd7cdd3609743902a17fc2866208788100325574fa9f2f33c564",
+      "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+      "old_to_new_prediction_indices": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "reason": "Actual question lists independently compared. Only the Google project wording changed to explicit new/existing; same previously credited project-eligibility fact, no added or removed decision."
+    }
+  ]
+}

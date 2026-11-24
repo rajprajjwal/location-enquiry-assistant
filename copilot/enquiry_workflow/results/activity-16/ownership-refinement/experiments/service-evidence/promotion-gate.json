@@ -1,0 +1,11 @@
+{
+  "candidate": "combined",
+  "required": [
+    "development owner accuracy improves with no owner regressions",
+    "fresh owner accuracy is non-inferior with no owner regressions",
+    "escalation decisions preserved",
+    "candidate and baseline hashes unchanged",
+    "targeted and full regression checks pass before completion"
+  ],
+  "on_failure": "do not promote"
+}

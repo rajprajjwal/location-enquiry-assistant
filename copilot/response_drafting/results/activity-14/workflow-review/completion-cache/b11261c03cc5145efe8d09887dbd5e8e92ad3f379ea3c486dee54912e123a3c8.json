@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\", \"reason\":\"The reverse geocoding result is not displaying the correct pin code, which suggests an issue with how the result is being rendered or displayed, not with the API's data.\"}",
+  "raw": "{\"decision\":\"display_result\", \"reason\":\"The reverse geocoding result is not displaying the correct pin code, which suggests an issue with how the result is being rendered or displayed, not with the API's data.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1019,
+    "completion_tokens": 46,
+    "total_tokens": 1065
+  },
+  "latency_ms": 1241,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

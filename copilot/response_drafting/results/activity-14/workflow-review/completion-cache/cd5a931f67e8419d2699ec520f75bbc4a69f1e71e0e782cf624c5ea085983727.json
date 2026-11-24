@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"storage_required\",\n      \"value\": true,\n      \"evidence\": \"must store 300,000 results a month\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    }\n  ],\n  \"reason\": \"The customer must store 300,000 results a month, which affects the decision on licensing and pricing for reverse geocoding services.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"storage_required\",\n      \"value\": true,\n      \"evidence\": \"must store 300,000 results a month\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    }\n  ],\n  \"reason\": \"The customer must store 300,000 results a month, which affects the decision on licensing and pricing for reverse geocoding services.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2119,
+    "completion_tokens": 122,
+    "total_tokens": 2241
+  },
+  "latency_ms": 3008,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

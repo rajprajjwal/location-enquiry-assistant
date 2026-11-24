@@ -1,0 +1,6 @@
+{
+  "before_sha256": "84f42869f4ed7cf04c9b8aa23fc3795c15f1b44dacb8daa99a85fcac0622ec55",
+  "after_sha256": "df9bec6e93aee3cef12404910fbd40e840a2164c07cec10d2fdf81913bfb7807",
+  "reason": "Negative-control test requires all production users to remain intervention evidence.",
+  "prediction_equivalence": "All 277 working owner/escalation predictions unchanged after negative-control protection."
+}

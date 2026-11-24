@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The failure occurs after rotating OAuth credentials, indicating an authentication or integration issue. To diagnose, we need the actual redacted request that triggered the 401/403 error.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The failure occurs after rotating OAuth credentials, indicating an authentication or integration issue. To diagnose, we need the actual redacted request that triggered the 401/403 error.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1321,
+    "completion_tokens": 50,
+    "total_tokens": 1371
+  },
+  "latency_ms": 1345,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

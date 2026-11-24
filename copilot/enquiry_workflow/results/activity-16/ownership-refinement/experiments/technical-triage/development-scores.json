@@ -1,0 +1,188 @@
+{
+  "baseline": {
+    "cases": 218,
+    "owner_correct": 203,
+    "owner_accuracy": 0.9311926605504587,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 6,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.6,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "candidate": {
+    "cases": 218,
+    "owner_correct": 208,
+    "owner_accuracy": 0.9541284403669725,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 1,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.9,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "changes": [
+    {
+      "record_id": "GT-LBS-DM-051",
+      "query": "Customer message:\n\"Google Distance Matrix doesn't return duration_in_traffic even though we pass traffic_model=best_guess.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": {
+        "owner": "Support L2",
+        "escalate": true,
+        "reason": "The customer is encountering an issue with the Google Distance Matrix API where duration_in_traffic is not being returned despite specifying traffic_model=best_guess, indicating a potential technical issue requiring second-line investigation.",
+        "approval": {
+          "action_type": "propose_escalation",
+          "requires_human_approval": true,
+          "approval_status": "pending",
+          "executed": false
+        },
+        "ownership_review": {
+          "customer_status": "unknown",
+          "owner": "Support L2",
+          "provisional": false,
+          "status_deferred": false,
+          "confirmation_needed": false,
+          "reason": "The customer is encountering an issue with the Google Distance Matrix API where duration_in_traffic is not being returned despite specifying traffic_model=best_guess, indicating a potential technical issue requiring second-line investigation.",
+          "suggested_question": null
+        }
+      },
+      "after": {
+        "owner": "Support L1",
+        "escalate": false,
+        "reason": "This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+        "ownership_review": {
+          "customer_status": "existing",
+          "owner": "Support L1",
+          "provisional": false,
+          "status_deferred": false,
+          "confirmation_needed": false,
+          "reason": "This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+          "suggested_question": null
+        }
+      },
+      "expected": {
+        "owner": "Support L1",
+        "escalate": false
+      },
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-064",
+      "query": "Customer message:\n\"Ola Directions returns 400 with reason 'Invalid/missing origin'. We send origin=77.5946,12.9716.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": {
+        "owner": "Support L2",
+        "escalate": true,
+        "reason": "The customer is encountering a 400 error with 'Invalid/missing origin' when using Ola Directions, indicating a potential issue with the API or data handling that requires technical investigation.",
+        "source": "model"
+      },
+      "after": {
+        "owner": "Support L1",
+        "escalate": false,
+        "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+        "ownership_review": {
+          "customer_status": "unknown",
+          "owner": "Support L1",
+          "provisional": true,
+          "status_deferred": false,
+          "confirmation_needed": true,
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+          "suggested_question": "Are you already using this service, or evaluating it as a new customer?"
+        }
+      },
+      "expected": {
+        "owner": "Support L1",
+        "escalate": false
+      },
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DM-050",
+      "query": "Customer message:\n\"A Google Distance Matrix element returns MAX_ROUTE_LENGTH_EXCEEDED for a Kanyakumari\u2013Srinagar pair. Can we raise the limit?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": {
+        "owner": "Maps engineering",
+        "escalate": true,
+        "reason": "The customer reports a MAX_ROUTE_LENGTH_EXCEEDED error for a specific route, indicating a potential issue with the service's ability to handle long-distance routes, which may suggest a regression in map accuracy or routing capabilities.",
+        "source": "model"
+      },
+      "after": {
+        "owner": "Support L1",
+        "escalate": false,
+        "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+        "ownership_review": {
+          "customer_status": "unknown",
+          "owner": "Support L1",
+          "provisional": true,
+          "status_deferred": false,
+          "confirmation_needed": true,
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+          "suggested_question": "Are you already using this service, or evaluating it as a new customer?"
+        }
+      },
+      "expected": {
+        "owner": "Support L1",
+        "escalate": false
+      },
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-DM-056",
+      "query": "Customer message:\n\"Google Compute Route Matrix rejects our 30\u00d730 request. Isn't the limit 625?\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": {
+        "owner": "Maps engineering",
+        "escalate": true,
+        "reason": "The customer is reporting an issue with the Google Compute Route Matrix API rejecting a 30x30 request, suggesting a possible limit misunderstanding or a regression in the service's behavior.",
+        "source": "model"
+      },
+      "after": {
+        "owner": "Support L1",
+        "escalate": false,
+        "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+        "ownership_review": {
+          "customer_status": "unknown",
+          "owner": "Support L1",
+          "provisional": true,
+          "status_deferred": false,
+          "confirmation_needed": true,
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+          "suggested_question": "Are you already using this service, or evaluating it as a new customer?"
+        }
+      },
+      "expected": {
+        "owner": "Support L1",
+        "escalate": false
+      },
+      "improved": true
+    },
+    {
+      "record_id": "GT-LBS-RG-033",
+      "query": "Customer message:\n\"We added result_type=street_address and now some points return ZERO_RESULTS.\"\nWho should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+      "before": {
+        "owner": "Maps engineering",
+        "escalate": true,
+        "reason": "The customer reported a change in results after adding result_type=street_address, indicating a potential regression in map accuracy.",
+        "source": "model"
+      },
+      "after": {
+        "owner": "Support L1",
+        "escalate": false,
+        "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+        "ownership_review": {
+          "customer_status": "unknown",
+          "owner": "Support L1",
+          "provisional": true,
+          "status_deferred": false,
+          "confirmation_needed": true,
+          "reason": "Customer status is unknown. Provisional owner: Support L1. This is a routine request-parameter or limit check for first-line support, not an established need for intervention.",
+          "suggested_question": "Are you already using this service, or evaluating it as a new customer?"
+        }
+      },
+      "expected": {
+        "owner": "Support L1",
+        "escalate": false
+      },
+      "improved": true
+    }
+  ],
+  "method": "Saved-interpretation replay; existing model classifications retained except eligible first-line assessment cases.",
+  "frozen_cases": 0,
+  "holdout_cases": 0
+}

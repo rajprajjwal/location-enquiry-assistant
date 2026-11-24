@@ -1,0 +1,21 @@
+{
+  "cases": 80,
+  "frozen_cases": 80,
+  "holdout_cases": 0,
+  "schema_valid": 80,
+  "execution_errors": 0,
+  "fresh_model_calls": 244,
+  "cached_model_calls": 0,
+  "model_call_errors": 0,
+  "returned_models": {
+    "Qwen/Qwen3-8B": 244
+  },
+  "routes": {
+    "final": 65,
+    "escalated": 15
+  },
+  "predicted_questions": 44,
+  "predictions_sha256": "826bfc2184299941f21a5f90e902c79bd718ac90900af0a09d9f4321c6583571",
+  "integrity_verified": true,
+  "finished_at_utc": "2026-11-24T19:52:21.955784+00:00"
+}

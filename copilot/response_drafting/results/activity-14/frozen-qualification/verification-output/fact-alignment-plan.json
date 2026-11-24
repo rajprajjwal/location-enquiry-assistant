@@ -1,0 +1,2468 @@
+{
+  "version": "1.0",
+  "status": "evaluation_only_plan_before_new_predictions",
+  "reviewer_type": "assistant",
+  "independent_human_acceptance": false,
+  "application_or_gold_changes": false,
+  "source_locked_gold_sha256": "7c5c44fb2f1d216957585b7edaf765406b791da2c13decd6c05cd0e4d63000fb",
+  "source_official_questions_sha256": "b5f8fce68f5d751931f74403671bc402dc624bb2df73f167a2a2ecd782518984",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-031",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-032",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-033",
+      "bucket": "ownership",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-045",
+      "bucket": "interpretation",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-051",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-068",
+      "bucket": "pricecompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-073",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-081",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-086",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-089",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Target go-live?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "target go-live date",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "timeline"
+              ],
+              "semantic_cues": [
+                "go-live",
+                "launch date"
+              ],
+              "rationale": "Both request the intended launch date.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-205",
+      "bucket": "coveragecompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do users type in the native script or in transliterated Latin text?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "native-script versus transliterated-Latin typing",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "native script versus Latin transliteration",
+                "how users type"
+              ],
+              "rationale": "Output languages and voice/text modality do not establish input-script behavior.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-210",
+      "bucket": "coveragecompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-215",
+      "bucket": "limitscompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "How many keystrokes per user per second do you send?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "keystrokes sent per user per second",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "peak_rate",
+                "debouncing"
+              ],
+              "semantic_cues": [
+                "keystrokes",
+                "per user",
+                "per second",
+                "actually sent"
+              ],
+              "rationale": "API request rate or debounce yes/no alone is not the per-user transmitted-keystroke rate.",
+              "required_actual_text_or_context": [
+                "Ask specifically for keystrokes sent per user per second."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-222",
+      "bucket": "limitscompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-229",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Who owns each generated app's provider account and deployment?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "owner of each generated app provider account",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "backend_owner",
+                "billing_account_scope"
+              ],
+              "semantic_cues": [
+                "who owns each app provider account"
+              ],
+              "rationale": "Backend operation and account count do not specify provider-account ownership.",
+              "required_actual_text_or_context": [
+                "Explicitly ask who owns each generated app provider account."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "owner of each generated app deployment",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "deployment_owner"
+              ],
+              "semantic_cues": [
+                "who owns deployment",
+                "each generated app"
+              ],
+              "rationale": "Deployment ownership is relevant but must retain the each-app scope.",
+              "required_actual_text_or_context": [
+                "Actual question or unambiguous customer context scopes ownership to each generated app."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "What are the expected monthly volumes, peak request rates and target regions?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "expected monthly volume",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "monthly_volume"
+              ],
+              "semantic_cues": [
+                "expected monthly API workload",
+                "monthly volume"
+              ],
+              "rationale": "Both request expected recurring monthly usage; do not substitute a daily total or arbitrary business count.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "peak request rate",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "peak_rate"
+              ],
+              "semantic_cues": [
+                "peak request rate",
+                "peak requests per second"
+              ],
+              "rationale": "Both request peak API traffic rate, not monthly quantity or concurrency.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 3,
+              "gold_fact_text": "target regions",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "region"
+              ],
+              "semantic_cues": [
+                "target countries or regions",
+                "operating locations"
+              ],
+              "rationale": "Both request intended usage locations, not billing-account country.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Will the generated apps store, export, or redistribute results?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether results will be stored",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "storage_required"
+              ],
+              "semantic_cues": [
+                "whether results must be stored",
+                "retain results"
+              ],
+              "rationale": "Both request intended result storage.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "whether results will be exported",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "export results"
+              ],
+              "rationale": "Storage, redistribution and resale do not individually request result export.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 3,
+              "gold_fact_text": "whether results will be redistributed",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "redistribution_required"
+              ],
+              "semantic_cues": [
+                "redistribute results"
+              ],
+              "rationale": "Both request result redistribution.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-230",
+      "bucket": "qualification",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-231",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "What monthly volume do they expect, and will they bill Google Autocomplete as Requests or Session Usage?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "expected monthly volume",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "monthly_volume"
+              ],
+              "semantic_cues": [
+                "expected monthly API workload",
+                "monthly volume"
+              ],
+              "rationale": "Both request expected recurring monthly usage; do not substitute a daily total or arbitrary business count.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "Google Autocomplete Requests versus Session Usage billing",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "billing_basis"
+              ],
+              "semantic_cues": [
+                "Google Autocomplete",
+                "Requests",
+                "Session Usage"
+              ],
+              "rationale": "Generic API product/billing-option wording does not name the required two Google billing alternatives.",
+              "required_actual_text_or_context": [
+                "Explicitly ask Requests versus Session Usage, or equivalent unambiguous wording."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Will they store the selected coordinates or only use them ephemerally?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "selected coordinates stored versus ephemeral use",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "storage_required",
+                "temporary_results_acceptable"
+              ],
+              "semantic_cues": [
+                "store selected coordinates",
+                "ephemeral selected-coordinate use"
+              ],
+              "rationale": "Generic storage or temporary-result permission may concern a different payload.",
+              "required_actual_text_or_context": [
+                "Question or unambiguous context must identify selected coordinates and their storage versus ephemeral use."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Are they proposing the public Nominatim server as the autocomplete backend?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether public Nominatim is the proposed autocomplete backend",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "public_service_acceptable",
+                "hosting_preference"
+              ],
+              "semantic_cues": [
+                "public Nominatim",
+                "proposed autocomplete backend"
+              ],
+              "rationale": "Acceptability of a generic public service is not whether this public server is being proposed as the backend.",
+              "required_actual_text_or_context": [
+                "Explicitly identify public Nominatim as the proposed autocomplete backend."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-234",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Are they on a standard self-service plan with automatic card payments, or a contractual customer whose current contract is unaffected?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "standard self-service automatic-card plan versus unaffected contractual customer",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "commercial_plan"
+              ],
+              "semantic_cues": [
+                "standard self-service",
+                "automatic card payments",
+                "unaffected current contract"
+              ],
+              "rationale": "Contract/prepaid status alone omits the automatic-card and unaffected-contract distinction.",
+              "required_actual_text_or_context": [
+                "Ask the stated self-service/card versus unaffected-contract alternatives."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Is expected Autocomplete usage within the documented 100,000 free calls per API, or above it?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "Autocomplete usage within or above 100000 free calls per API",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "monthly_volume"
+              ],
+              "semantic_cues": [
+                "within or above 100000",
+                "free Autocomplete calls per API"
+              ],
+              "rationale": "Asking volume alone does not ask the specific free-tier threshold qualification.",
+              "required_actual_text_or_context": [
+                "Explicitly ask whether usage is within or above the stated 100000 free-calls threshold."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Have they already received the official instructions for adding credits?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether official add-credits instructions were received",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "already received official add-credits instructions"
+              ],
+              "rationale": "No current qualification field represents receipt of official account instructions.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-AC-235",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-AC-236",
+      "bucket": "history",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Is the usage estimate for one billing account or multiple billing accounts?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "one billing account versus multiple billing accounts",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "billing_account_scope"
+              ],
+              "semantic_cues": [
+                "one billing account or multiple accounts"
+              ],
+              "rationale": "Both request the account aggregation scope.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-011",
+      "bucket": "pricecompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you need live-traffic ETAs or are static routes enough?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "live-traffic ETA versus static-route requirement",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "traffic_required"
+              ],
+              "semantic_cues": [
+                "live traffic ETAs required",
+                "static routes enough"
+              ],
+              "rationale": "A live-traffic requirement yes/no resolves the traffic/static requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "What vehicle types (car, bike, auto, truck) do you route?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "vehicle types routed",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "travel_mode"
+              ],
+              "semantic_cues": [
+                "required vehicle or travel modes",
+                "car bike auto truck"
+              ],
+              "rationale": "Both request routing vehicle or mode requirements.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Is your Google Cloud project new or existing?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "new versus existing Google Cloud project",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "existing_project"
+              ],
+              "semantic_cues": [
+                "new or existing Google Cloud project"
+              ],
+              "rationale": "An already-enabled-project yes/no question can conflate project existence with enablement.",
+              "required_actual_text_or_context": [
+                "Actual wording must establish new versus existing project, not only whether an API/project is enabled."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-012",
+      "bucket": "pricecompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you need live-traffic ETAs or are static routes enough?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "live-traffic ETA versus static-route requirement",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "traffic_required"
+              ],
+              "semantic_cues": [
+                "live traffic ETAs required",
+                "static routes enough"
+              ],
+              "rationale": "A live-traffic requirement yes/no resolves the traffic/static requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "What vehicle types (car, bike, auto, truck) do you route?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "vehicle types routed",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "travel_mode"
+              ],
+              "semantic_cues": [
+                "required vehicle or travel modes",
+                "car bike auto truck"
+              ],
+              "rationale": "Both request routing vehicle or mode requirements.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Is your Google Cloud project new or existing?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "new versus existing Google Cloud project",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "existing_project"
+              ],
+              "semantic_cues": [
+                "new or existing Google Cloud project"
+              ],
+              "rationale": "An already-enabled-project yes/no question can conflate project existence with enablement.",
+              "required_actual_text_or_context": [
+                "Actual wording must establish new versus existing project, not only whether an API/project is enabled."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-020",
+      "bucket": "history",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "How many intermediate waypoints per route at most?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "maximum intermediate waypoints per route",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "max_stops"
+              ],
+              "semantic_cues": [
+                "maximum intermediate waypoints per route"
+              ],
+              "rationale": "Stops or coordinates can include endpoints; the gold fact specifically asks intermediate waypoints.",
+              "required_actual_text_or_context": [
+                "Actual wording or unequivocal API/context must preserve the intermediate-waypoint maximum."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-021",
+      "bucket": "history",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "How many intermediate waypoints per route at most?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "maximum intermediate waypoints per route",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "max_stops"
+              ],
+              "semantic_cues": [
+                "maximum intermediate waypoints per route"
+              ],
+              "rationale": "Stops or coordinates can include endpoints; the gold fact specifically asks intermediate waypoints.",
+              "required_actual_text_or_context": [
+                "Actual wording or unequivocal API/context must preserve the intermediate-waypoint maximum."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "bucket": "qualification",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Will you redistribute derived data, or only display routes?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "derived-data redistribution versus routes-only display",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "redistribution_required",
+                "display_context"
+              ],
+              "semantic_cues": [
+                "redistribute derived data",
+                "only display routes"
+              ],
+              "rationale": "Generic redistribution or map-display wording may omit the derived-data/routes-only alternative.",
+              "required_actual_text_or_context": [
+                "Ask the redistribution-versus-display distinction explicitly, or its complete equivalent."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-084",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Requests per minute at peak?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "peak requests per minute",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "peak_rate"
+              ],
+              "semantic_cues": [
+                "peak requests per minute",
+                "peak RPM"
+              ],
+              "rationale": "Per-second peaks or unspecified rates need not preserve the requested peak measurement window.",
+              "required_actual_text_or_context": [
+                "Preserve the peak per-minute measurement; do not automatically infer it from peak RPS, concurrency or monthly volume."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Contract or prepaid?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "contract versus prepaid account",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "commercial_plan"
+              ],
+              "semantic_cues": [
+                "provider contract or prepaid plan"
+              ],
+              "rationale": "Both request contract/prepaid account terms.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-085",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Target start date?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "target start date",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "timeline"
+              ],
+              "semantic_cues": [
+                "target start date",
+                "target launch date"
+              ],
+              "rationale": "Both request intended start/launch timing in this enquiry.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Required SLA?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "required SLA",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "sla"
+              ],
+              "semantic_cues": [
+                "required SLA"
+              ],
+              "rationale": "Same service-level requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-100",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-108",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-201",
+      "bucket": "coveragecompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you need motorcycle/scooter routing specifically, or would car routing do in the new country?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "motorcycle or scooter routing specifically versus acceptable car routing",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "travel_mode"
+              ],
+              "semantic_cues": [
+                "motorcycle/scooter required",
+                "car routing acceptable"
+              ],
+              "rationale": "A generic list of required modes does not necessarily establish whether car is an acceptable fallback.",
+              "required_actual_text_or_context": [
+                "Explicitly request the motorcycle/scooter versus acceptable-car distinction."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Roughly how many route requests a month do you expect in the new country?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "monthly route requests in the new country",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "monthly_volume",
+                "region"
+              ],
+              "semantic_cues": [
+                "monthly route requests",
+                "new country"
+              ],
+              "rationale": "Global or existing-country volume is not the target-country request workload.",
+              "required_actual_text_or_context": [
+                "Monthly workload question must be scoped to route requests in the new country."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-210",
+      "bucket": "limitscompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Must the stops be visited in a fixed order, or can they be optimised?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "fixed stop order versus optimizable order",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "fixed stop order",
+                "can stops be optimised"
+              ],
+              "rationale": "Route size and split-request permission do not establish stop-order flexibility.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "bucket": "capabilitycompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you also need the map labels in that language, or only the instructions?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether translated map labels are needed in addition to instructions",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "languages",
+                "instruction_modality"
+              ],
+              "semantic_cues": [
+                "translated map labels in addition to instructions"
+              ],
+              "rationale": "Output language or voice/text requirement alone omits the map-label requirement.",
+              "required_actual_text_or_context": [
+                "Ask whether map labels, rather than only instructions, must also be translated."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-222",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Was Directions (Legacy) ever enabled on this project?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether Directions Legacy was ever enabled on the project",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "api_enabled",
+                "existing_project"
+              ],
+              "semantic_cues": [
+                "Directions Legacy ever enabled"
+              ],
+              "rationale": "Current API enablement or existing project does not establish historical Legacy enablement.",
+              "required_actual_text_or_context": [
+                "Preserve Directions Legacy identity and ever-enabled historical scope."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "What exact enablement error and Cloud Console checks should the support owner record?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "exact enablement error",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "exact enablement error"
+              ],
+              "rationale": "No current qualification field requests an exact enablement error; a diagnostic question may still ask it.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "Cloud Console checks to record",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "Cloud Console checks",
+                "record support checks"
+              ],
+              "rationale": "Generic API enablement yes/no does not request the checks the support owner must record.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Which route features and rollout constraints should the migration preserve?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "route features migration must preserve",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "route features to preserve during migration"
+              ],
+              "rationale": "A mode question alone does not request all migration feature-preservation requirements.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "rollout constraints migration must preserve",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "migration rollout constraints"
+              ],
+              "rationale": "Launch date or generic technical constraints alone do not establish rollout constraints to preserve.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-223",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-224",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-225",
+      "bucket": "interpretation",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DIR-226",
+      "bucket": "interpretation",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-026",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Are inputs coordinates or addresses?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "coordinates versus address inputs",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "input_type"
+              ],
+              "semantic_cues": [
+                "coordinates versus addresses",
+                "input representation"
+              ],
+              "rationale": "Input-representation wording including place IDs still requests the coordinates/address distinction.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Are inputs coordinates or addresses?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "coordinates versus address inputs",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "input_type"
+              ],
+              "semantic_cues": [
+                "coordinates versus addresses",
+                "input representation"
+              ],
+              "rationale": "Input-representation wording including place IDs still requests the coordinates/address distinction.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-059",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-085",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Which endpoint?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "endpoint used",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "which endpoint",
+                "endpoint URL/path"
+              ],
+              "rationale": "Provider or API family does not identify the actual endpoint used.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Sample pairs?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "sample origin-destination pairs",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "sample origin-destination pairs",
+                "reproduction pairs"
+              ],
+              "rationale": "Counts or generic request volume are not sample pairs.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-087",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "When did usage spike?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "time the usage spike began",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "when usage spiked",
+                "spike start time"
+              ],
+              "rationale": "Launch timeline and peak rate do not identify spike onset.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-094",
+      "bucket": "qualification",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-097",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-117",
+      "bucket": "pricecompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-118",
+      "bucket": "pricecompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-201",
+      "bucket": "coveragecompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you need traffic-aware durations in the new country?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "traffic-aware durations needed in the new country",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "traffic_required"
+              ],
+              "semantic_cues": [
+                "traffic-aware durations",
+                "new country"
+              ],
+              "rationale": "The traffic requirement must refer to the requested new geography.",
+              "required_actual_text_or_context": [
+                "Actual wording or unambiguous context scopes traffic need to the new country."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "How many origin×destination pairs a month?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "monthly origin-destination pairs",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "monthly_volume"
+              ],
+              "semantic_cues": [
+                "origin-destination pairs per month",
+                "elements per month"
+              ],
+              "rationale": "Matrix-request count and pair/element count are distinct workload units.",
+              "required_actual_text_or_context": [
+                "Explicitly request monthly pair/element volume; generic monthly API requests do not suffice."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-214",
+      "bucket": "limitscompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Are origins/destinations given as coordinates, or as addresses/place IDs?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "coordinates versus addresses or place IDs as inputs",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "input_type"
+              ],
+              "semantic_cues": [
+                "coordinates",
+                "addresses or place IDs"
+              ],
+              "rationale": "Same request input representation choice.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-218",
+      "bucket": "limitscompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "How many coordinates are in the failing request?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "coordinate count in the failing request",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "max_stops",
+                "origin_count",
+                "destination_count"
+              ],
+              "semantic_cues": [
+                "coordinates in failing request"
+              ],
+              "rationale": "A desired maximum route size or matrix dimensions are not the actual failed-request coordinate count.",
+              "required_actual_text_or_context": [
+                "Ask for actual coordinate count in the failing request."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-221",
+      "bucket": "capabilitycompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you need live traffic in the ETAs?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "live traffic required in ETAs",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "traffic_required"
+              ],
+              "semantic_cues": [
+                "live traffic required in ETAs"
+              ],
+              "rationale": "Same ETA traffic requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-222",
+      "bucket": "capabilitycompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you need live traffic in the ETAs?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "live traffic required in ETAs",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "traffic_required"
+              ],
+              "semantic_cues": [
+                "live traffic required in ETAs"
+              ],
+              "rationale": "Same ETA traffic requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-224",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-226",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Is the billing account in India, and where will most requests be billed?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "billing account country",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "billing_country"
+              ],
+              "semantic_cues": [
+                "billing account country"
+              ],
+              "rationale": "Same account country, not usage geography.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "where most requests will be billed",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "billing_country",
+                "usage_geography"
+              ],
+              "semantic_cues": [
+                "where most requests will be billed"
+              ],
+              "rationale": "Country of account and geography of use are not automatically the geography of request billing.",
+              "required_actual_text_or_context": [
+                "Explicit billing-location wording or unequivocal account billing-scope context is required; used is not automatically billed."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Is Distance Matrix (Legacy) already enabled on the project?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether Distance Matrix Legacy is enabled on the project",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "api_enabled",
+                "existing_project"
+              ],
+              "semantic_cues": [
+                "Distance Matrix Legacy enabled"
+              ],
+              "rationale": "Generic project existence/enabled status does not necessarily establish this product enablement.",
+              "required_actual_text_or_context": [
+                "Identify Distance Matrix Legacy and whether it is enabled, explicitly or unequivocally by context."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "What volume, traffic capability, display needs, and retention or redistribution rights are required?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "required volume",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "monthly_volume"
+              ],
+              "semantic_cues": [
+                "required API volume"
+              ],
+              "rationale": "A workload question can cover this atom when the same requested API use is clear.",
+              "required_actual_text_or_context": [
+                "Request the required workload, not an unrelated numeric business count."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "required traffic capability",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "traffic_required"
+              ],
+              "semantic_cues": [
+                "required traffic capability",
+                "live traffic needed"
+              ],
+              "rationale": "Same customer traffic requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 3,
+              "gold_fact_text": "display needs",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "display_context"
+              ],
+              "semantic_cues": [
+                "which map if any displays results",
+                "display requirements"
+              ],
+              "rationale": "Same result-display context requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 4,
+              "gold_fact_text": "retention rights needed",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "retention_period",
+                "storage_required"
+              ],
+              "semantic_cues": [
+                "retention rights",
+                "permission to retain results"
+              ],
+              "rationale": "Storage yes/no or duration alone does not ask licensing rights needed.",
+              "required_actual_text_or_context": [
+                "Explicitly ask the retention rights/permission required, not merely retention duration or storage intent."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 5,
+              "gold_fact_text": "redistribution rights needed",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "redistribution_required"
+              ],
+              "semantic_cues": [
+                "redistribution rights needed"
+              ],
+              "rationale": "A redistribution-use question can establish the necessary right only when licensing/use-right context is clear.",
+              "required_actual_text_or_context": [
+                "Actual wording or unambiguous licensing context must ask required redistribution use/rights."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-227",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "What are the typical and maximum origin and destination counts?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "typical origin count",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "origin_count"
+              ],
+              "semantic_cues": [
+                "typical origins per matrix",
+                "usual origin count"
+              ],
+              "rationale": "A generic origin count does not distinguish typical from maximum.",
+              "required_actual_text_or_context": [
+                "Request typical/usual origin count explicitly."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "maximum origin count",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "origin_count"
+              ],
+              "semantic_cues": [
+                "maximum origins per matrix",
+                "largest origin count"
+              ],
+              "rationale": "A generic origin count does not distinguish typical from maximum.",
+              "required_actual_text_or_context": [
+                "Request maximum/worst-case origin count explicitly."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 3,
+              "gold_fact_text": "typical destination count",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "destination_count"
+              ],
+              "semantic_cues": [
+                "typical destinations per matrix",
+                "usual destination count"
+              ],
+              "rationale": "A generic destination count does not distinguish typical from maximum.",
+              "required_actual_text_or_context": [
+                "Request typical/usual destination count explicitly."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 4,
+              "gold_fact_text": "maximum destination count",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "destination_count"
+              ],
+              "semantic_cues": [
+                "maximum destinations per matrix",
+                "largest destination count"
+              ],
+              "rationale": "A generic destination count does not distinguish typical from maximum.",
+              "required_actual_text_or_context": [
+                "Request maximum/worst-case destination count explicitly."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "How many matrices are computed per hour and month, and what is the peak concurrency?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "matrices per hour",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "matrix_frequency"
+              ],
+              "semantic_cues": [
+                "matrices per hour"
+              ],
+              "rationale": "The field can ask both hour and month; this atom is hourly operation frequency, not monthly elements.",
+              "required_actual_text_or_context": [
+                "Actual question must request hourly matrix frequency."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "matrices per month",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "matrix_frequency",
+                "monthly_volume"
+              ],
+              "semantic_cues": [
+                "matrices per month"
+              ],
+              "rationale": "Monthly matrix operations are distinct from requests with unknown unit and origin-destination elements.",
+              "required_actual_text_or_context": [
+                "Actual question must request monthly matrices or explicitly scoped matrix-operation count."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 3,
+              "gold_fact_text": "peak concurrency",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "peak_concurrency"
+              ],
+              "semantic_cues": [
+                "peak concurrent requests"
+              ],
+              "rationale": "Same simultaneous-request requirement; do not substitute rate.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Which traffic and departure-time conditions are required, and can requests be split?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "traffic conditions required",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "traffic_required",
+                "traffic_scope"
+              ],
+              "semantic_cues": [
+                "traffic conditions",
+                "traffic required now or predicted traffic"
+              ],
+              "rationale": "A traffic yes/no field can be narrower than the requested traffic-condition profile.",
+              "required_actual_text_or_context": [
+                "Actual question must establish the required traffic conditions; generic API mode or current provider is insufficient."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "departure-time conditions required",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "departure_time_mode"
+              ],
+              "semantic_cues": [
+                "current versus future departure traffic",
+                "departure-time conditions"
+              ],
+              "rationale": "Both request departure-time traffic requirements.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 3,
+              "gold_fact_text": "whether requests can be split",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "requests_splittable"
+              ],
+              "semantic_cues": [
+                "whether requests can be split"
+              ],
+              "rationale": "Same permission to split requests.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-231",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-232",
+      "bucket": "interpretation",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-DM-233",
+      "bucket": "history",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Confirm whether the monthly total already includes all projects on the billing account.",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether monthly total includes all projects on the billing account",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "billing_account_scope"
+              ],
+              "semantic_cues": [
+                "monthly total includes all projects",
+                "same billing account projects"
+              ],
+              "rationale": "One-versus-multiple billing accounts does not establish inclusion of every project on one account.",
+              "required_actual_text_or_context": [
+                "Explicitly ask whether the monthly total includes all projects on the billing account."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-001",
+      "bucket": "history",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-005",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you need to store results?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether results must be stored",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "storage_required"
+              ],
+              "semantic_cues": [
+                "whether results must be stored"
+              ],
+              "rationale": "Same result storage requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "user-triggered versus periodic tracking lookups",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "lookup_trigger"
+              ],
+              "semantic_cues": [
+                "user-triggered or periodic tracking"
+              ],
+              "rationale": "Same lookup-trigger distinction.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-006",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you need to store results?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether results must be stored",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "storage_required"
+              ],
+              "semantic_cues": [
+                "whether results must be stored"
+              ],
+              "rationale": "Same result storage requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "user-triggered versus periodic tracking lookups",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "lookup_trigger"
+              ],
+              "semantic_cues": [
+                "user-triggered or periodic tracking"
+              ],
+              "rationale": "Same lookup-trigger distinction.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-007",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Do you need to store results?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether results must be stored",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "storage_required"
+              ],
+              "semantic_cues": [
+                "whether results must be stored"
+              ],
+              "rationale": "Same result storage requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Are lookups user-triggered or periodic tracking?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "user-triggered versus periodic tracking lookups",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "lookup_trigger"
+              ],
+              "semantic_cues": [
+                "user-triggered or periodic tracking"
+              ],
+              "rationale": "Same lookup-trigger distinction.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-015",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-016",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-021",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-082",
+      "bucket": "updates",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-084",
+      "bucket": "capabilitycompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-201",
+      "bucket": "coveragecompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "What volume per month, and do you need to store results?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "monthly volume",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "monthly_volume"
+              ],
+              "semantic_cues": [
+                "monthly API workload",
+                "monthly volume"
+              ],
+              "rationale": "Same recurring monthly usage requirement, subject to the enquiry workload unit.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "whether results must be stored",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "storage_required"
+              ],
+              "semantic_cues": [
+                "whether results must be stored"
+              ],
+              "rationale": "Same result storage requirement.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-212",
+      "bucket": "limitscompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-213",
+      "bucket": "limitscompare",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-225",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "What monthly volume and peak rate?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "monthly volume",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "monthly_volume"
+              ],
+              "semantic_cues": [
+                "monthly API workload",
+                "monthly volume"
+              ],
+              "rationale": "Same recurring monthly usage requirement, subject to the enquiry workload unit.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "peak request rate",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "peak_rate"
+              ],
+              "semantic_cues": [
+                "peak request rate",
+                "peak requests per second"
+              ],
+              "rationale": "Both request peak API traffic rate, not monthly quantity or concurrency.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Which countries?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "countries",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "region"
+              ],
+              "semantic_cues": [
+                "target countries or regions"
+              ],
+              "rationale": "Same target geography requirement, not billing location.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Will results be stored?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether results will be stored",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "storage_required"
+              ],
+              "semantic_cues": [
+                "whether results must be stored",
+                "retain results"
+              ],
+              "rationale": "Both request intended result storage.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 4,
+          "original_question_text": "Which languages?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "languages",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "languages"
+              ],
+              "semantic_cues": [
+                "required output languages"
+              ],
+              "rationale": "Same output-language requirement, not input script or voice/text modality.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 5,
+          "original_question_text": "Is self-hosting acceptable?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether self-hosting is acceptable",
+              "alignment_kind": "equivalent_concept_candidate",
+              "field_candidates": [
+                "hosting_preference"
+              ],
+              "semantic_cues": [
+                "self-hosting acceptable",
+                "managed API required"
+              ],
+              "rationale": "Both request deployment-hosting preference.",
+              "required_actual_text_or_context": [],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "bucket": "qualification",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "For Mapbox, can they set the permanent parameter and do they have a credit card or enterprise contract?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether Mapbox permanent parameter can be set",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "temporary_results_acceptable",
+                "storage_required"
+              ],
+              "semantic_cues": [
+                "can set Mapbox permanent parameter"
+              ],
+              "rationale": "Wanting storage or accepting temporary results does not establish ability to set this parameter.",
+              "required_actual_text_or_context": [
+                "Explicitly ask ability to set the Mapbox permanent parameter."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "whether a credit card or enterprise contract is available",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "commercial_plan"
+              ],
+              "semantic_cues": [
+                "credit card or enterprise contract available"
+              ],
+              "rationale": "Generic prepaid/contract status omits the credit-card or enterprise-account availability alternatives.",
+              "required_actual_text_or_context": [
+                "Actual wording must ask credit-card or enterprise-contract availability in this Mapbox context."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-231",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Is the exposed token a default public token, a token with secret scopes, or a token with URL restrictions?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "exposed token type: default public, secret scopes, or URL-restricted",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "exposed token type",
+                "default public",
+                "secret scopes",
+                "URL restrictions"
+              ],
+              "rationale": "Generic provider/account facts do not identify the exposed-token category; never request the secret token value.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Has the token already been deleted or rotated on the Access Tokens page?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether token was already deleted or rotated on Access Tokens page",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "already deleted or rotated",
+                "Access Tokens page"
+              ],
+              "rationale": "No current qualification field represents this completed security action.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Is the account still on a trial with no payment method, which blocks create, rotate, or delete?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether trial without payment method blocks token create rotate or delete",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "trial",
+                "no payment method",
+                "blocks create rotate delete"
+              ],
+              "rationale": "Generic commercial plan does not establish this account restriction.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-232",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Was location_type in the response RANGE_INTERPOLATED, ROOFTOP, or something else?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "returned location_type value",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "returned location_type",
+                "RANGE_INTERPOLATED",
+                "ROOFTOP"
+              ],
+              "rationale": "Desired precision or hard-filter requirement is not an observed response value.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Does the customer have Enhanced Support, which official docs require for map data quality assistance?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether customer has Enhanced Support",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "customer Enhanced Support entitlement"
+              ],
+              "rationale": "A required SLA or generic contract is not this specific support entitlement.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Has anyone already opened a Technical support case or used Send feedback on Google Maps?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether a Technical support case was already opened",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "Technical support case already opened"
+              ],
+              "rationale": "No current qualification field identifies this prior support action.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            },
+            {
+              "fact_index": 2,
+              "gold_fact_text": "whether Send feedback on Google Maps was already used",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "Send feedback on Google Maps already used"
+              ],
+              "rationale": "A support-case question alone does not establish this separate feedback action.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-233",
+      "bucket": "ownership",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "Would the stored payload include only place IDs, or full address content?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "stored payload is only place IDs versus full address content",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "storage_required"
+              ],
+              "semantic_cues": [
+                "stored payload only place IDs",
+                "full address content"
+              ],
+              "rationale": "Storage yes/no does not identify the payload category.",
+              "required_actual_text_or_context": [
+                "Explicitly distinguish storing only place IDs from full address content."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Would the results be shown on a Google Map, on a non-Google map, or with no map?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "Google Map versus non-Google map versus no-map display",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "display_context"
+              ],
+              "semantic_cues": [
+                "Google Map",
+                "non-Google map",
+                "no map"
+              ],
+              "rationale": "The field is relevant; ensure all requested display alternatives remain possible.",
+              "required_actual_text_or_context": [
+                "Actual display question must distinguish provider map or no-map context, explicitly or unambiguously."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 3,
+          "original_question_text": "Has legal already asked about custom licensing from Google Sales?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "whether legal already asked Google Sales about custom licensing",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "legal already contacted Google Sales",
+                "custom licensing"
+              ],
+              "rationale": "Desired commercial terms or generic account plan do not establish this prior legal escalation.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "bucket": "capabilitycompare",
+      "questions": [
+        {
+          "question_index": 1,
+          "original_question_text": "How many coordinates would you need to send in one request?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "coordinates needed per request",
+              "alignment_kind": "narrow_or_contextual_candidate",
+              "field_candidates": [
+                "max_stops",
+                "origin_count",
+                "destination_count"
+              ],
+              "semantic_cues": [
+                "coordinates needed in one request"
+              ],
+              "rationale": "Route waypoint maximum or matrix dimensions are not automatically the per-request coordinate count.",
+              "required_actual_text_or_context": [
+                "Ask the required coordinate count per request."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        },
+        {
+          "question_index": 2,
+          "original_question_text": "Are you asking about a documented batch endpoint, or only about looping over a single-coordinate API?",
+          "facts": [
+            {
+              "fact_index": 1,
+              "gold_fact_text": "documented batch endpoint versus looping single-coordinate API",
+              "alignment_kind": "no_equivalent_current_qualification_field",
+              "field_candidates": [],
+              "semantic_cues": [
+                "documented batch endpoint",
+                "looping a single-coordinate API"
+              ],
+              "rationale": "Split-request permission, workload or count does not establish batching approach.",
+              "required_actual_text_or_context": [
+                "Credit only an actual question that explicitly requests this fact; metadata field names alone cannot match it."
+              ],
+              "automatic_credit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-RG-235",
+      "bucket": "docs",
+      "questions": []
+    },
+    {
+      "record_id": "GT-LBS-RG-236",
+      "bucket": "interpretation",
+      "questions": []
+    }
+  ],
+  "counts": {
+    "cases": 80,
+    "question_groups": 75,
+    "atomic_facts": 99,
+    "equivalent_concept_candidate": 40,
+    "no_equivalent_current_qualification_field": 20,
+    "narrow_or_contextual_candidate": 39
+  },
+  "policy": [
+    "This is an immutable evaluation index, not a replacement GT, model input, prompt, or application rule.",
+    "Preserve all original 75 question groups and 99 atomic propositions, including empty-gold cases. Do not revise labels after seeing predictions.",
+    "Candidate field IDs are search aids only. Review the exact rendered question and relevant customer context. No field ID grants credit automatically.",
+    "For each predicted question, mark every semantically requested gold atom using original 1-based question/fact indexes. Distinct gold atoms count once regardless of duplicate predictions.",
+    "Whole-question credit requires a single predicted question that covers the complete corresponding gold group without substituting a different independent decision. Preserve strict grouping; a bundled prediction cannot receive multiple whole-question matches.",
+    "Apply one-to-one whole-question matching. Partial-fact matches may refer to multiple gold groups, but cannot silently merge, drop or rename gold atoms.",
+    "Facts supplied in the input do not remove their frozen gold questions from this scored reference. Any conflict is an observation, not a label edit.",
+    "Do not equate account ownership with backend operation; project existence with product/historical enablement; use geography with billing geography; rates with concurrency/volume; matrix operations with elements; typical with maximum counts; observed responses with desired capabilities.",
+    "Unsupported-current-field atoms may match an actual diagnostic question if its wording requests the exact proposition. Otherwise remain unmatched.",
+    "Bind final semantic judgements to exact prediction and unchanged gold file hashes with bind_review; rescore with score_bound_review. This is assistant-reviewed evidence, not independent human evaluation."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "baseline": {
+    "planner_statuses": {
+      "selected": 9,
+      "no_follow_up": 67,
+      "declined": 3,
+      "invalid_plan": 1
+    },
+    "invalid_or_truncated_plans": [
+      {
+        "record_id": "GT-LBS-DIR-108",
+        "selection": {
+          "status": "invalid_plan",
+          "error_type": "ValidationError",
+          "retrieved_passages_available": 7
+        },
+        "gold_questions": 0
+      }
+    ],
+    "route_counts": {
+      "final": 61,
+      "escalated": 15,
+      "clarification_needed": 4
+    }
+  },
+  "integrated": {
+    "planner_statuses": {
+      "selected": 9,
+      "no_follow_up": 67,
+      "declined": 3,
+      "invalid_plan": 1
+    },
+    "invalid_or_truncated_plans": [
+      {
+        "record_id": "GT-LBS-DIR-108",
+        "selection": {
+          "status": "invalid_plan",
+          "error_type": "ValidationError",
+          "retrieved_passages_available": 7
+        },
+        "gold_questions": 0
+      }
+    ],
+    "route_counts": {
+      "final": 61,
+      "escalated": 15,
+      "clarification_needed": 4
+    }
+  }
+}

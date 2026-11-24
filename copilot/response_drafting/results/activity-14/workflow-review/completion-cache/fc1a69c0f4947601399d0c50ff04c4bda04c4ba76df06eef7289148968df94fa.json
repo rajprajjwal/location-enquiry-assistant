@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"plan 80M Ola Distance Matrix pairs a month\",\"evidence\":\"We plan 80M Ola Distance Matrix pairs a month and want a committed-use price.\"},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"We plan 80M Ola Distance Matrix pairs a month and want a committed-use price.\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"plan 80M Ola Distance Matrix pairs a month\",\"evidence\":\"We plan 80M Ola Distance Matrix pairs a month and want a committed-use price.\"},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"We plan 80M Ola Distance Matrix pairs a month and want a committed-use price.\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1322,
+    "completion_tokens": 168,
+    "total_tokens": 1490
+  },
+  "latency_ms": 3876,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

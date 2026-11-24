@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": null, \"reason\": \"The question is about route preferences in Google Directions and does not indicate a need for a human handoff or intervention.\"}",
+  "raw": "{\"category\": null, \"reason\": \"The question is about route preferences in Google Directions and does not indicate a need for a human handoff or intervention.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 277,
+    "completion_tokens": 34,
+    "total_tokens": 311
+  },
+  "latency_ms": 950,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

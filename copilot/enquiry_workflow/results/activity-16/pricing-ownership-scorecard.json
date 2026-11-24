@@ -1,0 +1,215 @@
+{
+  "development": {
+    "split": "development",
+    "baseline": {
+      "cases": 147,
+      "owner_matches": 131,
+      "owner_accuracy": 0.891156462585034,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 137,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "candidate": {
+      "cases": 147,
+      "owner_matches": 104,
+      "owner_accuracy": 0.7074829931972789,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 137,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "escalation_decisions_preserved": 147,
+    "approval_behavior_preserved": 147,
+    "escalation_reasons_preserved": true,
+    "routing_sources": {
+      "copilot/config/escalation_policy.yaml": "c736a16d7e537551a5792ff83ce8ab05e48710bb5f9dd19feb8fad4ae289d56b",
+      "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77",
+      "copilot/safety/escalation_policy.py": "1171a1ea23b5e7a75a925c5b73d82055752718b0277451324bafb4e98909ae41",
+      "copilot/enquiry_workflow/escalation.py": "a264d503563c43a1820c70717578748314a6a321288acfd2a26acefb5305d629",
+      "copilot/enquiry_workflow/workflow.py": "80f48bc7cf278056552559a0ed10b99c316782cbaa2b8d1b444894746ec2cc22",
+      "copilot/response_drafting/drafter.py": "f6ca64d3c7256ff490a4f34037da63a6796ffca43db33055e902d405aefcf8de"
+    }
+  },
+  "fresh": {
+    "split": "fresh",
+    "baseline": {
+      "cases": 12,
+      "owner_matches": 8,
+      "owner_accuracy": 0.6666666666666666,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 11,
+      "escalation_precision": 0.0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 1,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "candidate": {
+      "cases": 12,
+      "owner_matches": 8,
+      "owner_accuracy": 0.6666666666666666,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 11,
+      "escalation_precision": 0.0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 1,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "escalation_decisions_preserved": 12,
+    "approval_behavior_preserved": 12,
+    "escalation_reasons_preserved": true,
+    "sample_sha256": "5bd2ab3780adb8126904be4dc6596b2fcf09b5fd62dcbf79b5548a1473bbaa10",
+    "public_pricing_regression": {
+      "passed": true,
+      "routing_tests_real_validator": 21,
+      "full_suite": {
+        "passed": 287,
+        "skipped": 1
+      },
+      "routing_sources": {
+        "copilot/config/escalation_policy.yaml": "c736a16d7e537551a5792ff83ce8ab05e48710bb5f9dd19feb8fad4ae289d56b",
+        "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77",
+        "copilot/safety/escalation_policy.py": "1171a1ea23b5e7a75a925c5b73d82055752718b0277451324bafb4e98909ae41",
+        "copilot/enquiry_workflow/escalation.py": "a264d503563c43a1820c70717578748314a6a321288acfd2a26acefb5305d629",
+        "copilot/enquiry_workflow/workflow.py": "80f48bc7cf278056552559a0ed10b99c316782cbaa2b8d1b444894746ec2cc22",
+        "copilot/response_drafting/drafter.py": "f6ca64d3c7256ff490a4f34037da63a6796ffca43db33055e902d405aefcf8de"
+      }
+    },
+    "routing_sources": {
+      "copilot/config/escalation_policy.yaml": "c736a16d7e537551a5792ff83ce8ab05e48710bb5f9dd19feb8fad4ae289d56b",
+      "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77",
+      "copilot/safety/escalation_policy.py": "1171a1ea23b5e7a75a925c5b73d82055752718b0277451324bafb4e98909ae41",
+      "copilot/enquiry_workflow/escalation.py": "a264d503563c43a1820c70717578748314a6a321288acfd2a26acefb5305d629",
+      "copilot/enquiry_workflow/workflow.py": "80f48bc7cf278056552559a0ed10b99c316782cbaa2b8d1b444894746ec2cc22",
+      "copilot/response_drafting/drafter.py": "f6ca64d3c7256ff490a4f34037da63a6796ffca43db33055e902d405aefcf8de"
+    }
+  },
+  "frozen": {
+    "split": "frozen",
+    "baseline": {
+      "cases": 80,
+      "owner_matches": 58,
+      "owner_accuracy": 0.725,
+      "escalation_true_positives": 10,
+      "escalation_false_positives": 0,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 70,
+      "escalation_precision": 1.0,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "candidate": {
+      "cases": 80,
+      "owner_matches": 54,
+      "owner_accuracy": 0.675,
+      "escalation_true_positives": 10,
+      "escalation_false_positives": 0,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 70,
+      "escalation_precision": 1.0,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "escalation_decisions_preserved": 80,
+    "approval_behavior_preserved": 80,
+    "escalation_reasons_preserved": true,
+    "manifest": {
+      "tag": "eval-freeze-v4",
+      "tag_commit": "16a0594d68d99bc2bb001e3a455b03f56e6ae072",
+      "fresh_report_sha256": "8c57d07fa0c7e5d35c1434a85d25a8dbc175f9692ae95d873cc1f67525e81f1a",
+      "holdout_cases": 0,
+      "interpretation": "Reuse the saved live interpretation for both routing configurations."
+    },
+    "routing_sources": {
+      "copilot/config/escalation_policy.yaml": "c736a16d7e537551a5792ff83ce8ab05e48710bb5f9dd19feb8fad4ae289d56b",
+      "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77",
+      "copilot/safety/escalation_policy.py": "1171a1ea23b5e7a75a925c5b73d82055752718b0277451324bafb4e98909ae41",
+      "copilot/enquiry_workflow/escalation.py": "a264d503563c43a1820c70717578748314a6a321288acfd2a26acefb5305d629",
+      "copilot/enquiry_workflow/workflow.py": "80f48bc7cf278056552559a0ed10b99c316782cbaa2b8d1b444894746ec2cc22",
+      "copilot/response_drafting/drafter.py": "f6ca64d3c7256ff490a4f34037da63a6796ffca43db33055e902d405aefcf8de"
+    }
+  },
+  "initial_fresh": {
+    "split": "fresh",
+    "baseline": {
+      "cases": 20,
+      "owner_matches": 16,
+      "owner_accuracy": 0.8,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 0,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 20,
+      "escalation_precision": 0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 0,
+      "escalation_reason_coverage": 0,
+      "passes": false
+    },
+    "candidate": {
+      "cases": 20,
+      "owner_matches": 8,
+      "owner_accuracy": 0.4,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 0,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 20,
+      "escalation_precision": 0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 0,
+      "escalation_reason_coverage": 0,
+      "passes": false
+    },
+    "escalation_decisions_preserved": 20,
+    "approval_behavior_preserved": 20,
+    "escalation_reasons_preserved": true,
+    "sample_sha256": "f5474a8647e1feb9b5661db77d5e6a6c0d97aa5665ba31ff41a4ac77c2bc6029",
+    "public_pricing_regression": {
+      "passed": true,
+      "routing_tests_real_validator": 19,
+      "full_suite": {
+        "passed": 285,
+        "skipped": 1
+      },
+      "routing_sources": {
+        "copilot/config/escalation_policy.yaml": "989fe827c6a65285e5fc5345ba2e146e348c94a795c2f903284f9db84be9a68f",
+        "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77",
+        "copilot/safety/escalation_policy.py": "1171a1ea23b5e7a75a925c5b73d82055752718b0277451324bafb4e98909ae41",
+        "copilot/enquiry_workflow/escalation.py": "a264d503563c43a1820c70717578748314a6a321288acfd2a26acefb5305d629",
+        "copilot/enquiry_workflow/workflow.py": "80f48bc7cf278056552559a0ed10b99c316782cbaa2b8d1b444894746ec2cc22",
+        "copilot/response_drafting/drafter.py": "f6ca64d3c7256ff490a4f34037da63a6796ffca43db33055e902d405aefcf8de"
+      }
+    },
+    "routing_sources": {
+      "copilot/config/escalation_policy.yaml": "989fe827c6a65285e5fc5345ba2e146e348c94a795c2f903284f9db84be9a68f",
+      "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77",
+      "copilot/safety/escalation_policy.py": "1171a1ea23b5e7a75a925c5b73d82055752718b0277451324bafb4e98909ae41",
+      "copilot/enquiry_workflow/escalation.py": "a264d503563c43a1820c70717578748314a6a321288acfd2a26acefb5305d629",
+      "copilot/enquiry_workflow/workflow.py": "80f48bc7cf278056552559a0ed10b99c316782cbaa2b8d1b444894746ec2cc22",
+      "copilot/response_drafting/drafter.py": "f6ca64d3c7256ff490a4f34037da63a6796ffca43db33055e902d405aefcf8de"
+    }
+  },
+  "proposed_working_label_counts": {
+    "Support L1": 22,
+    "Account team (Sales)": 8
+  }
+}

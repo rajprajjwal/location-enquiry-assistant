@@ -1,0 +1,22 @@
+{
+  "workbook_sha256": "cd9e134186b229b3ee8dfaca3a3ae60e12dc9540e34fb5ba164a8a960c35fbf9",
+  "source_unchanged": true,
+  "sheets": [
+    "Update_A",
+    "Update_P"
+  ],
+  "pilot_template_sha256": "1c43d4e60b75b4a50dc9f0b611804e18c57fbdbd3a916d1ebfb27d3471f71364",
+  "scorer_sha256": "4c92b9dd99899c2bf0757a96ff93d698e413a322207daf39fc328421e85b05cb",
+  "legacy_scorer_sha256": "2d105100fb20a7fe08b301eedfdfc57dbc8b5dd3fec8c61824750c9345c515f3",
+  "vocabulary_sha256": "bb006056a00a9614ea6c72030338ffa92dd250205d2c93f5a5b0592f894aacaf",
+  "artifacts": {
+    "scores.json": "b9691bf8dab006acc4b546733344fdeb79a214c696cb46e19e72168b6c571d7e",
+    "disagreements.csv": "a624f2b11952099a78af054ffcd0a35e6ea67f15b835b74cc1dd8aa373fdcb6c",
+    "report.md": "8e505a53c5fdd3a76a51a23acebbba88fdf913e13c5e024bde6e82b4912d03f5",
+    "Update_A.csv": "a98f041afb21e05359007db6d718474145aa1b64940ebb579fc1be17db1b7f60",
+    "pair-comparison.csv": "7fdaa7b637a91979a1840fc459c19e9eae08f0241a2b4555e0e439be9801161a",
+    "Update_P.csv": "9d39ae578fae771ada1b20ea3858d7f7a34b698a67934e203ed832b45d5bfcea",
+    "adjudication.template.csv": "bb99ffa060b5057a452cbd99e8d1b4ac057767879616a39cccafbbf4b5606571",
+    "annotations.source.xlsx": "cd9e134186b229b3ee8dfaca3a3ae60e12dc9540e34fb5ba164a8a960c35fbf9"
+  }
+}

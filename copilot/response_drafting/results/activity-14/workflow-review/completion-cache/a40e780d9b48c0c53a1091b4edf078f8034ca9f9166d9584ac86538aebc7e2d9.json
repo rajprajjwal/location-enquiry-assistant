@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"pricing\": true,\n  \"items\": [\n    {\n      \"provider\": \"Ola Maps\",\n      \"api\": \"autocomplete\",\n      \"requests\": 560000,\n      \"sessions\": 80000,\n      \"keystrokes_per_session\": 7,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    }\n  ]\n}",
+  "raw": "{\n  \"pricing\": true,\n  \"items\": [\n    {\n      \"provider\": \"Ola Maps\",\n      \"api\": \"autocomplete\",\n      \"requests\": 560000,\n      \"sessions\": 80000,\n      \"keystrokes_per_session\": 7,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    }\n  ]\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 102,
+    "total_tokens": 505
+  },
+  "latency_ms": 2423,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

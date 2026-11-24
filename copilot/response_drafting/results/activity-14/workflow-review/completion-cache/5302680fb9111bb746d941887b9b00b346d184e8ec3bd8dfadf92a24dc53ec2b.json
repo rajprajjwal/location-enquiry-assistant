@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"current_provider\",\n      \"value\": \"Google Maps Platform\",\n      \"evidence\": \"Existing Google\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"input_type\"],\n      \"decision_impact\": \"Choose the correct request representation and applicable processing constraints.\"\n    }\n  ],\n  \"reason\": \"The input_type is required to determine the correct request representation and applicable processing constraints for the pricing calculation.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"current_provider\",\n      \"value\": \"Google Maps Platform\",\n      \"evidence\": \"Existing Google\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"input_type\"],\n      \"decision_impact\": \"Choose the correct request representation and applicable processing constraints.\"\n    }\n  ],\n  \"reason\": \"The input_type is required to determine the correct request representation and applicable processing constraints for the pricing calculation.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 988,
+    "completion_tokens": 132,
+    "total_tokens": 1120
+  },
+  "latency_ms": 3295,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

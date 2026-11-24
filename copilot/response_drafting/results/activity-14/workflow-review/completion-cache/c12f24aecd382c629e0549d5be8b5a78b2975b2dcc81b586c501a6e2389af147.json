@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"origin_count\"],\n      \"decision_impact\": \"Select a service and request shape that supports the required matrix and ETA capability.\"\n    },\n    {\n      \"fields\": [\"destination_count\"],\n      \"decision_impact\": \"Select a service and request shape that supports the required matrix and ETA capability.\"\n    },\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select a service and request shape that supports the required matrix and ETA capability.\"\n    }\n  ],\n  \"reason\": \"The customer's requirement for live ETAs between many drivers and many jobs necessitates understanding the number of origins and destinations per matrix, as well as whether live-traffic ETAs are required to select the appropriate service and request shape.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"origin_count\"],\n      \"decision_impact\": \"Select a service and request shape that supports the required matrix and ETA capability.\"\n    },\n    {\n      \"fields\": [\"destination_count\"],\n      \"decision_impact\": \"Select a service and request shape that supports the required matrix and ETA capability.\"\n    },\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select a service and request shape that supports the required matrix and ETA capability.\"\n    }\n  ],\n  \"reason\": \"The customer's requirement for live ETAs between many drivers and many jobs necessitates understanding the number of origins and destinations per matrix, as well as whether live-traffic ETAs are required to select the appropriate service and request shape.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1880,
+    "completion_tokens": 171,
+    "total_tokens": 2051
+  },
+  "latency_ms": 4038,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the reverse geocoding API returning ZERO_RESULTS when using result_type=street_address. The documentation indicates that if both result_type and location_type filters are present and none of the filter values are acceptable, the API returns ZERO_RESULTS. The customer's problem seems to be a configuration or usage issue rather than a system failure, so no further action is required at this time.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the reverse geocoding API returning ZERO_RESULTS when using result_type=street_address. The documentation indicates that if both result_type and location_type filters are present and none of the filter values are acceptable, the API returns ZERO_RESULTS. The customer's problem seems to be a configuration or usage issue rather than a system failure, so no further action is required at this time.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2090,
+    "completion_tokens": 90,
+    "total_tokens": 2180
+  },
+  "latency_ms": 2312,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"coverage_question\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"Bhutan\",\"evidence\":\"Bhutan\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"OSRM\",\"evidence\":\"OSRM\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"self-hosted\",\"evidence\":\"self-hosted\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"coverage_question\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"Bhutan\",\"evidence\":\"Bhutan\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"OSRM\",\"evidence\":\"OSRM\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"self-hosted\",\"evidence\":\"self-hosted\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1359,
+    "completion_tokens": 149,
+    "total_tokens": 1508
+  },
+  "latency_ms": 3466,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

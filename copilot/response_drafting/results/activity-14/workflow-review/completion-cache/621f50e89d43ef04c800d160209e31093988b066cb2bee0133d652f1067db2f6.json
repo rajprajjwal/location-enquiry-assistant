@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": {\n        \"raw\": \"50,000 sessions a month\",\n        \"requests_per_month\": 50000,\n        \"unit\": \"sessions_per_month\"\n      },\n      \"evidence\": \"50,000 sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"details_completion\",\n      \"value\": true,\n      \"evidence\": \"ending in Place Details Essentials\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Essentials\",\n      \"evidence\": \"ending in Place Details Essentials\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Select the applicable session-termination billing rule.\"\n    }\n  ],\n  \"reason\": \"The details_sku field is required to determine the applicable session-termination billing rule, which affects the cost calculation.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": {\n        \"raw\": \"50,000 sessions a month\",\n        \"requests_per_month\": 50000,\n        \"unit\": \"sessions_per_month\"\n      },\n      \"evidence\": \"50,000 sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    },\n    {\n      \"field\": \"details_completion\",\n      \"value\": true,\n      \"evidence\": \"ending in Place Details Essentials\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Essentials\",\n      \"evidence\": \"ending in Place Details Essentials\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Select the applicable session-termination billing rule.\"\n    }\n  ],\n  \"reason\": \"The details_sku field is required to determine the applicable session-termination billing rule, which affects the cost calculation.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1261,
+    "completion_tokens": 238,
+    "total_tokens": 1499
+  },
+  "latency_ms": 6064,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"pricing\": true,\n  \"items\": [\n    {\n      \"provider\": \"Ola Maps\",\n      \"api\": \"directions\",\n      \"requests\": 1000000,\n      \"traffic\": true,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"directions\",\n      \"requests\": 1000000,\n      \"traffic\": true,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Ola Maps\",\n      \"api\": \"directions\",\n      \"requests\": 1000000,\n      \"traffic\": false,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"directions\",\n      \"requests\": 1000000,\n      \"traffic\": false,\n      \"basic\": false\n    }\n  ]\n}",
+  "raw": "{\n  \"pricing\": true,\n  \"items\": [\n    {\n      \"provider\": \"Ola Maps\",\n      \"api\": \"directions\",\n      \"requests\": 1000000,\n      \"traffic\": true,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"directions\",\n      \"requests\": 1000000,\n      \"traffic\": true,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Ola Maps\",\n      \"api\": \"directions\",\n      \"requests\": 1000000,\n      \"traffic\": false,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"directions\",\n      \"requests\": 1000000,\n      \"traffic\": false,\n      \"basic\": false\n    }\n  ]\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 424,
+    "completion_tokens": 200,
+    "total_tokens": 624
+  },
+  "latency_ms": 4516,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

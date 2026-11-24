@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"storage_required\"],\"decision_impact\":\"Select temporary versus retained-result licensing and prices.\"}],\"reason\":\"The customer's question about billing for /category searches is related to the storage_required field, which impacts the licensing and pricing decision.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"storage_required\"],\"decision_impact\":\"Select temporary versus retained-result licensing and prices.\"}],\"reason\":\"The customer's question about billing for /category searches is related to the storage_required field, which impacts the licensing and pricing decision.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1936,
+    "completion_tokens": 59,
+    "total_tokens": 1995
+  },
+  "latency_ms": 1687,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

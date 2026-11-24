@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The issue of the Mapbox Search Box rejecting long pasted addresses may be due to request validation or input constraints. To diagnose, we need the actual request that was rejected to inspect for potential issues such as length limits, formatting, or specific input requirements.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The issue of the Mapbox Search Box rejecting long pasted addresses may be due to request validation or input constraints. To diagnose, we need the actual request that was rejected to inspect for potential issues such as length limits, formatting, or specific input requirements.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1318,
+    "completion_tokens": 63,
+    "total_tokens": 1381
+  },
+  "latency_ms": 1637,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

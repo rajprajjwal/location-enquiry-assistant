@@ -1,0 +1,7 @@
+{
+  "google_routes_regional_availability": {
+    "url": "https://developers.google.com/maps/documentation/routes/quick-reference",
+    "span": "Regional availability: Global. Two-wheeler routing, eco-friendly routes, and toll calculation are limited to supported countries and cities",
+    "checked_on": "2026-11-22"
+  }
+}

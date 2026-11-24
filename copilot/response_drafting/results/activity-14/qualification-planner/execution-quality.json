@@ -1,0 +1,20 @@
+{
+  "initial_cases": 36,
+  "all_app_outputs_schema_valid": true,
+  "initial_and_resume_calls": 80,
+  "qualification_validation_fallbacks": [
+    {
+      "query": "Google Maps Platform quote: 10×10 matrices, 120,000 per month in India, existing project.",
+      "method": "integrated",
+      "qualification_error": "ValidationError",
+      "selection_status": "no_follow_up"
+    },
+    {
+      "query": "500,000 requests per month",
+      "method": "integrated",
+      "qualification_error": "ValidationError",
+      "selection_status": "no_follow_up"
+    }
+  ],
+  "note": "One fallback on DM-030 initial turn, another on a resumed monthly-volume reply. Transport errors are tracked separately in behavior.json."
+}

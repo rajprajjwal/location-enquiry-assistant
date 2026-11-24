@@ -1,0 +1,14 @@
+{
+  "text": "{\"pricing\": true, \"items\": [{\"provider\": \"Ola Maps\", \"api\": \"distance_matrix\", \"requests\": 100000, \"sessions\": null, \"keystrokes_per_session\": null, \"origins\": 5, \"destinations\": 5, \"calls\": 250000, \"traffic\": true, \"basic\": false}, {\"provider\": \"Google Maps Platform\", \"api\": \"distance_matrix\", \"requests\": 100000, \"sessions\": null, \"keystrokes_per_session\": null, \"origins\": 5, \"destinations\": 5, \"calls\": 250000, \"traffic\": true, \"basic\": false}]}",
+  "raw": "{\"pricing\": true, \"items\": [{\"provider\": \"Ola Maps\", \"api\": \"distance_matrix\", \"requests\": 100000, \"sessions\": null, \"keystrokes_per_session\": null, \"origins\": 5, \"destinations\": 5, \"calls\": 250000, \"traffic\": true, \"basic\": false}, {\"provider\": \"Google Maps Platform\", \"api\": \"distance_matrix\", \"requests\": 100000, \"sessions\": null, \"keystrokes_per_session\": null, \"origins\": 5, \"destinations\": 5, \"calls\": 250000, \"traffic\": true, \"basic\": false}]}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 425,
+    "completion_tokens": 160,
+    "total_tokens": 585
+  },
+  "latency_ms": 3667,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

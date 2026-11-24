@@ -1,0 +1,27 @@
+{
+  "baseline": {
+    "cases": 286,
+    "owner_correct": 276,
+    "owner_accuracy": 0.965034965034965,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 1,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.9,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "candidate": {
+    "cases": 286,
+    "owner_correct": 276,
+    "owner_accuracy": 0.965034965034965,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 1,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.9,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "changes": [],
+  "frozen_cases": 0,
+  "holdout_cases": 0
+}

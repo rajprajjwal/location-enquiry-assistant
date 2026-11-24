@@ -45,7 +45,7 @@ if os.environ.get("INTERPRET_VALIDATION") == "real":
     print(f"VALIDATION_RULES_FILE {_rules.__file__}", flush=True)
     print(f"VALIDATION_HEAD {_sha}", flush=True)
 else:
-    from copilot.interpret import seam
+    from copilot.enquiry_interpretation import seam
     from tests.support.fake_contract import install
 
     install(seam)

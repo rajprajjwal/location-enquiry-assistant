@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":{\"requests_per_month\":300000,\"unit\":\"sessions_per_month\"},\"evidence\":\"300,000 address-search sessions a month\"},{\"field\":\"region\",\"value\":\"Chennai\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"debouncing\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"},{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"}],\"reason\":\"The provided draft includes pricing estimates but does not clarify whether keystrokes are debounced or if Place Details are called after a selection, both of which impact the actual number of billable requests and the associated costs.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":{\"requests_per_month\":300000,\"unit\":\"sessions_per_month\"},\"evidence\":\"300,000 address-search sessions a month\"},{\"field\":\"region\",\"value\":\"Chennai\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"debouncing\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"},{\"fields\":[\"details_completion\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"}],\"reason\":\"The provided draft includes pricing estimates but does not clarify whether keystrokes are debounced or if Place Details are called after a selection, both of which impact the actual number of billable requests and the associated costs.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1393,
+    "completion_tokens": 154,
+    "total_tokens": 1547
+  },
+  "latency_ms": 3921,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

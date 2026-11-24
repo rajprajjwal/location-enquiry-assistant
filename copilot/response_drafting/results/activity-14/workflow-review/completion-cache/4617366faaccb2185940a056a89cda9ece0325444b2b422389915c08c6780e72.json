@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The documentation indicates that results may vary over time due to changes in the road network, traffic conditions, and the distributed nature of the service. This suggests the observed behavior is expected and not a bug.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The documentation indicates that results may vary over time due to changes in the road network, traffic conditions, and the distributed nature of the service. This suggests the observed behavior is expected and not a bug.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2281,
+    "completion_tokens": 49,
+    "total_tokens": 2330
+  },
+  "latency_ms": 1468,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

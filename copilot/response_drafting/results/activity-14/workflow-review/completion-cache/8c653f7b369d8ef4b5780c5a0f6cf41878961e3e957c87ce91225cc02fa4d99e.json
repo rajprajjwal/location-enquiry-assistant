@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\",\"reason\":\"The error indicates the API key is not authorized for the Android app, despite being restricted to the package name. To diagnose, we need the actual request (redacted) to verify headers and ensure the X-Android-Package header is correctly included and matches the package name.\"}",
+  "raw": "{\"decision\":\"request_reproduction\",\"reason\":\"The error indicates the API key is not authorized for the Android app, despite being restricted to the package name. To diagnose, we need the actual request (redacted) to verify headers and ensure the X-Android-Package header is correctly included and matches the package name.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2072,
+    "completion_tokens": 66,
+    "total_tokens": 2138
+  },
+  "latency_ms": 1797,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

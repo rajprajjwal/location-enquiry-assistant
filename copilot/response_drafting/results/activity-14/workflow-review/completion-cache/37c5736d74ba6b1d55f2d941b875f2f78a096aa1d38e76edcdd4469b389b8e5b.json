@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates a billing issue related to a bot attack on the search box, which may involve unexpected usage. However, the provided documents do not directly address the cause of the billing increase or the bot attack. The decision 'none' is appropriate as the enquiry does not clearly identify a specific configuration fix or provide enough evidence to select another decision.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates a billing issue related to a bot attack on the search box, which may involve unexpected usage. However, the provided documents do not directly address the cause of the billing increase or the bot attack. The decision 'none' is appropriate as the enquiry does not clearly identify a specific configuration fix or provide enough evidence to select another decision.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1446,
+    "completion_tokens": 78,
+    "total_tokens": 1524
+  },
+  "latency_ms": 2009,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"poi_required\"],\"decision_impact\":\"Compare coverage for the required result types.\"}],\"reason\":\"The customer's enquiry involves restricting autocomplete results to India, which requires understanding if points of interest are needed alongside addresses to determine the appropriate API configuration and coverage comparison.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"poi_required\"],\"decision_impact\":\"Compare coverage for the required result types.\"}],\"reason\":\"The customer's enquiry involves restricting autocomplete results to India, which requires understanding if points of interest are needed alongside addresses to determine the appropriate API configuration and coverage comparison.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1888,
+    "completion_tokens": 64,
+    "total_tokens": 1952
+  },
+  "latency_ms": 1740,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

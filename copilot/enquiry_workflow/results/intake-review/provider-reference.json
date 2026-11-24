@@ -1,0 +1,758 @@
+{
+  "reference_provenance": {
+    "reviewer": "Independent assistant review",
+    "independent_human_review": false,
+    "method": "Manual semantic review of all 88 raw query/history records before comparison with implementation output. No prediction, gold, frozen or holdout data used. Provider mentions preserve textual order in the latest provider-bearing user turn. Assistant history never supplies customer facts.",
+    "input_sha256": "69d9a3805b46457911271f70d8d62e55cbc05a54d3187c9c080b437b646c18fe",
+    "policy": "Current provider requires explicit customer ownership/current service use, including observed requests linked to customer actions or credentials. Capability, pricing, hypothetical and comparison mentions do not establish current use. Cases needing a role/alias-policy decision are marked ambiguous and excluded from strict current-provider accuracy."
+  },
+  "records": [
+    {
+      "record_id": "GT-LBS-AC-003",
+      "current_provider": null,
+      "mentioned_providers": [
+        "OSM Nominatim"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-008",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-009",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-010",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-021",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-233",
+      "current_provider": null,
+      "mentioned_providers": [
+        "OSM Nominatim"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-036",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-037",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-038",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-040",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-047",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-048",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-017",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-018",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-019",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-020",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-025",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "An existing Google Maps Platform project is stated in a quote request, but it is not explicit whether the project currently uses the API; current-provider relationship requires clarification of policy.",
+      "ambiguous": true
+    },
+    {
+      "record_id": "GT-LBS-DM-030",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "An existing Google Maps Platform project is stated in a quote request, but current API use is not explicit.",
+      "ambiguous": true
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps",
+        "Google Maps Platform"
+      ],
+      "reason": "The names are comparison or recommendation alternatives; no current customer-provider relationship is asserted.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-230",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-008",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-009",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-011",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-012",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-013",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform",
+        "OSM Nominatim",
+        "Ola Maps",
+        "Mapbox"
+      ],
+      "reason": "The names are comparison or recommendation alternatives; no current customer-provider relationship is asserted.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-079",
+      "current_provider": "OSRM",
+      "mentioned_providers": [
+        "OSRM"
+      ],
+      "reason": "The customer owns the self-hosted OSRM instance: \"Our self-hosted OSRM\".",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "Observed Google route drawing implies use, but there is no explicit customer/ownership/current-provider assertion; retained as ambiguous rather than assuming current-provider role.",
+      "ambiguous": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-124",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Mapbox"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "current_provider": "Ola Maps",
+      "mentioned_providers": [
+        "Ola Maps"
+      ],
+      "reason": "Customer reports all Ola calls failing after \"we rotated OAuth credentials\", linking actual Ola requests to its own credentials.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "current_provider": "OSM Nominatim",
+      "mentioned_providers": [
+        "OSM Nominatim"
+      ],
+      "reason": "\"Our Nominatim requests\" explicitly identifies the customer-owned requests.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Mapbox"
+      ],
+      "reason": "A terse Mapbox 422 report identifies the request target, but the current-provider relationship is not explicitly stated.",
+      "ambiguous": true
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Mapbox"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The question may describe an observed Google failure or ask about general ZERO_RESULTS behaviour; current use is not explicit.",
+      "ambiguous": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "current_provider": "Google Maps Platform",
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "Customer reports calling Google Directions for each marker pair and asks how \"we\" should fix the observed limit error.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "current_provider": "Google Maps Platform",
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The Google Places request uses \"our server key\" and returns an actual credential error.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "current_provider": "Google Maps Platform",
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "Quoted customer statement explicitly says \"our Google Distance Matrix response\".",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "current_provider": null,
+      "mentioned_providers": [
+        "OSRM"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-046",
+      "current_provider": "Google Maps Platform",
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The latest provider-bearing user history says \"Our 10×10 Google Distance Matrix\"; the current message declines further details without changing provider.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-125",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps",
+        "OSM Nominatim"
+      ],
+      "reason": "The names are comparison or recommendation alternatives; no current customer-provider relationship is asserted.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-226",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Mapbox"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-209",
+      "current_provider": "Mappls (MapmyIndia)",
+      "mentioned_providers": [
+        "Mappls (MapmyIndia)"
+      ],
+      "reason": "The customer is setting up Mappls Autosuggest and refers to the country/zoom configuration \"I use for India\"; this is its own integration.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-207",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-072",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps"
+      ],
+      "reason": "The Ola route behaviour appears observed, but no explicit customer ownership/use relationship is stated.",
+      "ambiguous": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-030",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps",
+        "Google Maps Platform"
+      ],
+      "reason": "The names are comparison or recommendation alternatives; no current customer-provider relationship is asserted.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-026",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Mapbox"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-080",
+      "current_provider": null,
+      "mentioned_providers": [
+        "OSRM"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-209",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-067",
+      "current_provider": "Ola Maps",
+      "mentioned_providers": [
+        "Ola Maps"
+      ],
+      "reason": "The provider-bearing user history reports Ola Distance Matrix throttling when \"our dispatcher\" refreshes ETAs.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-121",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-105",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-091",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-217",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform",
+        "Mapbox"
+      ],
+      "reason": "The names are comparison or recommendation alternatives; no current customer-provider relationship is asserted.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-027",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "The customer is \"still on Place Autocomplete (Legacy)\"; provider is implicit in a product name, rather than an explicit provider name. Alias admission needs a documented policy.",
+      "ambiguous": true
+    },
+    {
+      "record_id": "GT-LBS-AC-084",
+      "current_provider": null,
+      "mentioned_providers": [
+        "OSM Nominatim"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-099",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-114",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-118",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-121",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-122",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps",
+        "Mapbox"
+      ],
+      "reason": "The names are comparison or recommendation alternatives; no current customer-provider relationship is asserted.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-216",
+      "current_provider": "Mapbox",
+      "mentioned_providers": [
+        "Mapbox"
+      ],
+      "reason": "\"Our Mapbox address box\" and the completed API switch explicitly identify the existing integration.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-AC-224",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Mapbox"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-DM-045",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "A quoted customer ticket reports Google MAX_DIMENSIONS_EXCEEDED, but does not explicitly state a current-provider relationship beyond the observed request.",
+      "ambiguous": true
+    },
+    {
+      "record_id": "GT-LBS-RG-034",
+      "current_provider": "Google Maps Platform",
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "Quoted customer statement reports Google reverse geocoding failing \"when we add location_type=ROOFTOP\", linking the observed request to customer actions.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "current_provider": null,
+      "mentioned_providers": [],
+      "reason": "No explicit provider name/current-provider relationship is supplied in the enquiry or relevant customer history.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-102",
+      "current_provider": "Google Maps Platform",
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "Observed Google reverse-geocode REQUEST_DENIED is linked to \"our Places-enabled key\".",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-120",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Ola Maps",
+        "Mapbox"
+      ],
+      "reason": "The names are comparison or recommendation alternatives; no current customer-provider relationship is asserted.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-123",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-124",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Google Maps Platform"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-205",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Mapbox"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-211",
+      "current_provider": null,
+      "mentioned_providers": [
+        "Mappls (MapmyIndia)"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-216",
+      "current_provider": null,
+      "mentioned_providers": [
+        "OSM Nominatim"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    },
+    {
+      "record_id": "GT-LBS-RG-222",
+      "current_provider": null,
+      "mentioned_providers": [
+        "OSM Nominatim"
+      ],
+      "reason": "The provider identifies a documentation target, proposed integration, capability question or cost scenario; it does not explicitly establish current customer use.",
+      "ambiguous": false
+    }
+  ]
+}

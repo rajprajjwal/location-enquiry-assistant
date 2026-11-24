@@ -1,0 +1,20 @@
+{
+  "scope": "Fresh combined production integration smoke on five working-eval inputs; separate from the controlled 317-case question comparison.",
+  "working_cases": 5,
+  "apis": [
+    "autocomplete",
+    "directions",
+    "reverse_geocode",
+    "distance_matrix"
+  ],
+  "fresh_model_calls": 19,
+  "cached_model_calls": 0,
+  "schema_valid": 5,
+  "model_call_errors": 0,
+  "source_matches_final_test_suite": true,
+  "credit_handoff_pending": true,
+  "inputs_sha256": "a0c1df3cda34e7cf036a49950120df2f8c1b1265fe1909b6d4e4f89982191cd9",
+  "predictions_sha256": "ddb83d502bb66e9236a4fd5a64e29530bab2dcf1762a9789b71ff3caec581659",
+  "frozen_cases": 0,
+  "holdout_cases": 0
+}

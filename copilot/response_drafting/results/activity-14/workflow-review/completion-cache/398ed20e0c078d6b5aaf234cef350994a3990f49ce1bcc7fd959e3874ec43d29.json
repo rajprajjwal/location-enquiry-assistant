@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": \"billing_incident\", \"reason\": \"The customer mentioned their credit balance went negative on 5 September and is asking about routing calls stopping, which indicates a potential billing issue.\"}",
+  "raw": "{\"category\": \"billing_incident\", \"reason\": \"The customer mentioned their credit balance went negative on 5 September and is asking about routing calls stopping, which indicates a potential billing issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 41,
+    "total_tokens": 340
+  },
+  "latency_ms": 1116,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

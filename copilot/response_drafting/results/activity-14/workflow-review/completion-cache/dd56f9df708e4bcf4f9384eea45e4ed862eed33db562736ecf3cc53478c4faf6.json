@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The ZERO_RESULTS status indicates that the reverse geocoding was successful but returned no results, which may occur if the geocoder was passed a latlng in a remote location. To diagnose further, coordinates and result filters are needed.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The ZERO_RESULTS status indicates that the reverse geocoding was successful but returned no results, which may occur if the geocoder was passed a latlng in a remote location. To diagnose further, coordinates and result filters are needed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1952,
+    "completion_tokens": 56,
+    "total_tokens": 2008
+  },
+  "latency_ms": 1576,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

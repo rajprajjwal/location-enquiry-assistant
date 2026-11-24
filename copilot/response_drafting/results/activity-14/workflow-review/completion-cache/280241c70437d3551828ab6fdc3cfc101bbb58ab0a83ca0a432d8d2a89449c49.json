@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume_assumption\",\n      \"value\": true,\n      \"evidence\": \"What would 250,000 requests a month to the Mapbox Directions API cost in rupees for point-to-point driving routes\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing prices.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Compare equivalent vehicle modes across providers.\"\n    },\n    {\n      \"fields\": [\"existing_project\"],\n      \"decision_impact\": \"Check Google product eligibility for the quoted workload.\"\n    }\n  ],\n  \"reason\": \"The customer is seeking a pricing quote for the Mapbox Directions API with a specified monthly volume. However, the required fields for traffic awareness, travel mode, and existing project status are missing, which are essential for accurate pricing and eligibility checks.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume_assumption\",\n      \"value\": true,\n      \"evidence\": \"What would 250,000 requests a month to the Mapbox Directions API cost in rupees for point-to-point driving routes\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing prices.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"Compare equivalent vehicle modes across providers.\"\n    },\n    {\n      \"fields\": [\"existing_project\"],\n      \"decision_impact\": \"Check Google product eligibility for the quoted workload.\"\n    }\n  ],\n  \"reason\": \"The customer is seeking a pricing quote for the Mapbox Directions API with a specified monthly volume. However, the required fields for traffic awareness, travel mode, and existing project status are missing, which are essential for accurate pricing and eligibility checks.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1125,
+    "completion_tokens": 210,
+    "total_tokens": 1335
+  },
+  "latency_ms": 4965,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,368 @@
+{
+  "scope": "Final candidate-v3 working-eval status; no primary-label or score adjustment. Reuses question-level causal assessments only for exact text with unchanged enquiry/history.",
+  "cases": 317,
+  "empty_gold_questions": 34,
+  "empty_gold_cases": 33,
+  "empty_gold_assessments": {
+    "conditional_answer_first": 7,
+    "defensible_missing_fact": 23,
+    "clearly_unnecessary": 4
+  },
+  "question_details": [
+    {
+      "record_id": "GT-LBS-AC-026",
+      "question_index": 1,
+      "question": "Could you confirm whether you call Place Details after a selection?",
+      "index": 1,
+      "text": "Could you confirm whether you call Place Details after a selection?",
+      "assessment": "conditional_answer_first",
+      "cause": "requested_billing_options",
+      "reason": "The user asks for cost per billing option; show documented alternatives rather than requiring a terminating-call choice first."
+    },
+    {
+      "record_id": "GT-LBS-AC-027",
+      "question_index": 1,
+      "question": "Could you confirm whether you call Place Details after a selection?",
+      "index": 1,
+      "text": "Could you confirm whether you call Place Details after a selection?",
+      "assessment": "conditional_answer_first",
+      "cause": "requested_billing_options",
+      "reason": "The user asks for cost per billing option; show documented alternatives rather than requiring a terminating-call choice first."
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "question_index": 1,
+      "question": "Which provider are you using, and could you share the request body from one call that did not return predictions? Please remove credentials.",
+      "index": 1,
+      "text": "Which provider are you using, and could you share the request body from one call that did not return predictions? Please remove credentials.",
+      "assessment": "conditional_answer_first",
+      "cause": "documented_remedy_before_reproduction",
+      "reason": "The draft already retrieves includeQueryPredictions and includedRegionCodes conditions. Explain these first; request the body if those settings do not resolve the reported failure."
+    },
+    {
+      "record_id": "GT-LBS-AC-053",
+      "question_index": 1,
+      "question": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+      "index": 1,
+      "text": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+      "assessment": "conditional_answer_first",
+      "cause": "documented_remedy_before_reproduction",
+      "reason": "The reported error names an empty input. Give the required-input remedy first; the response error is already supplied, and a request is useful only if the issue persists."
+    },
+    {
+      "record_id": "GT-LBS-AC-069",
+      "question_index": 1,
+      "question": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "index": 1,
+      "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "assessment": "defensible_missing_fact",
+      "cause": "request_reproduction",
+      "reason": "An exact redacted input/request can establish the actual pasted-input length and endpoint parameters."
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "question_index": 1,
+      "question": "Could you confirm whether you need points of interest as well as addresses?",
+      "index": 1,
+      "text": "Could you confirm whether you need points of interest as well as addresses?",
+      "assessment": "clearly_unnecessary",
+      "cause": "optional_qualification_on_documentation",
+      "reason": "POI-versus-address preferences are not needed to explain country restriction parameters across providers."
+    },
+    {
+      "record_id": "GT-LBS-AC-122",
+      "question_index": 1,
+      "question": "Could you confirm whether you debounce keystrokes?",
+      "index": 2,
+      "text": "Could you confirm whether you debounce keystrokes?",
+      "assessment": "defensible_missing_fact",
+      "cause": "keystrokes_not_http_calls",
+      "reason": "Keystrokes do not establish how many HTTP calls are sent after debouncing; this can affect a per-request comparison."
+    },
+    {
+      "record_id": "GT-LBS-AC-123",
+      "question_index": 1,
+      "question": "Could you confirm whether you debounce keystrokes?",
+      "index": 2,
+      "text": "Could you confirm whether you debounce keystrokes?",
+      "assessment": "defensible_missing_fact",
+      "cause": "keystrokes_not_http_calls",
+      "reason": "Keystrokes do not establish how many HTTP calls are sent after debouncing; this can affect a per-request comparison."
+    },
+    {
+      "record_id": "GT-LBS-AC-225",
+      "question_index": 1,
+      "question": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "index": 1,
+      "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "assessment": "conditional_answer_first",
+      "cause": "documented_remedy_before_reproduction",
+      "reason": "Answer the documented retrieve-session parameter requirement first; a redacted actual request is useful if validation still fails."
+    },
+    {
+      "record_id": "GT-LBS-DIR-057",
+      "question_index": 1,
+      "question": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "index": 1,
+      "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "assessment": "defensible_missing_fact",
+      "cause": "request_reproduction",
+      "reason": "The actual URL is needed to distinguish encoded URL length, waypoint representation and API restrictions."
+    },
+    {
+      "record_id": "GT-LBS-DIR-064",
+      "question_index": 1,
+      "question": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+      "index": 1,
+      "text": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+      "assessment": "conditional_answer_first",
+      "cause": "documented_remedy_before_reproduction",
+      "reason": "The origin value and exact error are already given. Explain coordinate order/format first; request the full call only for an unresolved remainder."
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "question_index": 1,
+      "question": "Could you share one failing request with credentials redacted, and tell us whether the same request still returns OVER_QUERY_LIMIT when sent on its own?",
+      "index": 1,
+      "text": "Could you share one failing request with credentials redacted, and tell us whether the same request still returns OVER_QUERY_LIMIT when sent on its own?",
+      "assessment": "defensible_missing_fact",
+      "cause": "diagnostic_isolation",
+      "reason": "An isolated failing call distinguishes a burst-specific failure from a continuing quota or request problem."
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "question_index": 1,
+      "question": "For one route that is not drawn, does the API return a route, an empty result, or an error?",
+      "index": 1,
+      "text": "For one route that is not drawn, does the API return a route, an empty result, or an error?",
+      "assessment": "defensible_missing_fact",
+      "cause": "renderer_vs_api",
+      "reason": "Whether the API returns a route separates rendering replacement from a server-side waypoint failure."
+    },
+    {
+      "record_id": "GT-LBS-DIR-098",
+      "question_index": 1,
+      "question": "Where will the application operate?",
+      "index": 1,
+      "text": "Where will the application operate?",
+      "assessment": "clearly_unnecessary",
+      "cause": "generic_intake_route",
+      "reason": "Operating region does not resolve the requested waypoint-order optimization capability; a broad sales label triggered a generic blocking question."
+    },
+    {
+      "record_id": "GT-LBS-DIR-106",
+      "question_index": 1,
+      "question": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+      "index": 1,
+      "text": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+      "assessment": "defensible_missing_fact",
+      "cause": "request_reproduction",
+      "reason": "HTTP 422 alone does not establish which parameter or regional condition failed; the actual request and response body are useful."
+    },
+    {
+      "record_id": "GT-LBS-DIR-110",
+      "question_index": 1,
+      "question": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "index": 1,
+      "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "assessment": "conditional_answer_first",
+      "cause": "documented_limit_before_reproduction",
+      "reason": "The named repeated long route supports a distance-limit explanation first. Ask for the request only if the documented cap does not explain the failure; this run produced no draft."
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "question_index": 1,
+      "question": "Could you share one origin and destination pair that failed, with both values exactly as sent in the request?",
+      "index": 1,
+      "text": "Could you share one origin and destination pair that failed, with both values exactly as sent in the request?",
+      "assessment": "defensible_missing_fact",
+      "cause": "failed_input_example",
+      "reason": "A failing origin/destination pair is material to an element-level NOT_FOUND diagnosis."
+    },
+    {
+      "record_id": "GT-LBS-DM-061",
+      "question_index": 1,
+      "question": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "index": 1,
+      "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "assessment": "defensible_missing_fact",
+      "cause": "request_reproduction",
+      "reason": "The observed denial has no confirmed complete request-level cause; a redacted as-sent example can verify endpoint, restrictions and authentication context."
+    },
+    {
+      "record_id": "GT-LBS-DM-069",
+      "question_index": 1,
+      "question": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+      "index": 1,
+      "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+      "assessment": "clearly_unnecessary",
+      "cause": "documented_billing_unit",
+      "reason": "Per-request versus per-pair billing is a provider rule, independent of the customer traffic/travel-mode preference."
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "question_index": 1,
+      "question": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+      "index": 1,
+      "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+      "assessment": "clearly_unnecessary",
+      "cause": "documented_limit_scope",
+      "reason": "The question supplies a transit matrix shape. Explain the transit element cap and batching; a generic input-format quote question does not resolve that cap."
+    },
+    {
+      "record_id": "GT-LBS-RG-034",
+      "question_index": 1,
+      "question": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "index": 1,
+      "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "assessment": "defensible_missing_fact",
+      "cause": "request_reproduction",
+      "reason": "The observed denial has no confirmed complete request-level cause; a redacted as-sent example can verify endpoint, restrictions and authentication context."
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "question_index": 1,
+      "question": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+      "index": 1,
+      "text": "Could you share the exact failing request and the error message from the response body? Please redact tokens and credentials.",
+      "assessment": "defensible_missing_fact",
+      "cause": "request_reproduction",
+      "reason": "The request type/filter context can determine whether limit=5 is valid; the query does not establish that the required type is absent."
+    },
+    {
+      "record_id": "GT-LBS-RG-065",
+      "question_index": 1,
+      "question": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "index": 1,
+      "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "assessment": "defensible_missing_fact",
+      "cause": "rate_diagnostic",
+      "reason": "A reported 429 needs request/retry context, although aggregate rate and retry headers would be more targeted than the generic request template."
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "question_index": 1,
+      "question": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "index": 1,
+      "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "assessment": "defensible_missing_fact",
+      "cause": "request_reproduction",
+      "reason": "The observed denial has no confirmed complete request-level cause; a redacted as-sent example can verify endpoint, restrictions and authentication context."
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "question_index": 1,
+      "question": "Could you confirm whether results must be stored?",
+      "index": 1,
+      "text": "Could you confirm whether results must be stored?",
+      "assessment": "defensible_missing_fact",
+      "cause": "licensing_requirement",
+      "reason": "Result storage affects which free or temporary products can be recommended."
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "question_index": 2,
+      "question": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+      "index": 2,
+      "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+      "assessment": "defensible_missing_fact",
+      "cause": "usage_policy_requirement",
+      "reason": "User-triggered versus periodic tracking affects public-service suitability."
+    },
+    {
+      "record_id": "GT-LBS-RG-098",
+      "question_index": 1,
+      "question": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+      "index": 1,
+      "text": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+      "assessment": "defensible_missing_fact",
+      "cause": "failed_input_example",
+      "reason": "Actual coordinates and filters are material to a specific ZERO_RESULTS diagnosis; original empty labels do not make the diagnostic request inherently wrong."
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "question_index": 1,
+      "question": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+      "index": 1,
+      "text": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+      "assessment": "defensible_missing_fact",
+      "cause": "failed_input_example",
+      "reason": "Actual coordinates and filters are material to a specific ZERO_RESULTS diagnosis; original empty labels do not make the diagnostic request inherently wrong."
+    },
+    {
+      "record_id": "GT-LBS-RG-100",
+      "question_index": 1,
+      "question": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+      "index": 1,
+      "text": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+      "assessment": "defensible_missing_fact",
+      "cause": "failed_input_example",
+      "reason": "Actual coordinates and filters are material to a specific ZERO_RESULTS diagnosis; original empty labels do not make the diagnostic request inherently wrong."
+    },
+    {
+      "record_id": "GT-LBS-RG-101",
+      "question_index": 1,
+      "question": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+      "index": 1,
+      "text": "Could you share one latitude and longitude that returned no results, along with any result filters sent in that request?",
+      "assessment": "defensible_missing_fact",
+      "cause": "failed_input_example",
+      "reason": "Actual coordinates and filters are material to a specific ZERO_RESULTS diagnosis; original empty labels do not make the diagnostic request inherently wrong."
+    },
+    {
+      "record_id": "GT-LBS-RG-102",
+      "question_index": 1,
+      "question": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "index": 1,
+      "text": "Could you share an example of the failing request as sent, with tokens and credentials redacted?",
+      "assessment": "defensible_missing_fact",
+      "cause": "request_reproduction",
+      "reason": "The observed denial has no confirmed complete request-level cause; a redacted as-sent example can verify endpoint, restrictions and authentication context."
+    },
+    {
+      "record_id": "GT-LBS-RG-117",
+      "question_index": 1,
+      "question": "Could you confirm billing account country and where most requests will be used?",
+      "index": 2,
+      "text": "Could you confirm billing account country and where most requests will be used?",
+      "assessment": "defensible_missing_fact",
+      "cause": "pricing_geography_requirement",
+      "reason": "Billing country and primary usage geography can change the applicable pricing schedule and are not supplied."
+    },
+    {
+      "record_id": "GT-LBS-RG-118",
+      "question_index": 1,
+      "question": "Could you confirm billing account country and where most requests will be used?",
+      "index": 2,
+      "text": "Could you confirm billing account country and where most requests will be used?",
+      "assessment": "defensible_missing_fact",
+      "cause": "pricing_geography_requirement",
+      "reason": "Billing country and primary usage geography can change the applicable pricing schedule and are not supplied."
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "question_index": 1,
+      "question": "Could you confirm billing account country and where most requests will be used?",
+      "index": 2,
+      "text": "Could you confirm billing account country and where most requests will be used?",
+      "assessment": "defensible_missing_fact",
+      "cause": "pricing_geography_requirement",
+      "reason": "Billing country and primary usage geography can change the applicable pricing schedule and are not supplied."
+    }
+  ],
+  "unmatched_gold_group_classification": {
+    "global_proceed_instruction": 10,
+    "already_answered": 13,
+    "unflagged": 26,
+    "needs_review": 12
+  },
+  "unmatched_gold_groups": 61,
+  "source_sha256": {
+    "final_predictions": "e1033bc7eaf147cad94ed39d1859fa7f891b3d6df5cf9e16f0a7a585ccbe8a97",
+    "prior_causal_audit": "3b6828134448e5aec38ee02276f1b4af329749d5c78c0cfde6e794ff2599f5b2",
+    "gold": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089"
+  },
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "primary_score_unchanged": true
+}

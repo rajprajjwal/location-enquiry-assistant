@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"The presence of live-traffic ETAs affects the pricing and limits, which is necessary to determine if the billing is accurate.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"The required travel mode influences the pricing and limits, which is necessary to determine if the billing is accurate.\"\n    }\n  ],\n  \"reason\": \"The customer's billing discrepancy may be due to the specific features and modes used, which are not yet confirmed.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"The presence of live-traffic ETAs affects the pricing and limits, which is necessary to determine if the billing is accurate.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"The required travel mode influences the pricing and limits, which is necessary to determine if the billing is accurate.\"\n    }\n  ],\n  \"reason\": \"The customer's billing discrepancy may be due to the specific features and modes used, which are not yet confirmed.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2440,
+    "completion_tokens": 129,
+    "total_tokens": 2569
+  },
+  "latency_ms": 3226,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

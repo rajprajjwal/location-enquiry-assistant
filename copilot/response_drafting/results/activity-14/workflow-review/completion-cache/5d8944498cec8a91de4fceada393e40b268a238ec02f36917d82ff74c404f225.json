@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The customer is requesting a 30x30 matrix, which results in 900 elements, exceeding the maximum allowed 625 elements for non-TRANSIT routes. The system is rejecting the request due to this limit.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The customer is requesting a 30x30 matrix, which results in 900 elements, exceeding the maximum allowed 625 elements for non-TRANSIT routes. The system is rejecting the request due to this limit.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1767,
+    "completion_tokens": 59,
+    "total_tokens": 1826
+  },
+  "latency_ms": 1612,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

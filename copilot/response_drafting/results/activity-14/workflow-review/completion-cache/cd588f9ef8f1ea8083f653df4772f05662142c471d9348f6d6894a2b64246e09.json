@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The enquiry indicates a REQUEST_DENIED error for reverse geocode with a Places-enabled key. To diagnose this, we need the actual redacted request to inspect for missing or invalid API key, or other parameters that might be causing the request to be denied.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The enquiry indicates a REQUEST_DENIED error for reverse geocode with a Places-enabled key. To diagnose this, we need the actual redacted request to inspect for missing or invalid API key, or other parameters that might be causing the request to be denied.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2241,
+    "completion_tokens": 62,
+    "total_tokens": 2303
+  },
+  "latency_ms": 1722,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

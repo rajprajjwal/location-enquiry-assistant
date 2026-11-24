@@ -1,0 +1,185 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-218",
+    "questions_sha256": "7127f2a4786e61f59387e40fd3670b30fd5ac0a4975b936bf35d48b351d20e5d",
+    "gold_sha256": "5e1095f6443991defb8b71d8f6326878785b989b7d870a221eebfe220a5debe1",
+    "whole": [],
+    "facts": [],
+    "reason": "Asking whether traffic is needed now or for future departures asks about timing. It does not establish whether live traffic is essential versus typical ETAs being acceptable, and it does not ask whether the Google project is new."
+  },
+  {
+    "record_id": "GT-LBS-DM-017",
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ]
+    ],
+    "reason": "The same matrix billing/profile decision is covered: whether traffic-aware ETAs are needed and which travel or vehicle modes are required. Asking the required modes covers whether anything besides driving is needed."
+  },
+  {
+    "record_id": "GT-LBS-DM-019",
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ]
+    ],
+    "reason": "Both required matrix profile facts are requested: traffic-aware ETAs and travel/vehicle mode. No independent decision beyond the gold group is added."
+  },
+  {
+    "record_id": "GT-LBS-DM-025",
+    "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+    "gold_sha256": "f210c2f3761ed1c22adca7017b8957987ec2921f6a622679558738725c3efba1",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "The input representation is requested directly. Adding place IDs as another possible input type remains within the same decision, rather than adding an independent question."
+  },
+  {
+    "record_id": "GT-LBS-DM-034",
+    "questions_sha256": "3acb016013beaa7273fe98754e3a99675eb1d6d42b0e2878881f7e84f9858da4",
+    "gold_sha256": "4f73cb57ab66e93890a52bc4972ba4df01eba7a9ed73dd821b0f83fb34c53e51",
+    "whole": [],
+    "facts": [],
+    "reason": "Billing-account country does not ask whether all matrices need traffic. The primary reference remains unchanged even though the enquiry already requests with-and-without-traffic comparisons."
+  },
+  {
+    "record_id": "GT-LBS-DM-088",
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "147224a0d2d7a879d48d312d8503f5d5627a4f1c8edd76ade8168a187b9fbe48",
+    "whole": [],
+    "facts": [],
+    "reason": "Traffic and travel-mode requirements do not request the usage export needed to inspect the disputed bill."
+  },
+  {
+    "record_id": "GT-LBS-RG-004",
+    "questions_sha256": "f19a59a873e472b3300841914ddba5da2e7314ac6cfd35ae4c7ee092eb710819",
+    "gold_sha256": "660a69271fc0c07a3d8a42c1e93df26328f6b21abcd4b421f7e8927b7c8c9870",
+    "whole": [],
+    "facts": [],
+    "reason": "The failing request and response error do not ask for current aggregate requests per minute or the contract/prepaid-credit arrangement. A request example cannot be credited for these independent facts."
+  },
+  {
+    "record_id": "GT-LBS-RG-009",
+    "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "reason": "Storage and lookup trigger are asked separately with the same meanings as the two gold questions."
+  },
+  {
+    "record_id": "GT-LBS-RG-011",
+    "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "reason": "Both storage need and user-triggered versus periodic tracking are explicitly requested."
+  },
+  {
+    "record_id": "GT-LBS-RG-013",
+    "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "reason": "Both independent gold decisions are fully covered: result storage and lookup trigger."
+  }
+]

@@ -1,0 +1,2 @@
+.venv/bin/python -B -m pytest -q tests/enquiry_workflow/test_pending_customer_status.py tests/enquiry_workflow/test_customer_status_e2e.py tests/enquiry_workflow/test_ownership_status.py tests/enquiry_workflow/test_provider_binding.py tests/enquiry_workflow/test_task_scope.py tests/enquiry_workflow/test_requirement_plan.py tests/enquiry_workflow/test_escalation.py -p no:cacheprovider
+154 passed in 2.53s

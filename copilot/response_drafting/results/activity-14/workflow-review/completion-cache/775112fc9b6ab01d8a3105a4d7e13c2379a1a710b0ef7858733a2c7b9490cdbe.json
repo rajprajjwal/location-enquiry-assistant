@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"error_resolution\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"dispatcher refreshes ETAs every 10 seconds for 200 drivers\",\"evidence\":\"our dispatcher refreshes ETAs every 10 seconds for 200 drivers\"},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"troubleshooting\",\"sub_intent\":\"error_resolution\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"dispatcher refreshes ETAs every 10 seconds for 200 drivers\",\"evidence\":\"our dispatcher refreshes ETAs every 10 seconds for 200 drivers\"},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps\"},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1510,
+    "completion_tokens": 176,
+    "total_tokens": 1686
+  },
+  "latency_ms": 5985,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

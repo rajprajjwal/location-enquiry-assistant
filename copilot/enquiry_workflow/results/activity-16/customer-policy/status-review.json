@@ -1,0 +1,206 @@
+[
+  {
+    "record_id": "GT-LBS-AC-205",
+    "query": "Our users type addresses in Hindi. Which autocomplete providers can return Hindi suggestions?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-AC-230",
+    "query": "We need type-ahead place suggestions that we can bias to a search area and filter by place type. Which of Google Places Autocomplete (New), Ola Places Autocomplete, and Mapbox Search Box document those capabilities?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-AC-236",
+    "query": "New Places API SKU, please. Just show USD.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We expect 40,000 Google Places Autocomplete Requests per month on the global price card. What is the free allowance and estimated charge?"
+      },
+      {
+        "role": "assistant",
+        "text": "Do you want the new Autocomplete Requests SKU or the legacy per-request SKU?"
+      }
+    ],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DIR-020",
+    "query": "Not sure. Answer with the details from my first message and note where that choice would change things.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Quote Google Maps Platform routing for 500,000 requests a month in India. Routes have 4 stops, no traffic needed."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Is this a new or existing Google Cloud project?"
+      }
+    ],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DIR-021",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Quote Google Maps Platform routing for 2,000,000 requests a month in India. Routes have 6 stops and we need traffic-aware ETAs."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Is this a new or existing Google Cloud project?"
+      }
+    ],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DIR-039",
+    "query": "Which Directions APIs can return a driving route that avoids ferries, and how can we tell whether that capability is documented?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DIR-043",
+    "query": "If we self-host OSRM on OpenStreetMap data for routing, what licensing obligations do we have?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DIR-113",
+    "query": "Which Directions APIs can return a multi-stop driving route with separate distances and travel times for every leg, while visiting the stops in the order we supply?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DIR-216",
+    "query": "Our drivers prefer Tamil. Can the directions API return turn-by-turn instructions in Tamil?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DM-026",
+    "query": "Google Maps Platform quote: 20,000 matrix requests per month in India, each a 25\u00d74 traffic-aware matrix, on an existing project.",
+    "history": [],
+    "customer_status": "existing",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DM-027",
+    "query": "Google Maps Platform quote: 3,000 matrix requests per month in India, each a 20\u00d720 matrix, on a brand-new GCP project.",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DM-094",
+    "query": "For a ride-hailing ETA screen, a prospect wants to compare travel times from many drivers to one pickup. What should we clarify before recommending an Ola Distance Matrix solution, and when would single-route Directions be useful?",
+    "history": [],
+    "customer_status": "new",
+    "previous_gold_owner": "Support L1"
+  },
+  {
+    "record_id": "GT-LBS-DM-117",
+    "query": "Mapbox vs Google matrix cost for 400,000 elements a month, no traffic?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Support L1"
+  },
+  {
+    "record_id": "GT-LBS-DM-118",
+    "query": "Mapbox vs Google matrix cost for 1,000,000 elements a month, no traffic?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Support L1"
+  },
+  {
+    "record_id": "GT-LBS-DM-201",
+    "query": "We're a logistics firm in Lucknow adding Kathmandu. Which distance-matrix providers can cover Nepal as well as India?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DM-214",
+    "query": "We need a 30\u00d730 matrix (900 elements) per request. Which providers accept that in one call?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Support L1"
+  },
+  {
+    "record_id": "GT-LBS-DM-221",
+    "query": "For a grocery dispatcher, what's the practical difference between Ola Distance Matrix and Distance Matrix Basic?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DM-222",
+    "query": "For a field-service scheduler, what's the practical difference between Ola Distance Matrix and Distance Matrix Basic?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DM-226",
+    "query": "A prospect is evaluating Google Distance Matrix for an India-only app. What should we confirm about their intended use and licensing before recommending it, including which published price list would apply?",
+    "history": [],
+    "customer_status": "new",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-DM-233",
+    "query": "Legacy Distance Matrix API. Please use list prices and show USD.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Estimate Google Maps Platform India legacy Distance Matrix charges for 100,000 elements per month. Our monthly batch has 10 origins and 10,000 destinations, for 100,000 origin-destination elements in total. What is the free allowance and estimated charge?"
+      },
+      {
+        "role": "assistant",
+        "text": "Are you asking about the legacy Distance Matrix API or the newer Routes API Compute Route Matrix?"
+      }
+    ],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-RG-082",
+    "query": "Sandbox CRM ticket TKT-38973. Customer wrote:\n\"Our mobile app calls Nominatim reverse every 30 seconds per user. OK?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Support L1"
+  },
+  {
+    "record_id": "GT-LBS-RG-201",
+    "query": "We need reverse geocoding for riders in India and Nepal. Who covers both?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-RG-226",
+    "query": "Can we store Mapbox reverse-geocoding results in our own database for later reuse, and does the public Nominatim policy allow us to resell those geocoding results?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  },
+  {
+    "record_id": "GT-LBS-RG-234",
+    "query": "Which reverse geocoders document a way to look up many coordinates in a single batch request?",
+    "history": [],
+    "customer_status": "unknown",
+    "previous_gold_owner": "Account team (Sales)"
+  }
+]

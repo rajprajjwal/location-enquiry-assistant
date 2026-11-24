@@ -1,0 +1,727 @@
+{
+  "scope": "All317 fixed working-eval; original workbook labels unchanged. These are postchecked workflow interpretations, not an isolated raw-model score.",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "reference_sha256": "4c8a08245b1b46b6e0250cc124b9f23c5231a582a36a22e3348272e9f8c34c6d",
+  "methods": {
+    "baseline": {
+      "records": 317,
+      "api_correct": 305,
+      "api_accuracy": 0.9621451104100947,
+      "intent_correct": 240,
+      "intent_accuracy": 0.7570977917981072,
+      "joint_correct": 234,
+      "joint_accuracy": 0.7381703470031545,
+      "source_predictions_sha256": "45170d5060db7a10c89ba8bc0cb125959e818339e90b59a20f36003ff75ffe62",
+      "confusions": {
+        "api": [
+          {
+            "expected": "autocomplete",
+            "actual": "reverse_geocode",
+            "cases": 5
+          },
+          {
+            "expected": "directions",
+            "actual": "None",
+            "cases": 3
+          },
+          {
+            "expected": "autocomplete",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "directions",
+            "actual": "reverse_geocode",
+            "cases": 1
+          },
+          {
+            "expected": "distance_matrix",
+            "actual": "directions",
+            "cases": 1
+          },
+          {
+            "expected": "reverse_geocode",
+            "actual": "directions",
+            "cases": 1
+          }
+        ],
+        "intent": [
+          {
+            "expected": "troubleshooting",
+            "actual": "human_handoff",
+            "cases": 14
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "capability_match",
+            "cases": 11
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "capability_match",
+            "cases": 7
+          },
+          {
+            "expected": "sales_qualification",
+            "actual": "capability_match",
+            "cases": 5
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "human_handoff",
+            "cases": 5
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "troubleshooting",
+            "cases": 3
+          },
+          {
+            "expected": "pricing_comparison",
+            "actual": "sales_qualification",
+            "cases": 3
+          },
+          {
+            "expected": "troubleshooting",
+            "actual": "coverage_limits",
+            "cases": 3
+          },
+          {
+            "expected": "capability_match",
+            "actual": "pricing_quote",
+            "cases": 2
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "human_handoff",
+            "cases": 2
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "pricing_comparison",
+            "cases": 2
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "pricing_quote",
+            "cases": 2
+          },
+          {
+            "expected": "sales_qualification",
+            "actual": "docs_how_to",
+            "cases": 2
+          },
+          {
+            "expected": "capability_match",
+            "actual": "docs_how_to",
+            "cases": 1
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "coverage_limits",
+            "cases": 1
+          },
+          {
+            "expected": "troubleshooting",
+            "actual": "capability_match",
+            "cases": 1
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "docs_how_to",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "docs_how_to",
+            "cases": 1
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "coverage_limits",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "pricing_comparison",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "coverage_limits",
+            "cases": 1
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "troubleshooting",
+            "cases": 1
+          }
+        ]
+      }
+    },
+    "candidate": {
+      "records": 317,
+      "api_correct": 307,
+      "api_accuracy": 0.9684542586750788,
+      "intent_correct": 252,
+      "intent_accuracy": 0.7949526813880127,
+      "joint_correct": 247,
+      "joint_accuracy": 0.7791798107255521,
+      "source_predictions_sha256": "4e0cb1ac057c37653a7b385e49b9d580f50e9179dbf500f35f17abd93b20b875",
+      "confusions": {
+        "api": [
+          {
+            "expected": "autocomplete",
+            "actual": "reverse_geocode",
+            "cases": 4
+          },
+          {
+            "expected": "directions",
+            "actual": "None",
+            "cases": 3
+          },
+          {
+            "expected": "directions",
+            "actual": "reverse_geocode",
+            "cases": 1
+          },
+          {
+            "expected": "distance_matrix",
+            "actual": "directions",
+            "cases": 1
+          },
+          {
+            "expected": "reverse_geocode",
+            "actual": "autocomplete",
+            "cases": 1
+          }
+        ],
+        "intent": [
+          {
+            "expected": "docs_how_to",
+            "actual": "capability_match",
+            "cases": 12
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "capability_match",
+            "cases": 7
+          },
+          {
+            "expected": "troubleshooting",
+            "actual": "coverage_limits",
+            "cases": 6
+          },
+          {
+            "expected": "sales_qualification",
+            "actual": "capability_match",
+            "cases": 5
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "troubleshooting",
+            "cases": 3
+          },
+          {
+            "expected": "pricing_comparison",
+            "actual": "sales_qualification",
+            "cases": 3
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "docs_how_to",
+            "cases": 2
+          },
+          {
+            "expected": "capability_match",
+            "actual": "pricing_quote",
+            "cases": 2
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "coverage_limits",
+            "cases": 2
+          },
+          {
+            "expected": "troubleshooting",
+            "actual": "capability_match",
+            "cases": 2
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "human_handoff",
+            "cases": 2
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "pricing_comparison",
+            "cases": 2
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "pricing_quote",
+            "cases": 2
+          },
+          {
+            "expected": "sales_qualification",
+            "actual": "docs_how_to",
+            "cases": 2
+          },
+          {
+            "expected": "capability_match",
+            "actual": "docs_how_to",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "docs_how_to",
+            "cases": 1
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "coverage_limits",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "pricing_comparison",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "coverage_limits",
+            "cases": 1
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "troubleshooting",
+            "cases": 1
+          }
+        ]
+      }
+    },
+    "candidate-v2": {
+      "records": 317,
+      "api_correct": 307,
+      "api_accuracy": 0.9684542586750788,
+      "intent_correct": 252,
+      "intent_accuracy": 0.7949526813880127,
+      "joint_correct": 247,
+      "joint_accuracy": 0.7791798107255521,
+      "source_predictions_sha256": "badbc2784d9c628cb57bb3851ce3a2f57d893fd3fd3399cf876e8186d2ea36ba",
+      "confusions": {
+        "api": [
+          {
+            "expected": "autocomplete",
+            "actual": "reverse_geocode",
+            "cases": 4
+          },
+          {
+            "expected": "directions",
+            "actual": "None",
+            "cases": 3
+          },
+          {
+            "expected": "directions",
+            "actual": "reverse_geocode",
+            "cases": 1
+          },
+          {
+            "expected": "distance_matrix",
+            "actual": "directions",
+            "cases": 1
+          },
+          {
+            "expected": "reverse_geocode",
+            "actual": "autocomplete",
+            "cases": 1
+          }
+        ],
+        "intent": [
+          {
+            "expected": "docs_how_to",
+            "actual": "capability_match",
+            "cases": 12
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "capability_match",
+            "cases": 7
+          },
+          {
+            "expected": "troubleshooting",
+            "actual": "coverage_limits",
+            "cases": 6
+          },
+          {
+            "expected": "sales_qualification",
+            "actual": "capability_match",
+            "cases": 5
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "troubleshooting",
+            "cases": 3
+          },
+          {
+            "expected": "pricing_comparison",
+            "actual": "sales_qualification",
+            "cases": 3
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "docs_how_to",
+            "cases": 2
+          },
+          {
+            "expected": "capability_match",
+            "actual": "pricing_quote",
+            "cases": 2
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "coverage_limits",
+            "cases": 2
+          },
+          {
+            "expected": "troubleshooting",
+            "actual": "capability_match",
+            "cases": 2
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "human_handoff",
+            "cases": 2
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "pricing_comparison",
+            "cases": 2
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "pricing_quote",
+            "cases": 2
+          },
+          {
+            "expected": "sales_qualification",
+            "actual": "docs_how_to",
+            "cases": 2
+          },
+          {
+            "expected": "capability_match",
+            "actual": "docs_how_to",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "docs_how_to",
+            "cases": 1
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "coverage_limits",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "pricing_comparison",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "coverage_limits",
+            "cases": 1
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "troubleshooting",
+            "cases": 1
+          }
+        ]
+      }
+    },
+    "candidate-v3": {
+      "records": 317,
+      "api_correct": 307,
+      "api_accuracy": 0.9684542586750788,
+      "intent_correct": 252,
+      "intent_accuracy": 0.7949526813880127,
+      "joint_correct": 247,
+      "joint_accuracy": 0.7791798107255521,
+      "source_predictions_sha256": "e1033bc7eaf147cad94ed39d1859fa7f891b3d6df5cf9e16f0a7a585ccbe8a97",
+      "confusions": {
+        "api": [
+          {
+            "expected": "autocomplete",
+            "actual": "reverse_geocode",
+            "cases": 4
+          },
+          {
+            "expected": "directions",
+            "actual": "None",
+            "cases": 3
+          },
+          {
+            "expected": "directions",
+            "actual": "reverse_geocode",
+            "cases": 1
+          },
+          {
+            "expected": "distance_matrix",
+            "actual": "directions",
+            "cases": 1
+          },
+          {
+            "expected": "reverse_geocode",
+            "actual": "autocomplete",
+            "cases": 1
+          }
+        ],
+        "intent": [
+          {
+            "expected": "docs_how_to",
+            "actual": "capability_match",
+            "cases": 12
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "capability_match",
+            "cases": 7
+          },
+          {
+            "expected": "troubleshooting",
+            "actual": "coverage_limits",
+            "cases": 6
+          },
+          {
+            "expected": "sales_qualification",
+            "actual": "capability_match",
+            "cases": 5
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "troubleshooting",
+            "cases": 3
+          },
+          {
+            "expected": "pricing_comparison",
+            "actual": "sales_qualification",
+            "cases": 3
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "docs_how_to",
+            "cases": 2
+          },
+          {
+            "expected": "capability_match",
+            "actual": "pricing_quote",
+            "cases": 2
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "coverage_limits",
+            "cases": 2
+          },
+          {
+            "expected": "troubleshooting",
+            "actual": "capability_match",
+            "cases": 2
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "human_handoff",
+            "cases": 2
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "pricing_comparison",
+            "cases": 2
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "pricing_quote",
+            "cases": 2
+          },
+          {
+            "expected": "sales_qualification",
+            "actual": "docs_how_to",
+            "cases": 2
+          },
+          {
+            "expected": "capability_match",
+            "actual": "docs_how_to",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "docs_how_to",
+            "cases": 1
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "docs_how_to",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "coverage_limits",
+            "actual": "None",
+            "cases": 1
+          },
+          {
+            "expected": "pricing_quote",
+            "actual": "coverage_limits",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "pricing_comparison",
+            "cases": 1
+          },
+          {
+            "expected": "capability_match",
+            "actual": "coverage_limits",
+            "cases": 1
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "sales_qualification",
+            "cases": 1
+          },
+          {
+            "expected": "human_handoff",
+            "actual": "troubleshooting",
+            "cases": 1
+          }
+        ]
+      }
+    }
+  }
+}

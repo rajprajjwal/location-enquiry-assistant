@@ -1,0 +1,95 @@
+{
+  "development": {
+    "before": {
+      "cases": 147,
+      "owner_matches": 135,
+      "owner_accuracy": 0.9183673469387755,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 137,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": true
+    },
+    "after": {
+      "cases": 147,
+      "owner_matches": 135,
+      "owner_accuracy": 0.9183673469387755,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 137,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": true
+    },
+    "provisional_owners": 131,
+    "deferred_status": 0,
+    "deferred_reprompted": 0,
+    "routine_routing_replayed": 137,
+    "saved_handoffs_retained": 10,
+    "changed_owners": []
+  },
+  "fresh": {
+    "before": {
+      "cases": 12,
+      "owner_matches": 8,
+      "owner_accuracy": 0.6666666666666666,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 11,
+      "escalation_precision": 0.0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 1,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "after": {
+      "cases": 12,
+      "owner_matches": 8,
+      "owner_accuracy": 0.6666666666666666,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 11,
+      "escalation_precision": 0.0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 1,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "provisional_owners": 11,
+    "deferred_status": 0,
+    "deferred_reprompted": 0,
+    "routine_routing_replayed": 11,
+    "saved_handoffs_retained": 1,
+    "changed_owners": []
+  },
+  "workbook_sha256": "b0ad6e415cf093ecaefff73b6a0fa0811f8f1d783ba7414a770f44a1c692f4fb",
+  "method": "Replay routine routing using saved interpretations and approved working labels. Retain saved model handoff decisions.",
+  "verification": {
+    "workflow_tests_real_validator_passed": 137,
+    "deferred_reply_patterns_tested": 2,
+    "deferred_status_retained_across_followups": true,
+    "ownership_metadata_persisted_on_reopen": true,
+    "frozen_rerun": false,
+    "source_digests": {
+      "copilot/enquiry_workflow/escalation.py": "5820688d3be4e3e1431a441a69699aa5f0252e2dc462d07e35b44650a33088a1",
+      "copilot/enquiry_workflow/ownership_status.py": "2c7a2fadf33d09543f052f63d88e5cf2c28f6a452ac3fd64182ff6c95a83e3ce",
+      "copilot/enquiry_workflow/workflow.py": "48592b280ca1d37909dc1e10d11c683d349aba116dd4f8aa1347615182ee9775",
+      "copilot/safety/escalation_policy.py": "85bcdb746a5af2c0bb68a861c18444ffbbe635484d532e36613b7a325f4a2a29",
+      "copilot/response_drafting/drafter.py": "6bfaf02ccf5e1015cf903900802d8b393d189cc12aa586af3b4be908cf3afa02"
+    },
+    "full_suite": {
+      "passed": 346,
+      "skipped": 1,
+      "skip_reason": "Raw corpus snapshot unavailable for freshness check."
+    }
+  }
+}

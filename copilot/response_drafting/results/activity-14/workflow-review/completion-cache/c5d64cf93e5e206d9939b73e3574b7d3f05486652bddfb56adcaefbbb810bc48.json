@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume_assumption\",\n      \"value\": 2000000,\n      \"evidence\": \"Google vs Mapbox reverse geocoding for 2,000,000 lookups a month (display only, no storage)\"\n    },\n    {\n      \"field\": \"alternative_providers\",\n      \"value\": [\"Google Maps Platform\", \"Mapbox\"],\n      \"evidence\": \"Google vs Mapbox\"\n    },\n    {\n      \"field\": \"storage_required\",\n      \"value\": false,\n      \"evidence\": \"no storage\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"billing_country\"],\n      \"decision_impact\": \"Qualify the applicable regional price schedule.\"\n    },\n    {\n      \"fields\": [\"usage_geography\"],\n      \"decision_impact\": \"Qualify the applicable regional price schedule.\"\n    }\n  ],\n  \"reason\": \"The applicable decisions require the billing country and usage geography to qualify the regional price schedule, which are not yet provided.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume_assumption\",\n      \"value\": 2000000,\n      \"evidence\": \"Google vs Mapbox reverse geocoding for 2,000,000 lookups a month (display only, no storage)\"\n    },\n    {\n      \"field\": \"alternative_providers\",\n      \"value\": [\"Google Maps Platform\", \"Mapbox\"],\n      \"evidence\": \"Google vs Mapbox\"\n    },\n    {\n      \"field\": \"storage_required\",\n      \"value\": false,\n      \"evidence\": \"no storage\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"billing_country\"],\n      \"decision_impact\": \"Qualify the applicable regional price schedule.\"\n    },\n    {\n      \"fields\": [\"usage_geography\"],\n      \"decision_impact\": \"Qualify the applicable regional price schedule.\"\n    }\n  ],\n  \"reason\": \"The applicable decisions require the billing country and usage geography to qualify the regional price schedule, which are not yet provided.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2270,
+    "completion_tokens": 230,
+    "total_tokens": 2500
+  },
+  "latency_ms": 5834,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

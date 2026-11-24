@@ -1,0 +1,12 @@
+{
+  "runtime_code_hashes_unchanged": true,
+  "frozen_input_hash_unchanged": true,
+  "frozen_gt_hash_unchanged": true,
+  "workbook_byte_hash_unchanged": true,
+  "original_question_text_unchanged": true,
+  "derived_fact_file_hash_unchanged": true,
+  "live_production_modules_match_lock": true,
+  "holdout_cases": 0,
+  "frozen_gt_sha256": "00a6727d142f0f00a2d35c2edaea32d4c2ebbcbabf58afe3adda793ca3b3ade1",
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68"
+}

@@ -1,0 +1,20 @@
+{
+  "failed_attempts": [
+    {
+      "record_id": "GT-LBS-RG-213",
+      "reason": "Institute endpoint error detected by RecordedClient",
+      "counted_as_completed": false
+    },
+    {
+      "record_id": "GT-LBS-RG-213",
+      "reason": "Institute endpoint error detected by RecordedClient",
+      "counted_as_completed": false
+    }
+  ],
+  "recovery": "Resumed the same source-locked run; previously completed records were preserved.",
+  "successful_diagnostic_retry": {
+    "record_id": "GT-LBS-RG-213",
+    "status": "final",
+    "steps": 4
+  }
+}

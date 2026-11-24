@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"traffic_conditions\",\n      \"value\": \"live\",\n      \"evidence\": \"Calculate optimal driving, walking, and cycling routes using traffic- and incident-aware routing\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_conditions\"],\n      \"decision_impact\": \"Distinguish live traffic from historical or typical ETA requirements.\"\n    }\n  ],\n  \"reason\": \"The customer is asking for traffic-aware ETAs for driving routes in Sri Lanka and India, which requires confirming the specific traffic conditions (live, predicted, or standard estimates) they need.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"traffic_conditions\",\n      \"value\": \"live\",\n      \"evidence\": \"Calculate optimal driving, walking, and cycling routes using traffic- and incident-aware routing\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_conditions\"],\n      \"decision_impact\": \"Distinguish live traffic from historical or typical ETA requirements.\"\n    }\n  ],\n  \"reason\": \"The customer is asking for traffic-aware ETAs for driving routes in Sri Lanka and India, which requires confirming the specific traffic conditions (live, predicted, or standard estimates) they need.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1963,
+    "completion_tokens": 134,
+    "total_tokens": 2097
+  },
+  "latency_ms": 3238,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

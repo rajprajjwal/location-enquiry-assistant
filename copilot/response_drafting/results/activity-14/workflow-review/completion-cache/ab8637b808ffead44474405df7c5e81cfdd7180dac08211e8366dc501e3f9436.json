@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The issue of the Mapbox Search Box rejecting long pasted addresses suggests a potential problem with request formatting or content length. To diagnose this, we need to reproduce the exact request that is being rejected.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The issue of the Mapbox Search Box rejecting long pasted addresses suggests a potential problem with request formatting or content length. To diagnose this, we need to reproduce the exact request that is being rejected.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1264,
+    "completion_tokens": 52,
+    "total_tokens": 1316
+  },
+  "latency_ms": 1415,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

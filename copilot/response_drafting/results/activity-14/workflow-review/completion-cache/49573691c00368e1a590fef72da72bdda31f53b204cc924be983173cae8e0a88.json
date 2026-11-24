@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"hosting_preference\",\n      \"value\": false,\n      \"evidence\": \"whether self-hosting is acceptable or a managed API is required\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"hosting_preference\"],\n      \"decision_impact\": \"Select a viable backend when the public service cannot support the proposed typeahead use.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing Ola Maps Autocomplete and the public Nominatim endpoint for free usage and restrictions. The decision to select a viable backend depends on whether self-hosting is acceptable or a managed API is required, which is a missing material fact.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"hosting_preference\",\n      \"value\": false,\n      \"evidence\": \"whether self-hosting is acceptable or a managed API is required\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"hosting_preference\"],\n      \"decision_impact\": \"Select a viable backend when the public service cannot support the proposed typeahead use.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing Ola Maps Autocomplete and the public Nominatim endpoint for free usage and restrictions. The decision to select a viable backend depends on whether self-hosting is acceptable or a managed API is required, which is a missing material fact.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1657,
+    "completion_tokens": 151,
+    "total_tokens": 1808
+  },
+  "latency_ms": 3629,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

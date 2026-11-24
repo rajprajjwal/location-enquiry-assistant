@@ -1,0 +1,142 @@
+[
+  {
+    "record_id": "GT-LBS-AC-027",
+    "group": "GT-LBS-AC-026",
+    "fold": 5,
+    "query": "Sandbox CRM opportunity OPP-58418. Customer wrote:\n\"We're still on Place Autocomplete (Legacy) in India: 300,000 sessions × 9 requests. Cost per billing option?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-084",
+    "group": "GT-LBS-AC-084",
+    "fold": 5,
+    "query": "How do we limit Nominatim search to India and get up to 50 results?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-099",
+    "group": "GT-LBS-AC-099",
+    "fold": 5,
+    "query": "Google Places Autocomplete: we need results from 5 countries (CH, FR, DE, AT, IT). Is only one country allowed?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-114",
+    "group": "GT-LBS-AC-114",
+    "fold": 2,
+    "query": "Restrict Google Place Autocomplete to Bangladesh.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-118",
+    "group": "GT-LBS-AC-116",
+    "fold": 5,
+    "query": "Ola Place Details after autocomplete selection: 6,000,000 calls a month. Cost?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-121",
+    "group": "GT-LBS-AC-119",
+    "fold": 1,
+    "query": "Google Autocomplete (New), India: 200,000 sessions with 25 requests each. Is per-request or session pricing cheaper, assuming every session ends in Place Details Essentials?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-122",
+    "group": "GT-LBS-AC-122",
+    "fold": 1,
+    "query": "Ola vs Mapbox autocomplete for 100,000 sessions × 8 keystrokes a month?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-216",
+    "group": "GT-LBS-AC-216",
+    "fold": 4,
+    "query": "Our Mapbox address box shows autocomplete suggestions while users type. After we switched it to the Geocoding API, request counts exploded. Why is this happening?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-AC-224",
+    "group": "GT-LBS-AC-224",
+    "fold": 5,
+    "query": "Do Mapbox Search Box autocomplete /suggest and /retrieve calls need a session token?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-DM-045",
+    "group": "GT-LBS-DM-044",
+    "fold": 3,
+    "query": "Sandbox CRM ticket TKT-63953. Customer wrote:\n\"Google Distance Matrix gives MAX_DIMENSIONS_EXCEEDED with 30 destinations and 1 origin, even though that's only 30 elements.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-034",
+    "group": "GT-LBS-RG-034",
+    "fold": 5,
+    "query": "Sandbox CRM ticket TKT-35162. Customer wrote:\n\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-096",
+    "group": "GT-LBS-RG-096",
+    "fold": 3,
+    "query": "Free reverse geocoding options for a hobby app with 20,000 lookups a month?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-102",
+    "group": "GT-LBS-RG-102",
+    "fold": 3,
+    "query": "Google Geocode REQUEST_DENIED for reverse geocode with our Places-enabled key.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-120",
+    "group": "GT-LBS-RG-120",
+    "fold": 1,
+    "query": "Ola vs Mapbox reverse geocoding when we must store 300,000 results a month?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-123",
+    "group": "GT-LBS-RG-123",
+    "fold": 2,
+    "query": "Filter Google reverse geocoding to location_type=RANGE_INTERPOLATED only.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-124",
+    "group": "GT-LBS-RG-124",
+    "fold": 2,
+    "query": "Filter Google reverse geocoding to location_type=GEOMETRIC_CENTER only.",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-205",
+    "group": "GT-LBS-RG-205",
+    "fold": 1,
+    "query": "Our map shows disputed borders for Indian users. Can Mapbox reverse geocoding return India's view of boundaries?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-211",
+    "group": "GT-LBS-RG-210",
+    "fold": 2,
+    "query": "Will Mappls reverse geocoding give us the same detailed response in Bangladesh as in India?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-216",
+    "group": "GT-LBS-RG-214",
+    "fold": 5,
+    "query": "We want to batch reverse-geocode 2 million historical GPS points with nominatim.openstreetmap.org. OK?",
+    "history": []
+  },
+  {
+    "record_id": "GT-LBS-RG-222",
+    "group": "GT-LBS-RG-221",
+    "fold": 5,
+    "query": "Can Nominatim reverse return just the suburb instead of the full address?",
+    "history": []
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_quality\",\"reason\":\"The issue involves incorrect autocomplete predictions, which requires the exact query and returned prediction to diagnose.\"}",
+  "raw": "{\"decision\":\"prediction_quality\",\"reason\":\"The issue involves incorrect autocomplete predictions, which requires the exact query and returned prediction to diagnose.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1879,
+    "completion_tokens": 28,
+    "total_tokens": 1907
+  },
+  "latency_ms": 939,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

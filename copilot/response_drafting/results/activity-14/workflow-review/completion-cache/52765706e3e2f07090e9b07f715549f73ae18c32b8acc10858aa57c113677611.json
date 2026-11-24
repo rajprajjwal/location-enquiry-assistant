@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":1.0,\"api\":1.0,\"team\":1.0},\"qualification\":{\"use_case\":{\"value\":\"compute 8×8 distance matrices about 5,000 times a month with live-traffic travel times\",\"evidence\":\"We're a Ahmedabad pharma distributor. We compute 8×8 distance matrices about 5,000 times a month with live-traffic travel times. Which matrix APIs fit, and what would each cost in rupees?\"},\"region\":{\"value\":\"Ahmedabad\",\"evidence\":\"We're a Ahmedabad pharma distributor.\"},\"monthly_volume\":{\"value\":\"5,000 times a month\",\"evidence\":\"We compute 8×8 distance matrices about 5,000 times a month with live-traffic travel times.\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":1.0,\"api\":1.0,\"team\":1.0},\"qualification\":{\"use_case\":{\"value\":\"compute 8×8 distance matrices about 5,000 times a month with live-traffic travel times\",\"evidence\":\"We're a Ahmedabad pharma distributor. We compute 8×8 distance matrices about 5,000 times a month with live-traffic travel times. Which matrix APIs fit, and what would each cost in rupees?\"},\"region\":{\"value\":\"Ahmedabad\",\"evidence\":\"We're a Ahmedabad pharma distributor.\"},\"monthly_volume\":{\"value\":\"5,000 times a month\",\"evidence\":\"We compute 8×8 distance matrices about 5,000 times a month with live-traffic travel times.\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1503,
+    "completion_tokens": 247,
+    "total_tokens": 1750
+  },
+  "latency_ms": 5625,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

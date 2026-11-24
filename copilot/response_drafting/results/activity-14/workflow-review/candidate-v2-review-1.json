@@ -1,0 +1,152 @@
+[
+  {
+    "record_id": "GT-LBS-AC-088",
+    "questions_sha256": "46e6ad2bde8a899c9bdc94e0f053bad50b0c05cb521240c5405f645c49db4160",
+    "gold_sha256": "5faf6d8d2490063a2f52a543620b2d6b13fc2e99b5481a6107da10b0b67a75df",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "Account reference identifies the affected account, equivalent to the requested account ID. The credential warning is a safety instruction, not an extra decision."
+  },
+  {
+    "record_id": "GT-LBS-AC-090",
+    "questions_sha256": "06e06d11d8d706256582cd9759d243f934f75dadc5019fdf28ccb16d9f0c8c14",
+    "gold_sha256": "563dc18c34a1f98d83124608b9123b61216abddfd71a9744b5a0d49b4ba4aa85",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ]
+    ],
+    "reason": "The exact submitted search query and returned incorrect prediction are both requested."
+  },
+  {
+    "record_id": "GT-LBS-AC-204",
+    "questions_sha256": "e8056eb267dbd06f0a2bb821db0423cb0405f177cb558c190121df155c7dd48b",
+    "gold_sha256": "0dba318967756532d9b45582d55582b9f9d15f6416b96454d8b9c3e8b2fd0dd4",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "The hard restriction versus geographic bias preference is requested explicitly in the country-restriction context."
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "questions_sha256": "e9b91928c64041800d6b877fb7c6f680deceb226d1c7c01f02b5f4ea9955cf71",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+    "whole": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        5,
+        5,
+        1
+      ],
+      [
+        5,
+        5,
+        2
+      ]
+    ],
+    "reason": "All five decisions are covered: vehicle modes, live traffic, route stops, monthly route workload, and Google project status plus Ola contract. Business identity as a bus aggregator does not by itself establish the intended routing profile."
+  },
+  {
+    "record_id": "GT-LBS-DIR-086",
+    "questions_sha256": "365d15743fa5d31c7e300b2aea88a9cbe4016823243716d3b22857db21db04b2",
+    "gold_sha256": "1699e9f8dff672f02ab1818f1008d08dcaf1a8b5855f63ee97f82967e02ffb20",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "reason": "Exposure time and subsequent unusual usage spikes are both requested. No credential value is requested."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding query with limit=5 returns a 422 error, which indicates an issue with the request parameters. The limit parameter is set to 5, but the documentation states that the maximum supported limit is 10. However, the error message does not directly relate to the limit parameter. The error might be due to other parameters not being correctly formatted or missing required parameters. The reverse lookup returns no result, and the coordinates and result filters are needed to diagnose the issue.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding query with limit=5 returns a 422 error, which indicates an issue with the request parameters. The limit parameter is set to 5, but the documentation states that the maximum supported limit is 10. However, the error message does not directly relate to the limit parameter. The error might be due to other parameters not being correctly formatted or missing required parameters. The reverse lookup returns no result, and the coordinates and result filters are needed to diagnose the issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2330,
+    "completion_tokens": 111,
+    "total_tokens": 2441
+  },
+  "latency_ms": 2781,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

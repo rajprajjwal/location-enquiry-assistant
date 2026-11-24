@@ -1,0 +1,10 @@
+{
+  "cases": 36,
+  "selection": "Every qualification-bucket record in the fixed 317-case working-eval cohort. Only these IDs selected from the workbook.",
+  "working_cohort_sha256": "59ada638b0147cdc67f4c0e6c01cc5d1fd30e50968bec37206aee2d876d5005f",
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "cases_sha256": "038d1249a4ec11226c93575295a33a5e3399f281a7e4226849ad486f66edf93b",
+  "original_labels_sha256": "37e7612a47cad0b4398f10f5ba6dc1f1a7bbad01ae4fa22c8f54b7e6da5ce987",
+  "frozen_cases": 0,
+  "holdout_cases": 0
+}

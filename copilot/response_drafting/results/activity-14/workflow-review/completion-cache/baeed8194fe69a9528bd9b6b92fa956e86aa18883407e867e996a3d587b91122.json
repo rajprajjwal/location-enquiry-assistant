@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.8,\"team\":0.95},\"qualification\":{}}",
+  "raw": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.8,\"team\":0.95},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1427,
+    "completion_tokens": 48,
+    "total_tokens": 1475
+  },
+  "latency_ms": 1412,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The customer is encountering a MAX_ELEMENTS_EXCEEDED error with their 15x10 request to the Google Distance Matrix API. According to the documentation, the Distance Matrix API has a limit of 100 elements per request, which is the product of the number of origins and destinations. The customer's request has 15 origins and 10 destinations, resulting in 150 elements, which exceeds the 100-element limit. This indicates that the request is missing results due to exceeding the allowed number of elements.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The customer is encountering a MAX_ELEMENTS_EXCEEDED error with their 15x10 request to the Google Distance Matrix API. According to the documentation, the Distance Matrix API has a limit of 100 elements per request, which is the product of the number of origins and destinations. The customer's request has 15 origins and 10 destinations, resulting in 150 elements, which exceeds the 100-element limit. This indicates that the request is missing results due to exceeding the allowed number of elements.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2000,
+    "completion_tokens": 119,
+    "total_tokens": 2119
+  },
+  "latency_ms": 2962,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_burst\", \"reason\":\"The enquiry mentions a bot attack leading to an unexpected increase in bill, suggesting a burst of requests exceeding the quota. Inspecting one request and testing it in isolation can help identify the cause.\"}",
+  "raw": "{\"decision\":\"request_burst\", \"reason\":\"The enquiry mentions a bot attack leading to an unexpected increase in bill, suggesting a burst of requests exceeding the quota. Inspecting one request and testing it in isolation can help identify the cause.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1500,
+    "completion_tokens": 50,
+    "total_tokens": 1550
+  },
+  "latency_ms": 1365,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

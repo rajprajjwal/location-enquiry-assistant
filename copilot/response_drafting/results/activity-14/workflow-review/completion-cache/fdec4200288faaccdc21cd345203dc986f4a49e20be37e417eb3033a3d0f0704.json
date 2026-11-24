@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse lookup is returning Thai characters incorrectly, which may indicate that the reverse API is not correctly handling or returning the expected address details. This requires checking the coordinates and result filters to ensure the correct data is being retrieved.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse lookup is returning Thai characters incorrectly, which may indicate that the reverse API is not correctly handling or returning the expected address details. This requires checking the coordinates and result filters to ensure the correct data is being retrieved.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1244,
+    "completion_tokens": 54,
+    "total_tokens": 1298
+  },
+  "latency_ms": 1422,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

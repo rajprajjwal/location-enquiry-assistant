@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the use of the 'alternatives=true' parameter in the Google Directions API, which is only available for requests without intermediate waypoints. The draft reply provides the necessary information and the ticket field updates can be proposed based on the provided evidence.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue is related to the use of the 'alternatives=true' parameter in the Google Directions API, which is only available for requests without intermediate waypoints. The draft reply provides the necessary information and the ticket field updates can be proposed based on the provided evidence.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2050,
+    "completion_tokens": 63,
+    "total_tokens": 2113
+  },
+  "latency_ms": 2031,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

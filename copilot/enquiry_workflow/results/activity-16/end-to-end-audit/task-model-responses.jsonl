@@ -1,0 +1,102 @@
+{"record_id": "GT-LBS-DM-009", "text": "{\"task\":\"deployment_quote\",\"evidence\":\"which matrix APIs fit, and what would each cost in rupees?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-009", "text": "{\"task\":\"deployment_quote\",\"evidence\":\"which matrix APIs fit, and what would each cost in rupees?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-010", "text": "{\"task\":\"deployment_quote\",\"evidence\":\"We compute 20\u00d720 distance matrices about 10,000 times a month. Which matrix APIs fit, and what would each cost in rupees?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-011", "text": "{\"task\":\"deployment_quote\",\"evidence\":\"We compute 2\u00d710 distance matrices about 300,000 times a month. Which matrix APIs fit, and what would each cost in rupees?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-012", "text": "{\"task\":\"deployment_quote\",\"evidence\":\"We compute 5\u00d710 distance matrices about 200,000 times a month with live-traffic travel times. Which matrix APIs fit, and what would each cost in rupees?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-013", "text": "{\"task\":\"deployment_quote\",\"evidence\":\"We compute 4\u00d74 distance matrices about 50,000 times a month. Which matrix APIs fit, and what would each cost in rupees?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-069", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"Is Ola Distance Matrix billed per request or per pair?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-092", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which autocomplete APIs support session-based pricing?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-216", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which per-minute limits apply?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-217", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which per-minute limits apply?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-204", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Our marketplace operates in 20 countries. Can one autocomplete request be restricted to all 20?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-205", "text": "{\"task\":\"product_selection\",\"evidence\":\"Compare the providers you know.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-206", "text": "{\"task\":\"product_selection\",\"evidence\":\"Compare the providers you know.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-210", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Will Mappls reverse geocoding give us the same detailed response in Nepal as in India?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-211", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Will Mappls reverse geocoding give us the same detailed response in Bangladesh as in India?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-220", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Do any of these routing APIs plan EV routes with charging stops?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-227", "text": "{\"task\":\"api_documentation\",\"evidence\":\"What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-036", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Does Ola Maps Directions support auto-rickshaw routing for our three-wheeler fleet?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-125", "text": "{\"task\":\"api_documentation\",\"evidence\":\"OSRM table returns durations only. How do we also get distances?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-207", "text": "{\"task\":\"product_selection\",\"evidence\":\"Which providers give bicycling directions in India?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-208", "text": "{\"task\":\"product_selection\",\"evidence\":\"Which providers give bicycling directions in Indonesia?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-226", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-090", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which matrix APIs work with addresses instead of coordinates?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-045", "text": "{\"task\":\"api_documentation\",\"evidence\":\"How do we get the city from Google reverse geocoding?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-003", "text": "{\"task\":\"api_documentation\",\"evidence\":\"To save money, can our mobile app call the public Nominatim server directly for type-ahead address search? We have about 20 searches per second at peak.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-044", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"Will Google bill our Place Autocomplete and the final Place Details call as one session if their API keys belong to two different Google Cloud projects?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-033", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"Does Google give us free Directions calls in India, and what happens if we exceed it without a card on file?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-211", "text": "{\"task\":\"api_documentation\",\"evidence\":\"What geographic coverage limitations are documented for that setup?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-212", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which geographic coverage limits should we plan for?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-040", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which routing APIs support truck routing?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-092", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which reverse geocoders give a precision indicator?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-080", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Nominatim reverse returns one result only. Can we get alternatives?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-110", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Mapbox Directions fails for our test route Kanyakumari\\u2192Leh\\u2192Kanyakumari\\u2192Leh\\u2192Kanyakumari\\u2192Leh\\u2192Kanyakumari (four legs). Is there a distance cap?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-110", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Mapbox Directions fails for our test route Kanyakumari\\u2192Leh\\u2192Kanyakumari\\u2192Leh\\u2192Kanyakumari\\u2192Leh\\u2192Kanyakumari (four legs). Is there a distance cap?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-107", "text": "{\"task\":\"api_documentation\",\"evidence\":\"What's the limit?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-223", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Does Mappls' distance matrix let us choose shortest vs optimal routes, and use live traffic?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-014", "text": "{\"task\":\"product_selection\",\"evidence\":\"Which routing APIs could we use, and what would each cost per month in rupees?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-225", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Can Google's Routes API give us a transit matrix for 15 stations \\u00d7 10 offices?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-206", "text": "{\"task\":\"uncertain\",\"evidence\":\"For dispatch in Nepal, we need traffic-aware travel times in a matrix. Who can do that?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-207", "text": "{\"task\":\"uncertain\",\"evidence\":\"For dispatch in Sri Lanka, we need traffic-aware travel times in a matrix. Who can do that?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-208", "text": "{\"task\":\"product_selection\",\"evidence\":\"For dispatch in Indonesia, we need traffic-aware travel times in a matrix. Who can do that?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-109", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Do we need session tokens with Google autocomplete?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-094", "text": "{\"task\":\"api_documentation\",\"evidence\":\"How do we restrict autocomplete results to India on each provider?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-214", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Can we reverse geocode every 100 m grid cell of Mumbai using the public Nominatim server?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-215", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Is that allowed?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-216", "text": "{\"task\":\"api_documentation\",\"evidence\":\"We want to batch reverse-geocode 2 million historical GPS points with nominatim.openstreetmap.org. OK?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-072", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Are Mapbox /category searches billed per session too?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-026", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"Cost per billing option?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-027", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"Cost per billing option?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-206", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which worldview should our India-only app set when it sends coordinates to Mapbox Reverse Geocoding?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-093", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Does Ola Maps cover a Distance Matrix between Indian cities and Kathmandu?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-089", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which matrix APIs give traffic-aware durations, and what's the catch for each?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-103", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Can Google Distance Matrix give traffic duration using arrival_time instead of departure_time?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-112", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Restrict Google Place Autocomplete to India.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-217", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"Does Mapbox Geocoding bill one request per keystroke when used for type-ahead?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-221", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Any guidance in the docs?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-108", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Return Google reverse geocoding results only in English.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-123", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Filter Google reverse geocoding to location_type=RANGE_INTERPOLATED only.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-125", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Filter Google reverse geocoding to location_type=APPROXIMATE only.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-082", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"What rate can we hit the public Nominatim search API at?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-099", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Google Places Autocomplete: we need results from 5 countries (CH, FR, DE, AT, IT). Is only one country allowed?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-113", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Restrict Google Place Autocomplete to Nepal.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-115", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Restrict Google Place Autocomplete to Sri Lanka.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-223", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Can Mapbox Search Box return 20 suggestions per call?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-224", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Do Mapbox Search Box autocomplete /suggest and /retrieve calls need a session token?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-031", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"Which routing / directions APIs have a free monthly allowance, and how big is it?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-048", "text": "{\"task\":\"product_selection\",\"evidence\":\"we're an intercity bus aggregator and want a directions/routing API for route previews between cities. What do you recommend?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-064", "text": "{\"task\":\"troubleshooting\",\"evidence\":\"Ola Directions returns 400 with reason 'Invalid/missing origin'. We send origin=77.5946,12.9716.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-098", "text": "{\"task\":\"uncertain\",\"evidence\":\"We need to optimize the order of more than 10 delivery addresses with Google Directions.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-050", "text": "{\"task\":\"troubleshooting\",\"evidence\":\"A Google Distance Matrix element returns MAX_ROUTE_LENGTH_EXCEEDED for a Kanyakumari\u2013Srinagar pair. Can we raise the limit?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-056", "text": "{\"task\":\"troubleshooting\",\"evidence\":\"Google Compute Route Matrix rejects our 30\u00d730 request. Isn't the limit 625?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-068", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Do we authenticate Ola Distance Matrix with a header or a query param?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-073", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Mapbox Matrix only returns durations. How do we get distances?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-220", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Any limit we should know about?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-033", "text": "{\"task\":\"troubleshooting\",\"evidence\":\"We added result_type=street_address and now some points return ZERO_RESULTS.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-083", "text": "{\"task\":\"api_documentation\",\"evidence\":\"What attribution do we need when displaying results from the public Nominatim Reverse API?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-091", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which reverse geocoders handle Indian boundaries per Indian law?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-104", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Limit Google Places autocomplete to UK addresses only.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-105", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Restrict Google Places Autocomplete to one city's streets.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-106", "text": "{\"task\":\"api_documentation\",\"evidence\":\"How do we generate a Google Places session token? Can it be any random string?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-057", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Our Google Directions URL has 23 lat/lng waypoints and sometimes gets rejected as too long. Options?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-072", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which option gives the quickest route?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-075", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"For one Mapbox Matrix request with 20 coordinates, how does Mapbox count the billable units? Is this request charged once or based on the matrix elements returned?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-124", "text": "{\"task\":\"licensing_decision\",\"evidence\":\"what licence applies to the data\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-097", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which reverse geocoders accept language preferences?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-105", "text": "{\"task\":\"api_documentation\",\"evidence\":\"How do we get the city name from lat/lng with Google?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-122", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Filter Google reverse geocoding to location_type=ROOFTOP only.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-217", "text": "{\"task\":\"published_rate_calculation\",\"evidence\":\"What's Google's default reverse geocoding throughput?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-218", "text": "{\"task\":\"api_documentation\",\"evidence\":\"For Google Reverse Geocoding, do our browser and server requests count together toward the per-minute quota?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-083", "text": "{\"task\":\"api_documentation\",\"evidence\":\"What usage-policy rules apply?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-218", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Can our web app call nominatim.openstreetmap.org on every keystroke for suggestions?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-227", "text": "{\"task\":\"api_documentation\",\"evidence\":\"How do I keep Ola Autocomplete results inside a 5 km radius of the user?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-228", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Can Ola Autocomplete strictly restrict to a circle around a city centre?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-050", "text": "{\"task\":\"product_selection\",\"evidence\":\"we're a hospital ambulance network in Hyderabad and want a directions/routing API for fastest route under live traffic. What do you recommend?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DIR-070", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Which fields in the Ola Directions response give the distance in meters and duration in seconds, and how do we draw the route?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-DM-080", "text": "{\"task\":\"licensing_decision\",\"evidence\":\"Can we use router.project-osRM.org table service for our commercial fleet ETA matrix?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-038", "text": "{\"task\":\"api_documentation\",\"evidence\":\"We reverse-geocode coordinates for rural customer locations with Google. When the result has no street address, what can we show?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-221", "text": "{\"task\":\"api_documentation\",\"evidence\":\"How do I get only the city name from Nominatim reverse?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-222", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Can Nominatim reverse return just the suburb instead of the full address?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-103", "text": "{\"task\":\"api_documentation\",\"evidence\":\"Google Places Autocomplete 'types' only seems to work with establishment.\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-AC-107", "text": "{\"task\":\"api_documentation\",\"evidence\":\"How should we use Google Places session tokens correctly with the Java client?\"}", "finish_reason": "stop"}
+{"record_id": "GT-LBS-RG-106", "text": "{\"task\":\"api_documentation\",\"evidence\":\"How do we get country, state and city from Google reverse geocoding results?\"}", "finish_reason": "stop"}

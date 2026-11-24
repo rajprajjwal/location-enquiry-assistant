@@ -1,0 +1,36 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "local_prompt_tokens": 215,
+  "endpoint_prompt_tokens": 216,
+  "matches": false,
+  "usage": {
+    "prompt_tokens": 216,
+    "completion_tokens": 6,
+    "total_tokens": 222
+  },
+  "reliability": {
+    "limits": {
+      "max_retries_per_step": 2,
+      "enquiry_timeout_seconds": 120.0,
+      "model_timeout_seconds": 30.0,
+      "tool_timeout_seconds": 15.0,
+      "token_budget": 32768
+    },
+    "reserved_tokens": 326,
+    "observed_tokens": 222,
+    "model_attempts": 1,
+    "retries_by_step": {},
+    "events": [],
+    "elapsed_ms": 616
+  },
+  "tokenizer_sha256": {
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+  },
+  "native_template_matches": false,
+  "measured_framing_difference": 1,
+  "framing_allowance": 1,
+  "calibrated_prompt_tokens": 216,
+  "calibrated_count_matches": true,
+  "calibration_note": "One representative endpoint call measured a one-token framing difference. This calibrates the local counter; it is not an independent second probe."
+}

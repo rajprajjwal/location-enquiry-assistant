@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding request is returning ZERO_RESULTS for some Indian coordinates outside Delhi and Mumbai, which may be due to the lack of addressable locations in those areas or the absence of specific address types in the request.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding request is returning ZERO_RESULTS for some Indian coordinates outside Delhi and Mumbai, which may be due to the lack of addressable locations in those areas or the absence of specific address types in the request.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1659,
+    "completion_tokens": 54,
+    "total_tokens": 1713
+  },
+  "latency_ms": 1500,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

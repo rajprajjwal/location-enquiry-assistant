@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\", \"reason\":\"The documentation indicates that up to 25 intermediate waypoints can be defined, but requests with 11 or more are billed at a higher rate. The customer's issue may be related to how the route is being displayed rather than a cap on waypoints.\"}",
+  "raw": "{\"decision\":\"display_result\", \"reason\":\"The documentation indicates that up to 25 intermediate waypoints can be defined, but requests with 11 or more are billed at a higher rate. The customer's issue may be related to how the route is being displayed rather than a cap on waypoints.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1803,
+    "completion_tokens": 62,
+    "total_tokens": 1865
+  },
+  "latency_ms": 1676,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

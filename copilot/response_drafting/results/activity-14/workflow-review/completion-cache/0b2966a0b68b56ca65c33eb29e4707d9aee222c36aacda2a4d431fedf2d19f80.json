@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry does not provide enough information to determine the cause of the incorrect pin code. The user's home location is being displayed with the wrong pin code, but there is no indication of a specific error, configuration issue, or data problem. Further details such as the coordinates used, the expected pin code, or the actual result returned by the API are needed to diagnose the issue.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry does not provide enough information to determine the cause of the incorrect pin code. The user's home location is being displayed with the wrong pin code, but there is no indication of a specific error, configuration issue, or data problem. Further details such as the coordinates used, the expected pin code, or the actual result returned by the API are needed to diagnose the issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 965,
+    "completion_tokens": 85,
+    "total_tokens": 1050
+  },
+  "latency_ms": 2087,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

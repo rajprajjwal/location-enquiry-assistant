@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer is asking if Directions will stop when their Ola prepaid credit balance hits zero on 5 September 2026. The retrieved evidence indicates that Ola Maps allows a negative credit balance temporarily without service interruption during the grace period until 8 September 2026. The customer's question is already addressed by the documentation, so no further action is needed.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer is asking if Directions will stop when their Ola prepaid credit balance hits zero on 5 September 2026. The retrieved evidence indicates that Ola Maps allows a negative credit balance temporarily without service interruption during the grace period until 8 September 2026. The customer's question is already addressed by the documentation, so no further action is needed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1340,
+    "completion_tokens": 85,
+    "total_tokens": 1425
+  },
+  "latency_ms": 2244,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

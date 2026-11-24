@@ -17,7 +17,7 @@ REPO = Path(__file__).resolve().parents[1]
 if __package__ in (None, ""):
     sys.path.insert(0, str(REPO))
 
-from copilot.interpret.gt_adapter import from_gt_question, write_inputs
+from copilot.enquiry_interpretation.gt_adapter import from_gt_question, write_inputs
 from copilot.models import InterpretationInput
 
 

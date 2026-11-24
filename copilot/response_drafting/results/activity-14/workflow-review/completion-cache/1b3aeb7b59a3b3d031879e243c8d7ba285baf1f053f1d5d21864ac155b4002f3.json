@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer is asking if Google Directions can avoid tolls and highways for two-wheeler riders. The documentation confirms that the RouteModifiers API allows avoiding tolls and highways for DRIVE and TWO_WHEELER travel modes. The enquiry does not require further diagnostic steps as the information is sufficient to answer the question.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer is asking if Google Directions can avoid tolls and highways for two-wheeler riders. The documentation confirms that the RouteModifiers API allows avoiding tolls and highways for DRIVE and TWO_WHEELER travel modes. The enquiry does not require further diagnostic steps as the information is sufficient to answer the question.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2086,
+    "completion_tokens": 71,
+    "total_tokens": 2157
+  },
+  "latency_ms": 1872,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

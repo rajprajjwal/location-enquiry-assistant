@@ -1,0 +1,28 @@
+{
+  "gold_positive_cases": 40,
+  "empty_gold_cases": 40,
+  "gold_positive_cases_without_questions": 27,
+  "empty_gold_cases_with_questions": 16,
+  "question_groups_fully_fact_covered_without_whole_match": 4,
+  "matched_case_ids": [
+    "GT-LBS-DM-027",
+    "GT-LBS-RG-005",
+    "GT-LBS-RG-006",
+    "GT-LBS-RG-007",
+    "GT-LBS-RG-225"
+  ],
+  "covered_fact_case_ids": [
+    "GT-LBS-AC-229",
+    "GT-LBS-AC-231",
+    "GT-LBS-DM-027",
+    "GT-LBS-DM-221",
+    "GT-LBS-DM-222",
+    "GT-LBS-DM-226",
+    "GT-LBS-RG-005",
+    "GT-LBS-RG-006",
+    "GT-LBS-RG-007",
+    "GT-LBS-RG-225"
+  ],
+  "semantic_review": "Actual text and required meaning/granularity; no field-name-only credit; no label changes.",
+  "independent_human_review": false
+}

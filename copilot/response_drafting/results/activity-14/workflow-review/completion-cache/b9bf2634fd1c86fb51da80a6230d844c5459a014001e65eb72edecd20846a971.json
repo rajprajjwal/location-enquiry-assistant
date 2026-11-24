@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"coverage_question\",\"api\":\"osrm\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"Nepal\",\"evidence\":\"Nepal\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"self-hosted\",\"evidence\":\"self-hosted\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"coverage_limits\",\"sub_intent\":\"coverage_question\",\"api\":\"osrm\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"Nepal\",\"evidence\":\"Nepal\"},\"monthly_volume\":{\"value\":null,\"evidence\":null},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"self-hosted\",\"evidence\":\"self-hosted\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1358,
+    "completion_tokens": 147,
+    "total_tokens": 1505
+  },
+  "latency_ms": 4376,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

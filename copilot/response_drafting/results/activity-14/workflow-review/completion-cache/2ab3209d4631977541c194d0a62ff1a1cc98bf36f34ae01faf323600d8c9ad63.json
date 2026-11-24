@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"details_sku\",\"value\":false,\"evidence\":\"ends with Place Details Pro\"}],\"groups\":[{\"fields\":[\"details_sku\"],\"decision_impact\":\"Determine if the session ends with a Place Details Pro request, which affects billing for Autocomplete (New) requests.\"}],\"reason\":\"The customer's query indicates the session ends with Place Details Pro, but the supplied fact for details_sku is marked as false, which is not confirmed by the evidence.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"details_sku\",\"value\":false,\"evidence\":\"ends with Place Details Pro\"}],\"groups\":[{\"fields\":[\"details_sku\"],\"decision_impact\":\"Determine if the session ends with a Place Details Pro request, which affects billing for Autocomplete (New) requests.\"}],\"reason\":\"The customer's query indicates the session ends with Place Details Pro, but the supplied fact for details_sku is marked as false, which is not confirmed by the evidence.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1781,
+    "completion_tokens": 99,
+    "total_tokens": 1880
+  },
+  "latency_ms": 2509,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

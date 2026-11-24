@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\", \"reason\":\"The reverse lookup returns results, but the display is incorrect, suggesting a rendering issue rather than a data issue.\"}",
+  "raw": "{\"decision\":\"display_result\", \"reason\":\"The reverse lookup returns results, but the display is incorrect, suggesting a rendering issue rather than a data issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1190,
+    "completion_tokens": 33,
+    "total_tokens": 1223
+  },
+  "latency_ms": 997,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

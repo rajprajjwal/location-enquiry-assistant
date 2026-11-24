@@ -1,0 +1,707 @@
+{
+  "status": "locked",
+  "review_kind": "18 user-approved and 34 assistant-reviewed cases under user delegation. All 52 now development/regression cases.",
+  "cases": [
+    {
+      "record_id": "GT-LBS-DIR-079",
+      "group": "GT-LBS-DIR-079",
+      "fold": 3,
+      "questions": [],
+      "reviewer_decision": "empty",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "group": "GT-LBS-DIR-097",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "For one route that isn’t drawn, what does the API return for that request: a route, an empty result, or an error?",
+          "facts": [
+            "API response for one missing route: route, empty result, or error"
+          ],
+          "why_it_matters": "Determine whether to troubleshoot the route request or the app's rendering."
+        }
+      ],
+      "reviewer_decision": "revise",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-DIR-124",
+      "group": "GT-LBS-DIR-124",
+      "fold": 4,
+      "questions": [],
+      "reviewer_decision": "empty",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "group": "GT-LBS-AC-223",
+      "fold": 3,
+      "questions": [],
+      "reviewer_decision": "empty",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "group": "GT-LBS-RG-086",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Could you share an example of the failing reverse-geocoding request as sent, with tokens and credentials redacted?",
+          "facts": [
+            "redacted example of the failing reverse-geocoding request as sent"
+          ],
+          "why_it_matters": "Check how the request is built and how it attaches the access token."
+        }
+      ],
+      "reviewer_decision": "revise",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "group": "GT-LBS-AC-085",
+      "fold": 4,
+      "questions": [],
+      "reviewer_decision": "empty",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "group": "GT-LBS-DM-225",
+      "fold": 5,
+      "questions": [],
+      "reviewer_decision": "empty",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "group": "GT-LBS-RG-062",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Could you share the exact request that returned `422` and the error message from the response body? Please redact your access token.",
+          "facts": [
+            "exact failing Mapbox reverse-geocoding request with access token redacted",
+            "error message in the 422 response body"
+          ],
+          "why_it_matters": "Identify which parameters were sent with limit=5 and what Mapbox rejected."
+        }
+      ],
+      "reviewer_decision": "revise",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "group": "GT-LBS-AC-047",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Which provider are you using, and could you share the request body from one call that didn’t return query predictions? Please remove any credentials.",
+          "facts": [
+            "provider",
+            "redacted request body from a call without query predictions"
+          ],
+          "why_it_matters": "Check whether the request uses the correct query-prediction option for the provider."
+        }
+      ],
+      "reviewer_decision": "revise",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "group": "GT-LBS-RG-111",
+      "fold": 2,
+      "questions": [],
+      "reviewer_decision": "empty",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "group": "GT-LBS-RG-099",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Could you share one latitude and longitude that returned `ZERO_RESULTS`, along with any result filters sent in that request?",
+          "facts": [
+            "failing latitude and longitude",
+            "result filters"
+          ],
+          "why_it_matters": "Reproduce the lookup and check whether the same coordinates return a result without the filters."
+        }
+      ],
+      "reviewer_decision": "revise",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "group": "GT-LBS-DIR-088",
+      "fold": 5,
+      "questions": [
+        {
+          "question": "Could you share one Directions request from the loop with the API key redacted, and tell us whether that same request still returns `OVER_QUERY_LIMIT` when sent on its own?",
+          "facts": [
+            "redacted Directions request from the loop",
+            "whether that request returns OVER_QUERY_LIMIT when sent on its own"
+          ],
+          "why_it_matters": "Inspect the failing request and determine whether the error is tied to the burst from the loop."
+        }
+      ],
+      "reviewer_decision": "revise",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "group": "GT-LBS-AC-111",
+      "fold": 3,
+      "questions": [],
+      "reviewer_decision": "empty",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "group": "GT-LBS-DM-049",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Could you share one origin and destination pair that returned `NOT_FOUND`, with both values exactly as sent in the request?",
+          "facts": [
+            "origin and destination from one failing pair",
+            "exact representation of each input in the request"
+          ],
+          "why_it_matters": "Reproduce the element failure and check how its inputs were represented."
+        }
+      ],
+      "reviewer_decision": "revise",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "group": "GT-LBS-DM-125",
+      "fold": 3,
+      "questions": [],
+      "reviewer_decision": "empty",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-DM-046",
+      "group": "GT-LBS-DM-046",
+      "fold": 5,
+      "questions": [],
+      "reviewer_decision": "empty",
+      "cohort": "original16"
+    },
+    {
+      "record_id": "GT-LBS-AC-125",
+      "group": "GT-LBS-AC-125",
+      "fold": 2,
+      "api": "AC",
+      "query": "For a type-ahead address search box, how do Ola Maps Autocomplete and the public Nominatim endpoint compare for free usage and restrictions?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-AC-226",
+      "group": "GT-LBS-AC-226",
+      "fold": 4,
+      "api": "AC",
+      "query": "Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "group": "GT-LBS-AC-094",
+      "fold": 4,
+      "api": "AC",
+      "query": "How do we restrict autocomplete results to India on each provider?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-AC-209",
+      "group": "GT-LBS-AC-208",
+      "fold": 2,
+      "api": "AC",
+      "query": "I'm setting up Mappls Autosuggest for Sri Lanka. How do I select that country, and what should I do about the zoom parameter I use for India?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-DIR-207",
+      "group": "GT-LBS-DIR-207",
+      "fold": 5,
+      "api": "DIR",
+      "query": "We're a cycling-delivery startup in Pune. Which providers give bicycling directions in India?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-DIR-072",
+      "group": "GT-LBS-DIR-072",
+      "fold": 4,
+      "api": "DIR",
+      "query": "Ola Directions gives a 'shortest' route that's slower than expected through Bengaluru traffic. Which option gives the quickest route?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-DIR-030",
+      "group": "GT-LBS-DIR-028",
+      "fold": 1,
+      "api": "DIR",
+      "query": "I don't know yet. Please proceed on what I already said.",
+      "history": [
+        {
+          "role": "user",
+          "text": "Compare Ola Maps and Google for 6,000,000 traffic-aware route requests a month in India. What if we drop live traffic?"
+        },
+        {
+          "role": "assistant",
+          "text": "Before I answer, one question: Which ETA accuracy do you need at dispatch vs in-trip?"
+        }
+      ],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-DIR-026",
+      "group": "GT-LBS-DIR-025",
+      "fold": 2,
+      "api": "DIR",
+      "query": "Let's leave that open for now; answer based on my earlier message.",
+      "history": [
+        {
+          "role": "user",
+          "text": "How much would Mapbox Directions cost for 900,000 requests a month?"
+        },
+        {
+          "role": "assistant",
+          "text": "Before I answer, one question: Do you need driving-traffic, or is the driving profile enough?"
+        }
+      ],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-DM-080",
+      "group": "GT-LBS-DM-080",
+      "fold": 2,
+      "api": "DM",
+      "query": "Can we use router.project-osrm.org table service for our commercial fleet ETA matrix?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-DM-209",
+      "group": "GT-LBS-DM-209",
+      "fold": 3,
+      "api": "DM",
+      "query": "We need walking-time matrices for a campus-delivery robot pilot in India. Which providers support walking?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-DM-067",
+      "group": "GT-LBS-DM-067",
+      "fold": 3,
+      "api": "DM",
+      "query": "Not decided yet. Go ahead with what I told you and state any assumption you make.",
+      "history": [
+        {
+          "role": "user",
+          "text": "Ola Distance Matrix returns 429 when our dispatcher refreshes ETAs every 10 seconds for 200 drivers."
+        },
+        {
+          "role": "assistant",
+          "text": "Before I answer, one question: Requests per minute?"
+        }
+      ],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-DM-121",
+      "group": "GT-LBS-DM-120",
+      "fold": 2,
+      "api": "DM",
+      "query": "Google Route Matrix for two-wheelers in India: 120,000 elements a month. Cost?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-RG-105",
+      "group": "GT-LBS-RG-105",
+      "fold": 3,
+      "api": "RG",
+      "query": "How do we get the city name from lat/lng with Google?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-RG-091",
+      "group": "GT-LBS-RG-091",
+      "fold": 5,
+      "api": "RG",
+      "query": "Which reverse geocoders handle Indian boundaries per Indian law?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "user",
+      "review_status": "user_approved_in_chat",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-RG-217",
+      "group": "GT-LBS-RG-217",
+      "fold": 4,
+      "api": "RG",
+      "query": "What's Google's default reverse geocoding throughput?",
+      "history": [],
+      "questions": [],
+      "reviewer_decision": "empty",
+      "reviewer_type": "assistant",
+      "review_status": "assistant_reviewed_under_user_delegation",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "group": "GT-LBS-RG-117",
+      "fold": 4,
+      "api": "RG",
+      "query": "Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)?",
+      "history": [],
+      "questions": [
+        {
+          "question": "Which country is your billing account based in, and where will most reverse-geocoding lookups be used?",
+          "facts": [
+            "billing account country",
+            "primary usage geography"
+          ],
+          "why_it_matters": "Determine the applicable pricing schedule before comparing Google and Mapbox for the same workload."
+        }
+      ],
+      "reviewer_decision": "questions",
+      "reviewer_type": "user",
+      "review_status": "user_approved_in_chat",
+      "cohort": "fresh16"
+    },
+    {
+      "record_id": "GT-LBS-AC-027",
+      "group": "GT-LBS-AC-026",
+      "fold": 5,
+      "query": "Sandbox CRM opportunity OPP-58418. Customer wrote:\n\"We're still on Place Autocomplete (Legacy) in India: 300,000 sessions × 9 requests. Cost per billing option?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Compare the explicitly requested legacy billing options with stated session assumptions. Propose only sandbox updates supported by the enquiry.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-AC-084",
+      "group": "GT-LBS-AC-084",
+      "fold": 5,
+      "query": "How do we limit Nominatim search to India and get up to 50 results?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Country restriction and requested result count can be answered from the documented parameters and public-service limits.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-AC-099",
+      "group": "GT-LBS-AC-099",
+      "fold": 5,
+      "query": "Google Places Autocomplete: we need results from 5 countries (CH, FR, DE, AT, IT). Is only one country allowed?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The specified five countries and product are enough to explain documented country-restriction support.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-AC-114",
+      "group": "GT-LBS-AC-114",
+      "fold": 2,
+      "query": "Restrict Google Place Autocomplete to Bangladesh.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider and desired country are supplied. Give documented configuration.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-AC-118",
+      "group": "GT-LBS-AC-116",
+      "fold": 5,
+      "query": "Ola Place Details after autocomplete selection: 6,000,000 calls a month. Cost?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider, operation and monthly workload are supplied. Address the scope boundary and give documented guidance or a conditional quote.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-AC-121",
+      "group": "GT-LBS-AC-119",
+      "fold": 1,
+      "query": "Google Autocomplete (New), India: 200,000 sessions with 25 requests each. Is per-request or session pricing cheaper, assuming every session ends in Place Details Essentials?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The product, country, session counts, request counts and terminating SKU assumption are supplied. Compare stated billing options conditionally.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-AC-122",
+      "group": "GT-LBS-AC-122",
+      "fold": 1,
+      "query": "Ola vs Mapbox autocomplete for 100,000 sessions × 8 keystrokes a month?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Session and keystroke counts permit a conditional comparison of documented billing options. State token and completed-session assumptions.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-AC-216",
+      "group": "GT-LBS-AC-216",
+      "fold": 4,
+      "query": "Our Mapbox address box shows autocomplete suggestions while users type. After we switched it to the Geocoding API, request counts exploded. Why is this happening?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The switch to per-request Geocoding in a typeahead box explains request multiplication. Give documented debounce and session-based alternatives.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-AC-224",
+      "group": "GT-LBS-AC-224",
+      "fold": 5,
+      "query": "Do Mapbox Search Box autocomplete /suggest and /retrieve calls need a session token?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Session-token requirements are a documentation question with a specified product.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-DM-045",
+      "group": "GT-LBS-DM-044",
+      "fold": 3,
+      "query": "Sandbox CRM ticket TKT-63953. Customer wrote:\n\"Google Distance Matrix gives MAX_DIMENSIONS_EXCEEDED with 30 destinations and 1 origin, even though that's only 30 elements.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The exact dimensions and error are supplied. Explain dimensional limits from documentation, and propose sandbox changes only.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-034",
+      "group": "GT-LBS-RG-034",
+      "fold": 5,
+      "query": "Sandbox CRM ticket TKT-35162. Customer wrote:\n\"Google reverse geocoding gives REQUEST_DENIED when we add location_type=ROOFTOP.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [
+        {
+          "question": "Could you share the failing reverse-geocoding request as sent, with the API key and other credentials redacted?",
+          "facts": [
+            "redacted failing reverse-geocoding request as sent"
+          ],
+          "why_it_matters": "The documented missing-key explanation is possible, not confirmed. Inspect the actual request to distinguish a missing key from other denial causes."
+        }
+      ],
+      "rationale": "The documented missing-key explanation is possible, not confirmed. Inspect the actual request to distinguish a missing key from other denial causes.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "group": "GT-LBS-RG-096",
+      "fold": 3,
+      "query": "Free reverse geocoding options for a hobby app with 20,000 lookups a month?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The workload and hobby use are enough to compare public-service usage policies and conditional alternatives.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-102",
+      "group": "GT-LBS-RG-102",
+      "fold": 3,
+      "query": "Google Geocode REQUEST_DENIED for reverse geocode with our Places-enabled key.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [
+        {
+          "question": "Could you share the failing reverse-geocoding request as sent, with the API key and other credentials redacted?",
+          "facts": [
+            "redacted failing reverse-geocoding request as sent"
+          ],
+          "why_it_matters": "Places being enabled does not establish the Geocoding API or restriction configuration. Request evidence supports diagnosis alongside the documented configuration checks."
+        }
+      ],
+      "rationale": "Places being enabled does not establish the Geocoding API or restriction configuration. Request evidence supports diagnosis alongside the documented configuration checks.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-120",
+      "group": "GT-LBS-RG-120",
+      "fold": 1,
+      "query": "Ola vs Mapbox reverse geocoding when we must store 300,000 results a month?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The providers, reverse-geocoding operation, stored-result requirement and monthly count are supplied. Compare permanent-storage terms and applicable billing assumptions.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-123",
+      "group": "GT-LBS-RG-123",
+      "fold": 2,
+      "query": "Filter Google reverse geocoding to location_type=RANGE_INTERPOLATED only.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider and desired location_type are supplied. Show the documented filter.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-124",
+      "group": "GT-LBS-RG-124",
+      "fold": 2,
+      "query": "Filter Google reverse geocoding to location_type=GEOMETRIC_CENTER only.",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider and desired location_type are supplied. Show the documented filter.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-205",
+      "group": "GT-LBS-RG-205",
+      "fold": 1,
+      "query": "Our map shows disputed borders for Indian users. Can Mapbox reverse geocoding return India's view of boundaries?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Explain documented worldview support and constraints. Avoid an unsupported compliance guarantee.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-211",
+      "group": "GT-LBS-RG-210",
+      "fold": 2,
+      "query": "Will Mappls reverse geocoding give us the same detailed response in Bangladesh as in India?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The provider and countries are supplied. Explain documented coverage differences and uncertainty.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-216",
+      "group": "GT-LBS-RG-214",
+      "fold": 5,
+      "query": "We want to batch reverse-geocode 2 million historical GPS points with nominatim.openstreetmap.org. OK?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "The named public endpoint and bulk historical workload are sufficient to explain the usage policy and alternatives.",
+      "cohort": "separate20"
+    },
+    {
+      "record_id": "GT-LBS-RG-222",
+      "group": "GT-LBS-RG-221",
+      "fold": 5,
+      "query": "Can Nominatim reverse return just the suburb instead of the full address?",
+      "history": [],
+      "reviewer_type": "assistant",
+      "review_status": "pre_prediction_review_under_user_delegation",
+      "questions": [],
+      "rationale": "Explain documented reverse-response address fields and client extraction of the suburb, including absent-field handling.",
+      "cohort": "separate20"
+    }
+  ],
+  "sources": [
+    {
+      "source": "pricing-qualification-working",
+      "cases_sha256": "b6912cc3ea7e4abea256b7dcf8906a0dd6bf0da6b556e4b513b915a33407119a",
+      "labels_sha256": "cb1d7e25f2e530512e348f5299b151b2592a526cae53a0c5118d0c2bcc3a309b"
+    },
+    {
+      "source": "pricing-qualification-validation",
+      "cases_sha256": "2988975e329c8fe7453e94524d26caf261ada62b6937b4283a017eeabc3a9856",
+      "labels_sha256": "ee1a01222d81b3add3182c0acf5a5cfe8cbc5f7bbf0b41a80f52a62ce0cc66dd"
+    }
+  ]
+}

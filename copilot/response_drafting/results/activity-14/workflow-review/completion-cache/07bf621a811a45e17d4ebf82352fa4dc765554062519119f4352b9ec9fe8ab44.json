@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer is encountering the MAX_ELEMENTS_EXCEEDED error with their 15x10 request to the Google Distance Matrix API. The error indicates that the product of origins and destinations exceeds the per-query limit. The documentation confirms that the Distance Matrix API has a limit of 100 elements (number of origins × number of destinations) per request. The customer's request has 150 elements, which exceeds this limit. The solution would be to reduce the number of origins or destinations or split the request into smaller batches. Since the customer has already identified the issue and the documentation confirms the limit, no further action is required at this time.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer is encountering the MAX_ELEMENTS_EXCEEDED error with their 15x10 request to the Google Distance Matrix API. The error indicates that the product of origins and destinations exceeds the per-query limit. The documentation confirms that the Distance Matrix API has a limit of 100 elements (number of origins × number of destinations) per request. The customer's request has 150 elements, which exceeds this limit. The solution would be to reduce the number of origins or destinations or split the request into smaller batches. Since the customer has already identified the issue and the documentation confirms the limit, no further action is required at this time.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1984,
+    "completion_tokens": 140,
+    "total_tokens": 2124
+  },
+  "latency_ms": 3407,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

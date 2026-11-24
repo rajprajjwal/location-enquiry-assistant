@@ -1,0 +1,282 @@
+{
+  "cases_reviewed": 21,
+  "customer_status_counts": {
+    "Unknown": 20,
+    "Existing": 1
+  },
+  "provisional_owner_counts": {
+    "Sales": 10,
+    "Support L1": 9,
+    "Defer owner decision": 2
+  },
+  "workbook_sha256": "b0ad6e415cf093ecaefff73b6a0fa0811f8f1d783ba7414a770f44a1c692f4fb",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-205",
+      "query": "Our users type addresses in Hindi. Which autocomplete providers can return Hindi suggestions?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "Provider discovery for Hindi suggestions. Having users does not establish use of a maps service.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-AC-230",
+      "query": "We need type-ahead place suggestions that we can bias to a search area and filter by place type. Which of Google Places Autocomplete (New), Ola Places Autocomplete, and Mapbox Search Box document those capabilities?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "Requirements comparison across named providers suggests product selection. No current integration is stated.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-AC-236",
+      "query": "New Places API SKU, please. Just show USD.",
+      "history": [
+        {
+          "role": "user",
+          "text": "We expect 40,000 Google Places Autocomplete Requests per month on the global price card. What is the free allowance and estimated charge?"
+        },
+        {
+          "role": "assistant",
+          "text": "Do you want the new Autocomplete Requests SKU or the legacy per-request SKU?"
+        }
+      ],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Support L1",
+      "evidence_and_reason": "A new SKU is a product choice. The history supplies a forecast and a public price card, without current account evidence.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-020",
+      "query": "Not sure. Answer with the details from my first message and note where that choice would change things.",
+      "history": [
+        {
+          "role": "user",
+          "text": "Quote Google Maps Platform routing for 500,000 requests a month in India. Routes have 4 stops, no traffic needed."
+        },
+        {
+          "role": "assistant",
+          "text": "Before I answer, one question: Is this a new or existing Google Cloud project?"
+        }
+      ],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Defer owner decision",
+      "evidence_and_reason": "The customer declines the new/existing project question. Continue the requested estimate with stated assumptions and avoid repeating the declined question.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-021",
+      "query": "Let's leave that open for now; answer based on my earlier message.",
+      "history": [
+        {
+          "role": "user",
+          "text": "Quote Google Maps Platform routing for 2,000,000 requests a month in India. Routes have 6 stops and we need traffic-aware ETAs."
+        },
+        {
+          "role": "assistant",
+          "text": "Before I answer, one question: Is this a new or existing Google Cloud project?"
+        }
+      ],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Defer owner decision",
+      "evidence_and_reason": "The customer explicitly leaves project status open. Continue the requested estimate and preserve the unresolved status.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "query": "Which Directions APIs can return a driving route that avoids ferries, and how can we tell whether that capability is documented?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "Cross-provider feature discovery suggests selection. Existing use is unstated.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "query": "If we self-host OSRM on OpenStreetMap data for routing, what licensing obligations do we have?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "Conditional wording about self-hosting suggests evaluation, with no statement of current use.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "query": "Which Directions APIs can return a multi-stop driving route with separate distances and travel times for every leg, while visiting the stops in the order we supply?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "The customer is discovering providers supporting specified route features. Current usage is unstated.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "query": "Our drivers prefer Tamil. Can the directions API return turn-by-turn instructions in Tamil?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Support L1",
+      "evidence_and_reason": "A language-capability question can receive documentation guidance. Having drivers does not establish a maps-service relationship.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "query": "Google Maps Platform quote: 3,000 matrix requests per month in India, each a 20\u00d720 matrix, on a brand-new GCP project.",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "A brand-new GCP project indicates a new deployment. An existing customer can also create a new project, so customer status remains unconfirmed.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DM-117",
+      "query": "Mapbox vs Google matrix cost for 400,000 elements a month, no traffic?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Support L1",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "A cross-provider cost comparison suggests provider selection. No current contract or integration is stated.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DM-118",
+      "query": "Mapbox vs Google matrix cost for 1,000,000 elements a month, no traffic?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Support L1",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "A cross-provider cost comparison suggests provider selection. No current contract or integration is stated.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DM-201",
+      "query": "We're a logistics firm in Lucknow adding Kathmandu. Which distance-matrix providers can cover Nepal as well as India?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "Expansion plus provider coverage discovery suggests selection for a rollout. A current maps service is not named.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DM-214",
+      "query": "We need a 30\u00d730 matrix (900 elements) per request. Which providers accept that in one call?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Support L1",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Support L1",
+      "evidence_and_reason": "A published per-call matrix limit can be answered by technical support. The request supplies requirements without existing-use evidence.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DM-221",
+      "query": "For a grocery dispatcher, what's the practical difference between Ola Distance Matrix and Distance Matrix Basic?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Support L1",
+      "evidence_and_reason": "A product-behavior comparison can receive documented technical guidance. The business role alone does not establish current service use.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DM-222",
+      "query": "For a field-service scheduler, what's the practical difference between Ola Distance Matrix and Distance Matrix Basic?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Support L1",
+      "evidence_and_reason": "A product-behavior comparison can receive documented technical guidance. The business role alone does not establish current service use.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-DM-233",
+      "query": "Legacy Distance Matrix API. Please use list prices and show USD.",
+      "history": [
+        {
+          "role": "user",
+          "text": "Estimate Google Maps Platform India legacy Distance Matrix charges for 100,000 elements per month. Our monthly batch has 10 origins and 10,000 destinations, for 100,000 origin-destination elements in total. What is the free allowance and estimated charge?"
+        },
+        {
+          "role": "assistant",
+          "text": "Are you asking about the legacy Distance Matrix API or the newer Routes API Compute Route Matrix?"
+        }
+      ],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Support L1",
+      "evidence_and_reason": "A legacy API choice and a described monthly batch do not prove the customer currently uses the service. The request is a public-price calculation.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-RG-082",
+      "query": "Sandbox CRM ticket TKT-38973. Customer wrote:\n\"Our mobile app calls Nominatim reverse every 30 seconds per user. OK?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Support L1",
+      "reviewed_customer_status": "Existing",
+      "provisional_owner": "Support L1",
+      "evidence_and_reason": "The quoted customer states that their mobile app calls Nominatim reverse every 30 seconds per user. This explicitly describes present service usage.",
+      "owner_confirmed_by_status": true
+    },
+    {
+      "record_id": "GT-LBS-RG-201",
+      "query": "We need reverse geocoding for riders in India and Nepal. Who covers both?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Sales",
+      "evidence_and_reason": "Coverage discovery for two countries suggests provider selection. The customer does not describe an existing maps integration.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "query": "Can we store Mapbox reverse-geocoding results in our own database for later reuse, and does the public Nominatim policy allow us to resell those geocoding results?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Support L1",
+      "evidence_and_reason": "The customer asks whether storage and resale are allowed. Permission questions do not establish present service usage.",
+      "owner_confirmed_by_status": false
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "query": "Which reverse geocoders document a way to look up many coordinates in a single batch request?",
+      "history": [],
+      "customer_status": "unknown",
+      "previous_gold_owner": "Account team (Sales)",
+      "reviewed_customer_status": "Unknown",
+      "provisional_owner": "Support L1",
+      "evidence_and_reason": "A documented batch capability can receive technical guidance. Current service use is not established.",
+      "owner_confirmed_by_status": false
+    }
+  ]
+}

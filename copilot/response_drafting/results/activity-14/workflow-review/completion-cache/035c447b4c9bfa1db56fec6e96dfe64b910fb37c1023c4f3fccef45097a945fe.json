@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":1.0,\"api\":1.0,\"team\":1.0},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"in India\"},\"monthly_volume\":{\"value\":{\"raw\":\"matrices, 100,000 a month\",\"requests_per_month\":100000,\"unit\":\"matrices_per_month\"},\"evidence\":\"matrices, 100,000 a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"without traffic\",\"evidence\":\"without traffic\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"distance_matrix\",\"team\":\"Support\",\"confidence\":{\"intent\":1.0,\"api\":1.0,\"team\":1.0},\"qualification\":{\"use_case\":{\"value\":null,\"evidence\":null},\"region\":{\"value\":\"India\",\"evidence\":\"in India\"},\"monthly_volume\":{\"value\":{\"raw\":\"matrices, 100,000 a month\",\"requests_per_month\":100000,\"unit\":\"matrices_per_month\"},\"evidence\":\"matrices, 100,000 a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"without traffic\",\"evidence\":\"without traffic\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1592,
+    "completion_tokens": 184,
+    "total_tokens": 1776
+  },
+  "latency_ms": 4249,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

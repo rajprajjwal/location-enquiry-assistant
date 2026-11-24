@@ -1,0 +1,161 @@
+{
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "arms": {
+    "baseline": {
+      "scores": {
+        "cases": 159,
+        "owner_matches": 143,
+        "owner_accuracy": 0.89937106918239,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 2,
+        "escalation_false_negatives": 0,
+        "escalation_true_negatives": 148,
+        "escalation_precision": 0.8181818181818182,
+        "escalation_recall": 1.0,
+        "escalations_with_reason": 11,
+        "escalation_reason_coverage": 1.0,
+        "passes": false
+      },
+      "fixes": [],
+      "regressions": []
+    },
+    "business_discovery": {
+      "scores": {
+        "cases": 159,
+        "owner_matches": 149,
+        "owner_accuracy": 0.9371069182389937,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 2,
+        "escalation_false_negatives": 0,
+        "escalation_true_negatives": 148,
+        "escalation_precision": 0.8181818181818182,
+        "escalation_recall": 1.0,
+        "escalations_with_reason": 11,
+        "escalation_reason_coverage": 1.0,
+        "passes": true
+      },
+      "fixes": [
+        {
+          "record_id": "GT-LBS-DIR-208",
+          "query": "We're a bicycle courier service expanding from India to Jakarta. Which providers give bicycling directions in Indonesia?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DIR-040",
+          "query": "We run 16-tonne trucks between Indian warehouses. Which routing APIs support truck routing?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DM-206",
+          "query": "For dispatch in Nepal, we need traffic-aware travel times in a matrix. Who can do that?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DM-207",
+          "query": "For dispatch in Sri Lanka, we need traffic-aware travel times in a matrix. Who can do that?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DM-208",
+          "query": "For dispatch in Indonesia, we need traffic-aware travel times in a matrix. Who can do that?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DIR-038",
+          "query": "Our drivers need turn-by-turn instructions in Hindi, Tamil and Kannada. Which directions APIs can do that?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        }
+      ],
+      "regressions": []
+    },
+    "business_and_product_fit": {
+      "scores": {
+        "cases": 159,
+        "owner_matches": 151,
+        "owner_accuracy": 0.949685534591195,
+        "escalation_true_positives": 9,
+        "escalation_false_positives": 2,
+        "escalation_false_negatives": 0,
+        "escalation_true_negatives": 148,
+        "escalation_precision": 0.8181818181818182,
+        "escalation_recall": 1.0,
+        "escalations_with_reason": 11,
+        "escalation_reason_coverage": 1.0,
+        "passes": true
+      },
+      "fixes": [
+        {
+          "record_id": "GT-LBS-DIR-208",
+          "query": "We're a bicycle courier service expanding from India to Jakarta. Which providers give bicycling directions in Indonesia?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-AC-226",
+          "query": "Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DIR-040",
+          "query": "We run 16-tonne trucks between Indian warehouses. Which routing APIs support truck routing?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DM-223",
+          "query": "Does Mappls' distance matrix let us choose shortest vs optimal routes, and use live traffic?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DM-206",
+          "query": "For dispatch in Nepal, we need traffic-aware travel times in a matrix. Who can do that?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DM-207",
+          "query": "For dispatch in Sri Lanka, we need traffic-aware travel times in a matrix. Who can do that?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DM-208",
+          "query": "For dispatch in Indonesia, we need traffic-aware travel times in a matrix. Who can do that?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        },
+        {
+          "record_id": "GT-LBS-DIR-038",
+          "query": "Our drivers need turn-by-turn instructions in Hindi, Tamil and Kannada. Which directions APIs can do that?",
+          "before": "Support L1",
+          "after": "Account team (Sales)",
+          "gold": "Account team (Sales)"
+        }
+      ],
+      "regressions": []
+    }
+  }
+}

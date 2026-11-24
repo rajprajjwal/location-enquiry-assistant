@@ -1,0 +1,53 @@
+FFFFFF                                                                   [100%]
+=================================== FAILURES ===================================
+___ test_bad_interpretation_and_model_proposal_cannot_hide_monthly_question ____
+tests/enquiry_workflow/test_monthly_workload.py:70: in test_bad_interpretation_and_model_proposal_cannot_hide_monthly_question
+    assert any('monthly_volume' in group['fields'] for group in updated['follow_up_selection']['groups'])
+E   assert False
+E    +  where False = any(<generator object test_bad_interpretation_and_model_proposal_cannot_hide_monthly_question.<locals>.<genexpr> at 0x10d06c520>)
+_____ test_material_profile_facts_are_not_dropped_by_an_empty_model_group ______
+tests/enquiry_workflow/test_qualification.py:157: in test_material_profile_facts_are_not_dropped_by_an_empty_model_group
+    assert updated['follow_up_selection']['groups'][0]['fields']==['instruction_modality']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range
+______ test_customer_route_size_is_not_rejected_as_provider_documentation ______
+tests/enquiry_workflow/test_qualification.py:190: in test_customer_route_size_is_not_rejected_as_provider_documentation
+    assert any('max_stops' in group['fields'] for group in updated['follow_up_selection']['groups'])
+E   assert False
+E    +  where False = any(<generator object test_customer_route_size_is_not_rejected_as_provider_documentation.<locals>.<genexpr> at 0x10cfd9cb0>)
+_ test_requested_matrix_checklist_does_not_invent_generic_region_or_timeline_intake _
+tests/enquiry_workflow/test_qualification_checklist.py:26: in test_requested_matrix_checklist_does_not_invent_generic_region_or_timeline_intake
+    assert 'Mapbox driving-traffic' in text
+E   AssertionError: assert 'Mapbox driving-traffic' in 'Before recommending a provider, confirm the remaining customer requirements:\n\n- Could you confirm number of origins...-traffic ETAs are required?\n\nThis checklist is qualification advice. No provider-specific claims have been verified.'
+------------------------------ Captured log call -------------------------------
+WARNING  copilot.enquiry_interpretation:fewshot.py:94 few-shot: TRACKB_GT_CSV unset or missing; running zero-shot (12 ids skipped)
+___ test_unbound_outlet_count_cannot_enter_through_model_or_stale_saved_fact ___
+tests/enquiry_workflow/test_requirement_binding.py:94: in test_unbound_outlet_count_cannot_enter_through_model_or_stale_saved_fact
+    assert any('max_stops' in group['fields'] for group in updated['follow_up_selection']['groups'])
+E   assert False
+E    +  where False = any(<generator object test_unbound_outlet_count_cannot_enter_through_model_or_stale_saved_fact.<locals>.<genexpr> at 0x10cfda740>)
+____ test_workload_geography_reaches_planner_without_a_model_fact_proposal _____
+tests/enquiry_workflow/test_usage_geography.py:101: in test_workload_geography_reaches_planner_without_a_model_fact_proposal
+    assert result['follow_up_selection']['groups'][0]['fields'] == ['billing_country']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1507
+.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1507
+.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1507
+  /Users/shahidkamal/Documents/test-project/location-enquiry-assistant/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1507: PytestAssertRewriteWarning: Module already imported so cannot be rewritten; anyio
+    self._mark_plugins_for_rewrite(hook, disable_autoload)
+
+.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1507
+  /Users/shahidkamal/Documents/test-project/location-enquiry-assistant/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1507: PytestAssertRewriteWarning: Module already imported so cannot be rewritten; langsmith
+    self._mark_plugins_for_rewrite(hook, disable_autoload)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/enquiry_workflow/test_monthly_workload.py::test_bad_interpretation_and_model_proposal_cannot_hide_monthly_question
+FAILED tests/enquiry_workflow/test_qualification.py::test_material_profile_facts_are_not_dropped_by_an_empty_model_group
+FAILED tests/enquiry_workflow/test_qualification.py::test_customer_route_size_is_not_rejected_as_provider_documentation
+FAILED tests/enquiry_workflow/test_qualification_checklist.py::test_requested_matrix_checklist_does_not_invent_generic_region_or_timeline_intake
+FAILED tests/enquiry_workflow/test_requirement_binding.py::test_unbound_outlet_count_cannot_enter_through_model_or_stale_saved_fact
+FAILED tests/enquiry_workflow/test_usage_geography.py::test_workload_geography_reaches_planner_without_a_model_fact_proposal
+6 failed, 4 warnings in 0.19s

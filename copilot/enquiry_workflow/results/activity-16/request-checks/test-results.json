@@ -1,0 +1,11 @@
+{
+  "passed": 779,
+  "focused_ownership_passed": 121,
+  "skipped": 1,
+  "excluded": 5,
+  "limitations": [
+    "No real local freshness snapshot.",
+    "Existing RAG chunking tests require an unavailable BGE tokenizer."
+  ],
+  "initial_attempt": "Five provider/qualification checks failed in the initial broader run; all passed independently of ownership functions in the final check. Initial log retained."
+}

@@ -1,0 +1,108 @@
+{
+  "baseline": {
+    "cases": 286,
+    "owner_correct": 276,
+    "owner_accuracy": 0.965034965034965,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 1,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.9,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "candidate": {
+    "cases": 286,
+    "owner_correct": 266,
+    "owner_accuracy": 0.9300699300699301,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 1,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.9,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "changes": [
+    {
+      "record_id": "GT-LBS-RG-095",
+      "query": "Which reverse geocoders support plus codes or a fallback for addressless rural points?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    },
+    {
+      "record_id": "GT-LBS-RG-104",
+      "query": "What's the Google Geocoding API request limit for reverse-geocoding coordinates?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    },
+    {
+      "record_id": "GT-LBS-DM-091",
+      "query": "Which providers' matrix APIs support travel modes beyond driving?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    },
+    {
+      "record_id": "GT-LBS-DM-090",
+      "query": "Which matrix APIs work with addresses instead of coordinates?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    },
+    {
+      "record_id": "GT-LBS-RG-092",
+      "query": "Which reverse geocoders give a precision indicator?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    },
+    {
+      "record_id": "GT-LBS-AC-082",
+      "query": "What rate can we hit the public Nominatim search API at?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    },
+    {
+      "record_id": "GT-LBS-RG-083",
+      "query": "What attribution do we need when displaying results from the public Nominatim Reverse API?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    },
+    {
+      "record_id": "GT-LBS-RG-091",
+      "query": "Which reverse geocoders handle Indian boundaries per Indian law?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    },
+    {
+      "record_id": "GT-LBS-AC-093",
+      "query": "Which autocomplete APIs handle Indian-language input?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    },
+    {
+      "record_id": "GT-LBS-RG-097",
+      "query": "Which reverse geocoders accept language preferences?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "reason": "Provider-feature discovery uses provisional Sales ownership while customer status remains unconfirmed."
+    }
+  ],
+  "frozen_cases": 0,
+  "holdout_cases": 0
+}

@@ -1,0 +1,405 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-011",
+    "bucket": "pricecompare",
+    "query": "We're a Kolkata two-wheeler rental company and expect about 6,000,000 route (directions) requests a month, all in India. Which routing APIs could we use, and what would each cost per month in rupees?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm whether your Google Cloud project is new or existing?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need live-traffic ETAs or are static routes enough?",
+        "facts": [
+          "live-traffic ETA versus static-route requirement"
+        ]
+      },
+      {
+        "question": "What vehicle types (car, bike, auto, truck) do you route?",
+        "facts": [
+          "vehicle types routed"
+        ]
+      },
+      {
+        "question": "Is your Google Cloud project new or existing?",
+        "facts": [
+          "new versus existing Google Cloud project"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "c5c9fc67cf5e38b7d4972f3cf3e28ab9868948777be5f0e27ee15fb5fc1092f8",
+    "gold_sha256": "2e05a45ff7b2b0ab1b488c83142b514bf15b70c2b84baa084893228268a7ae16",
+    "prediction_row_sha256": "842d8b98b5319fc3636a6e3dcd4ce3edf5bdb79acaf375f221253d92aaeea2b0"
+  },
+  {
+    "record_id": "GT-LBS-DIR-012",
+    "bucket": "pricecompare",
+    "query": "We're a Ahmedabad pharma distributor and expect about 8,000,000 route (directions) requests a month, all in India. Which routing APIs could we use, and what would each cost per month in rupees?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm whether your Google Cloud project is new or existing?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need live-traffic ETAs or are static routes enough?",
+        "facts": [
+          "live-traffic ETA versus static-route requirement"
+        ]
+      },
+      {
+        "question": "What vehicle types (car, bike, auto, truck) do you route?",
+        "facts": [
+          "vehicle types routed"
+        ]
+      },
+      {
+        "question": "Is your Google Cloud project new or existing?",
+        "facts": [
+          "new versus existing Google Cloud project"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "c5c9fc67cf5e38b7d4972f3cf3e28ab9868948777be5f0e27ee15fb5fc1092f8",
+    "gold_sha256": "2e05a45ff7b2b0ab1b488c83142b514bf15b70c2b84baa084893228268a7ae16",
+    "prediction_row_sha256": "04031e32ad907478e9c97cedd6a06075b6cd2f97ee9e535a629896bd3102eb8d"
+  },
+  {
+    "record_id": "GT-LBS-DIR-020",
+    "bucket": "history",
+    "query": "Not sure. Answer with the details from my first message and note where that choice would change things.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Quote Google Maps Platform routing for 500,000 requests a month in India. Routes have 4 stops, no traffic needed."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Is this a new or existing Google Cloud project?"
+      }
+    ],
+    "questions": [],
+    "gold": [
+      {
+        "question": "How many intermediate waypoints per route at most?",
+        "facts": [
+          "maximum intermediate waypoints per route"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "fc3e1c812c0ba7cd6fc2e0d397b1f8f2d24fad18cc6126fb342528355bdc2131",
+    "prediction_row_sha256": "de11da3ed605b82364f7b1a2ccadf45daba01f507c5fcb1a89ce47cfb6c12f56"
+  },
+  {
+    "record_id": "GT-LBS-DIR-021",
+    "bucket": "history",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Quote Google Maps Platform routing for 2,000,000 requests a month in India. Routes have 6 stops and we need traffic-aware ETAs."
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Is this a new or existing Google Cloud project?"
+      }
+    ],
+    "questions": [],
+    "gold": [
+      {
+        "question": "How many intermediate waypoints per route at most?",
+        "facts": [
+          "maximum intermediate waypoints per route"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "fc3e1c812c0ba7cd6fc2e0d397b1f8f2d24fad18cc6126fb342528355bdc2131",
+    "prediction_row_sha256": "5221bdcbb105720171f83d57ed27d840d54cb2e8f1aef08813345ddd07978589"
+  },
+  {
+    "record_id": "GT-LBS-DIR-039",
+    "bucket": "qualification",
+    "query": "Which Directions APIs can return a driving route that avoids ferries, and how can we tell whether that capability is documented?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "7f106d728b39c4e171c6bd59a4e3cdc470419444b89aa71aee62ae27d0ab6d55"
+  },
+  {
+    "record_id": "GT-LBS-DIR-043",
+    "bucket": "qualification",
+    "query": "If we self-host OSRM on OpenStreetMap data for routing, what licensing obligations do we have?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Will you redistribute derived data, or only display routes?",
+        "facts": [
+          "derived-data redistribution versus routes-only display"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "40d6954cca8ff76ab4c934a1d5b61b1b070958320a635c214f759cdb9d81b993",
+    "prediction_row_sha256": "22e378643bc1994ced129f1769ea271226b150b0ed4a7d6fcfa895a8c89dc41a"
+  },
+  {
+    "record_id": "GT-LBS-DIR-084",
+    "bucket": "ownership",
+    "query": "Our whole dispatch system is down: Ola Directions returns 429 for 80% of calls since the start of the evening peak.",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Requests per minute at peak?",
+        "facts": [
+          "peak requests per minute"
+        ]
+      },
+      {
+        "question": "Contract or prepaid?",
+        "facts": [
+          "contract versus prepaid account"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "a1b6d8a620fd40f4de97eb867b65fb6e9f8e52fc3b50078786a3bd0fea418060",
+    "prediction_row_sha256": "028a726ba1d3778fbdd021e691fa30090455af530e28791a4628b1ec772307dd"
+  },
+  {
+    "record_id": "GT-LBS-DIR-085",
+    "bucket": "ownership",
+    "query": "We've committed to 40M Ola Directions calls a month and want negotiated pricing and an SLA. Who do we talk to?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Target start date?",
+        "facts": [
+          "target start date"
+        ]
+      },
+      {
+        "question": "Required SLA?",
+        "facts": [
+          "required SLA"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "216d99e7b0ff6f765822cfabe267c65f362252b4efa55598598c6743edf1bc54",
+    "prediction_row_sha256": "5976e38bd918cdb5cb1d7702cc5073846e4c606be4ab2d878b3d00b801c74aa7"
+  },
+  {
+    "record_id": "GT-LBS-DIR-100",
+    "bucket": "capabilitycompare",
+    "query": "Can Google Directions give alternative routes from A to B through C, D and E?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "e38fc99cdfe9468e0be7eb80451f78da3143b4bc39ac424c8264a68e478d996f"
+  },
+  {
+    "record_id": "GT-LBS-DIR-108",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-58732. Customer wrote:\n\"Our Google Directions request with departure_time set to yesterday fails with INVALID_REQUEST. Can we get historical traffic durations?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "70b14750c97b1085c28f4a6fd85914af859d3bdc09f8020b87847ac832005337"
+  },
+  {
+    "record_id": "GT-LBS-DIR-113",
+    "bucket": "capabilitycompare",
+    "query": "Which Directions APIs can return a multi-stop driving route with separate distances and travel times for every leg, while visiting the stops in the order we supply?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "b48791514f1cbfe7afb283cba6afe50ead8f671288a8241c99a1f7dee6a16ce1"
+  },
+  {
+    "record_id": "GT-LBS-DIR-201",
+    "bucket": "coveragecompare",
+    "query": "We run a bike-taxi app in India and want to launch in Nepal. Which routing providers can give us two-wheeler routes in Nepal, and do they also cover India?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Do you need motorcycle/scooter routing specifically, or would car routing do in the new country?",
+        "facts": [
+          "motorcycle or scooter routing specifically versus acceptable car routing"
+        ]
+      },
+      {
+        "question": "Roughly how many route requests a month do you expect in the new country?",
+        "facts": [
+          "monthly route requests in the new country"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "9c3c7ea33edf95503e0c3ddf02d338b2ee10247ef40cbb69b49bfbe39b76d57f",
+    "prediction_row_sha256": "70a34881b47e26318dd5942d03da73bcbe81c1f9b3511365dfa11a4da9199227"
+  },
+  {
+    "record_id": "GT-LBS-DIR-210",
+    "bucket": "limitscompare",
+    "query": "Our route planner sends one request with 40 stops (origin, destination and 38 intermediate points). Which providers accept that in a single directions request?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Must the stops be visited in a fixed order, or can they be optimised?",
+        "facts": [
+          "fixed stop order versus optimizable order"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "8bac9867a71299b8aaf052f4f5fedacbe5062c72e5a62f7fe82f5521cbabcbb6",
+    "prediction_row_sha256": "d8bdb4501a96a80ba2fea9eae077e0cc4be4af53b254d9d28217ece034601941"
+  },
+  {
+    "record_id": "GT-LBS-DIR-216",
+    "bucket": "capabilitycompare",
+    "query": "Our drivers prefer Tamil. Can the directions API return turn-by-turn instructions in Tamil?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether instructions must be voice or text?"
+    ],
+    "gold": [
+      {
+        "question": "Do you also need the map labels in that language, or only the instructions?",
+        "facts": [
+          "whether translated map labels are needed in addition to instructions"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "b0ac1e3f3bd821847efc0a0a702964d1426c555d8fd83bb022db71650eedc332",
+    "gold_sha256": "ac3b8f3a129296d3e9c9eac2e9db8609ae852101b5c6f2fa8f90e134cbd2a647",
+    "prediction_row_sha256": "ffae08070932b2d9d11df6495cfa11643fd6cc1c7cc92f0d49509a9f8eeff186"
+  },
+  {
+    "record_id": "GT-LBS-DIR-221",
+    "bucket": "capabilitycompare",
+    "query": "How do I get alternative routes from Ola Maps Directions and from a self-hosted OSRM?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "483e0d23de577daf390d02fd43991f74b8281c28641b34d567c27ccc25d7feb6"
+  },
+  {
+    "record_id": "GT-LBS-DIR-222",
+    "bucket": "ownership",
+    "query": "A customer on a newly created Google Cloud project cannot enable the Directions API. Please prepare a handoff to a human support owner. What should we include in the handoff and which initial checks should we record?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Was Directions (Legacy) ever enabled on this project?",
+        "facts": [
+          "whether Directions Legacy was ever enabled on the project"
+        ]
+      },
+      {
+        "question": "What exact enablement error and Cloud Console checks should the support owner record?",
+        "facts": [
+          "exact enablement error",
+          "Cloud Console checks to record"
+        ]
+      },
+      {
+        "question": "Which route features and rollout constraints should the migration preserve?",
+        "facts": [
+          "route features migration must preserve",
+          "rollout constraints migration must preserve"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "e3da37ca0e7db9439c5f6c4e19d694411f4422cec9a1119d0bbbaab51bbe3bec",
+    "prediction_row_sha256": "034187c1b78e304a818f38e46085e61f9ab277065d22b8ec011287f8872d1389"
+  },
+  {
+    "record_id": "GT-LBS-DIR-223",
+    "bucket": "docs",
+    "query": "In Google Routes API Compute Routes for a single trip, how do I set the field mask to request duration, distance and encoded polyline?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "4990f74e3de988c71d8ccbcc2cb836a6715066f2b44dfc3a64f01d967cd5c944"
+  },
+  {
+    "record_id": "GT-LBS-DIR-224",
+    "bucket": "docs",
+    "query": "Which Mapbox Directions profile should I set for a bicycle route, and how should I pass intermediate stops along that route in one request?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "8eddf8d43028bb93b93527cf91904ed9abed165876c4c9046629024dca1c14bb"
+  },
+  {
+    "record_id": "GT-LBS-DIR-225",
+    "bucket": "interpretation",
+    "query": "Mapbox Directions returns `NoRoute` with HTTP 200 for a pair of coordinates. Is this a server failure, and what should we check?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "dd18a251c5db97bc7230d9ffbe8481419a9c02c923da108da2841b42b9b555d9"
+  },
+  {
+    "record_id": "GT-LBS-DIR-226",
+    "bucket": "interpretation",
+    "query": "One of our Mapbox Directions requests returns `NoSegment`. The coordinate is near a road on the map. What should we investigate?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "d874957921b0d479bcad5359e1f8ffafa18dd6f2b78bffd4d5df8d010290837f"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "scenario_count": 20,
+  "held_for_review": 20,
+  "complete_audit_records": 20,
+  "decisions": {
+    "approve": 8,
+    "edit": 6,
+    "reject": 6
+  },
+  "action_types": {
+    "record_update": 10,
+    "escalation": 10
+  },
+  "unauthorized_approval_blocked": 20,
+  "reviewer": "synthetic authorized acceptance reviewer in isolated configuration",
+  "scope": "Real workflow proposals and Streamlit review UI. Scripted model responses, controlled follow-up selector, diagnostic planning disabled.",
+  "passed": true,
+  "regression_tests_passed": 17,
+  "rebuild_command_verified": true,
+  "source_sha256": {
+    "copilot/case_storage/cases.py": "4df24fd531c05b31c119190a3f82e1b24f0e7d0383ff4ebc1f04c90f39ae9f3e",
+    "copilot/case_storage/handlers.py": "a0d01784ca061634ed68a59b0b9252d00c539d41a3525a9afb87326558e0808a",
+    "copilot/streamlit_ui/streamlit_app.py": "85a7aff0579d80427906c5b810982eb7822decf3f4df9a086e79d391f1e219df",
+    "copilot/enquiry_workflow/verification/verify_review.py": "3b5fe3b81de37f4d257bed849487c91ca5ba6c018d73fc72a5d37bb7506b8d69"
+  },
+  "gt_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68"
+}

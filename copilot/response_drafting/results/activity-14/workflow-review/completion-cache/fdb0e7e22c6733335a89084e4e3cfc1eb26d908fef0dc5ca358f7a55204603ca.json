@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"quick-commerce app\",\"evidence\":\"quick-commerce app in Bengaluru\"},\"region\":{\"value\":\"Bengaluru\",\"evidence\":\"Bengaluru\"},\"technical_constraints\":{\"value\":\"live traffic\",\"evidence\":\"live traffic\"}}}",
+  "raw": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"quick-commerce app\",\"evidence\":\"quick-commerce app in Bengaluru\"},\"region\":{\"value\":\"Bengaluru\",\"evidence\":\"Bengaluru\"},\"technical_constraints\":{\"value\":\"live traffic\",\"evidence\":\"live traffic\"}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1324,
+    "completion_tokens": 97,
+    "total_tokens": 1421
+  },
+  "latency_ms": 2313,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

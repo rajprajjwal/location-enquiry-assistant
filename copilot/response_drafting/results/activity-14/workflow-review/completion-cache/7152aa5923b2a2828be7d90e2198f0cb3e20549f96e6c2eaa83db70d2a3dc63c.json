@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue relates to variations in Google Directions results over time without specifying a departure_time. The documentation indicates that results may vary due to changes in road networks, traffic conditions, and the distributed nature of the service. Since the customer has not provided specific request details or evidence of a bug, no further action is required at this time.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue relates to variations in Google Directions results over time without specifying a departure_time. The documentation indicates that results may vary due to changes in road networks, traffic conditions, and the distributed nature of the service. Since the customer has not provided specific request details or evidence of a bug, no further action is required at this time.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2265,
+    "completion_tokens": 77,
+    "total_tokens": 2342
+  },
+  "latency_ms": 2036,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

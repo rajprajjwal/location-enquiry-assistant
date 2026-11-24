@@ -1,0 +1,139 @@
+{
+  "scope": "Exact ordered 80 frozen cases; original GT and 99-fact decomposition unchanged; holdout excluded.",
+  "scores": {
+    "integrated": {
+      "predicted": 46,
+      "gold": 75,
+      "matches": 8,
+      "facts": 18,
+      "gold_facts": 99,
+      "questions_on_empty_gold": 24,
+      "f1": 0.1322314049586777,
+      "precision": 0.17391304347826086,
+      "recall": 0.10666666666666667,
+      "fact_recall": 0.18181818181818182
+    },
+    "baseline": {
+      "predicted": 13,
+      "gold": 75,
+      "matches": 0,
+      "facts": 4,
+      "gold_facts": 99,
+      "questions_on_empty_gold": 8,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "fact_recall": 0.04040404040404041
+    }
+  },
+  "question_f1_threshold": 0.8,
+  "question_f1_target_met": false,
+  "activity14_acceptance_complete": false,
+  "diagnostics": {
+    "gold_positive_cases": 40,
+    "empty_gold_cases": 40,
+    "gold_positive_cases_without_questions": 27,
+    "empty_gold_cases_with_questions": 16,
+    "question_groups_fully_fact_covered_without_whole_match": 4,
+    "matched_case_ids": [
+      "GT-LBS-DM-027",
+      "GT-LBS-RG-005",
+      "GT-LBS-RG-006",
+      "GT-LBS-RG-007",
+      "GT-LBS-RG-225"
+    ],
+    "covered_fact_case_ids": [
+      "GT-LBS-AC-229",
+      "GT-LBS-AC-231",
+      "GT-LBS-DM-027",
+      "GT-LBS-DM-221",
+      "GT-LBS-DM-222",
+      "GT-LBS-DM-226",
+      "GT-LBS-RG-005",
+      "GT-LBS-RG-006",
+      "GT-LBS-RG-007",
+      "GT-LBS-RG-225"
+    ],
+    "semantic_review": "Actual text and required meaning/granularity; no field-name-only credit; no label changes.",
+    "independent_human_review": false
+  },
+  "execution": {
+    "cases": 80,
+    "fresh_model_completion_calls": 239,
+    "model_call_errors": 0,
+    "schema_valid": 80,
+    "current_pending_replies": 0,
+    "followup_replies_executed": 0,
+    "no_question_selection_statuses": {
+      "no_qualification_required": 17,
+      "no_follow_up": 8,
+      "declined": 2
+    },
+    "newly_covered_facts": 16,
+    "retained_previously_covered_facts": 2,
+    "previously_covered_facts_now_missed": [
+      [
+        "GT-LBS-AC-231",
+        1,
+        1
+      ],
+      [
+        "GT-LBS-DM-226",
+        3,
+        1
+      ]
+    ],
+    "assigned_owners_preserved": 80,
+    "historical_comparison_caveat": "The prior frozen outputs were saved earlier. Differences include model-execution variation and cannot all be attributed causally to one change."
+  },
+  "route_and_pending_changes": [
+    {
+      "record_id": "GT-LBS-AC-229",
+      "route_before": "clarification_needed",
+      "route_after": "final",
+      "pending_before": "region",
+      "pending_after": null
+    },
+    {
+      "record_id": "GT-LBS-AC-231",
+      "route_before": "clarification_needed",
+      "route_after": "final",
+      "pending_before": "monthly_volume",
+      "pending_after": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "route_before": "escalated",
+      "route_after": "final",
+      "pending_before": null,
+      "pending_after": null
+    },
+    {
+      "record_id": "GT-LBS-DM-226",
+      "route_before": "clarification_needed",
+      "route_after": "final",
+      "pending_before": "monthly_volume",
+      "pending_after": null
+    },
+    {
+      "record_id": "GT-LBS-RG-225",
+      "route_before": "clarification_needed",
+      "route_after": "final",
+      "pending_before": "monthly_volume",
+      "pending_after": null
+    }
+  ],
+  "integrity": {
+    "runtime_files_unchanged": true,
+    "production_code_matches_lock": true,
+    "frozen_inputs_unchanged": true,
+    "frozen_gt_unchanged": true,
+    "original_question_text_unchanged": true,
+    "prior_derived_atomic_facts_unchanged": true,
+    "local_gt_workbook_unchanged": true,
+    "prelocked_alignment_plan_unchanged": true,
+    "all80_selected_once": true,
+    "holdout_cases_selected_or_scored": 0
+  },
+  "review_status": "Assistant semantic judgements with independent assistant cross-checks; not independent human acceptance."
+}

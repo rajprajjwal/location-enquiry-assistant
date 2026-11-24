@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": \"advanced_support\", \"reason\": \"The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation.\"}",
+  "raw": "{\"category\": \"advanced_support\", \"reason\": \"The customer reports a performance issue with Compute Route Matrix calls failing at peak times, indicating a potential need for deeper technical investigation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 291,
+    "completion_tokens": 38,
+    "total_tokens": 329
+  },
+  "latency_ms": 1007,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

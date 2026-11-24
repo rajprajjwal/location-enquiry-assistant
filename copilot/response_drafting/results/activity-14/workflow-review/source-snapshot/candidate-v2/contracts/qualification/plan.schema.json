@@ -1,0 +1,221 @@
+{
+  "$defs": {
+    "QuestionGroup": {
+      "additionalProperties": false,
+      "properties": {
+        "fields": {
+          "items": {
+            "enum": [
+              "region",
+              "monthly_volume",
+              "peak_rate",
+              "timeline",
+              "sla",
+              "budget",
+              "current_provider",
+              "alternative_providers",
+              "backend_owner",
+              "deployment_owner",
+              "hosting_preference",
+              "billing_country",
+              "usage_geography",
+              "billing_basis",
+              "billing_account_scope",
+              "commercial_plan",
+              "existing_project",
+              "api_enabled",
+              "ola_contract",
+              "geographic_matching",
+              "poi_required",
+              "credential_distribution",
+              "details_completion",
+              "details_sku",
+              "debouncing",
+              "session_tokens",
+              "traffic_required",
+              "traffic_scope",
+              "departure_time_mode",
+              "travel_mode",
+              "max_stops",
+              "hazmat_required",
+              "vehicle_dimensions",
+              "instruction_modality",
+              "origin_count",
+              "destination_count",
+              "input_type",
+              "matrix_frequency",
+              "peak_concurrency",
+              "mapbox_traffic_profile",
+              "requests_splittable",
+              "typical_origin_count",
+              "maximum_origin_count",
+              "typical_destination_count",
+              "maximum_destination_count",
+              "matrices_per_hour",
+              "matrices_per_month",
+              "traffic_conditions",
+              "storage_required",
+              "retention_period",
+              "redistribution_required",
+              "resale_required",
+              "display_context",
+              "lookup_trigger",
+              "languages",
+              "public_service_acceptable",
+              "temporary_results_acceptable",
+              "rooftop_hard_filter",
+              "address_elements_required"
+            ],
+            "type": "string"
+          },
+          "maxItems": 8,
+          "minItems": 1,
+          "title": "Fields",
+          "type": "array"
+        },
+        "decision_impact": {
+          "maxLength": 450,
+          "minLength": 1,
+          "title": "Decision Impact",
+          "type": "string"
+        }
+      },
+      "required": [
+        "fields",
+        "decision_impact"
+      ],
+      "title": "QuestionGroup",
+      "type": "object"
+    },
+    "SuppliedFact": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "enum": [
+            "region",
+            "monthly_volume",
+            "peak_rate",
+            "timeline",
+            "sla",
+            "budget",
+            "current_provider",
+            "alternative_providers",
+            "backend_owner",
+            "deployment_owner",
+            "hosting_preference",
+            "billing_country",
+            "usage_geography",
+            "billing_basis",
+            "billing_account_scope",
+            "commercial_plan",
+            "existing_project",
+            "api_enabled",
+            "ola_contract",
+            "geographic_matching",
+            "poi_required",
+            "credential_distribution",
+            "details_completion",
+            "details_sku",
+            "debouncing",
+            "session_tokens",
+            "traffic_required",
+            "traffic_scope",
+            "departure_time_mode",
+            "travel_mode",
+            "max_stops",
+            "hazmat_required",
+            "vehicle_dimensions",
+            "instruction_modality",
+            "origin_count",
+            "destination_count",
+            "input_type",
+            "matrix_frequency",
+            "peak_concurrency",
+            "mapbox_traffic_profile",
+            "requests_splittable",
+            "typical_origin_count",
+            "maximum_origin_count",
+            "typical_destination_count",
+            "maximum_destination_count",
+            "matrices_per_hour",
+            "matrices_per_month",
+            "traffic_conditions",
+            "storage_required",
+            "retention_period",
+            "redistribution_required",
+            "resale_required",
+            "display_context",
+            "lookup_trigger",
+            "languages",
+            "public_service_acceptable",
+            "temporary_results_acceptable",
+            "rooftop_hard_filter",
+            "address_elements_required"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Value"
+        },
+        "evidence": {
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Evidence",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field",
+        "value",
+        "evidence"
+      ],
+      "title": "SuppliedFact",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "supplied_facts": {
+      "items": {
+        "$ref": "#/$defs/SuppliedFact"
+      },
+      "maxItems": 32,
+      "title": "Supplied Facts",
+      "type": "array"
+    },
+    "groups": {
+      "items": {
+        "$ref": "#/$defs/QuestionGroup"
+      },
+      "maxItems": 10,
+      "title": "Groups",
+      "type": "array"
+    },
+    "reason": {
+      "maxLength": 600,
+      "minLength": 1,
+      "title": "Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "reason"
+  ],
+  "title": "QualificationPlan",
+  "type": "object"
+}

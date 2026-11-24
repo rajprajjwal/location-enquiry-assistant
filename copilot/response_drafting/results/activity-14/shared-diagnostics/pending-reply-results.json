@@ -1,0 +1,1388 @@
+{
+  "cases": 4,
+  "included_in_question_scores": false,
+  "reply_preserved": 4,
+  "pending_preserved": 4,
+  "excluded_attempts": [],
+  "endpoint_errors": [],
+  "per_case": [
+    {
+      "record_id": "GT-LBS-AC-233",
+      "group": null,
+      "fold": null,
+      "query": "Our product team is evaluating providers for address autocomplete. They want an LLM assistant to generate client code for public Nominatim and might resell the resulting geocoding data. What should we ask the team about its use case and licensing needs before recommending a provider?",
+      "history": [],
+      "gold": [],
+      "questions": {
+        "baseline": [
+          "Where will the application operate?",
+          "Will the generated geocoding data be resold or used for other purposes?",
+          "Is the LLM-generated code intended for internal use or as part of the product offering?",
+          "What type of license does the team need for the intended use of Nominatim?",
+          "What is the expected volume of geocoding requests?"
+        ],
+        "integrated": [
+          "Where will the application operate?"
+        ]
+      },
+      "snapshots": {
+        "baseline": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Where will the application operate?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer needs qualification of a proposed deployment before selecting a provider."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "region",
+                "text": "Where will the application operate?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "region",
+            "task": "Our product team is evaluating providers for address autocomplete. They want an LLM assistant to generate client code for public Nominatim and might resell the resulting geocoding data. What should we ask the team about its use case and licensing needs before recommending a provider?"
+          },
+          "asked": [
+            "region"
+          ],
+          "answered": [],
+          "awaiting": [
+            "Awaiting region"
+          ],
+          "clarification_messages": [
+            "Where will the application operate?"
+          ]
+        },
+        "integrated": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Where will the application operate?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer needs qualification of a proposed deployment before selecting a provider."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "region",
+                "text": "Where will the application operate?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "region",
+            "task": "Our product team is evaluating providers for address autocomplete. They want an LLM assistant to generate client code for public Nominatim and might resell the resulting geocoding data. What should we ask the team about its use case and licensing needs before recommending a provider?"
+          },
+          "asked": [
+            "region"
+          ],
+          "answered": [],
+          "awaiting": [
+            "Awaiting region"
+          ],
+          "clarification_messages": [
+            "Where will the application operate?"
+          ]
+        }
+      },
+      "details": {
+        "baseline": {
+          "status": "clarification_needed",
+          "selection": {
+            "status": "model_selected",
+            "candidates": [
+              {
+                "field": "data_usage",
+                "status": "accepted",
+                "facts": [
+                  "reselling_geocoding_data"
+                ],
+                "decision_impact": "Determines if the provider's licensing allows for reselling geocoding data",
+                "evidence": "might resell the resulting geocoding data"
+              },
+              {
+                "field": "llm_usage",
+                "status": "accepted",
+                "facts": [
+                  "llm_assistant_usage"
+                ],
+                "decision_impact": "Clarifies if the LLM-generated code is part of the product offering or internal tool",
+                "evidence": "LLM assistant to generate client code"
+              },
+              {
+                "field": "license_type",
+                "status": "accepted",
+                "facts": [
+                  "nominatim_license"
+                ],
+                "decision_impact": "Determines if the provider's license allows for the intended use and reselling",
+                "evidence": "What should we ask the team about its use case and licensing needs"
+              },
+              {
+                "field": "data_volume",
+                "status": "accepted",
+                "facts": [
+                  "expected_data_volume"
+                ],
+                "decision_impact": "Helps determine if the provider's API can handle the expected data volume",
+                "evidence": "product team is evaluating providers for address autocomplete"
+              },
+              {
+                "field": "data_sensitivity",
+                "status": "accepted",
+                "facts": [
+                  "sensitive_data"
+                ],
+                "decision_impact": "Determines if additional security or compliance measures are needed",
+                "evidence": "product team is evaluating providers for address autocomplete"
+              }
+            ],
+            "supplied_facts": [
+              {
+                "field": "provider",
+                "value": "OSM Nominatim",
+                "source": "query",
+                "evidence": "Nominatim",
+                "start": 129,
+                "end": 138
+              }
+            ]
+          },
+          "diagnostic_context": null,
+          "restored_diagnostic_state": {
+            "version": "1.0",
+            "facts": {
+              "provider": {
+                "field": "provider",
+                "status": "supplied",
+                "value": "OSM Nominatim",
+                "source": "query",
+                "evidence": "Nominatim",
+                "start": 129,
+                "end": 138
+              }
+            },
+            "questions": [],
+            "completed_checks": []
+          }
+        },
+        "integrated": {
+          "status": "clarification_needed",
+          "selection": {
+            "status": "no_follow_up",
+            "decision": "none",
+            "reason": "The enquiry already identifies the configuration fix related to the Nominatim provider and its usage policy, which includes considerations for LLMs and licensing needs.",
+            "proposal": {
+              "decision": "none",
+              "reason": "The enquiry already identifies the configuration fix related to the Nominatim provider and its usage policy, which includes considerations for LLMs and licensing needs."
+            },
+            "allowed_decisions": [
+              "none"
+            ],
+            "retrieved_passages_available": 5
+          },
+          "diagnostic_context": {
+            "state": {
+              "version": "1.0",
+              "facts": {
+                "provider": {
+                  "field": "provider",
+                  "status": "supplied",
+                  "value": "OSM Nominatim",
+                  "source": "query",
+                  "evidence": "Nominatim",
+                  "start": 129,
+                  "end": 138
+                }
+              },
+              "questions": [
+                {
+                  "facts": [
+                    "region"
+                  ],
+                  "text": "Where will the application operate?",
+                  "status": "asked"
+                }
+              ],
+              "completed_checks": []
+            },
+            "retrieved_evidence": [
+              {
+                "source_url": "https://operations.osmfoundation.org/policies/nominatim/",
+                "relevant_passage": "OSM Nominatim | Nominatim Usage Policy (aka Geocoding Policy)\n\nThis is an Acceptable Use Policy for the server running at nominatim.openstreetmap.org and does not apply to nominatim services run by yourself or other organisations\n\nOSM’s Nominatim service is mainly there to power the search bar on openstreetmap.org . We are in principle happy for the public API to be used by external users for creative and unexpected uses. However, be aware that the service runs on donated servers and has a very limited capacity. We therefore ask you to limit your use and adhere to this usage policy.\n\nUse of any OSMF provided service is further governed by the OSMF Terms of Use ."
+              },
+              {
+                "source_url": "https://operations.osmfoundation.org/policies/nominatim/",
+                "relevant_passage": "OSM Nominatim | Nominatim Usage Policy (aka Geocoding Policy) > Usage in LLMs\n\nLLMs may only suggest this service, if they prominently point to this usage policy and explain the restrictions of use to the user. Code generated by LLMs must adhere to all terms laid out in this policy.\n\nThe public Nominatim API must not be built into, offered through, suggested by, or automatically generated by no-code, low-code, or vibe-coding platforms as a generic geocoding, address lookup, place search, or map search service. Use of the public API is only permitted where the application developer has made a deliberate, informed decision to use it and is directly responsible for complying with this policy."
+              },
+              {
+                "source_url": "https://nominatim.org/release-docs/latest/api/Search/",
+                "relevant_passage": "OSM Nominatim | Search - Nominatim 5.3.3 Manual > Structured query 🔗\n\n| Parameter | Value |\n| amenity | name and/or type of POI |\n| street | housenumber and streetname |\n| city | city |\n| county | county |\n| state | state |\n| country | country |\n| postalcode | postal code |\n\nThe structured form of the search query allows to lookup up an address that is already split into its components. Each parameter represents a field of the address. All parameters are optional. You should only use the ones that are relevant for the address you want to geocode.\n\nAttention\n\nCannot be combined with the q=<query> parameter. Newer versions of the API will return an error if you do so. Older versions simply return unexpected results."
+              },
+              {
+                "source_url": "https://nominatim.org/release-docs/develop/customize/Settings/",
+                "relevant_passage": "OSM Nominatim | Nominatim development manual: configuration settings > Configuring Nominatim\n\nNominatim uses dotenv to manage its configuration settings. There are two means to set configuration variables: through an .env configuration file or through an environment variable.\n\nThe .env configuration file needs to be placed into the project directory . It must contain configuration parameters in <parameter>=<value> format. Please refer to the dotenv documentation for details.\n\nThe configuration options may also be set in the form of shell environment variables. This is particularly useful, when you want to temporarily change a configuration option. For example, to force the replication serve to download the next change, you can temporarily disable the update interval:\n\n```\nNOMINATIM_REPLICATION_UPDATE_INTERVAL=0 nominatim replication --once\n```\n\nIf a configuration option is defined through .env file and environment variable, then the latter takes precedence."
+              },
+              {
+                "source_url": "https://nominatim.org/release-docs/latest/api/Reverse/",
+                "relevant_passage": "OSM Nominatim | Reverse - Nominatim 5.3.3 Manual > How it works 🔗\n\nThe reverse geocoding API does not exactly compute the address for the coordinate it receives. It works by finding the closest suitable OSM object and returning its address information. This may occasionally lead to unexpected results.\n\nFirst of all, Nominatim only includes OSM objects in its index that are suitable for searching. Small, unnamed paths for example are missing from the database and can therefore not be used for reverse geocoding either.\n\nThe other issue to be aware of is that the closest OSM object may not always have a similar enough address to the coordinate you were requesting. For example, in dense city areas it may belong to a completely different street."
+              }
+            ],
+            "interpretation": {
+              "api": "autocomplete",
+              "intent": "sales_qualification"
+            }
+          },
+          "restored_diagnostic_state": {
+            "version": "1.0",
+            "facts": {
+              "provider": {
+                "field": "provider",
+                "status": "supplied",
+                "value": "OSM Nominatim",
+                "source": "query",
+                "evidence": "Nominatim",
+                "start": 129,
+                "end": 138
+              }
+            },
+            "questions": [
+              {
+                "facts": [
+                  "region"
+                ],
+                "text": "Where will the application operate?",
+                "status": "asked"
+              }
+            ],
+            "completed_checks": []
+          }
+        }
+      },
+      "preserved": {
+        "route": true,
+        "next_action": true,
+        "owner": true,
+        "approvals": true,
+        "proposed_actions": true,
+        "active_questions": true,
+        "pending_reply": true,
+        "asked": true,
+        "answered": true,
+        "awaiting": true,
+        "clarification_messages": true
+      },
+      "reopened": {
+        "baseline": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer needs qualification of a proposed deployment before selecting a provider."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "monthly_volume",
+            "task": "Our product team is evaluating providers for address autocomplete. They want an LLM assistant to generate client code for public Nominatim and might resell the resulting geocoding data. What should we ask the team about its use case and licensing needs before recommending a provider? Customer confirmed region: Germany."
+          },
+          "asked": [
+            "region",
+            "monthly_volume"
+          ],
+          "answered": [
+            "region"
+          ],
+          "awaiting": [
+            "Awaiting monthly volume"
+          ],
+          "clarification_messages": [
+            "Where will the application operate?",
+            "What is your expected monthly request volume?"
+          ]
+        },
+        "integrated": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer needs qualification of a proposed deployment before selecting a provider."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "monthly_volume",
+            "task": "Our product team is evaluating providers for address autocomplete. They want an LLM assistant to generate client code for public Nominatim and might resell the resulting geocoding data. What should we ask the team about its use case and licensing needs before recommending a provider? Customer confirmed region: Germany."
+          },
+          "asked": [
+            "region",
+            "monthly_volume"
+          ],
+          "answered": [
+            "region"
+          ],
+          "awaiting": [
+            "Awaiting monthly volume"
+          ],
+          "clarification_messages": [
+            "Where will the application operate?",
+            "What is your expected monthly request volume?"
+          ]
+        }
+      },
+      "reply_preserved": true
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "group": null,
+      "fold": null,
+      "query": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API?",
+      "history": [],
+      "gold": [],
+      "questions": {
+        "baseline": [
+          "Where will the application operate?",
+          "How many jobs are typically being tracked at the same time?",
+          "How many drivers are typically being tracked at the same time?",
+          "How frequently do ETAs need to be updated?",
+          "What level of accuracy is required for the ETAs?"
+        ],
+        "integrated": [
+          "Where will the application operate?"
+        ]
+      },
+      "snapshots": {
+        "baseline": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Where will the application operate?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "region",
+                "text": "Where will the application operate?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "region",
+            "task": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API?"
+          },
+          "asked": [
+            "region"
+          ],
+          "answered": [],
+          "awaiting": [
+            "Awaiting region"
+          ],
+          "clarification_messages": [
+            "Where will the application operate?"
+          ]
+        },
+        "integrated": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Where will the application operate?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "region",
+                "text": "Where will the application operate?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "region",
+            "task": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API?"
+          },
+          "asked": [
+            "region"
+          ],
+          "answered": [],
+          "awaiting": [
+            "Awaiting region"
+          ],
+          "clarification_messages": [
+            "Where will the application operate?"
+          ]
+        }
+      },
+      "details": {
+        "baseline": {
+          "status": "clarification_needed",
+          "selection": {
+            "status": "model_selected",
+            "candidates": [
+              {
+                "field": "job_count",
+                "status": "accepted",
+                "facts": [
+                  "number_of_jobs"
+                ],
+                "decision_impact": "Determines if the API can handle the volume of requests efficiently.",
+                "evidence": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs."
+              },
+              {
+                "field": "driver_count",
+                "status": "accepted",
+                "facts": [
+                  "number_of_drivers"
+                ],
+                "decision_impact": "Determines if the API can handle the volume of requests efficiently.",
+                "evidence": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs."
+              },
+              {
+                "field": "update_frequency",
+                "status": "accepted",
+                "facts": [
+                  "frequency_of_updates"
+                ],
+                "decision_impact": "Determines the required API refresh rate and potential cost implications.",
+                "evidence": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs."
+              },
+              {
+                "field": "accuracy_requirements",
+                "status": "accepted",
+                "facts": [
+                  "required_accuracy"
+                ],
+                "decision_impact": "Determines if a high-accuracy API is needed, which may affect cost and performance.",
+                "evidence": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs."
+              },
+              {
+                "field": "traffic_consideration",
+                "status": "accepted",
+                "facts": [
+                  "traffic_inclusion"
+                ],
+                "decision_impact": "Determines if real-time traffic data is needed, which affects API selection and cost.",
+                "evidence": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs."
+              }
+            ],
+            "supplied_facts": []
+          },
+          "diagnostic_context": null,
+          "restored_diagnostic_state": {
+            "version": "1.0",
+            "facts": {},
+            "questions": [],
+            "completed_checks": []
+          }
+        },
+        "integrated": {
+          "status": "clarification_needed",
+          "selection": {
+            "status": "no_follow_up",
+            "decision": "none",
+            "reason": "The enquiry already identifies the configuration fix by asking about the region, which is necessary for recommending a distance-matrix API.",
+            "proposal": {
+              "decision": "none",
+              "reason": "The enquiry already identifies the configuration fix by asking about the region, which is necessary for recommending a distance-matrix API."
+            },
+            "allowed_decisions": [
+              "none"
+            ],
+            "retrieved_passages_available": 5
+          },
+          "diagnostic_context": {
+            "state": {
+              "version": "1.0",
+              "facts": {},
+              "questions": [
+                {
+                  "facts": [
+                    "region"
+                  ],
+                  "text": "Where will the application operate?",
+                  "status": "asked"
+                }
+              ],
+              "completed_checks": []
+            },
+            "retrieved_evidence": [
+              {
+                "source_url": "https://maps.olakrutrim.com/docs/routing-apis/distance-matrix-basic-api",
+                "relevant_passage": "Ola Maps | Distance Matrix Basic API - Ola Maps Platform > Ola Maps Distance Matrix Basic API\n\nPairwise distances and ETAs across many origins and destinations without live traffic—built for scheduling, assignment, and multi-location planning."
+              },
+              {
+                "source_url": "https://maps.olakrutrim.com/docs/routing-apis/distance-matrix-api",
+                "relevant_passage": "Ola Maps | Distance Matrix API - Ola Maps Platform > What is the Distance Matrix API?\n\nDistance Matrix API provides a robust solution for integrating precise routable distance and ETA between multiple points. Whether you're developing a mapping application, a transportation logistics platform, or a location-based service, our API offers seamless integration to enhance user experiences and streamline operations. With the Distance Matrix API, you can generate accurate and optimized distance, near real-time ETA and routable path between multiple points. This powerful tool empowers users to plan allotments/assignments of jobs, as it helps understand the nearest assignee/engineer to a certain job for time and distance optimization."
+              },
+              {
+                "source_url": "https://docs.tomtom.com/matrix-routing-v2-api/documentation/product-information/processing-speed-and-quotas/",
+                "relevant_passage": "TomTom | Processing speed and quotas | Matrix Routing v2 API > Quotas\n\nThe Matrix Routing v2 API uses two separate quotas.\n\n| Quota | What counts toward the quota | What the quota controls |\n| QPS (queries per second) | Requests to the Matrix Routing v2 endpoints. Each submission, status request and download is one request, whatever the matrix size. | How many requests you can send per second. Requests over the limit get HTTP 429 . |\n| Resource utilization limit | Route calculations of your matrix jobs that run at the same time. | How many routes are calculated at the same time, and so how fast matrix jobs with many routes are processed. |"
+              },
+              {
+                "source_url": "https://developers.google.com/maps/documentation/routes/compute-route-matrix-over",
+                "relevant_passage": "Google Maps Platform | Compute Route Matrix Overview | Routes API | Google for Developers > What you can do with Compute Route Matrix?\n\nWith Compute Route Matrix, you can get a matrix of possible routes between many start and end locations. You can specify multiple origins and destinations per server-side request with the number of origins times the number of destinations up to 625. You can stream elements of the response before the entire matrix has been calculated, lowering response latency.\n\nYou can request these kinds of route data to determine the most efficient way to route passengers, shipments, or workers between multiple origins and destinations:\n\nDistance in kilometers or miles for a selected travel mode\n\nEstimated travel time in traffic"
+              },
+              {
+                "source_url": "https://www.geoapify.com/what-is-reverse-geocoding",
+                "relevant_passage": "Geoapify | What Is Reverse Geocoding? Meaning and How It Works > How many coordinates can I process for free with Geoapify?\n\nGeoapify offers a generous free tier for both its Reverse Geocoding Tool and API . You can process up to 500 coordinates at once for free with the tool, and the API allows up to 3,000 requests per day, making it ideal for individual projects or small-scale commercial use.\n\nGeocoding Geo data\n\nPrevious Post What is a Choropleth Map? Definition, Examples, and How to Create Custom Maps\n\nNext Post How To Avoid 429 Too Many Requests With NPM Rate Limiting"
+              }
+            ],
+            "interpretation": {
+              "api": "distance_matrix",
+              "intent": "sales_qualification"
+            }
+          },
+          "restored_diagnostic_state": {
+            "version": "1.0",
+            "facts": {},
+            "questions": [
+              {
+                "facts": [
+                  "region"
+                ],
+                "text": "Where will the application operate?",
+                "status": "asked"
+              }
+            ],
+            "completed_checks": []
+          }
+        }
+      },
+      "preserved": {
+        "route": true,
+        "next_action": true,
+        "owner": true,
+        "approvals": true,
+        "proposed_actions": true,
+        "active_questions": true,
+        "pending_reply": true,
+        "asked": true,
+        "answered": true,
+        "awaiting": true,
+        "clarification_messages": true
+      },
+      "reopened": {
+        "baseline": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "monthly_volume",
+            "task": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API? Customer confirmed region: Germany."
+          },
+          "asked": [
+            "region",
+            "monthly_volume"
+          ],
+          "answered": [
+            "region"
+          ],
+          "awaiting": [
+            "Awaiting monthly volume"
+          ],
+          "clarification_messages": [
+            "Where will the application operate?",
+            "What is your expected monthly request volume?"
+          ]
+        },
+        "integrated": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "monthly_volume",
+            "task": "A dispatch-tool prospect wants live ETAs between many drivers and many jobs. What should we ask before recommending a distance-matrix API? Customer confirmed region: Germany."
+          },
+          "asked": [
+            "region",
+            "monthly_volume"
+          ],
+          "answered": [
+            "region"
+          ],
+          "awaiting": [
+            "Awaiting monthly volume"
+          ],
+          "clarification_messages": [
+            "Where will the application operate?",
+            "What is your expected monthly request volume?"
+          ]
+        }
+      },
+      "reply_preserved": true
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "group": null,
+      "fold": null,
+      "query": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?",
+      "history": [],
+      "gold": [],
+      "questions": {
+        "baseline": [
+          "Which map provider are you using?"
+        ],
+        "integrated": [
+          "Which map provider are you using?"
+        ]
+      },
+      "snapshots": {
+        "baseline": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Which map provider are you using?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "provider",
+                "text": "Which map provider are you using?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "provider",
+            "task": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?"
+          },
+          "asked": [
+            "current_provider"
+          ],
+          "answered": [],
+          "awaiting": [
+            "Awaiting current provider"
+          ],
+          "clarification_messages": [
+            "Which map provider are you using?"
+          ]
+        },
+        "integrated": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Which map provider are you using?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "provider",
+                "text": "Which map provider are you using?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "provider",
+            "task": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?"
+          },
+          "asked": [
+            "current_provider"
+          ],
+          "answered": [],
+          "awaiting": [
+            "Awaiting current provider"
+          ],
+          "clarification_messages": [
+            "Which map provider are you using?"
+          ]
+        }
+      },
+      "details": {
+        "baseline": {
+          "status": "clarification_needed",
+          "selection": {
+            "status": "all_candidates_rejected",
+            "candidates": [
+              {
+                "field": "address_precision",
+                "status": "unsupported_missing_facts"
+              }
+            ],
+            "supplied_facts": [
+              {
+                "field": "provider",
+                "value": "OSM Nominatim",
+                "source": "query",
+                "evidence": "Nominatim",
+                "start": 210,
+                "end": 219
+              }
+            ]
+          },
+          "diagnostic_context": null,
+          "restored_diagnostic_state": {
+            "version": "1.0",
+            "facts": {
+              "provider": {
+                "field": "provider",
+                "status": "supplied",
+                "value": "OSM Nominatim",
+                "source": "query",
+                "evidence": "Nominatim",
+                "start": 210,
+                "end": 219
+              }
+            },
+            "questions": [],
+            "completed_checks": []
+          }
+        },
+        "integrated": {
+          "status": "clarification_needed",
+          "selection": {
+            "status": "no_follow_up",
+            "decision": "none",
+            "reason": "The enquiry already identifies the configuration fix with the provider as OSM Nominatim.",
+            "proposal": {
+              "decision": "none",
+              "reason": "The enquiry already identifies the configuration fix with the provider as OSM Nominatim."
+            },
+            "allowed_decisions": [
+              "none"
+            ],
+            "retrieved_passages_available": 0
+          },
+          "diagnostic_context": {
+            "state": {
+              "version": "1.0",
+              "facts": {
+                "provider": {
+                  "field": "provider",
+                  "status": "supplied",
+                  "value": "OSM Nominatim",
+                  "source": "query",
+                  "evidence": "Nominatim",
+                  "start": 210,
+                  "end": 219
+                }
+              },
+              "questions": [
+                {
+                  "facts": [
+                    "provider"
+                  ],
+                  "text": "Which map provider are you using?",
+                  "status": "asked"
+                }
+              ],
+              "completed_checks": []
+            },
+            "retrieved_evidence": [],
+            "interpretation": {
+              "api": "reverse_geocode",
+              "intent": "docs_how_to"
+            }
+          },
+          "restored_diagnostic_state": {
+            "version": "1.0",
+            "facts": {
+              "provider": {
+                "field": "provider",
+                "status": "supplied",
+                "value": "OSM Nominatim",
+                "source": "query",
+                "evidence": "Nominatim",
+                "start": 210,
+                "end": 219
+              }
+            },
+            "questions": [
+              {
+                "facts": [
+                  "provider"
+                ],
+                "text": "Which map provider are you using?",
+                "status": "asked"
+              }
+            ],
+            "completed_checks": []
+          }
+        }
+      },
+      "preserved": {
+        "route": true,
+        "next_action": true,
+        "owner": true,
+        "approvals": true,
+        "proposed_actions": true,
+        "active_questions": true,
+        "pending_reply": true,
+        "asked": true,
+        "answered": true,
+        "awaiting": true,
+        "clarification_messages": true
+      },
+      "reopened": {
+        "baseline": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Which map provider are you using?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "provider",
+                "text": "Which map provider are you using?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "provider",
+            "task": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document? Provider: Mapbox."
+          },
+          "asked": [
+            "current_provider"
+          ],
+          "answered": [
+            "current_provider"
+          ],
+          "awaiting": [],
+          "clarification_messages": [
+            "Which map provider are you using?",
+            "Which map provider are you using?"
+          ]
+        },
+        "integrated": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Which map provider are you using?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "provider",
+                "text": "Which map provider are you using?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "provider",
+            "task": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document? Provider: Mapbox."
+          },
+          "asked": [
+            "current_provider"
+          ],
+          "answered": [
+            "current_provider"
+          ],
+          "awaiting": [],
+          "clarification_messages": [
+            "Which map provider are you using?",
+            "Which map provider are you using?"
+          ]
+        }
+      },
+      "reply_preserved": true
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "group": null,
+      "fold": null,
+      "query": "A logistics prospect wants to reverse-geocode driver GPS pings into addresses shown in Hindi, and they may store the results. What should we ask before recommending a provider?",
+      "history": [],
+      "gold": [],
+      "questions": {
+        "baseline": [
+          "What is your expected monthly request volume?",
+          "Will the addresses need to be displayed in Hindi or other specific languages?",
+          "Will the GPS data or resulting addresses be considered sensitive or require specific compliance measures?",
+          "What level of accuracy is required for the reverse-geocoding results?",
+          "How long will the geocoded results be retained?"
+        ],
+        "integrated": [
+          "What is your expected monthly request volume?"
+        ]
+      },
+      "snapshots": {
+        "baseline": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "monthly_volume",
+            "task": "A logistics prospect wants to reverse-geocode driver GPS pings into addresses shown in Hindi, and they may store the results. What should we ask before recommending a provider?"
+          },
+          "asked": [
+            "monthly_volume"
+          ],
+          "answered": [],
+          "awaiting": [
+            "Awaiting monthly volume"
+          ],
+          "clarification_messages": [
+            "What is your expected monthly request volume?"
+          ]
+        },
+        "integrated": {
+          "route": "clarification_needed",
+          "next_action": {
+            "action_type": "ask_clarifying_questions",
+            "description": "What is your expected monthly request volume?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "monthly_volume",
+                "text": "What is your expected monthly request volume?"
+              }
+            ]
+          },
+          "pending_reply": {
+            "field": "monthly_volume",
+            "task": "A logistics prospect wants to reverse-geocode driver GPS pings into addresses shown in Hindi, and they may store the results. What should we ask before recommending a provider?"
+          },
+          "asked": [
+            "monthly_volume"
+          ],
+          "answered": [],
+          "awaiting": [
+            "Awaiting monthly volume"
+          ],
+          "clarification_messages": [
+            "What is your expected monthly request volume?"
+          ]
+        }
+      },
+      "details": {
+        "baseline": {
+          "status": "clarification_needed",
+          "selection": {
+            "status": "model_selected",
+            "candidates": [
+              {
+                "field": "language_preference",
+                "status": "accepted",
+                "facts": [
+                  "language_used_for_addresses"
+                ],
+                "decision_impact": "Determines the language support required from the provider",
+                "evidence": "A logistics prospect wants to reverse-geocode driver GPS pings into addresses shown in Hindi"
+              },
+              {
+                "field": "data_sensitivity",
+                "status": "accepted",
+                "facts": [
+                  "sensitivity_of_gps_data"
+                ],
+                "decision_impact": "Influences the choice of provider based on data security and compliance requirements",
+                "evidence": "they may store the results"
+              },
+              {
+                "field": "geocoding_accuracy",
+                "status": "accepted",
+                "facts": [
+                  "required_accuracy_level"
+                ],
+                "decision_impact": "Determines the provider's capability to meet the accuracy needs",
+                "evidence": "reverse-geocode driver GPS pings into addresses"
+              },
+              {
+                "field": "data_retention",
+                "status": "accepted",
+                "facts": [
+                  "retention_period_for_results"
+                ],
+                "decision_impact": "Informs the storage and management requirements for the geocoded data",
+                "evidence": "they may store the results"
+              },
+              {
+                "field": "integration_requirements",
+                "status": "accepted",
+                "facts": [
+                  "existing_systems_or_platforms"
+                ],
+                "decision_impact": "Determines the compatibility and integration approach with the provider's API",
+                "evidence": "A logistics prospect wants to reverse-geocode driver GPS pings into addresses"
+              }
+            ],
+            "supplied_facts": []
+          },
+          "diagnostic_context": null,
+          "restored_diagnostic_state": {
+            "version": "1.0",
+            "facts": {},
+            "questions": [],
+            "completed_checks": []
+          }
+        },
+        "integrated": {
+          "status": "clarification_needed",
+          "selection": {
+            "status": "no_follow_up",
+            "decision": "none",
+            "reason": "The enquiry already identifies the configuration fix, as it specifies the need to reverse-geocode GPS pings into addresses shown in Hindi, which is a documented capability of the Geoapify and TomTom APIs.",
+            "proposal": {
+              "decision": "none",
+              "reason": "The enquiry already identifies the configuration fix, as it specifies the need to reverse-geocode GPS pings into addresses shown in Hindi, which is a documented capability of the Geoapify and TomTom APIs."
+            },
+            "allowed_decisions": [
+              "none"
+            ],
+            "retrieved_passages_available": 5
+          },
+          "diagnostic_context": {
+            "state": {
+              "version": "1.0",
+              "facts": {},
+              "questions": [
+                {
+                  "facts": [
+                    "monthly_volume"
+                  ],
+                  "text": "What is your expected monthly request volume?",
+                  "status": "asked"
+                }
+              ],
+              "completed_checks": []
+            },
+            "retrieved_evidence": [
+              {
+                "source_url": "https://www.geoapify.com/what-is-reverse-geocoding",
+                "relevant_passage": "Geoapify | What Is Reverse Geocoding? Meaning and How It Works\n\nReverse geocoding converts geographic coordinates into addresses, making it easy to pinpoint exact city locations and add context to raw data\n\nReverse geocoding is the process of converting geographic coordinates (latitude and longitude) into a human-readable address or place name. For example, instead of working with raw coordinates like (40.748817, -73.985428) , reverse geocoding can return a readable result such as \"Empire State Building, New York.\"\n\nGeocode Meaning vs Reverse Geocode Meaning :\n\nThese terms sound similar, but they represent opposite directions of the same conversion:\n\n- Geocode meaning: convert a readable address (for example, \"1600 Amphitheatre Parkway\" ) into coordinates.\n\n- Reverse geocode meaning: convert coordinates (for example, 37.423021, -122.083739 ) into a readable address or place.\n\nIn everyday usage, people also use \"reverse geocode\" as a verb (\"reverse geocode this point\"), which refers to the same reverse geocoding process.\n\nIn this guide, you will learn:\n\n- what reverse geocoding means in practice\n\n- how the reverse geocoding process works\n\n- where reverse geocoding is used and how to choose a suitable implementation approach\n\n- What Is Reverse Geocoding?\n\n- How Reverse Geocoding Works\n\n- What Reverse Geocoding Returns\n\n- Find City, Postcode, and Country by Coordinates\n\n- Reverse Geocoding Accuracy\n\n- How to Reverse Geocode?\n\n- Learn More\n\n- FAQ"
+              },
+              {
+                "source_url": "https://docs.tomtom.com/reverse-geocoding-api/documentation/tomtom-maps/v1/product-information/faq/",
+                "relevant_passage": "TomTom | Frequently Asked Questions (FAQs) | Reverse Geocoding API > Frequently Asked Questions (FAQs)\n\nService version: 2 Last edit: 2026.04.22\n\nWhat is the TomTom Reverse Geocoding API, and what does it do?\n\nThe TomTom Reverse Geocoding API is a tool that translates geographic coordinates (e.g., 37.786505, -122.3862) into human-understandable information such as a street address, street element, or geography. It is particularly useful in tracking applications where you receive a GPS feed and want to obtain the corresponding address.\n\nWhat information can I obtain using the Reverse Geocoding API?\n\nThe API allows users to translate coordinates into human-readable addresses, providing information about the street address, street elements, or general geography associated with the provided coordinates.\n\nWhich endpoints are included in the Reverse Geocoding API?\n\nThe Reverse Geocoding API consists of two primary endpoints: “Reverse Geocode,” which translates coordinates into human-readable addresses, and “CrossStreet Lookup,” which provides information about addresses and cross streets associated with the coordinates."
+              },
+              {
+                "source_url": "https://www.geoapify.com/address-autocomplete",
+                "relevant_passage": "Geoapify | Address Autocomplete API | Geoapify > Autofill Postal Addresses\n\nIf you need to collect a customer’s postal address, for example to ship some goods, our Location Autocomplete API can help. This task is a bit different from choosing cities or locations. In this case you need to collect the exact address and exact location.\n\nThe problem you might run into here is that there is no geo database, either open or proprietary (such as Google Maps) that includes all existing addresses. And new buildings and roads are being added all the time.\n\nOur API can help you even if a place is not mapped up to the building level, but only the street level. It assumes the house number is correct even if it can't check it, and shows you confidence level coefficients to help you assess the results.\n\nSo you need to allow adding addresses even if they are not suggested by address autocomplete. What do you do? Well, we've added in @geoapify/geocoder-autocomplete possibility to show in the dropdown list non verified streets and house numbers. The non-verified part of the address is shown in red:\n\nThe API also shows you the appropriate confidence level coefficients:\n\n```\n{\n  \"confidence\":0.3535714285714286,\n  \"confidence_city_level\":1,\n  \"confidence_street_level\":0.7071428571428572,\n  \"match_type\":\"match_by_street\"\n}\n```\n\nAnoher option is to ask your customer to show you their exact location on a map. Check out this JSFiddle for a demonstration of how to do that."
+              },
+              {
+                "source_url": "https://developers.google.com/maps/documentation/geocoding/geocoding-v4-migrate",
+                "relevant_passage": "Google Maps Platform | Migrate from Geocoding v3 to v4 | Geocoding API | Google for Developers > Migrate from v3 Reverse Geocoding\n\nIf you use v3 Reverse Geocoding to turn coordinates into addresses, you should migrate to the v4 Reverse geocode a location method, which accepts a GET request.\n\nThe v4 API changes names, structure, and support for several parameters. We strongly recommend that you use a field mask to specify the fields you want returned in the response.\n\nWarning: In all v4 methods, field names are formatted using lower camel case (e.g., addressComponents), in contrast to v3 methods, which used snake case (e.g., address_components). RPC responses continue to use snake case in v4, as they did in v3."
+              },
+              {
+                "source_url": "https://www.geoapify.com/tutorial/reverse-geocoding-python",
+                "relevant_passage": "Geoapify | Reverse Geocoding in Python | Geoapify Tutorial > Get addresses from coordinates using Python\n\nConverting coordinates to addresses using Python and Geoapify API\n\nReverse geocoding is the process of converting geographic coordinates (latitude and longitude) into human-readable addresses. It's an essential feature for location-based applications — from mapping tools and logistics systems to travel apps and data analysis workflows. You can learn more about how it works in our article What is Reverse Geocoding?\n\nIn this tutorial, you'll learn how to perform reverse geocoding in Python using the Geoapify Reverse Geocoding API . Specifically, we will:\n\n- Introduce the Reverse Geocoding API and its capabilities\n\n- Show how to make API calls from Python\n\n- Explain how to handle batch reverse geocoding while respecting rate limits\n\n- Provide a GitHub example you can download and integrate into your own project\n\nThis guide is ideal for developers looking to turn geographic coordinates into useful address data efficiently and reliably.\n\n- Reverse Geocoding API\n\n- Call API with Python\n\n- Batch calls in Python\n\n- Code Sample in GitHub\n\n- FAQ"
+              }
+            ],
+            "interpretation": {
+              "api": "reverse_geocode",
+              "intent": "sales_qualification"
+            }
+          },
+          "restored_diagnostic_state": {
+            "version": "1.0",
+            "facts": {},
+            "questions": [
+              {
+                "facts": [
+                  "monthly_volume"
+                ],
+                "text": "What is your expected monthly request volume?",
+                "status": "asked"
+              }
+            ],
+            "completed_checks": []
+          }
+        }
+      },
+      "preserved": {
+        "route": true,
+        "next_action": true,
+        "owner": true,
+        "approvals": true,
+        "proposed_actions": true,
+        "active_questions": true,
+        "pending_reply": true,
+        "asked": true,
+        "answered": true,
+        "awaiting": true,
+        "clarification_messages": true
+      },
+      "reopened": {
+        "baseline": {
+          "route": "final",
+          "next_action": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": false,
+            "questions": []
+          },
+          "pending_reply": null,
+          "asked": [
+            "monthly_volume"
+          ],
+          "answered": [
+            "monthly_volume"
+          ],
+          "awaiting": [],
+          "clarification_messages": [
+            "What is your expected monthly request volume?"
+          ]
+        },
+        "integrated": {
+          "route": "final",
+          "next_action": {
+            "action_type": "answer_directly",
+            "description": "Review the drafted reply.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "owner": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "A new customer needs sales qualification."
+          },
+          "approvals": [],
+          "proposed_actions": [],
+          "active_questions": {
+            "needed": false,
+            "questions": []
+          },
+          "pending_reply": null,
+          "asked": [
+            "monthly_volume"
+          ],
+          "answered": [
+            "monthly_volume"
+          ],
+          "awaiting": [],
+          "clarification_messages": [
+            "What is your expected monthly request volume?"
+          ]
+        }
+      },
+      "reply_preserved": true
+    }
+  ]
+}

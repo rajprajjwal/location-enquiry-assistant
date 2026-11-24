@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The enquiry indicates that the Directions API is returning ZERO_RESULTS when using a via: waypoint, but works without it. This suggests an issue with how the API is interpreting or processing the via: waypoint, which may be related to the display of the result rather than the API's functionality. The documentation highlights that via: waypoints can lead to ZERO_RESULTS if the API cannot find a valid route through the point, so the display of the result may not be showing the expected route or may be misrepresenting the API's response.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The enquiry indicates that the Directions API is returning ZERO_RESULTS when using a via: waypoint, but works without it. This suggests an issue with how the API is interpreting or processing the via: waypoint, which may be related to the display of the result rather than the API's functionality. The documentation highlights that via: waypoints can lead to ZERO_RESULTS if the API cannot find a valid route through the point, so the display of the result may not be showing the expected route or may be misrepresenting the API's response.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2353,
+    "completion_tokens": 115,
+    "total_tokens": 2468
+  },
+  "latency_ms": 2931,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

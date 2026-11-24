@@ -1,0 +1,427 @@
+[
+  {
+    "record_id": "GT-LBS-RG-001",
+    "bucket": "history",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "history": [
+      {
+        "role": "user",
+        "text": "Google reverse geocode with result_type=street_address gives ZERO_RESULTS for a rural point, and without our key it says REQUEST_DENIED. Without result_type we get results. Why?"
+      },
+      {
+        "role": "assistant",
+        "text": "Before I answer, one question: Which result types do you actually need?"
+      }
+    ],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "8887238c239373c5c7761462ad05f5f75cb65875dd072c928e0ab27e19b7faee"
+  },
+  {
+    "record_id": "GT-LBS-RG-005",
+    "bucket": "qualification",
+    "query": "Our Chennai field-service SaaS company needs about 80,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether results must be stored?",
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "whether results must be stored"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "user-triggered versus periodic tracking lookups"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+    "gold_sha256": "bda936552aada8e2ac38f46fff8b05786fec96dd507e2d2e35c2997188960576",
+    "prediction_row_sha256": "2618e8832ecb972a8a504607649817b4ce66f330de1f27b40cf8e24c9b13e415"
+  },
+  {
+    "record_id": "GT-LBS-RG-006",
+    "bucket": "qualification",
+    "query": "Our Kolkata two-wheeler rental company needs about 250,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether results must be stored?",
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "whether results must be stored"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "user-triggered versus periodic tracking lookups"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+    "gold_sha256": "bda936552aada8e2ac38f46fff8b05786fec96dd507e2d2e35c2997188960576",
+    "prediction_row_sha256": "397e33abff90beb7eb371e39fcabc81b4744b888c052ab21e62115943dcc4271"
+  },
+  {
+    "record_id": "GT-LBS-RG-007",
+    "bucket": "qualification",
+    "query": "Our Ahmedabad pharma distributor needs about 600,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "whether results must be stored"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "user-triggered versus periodic tracking lookups"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+    "gold_sha256": "bda936552aada8e2ac38f46fff8b05786fec96dd507e2d2e35c2997188960576",
+    "prediction_row_sha256": "2318fe2b554d64fb7f41233ae1eab14f3ee9d4da9f4ed02dde3ab9b9c628695b"
+  },
+  {
+    "record_id": "GT-LBS-RG-015",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-18025. Customer wrote:\n\"Ola Maps Reverse Geocoding for 120,000 lookups a month. Cost?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [
+      "Could you confirm whether results must be stored?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "9f2784233603890c4566b85b11fa00959c455bead3e7ea15c920caadf05a43f5"
+  },
+  {
+    "record_id": "GT-LBS-RG-016",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-84635. Customer wrote:\n\"Ola Maps Reverse Geocoding for 500,000 lookups a month. Cost?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [
+      "Could you confirm whether results must be stored?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "158590168861205d288ce1881cd7d200170f0280f484438b79c6b5ce20ccb34b"
+  },
+  {
+    "record_id": "GT-LBS-RG-021",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-26210. Customer wrote:\n\"Google reverse geocoding in India: 100,000 requests a month. Cost?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [
+      "Could you confirm whether results must be stored?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "e21c2a80496f1d8cee710288487d77afae29b76b9e6d44095ca5fcd9e8a2d594",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "03aa4a10c1e9a1d009d8ae45c4e6495ab8f1e7f3cab625cb536c2e2f328b2687"
+  },
+  {
+    "record_id": "GT-LBS-RG-082",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-38973. Customer wrote:\n\"Our mobile app calls Nominatim reverse every 30 seconds per user. OK?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "13d1f2ce1c789b15d3a6ded132bd08d27e7edf1e678dc31f6234340c6b2167d4"
+  },
+  {
+    "record_id": "GT-LBS-RG-084",
+    "bucket": "capabilitycompare",
+    "query": "Can OSRM do reverse geocoding instead of Nominatim?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "08735075b9751e441384defc191a85ebb660fd98cc5e64bd0d397aa8e1c9e306"
+  },
+  {
+    "record_id": "GT-LBS-RG-201",
+    "bucket": "coveragecompare",
+    "query": "We need reverse geocoding for riders in India and Nepal. Who covers both?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "What volume per month, and do you need to store results?",
+        "facts": [
+          "monthly volume",
+          "whether results must be stored"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "268dc9c28d9c7da002fdb305e3398d07ded27dcf453fedd7d040ca77fca51b2c",
+    "prediction_row_sha256": "7cf1784d75f8d48bef1801a501fff43f20ecd27acf0267f4d1a9ab07aa294d85"
+  },
+  {
+    "record_id": "GT-LBS-RG-212",
+    "bucket": "limitscompare",
+    "query": "We reverse geocode about 40 driver pings a second with Mapbox. Will we be throttled?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "e5460d7ec1c7a4f4e26c21fc002ccfbf0fad5f99ed478d7b6a280c1dcbcd76af"
+  },
+  {
+    "record_id": "GT-LBS-RG-213",
+    "bucket": "limitscompare",
+    "query": "We're planning for the evening peak on Mapbox Reverse Geocoding. What's the default request-rate limit and at what rate should we expect throttling?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "42b9c959039d8cac6558c88865b7f3ecab02c48f924d4ff59a1edc5871d62caa"
+  },
+  {
+    "record_id": "GT-LBS-RG-225",
+    "bucket": "qualification",
+    "query": "A prospect says: 'We need reverse geocoding for a delivery app in India and Nepal.' What should we ask before recommending a provider?",
+    "history": [],
+    "questions": [
+      "Could you confirm peak requests per second and expected monthly API workload?",
+      "Could you confirm required output languages?",
+      "Could you confirm whether results must be stored, whether a public community endpoint is acceptable and whether temporary-only geocoding results are acceptable?"
+    ],
+    "gold": [
+      {
+        "question": "What monthly volume and peak rate?",
+        "facts": [
+          "monthly volume",
+          "peak request rate"
+        ]
+      },
+      {
+        "question": "Which countries?",
+        "facts": [
+          "countries"
+        ]
+      },
+      {
+        "question": "Will results be stored?",
+        "facts": [
+          "whether results will be stored"
+        ]
+      },
+      {
+        "question": "Which languages?",
+        "facts": [
+          "languages"
+        ]
+      },
+      {
+        "question": "Is self-hosting acceptable?",
+        "facts": [
+          "whether self-hosting is acceptable"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "98101ae5f411e04c7c24a901a3849b6ddc2da4ad177343780dcac93111e4bc1c",
+    "gold_sha256": "c82342eb063547ca8accabc296b13a39d7bced066948459a06383f9abc5477e3",
+    "prediction_row_sha256": "e045a89137febbf5e795662de7b511aeaccdb235aa0144bb399b431c9a48f210"
+  },
+  {
+    "record_id": "GT-LBS-RG-226",
+    "bucket": "qualification",
+    "query": "Can we store Mapbox reverse-geocoding results in our own database for later reuse, and does the public Nominatim policy allow us to resell those geocoding results?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "For Mapbox, can they set the permanent parameter and do they have a credit card or enterprise contract?",
+        "facts": [
+          "whether Mapbox permanent parameter can be set",
+          "whether a credit card or enterprise contract is available"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "297e055f4bf29d1984ea33ba6cbeb58d506a013de3b0c135304cfe1bac376b65",
+    "prediction_row_sha256": "3a784a2a436cb816994ff96c394f394fa6c41334be976b9eba833331c81aae76"
+  },
+  {
+    "record_id": "GT-LBS-RG-231",
+    "bucket": "ownership",
+    "query": "A Mapbox access token used by our reverse-geocoding service may have been exposed to a client application. What do official Mapbox token docs say we should do now, and when should this be handed to a human?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Is the exposed token a default public token, a token with secret scopes, or a token with URL restrictions?",
+        "facts": [
+          "exposed token type: default public, secret scopes, or URL-restricted"
+        ]
+      },
+      {
+        "question": "Has the token already been deleted or rotated on the Access Tokens page?",
+        "facts": [
+          "whether token was already deleted or rotated on Access Tokens page"
+        ]
+      },
+      {
+        "question": "Is the account still on a trial with no payment method, which blocks create, rotate, or delete?",
+        "facts": [
+          "whether trial without payment method blocks token create rotate or delete"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "05a66eaaa347bb0a0612b94079958db4bc9babbf068649270a3f9f08f60fa929",
+    "prediction_row_sha256": "e1c0697003c14be6acdde9cbed6e57a63fe954f117bd9e9a50180d21eb05bae5"
+  },
+  {
+    "record_id": "GT-LBS-RG-232",
+    "bucket": "ownership",
+    "query": "Customers report that Google reverse geocoding returns a road-interpolated address that does not match the building they selected. Please prepare a handoff to a human to review these quality reports. What should we check and include in the handoff?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Was location_type in the response RANGE_INTERPOLATED, ROOFTOP, or something else?",
+        "facts": [
+          "returned location_type value"
+        ]
+      },
+      {
+        "question": "Does the customer have Enhanced Support, which official docs require for map data quality assistance?",
+        "facts": [
+          "whether customer has Enhanced Support"
+        ]
+      },
+      {
+        "question": "Has anyone already opened a Technical support case or used Send feedback on Google Maps?",
+        "facts": [
+          "whether a Technical support case was already opened",
+          "whether Send feedback on Google Maps was already used"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "00d37c6ec56c6707435056c565ed708b325ac99053454a1fc3c650c7793417b2",
+    "prediction_row_sha256": "954386622650c50eab927fd3618dd4866582bcc5a8dbeed46eb5c2a36d38eb9f"
+  },
+  {
+    "record_id": "GT-LBS-RG-233",
+    "bucket": "ownership",
+    "query": "Our legal team wants to store full Google reverse-geocode payloads in our CRM and plot those addresses on a non-Google internal map. Please prepare a handoff to a human policy or contract owner before we proceed. What should they review?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Would the stored payload include only place IDs, or full address content?",
+        "facts": [
+          "stored payload is only place IDs versus full address content"
+        ]
+      },
+      {
+        "question": "Would the results be shown on a Google Map, on a non-Google map, or with no map?",
+        "facts": [
+          "Google Map versus non-Google map versus no-map display"
+        ]
+      },
+      {
+        "question": "Has legal already asked about custom licensing from Google Sales?",
+        "facts": [
+          "whether legal already asked Google Sales about custom licensing"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "67adf497387823f2041ccc2790f590c81082507bae66479c0305132c72c29a6f",
+    "prediction_row_sha256": "5d44ebfbb3a219ecab3e1aa2bf22d61faac2a6fffb519bddb2638529e4f76af3"
+  },
+  {
+    "record_id": "GT-LBS-RG-234",
+    "bucket": "capabilitycompare",
+    "query": "Which reverse geocoders document a way to look up many coordinates in a single batch request?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "How many coordinates would you need to send in one request?",
+        "facts": [
+          "coordinates needed per request"
+        ]
+      },
+      {
+        "question": "Are you asking about a documented batch endpoint, or only about looping over a single-coordinate API?",
+        "facts": [
+          "documented batch endpoint versus looping single-coordinate API"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "d2008081cbd1e51ba161ade7e9086138e1810a33b44f6dfd7f3ad1f832a54822",
+    "prediction_row_sha256": "3d0d15daef807420ec45c326d55b88616cce111c02f6ebe1168737aca83d150f"
+  },
+  {
+    "record_id": "GT-LBS-RG-235",
+    "bucket": "docs",
+    "query": "How do I reverse geocode coordinates with Mapbox and restrict the result to address features?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "a899e8b121d1f00cb72e5c054c39164078bebdea5feb787b0e60ef534bf6060b"
+  },
+  {
+    "record_id": "GT-LBS-RG-236",
+    "bucket": "interpretation",
+    "query": "Mapbox reverse geocoding returns a region and country but not the street address we expected. How can we ask for address features?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "8b9b9415baca292a75ae4518bef3bb421a637672059cf2d67f33f0355ecd9d82"
+  }
+]

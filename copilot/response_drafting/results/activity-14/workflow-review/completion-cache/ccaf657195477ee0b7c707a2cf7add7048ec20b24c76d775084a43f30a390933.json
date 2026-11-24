@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"discovery_qualification\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"e-commerce returns operator\",\"evidence\":\"Our Lucknow e-commerce returns operator needs about 4,500,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?\"},\"region\":{\"value\":\"India\",\"evidence\":\"Our Lucknow e-commerce returns operator needs about 4,500,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?\"},\"monthly_volume\":{\"value\":\"4,500,000 reverse-geocoding lookups a month\",\"evidence\":\"Our Lucknow e-commerce returns operator needs about 4,500,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"discovery_qualification\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"e-commerce returns operator\",\"evidence\":\"Our Lucknow e-commerce returns operator needs about 4,500,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?\"},\"region\":{\"value\":\"India\",\"evidence\":\"Our Lucknow e-commerce returns operator needs about 4,500,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?\"},\"monthly_volume\":{\"value\":\"4,500,000 reverse-geocoding lookups a month\",\"evidence\":\"Our Lucknow e-commerce returns operator needs about 4,500,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":null,\"evidence\":null},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1432,
+    "completion_tokens": 296,
+    "total_tokens": 1728
+  },
+  "latency_ms": 6695,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

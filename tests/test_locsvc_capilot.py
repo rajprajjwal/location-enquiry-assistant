@@ -1,6 +1,6 @@
 import unittest
 
-from locsvc_copilot.comparison_engine import (
+from copilot.comparison_engine import (
     PricePlan,
     PriceTier,
     compare_capabilities,
@@ -10,8 +10,8 @@ from locsvc_copilot.comparison_engine import (
     deterministic_cost_estimate,
     normalize_billing_unit,
 )
-from locsvc_copilot.conversation_state import ConversationState
-from locsvc_copilot.tool_registry import (
+from copilot.conversation_state import ConversationState
+from copilot.registered_tools.tool_registry import (
     ComparisonTool,
     DocumentSearchTool,
     SandboxRecordUpdateTool,

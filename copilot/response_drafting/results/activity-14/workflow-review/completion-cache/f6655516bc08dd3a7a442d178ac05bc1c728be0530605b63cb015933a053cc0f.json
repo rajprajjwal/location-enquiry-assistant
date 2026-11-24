@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_request\",\"reason\":\"The enquiry indicates that the Place Autocomplete service is returning ZERO_RESULTS for short inputs like 'Ko' with strictbounds around Kochi. This suggests that the query might not be generating the expected predictions. To diagnose this, we need to inspect the provider (Google Maps Platform) and the request body to ensure the query is correctly formatted and the parameters are appropriately set to retrieve predictions.\"}",
+  "raw": "{\"decision\":\"prediction_request\",\"reason\":\"The enquiry indicates that the Place Autocomplete service is returning ZERO_RESULTS for short inputs like 'Ko' with strictbounds around Kochi. This suggests that the query might not be generating the expected predictions. To diagnose this, we need to inspect the provider (Google Maps Platform) and the request body to ensure the query is correctly formatted and the parameters are appropriately set to retrieve predictions.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1596,
+    "completion_tokens": 87,
+    "total_tokens": 1683
+  },
+  "latency_ms": 2211,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

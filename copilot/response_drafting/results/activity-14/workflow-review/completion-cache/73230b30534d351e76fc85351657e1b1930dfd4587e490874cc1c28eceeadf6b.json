@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":30000,\"evidence\":\"30,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer's query requires determining the number of API calls and monthly cost for the Ola Maps Distance Matrix API. The missing material facts are whether live-traffic ETAs are required and the required travel mode, which are essential for calculating the correct pricing and ensuring the API meets the customer's needs.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":30000,\"evidence\":\"30,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer's query requires determining the number of API calls and monthly cost for the Ola Maps Distance Matrix API. The missing material facts are whether live-traffic ETAs are required and the required travel mode, which are essential for calculating the correct pricing and ensuring the API meets the customer's needs.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1762,
+    "completion_tokens": 126,
+    "total_tokens": 1888
+  },
+  "latency_ms": 3047,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

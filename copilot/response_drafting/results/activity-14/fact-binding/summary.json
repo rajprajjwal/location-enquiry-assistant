@@ -1,0 +1,222 @@
+{
+  "scope": "36 working-eval qualification cases, 28 groups; no frozen or holdout cases.",
+  "original_gt_workbook_unchanged": true,
+  "original_questions_unchanged": true,
+  "reference_status": "Separate assistant-reviewed development reference, locked before live comparison. Not independent human acceptance.",
+  "scores": {
+    "original-reference": {
+      "integrated": {
+        "predicted": 57,
+        "gold": 65,
+        "matches": 54,
+        "facts": 72,
+        "gold_facts": 84,
+        "questions_on_empty_gold": 1,
+        "f1": 0.8852459016393442,
+        "precision": 0.9473684210526315,
+        "recall": 0.8307692307692308,
+        "fact_recall": 0.8571428571428571
+      },
+      "baseline": {
+        "predicted": 57,
+        "gold": 65,
+        "matches": 54,
+        "facts": 73,
+        "gold_facts": 84,
+        "questions_on_empty_gold": 1,
+        "f1": 0.8852459016393442,
+        "precision": 0.9473684210526315,
+        "recall": 0.8307692307692308,
+        "fact_recall": 0.8690476190476191
+      }
+    },
+    "reviewed-reference": {
+      "integrated": {
+        "predicted": 57,
+        "gold": 55,
+        "matches": 55,
+        "facts": 73,
+        "gold_facts": 73,
+        "questions_on_empty_gold": 1,
+        "f1": 0.9821428571428571,
+        "precision": 0.9649122807017544,
+        "recall": 1.0,
+        "fact_recall": 1.0
+      },
+      "baseline": {
+        "predicted": 57,
+        "gold": 55,
+        "matches": 53,
+        "facts": 72,
+        "gold_facts": 73,
+        "questions_on_empty_gold": 1,
+        "f1": 0.9464285714285714,
+        "precision": 0.9298245614035088,
+        "recall": 0.9636363636363636,
+        "fact_recall": 0.9863013698630136
+      }
+    }
+  },
+  "targeted_fact_checks": {
+    "baseline": {
+      "checks": 13,
+      "correct": 8
+    },
+    "integrated": {
+      "checks": 13,
+      "correct": 13
+    }
+  },
+  "targeted_repeated_supplied_facts": {
+    "baseline": [
+      {
+        "record_id": "GT-LBS-DM-034",
+        "fields": [
+          "usage_geography"
+        ],
+        "question": "Could you confirm billing account country and where most requests will be used?"
+      },
+      {
+        "record_id": "GT-LBS-RG-230",
+        "fields": [
+          "address_elements_required",
+          "rooftop_hard_filter"
+        ],
+        "question": "Could you confirm whether rooftop precision must be a hard filter and whether a structured breakdown of address elements is required?"
+      }
+    ],
+    "integrated": []
+  },
+  "extra_questions": [
+    {
+      "record_id": "GT-LBS-DM-228",
+      "question": "Where will the application operate?"
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "question": "Which map provider are you using?"
+    }
+  ],
+  "validation": {
+    "baseline": {
+      "valid": 32,
+      "no_qualification_audit": 4,
+      "locally_repaired": 4
+    },
+    "integrated": {
+      "valid": 22,
+      "no_qualification_audit": 4,
+      "locally_repaired": 14
+    }
+  },
+  "behavior": {
+    "cases": 36,
+    "preserved": {
+      "route": 36,
+      "next_action": 36,
+      "owner": 36,
+      "approvals": 36,
+      "proposed_actions": 36,
+      "active_questions": 36,
+      "pending_reply": 36,
+      "asked": 36,
+      "answered": 36,
+      "awaiting": 36,
+      "clarification_messages": 36
+    },
+    "initial_changes": [],
+    "reopened_cases": 4,
+    "reopened_unchanged": 3,
+    "reopened_changes": [
+      {
+        "record_id": "GT-LBS-RG-227",
+        "changes": {
+          "route": {
+            "before": "clarification_needed",
+            "after": "escalated"
+          },
+          "next_action": {
+            "before": {
+              "action_type": "ask_clarifying_questions",
+              "description": "Which map provider are you using?",
+              "requires_human_approval": false,
+              "approval_status": "not_applicable",
+              "executed": false
+            },
+            "after": {
+              "action_type": "refuse",
+              "description": "The model chose a passage ID outside the returned list of 6.",
+              "requires_human_approval": false,
+              "approval_status": "not_applicable",
+              "executed": false
+            }
+          },
+          "owner": {
+            "before": {
+              "owner": "Account team (Sales)",
+              "team": "Sales",
+              "should_escalate": false,
+              "severity": "SEV4",
+              "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+            },
+            "after": {
+              "owner": "Account team (Sales)",
+              "team": "Sales",
+              "should_escalate": false,
+              "severity": "SEV4",
+              "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement. The model chose a passage ID outside the returned list of 6."
+            }
+          },
+          "active_questions": {
+            "before": {
+              "needed": true,
+              "questions": [
+                {
+                  "field": "provider",
+                  "text": "Which map provider are you using?"
+                }
+              ]
+            },
+            "after": {
+              "needed": false,
+              "questions": []
+            }
+          },
+          "pending_reply": {
+            "before": {
+              "field": "provider",
+              "task": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document? Provider: Mapbox."
+            },
+            "after": null
+          },
+          "clarification_messages": {
+            "before": [
+              "Which map provider are you using?",
+              "Which map provider are you using?"
+            ],
+            "after": [
+              "Which map provider are you using?"
+            ]
+          }
+        }
+      }
+    ],
+    "endpoint_calls": 0,
+    "captured_qualification_replays": 72,
+    "endpoint_errors": [],
+    "excluded_attempts": []
+  },
+  "live_calls": 147,
+  "live_endpoint_errors": [],
+  "tests": {
+    "passed": 521,
+    "subtests_passed": 4,
+    "result": "521 passed, 4 subtests passed in 7.24s",
+    "command": "env PYTHONPATH=. .venv/bin/python -B -m pytest -q -p no:cacheprovider tests/enquiry_workflow tests/enquiry_interpretation tests/model_gateway tests/test_comparison_pricing.py"
+  },
+  "pending": [
+    "Two initial questions remain outside the reviewed reference: DM-228 region and RG-227 provider.",
+    "RG-227 provider reply clears the loop, but downstream drafting escalates after selecting four valid passage IDs where only three are permitted. Candidate evidence also lacks one requested provider. No draft-success claim.",
+    "Frozen acceptance has not been rerun."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The 403 Forbidden error indicates the developer's key may have hit its daily/hourly limit or the IP/domain might not be white-listed. To diagnose, we need the actual redacted request to inspect for any changes or anomalies.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The 403 Forbidden error indicates the developer's key may have hit its daily/hourly limit or the IP/domain might not be white-listed. To diagnose, we need the actual redacted request to inspect for any changes or anomalies.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2073,
+    "completion_tokens": 62,
+    "total_tokens": 2135
+  },
+  "latency_ms": 1688,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

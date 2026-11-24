@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"rejected_request\", \"reason\":\"The customer reports a 400 error with the reason 'Invalid/missing origin' when sending origin=77.5946,12.9716. This indicates an HTTP input-validation failure, which requires the request and response-body error to diagnose.\"}",
+  "raw": "{\"decision\":\"rejected_request\", \"reason\":\"The customer reports a 400 error with the reason 'Invalid/missing origin' when sending origin=77.5946,12.9716. This indicates an HTTP input-validation failure, which requires the request and response-body error to diagnose.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2486,
+    "completion_tokens": 68,
+    "total_tokens": 2554
+  },
+  "latency_ms": 1892,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

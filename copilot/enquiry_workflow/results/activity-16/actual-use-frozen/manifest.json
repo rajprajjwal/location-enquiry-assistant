@@ -1,0 +1,18 @@
+{
+  "configuration": {
+    "actual_use_detection": true,
+    "provider_discovery_fallback": false
+  },
+  "workbook_sha256": "b0ad6e415cf093ecaefff73b6a0fa0811f8f1d783ba7414a770f44a1c692f4fb",
+  "cases": 80,
+  "holdout_cases": 0,
+  "scope": "Production routing with the same saved live interpretations. Model handoff classifications run live.",
+  "source_sha256": {
+    "copilot/enquiry_workflow/escalation.py": "2546b7d7c165d42cb0712f31b93a2c8cef9ef34417aa6ea9b3f050db80f1e5a0",
+    "copilot/enquiry_workflow/ownership_status.py": "f284ff05453dbd003311f0e184f612de92ec45002a27fd3281af77de4be6c7b4",
+    "copilot/config/escalation_policy.yaml": "74bf3a6641aed2797b626f9894cebe67486256c4cd3470a5ba25fac4a0787db2",
+    "copilot/config/escalation_rules.yaml": "445da8c6a0aa9cba27e4b8a3a9de3ee0dd29c80aa071de982c21971806fffd77",
+    "copilot/safety/escalation_policy.py": "b2dac0006eb671a1e7ac473ebcf0c0c063757037b3eaf5a7d0b817d9a59d582e"
+  },
+  "interpretations_sha256": "9fb4ab894cc670122731beb8c7333e0e77730273616d3e38d12d5ec18950d87f"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":30000,\"evidence\":\"30,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer is asking about the number of API calls and monthly cost for the Ola Maps Distance Matrix API. The required fields 'traffic_required' and 'travel_mode' are missing, which are essential to determine the exact pricing and API call count as they affect the features and usage limits.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":30000,\"evidence\":\"30,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer is asking about the number of API calls and monthly cost for the Ola Maps Distance Matrix API. The required fields 'traffic_required' and 'travel_mode' are missing, which are essential to determine the exact pricing and API call count as they affect the features and usage limits.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2196,
+    "completion_tokens": 124,
+    "total_tokens": 2320
+  },
+  "latency_ms": 3062,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

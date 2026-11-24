@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The documentation indicates that the `travel_advisory` is included in the response only when `traffic_metadata` is set to true and `overview` is set to 'full'. The enquiry does not mention the value of the `overview` parameter, so it is necessary to check the actual response to determine if the `travel_advisory` is present or if there is a rendering issue.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The documentation indicates that the `travel_advisory` is included in the response only when `traffic_metadata` is set to true and `overview` is set to 'full'. The enquiry does not mention the value of the `overview` parameter, so it is necessary to check the actual response to determine if the `travel_advisory` is present or if there is a rendering issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2506,
+    "completion_tokens": 89,
+    "total_tokens": 2595
+  },
+  "latency_ms": 2353,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

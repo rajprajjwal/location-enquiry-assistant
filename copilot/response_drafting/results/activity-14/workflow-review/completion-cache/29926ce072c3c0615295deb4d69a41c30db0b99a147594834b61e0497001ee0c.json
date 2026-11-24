@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer is asking about whether Directions will stop when their Ola prepaid credit balance hits zero on 5 September 2026. The retrieved evidence indicates that Ola Maps prepaid credits are separate from the Krutrim cloud balance and that there is a grace period until 8 September 2026 during which a negative credit balance is allowed without service interruption. The customer's question is already addressed by the documentation, and no further action is needed.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer is asking about whether Directions will stop when their Ola prepaid credit balance hits zero on 5 September 2026. The retrieved evidence indicates that Ola Maps prepaid credits are separate from the Krutrim cloud balance and that there is a grace period until 8 September 2026 during which a negative credit balance is allowed without service interruption. The customer's question is already addressed by the documentation, and no further action is needed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1394,
+    "completion_tokens": 102,
+    "total_tokens": 1496
+  },
+  "latency_ms": 2504,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"agri-input distributor\",\"evidence\":\"Our Indore agri-input distributor needs about 7,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"},\"region\":{\"value\":\"India\",\"evidence\":\"Our Indore agri-input distributor needs about 7,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"},\"monthly_volume\":{\"value\":\"7,000,000 reverse-geocoding lookups a month\",\"evidence\":\"Our Indore agri-input distributor needs about 7,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"}}}",
+  "raw": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"agri-input distributor\",\"evidence\":\"Our Indore agri-input distributor needs about 7,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"},\"region\":{\"value\":\"India\",\"evidence\":\"Our Indore agri-input distributor needs about 7,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"},\"monthly_volume\":{\"value\":\"7,000,000 reverse-geocoding lookups a month\",\"evidence\":\"Our Indore agri-input distributor needs about 7,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1426,
+    "completion_tokens": 217,
+    "total_tokens": 1643
+  },
+  "latency_ms": 5523,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

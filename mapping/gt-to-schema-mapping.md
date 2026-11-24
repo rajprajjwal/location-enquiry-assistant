@@ -49,6 +49,6 @@ Approved by Shahid 2026-11-16 14:03 IST; full text and examples in `docs/gt-v2.6
 - `mapping/gold_outputs_frozen.jsonl`
 - `mapping/mapping_issues.json`
 - `vocab/vocab-diff-gt-v2_5.md`
-- `validator/validator-report.md`
+- `copilot/validation/specification_checks/validator-report.md`
 - Historical vocabulary diffs kept in the repo: `vocab/vocab-diff-gt-v2_4.md`, `vocab/vocab-diff-gt-v2_4.json`, `vocab/vocab-diff-gt-v2_3.md`, `vocab/vocab-diff-gt-v2_3.json`.
 

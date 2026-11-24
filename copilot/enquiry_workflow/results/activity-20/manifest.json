@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-11-23T16:01:27.446802+00:00",
+  "sources": {
+    "requirements.txt": "1b2f2b60977503dba1849998cd843832971e8522c49e6426b0c622299c31ba42",
+    "copilot/config/reliability.yaml": "522f589122f2c5fb94a5f65cb7234847f86e52332f7d99680b748321bb43daa2",
+    "copilot/model_gateway/client.py": "e9017e084ad3083e10af1dc785cb8c7a70d95315000cbe0e47596b975cf698fb",
+    "copilot/model_gateway/reliability.py": "fbf7e3ae321b17673fb125c9780a37d8c2c5322cdc1622ad0ed1701b51c233b5",
+    "copilot/model_gateway/token_counting.py": "927f95658e33bece732468bcb3ff998d58246ec92634219b3c55cb313aadc8f9",
+    "copilot/model_gateway/prepare_tokenizer.py": "3db1d757931d6420b45050a43806c99b057b03f632ee9cf5bfccb4334556a86f",
+    "copilot/enquiry_interpretation/interpret.py": "e34e2a69ac3fc09058572aaf874cb9a6644ffb98ad09e2a4a883b0cc0c739f89",
+    "copilot/registered_tools/tool_registry.py": "c715a8d706ae3ecca02a25d961d1a2aad006902aabec4781f32161ab4da3c2c8",
+    "copilot/rag/document_indexing/embed.py": "c5ef85dc01755fd8d74c428eb4e953895ef01043953b15687aa385a0f87d0da4",
+    "copilot/enquiry_workflow/workflow.py": "412fff9e53e5770d96a13f5fa12907dc2181e92c7da1e73581fbaf1e02285ebc",
+    "copilot/enquiry_workflow/cases.py": "1b6677ec2b0f68f1b5936cb5f5e4a22f07724ce2f077f5695cf5dfb91f0747d7",
+    "copilot/enquiry_workflow/verification/reliability_faults.py": "05e0d09f69913b3fc81d0b4cf1f80ca5a22a126223700dee6287b5ec4f882fdf",
+    "tests/model_gateway/test_client.py": "e582860ea34a6f608d27db03554c8d1f65fe0544261a76788c23bf1161d94c09",
+    "tests/model_gateway/test_endpoint_contract.py": "8efc519425dc15dd21fe282c30c44bcc9e4577107391018532f5568d17fa5cb3",
+    "tests/model_gateway/test_reliability.py": "ca8fd29854d9bdada1e356e9fd3846d662e14e48419df2a97c9b986ad61a1078"
+  },
+  "ground_truth_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "ground_truth_unchanged": true,
+  "frozen_or_holdout_cases_run": 0,
+  "synthetic_faults": 50,
+  "endpoint_calibration_calls": 1,
+  "artifacts": {
+    "summary.json": "b531cb5717508b724550ecc3970e0de4d4d8803b07ca322498dfffee8cf26a92",
+    "test-results.json": "09092735f42f9df33f49f8dc251c3641f9bae2bceab5c46bac6ca6d2fca0b564",
+    "tests.txt": "5c4f2a360c2eb1e85b9a1b73877f78c6277c0f3338a1431ad0b018a6c191257a",
+    "faults.jsonl": "f1a90ce5a144a273d20d91259c71358683575112f8c909979d589343be987b9a",
+    "token-probe.json": "3b16fa976c49cfeb9dc8989c59918184e40d5d214fa23c107e57e632983f5de6"
+  }
+}

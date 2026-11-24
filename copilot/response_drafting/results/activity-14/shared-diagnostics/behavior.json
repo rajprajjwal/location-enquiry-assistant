@@ -1,0 +1,21 @@
+{
+  "cases": 16,
+  "preserved": {
+    "route": 16,
+    "next_action": 16,
+    "owner": 16,
+    "approvals": 16,
+    "proposed_actions": 16,
+    "active_questions": 16,
+    "pending_reply": 16,
+    "asked": 16,
+    "answered": 16,
+    "awaiting": 16,
+    "clarification_messages": 16
+  },
+  "excluded_attempts": [],
+  "endpoint_errors": [],
+  "endpoint_calls": 81,
+  "cache_hits": 51,
+  "changes": []
+}

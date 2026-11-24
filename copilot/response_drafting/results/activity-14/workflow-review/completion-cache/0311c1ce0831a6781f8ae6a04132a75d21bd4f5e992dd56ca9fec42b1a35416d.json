@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"matrix_input\", \"reason\":\"The customer is encountering an issue with a 20x10 matrix using TRAFFIC_AWARE_OPTIMAL, which is known to have a limit of 100 elements. The matrix has 200 elements, which exceeds the limit for TRAFFIC_AWARE_OPTIMAL. This suggests that some matrix elements may fail to resolve inputs, requiring inspection of a failing pair exactly as submitted.\"}",
+  "raw": "{\"decision\":\"matrix_input\", \"reason\":\"The customer is encountering an issue with a 20x10 matrix using TRAFFIC_AWARE_OPTIMAL, which is known to have a limit of 100 elements. The matrix has 200 elements, which exceeds the limit for TRAFFIC_AWARE_OPTIMAL. This suggests that some matrix elements may fail to resolve inputs, requiring inspection of a failing pair exactly as submitted.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1550,
+    "completion_tokens": 93,
+    "total_tokens": 1643
+  },
+  "latency_ms": 2351,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

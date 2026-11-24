@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"travel_mode\"],\"decision_impact\":\"Determine vehicle-specific routing support.\"},{\"fields\":[\"traffic_required\"],\"decision_impact\":\"Select traffic-aware versus static routing capability.\"},{\"fields\":[\"max_stops\"],\"decision_impact\":\"Check route shape against waypoint limits.\"},{\"fields\":[\"monthly_volume\"],\"decision_impact\":\"Estimate the recurring workload and cost.\"},{\"fields\":[\"existing_project\",\"ola_contract\"],\"decision_impact\":\"Establish product eligibility and applicable commercial terms.\"}],\"reason\":\"The customer is seeking a directions/routing API for route previews between cities, but the specific requirements such as travel mode, traffic requirements, maximum stops, monthly volume, and existing project or contract status are not provided, which are essential for making informed decisions about the API selection and cost estimation.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"travel_mode\"],\"decision_impact\":\"Determine vehicle-specific routing support.\"},{\"fields\":[\"traffic_required\"],\"decision_impact\":\"Select traffic-aware versus static routing capability.\"},{\"fields\":[\"max_stops\"],\"decision_impact\":\"Check route shape against waypoint limits.\"},{\"fields\":[\"monthly_volume\"],\"decision_impact\":\"Estimate the recurring workload and cost.\"},{\"fields\":[\"existing_project\",\"ola_contract\"],\"decision_impact\":\"Establish product eligibility and applicable commercial terms.\"}],\"reason\":\"The customer is seeking a directions/routing API for route previews between cities, but the specific requirements such as travel mode, traffic requirements, maximum stops, monthly volume, and existing project or contract status are not provided, which are essential for making informed decisions about the API selection and cost estimation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2063,
+    "completion_tokens": 164,
+    "total_tokens": 2227
+  },
+  "latency_ms": 3928,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

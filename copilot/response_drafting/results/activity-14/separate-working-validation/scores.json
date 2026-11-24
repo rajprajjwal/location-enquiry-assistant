@@ -1,0 +1,26 @@
+{
+  "integrated": {
+    "predicted": 0,
+    "gold": 2,
+    "matches": 0,
+    "facts": 0,
+    "gold_facts": 2,
+    "questions_on_empty_gold": 0,
+    "f1": 0.0,
+    "precision": 0,
+    "recall": 0.0,
+    "fact_recall": 0.0
+  },
+  "baseline": {
+    "predicted": 0,
+    "gold": 2,
+    "matches": 0,
+    "facts": 0,
+    "gold_facts": 2,
+    "questions_on_empty_gold": 0,
+    "f1": 0.0,
+    "precision": 0,
+    "recall": 0.0,
+    "fact_recall": 0.0
+  }
+}

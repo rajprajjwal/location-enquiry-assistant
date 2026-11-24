@@ -1,0 +1,3 @@
+﻿pilot_id,query,history,intent_A,intent_P,api_A,api_P,team_A,team_P,final_intent,final_api,final_team,rationale
+P08,"For a grocery dispatcher, what's the practical difference between Ola Distance Matrix and Distance Matrix Basic?",[],capability_match,sales_qualification,distance_matrix,distance_matrix,Sales,Sales,,,,
+P10,Not sure. Answer with the details from my first message and note where that choice would change things.,"[{""role"": ""user"", ""text"": ""Quote Google Maps Platform routing for 500,000 requests a month in India. Routes have 4 stops, no traffic needed.""}, {""role"": ""assistant"", ""text"": ""Before I answer, one question: Is this a new or existing Google Cloud project?""}]",pricing_comparison,pricing_quote,autocomplete,directions,Sales,Sales,,,,

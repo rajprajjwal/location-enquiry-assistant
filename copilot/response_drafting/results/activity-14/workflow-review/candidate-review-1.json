@@ -1,0 +1,285 @@
+[
+  {
+    "record_id": "GT-LBS-AC-213",
+    "questions_sha256": "9a5d368c1d3cf9df5116d8904b95986852dacbe9353984f2a49ed2e6c0db498f",
+    "gold_sha256": "3bcc0049a42d465b6c0afe8efe06d1f84e84802ecc75e89d2cc151e965cbe051",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "Questions explicitly ask the corresponding required customer facts; semantic equivalence does not require exact wording."
+  },
+  {
+    "record_id": "GT-LBS-AC-227",
+    "questions_sha256": "e8056eb267dbd06f0a2bb821db0423cb0405f177cb558c190121df155c7dd48b",
+    "gold_sha256": "82ea3451ac42f745afd7c592aade5a4dd54da0957c8d1d0204aea1eb9282bfb9",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "Questions explicitly ask the corresponding required customer facts; semantic equivalence does not require exact wording."
+  },
+  {
+    "record_id": "GT-LBS-DIR-013",
+    "questions_sha256": "0e263f05fe474e912f63da527142e2ac01b84ebdb4d5a4e8b0ed2e49c3b510b5",
+    "gold_sha256": "5e67aef2f304db84c8e99861822ae9feff3e642ede9d1b67f0302a90d8304e73",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        3,
+        1
+      ]
+    ],
+    "reason": "Questions explicitly ask the corresponding required customer facts; semantic equivalence does not require exact wording."
+  },
+  {
+    "record_id": "GT-LBS-DIR-014",
+    "questions_sha256": "0e263f05fe474e912f63da527142e2ac01b84ebdb4d5a4e8b0ed2e49c3b510b5",
+    "gold_sha256": "5e67aef2f304db84c8e99861822ae9feff3e642ede9d1b67f0302a90d8304e73",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        3,
+        1
+      ]
+    ],
+    "reason": "Questions explicitly ask the corresponding required customer facts; semantic equivalence does not require exact wording."
+  },
+  {
+    "record_id": "GT-LBS-DIR-047",
+    "questions_sha256": "82eea74c312a08d77c6631fb5f2fff222d073ed98e02fe114b2691fb642e6909",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+    "whole": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        5,
+        5,
+        1
+      ],
+      [
+        5,
+        5,
+        2
+      ]
+    ],
+    "reason": "Questions explicitly ask the corresponding required customer facts; semantic equivalence does not require exact wording."
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "questions_sha256": "a0eb8dede301abbad86c9376b1d164647f198812a107ea47e70922d4ef5c5c52",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+    "whole": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        4,
+        5,
+        2
+      ]
+    ],
+    "reason": "Semantic customer-fact match. Workload, traffic, mode, route size and specifically named commercial eligibility remain separate decisions. The bus scenario omits the gold vehicle-mode question; it is not credited from business context alone."
+  },
+  {
+    "record_id": "GT-LBS-DIR-049",
+    "questions_sha256": "0e6f104bd12cc35c9fe9b5323eff9e82c865f85ecf21678f91b2ec2d0db81505",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        4,
+        4,
+        1
+      ],
+      [
+        5,
+        5,
+        1
+      ],
+      [
+        5,
+        5,
+        2
+      ]
+    ],
+    "reason": "Questions explicitly ask the corresponding required customer facts; semantic equivalence does not require exact wording."
+  }
+]

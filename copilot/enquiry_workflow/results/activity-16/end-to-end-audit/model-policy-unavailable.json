@@ -1,0 +1,49 @@
+{
+  "record_id": "GT-LBS-DIR-119",
+  "reliability": {
+    "limits": {
+      "max_retries_per_step": 2,
+      "enquiry_timeout_seconds": 120.0,
+      "model_timeout_seconds": 30.0,
+      "tool_timeout_seconds": 15.0,
+      "token_budget": 32768
+    },
+    "reserved_tokens": 1770,
+    "observed_tokens": 0,
+    "model_attempts": 3,
+    "retries_by_step": {
+      "enquiry": 2
+    },
+    "events": [
+      {
+        "kind": "model_error",
+        "step": "enquiry",
+        "error_type": "RateLimitError",
+        "status_code": 429
+      },
+      {
+        "kind": "retry",
+        "step": "enquiry",
+        "retry": 1
+      },
+      {
+        "kind": "model_error",
+        "step": "enquiry",
+        "error_type": "RateLimitError",
+        "status_code": 429
+      },
+      {
+        "kind": "retry",
+        "step": "enquiry",
+        "retry": 2
+      },
+      {
+        "kind": "model_error",
+        "step": "enquiry",
+        "error_type": "RateLimitError",
+        "status_code": 429
+      }
+    ],
+    "elapsed_ms": 7049
+  }
+}

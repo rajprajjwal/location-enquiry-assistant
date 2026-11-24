@@ -1,0 +1,708 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "229e980688d07ff71837f7fe9736521c08535d4a0d3a6b3351cfad3cbfcd4a86",
+  "gold_sha256": "cb1d7e25f2e530512e348f5299b151b2592a526cae53a0c5118d0c2bcc3a309b",
+  "reviewer": "Assistant semantic review of the exact saved outputs under user delegation",
+  "cases": [
+    {
+      "record_id": "GT-LBS-DIR-079",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "The raw route response options match the approved diagnostic decision."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "The raw route response options match the approved diagnostic decision."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-124",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "The redacted failing request is explicitly requested."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "The redacted failing request is explicitly requested."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "The exact failing request and response-body error are both requested."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "The exact failing request and response-body error are both requested."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Provider and the redacted absent-prediction request body are both requested."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Provider and the redacted absent-prediction request body are both requested."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Failing coordinates and result filters are both requested."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "Failing coordinates and result filters are both requested."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "The request and isolated outcome for the reported OVER_QUERY_LIMIT are both requested."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "The request and isolated outcome for the reported OVER_QUERY_LIMIT are both requested."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "methods": {
+        "baseline": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "The failing pair and exact submitted representation are both requested."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "The failing pair and exact submitted representation are both requested."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-046",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-125",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-226",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-094",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-209",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-207",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-072",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-030",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-026",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-080",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-209",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-067",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-121",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-105",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-091",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-217",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-119",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No approved question matched."
+        },
+        "integrated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ],
+          "notes": "The grouped question requests billing account country and primary usage geography."
+        }
+      }
+    }
+  ]
+}

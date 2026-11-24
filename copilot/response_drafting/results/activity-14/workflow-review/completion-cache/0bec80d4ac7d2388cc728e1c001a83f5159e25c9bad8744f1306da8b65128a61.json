@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"debouncing\",\n      \"value\": false,\n      \"evidence\": \"The Geocoding API's autocomplete parameter is enabled by default. If you are using the API with autocomplete enabled, you will likely accumulate one API request per keystroke.\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is asking if Mapbox Geocoding bills one request per keystroke when used for type-ahead. The documentation indicates that if autocomplete is enabled and a request is made for every keystroke, it will accumulate one request per keystroke. However, the customer's question implies they may be using debouncing to reduce the number of requests, which is a missing material decision.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"debouncing\",\n      \"value\": false,\n      \"evidence\": \"The Geocoding API's autocomplete parameter is enabled by default. If you are using the API with autocomplete enabled, you will likely accumulate one API request per keystroke.\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is asking if Mapbox Geocoding bills one request per keystroke when used for type-ahead. The documentation indicates that if autocomplete is enabled and a request is made for every keystroke, it will accumulate one request per keystroke. However, the customer's question implies they may be using debouncing to reduce the number of requests, which is a missing material decision.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1908,
+    "completion_tokens": 191,
+    "total_tokens": 2099
+  },
+  "latency_ms": 4497,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

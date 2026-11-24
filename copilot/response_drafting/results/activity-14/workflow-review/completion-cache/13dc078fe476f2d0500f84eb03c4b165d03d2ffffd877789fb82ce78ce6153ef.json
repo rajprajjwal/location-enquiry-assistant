@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"docs_how_to\",\"sub_intent\":null,\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.8,\"team\":0.7},\"qualification\":{}}",
+  "raw": "{\"intent\":\"docs_how_to\",\"sub_intent\":null,\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.8,\"team\":0.7},\"qualification\":{}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1283,
+    "completion_tokens": 49,
+    "total_tokens": 1332
+  },
+  "latency_ms": 2041,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

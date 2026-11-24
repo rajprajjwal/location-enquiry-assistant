@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":true,\"evidence\":\"20,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer's pricing quote request depends on whether live-traffic ETAs are required and the travel mode, which are not yet confirmed.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":true,\"evidence\":\"20,000 times a month\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The customer's pricing quote request depends on whether live-traffic ETAs are required and the travel mode, which are not yet confirmed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1762,
+    "completion_tokens": 89,
+    "total_tokens": 1851
+  },
+  "latency_ms": 2227,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

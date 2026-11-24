@@ -1,0 +1,64 @@
+{
+  "working_cases": 317,
+  "groups": 254,
+  "gold_groups": 128,
+  "gold_facts": 164,
+  "schema_valid": 317,
+  "source_workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "question_f1_target": 0.8,
+  "question_f1_passed": false,
+  "scores": {
+    "baseline": {
+      "predicted": 128,
+      "gold": 128,
+      "matches": 48,
+      "facts": 66,
+      "gold_facts": 164,
+      "questions_on_empty_gold": 66,
+      "f1": 0.375,
+      "precision": 0.375,
+      "recall": 0.375,
+      "fact_recall": 0.4024390243902439
+    },
+    "candidate": {
+      "predicted": 139,
+      "gold": 128,
+      "matches": 62,
+      "facts": 80,
+      "gold_facts": 164,
+      "questions_on_empty_gold": 67,
+      "f1": 0.46441947565543074,
+      "precision": 0.4460431654676259,
+      "recall": 0.484375,
+      "fact_recall": 0.4878048780487805
+    },
+    "candidate-v2": {
+      "predicted": 145,
+      "gold": 128,
+      "matches": 68,
+      "facts": 87,
+      "gold_facts": 164,
+      "questions_on_empty_gold": 67,
+      "f1": 0.4981684981684982,
+      "precision": 0.4689655172413793,
+      "recall": 0.53125,
+      "fact_recall": 0.5304878048780488
+    },
+    "candidate-v3": {
+      "predicted": 112,
+      "gold": 128,
+      "matches": 67,
+      "facts": 86,
+      "gold_facts": 164,
+      "questions_on_empty_gold": 34,
+      "f1": 0.5583333333333333,
+      "precision": 0.5982142857142857,
+      "recall": 0.5234375,
+      "fact_recall": 0.524390243902439
+    }
+  },
+  "final_primary": "candidate-v3",
+  "production_integration": "../../../../enquiry_workflow/results/workflow-review/combined-status-integration/report.json"
+}

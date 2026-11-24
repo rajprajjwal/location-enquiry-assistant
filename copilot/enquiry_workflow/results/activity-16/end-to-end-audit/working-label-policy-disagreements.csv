@@ -1,0 +1,8 @@
+record_id,query,before,after,expected
+GT-LBS-RG-095,Which reverse geocoders support plus codes or a fallback for addressless rural points?,Support L1,Account team (Sales),Support L1
+GT-LBS-DM-091,Which providers' matrix APIs support travel modes beyond driving?,Support L1,Account team (Sales),Support L1
+GT-LBS-DM-090,Which matrix APIs work with addresses instead of coordinates?,Support L1,Account team (Sales),Support L1
+GT-LBS-RG-092,Which reverse geocoders give a precision indicator?,Support L1,Account team (Sales),Support L1
+GT-LBS-RG-091,Which reverse geocoders handle Indian boundaries per Indian law?,Support L1,Account team (Sales),Support L1
+GT-LBS-AC-093,Which autocomplete APIs handle Indian-language input?,Support L1,Account team (Sales),Support L1
+GT-LBS-RG-097,Which reverse geocoders accept language preferences?,Support L1,Account team (Sales),Support L1

@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"batch reverse-geocode 2 million historical GPS points\",\"evidence\":\"We want to batch reverse-geocode 2 million historical GPS points with nominatim.openstreetmap.org. OK?\"},\"current_provider\":{\"value\":\"OSM Nominatim\",\"evidence\":\"with nominatim.openstreetmap.org\"}}}",
+  "raw": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"reverse_geocode\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"batch reverse-geocode 2 million historical GPS points\",\"evidence\":\"We want to batch reverse-geocode 2 million historical GPS points with nominatim.openstreetmap.org. OK?\"},\"current_provider\":{\"value\":\"OSM Nominatim\",\"evidence\":\"with nominatim.openstreetmap.org\"}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1331,
+    "completion_tokens": 118,
+    "total_tokens": 1449
+  },
+  "latency_ms": 2796,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

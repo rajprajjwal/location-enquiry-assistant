@@ -1,0 +1,47 @@
+{
+  "cases": 16,
+  "route_counts": {
+    "final": 15,
+    "escalated": 1
+  },
+  "approval_cases": 1,
+  "reply_cases": 0,
+  "endpoint_calls_in_session": 68,
+  "cached_calls_in_session": 70,
+  "model_errors_in_session": [
+    429,
+    429
+  ],
+  "preserved": {
+    "previous_app": {
+      "route": 16,
+      "next_action": 16,
+      "owner": 16,
+      "approvals": 16,
+      "proposed_actions": 16,
+      "active_questions": 16,
+      "pending_reply": 16,
+      "asked": 16,
+      "answered": 16,
+      "awaiting": 16,
+      "clarification_messages": 16
+    },
+    "staff_selector": {
+      "route": 16,
+      "next_action": 16,
+      "owner": 16,
+      "approvals": 16,
+      "proposed_actions": 16,
+      "active_questions": 16,
+      "pending_reply": 16,
+      "asked": 16,
+      "answered": 16,
+      "awaiting": 16,
+      "clarification_messages": 16
+    }
+  },
+  "replies_preserved": {
+    "previous_app": 0,
+    "staff_selector": 0
+  }
+}

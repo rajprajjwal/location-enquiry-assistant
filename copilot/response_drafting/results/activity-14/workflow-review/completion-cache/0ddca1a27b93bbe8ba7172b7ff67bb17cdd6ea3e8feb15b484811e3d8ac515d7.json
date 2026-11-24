@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The enquiry indicates that the Directions API is returning ZERO_RESULTS when using waypoints, but works without them. This suggests an issue with how the waypoints are being processed or displayed, not with the API's ability to find a route. The response needs to be examined to determine if the route details are being correctly rendered or if there's an issue with the API's response formatting.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The enquiry indicates that the Directions API is returning ZERO_RESULTS when using waypoints, but works without them. This suggests an issue with how the waypoints are being processed or displayed, not with the API's ability to find a route. The response needs to be examined to determine if the route details are being correctly rendered or if there's an issue with the API's response formatting.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1927,
+    "completion_tokens": 84,
+    "total_tokens": 2011
+  },
+  "latency_ms": 2244,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

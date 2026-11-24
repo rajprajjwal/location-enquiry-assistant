@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\", \"reason\":\"The customer's issue is about the Ola Distance Matrix API rejecting an 8x8 request, which is a configuration or usage issue. The diagnostic plan does not require further action as the problem is not related to authentication, integration, or input validation. The customer needs to check their API usage limits and ensure they are within the allowed quota.\"}",
+  "raw": "{\"decision\":\"none\", \"reason\":\"The customer's issue is about the Ola Distance Matrix API rejecting an 8x8 request, which is a configuration or usage issue. The diagnostic plan does not require further action as the problem is not related to authentication, integration, or input validation. The customer needs to check their API usage limits and ensure they are within the allowed quota.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1237,
+    "completion_tokens": 79,
+    "total_tokens": 1316
+  },
+  "latency_ms": 1985,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

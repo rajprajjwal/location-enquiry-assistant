@@ -6,26 +6,36 @@ Sales and support copilot for location API enquiries, built for the institute's 
 
 | Path | Purpose |
 |---|---|
-| `copilot/` | Shared Python implementation, including interpretation and the model endpoint client. |
+| `copilot/enquiry_interpretation/` | Interpret enquiries and extract qualification details. |
+| `copilot/model_gateway/` | Hosted model client and endpoint contract checks. |
+| `copilot/enquiry_workflow/` | LangGraph routing, case turns, and workflow adapters. |
+| `copilot/registered_tools/` | Tool execution and Pydantic contracts. |
+| `copilot/conversation_state/` | Case-scoped conversation state model. |
+| `copilot/rag/` | Document ingestion, indexing, hybrid retrieval, reranking, and the local corpus. |
+| `copilot/response_drafting/`, `copilot/pricing_tools/` | Structure responses and calculate sourced pricing. |
+| `copilot/case_storage/` | SQLite persistence for cases, approvals, sandbox records, and traces. |
+| `copilot/streamlit_ui/` | Staff interface for enquiries, approvals, and traces. |
+| `copilot/enquiry_workflow/verification/` | Synthetic UI and frozen workflow verification scripts. |
+| `copilot/enquiry_workflow/results/` | Saved workflow verification results. |
+| `copilot/validation/specification_checks/` | Standalone C1 checker, guide, and saved report. |
 | `contracts/`, `schemas/`, `vocab/` | Input/output contracts and controlled labels. |
 | `data/ground-truth.xlsx` | Updated project GT workbook. |
 | `data/` | GT review records and Activity 3–5 supporting artifacts. |
-| `interpretation/` | Activity 2's 80-record inputs, gold, predictions, per-record results, scores and manifest. |
+| `copilot/enquiry_interpretation/results/` | Activity 2's 80-record inputs, gold, predictions, per-record results, scores and manifest. |
 | `eval/frozen-interpretation/` | Versioned frozen Activity 2 snapshot. |
-| `eval/activity-3-pilot/` | Ten-case annotation pilot, template and examples. Completed independent annotations are still pending. |
-| `model-gateway/results/` | Synthetic endpoint checks and the 80-case endpoint reliability/latency run. |
+| `eval/activity-3-pilot/` | Ten-case annotation pilot, templates, examples and two-annotator agreement results. All three κ targets pass; disagreement adjudication remains pending. |
+| `copilot/model_gateway/results/` | Synthetic endpoint checks and the 80-case endpoint reliability/latency run. |
 | `docs/`, `tests/` | Component documentation and automated tests. |
-
-All three project folders (`data/`, `interpretation/`, `model-gateway/`) are inside this Git repository. The separate Deepshikha integration checkout is outside it and has not been merged.
 
 ## Component guides
 
 - [Interpretation design](docs/activity-2-interpretation-design.md)
-- [Interpretation results](interpretation/report.md)
+- [Interpretation results](copilot/enquiry_interpretation/results/report.md)
 - [Gold annotation guide](docs/activity-3-labeling-guide.md)
 - [Gold record contract](docs/activity-3-gold-record.md)
+- [Workflow setup and verification](copilot/enquiry_workflow/README.md)
 - [Model gateway](docs/model-gateway.md)
-- [Model gateway run summary](model-gateway/results/frozen-001/summary.md)
+- [Model gateway run summary](copilot/model_gateway/results/frozen-001/summary.md)
 
 ## Local setup
 

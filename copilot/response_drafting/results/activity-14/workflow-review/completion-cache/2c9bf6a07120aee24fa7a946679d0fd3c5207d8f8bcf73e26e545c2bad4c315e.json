@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":true,\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"departure_time_mode\"],\"decision_impact\":\"Determine current versus future-departure traffic requirements.\"}],\"reason\":\"The customer is asking about traffic-aware ETAs in Indian cities and what needs to be set to get them. The supplied fact 'region' is set to 'India', but the 'departure_time_mode' field is missing, which is critical for determining whether traffic is needed now or for future departures.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"region\",\"value\":true,\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"departure_time_mode\"],\"decision_impact\":\"Determine current versus future-departure traffic requirements.\"}],\"reason\":\"The customer is asking about traffic-aware ETAs in Indian cities and what needs to be set to get them. The supplied fact 'region' is set to 'India', but the 'departure_time_mode' field is missing, which is critical for determining whether traffic is needed now or for future departures.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1620,
+    "completion_tokens": 112,
+    "total_tokens": 1732
+  },
+  "latency_ms": 2730,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

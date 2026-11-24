@@ -1,0 +1,10 @@
+{
+  "cases_reproduced": 80,
+  "question_outputs_and_state_reproduced": 80,
+  "full_drafts_and_critic_results_reproduced": 80,
+  "captured_model_replies": 239,
+  "endpoint_calls": 0,
+  "frozen_gt_unchanged": true,
+  "runtime_assets_unchanged": true,
+  "scores_reproduced": true
+}

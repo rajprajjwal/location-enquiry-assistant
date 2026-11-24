@@ -1,0 +1,8 @@
+{
+  "customer_evidence.py": "6725908a5f554b2a372537d6ddabea23debc33466ed007782fea7636badbd529",
+  "rules.json": "af5f3af2ee6aeda0d22677345e70ca52bc17df2c1233806fcb492efb8ba5f706",
+  "copilot/config/escalation_policy.yaml": "e42f09553461c4a45626a783b42406360cc61f140405f6cc2ad3588a074f3c45",
+  "copilot/safety/escalation_policy.py": "3b8168d8f4b72c0c096e73c90ab334dc768ab8a3d32aec8fe67125f4aab6e0fb",
+  "copilot/enquiry_workflow/escalation.py": "2546b7d7c165d42cb0712f31b93a2c8cef9ef34417aa6ea9b3f050db80f1e5a0",
+  "copilot/enquiry_workflow/ownership_status.py": "f284ff05453dbd003311f0e184f612de92ec45002a27fd3281af77de4be6c7b4"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates that the issue is related to the snapping of the start point onto the wrong side of a divided road when using raw lat/lng coordinates. The retrieved evidence suggests that specifying a heading for the waypoint can help ensure the vehicle arrives on the correct side of the road. However, the enquiry already identifies the potential solution (specifying a heading), so no further diagnostic action is needed.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates that the issue is related to the snapping of the start point onto the wrong side of a divided road when using raw lat/lng coordinates. The retrieved evidence suggests that specifying a heading for the waypoint can help ensure the vehicle arrives on the correct side of the road. However, the enquiry already identifies the potential solution (specifying a heading), so no further diagnostic action is needed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2249,
+    "completion_tokens": 88,
+    "total_tokens": 2337
+  },
+  "latency_ms": 2289,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

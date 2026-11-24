@@ -1,0 +1,64 @@
+Fresh working-eval question review
+
+Review each enquiry and history before any system predictions are generated.
+Record customer facts that are missing and would change the answer, diagnosis or next action.
+Use one question per decision and group facts needed for that decision.
+Choose empty when no material follow-up is needed. Choose exclude for an unclear case.
+Use questions with question, facts and why_it_matters for a positive label.
+Skip supplied, answered, declined or repeated facts and documentation-answerable questions.
+Request redacted examples and keep credential values out of questions.
+
+1. GT-LBS-AC-125
+Current enquiry — For a type-ahead address search box, how do Ola Maps Autocomplete and the public Nominatim endpoint compare for free usage and restrictions?
+
+2. GT-LBS-AC-226
+Current enquiry — Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?
+
+3. GT-LBS-AC-094
+Current enquiry — How do we restrict autocomplete results to India on each provider?
+
+4. GT-LBS-AC-209
+Current enquiry — I'm setting up Mappls Autosuggest for Sri Lanka. How do I select that country, and what should I do about the zoom parameter I use for India?
+
+5. GT-LBS-DIR-207
+Current enquiry — We're a cycling-delivery startup in Pune. Which providers give bicycling directions in India?
+
+6. GT-LBS-DIR-072
+Current enquiry — Ola Directions gives a 'shortest' route that's slower than expected through Bengaluru traffic. Which option gives the quickest route?
+
+7. GT-LBS-DIR-030
+User — Compare Ola Maps and Google for 6,000,000 traffic-aware route requests a month in India. What if we drop live traffic?
+Assistant — Before I answer, one question: Which ETA accuracy do you need at dispatch vs in-trip?
+Current enquiry — I don't know yet. Please proceed on what I already said.
+
+8. GT-LBS-DIR-026
+User — How much would Mapbox Directions cost for 900,000 requests a month?
+Assistant — Before I answer, one question: Do you need driving-traffic, or is the driving profile enough?
+Current enquiry — Let's leave that open for now; answer based on my earlier message.
+
+9. GT-LBS-DM-080
+Current enquiry — Can we use router.project-osrm.org table service for our commercial fleet ETA matrix?
+
+10. GT-LBS-DM-209
+Current enquiry — We need walking-time matrices for a campus-delivery robot pilot in India. Which providers support walking?
+
+11. GT-LBS-DM-067
+User — Ola Distance Matrix returns 429 when our dispatcher refreshes ETAs every 10 seconds for 200 drivers.
+Assistant — Before I answer, one question: Requests per minute?
+Current enquiry — Not decided yet. Go ahead with what I told you and state any assumption you make.
+
+12. GT-LBS-DM-121
+Current enquiry — Google Route Matrix for two-wheelers in India: 120,000 elements a month. Cost?
+
+13. GT-LBS-RG-105
+Current enquiry — How do we get the city name from lat/lng with Google?
+
+14. GT-LBS-RG-091
+Current enquiry — Which reverse geocoders handle Indian boundaries per Indian law?
+
+15. GT-LBS-RG-217
+Current enquiry — What's Google's default reverse geocoding throughput?
+
+16. GT-LBS-RG-119
+Current enquiry — Google vs Mapbox reverse geocoding for 4,000,000 lookups a month (display only, no storage)?
+

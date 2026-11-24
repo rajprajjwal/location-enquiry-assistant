@@ -1,0 +1,14 @@
+{
+  "text": "{\"pricing\": true, \"items\": [{\"provider\": \"Google Maps Platform\", \"api\": \"distance_matrix\", \"requests\": 50000, \"origins\": 4, \"destinations\": 4, \"calls\": 50000, \"traffic\": null, \"basic\": false}]}",
+  "raw": "{\"pricing\": true, \"items\": [{\"provider\": \"Google Maps Platform\", \"api\": \"distance_matrix\", \"requests\": 50000, \"origins\": 4, \"destinations\": 4, \"calls\": 50000, \"traffic\": null, \"basic\": false}]}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 434,
+    "completion_tokens": 69,
+    "total_tokens": 503
+  },
+  "latency_ms": 1706,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

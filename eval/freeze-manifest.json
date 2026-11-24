@@ -247,7 +247,7 @@
     "all": "532/532 pass",
     "frozen": "80/80 pass",
     "mapping_warnings": 0,
-    "report": "validator/validator-report.md"
+    "report": "copilot/validation/specification_checks/validator-report.md"
   },
   "note": "Raw GT files (data/) are excluded from git and bound to this manifest by SHA-256 only. The freeze is the annotated tag eval-freeze-v3 (pending) plus the SHA-256 of mapping/gold_outputs_frozen.jsonl. eval-freeze-v1 and eval-freeze-v2 are kept unchanged as history.",
   "history": [

@@ -1,0 +1,8 @@
+{
+  "command": ".venv/bin/python -B -m pytest -q tests/enquiry_interpretation tests/enquiry_workflow -p no:cacheprovider",
+  "passed": 625,
+  "subtests_passed": 4,
+  "failed": 0,
+  "live_model_calls": 0,
+  "validation": "Automated regression tests, including local case-store and mocked tool/model flow; not live-model F1."
+}

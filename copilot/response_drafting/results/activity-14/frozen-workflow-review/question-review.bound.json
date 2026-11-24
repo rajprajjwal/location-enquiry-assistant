@@ -1,0 +1,987 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "826bfc2184299941f21a5f90e902c79bd718ac90900af0a09d9f4321c6583571",
+  "gold_sha256": "7c5c44fb2f1d216957585b7edaf765406b791da2c13decd6c05cd0e4d63000fb",
+  "reviewer": "Assistant semantic review with independent assistant cross-check",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-031",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-032",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-033",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-045",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-051",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-068",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-073",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-081",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-086",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-089",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-205",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-210",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-215",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-222",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-229",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              3,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-230",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-231",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-234",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-235",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-236",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-011",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-012",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-020",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-021",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-084",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-085",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-100",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-108",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-201",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-210",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-222",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-223",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-224",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-225",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-226",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-026",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-059",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-085",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-087",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-094",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-097",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-117",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-118",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-201",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-214",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-218",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-221",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-222",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-224",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-226",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              3,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-227",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              1,
+              4
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              2
+            ],
+            [
+              2,
+              2,
+              3
+            ],
+            [
+              3,
+              3,
+              1
+            ],
+            [
+              3,
+              3,
+              2
+            ],
+            [
+              3,
+              3,
+              3
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-231",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-232",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-233",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-001",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-005",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-006",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-007",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              2
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              2,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-015",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-016",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-021",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-082",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-084",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-201",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-212",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-213",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-225",
+      "methods": {
+        "updated": {
+          "whole": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              4,
+              1
+            ],
+            [
+              3,
+              3,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-231",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-232",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-233",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-235",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-236",
+      "methods": {
+        "updated": {
+          "whole": [],
+          "facts": []
+        }
+      }
+    }
+  ]
+}

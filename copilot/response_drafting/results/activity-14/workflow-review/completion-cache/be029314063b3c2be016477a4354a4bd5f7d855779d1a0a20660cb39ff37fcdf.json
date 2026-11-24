@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"Reverse geocoding 10,000 points with geopy + Nominatim hits limits, which suggests that the service is returning no results due to exceeding usage limits or rate restrictions. This requires coordinates and result filters to further diagnose the issue.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"Reverse geocoding 10,000 points with geopy + Nominatim hits limits, which suggests that the service is returning no results due to exceeding usage limits or rate restrictions. This requires coordinates and result filters to further diagnose the issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1631,
+    "completion_tokens": 63,
+    "total_tokens": 1694
+  },
+  "latency_ms": 1727,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The customer mentioned that they don't send a User-Agent, which is a requirement according to the Nominatim Usage Policy. To diagnose the issue, we need to reproduce the request to confirm if the lack of a User-Agent is causing the blocking.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The customer mentioned that they don't send a User-Agent, which is a requirement according to the Nominatim Usage Policy. To diagnose the issue, we need to reproduce the request to confirm if the lack of a User-Agent is causing the blocking.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1687,
+    "completion_tokens": 63,
+    "total_tokens": 1750
+  },
+  "latency_ms": 1701,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

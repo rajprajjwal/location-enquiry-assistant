@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding returns ZERO_RESULTS, which may occur if the latlng is in a remote location. The enquiry indicates that it works in the browser but not on the phone, suggesting a possible issue with the request parameters or location data used on the phone.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocoding returns ZERO_RESULTS, which may occur if the latlng is in a remote location. The enquiry indicates that it works in the browser but not on the phone, suggesting a possible issue with the request parameters or location data used on the phone.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1886,
+    "completion_tokens": 63,
+    "total_tokens": 1949
+  },
+  "latency_ms": 1693,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

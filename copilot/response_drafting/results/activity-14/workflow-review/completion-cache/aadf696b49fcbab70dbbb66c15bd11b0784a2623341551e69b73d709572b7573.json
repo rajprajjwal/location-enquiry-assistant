@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"peak_rate\",\"region\"],\"decision_impact\":\"The lack of peak requests per second and target countries or regions prevents us from assessing the service scale and geographic fit for the provider recommendation.\"},{\"fields\":[\"backend_owner\",\"storage_required\",\"redistribution_required\",\"resale_required\"],\"decision_impact\":\"The absence of information on who will operate the API backend, whether results must be stored, whether results will be redistributed, and whether results will be resold hinders our ability to determine the backend operating responsibility and required data rights for the provider recommendation.\"}],\"reason\":\"The customer's use case involves an LLM assistant generating client code for public Nominatim and reselling the resulting geocoding data. This requires understanding the service scale, geographic fit, backend operating responsibility, and data rights to recommend a suitable provider.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"peak_rate\",\"region\"],\"decision_impact\":\"The lack of peak requests per second and target countries or regions prevents us from assessing the service scale and geographic fit for the provider recommendation.\"},{\"fields\":[\"backend_owner\",\"storage_required\",\"redistribution_required\",\"resale_required\"],\"decision_impact\":\"The absence of information on who will operate the API backend, whether results must be stored, whether results will be redistributed, and whether results will be resold hinders our ability to determine the backend operating responsibility and required data rights for the provider recommendation.\"}],\"reason\":\"The customer's use case involves an LLM assistant generating client code for public Nominatim and reselling the resulting geocoding data. This requires understanding the service scale, geographic fit, backend operating responsibility, and data rights to recommend a suitable provider.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1825,
+    "completion_tokens": 176,
+    "total_tokens": 2001
+  },
+  "latency_ms": 4154,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

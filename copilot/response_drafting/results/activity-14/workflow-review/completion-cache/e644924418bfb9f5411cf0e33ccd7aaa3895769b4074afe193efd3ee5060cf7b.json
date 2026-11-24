@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"usage_geography\",\n      \"value\": \"India\",\n      \"evidence\": \"lookups a month in India\"\n    },\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": {\n        \"raw\": \"9,000,000 reverse-geocoding lookups a month\",\n        \"requests_per_month\": 9000000,\n        \"unit\": \"lookups_per_month\"\n      },\n      \"evidence\": \"9,000,000 reverse-geocoding lookups a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    },\n    {\n      \"fields\": [\"lookup_trigger\"],\n      \"decision_impact\": \"Check public-service usage-policy compatibility for interactive versus periodic use.\"\n    }\n  ],\n  \"reason\": \"The customer's enquiry requires identifying whether results must be stored and whether lookups are user-triggered or periodic tracking to determine the appropriate licensing, pricing, and policy compliance for the reverse-geocoding service.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"usage_geography\",\n      \"value\": \"India\",\n      \"evidence\": \"lookups a month in India\"\n    },\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": {\n        \"raw\": \"9,000,000 reverse-geocoding lookups a month\",\n        \"requests_per_month\": 9000000,\n        \"unit\": \"lookups_per_month\"\n      },\n      \"evidence\": \"9,000,000 reverse-geocoding lookups a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": \"India\",\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"storage_required\"],\n      \"decision_impact\": \"Select temporary versus retained-result licensing and prices.\"\n    },\n    {\n      \"fields\": [\"lookup_trigger\"],\n      \"decision_impact\": \"Check public-service usage-policy compatibility for interactive versus periodic use.\"\n    }\n  ],\n  \"reason\": \"The customer's enquiry requires identifying whether results must be stored and whether lookups are user-triggered or periodic tracking to determine the appropriate licensing, pricing, and policy compliance for the reverse-geocoding service.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1963,
+    "completion_tokens": 280,
+    "total_tokens": 2243
+  },
+  "latency_ms": 6461,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

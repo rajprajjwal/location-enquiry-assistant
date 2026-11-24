@@ -1,0 +1,367 @@
+[
+  {
+    "record_id": "GT-LBS-AC-031",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-75396. Customer wrote: \"What is the estimated monthly cost on Ola versus Google for autocomplete plus one Place Details call per session? Assume 200,000 sessions a month and 8 keystrokes each.\" Draft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "10fdc85071f162a92f94c0b20cd6ab43ee730c535bbd0f70dc32e29d1a09624e"
+  },
+  {
+    "record_id": "GT-LBS-AC-032",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-94066. Customer wrote: \"What is the estimated monthly cost on Ola versus Google for autocomplete plus one Place Details call per session? Assume 600,000 sessions a month and 10 keystrokes each.\" Draft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "c48d14aaddf7ac61c30cd2bdb1b08c0de3d281b589d94114bf624cf153969a3e"
+  },
+  {
+    "record_id": "GT-LBS-AC-033",
+    "bucket": "ownership",
+    "query": "Customer message: \"What is the estimated monthly cost on Ola versus Google for autocomplete plus one Place Details call per session? Assume 1,500,000 sessions a month and 6 keystrokes each.\" Who should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "history": [],
+    "questions": [
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "1dd2bf4c0fc8f4c13f2a0787291f2801ebf05b3ddeb2f39fe1c170d95d41eee3",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "3181dc69da9da53e7b4010409e0898335cc63c73649c9fc339a9d9299651585c"
+  },
+  {
+    "record_id": "GT-LBS-AC-045",
+    "bucket": "interpretation",
+    "query": "Autocomplete (New) returns an error when we send both locationBias and locationRestriction.",
+    "history": [],
+    "questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "f470ade661f2d21e84e1f02c9068f61ca9337b5d94532c22b4315b351f9d5ae8"
+  },
+  {
+    "record_id": "GT-LBS-AC-051",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-86989. Customer wrote:\n\"Can we cache Google place IDs from autocomplete for later Details calls?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "edd803a6bd0de8bf90b1d714066b8881645b71d88fecc39e3eed9481dd58a5b1"
+  },
+  {
+    "record_id": "GT-LBS-AC-068",
+    "bucket": "pricecompare",
+    "query": "For Mapbox Search Box autocomplete, how does billing count sessions, when does a session end, and how can one user generate more than one billable session?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "0c50d9f964ed1246afdf715b72a875cb22334876fd871fc04f824ac85a8e6877"
+  },
+  {
+    "record_id": "GT-LBS-AC-073",
+    "bucket": "capabilitycompare",
+    "query": "We use Mapbox Geocoding v6 forward for POI autocomplete and get no POIs.",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "a3ff510169ac3fb3c7a1eac8a2c759e382f148f79520ff2364cb13110ec242ef"
+  },
+  {
+    "record_id": "GT-LBS-AC-081",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-35203. Customer wrote:\n\"Can we use nominatim.openstreetmap.org for type-ahead search in our app?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "history": [],
+    "questions": [
+      "Could you confirm whether self-hosting is acceptable or a managed API is required?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "99308dc33236f27cff415873584775ca16bb21242636c181a545d7387061fd00"
+  },
+  {
+    "record_id": "GT-LBS-AC-086",
+    "bucket": "capabilitycompare",
+    "query": "Our address autocomplete needs exceed the public Nominatim limits. Which alternatives provide address suggestions as users type?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether self-hosting is acceptable or a managed API is required?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "47829003fec79f841afe866dbe7f5e16076d4d932b2a3f4dfa130f88f8ad3c2e"
+  },
+  {
+    "record_id": "GT-LBS-AC-089",
+    "bucket": "ownership",
+    "query": "We want Ola autocomplete for 50M requests a month with an SLA and India-only data residency.",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Target go-live?",
+        "facts": [
+          "target go-live date"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "b859c3bc1aa32927f4523c72f74810edf8fb37e67da2a40edb23d1ce16569782",
+    "prediction_row_sha256": "5ed8510cdb1e56989545096c019a40fa68c2e4afd3d85331d253df48408fb643"
+  },
+  {
+    "record_id": "GT-LBS-AC-205",
+    "bucket": "coveragecompare",
+    "query": "Our users type addresses in Hindi. Which autocomplete providers can return Hindi suggestions?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Do users type in the native script or in transliterated Latin text?",
+        "facts": [
+          "native-script versus transliterated-Latin typing"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "08b19e79070ac5af35b2893e3acb2035e9ffb16bfd6e59928dac6b30600adc37",
+    "prediction_row_sha256": "0eae0df9371cca59618e71817481c9f25cf169180b913707afdca094189b3f11"
+  },
+  {
+    "record_id": "GT-LBS-AC-210",
+    "bucket": "coveragecompare",
+    "query": "For address autocomplete in Bhutan, which providers document geographic coverage there? We're considering Nominatim and other options for search-as-you-type.",
+    "history": [],
+    "questions": [
+      "Could you confirm whether self-hosting is acceptable or a managed API is required?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "47e7c1d6feaa5b67d6461ded13819622a027cbfc1ce371047acdafef73edea34"
+  },
+  {
+    "record_id": "GT-LBS-AC-215",
+    "bucket": "limitscompare",
+    "query": "How many Search Box /suggest calls per second can one Mapbox token handle by default?",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "How many keystrokes per user per second do you send?",
+        "facts": [
+          "keystrokes sent per user per second"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "c335993b2f2c5adbded601fae7c8ccd9120459eb6cca11c6da38c7219d21aa22",
+    "prediction_row_sha256": "fd6b8eba8073d14a9054400531de5ab611c170937ab1fe51480cc0d11dbcb98c"
+  },
+  {
+    "record_id": "GT-LBS-AC-222",
+    "bucket": "limitscompare",
+    "query": "Google Autocomplete (New) rejects our request when we pass eight includedPrimaryTypes. Is there a cap?",
+    "history": [],
+    "questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "265bcc15920c2817963b1ba2cef36ba2c051815b8ff592ff5fe7d4a6cdba0195"
+  },
+  {
+    "record_id": "GT-LBS-AC-229",
+    "bucket": "qualification",
+    "query": "A no-code platform vendor wants to wire public Nominatim into generated apps for address autocomplete. What should we ask this prospect about their use case, deployment and licensing before recommending a provider?",
+    "history": [],
+    "questions": [
+      "Could you confirm peak requests per second and target countries or regions?",
+      "Could you confirm who will operate the API backend, whether results must be stored, whether results will be redistributed and whether results will be resold?"
+    ],
+    "gold": [
+      {
+        "question": "Who owns each generated app's provider account and deployment?",
+        "facts": [
+          "owner of each generated app provider account",
+          "owner of each generated app deployment"
+        ]
+      },
+      {
+        "question": "What are the expected monthly volumes, peak request rates and target regions?",
+        "facts": [
+          "expected monthly volume",
+          "peak request rate",
+          "target regions"
+        ]
+      },
+      {
+        "question": "Will the generated apps store, export, or redistribute results?",
+        "facts": [
+          "whether results will be stored",
+          "whether results will be exported",
+          "whether results will be redistributed"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "b4cdc0b52f64f857ba2235f16525c9c845e2b2a8b34ce2aaa37b4987ffccb929",
+    "gold_sha256": "0463a75f1e2934a871bb2f585ad7b5fa28529fc847ca1cd99f5c4106ff6bf47e",
+    "prediction_row_sha256": "6b6dd7c4496942cdbdefb78314b17135fff91ac83c7fc96c379d37b0f698245b"
+  },
+  {
+    "record_id": "GT-LBS-AC-230",
+    "bucket": "qualification",
+    "query": "We need type-ahead place suggestions that we can bias to a search area and filter by place type. Which of Google Places Autocomplete (New), Ola Places Autocomplete, and Mapbox Search Box document those capabilities?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "686a92b49c16e7b472f56fcfd6df4de47e4c08df7bec231a5f945a3dec288449"
+  },
+  {
+    "record_id": "GT-LBS-AC-231",
+    "bucket": "qualification",
+    "query": "A checkout-form vendor in India wants address autocomplete and may store the chosen coordinates. What should we ask before recommending Google, Ola, Mapbox Search Box, or public Nominatim?",
+    "history": [],
+    "questions": [
+      "Could you confirm peak requests per second?",
+      "Could you confirm who will operate the API backend, whether results must be stored, whether results will be redistributed and whether results will be resold?",
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "gold": [
+      {
+        "question": "What monthly volume do they expect, and will they bill Google Autocomplete as Requests or Session Usage?",
+        "facts": [
+          "expected monthly volume",
+          "Google Autocomplete Requests versus Session Usage billing"
+        ]
+      },
+      {
+        "question": "Will they store the selected coordinates or only use them ephemerally?",
+        "facts": [
+          "selected coordinates stored versus ephemeral use"
+        ]
+      },
+      {
+        "question": "Are they proposing the public Nominatim server as the autocomplete backend?",
+        "facts": [
+          "whether public Nominatim is the proposed autocomplete backend"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "833e54f4d332cfe3b255fe5626589499da87c729dd19d17774acddd6ea39d887",
+    "gold_sha256": "913192b4ebee74cefbd7f21a1ab5fb000befdb43f0a264ca5d3adeefcbd9c8ee",
+    "prediction_row_sha256": "7586b6a97d3752cf50cb9a4b0ed20802731e3757822ea76f07f7339765a8c87e"
+  },
+  {
+    "record_id": "GT-LBS-AC-234",
+    "bucket": "ownership",
+    "query": "We are a standard self-service Ola Maps customer using Autocomplete with automatic card billing. Official pricing is changing in September 2026. Please prepare a handoff for a human billing reviewer to confirm what we need to do about prepaid credits for Autocomplete.",
+    "history": [],
+    "questions": [],
+    "gold": [
+      {
+        "question": "Are they on a standard self-service plan with automatic card payments, or a contractual customer whose current contract is unaffected?",
+        "facts": [
+          "standard self-service automatic-card plan versus unaffected contractual customer"
+        ]
+      },
+      {
+        "question": "Is expected Autocomplete usage within the documented 100,000 free calls per API, or above it?",
+        "facts": [
+          "Autocomplete usage within or above 100000 free calls per API"
+        ]
+      },
+      {
+        "question": "Have they already received the official instructions for adding credits?",
+        "facts": [
+          "whether official add-credits instructions were received"
+        ]
+      }
+    ],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "556b2e9e796b955673949835877487498f82fb8dc2abf74c1f5a538131bb1192",
+    "prediction_row_sha256": "114571498971a4427c817de192df452582772bf061d53819b8e438dcb814d6b4"
+  },
+  {
+    "record_id": "GT-LBS-AC-235",
+    "bucket": "docs",
+    "query": "In Google Places Autocomplete, should our place picker use locationBias or locationRestriction if users may choose a nearby place outside the preferred area?",
+    "history": [],
+    "questions": [],
+    "gold": [],
+    "requires_semantic_review": false,
+    "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "prediction_row_sha256": "61e8df9129638053e48ac3c97e2887b78c0862d2c053edbb9c7319304a88b405"
+  },
+  {
+    "record_id": "GT-LBS-AC-236",
+    "bucket": "history",
+    "query": "New Places API SKU, please. Just show USD.",
+    "history": [
+      {
+        "role": "user",
+        "text": "We expect 40,000 Google Places Autocomplete Requests per month on the global price card. What is the free allowance and estimated charge?"
+      },
+      {
+        "role": "assistant",
+        "text": "Do you want the new Autocomplete Requests SKU or the legacy per-request SKU?"
+      }
+    ],
+    "questions": [
+      "Could you confirm whether you call Place Details after a selection?"
+    ],
+    "gold": [
+      {
+        "question": "Is the usage estimate for one billing account or multiple billing accounts?",
+        "facts": [
+          "one billing account versus multiple billing accounts"
+        ]
+      }
+    ],
+    "requires_semantic_review": true,
+    "questions_sha256": "84a0006029c68fce916240d1164a823dbbc7d039127876e412d5459e763c69a9",
+    "gold_sha256": "e61182e5271a916c7d63ef086f1700c7a1c0a6e83d1212570f52dec60e650f80",
+    "prediction_row_sha256": "6a30d51911b68fe000e77c66ee1dccecc79c1bf1deec88b7bdb291f21474407a"
+  }
+]

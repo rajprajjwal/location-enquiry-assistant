@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"pricing\": true,\n  \"items\": [\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"autocomplete\",\n      \"requests\": 2400000,\n      \"sessions\": 200000,\n      \"keystrokes_per_session\": 12,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"place_details\",\n      \"requests\": 2400000,\n      \"sessions\": 200000,\n      \"keystrokes_per_session\": 12,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    }\n  ]\n}",
+  "raw": "{\n  \"pricing\": true,\n  \"items\": [\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"autocomplete\",\n      \"requests\": 2400000,\n      \"sessions\": 200000,\n      \"keystrokes_per_session\": 12,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"place_details\",\n      \"requests\": 2400000,\n      \"sessions\": 200000,\n      \"keystrokes_per_session\": 12,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    }\n  ]\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 413,
+    "completion_tokens": 195,
+    "total_tokens": 608
+  },
+  "latency_ms": 4550,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

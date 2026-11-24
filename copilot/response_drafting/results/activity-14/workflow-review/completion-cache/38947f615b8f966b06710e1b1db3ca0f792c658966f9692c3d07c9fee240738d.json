@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's enquiry mentions that the Mapbox Matrix API is returning strange results for Indian cities with coordinates 12.97,77.59. The retrieved evidence includes documentation about the Matrix API's pricing, restrictions, and usage. However, there is no direct evidence of a specific issue with the API's behavior for Indian cities. The customer's coordinates are valid and within the API's limits. The issue might be related to data or configuration specific to the customer's use case, which is not covered in the provided evidence. Therefore, no specific diagnostic decision is needed at this time.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's enquiry mentions that the Mapbox Matrix API is returning strange results for Indian cities with coordinates 12.97,77.59. The retrieved evidence includes documentation about the Matrix API's pricing, restrictions, and usage. However, there is no direct evidence of a specific issue with the API's behavior for Indian cities. The customer's coordinates are valid and within the API's limits. The issue might be related to data or configuration specific to the customer's use case, which is not covered in the provided evidence. Therefore, no specific diagnostic decision is needed at this time.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1665,
+    "completion_tokens": 130,
+    "total_tokens": 1795
+  },
+  "latency_ms": 3156,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

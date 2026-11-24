@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"The required matrix features affect the pricing and limits, which could explain the discrepancy in charges.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"The travel mode affects the pricing and limits, which could explain the discrepancy in charges.\"\n    }\n  ],\n  \"reason\": \"The customer's billing shows higher charges than expected, which may be due to the required matrix features and travel mode affecting the pricing and limits.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"The required matrix features affect the pricing and limits, which could explain the discrepancy in charges.\"\n    },\n    {\n      \"fields\": [\"travel_mode\"],\n      \"decision_impact\": \"The travel mode affects the pricing and limits, which could explain the discrepancy in charges.\"\n    }\n  ],\n  \"reason\": \"The customer's billing shows higher charges than expected, which may be due to the required matrix features and travel mode affecting the pricing and limits.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2056,
+    "completion_tokens": 124,
+    "total_tokens": 2180
+  },
+  "latency_ms": 80561,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

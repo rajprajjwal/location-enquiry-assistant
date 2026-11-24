@@ -1,0 +1,745 @@
+{
+  "scope": "Offline normalization of the saved 36 working-eval contexts. Not a new F1 or end-to-end run.",
+  "cases": 36,
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "source_predictions_sha256": "821553d684f900320fb257ea977453920b30fe57078bafc496f135bcb015b306",
+  "records": [
+    {
+      "record_id": "GT-LBS-AC-003",
+      "before": null,
+      "after": null
+    },
+    {
+      "record_id": "GT-LBS-AC-008",
+      "before": null,
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "150,000 address-search sessions a month",
+          "requests_per_month": 150000,
+          "unit": "sessions_per_month"
+        },
+        "source": "query",
+        "evidence": "150,000 address-search sessions a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-009",
+      "before": null,
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "300,000 address-search sessions a month",
+          "requests_per_month": 300000,
+          "unit": "sessions_per_month"
+        },
+        "source": "query",
+        "evidence": "300,000 address-search sessions a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-010",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "500,000",
+          "requests_per_month": 500000.0,
+          "unit": "per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "500,000 address-search sessions a month",
+          "requests_per_month": 500000,
+          "unit": "sessions_per_month"
+        },
+        "source": "query",
+        "evidence": "500,000 address-search sessions a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-021",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "50,000 sessions a month",
+          "requests_per_month": 50000.0,
+          "unit": "sessions_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "50,000 sessions a month",
+          "requests_per_month": 50000,
+          "unit": "sessions_per_month"
+        },
+        "source": "query",
+        "evidence": "50,000 sessions a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "200,000 sessions a month",
+          "requests_per_month": 200000.0,
+          "unit": "sessions_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "200,000 sessions a month",
+          "requests_per_month": 200000,
+          "unit": "sessions_per_month"
+        },
+        "source": "query",
+        "evidence": "200,000 sessions a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "1,000,000 sessions a month",
+          "requests_per_month": 1000000.0,
+          "unit": "sessions_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "1,000,000 sessions a month",
+          "requests_per_month": 1000000,
+          "unit": "sessions_per_month"
+        },
+        "source": "query",
+        "evidence": "1,000,000 sessions a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "400,000 sessions a month",
+          "requests_per_month": 400000.0,
+          "unit": "sessions_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "400,000 sessions a month",
+          "requests_per_month": 400000,
+          "unit": "sessions_per_month"
+        },
+        "source": "query",
+        "evidence": "400,000 sessions a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-233",
+      "before": null,
+      "after": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-036",
+      "before": null,
+      "after": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-037",
+      "before": null,
+      "after": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-038",
+      "before": null,
+      "after": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-040",
+      "before": null,
+      "after": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-047",
+      "before": {
+        "field": "monthly_volume",
+        "status": "missing",
+        "value": null,
+        "source": "qualification_plan",
+        "evidence": "Estimate the recurring workload and cost.",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "missing",
+        "value": null,
+        "source": "qualification_normalization",
+        "evidence": "Monthly API quantity and workload unit are not both confirmed.",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-048",
+      "before": {
+        "field": "monthly_volume",
+        "status": "missing",
+        "value": null,
+        "source": "qualification_plan",
+        "evidence": "Estimate the recurring workload and cost.",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "missing",
+        "value": null,
+        "source": "qualification_normalization",
+        "evidence": "Monthly API quantity and workload unit are not both confirmed.",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "15\u201320 outlets",
+          "requests_per_month": null,
+          "unit": null
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "missing",
+        "value": {
+          "raw": "15\u201320 outlets",
+          "requests_per_month": null,
+          "unit": null
+        },
+        "source": "qualification_normalization",
+        "evidence": "Monthly API quantity and workload unit are not both confirmed.",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "before": {
+        "field": "monthly_volume",
+        "status": "missing",
+        "value": null,
+        "source": "qualification_plan",
+        "evidence": "Estimate the recurring workload and cost.",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "missing",
+        "value": null,
+        "source": "qualification_normalization",
+        "evidence": "Monthly API quantity and workload unit are not both confirmed.",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-017",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "2,000",
+          "requests_per_month": 2000.0,
+          "unit": "per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "2,000 times a month",
+          "requests_per_month": 2000,
+          "unit": "matrices_per_month"
+        },
+        "source": "query",
+        "evidence": "2,000 times a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-018",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "20,000",
+          "requests_per_month": 20000.0,
+          "unit": "per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "20,000 times a month",
+          "requests_per_month": 20000,
+          "unit": "matrices_per_month"
+        },
+        "source": "query",
+        "evidence": "20,000 times a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-019",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "30,000",
+          "requests_per_month": 30000.0,
+          "unit": "per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "30,000 times a month",
+          "requests_per_month": 30000,
+          "unit": "matrices_per_month"
+        },
+        "source": "query",
+        "evidence": "30,000 times a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-020",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "100,000",
+          "requests_per_month": 100000.0,
+          "unit": "per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "100,000 times a month",
+          "requests_per_month": 100000,
+          "unit": "matrices_per_month"
+        },
+        "source": "query",
+        "evidence": "100,000 times a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-025",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "5,000 per month",
+          "requests_per_month": 5000.0,
+          "unit": "per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "matrices, 5,000 per month",
+          "requests_per_month": 5000,
+          "unit": "matrices_per_month"
+        },
+        "source": "query",
+        "evidence": "matrices, 5,000 per month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-030",
+      "before": null,
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "matrices, 120,000 per month",
+          "requests_per_month": 120000,
+          "unit": "matrices_per_month"
+        },
+        "source": "query",
+        "evidence": "matrices, 120,000 per month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "10,000 a month",
+          "requests_per_month": 10000.0,
+          "unit": "per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "matrices, 10,000 a month",
+          "requests_per_month": 10000,
+          "unit": "matrices_per_month"
+        },
+        "source": "query",
+        "evidence": "matrices, 10,000 a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-228",
+      "before": null,
+      "after": null
+    },
+    {
+      "record_id": "GT-LBS-DM-230",
+      "before": null,
+      "after": null
+    },
+    {
+      "record_id": "GT-LBS-RG-008",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "1,500,000 reverse-geocoding lookups a month",
+          "requests_per_month": 1500000.0,
+          "unit": "lookups_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "1,500,000 reverse-geocoding lookups a month",
+          "requests_per_month": 1500000,
+          "unit": "lookups_per_month"
+        },
+        "source": "query",
+        "evidence": "1,500,000 reverse-geocoding lookups a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-009",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "3,000,000 reverse-geocoding lookups a month",
+          "requests_per_month": 3000000.0,
+          "unit": "lookups_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "3,000,000 reverse-geocoding lookups a month",
+          "requests_per_month": 3000000,
+          "unit": "lookups_per_month"
+        },
+        "source": "query",
+        "evidence": "3,000,000 reverse-geocoding lookups a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "4,500,000 reverse-geocoding lookups a month",
+          "requests_per_month": 4500000.0,
+          "unit": "lookups_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "4,500,000 reverse-geocoding lookups a month",
+          "requests_per_month": 4500000,
+          "unit": "lookups_per_month"
+        },
+        "source": "query",
+        "evidence": "4,500,000 reverse-geocoding lookups a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-011",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "7,000,000 reverse-geocoding lookups a month",
+          "requests_per_month": 7000000.0,
+          "unit": "lookups_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "7,000,000 reverse-geocoding lookups a month",
+          "requests_per_month": 7000000,
+          "unit": "lookups_per_month"
+        },
+        "source": "query",
+        "evidence": "7,000,000 reverse-geocoding lookups a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-012",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "9,000,000 reverse-geocoding lookups a month",
+          "requests_per_month": 9000000.0,
+          "unit": "lookups_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "9,000,000 reverse-geocoding lookups a month",
+          "requests_per_month": 9000000,
+          "unit": "lookups_per_month"
+        },
+        "source": "query",
+        "evidence": "9,000,000 reverse-geocoding lookups a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-013",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "12,000,000 reverse-geocoding lookups a month",
+          "requests_per_month": 12000000.0,
+          "unit": "lookups_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "12,000,000 reverse-geocoding lookups a month",
+          "requests_per_month": 12000000,
+          "unit": "lookups_per_month"
+        },
+        "source": "query",
+        "evidence": "12,000,000 reverse-geocoding lookups a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "before": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "400,000 reverse-geocoding lookups a month",
+          "requests_per_month": 400000.0,
+          "unit": "lookups_per_month"
+        },
+        "source": "interpretation",
+        "evidence": "qualification_details.monthly_volume",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "supplied",
+        "value": {
+          "raw": "400,000 reverse-geocoding lookups a month",
+          "requests_per_month": 400000,
+          "unit": "lookups_per_month"
+        },
+        "source": "query",
+        "evidence": "400,000 reverse-geocoding lookups a month",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "before": null,
+      "after": null
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "before": {
+        "field": "monthly_volume",
+        "status": "missing",
+        "value": null,
+        "source": "qualification_plan",
+        "evidence": "Check throughput and recurring usage before recommending a service.",
+        "start": null,
+        "end": null
+      },
+      "after": {
+        "field": "monthly_volume",
+        "status": "missing",
+        "value": null,
+        "source": "qualification_normalization",
+        "evidence": "Monthly API quantity and workload unit are not both confirmed.",
+        "start": null,
+        "end": null
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "before": null,
+      "after": null
+    }
+  ]
+}

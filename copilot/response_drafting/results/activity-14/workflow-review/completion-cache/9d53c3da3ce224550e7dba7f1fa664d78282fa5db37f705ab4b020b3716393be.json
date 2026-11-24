@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"debouncing\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"},{\"fields\":[\"details_completion\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"}],\"reason\":\"The customer's enquiry is about billing for Mapbox Geocoding when used for type-ahead. The documentation indicates that one request is made per keystroke if autocomplete is enabled and requests are made for each character typed. However, the customer's scenario involves determining how autocomplete sessions end for billing and converting keystrokes into billable requests, which requires knowing if debouncing is used and if details completion is performed.\"}",
+  "raw": "{\"supplied_facts\":[],\"groups\":[{\"fields\":[\"debouncing\"],\"decision_impact\":\"Determine how autocomplete sessions end for billing.\"},{\"fields\":[\"details_completion\"],\"decision_impact\":\"Convert user keystrokes into the number of billable API requests.\"}],\"reason\":\"The customer's enquiry is about billing for Mapbox Geocoding when used for type-ahead. The documentation indicates that one request is made per keystroke if autocomplete is enabled and requests are made for each character typed. However, the customer's scenario involves determining how autocomplete sessions end for billing and converting keystrokes into billable requests, which requires knowing if debouncing is used and if details completion is performed.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1572,
+    "completion_tokens": 137,
+    "total_tokens": 1709
+  },
+  "latency_ms": 3407,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

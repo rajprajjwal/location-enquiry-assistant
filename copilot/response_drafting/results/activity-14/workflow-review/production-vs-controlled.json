@@ -1,0 +1,75 @@
+{
+  "policy": "Primary question metrics hold ownership fixed. Production includes completed ownership work and separately verified current-reply binding.",
+  "changed": [
+    {
+      "path": "copilot/conversation_state/state.py",
+      "controlled": "7d6058248447b2e3bd10d1c54920e05d3d83c23f8ca64255b99581434f2cf78b",
+      "production": "d4d68bc289d2ef536aa437c85e4b6fb656e42bc2780b90390d56004393b47fa8"
+    },
+    {
+      "path": "copilot/enquiry_workflow/billing_policy.py",
+      "controlled": null,
+      "production": "0459f0d71c4c13bd55b62d93157b793c07aac19306b6c49b573bbfb9c01e0d56"
+    },
+    {
+      "path": "copilot/enquiry_workflow/case_memory.py",
+      "controlled": "5db3d86495de6b77f4d0e5e37263e89b1730caa85803a72c646ec90d54bc2d73",
+      "production": "a4e646946280193a39552e6371a715a89556efb81a798300a6060f55f7c76283"
+    },
+    {
+      "path": "copilot/enquiry_workflow/cases.py",
+      "controlled": "4aabc98fb728a3a9c2ab0b37453c4ad5d45085fa17d6968e85f3cbcd1e14576e",
+      "production": "8ffd158bf26a8bf368c1fc4a113deab9bfdbb573f149cdbd70eb6043be720cd6"
+    },
+    {
+      "path": "copilot/enquiry_workflow/commercial_policy.py",
+      "controlled": null,
+      "production": "aecf297b7ab64b4150fd806691e6a75bf2f4025559b8cb9cf1a9f90462036c70"
+    },
+    {
+      "path": "copilot/enquiry_workflow/escalation.py",
+      "controlled": "e9cab72b2fe6f2c1e3e901e56442ea2be5da410dd0418d8bf37b936ba0072e48",
+      "production": "11eccdfe0ef5bfee0e400526ca56bdce41f7f2568cff64e934eeae7f220d3927"
+    },
+    {
+      "path": "copilot/enquiry_workflow/feature_discovery.py",
+      "controlled": null,
+      "production": "1b7a738919d83bfb96c300245abdb3341eb40d417ffac37e693aca7ee75e0554"
+    },
+    {
+      "path": "copilot/enquiry_workflow/ownership_status.py",
+      "controlled": "f284ff05453dbd003311f0e184f612de92ec45002a27fd3281af77de4be6c7b4",
+      "production": "6fe4888cb7356619deb88ae508663d728321979d6b0b7dcf5c5328c1df98e2fc"
+    },
+    {
+      "path": "copilot/enquiry_workflow/verification/verify_ownership.py",
+      "controlled": "6192af70a348422b754d5b688e436f8f613c75e27f026460c650b0f24d88e186",
+      "production": "1b99b44aea6eaf47d4b2f1ce0f020dcd581b7332918269c3132d1c4913318e27"
+    },
+    {
+      "path": "copilot/enquiry_workflow/verification/verify_ownership_live.py",
+      "controlled": null,
+      "production": "b68fef2b173dd2982d3ee2b37af43a3ee85b5bcb206c5c1aa28eacf6a5009c5e"
+    },
+    {
+      "path": "copilot/enquiry_workflow/workflow.py",
+      "controlled": "6bc8eecd88ede83f44f8411f930f3be590efcdd69934b3cc8c22c3a67f4dea82",
+      "production": "5d7b9d200b45744de9de76a5593e72b4eae636844cf4ef58074535895b0292bf"
+    },
+    {
+      "path": "copilot/model_gateway/client.py",
+      "controlled": "e9017e084ad3083e10af1dc785cb8c7a70d95315000cbe0e47596b975cf698fb",
+      "production": "2610390b6ab2f1cc25f649e8e6a161ca9da2377c46a9f4a6d00ea147a38f1d61"
+    },
+    {
+      "path": "copilot/model_gateway/request_gate.py",
+      "controlled": null,
+      "production": "67ec1d031a16023dbe84833aa0e474262ea57c5c884a28822a362cfc0bc17d29"
+    },
+    {
+      "path": "copilot/streamlit_ui/streamlit_app.py",
+      "controlled": "85a7aff0579d80427906c5b810982eb7822decf3f4df9a086e79d391f1e219df",
+      "production": "6250279ec5d73db47a98f1973518af5c47737099fce09091e260c72e8c158655"
+    }
+  ]
+}

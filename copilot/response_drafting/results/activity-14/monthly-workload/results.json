@@ -1,0 +1,23 @@
+{
+  "scope": "Monthly-workload normalization step only",
+  "offline_working_contexts": 36,
+  "invalidated_supplied_facts": [
+    "GT-LBS-DIR-049"
+  ],
+  "numeric_workload_counts_preserved": 18,
+  "count_regressions": [],
+  "live_working_cases": 5,
+  "route_changes": 0,
+  "pending_reply_changes": 0,
+  "reopened_cases": 4,
+  "reopened_preserved": 4,
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "workbook_unchanged": true,
+  "source_hashes_verified": true,
+  "full_36_case_F1_rerun": false,
+  "tests": {
+    "passed": 364,
+    "subtests_passed": 4
+  }
+}

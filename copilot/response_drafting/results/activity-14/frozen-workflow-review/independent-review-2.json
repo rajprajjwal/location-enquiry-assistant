@@ -1,0 +1,274 @@
+{
+  "version": "1.0",
+  "review_kind": "independent_assistant_crosscheck_not_human_approval",
+  "batch": 2,
+  "source_batch_sha256": "debef8bb28a8a22d0e7ea2a0d0ec7d74a3898efbacfdb8fb79e6459c62899567",
+  "policy": "Unchanged one-to-one whole-question equivalence with all facts and equivalent decision granularity; distinct gold-atom coverage. No credit from field IDs, input facts, model reasons or draft prose alone.",
+  "indexing": "One-based generated question, gold question and atomic fact indexes.",
+  "summary": {
+    "cases": 20,
+    "semantic_cases": 3,
+    "whole_matches": 6,
+    "fact_matches": 6
+  },
+  "cases": [
+    {
+      "record_id": "GT-LBS-DIR-011",
+      "questions_sha256": "c5c9fc67cf5e38b7d4972f3cf3e28ab9868948777be5f0e27ee15fb5fc1092f8",
+      "gold_sha256": "2e05a45ff7b2b0ab1b488c83142b514bf15b70c2b84baa084893228268a7ae16",
+      "prediction_row_sha256": "842d8b98b5319fc3636a6e3dcd4ce3edf5bdb79acaf375f221253d92aaeea2b0",
+      "whole": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          1
+        ]
+      ],
+      "notes": "The three separate questions cover live-traffic versus static-route requirements, vehicle/travel types, and new-versus-existing Google project status. Each is semantically equivalent to its gold decision, with no extra independent decision bundled.",
+      "review_mode": "independent_semantic_crosscheck"
+    },
+    {
+      "record_id": "GT-LBS-DIR-012",
+      "questions_sha256": "c5c9fc67cf5e38b7d4972f3cf3e28ab9868948777be5f0e27ee15fb5fc1092f8",
+      "gold_sha256": "2e05a45ff7b2b0ab1b488c83142b514bf15b70c2b84baa084893228268a7ae16",
+      "prediction_row_sha256": "04031e32ad907478e9c97cedd6a06075b6cd2f97ee9e535a629896bd3102eb8d",
+      "whole": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "facts": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          1
+        ]
+      ],
+      "notes": "The three separate questions cover live-traffic versus static-route requirements, vehicle/travel types, and new-versus-existing Google project status. Each is semantically equivalent to its gold decision, with no extra independent decision bundled.",
+      "review_mode": "independent_semantic_crosscheck"
+    },
+    {
+      "record_id": "GT-LBS-DIR-020",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "fc3e1c812c0ba7cd6fc2e0d397b1f8f2d24fad18cc6126fb342528355bdc2131",
+      "prediction_row_sha256": "de11da3ed605b82364f7b1a2ccadf45daba01f507c5fcb1a89ce47cfb6c12f56",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. Reference questions and atomic facts remain uncovered; customer input or draft statements alone do not earn question credit.",
+      "review_mode": "empty_predictions"
+    },
+    {
+      "record_id": "GT-LBS-DIR-021",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "fc3e1c812c0ba7cd6fc2e0d397b1f8f2d24fad18cc6126fb342528355bdc2131",
+      "prediction_row_sha256": "5221bdcbb105720171f83d57ed27d840d54cb2e8f1aef08813345ddd07978589",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. Reference questions and atomic facts remain uncovered; customer input or draft statements alone do not earn question credit.",
+      "review_mode": "empty_predictions"
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "prediction_row_sha256": "7f106d728b39c4e171c6bd59a4e3cdc470419444b89aa71aee62ae27d0ab6d55",
+      "whole": [],
+      "facts": [],
+      "notes": "Both reference and generated question lists are empty; zero matches.",
+      "review_mode": "empty_reference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "40d6954cca8ff76ab4c934a1d5b61b1b070958320a635c214f759cdb9d81b993",
+      "prediction_row_sha256": "22e378643bc1994ced129f1769ea271226b150b0ed4a7d6fcfa895a8c89dc41a",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. Reference questions and atomic facts remain uncovered; customer input or draft statements alone do not earn question credit.",
+      "review_mode": "empty_predictions"
+    },
+    {
+      "record_id": "GT-LBS-DIR-084",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "a1b6d8a620fd40f4de97eb867b65fb6e9f8e52fc3b50078786a3bd0fea418060",
+      "prediction_row_sha256": "028a726ba1d3778fbdd021e691fa30090455af530e28791a4628b1ec772307dd",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. Reference questions and atomic facts remain uncovered; customer input or draft statements alone do not earn question credit.",
+      "review_mode": "empty_predictions"
+    },
+    {
+      "record_id": "GT-LBS-DIR-085",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "216d99e7b0ff6f765822cfabe267c65f362252b4efa55598598c6743edf1bc54",
+      "prediction_row_sha256": "5976e38bd918cdb5cb1d7702cc5073846e4c606be4ab2d878b3d00b801c74aa7",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. Reference questions and atomic facts remain uncovered; customer input or draft statements alone do not earn question credit.",
+      "review_mode": "empty_predictions"
+    },
+    {
+      "record_id": "GT-LBS-DIR-100",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "prediction_row_sha256": "e38fc99cdfe9468e0be7eb80451f78da3143b4bc39ac424c8264a68e478d996f",
+      "whole": [],
+      "facts": [],
+      "notes": "Both reference and generated question lists are empty; zero matches.",
+      "review_mode": "empty_reference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-108",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "prediction_row_sha256": "70b14750c97b1085c28f4a6fd85914af859d3bdc09f8020b87847ac832005337",
+      "whole": [],
+      "facts": [],
+      "notes": "The unchanged frozen reference has no questions; any generated questions remain unmatched.",
+      "review_mode": "empty_reference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "prediction_row_sha256": "b48791514f1cbfe7afb283cba6afe50ead8f671288a8241c99a1f7dee6a16ce1",
+      "whole": [],
+      "facts": [],
+      "notes": "Both reference and generated question lists are empty; zero matches.",
+      "review_mode": "empty_reference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-201",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "9c3c7ea33edf95503e0c3ddf02d338b2ee10247ef40cbb69b49bfbe39b76d57f",
+      "prediction_row_sha256": "70a34881b47e26318dd5942d03da73bcbe81c1f9b3511365dfa11a4da9199227",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. Reference questions and atomic facts remain uncovered; customer input or draft statements alone do not earn question credit.",
+      "review_mode": "empty_predictions"
+    },
+    {
+      "record_id": "GT-LBS-DIR-210",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "8bac9867a71299b8aaf052f4f5fedacbe5062c72e5a62f7fe82f5521cbabcbb6",
+      "prediction_row_sha256": "d8bdb4501a96a80ba2fea9eae077e0cc4be4af53b254d9d28217ece034601941",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. Reference questions and atomic facts remain uncovered; customer input or draft statements alone do not earn question credit.",
+      "review_mode": "empty_predictions"
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "questions_sha256": "b0ac1e3f3bd821847efc0a0a702964d1426c555d8fd83bb022db71650eedc332",
+      "gold_sha256": "ac3b8f3a129296d3e9c9eac2e9db8609ae852101b5c6f2fa8f90e134cbd2a647",
+      "prediction_row_sha256": "ffae08070932b2d9d11df6495cfa11643fd6cc1c7cc92f0d49509a9f8eeff186",
+      "whole": [],
+      "facts": [],
+      "notes": "Voice versus text instruction modality is different from whether translated map labels are required in addition to instructions. The generated question covers neither the gold question nor its atom.",
+      "review_mode": "independent_semantic_crosscheck"
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "prediction_row_sha256": "483e0d23de577daf390d02fd43991f74b8281c28641b34d567c27ccc25d7feb6",
+      "whole": [],
+      "facts": [],
+      "notes": "Both reference and generated question lists are empty; zero matches.",
+      "review_mode": "empty_reference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-222",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "e3da37ca0e7db9439c5f6c4e19d694411f4422cec9a1119d0bbbaab51bbe3bec",
+      "prediction_row_sha256": "034187c1b78e304a818f38e46085e61f9ab277065d22b8ec011287f8872d1389",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. Reference questions and atomic facts remain uncovered; customer input or draft statements alone do not earn question credit.",
+      "review_mode": "empty_predictions"
+    },
+    {
+      "record_id": "GT-LBS-DIR-223",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "prediction_row_sha256": "4990f74e3de988c71d8ccbcc2cb836a6715066f2b44dfc3a64f01d967cd5c944",
+      "whole": [],
+      "facts": [],
+      "notes": "Both reference and generated question lists are empty; zero matches.",
+      "review_mode": "empty_reference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-224",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "prediction_row_sha256": "8eddf8d43028bb93b93527cf91904ed9abed165876c4c9046629024dca1c14bb",
+      "whole": [],
+      "facts": [],
+      "notes": "Both reference and generated question lists are empty; zero matches.",
+      "review_mode": "empty_reference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-225",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "prediction_row_sha256": "dd18a251c5db97bc7230d9ffbe8481419a9c02c923da108da2841b42b9b555d9",
+      "whole": [],
+      "facts": [],
+      "notes": "Both reference and generated question lists are empty; zero matches.",
+      "review_mode": "empty_reference"
+    },
+    {
+      "record_id": "GT-LBS-DIR-226",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "gold_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "prediction_row_sha256": "d874957921b0d479bcad5359e1f8ffafa18dd6f2b78bffd4d5df8d010290837f",
+      "whole": [],
+      "facts": [],
+      "notes": "Both reference and generated question lists are empty; zero matches.",
+      "review_mode": "empty_reference"
+    }
+  ]
+}

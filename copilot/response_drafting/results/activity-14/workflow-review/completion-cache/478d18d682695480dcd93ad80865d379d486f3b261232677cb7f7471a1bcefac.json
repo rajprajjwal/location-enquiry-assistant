@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates that the mobile app is using public Nominatim for live address suggestions and got blocked. The retrieved evidence shows that the Nominatim Usage Policy prohibits auto-complete search and systematic queries, which may be the cause. However, the enquiry does not provide enough information to confirm the exact reason for the block, so no specific decision can be made at this stage.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates that the mobile app is using public Nominatim for live address suggestions and got blocked. The retrieved evidence shows that the Nominatim Usage Policy prohibits auto-complete search and systematic queries, which may be the cause. However, the enquiry does not provide enough information to confirm the exact reason for the block, so no specific decision can be made at this stage.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1836,
+    "completion_tokens": 86,
+    "total_tokens": 1922
+  },
+  "latency_ms": 2202,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

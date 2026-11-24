@@ -1,0 +1,1563 @@
+[
+  {
+    "record_id": "GT-LBS-AC-003",
+    "gold": [
+      {
+        "question": "Are you open to self-hosting, or do you want a managed API?",
+        "facts": [
+          "hosting_preference"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether self-hosting is acceptable or a managed API is required?",
+          "facts": [
+            "hosting_preference"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether self-hosting is acceptable or a managed API is required?",
+          "facts": [
+            "hosting_preference"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-008",
+    "gold": [
+      {
+        "question": "Do you call Place Details after selection?",
+        "facts": [
+          "details_completion"
+        ]
+      },
+      {
+        "question": "Do you debounce keystrokes?",
+        "facts": [
+          "debouncing"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether you call Place Details after a selection?",
+          "facts": [
+            "details_completion"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether you debounce keystrokes?",
+          "facts": [
+            "debouncing"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether you call Place Details after a selection?",
+          "facts": [
+            "details_completion"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether you debounce keystrokes?",
+          "facts": [
+            "debouncing"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-009",
+    "gold": [
+      {
+        "question": "Do you call Place Details after selection?",
+        "facts": [
+          "details_completion"
+        ]
+      },
+      {
+        "question": "Do you debounce keystrokes?",
+        "facts": [
+          "debouncing"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether you call Place Details after a selection?",
+          "facts": [
+            "details_completion"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether you debounce keystrokes?",
+          "facts": [
+            "debouncing"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether you call Place Details after a selection?",
+          "facts": [
+            "details_completion"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether you debounce keystrokes?",
+          "facts": [
+            "debouncing"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-010",
+    "gold": [
+      {
+        "question": "Do you call Place Details after selection?",
+        "facts": [
+          "details_completion"
+        ]
+      },
+      {
+        "question": "Do you debounce keystrokes?",
+        "facts": [
+          "debouncing"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether you call Place Details after a selection?",
+          "facts": [
+            "details_completion"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether you debounce keystrokes?",
+          "facts": [
+            "debouncing"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether you call Place Details after a selection?",
+          "facts": [
+            "details_completion"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether you debounce keystrokes?",
+          "facts": [
+            "debouncing"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-021",
+    "gold": [],
+    "actual": {
+      "baseline": [],
+      "integrated": []
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-022",
+    "gold": [],
+    "actual": {
+      "baseline": [],
+      "integrated": []
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-023",
+    "gold": [],
+    "actual": {
+      "baseline": [],
+      "integrated": []
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-024",
+    "gold": [],
+    "actual": {
+      "baseline": [],
+      "integrated": []
+    }
+  },
+  {
+    "record_id": "GT-LBS-AC-233",
+    "gold": [
+      {
+        "question": "What peak rate and geographic coverage does type-ahead need?",
+        "facts": [
+          "peak_rate",
+          "region"
+        ]
+      },
+      {
+        "question": "Who operates the API backend and what result retention, redistribution, or resale rights are required?",
+        "facts": [
+          "backend_owner",
+          "storage_required",
+          "redistribution_required",
+          "resale_required"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm peak requests per second and target countries or regions?",
+          "facts": [
+            "peak_rate",
+            "region"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm who will operate the API backend, whether results must be stored, whether results will be redistributed and whether results will be resold?",
+          "facts": [
+            "backend_owner",
+            "redistribution_required",
+            "resale_required",
+            "storage_required"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm peak requests per second and target countries or regions?",
+          "facts": [
+            "peak_rate",
+            "region"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm who will operate the API backend, whether results must be stored, whether results will be redistributed and whether results will be resold?",
+          "facts": [
+            "backend_owner",
+            "redistribution_required",
+            "resale_required",
+            "storage_required"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-036",
+    "gold": [],
+    "actual": {
+      "baseline": [],
+      "integrated": []
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-037",
+    "gold": [
+      {
+        "question": "Do you need traffic at request time or for future departures?",
+        "facts": [
+          "departure_time_mode"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether traffic is needed now or for future departures?",
+          "facts": [
+            "departure_time_mode"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether traffic is needed now or for future departures?",
+          "facts": [
+            "departure_time_mode"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-038",
+    "gold": [
+      {
+        "question": "Voice or text instructions?",
+        "facts": [
+          "instruction_modality"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether instructions must be voice or text?",
+          "facts": [
+            "instruction_modality"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether instructions must be voice or text?",
+          "facts": [
+            "instruction_modality"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-040",
+    "gold": [
+      {
+        "question": "Do you need hazmat or height/weight restrictions?",
+        "facts": [
+          "hazmat_required",
+          "vehicle_dimensions"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether hazardous-goods restrictions are required and required height and weight restrictions?",
+          "facts": [
+            "hazmat_required",
+            "vehicle_dimensions"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether hazardous-goods restrictions are required and required height and weight restrictions?",
+          "facts": [
+            "hazmat_required",
+            "vehicle_dimensions"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-047",
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm expected monthly API workload?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether live-traffic ETAs are required?",
+          "facts": [
+            "traffic_required"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm required vehicle or travel modes?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": 4,
+          "text": "Could you confirm maximum stops or waypoints per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": 5,
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?",
+          "facts": [
+            "commercial_plan",
+            "existing_project"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm expected monthly API workload?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether live-traffic ETAs are required?",
+          "facts": [
+            "traffic_required"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm required vehicle or travel modes?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": 4,
+          "text": "Could you confirm maximum stops or waypoints per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": 5,
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?",
+          "facts": [
+            "commercial_plan",
+            "existing_project"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm expected monthly API workload?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether live-traffic ETAs are required?",
+          "facts": [
+            "traffic_required"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm required vehicle or travel modes?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": 4,
+          "text": "Could you confirm maximum stops or waypoints per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": 5,
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?",
+          "facts": [
+            "commercial_plan",
+            "existing_project"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm expected monthly API workload?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether live-traffic ETAs are required?",
+          "facts": [
+            "traffic_required"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm required vehicle or travel modes?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": 4,
+          "text": "Could you confirm maximum stops or waypoints per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": 5,
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?",
+          "facts": [
+            "commercial_plan",
+            "existing_project"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-049",
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "Will the 15\u201320 outlets be visited in one route, and how many must be included in one request?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm expected monthly API workload?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether live-traffic ETAs are required?",
+          "facts": [
+            "traffic_required"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm required vehicle or travel modes?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": 4,
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?",
+          "facts": [
+            "commercial_plan",
+            "existing_project"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm expected monthly API workload?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether live-traffic ETAs are required?",
+          "facts": [
+            "traffic_required"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm required vehicle or travel modes?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": 4,
+          "text": "Could you confirm maximum stops or waypoints per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": 5,
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?",
+          "facts": [
+            "commercial_plan",
+            "existing_project"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DIR-050",
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "travel_mode"
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "max_stops"
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "existing_project",
+          "commercial_plan"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm expected monthly API workload?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm required vehicle or travel modes?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm maximum stops or waypoints per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": 4,
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?",
+          "facts": [
+            "commercial_plan",
+            "existing_project"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm expected monthly API workload?",
+          "facts": [
+            "monthly_volume"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm required vehicle or travel modes?",
+          "facts": [
+            "travel_mode"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm maximum stops or waypoints per route?",
+          "facts": [
+            "max_stops"
+          ]
+        },
+        {
+          "question": 4,
+          "text": "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?",
+          "facts": [
+            "commercial_plan",
+            "existing_project"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-017",
+    "gold": [
+      {
+        "question": "Do you need traffic or a travel mode other than driving?",
+        "facts": [
+          "traffic_required",
+          "travel_mode"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-018",
+    "gold": [
+      {
+        "question": "Do you need traffic or a travel mode other than driving?",
+        "facts": [
+          "traffic_required",
+          "travel_mode"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-019",
+    "gold": [
+      {
+        "question": "Do you need traffic or a travel mode other than driving?",
+        "facts": [
+          "traffic_required",
+          "travel_mode"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-020",
+    "gold": [
+      {
+        "question": "Do you need traffic or a travel mode other than driving?",
+        "facts": [
+          "traffic_required",
+          "travel_mode"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?",
+          "facts": [
+            "traffic_required",
+            "travel_mode"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-025",
+    "gold": [
+      {
+        "question": "Are inputs coordinates or addresses?",
+        "facts": [
+          "input_type"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+          "facts": [
+            "input_type"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+          "facts": [
+            "input_type"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-030",
+    "gold": [
+      {
+        "question": "Are inputs coordinates or addresses?",
+        "facts": [
+          "input_type"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+          "facts": [
+            "input_type"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether inputs are coordinates, addresses or place IDs?",
+          "facts": [
+            "input_type"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-034",
+    "gold": [
+      {
+        "question": "Which country is your billing account based in?",
+        "facts": [
+          "billing_country"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm billing account country and where most requests will be used?",
+          "facts": [
+            "billing_country",
+            "usage_geography"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm billing account country?",
+          "facts": [
+            "billing_country"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "gold": [
+      {
+        "question": "How many origins and destinations per request, and do they need traffic-aware ETAs?",
+        "facts": [
+          "origin_count",
+          "destination_count",
+          "traffic_required"
+        ]
+      },
+      {
+        "question": "Will they use Mapbox driving-traffic, which has a tighter coordinate cap?",
+        "facts": [
+          "mapbox_traffic_profile"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Where will the application operate?",
+          "facts": [
+            "region"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?",
+          "facts": [
+            "destination_count",
+            "origin_count",
+            "traffic_required"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm whether Mapbox driving-traffic is required?",
+          "facts": [
+            "mapbox_traffic_profile"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Where will the application operate?",
+          "facts": [
+            "region"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?",
+          "facts": [
+            "destination_count",
+            "origin_count",
+            "traffic_required"
+          ]
+        },
+        {
+          "question": 3,
+          "text": "Could you confirm whether Mapbox driving-traffic is required?",
+          "facts": [
+            "mapbox_traffic_profile"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-DM-230",
+    "gold": [],
+    "actual": {
+      "baseline": [],
+      "integrated": []
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-008",
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "storage_required"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-009",
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "storage_required"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-010",
+    "gold": [
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-011",
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "storage_required"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-012",
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "storage_required"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-013",
+    "gold": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "storage_required"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether results must be stored?",
+          "facts": [
+            "storage_required"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-014",
+    "gold": [
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "lookup_trigger"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether lookups are user-triggered or periodic tracking?",
+          "facts": [
+            "lookup_trigger"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-227",
+    "gold": [],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Which map provider are you using?",
+          "facts": [
+            "current_provider"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Which map provider are you using?",
+          "facts": [
+            "current_provider"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-228",
+    "gold": [
+      {
+        "question": "What peak rate and monthly volume do they need?",
+        "facts": [
+          "peak_rate",
+          "monthly_volume"
+        ]
+      },
+      {
+        "question": "Will results be stored, and is public Nominatim or Mapbox temporary geocoding acceptable?",
+        "facts": [
+          "storage_required",
+          "public_service_acceptable",
+          "temporary_results_acceptable"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm peak requests per second and expected monthly API workload?",
+          "facts": [
+            "monthly_volume",
+            "peak_rate"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether results must be stored, whether a public community endpoint is acceptable and whether temporary-only geocoding results are acceptable?",
+          "facts": [
+            "public_service_acceptable",
+            "storage_required",
+            "temporary_results_acceptable"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm peak requests per second and expected monthly API workload?",
+          "facts": [
+            "monthly_volume",
+            "peak_rate"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm whether results must be stored, whether a public community endpoint is acceptable and whether temporary-only geocoding results are acceptable?",
+          "facts": [
+            "public_service_acceptable",
+            "storage_required",
+            "temporary_results_acceptable"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "record_id": "GT-LBS-RG-230",
+    "gold": [
+      {
+        "question": "Which providers should we evaluate?",
+        "facts": [
+          "alternative_providers"
+        ]
+      }
+    ],
+    "actual": {
+      "baseline": [
+        {
+          "question": 1,
+          "text": "Could you confirm whether rooftop precision must be a hard filter and whether a structured breakdown of address elements is required?",
+          "facts": [
+            "address_elements_required",
+            "rooftop_hard_filter"
+          ]
+        },
+        {
+          "question": 2,
+          "text": "Could you confirm other providers you want to consider?",
+          "facts": [
+            "alternative_providers"
+          ]
+        }
+      ],
+      "integrated": [
+        {
+          "question": 1,
+          "text": "Could you confirm other providers you want to consider?",
+          "facts": [
+            "alternative_providers"
+          ]
+        }
+      ]
+    }
+  }
+]

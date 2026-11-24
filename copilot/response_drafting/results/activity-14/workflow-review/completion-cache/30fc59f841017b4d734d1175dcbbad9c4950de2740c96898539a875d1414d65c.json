@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\",\"reason\":\"The error 'Invalid/missing origin' suggests the request is malformed or missing required parameters. To diagnose, we need the actual redacted request to verify the origin format and parameters.\"}",
+  "raw": "{\"decision\":\"request_reproduction\",\"reason\":\"The error 'Invalid/missing origin' suggests the request is malformed or missing required parameters. To diagnose, we need the actual redacted request to verify the origin format and parameters.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2501,
+    "completion_tokens": 47,
+    "total_tokens": 2548
+  },
+  "latency_ms": 1428,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

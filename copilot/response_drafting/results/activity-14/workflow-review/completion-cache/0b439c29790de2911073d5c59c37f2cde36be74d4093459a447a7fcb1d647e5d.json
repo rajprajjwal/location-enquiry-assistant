@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates that adding result_type=street_address caused some points to return ZERO_RESULTS. The documentation suggests that if both result_type and location_type filters are present, the API returns only those results that match both. The customer's issue might be due to the specific combination of filters not matching any results. However, the enquiry does not provide enough information to definitively diagnose the issue, so no specific decision is made.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry indicates that adding result_type=street_address caused some points to return ZERO_RESULTS. The documentation suggests that if both result_type and location_type filters are present, the API returns only those results that match both. The customer's issue might be due to the specific combination of filters not matching any results. However, the enquiry does not provide enough information to definitively diagnose the issue, so no specific decision is made.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2105,
+    "completion_tokens": 93,
+    "total_tokens": 2198
+  },
+  "latency_ms": 2376,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

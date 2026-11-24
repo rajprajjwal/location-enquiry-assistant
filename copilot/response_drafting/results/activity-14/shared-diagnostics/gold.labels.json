@@ -1,0 +1,185 @@
+{
+  "status": "locked",
+  "reviewer": "Shahid Kamal",
+  "reviewed_on": "2026-11-23",
+  "review_sha256": "45aca3d365e56919ac504c16f839947f483bc629276017f3010127da8a0fd9d8",
+  "case_sha256": "1c7d50e3b992820969a0f0e883a2a16b75539cb913e4e36f3cdb3fcd8e088c94",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "cases": [
+    {
+      "record_id": "GT-LBS-DIR-079",
+      "group": "GT-LBS-DIR-079",
+      "fold": 3,
+      "questions": [],
+      "reviewer_decision": "empty"
+    },
+    {
+      "record_id": "GT-LBS-DIR-097",
+      "group": "GT-LBS-DIR-097",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "For one route that isn’t drawn, what does the API return for that request: a route, an empty result, or an error?",
+          "facts": [
+            "API response for one missing route: route, empty result, or error"
+          ],
+          "why_it_matters": "Determine whether to troubleshoot the route request or the app's rendering."
+        }
+      ],
+      "reviewer_decision": "revise"
+    },
+    {
+      "record_id": "GT-LBS-DIR-124",
+      "group": "GT-LBS-DIR-124",
+      "fold": 4,
+      "questions": [],
+      "reviewer_decision": "empty"
+    },
+    {
+      "record_id": "GT-LBS-AC-223",
+      "group": "GT-LBS-AC-223",
+      "fold": 3,
+      "questions": [],
+      "reviewer_decision": "empty"
+    },
+    {
+      "record_id": "GT-LBS-RG-086",
+      "group": "GT-LBS-RG-086",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Could you share an example of the failing reverse-geocoding request as sent, with tokens and credentials redacted?",
+          "facts": [
+            "redacted example of the failing reverse-geocoding request as sent"
+          ],
+          "why_it_matters": "Check how the request is built and how it attaches the access token."
+        }
+      ],
+      "reviewer_decision": "revise"
+    },
+    {
+      "record_id": "GT-LBS-AC-085",
+      "group": "GT-LBS-AC-085",
+      "fold": 4,
+      "questions": [],
+      "reviewer_decision": "empty"
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "group": "GT-LBS-DM-225",
+      "fold": 5,
+      "questions": [],
+      "reviewer_decision": "empty"
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "group": "GT-LBS-RG-062",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Could you share the exact request that returned `422` and the error message from the response body? Please redact your access token.",
+          "facts": [
+            "exact failing Mapbox reverse-geocoding request with access token redacted",
+            "error message in the 422 response body"
+          ],
+          "why_it_matters": "Identify which parameters were sent with limit=5 and what Mapbox rejected."
+        }
+      ],
+      "reviewer_decision": "revise"
+    },
+    {
+      "record_id": "GT-LBS-AC-047",
+      "group": "GT-LBS-AC-047",
+      "fold": 4,
+      "questions": [
+        {
+          "question": "Which provider are you using, and could you share the request body from one call that didn’t return query predictions? Please remove any credentials.",
+          "facts": [
+            "provider",
+            "redacted request body from a call without query predictions"
+          ],
+          "why_it_matters": "Check whether the request uses the correct query-prediction option for the provider."
+        }
+      ],
+      "reviewer_decision": "revise"
+    },
+    {
+      "record_id": "GT-LBS-RG-111",
+      "group": "GT-LBS-RG-111",
+      "fold": 2,
+      "questions": [],
+      "reviewer_decision": "empty"
+    },
+    {
+      "record_id": "GT-LBS-RG-099",
+      "group": "GT-LBS-RG-099",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Could you share one latitude and longitude that returned `ZERO_RESULTS`, along with any result filters sent in that request?",
+          "facts": [
+            "failing latitude and longitude",
+            "result filters"
+          ],
+          "why_it_matters": "Reproduce the lookup and check whether the same coordinates return a result without the filters."
+        }
+      ],
+      "reviewer_decision": "revise"
+    },
+    {
+      "record_id": "GT-LBS-DIR-088",
+      "group": "GT-LBS-DIR-088",
+      "fold": 5,
+      "questions": [
+        {
+          "question": "Could you share one Directions request from the loop with the API key redacted, and tell us whether that same request still returns `OVER_QUERY_LIMIT` when sent on its own?",
+          "facts": [
+            "redacted Directions request from the loop",
+            "whether that request returns OVER_QUERY_LIMIT when sent on its own"
+          ],
+          "why_it_matters": "Inspect the failing request and determine whether the error is tied to the burst from the loop."
+        }
+      ],
+      "reviewer_decision": "revise"
+    },
+    {
+      "record_id": "GT-LBS-AC-111",
+      "group": "GT-LBS-AC-111",
+      "fold": 3,
+      "questions": [],
+      "reviewer_decision": "empty"
+    },
+    {
+      "record_id": "GT-LBS-DM-049",
+      "group": "GT-LBS-DM-049",
+      "fold": 3,
+      "questions": [
+        {
+          "question": "Could you share one origin and destination pair that returned `NOT_FOUND`, with both values exactly as sent in the request?",
+          "facts": [
+            "origin and destination from one failing pair",
+            "exact representation of each input in the request"
+          ],
+          "why_it_matters": "Reproduce the element failure and check how its inputs were represented."
+        }
+      ],
+      "reviewer_decision": "revise"
+    },
+    {
+      "record_id": "GT-LBS-DM-125",
+      "group": "GT-LBS-DM-125",
+      "fold": 3,
+      "questions": [],
+      "reviewer_decision": "empty"
+    },
+    {
+      "record_id": "GT-LBS-DM-046",
+      "group": "GT-LBS-DM-046",
+      "fold": 5,
+      "questions": [],
+      "reviewer_decision": "empty"
+    }
+  ],
+  "excluded": []
+}

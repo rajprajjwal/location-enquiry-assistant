@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"prediction_request\", \"reason\":\"The enquiry indicates that query predictions are not being returned, which aligns with the documentation stating that query predictions are not returned by default and require the includeQueryPredictions parameter. The decision to inspect the provider and request body is appropriate to confirm if the parameter is correctly set and if there are any other configuration issues.\"}",
+  "raw": "{\"decision\":\"prediction_request\", \"reason\":\"The enquiry indicates that query predictions are not being returned, which aligns with the documentation stating that query predictions are not returned by default and require the includeQueryPredictions parameter. The decision to inspect the provider and request body is appropriate to confirm if the parameter is correctly set and if there are any other configuration issues.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1667,
+    "completion_tokens": 74,
+    "total_tokens": 1741
+  },
+  "latency_ms": 1954,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

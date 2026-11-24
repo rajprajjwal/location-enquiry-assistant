@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry does not require a specific diagnostic decision as it is a general request for information on using Google reverse geocoding to retrieve locality data. The customer is asking about ownership, escalation, and response, which are not covered by the available diagnostic decisions.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry does not require a specific diagnostic decision as it is a general request for information on using Google reverse geocoding to retrieve locality data. The customer is asking about ownership, escalation, and response, which are not covered by the available diagnostic decisions.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1608,
+    "completion_tokens": 60,
+    "total_tokens": 1668
+  },
+  "latency_ms": 1658,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

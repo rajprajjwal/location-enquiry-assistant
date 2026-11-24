@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry seeks information about request-rate ceilings and usage limits for the public OSRM /route endpoint. The retrieved evidence from the OSRM demo server documentation indicates that the demo server is restricted to reasonable, non-commercial use-cases and advises not to exceed 1 request per second. However, the enquiry does not indicate any specific issue or behavior that requires a diagnostic decision. Therefore, no specific decision is needed as the information is already provided in the documentation.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry seeks information about request-rate ceilings and usage limits for the public OSRM /route endpoint. The retrieved evidence from the OSRM demo server documentation indicates that the demo server is restricted to reasonable, non-commercial use-cases and advises not to exceed 1 request per second. However, the enquiry does not indicate any specific issue or behavior that requires a diagnostic decision. Therefore, no specific decision is needed as the information is already provided in the documentation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2087,
+    "completion_tokens": 100,
+    "total_tokens": 2187
+  },
+  "latency_ms": 2520,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

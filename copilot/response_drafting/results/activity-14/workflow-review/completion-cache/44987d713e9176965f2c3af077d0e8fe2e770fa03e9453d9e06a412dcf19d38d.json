@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"travel_mode\",\n      \"value\": \"INTERCITY_BUS\",\n      \"evidence\": \"Hi, we're an intercity bus aggregator and want a directions/routing API for route previews between cities.\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing capability.\"\n    },\n    {\n      \"fields\": [\"monthly_volume\"],\n      \"decision_impact\": \"Estimate the recurring workload and cost.\"\n    },\n    {\n      \"fields\": [\"max_stops\"],\n      \"decision_impact\": \"Check route shape against waypoint limits.\"\n    },\n    {\n      \"fields\": [\"existing_project\", \"ola_contract\"],\n      \"decision_impact\": \"Establish product eligibility and applicable commercial terms.\"\n    }\n  ],\n  \"reason\": \"The customer is seeking a directions/routing API for intercity bus route previews, but the specific requirements such as traffic awareness, monthly workload, maximum stops, and existing project or contract status are not provided, which are critical for decision-making.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"travel_mode\",\n      \"value\": \"INTERCITY_BUS\",\n      \"evidence\": \"Hi, we're an intercity bus aggregator and want a directions/routing API for route previews between cities.\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"traffic_required\"],\n      \"decision_impact\": \"Select traffic-aware versus static routing capability.\"\n    },\n    {\n      \"fields\": [\"monthly_volume\"],\n      \"decision_impact\": \"Estimate the recurring workload and cost.\"\n    },\n    {\n      \"fields\": [\"max_stops\"],\n      \"decision_impact\": \"Check route shape against waypoint limits.\"\n    },\n    {\n      \"fields\": [\"existing_project\", \"ola_contract\"],\n      \"decision_impact\": \"Establish product eligibility and applicable commercial terms.\"\n    }\n  ],\n  \"reason\": \"The customer is seeking a directions/routing API for intercity bus route previews, but the specific requirements such as traffic awareness, monthly workload, maximum stops, and existing project or contract status are not provided, which are critical for decision-making.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2062,
+    "completion_tokens": 235,
+    "total_tokens": 2297
+  },
+  "latency_ms": 5541,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,87 @@
+{
+  "development": {
+    "before": {
+      "cases": 147,
+      "owner_matches": 134,
+      "owner_accuracy": 0.9115646258503401,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 137,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": true
+    },
+    "after": {
+      "cases": 147,
+      "owner_matches": 135,
+      "owner_accuracy": 0.9183673469387755,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 137,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": true
+    },
+    "routine_routing_replayed": 137,
+    "saved_handoffs_retained": 10,
+    "changed_owners": [
+      {
+        "record_id": "GT-LBS-RG-230",
+        "expected": "Account team (Sales)",
+        "before": "Support L1",
+        "after": "Account team (Sales)"
+      }
+    ]
+  },
+  "fresh": {
+    "before": {
+      "cases": 12,
+      "owner_matches": 8,
+      "owner_accuracy": 0.6666666666666666,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 11,
+      "escalation_precision": 0.0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 1,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "after": {
+      "cases": 12,
+      "owner_matches": 8,
+      "owner_accuracy": 0.6666666666666666,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 11,
+      "escalation_precision": 0.0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 1,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "routine_routing_replayed": 11,
+    "saved_handoffs_retained": 1,
+    "changed_owners": []
+  },
+  "workbook_sha256": "b0ad6e415cf093ecaefff73b6a0fa0811f8f1d783ba7414a770f44a1c692f4fb",
+  "method": "Replay routine routing using saved interpretations and approved working labels. Retain saved model handoff decisions.",
+  "frozen_cases_audited": 26,
+  "review_cases": 24,
+  "routing_gap_cases": [
+    "GT-LBS-DM-214",
+    "GT-LBS-DM-226"
+  ],
+  "tests": {
+    "real_validator_workflow_passed": 85
+  },
+  "frozen_rescored": false
+}

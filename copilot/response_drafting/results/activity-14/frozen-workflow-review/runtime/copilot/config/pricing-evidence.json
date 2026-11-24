@@ -1,0 +1,823 @@
+{
+  "provenance": {
+    "indexed_pricing_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+    "mapbox_table_extraction_sha256": "19ceb0da716c47e2bbd9c44be8ca2e9df51af85691d561a61590453b85a5a798",
+    "fx_source": "Dated RBI search-index snapshot, corroborated by NSE's FBIL reference-rate archive."
+  },
+  "offers": {
+    "ola.autocomplete": {
+      "url": "https://maps.olakrutrim.com/pricing/details",
+      "label": "Autocomplete",
+      "span": "Free tier\n\n0–100,000\n\n₹0.000\n\nTier 2\n\n100,001–5,000,000\n\nStandard rate\n\nTier 3\n\n5,000,001+\n\nVolume rate\n| API | Free tier | Tier 2 rate | Tier 3 rate |\n| Autocomplete | Free | ₹ 0.056 / request | ₹ 0.013 / request |",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          5000000,
+          0.056
+        ],
+        [
+          null,
+          0.013
+        ]
+      ],
+      "unit": "request",
+      "currency": "INR",
+      "per": 1,
+      "beyond": null
+    },
+    "ola.place_details": {
+      "url": "https://maps.olakrutrim.com/pricing/details",
+      "label": "Place Details",
+      "span": "Free tier\n\n0–100,000\n\n₹0.000\n\nTier 2\n\n100,001–5,000,000\n\nStandard rate\n\nTier 3\n\n5,000,001+\n\nVolume rate\n| API | Free tier | Tier 2 rate | Tier 3 rate |\n| Place Details | Free | ₹ 0.099 / request | ₹ 0.025 / request |",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          5000000,
+          0.099
+        ],
+        [
+          null,
+          0.025
+        ]
+      ],
+      "unit": "request",
+      "currency": "INR",
+      "per": 1,
+      "beyond": null
+    },
+    "ola.reverse_geocode": {
+      "url": "https://maps.olakrutrim.com/pricing/details",
+      "label": "Reverse Geocoding",
+      "span": "Free tier\n\n0–100,000\n\n₹0.000\n\nTier 2\n\n100,001–5,000,000\n\nStandard rate\n\nTier 3\n\n5,000,001+\n\nVolume rate\n| API | Free tier | Tier 2 rate | Tier 3 rate |\n| Reverse Geocoding | Free | ₹ 0.099 / request | ₹ 0.025 / request |",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          5000000,
+          0.099
+        ],
+        [
+          null,
+          0.025
+        ]
+      ],
+      "unit": "request",
+      "currency": "INR",
+      "per": 1,
+      "beyond": null
+    },
+    "ola.directions": {
+      "url": "https://maps.olakrutrim.com/pricing/details",
+      "label": "Directions",
+      "span": "Free tier\n\n0–100,000\n\n₹0.000\n\nTier 2\n\n100,001–5,000,000\n\nStandard rate\n\nTier 3\n\n5,000,001+\n\nVolume rate\n| API | Free tier | Tier 2 rate | Tier 3 rate |\n| Directions | Free | ₹ 0.199 / request | ₹ 0.049 / request |",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          5000000,
+          0.199
+        ],
+        [
+          null,
+          0.049
+        ]
+      ],
+      "unit": "request",
+      "currency": "INR",
+      "per": 1,
+      "beyond": null
+    },
+    "ola.directions_basic": {
+      "url": "https://maps.olakrutrim.com/pricing/details",
+      "label": "Directions Basic",
+      "span": "Free tier\n\n0–100,000\n\n₹0.000\n\nTier 2\n\n100,001–5,000,000\n\nStandard rate\n\nTier 3\n\n5,000,001+\n\nVolume rate\n| API | Free tier | Tier 2 rate | Tier 3 rate |\n| Directions Basic | Free | ₹ 0.099 / request | ₹ 0.025 / request |",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          5000000,
+          0.099
+        ],
+        [
+          null,
+          0.025
+        ]
+      ],
+      "unit": "request",
+      "currency": "INR",
+      "per": 1,
+      "beyond": null
+    },
+    "ola.distance_matrix": {
+      "url": "https://maps.olakrutrim.com/pricing/details",
+      "label": "Distance Matrix",
+      "span": "Free tier\n\n0–100,000\n\n₹0.000\n\nTier 2\n\n100,001–5,000,000\n\nStandard rate\n\nTier 3\n\n5,000,001+\n\nVolume rate\n| API | Free tier | Tier 2 rate | Tier 3 rate |\n| Distance Matrix * | Free | ₹ 0.199 / pair | ₹ 0.049 / pair |",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          5000000,
+          0.199
+        ],
+        [
+          null,
+          0.049
+        ]
+      ],
+      "unit": "pair",
+      "currency": "INR",
+      "per": 1,
+      "beyond": null
+    },
+    "ola.distance_matrix_basic": {
+      "url": "https://maps.olakrutrim.com/pricing/details",
+      "label": "Distance Matrix Basic",
+      "span": "Free tier\n\n0–100,000\n\n₹0.000\n\nTier 2\n\n100,001–5,000,000\n\nStandard rate\n\nTier 3\n\n5,000,001+\n\nVolume rate\n| API | Free tier | Tier 2 rate | Tier 3 rate |\n| Distance Matrix Basic * | Free | ₹ 0.099 / pair | ₹ 0.025 / pair |",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          5000000,
+          0.099
+        ],
+        [
+          null,
+          0.025
+        ]
+      ],
+      "unit": "pair",
+      "currency": "INR",
+      "per": 1,
+      "beyond": null
+    },
+    "google.autocomplete_request": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Autocomplete Requests (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Autocomplete Requests (India) F155-0371-DCAE | 70,000 | $0.85 | $0.21 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          70000,
+          0
+        ],
+        [
+          5000000,
+          0.85
+        ],
+        [
+          10000000,
+          0.21
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.autocomplete_nodetails_session": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Autocomplete without Places Details - Per Session (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Autocomplete without Places Details - Per Session (India) C625-D3CE-DF37 | 35,000 | $5.10 | $1.28 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          35000,
+          0
+        ],
+        [
+          5000000,
+          5.1
+        ],
+        [
+          10000000,
+          1.28
+        ]
+      ],
+      "unit": "session",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.place_details_essentials": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Places API Place Details Essentials (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Places API Place Details Essentials (India) 8036-9499-4AF9 | 70,000 | $1.50 | $0.38 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          70000,
+          0
+        ],
+        [
+          5000000,
+          1.5
+        ],
+        [
+          10000000,
+          0.38
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.place_details_pro": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Places API Place Details Pro (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Places API Place Details Pro (India) 1F70-206B-61DF | 35,000 | $5.10 | $1.28 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          35000,
+          0
+        ],
+        [
+          5000000,
+          5.1
+        ],
+        [
+          10000000,
+          1.28
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.geocoding": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Geocoding (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Geocoding (India) AB12-DA89-B523 | 70,000 | $1.50 | $0.38 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          70000,
+          0
+        ],
+        [
+          5000000,
+          1.5
+        ],
+        [
+          10000000,
+          0.38
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.compute_routes_essentials": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Routes: Compute Routes Essentials (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Routes: Compute Routes Essentials (India) 890F-D2B6-C2EA | 70,000 | $1.50 | $0.38 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          70000,
+          0
+        ],
+        [
+          5000000,
+          1.5
+        ],
+        [
+          10000000,
+          0.38
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.compute_routes_pro": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Routes: Compute Routes Pro (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Routes: Compute Routes Pro (India) 3CC6-0DC6-1C5F | 35,000 | $3.00 | $0.75 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          35000,
+          0
+        ],
+        [
+          5000000,
+          3.0
+        ],
+        [
+          10000000,
+          0.75
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.compute_routes_enterprise": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Routes: Compute Routes Enterprise (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Routes: Compute Routes Enterprise (India) BFBE-DDB5-317C | 7,000 | $4.50 | $1.14 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          7000,
+          0
+        ],
+        [
+          5000000,
+          4.5
+        ],
+        [
+          10000000,
+          1.14
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.route_matrix_essentials": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Routes: Compute Route Matrix Essentials (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Routes: Compute Route Matrix Essentials (India) AE55-A4D2-4177 | 70,000 | $1.50 | $0.38 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          70000,
+          0
+        ],
+        [
+          5000000,
+          1.5
+        ],
+        [
+          10000000,
+          0.38
+        ]
+      ],
+      "unit": "element",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.route_matrix_pro": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Routes: Compute Route Matrix Pro (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Routes: Compute Route Matrix Pro (India) CA04-7918-ACFC | 35,000 | $3.00 | $0.75 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          35000,
+          0
+        ],
+        [
+          5000000,
+          3.0
+        ],
+        [
+          10000000,
+          0.75
+        ]
+      ],
+      "unit": "element",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.route_matrix_enterprise": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Routes: Compute Route Matrix Enterprise (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Routes: Compute Route Matrix Enterprise (India) 046F-7FE8-E2EF | 7,000 | $4.50 | $1.14 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          7000,
+          0
+        ],
+        [
+          5000000,
+          4.5
+        ],
+        [
+          10000000,
+          1.14
+        ]
+      ],
+      "unit": "element",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.directions_legacy": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Directions (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Directions (India) 4714-291C-3199 | 70,000 | $1.50 | $0.38 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          70000,
+          0
+        ],
+        [
+          5000000,
+          1.5
+        ],
+        [
+          10000000,
+          0.38
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.directions_advanced_legacy": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Directions Advanced (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Directions Advanced (India) E27B-BD57-FD7D | 35,000 | $3.00 | $0.75 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          35000,
+          0
+        ],
+        [
+          5000000,
+          3.0
+        ],
+        [
+          10000000,
+          0.75
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.distance_matrix_legacy": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Distance Matrix (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Distance Matrix (India) 1 558A-4F88-F361 | 70,000 | $1.50 | $0.38 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          70000,
+          0
+        ],
+        [
+          5000000,
+          1.5
+        ],
+        [
+          10000000,
+          0.38
+        ]
+      ],
+      "unit": "element",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.distance_matrix_advanced_legacy": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+      "label": "Distance Matrix Advanced (India)",
+      "span": "Cost per 1,000 billable events\n| SKU Name | Free Usage Cap | Cap - 5,000,000 | 5,000,000+ |\n| Distance Matrix Advanced (India) 1 C0F4-32AE-F6D1 | 35,000 | $3.00 | $0.75 |\nFor usage exceeding 10,000,000 billable events per month or for pricing outside of India, contact Google Sales.",
+      "tiers": [
+        [
+          35000,
+          0
+        ],
+        [
+          5000000,
+          3.0
+        ],
+        [
+          10000000,
+          0.75
+        ]
+      ],
+      "unit": "element",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.directions": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Directions API: monthly request pricing",
+      "span": "Directions API: monthly request pricing\nMonthly requests | Cost per 1,000\nUp to 100,000 | Free\n100,001 - 500,000 | $2.00\n500,001 - 1,000,000 | $1.60\n1,000,001 - 5,000,000 | $1.20\n5,000,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          500000,
+          2.0
+        ],
+        [
+          1000000,
+          1.6
+        ],
+        [
+          5000000,
+          1.2
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.matrix": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Matrix API: monthly matrix element pricing",
+      "span": "Matrix API: monthly matrix element pricing\nMonthly matrix elements | Cost per 1,000\nUp to 100,000 | Free\n100,001 - 500,000 | $2.00\n500,001 - 1,000,000 | $1.60\n1,000,001 - 5,000,000 | $1.20\n5,000,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          500000,
+          2.0
+        ],
+        [
+          1000000,
+          1.6
+        ],
+        [
+          5000000,
+          1.2
+        ]
+      ],
+      "unit": "element",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.optimization": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Optimization API: monthly request pricing",
+      "span": "Optimization API: monthly request pricing\nMonthly requests | Cost per 1,000\nUp to 100,000 | Free\n100,001 - 500,000 | $2.00\n500,001 - 1,000,000 | $1.60\n1,000,001 - 5,000,000 | $1.20\n5,000,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          500000,
+          2.0
+        ],
+        [
+          1000000,
+          1.6
+        ],
+        [
+          5000000,
+          1.2
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.geocoding_temporary": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Temporary Geocoding API: monthly request pricing",
+      "span": "Temporary Geocoding API: monthly request pricing\nMonthly requests | Cost per 1,000\nUp to 100,000 | Free\n100,001 - 500,000 | $0.75\n500,001 - 1,000,000 | $0.60\n1,000,001 - 5,000,000 | $0.45\n5,000,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          100000,
+          0.0
+        ],
+        [
+          500000,
+          0.75
+        ],
+        [
+          1000000,
+          0.6
+        ],
+        [
+          5000000,
+          0.45
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.geocoding_permanent": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Permanent Geocoding API: monthly request pricing",
+      "span": "Permanent Geocoding API: monthly request pricing\nMonthly requests | Cost per 1,000\n1 - 500,000 | $5.00\n500,001 - 1,000,000 | $4.00\n1,000,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          500000,
+          5.0
+        ],
+        [
+          1000000,
+          4.0
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.searchbox_requests_intro": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Search Box API - Requests: introductory preview monthly request pricing",
+      "span": "Search Box API - Requests: introductory preview monthly request pricing\nMonthly requests | Cost per 1,000\nUp to 50,000 | Free\n50,001 - 500,000 | $1.00\n500,001 - 1,000,000 | $0.85\n1,000,001 – 5,000,000 | $0.70\n5,000,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          50000,
+          0.0
+        ],
+        [
+          500000,
+          1.0
+        ],
+        [
+          1000000,
+          0.85
+        ],
+        [
+          5000000,
+          0.7
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.searchbox_requests_standard": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Search Box API - Requests: standard monthly request pricing",
+      "span": "Search Box API - Requests: standard monthly request pricing\nMonthly requests | Cost per 1,000\nUp to 25,000 | Free\n25,001 - 100,000 | $1.70\n100,001 - 500,000 | $1.50\n500,001 - 1,000,000 | $1.25\n1,000,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          25000,
+          0.0
+        ],
+        [
+          100000,
+          1.7
+        ],
+        [
+          500000,
+          1.5
+        ],
+        [
+          1000000,
+          1.25
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.searchbox_sessions_intro": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Search Box API - Sessions: introductory preview monthly session pricing",
+      "span": "Search Box API - Sessions: introductory preview monthly session pricing\nMonthly sessions | Cost per 1,000\nUp to 500 | Free\n501 - 100,000 | $3.00\n100,001 - 500,000 | $2.75\n500,001 - 1,000,000 | $2.50\n1,000,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          500,
+          0.0
+        ],
+        [
+          100000,
+          3.0
+        ],
+        [
+          500000,
+          2.75
+        ],
+        [
+          1000000,
+          2.5
+        ]
+      ],
+      "unit": "session",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.searchbox_sessions_standard": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Search Box API - Sessions: standard monthly session pricing",
+      "span": "Search Box API - Sessions: standard monthly session pricing\nMonthly sessions | Cost per 1,000\nUp to 2,500 | Free\n2,501 - 100,000 | $11.50\n100,001 - 200,000 | $10.00\n200,001 - 500,000 | $8.40\n500,001 - 1,000,000 | $6.60\n1,000,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          2500,
+          0.0
+        ],
+        [
+          100000,
+          11.5
+        ],
+        [
+          200000,
+          10.0
+        ],
+        [
+          500000,
+          8.4
+        ],
+        [
+          1000000,
+          6.6
+        ]
+      ],
+      "unit": "session",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "mapbox.autofill_sessions": {
+      "url": "https://www.mapbox.com/pricing",
+      "label": "Address Autofill: monthly session pricing",
+      "span": "Address Autofill: monthly session pricing\nMonthly sessions | Cost per 1,000\nUp to 1,000 | Free\n1,001 - 25,000 | $12.50\n25,001 - 100,000 | $10.00\n100,001 - 500,000 | $7.50\n500,001+ | Contact sales for discount",
+      "tiers": [
+        [
+          1000,
+          0.0
+        ],
+        [
+          25000,
+          12.5
+        ],
+        [
+          100000,
+          10.0
+        ],
+        [
+          500000,
+          7.5
+        ]
+      ],
+      "unit": "session",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": "contact_sales"
+    },
+    "google.autocomplete_request_global": {
+      "url": "https://developers.google.com/maps/billing-and-pricing/pricing",
+      "label": "Autocomplete Requests (Global)",
+      "span": "| SKU Name | Free Usage Cap | Cap - 100,000 | 100,001 - 500,000 | 500,001 - 1,000,000 | 1,000,001 - 5,000,000 | 5,000,000+ |\n| Autocomplete Requests 4EF4-B17C-B31A | 10,000 | $2.83 | $2.27 | $1.70 | $0.85 | $0.21 |",
+      "tiers": [
+        [
+          10000,
+          0
+        ],
+        [
+          100000,
+          2.83
+        ],
+        [
+          500000,
+          2.27
+        ],
+        [
+          1000000,
+          1.7
+        ],
+        [
+          5000000,
+          0.85
+        ],
+        [
+          null,
+          0.21
+        ]
+      ],
+      "unit": "request",
+      "currency": "USD",
+      "per": 1000,
+      "beyond": null
+    }
+  },
+  "exchange_rate": {
+    "url": "https://www.rbi.org.in/home.aspx/Scripts/Webservice/Home.aspx/scripts/scripts/scripts/scripts/FS_PressRelease.aspx?fn=2757",
+    "corroboration": "https://www.nseindia.in/report-detail/rbi-reference-rate-statistics",
+    "as_of": "2026-11-06",
+    "usd_inr": 94.1402,
+    "span": "INR / 1 USD : 94.1402\n(As at 1.00pm of November 06, 2026)"
+  }
+}

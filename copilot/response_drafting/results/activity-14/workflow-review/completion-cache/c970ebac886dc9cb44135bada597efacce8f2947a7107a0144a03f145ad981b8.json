@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"cab aggregator in Delhi\",\"evidence\":\"For a cab aggregator in Delhi\"},\"region\":{\"value\":\"Delhi\",\"evidence\":\"cab aggregator in Delhi\"},\"technical_constraints\":{\"value\":\"live traffic\",\"evidence\":\"which directions options account for live traffic\"}}}",
+  "raw": "{\"intent\":\"capability_match\",\"sub_intent\":\"capability_question\",\"api\":\"directions\",\"team\":\"Support\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"use_case\":{\"value\":\"cab aggregator in Delhi\",\"evidence\":\"For a cab aggregator in Delhi\"},\"region\":{\"value\":\"Delhi\",\"evidence\":\"cab aggregator in Delhi\"},\"technical_constraints\":{\"value\":\"live traffic\",\"evidence\":\"which directions options account for live traffic\"}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1322,
+    "completion_tokens": 101,
+    "total_tokens": 1423
+  },
+  "latency_ms": 4029,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

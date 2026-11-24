@@ -1,0 +1,22 @@
+{
+  "scope": "Monthly-workload normalization step, selected working-only workflow controls",
+  "selected_case_ids": [
+    "GT-LBS-DIR-049",
+    "GT-LBS-AC-233",
+    "GT-LBS-DM-228",
+    "GT-LBS-RG-227",
+    "GT-LBS-RG-228"
+  ],
+  "source_hashes": {
+    "copilot/qualification/facts.py": "f825943871442df746a9f3c7ae8df9be7e2967d278b1ffee4e2467f903aa6830",
+    "copilot/qualification/workload.py": "101e2545324fe7e0744b35beb40b0c97c81fdebba567f45a26da1b7e56136ac7",
+    "copilot/qualification/planning.py": "48bbfd8cff61405d6d7aa909bc96640c76adef2d51fb13dba48865a2551b9cdc",
+    "copilot/enquiry_workflow/cases.py": "1b6677ec2b0f68f1b5936cb5f5e4a22f07724ce2f077f5695cf5dfb91f0747d7",
+    "copilot/enquiry_workflow/workflow.py": "412fff9e53e5770d96a13f5fa12907dc2181e92c7da1e73581fbaf1e02285ebc"
+  },
+  "baseline_facts_sha256": "3fafa8333de9babe739172fff22ecce9aff68ea59c64ae6b0cd99afaf5b033e5",
+  "workbook_before_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "full_36_case_F1_rerun": false
+}

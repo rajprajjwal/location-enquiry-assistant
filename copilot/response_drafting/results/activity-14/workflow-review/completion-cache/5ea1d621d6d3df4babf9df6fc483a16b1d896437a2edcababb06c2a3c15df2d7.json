@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer's question is about whether Google will bill the Place Autocomplete and the final Place Details call as one session if their API keys belong to two different Google Cloud projects. The provided documentation indicates that the session concludes when the user selects a place and a call to Place Details is made, and the credentials used for each request within a session must belong to the same Google Cloud Console project. Therefore, the missing material facts are the customer's details_completion and debouncing settings, which are necessary to determine how sessions are billed and how keystrokes are converted into billable requests.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer's question is about whether Google will bill the Place Autocomplete and the final Place Details call as one session if their API keys belong to two different Google Cloud projects. The provided documentation indicates that the session concludes when the user selects a place and a call to Place Details is made, and the credentials used for each request within a session must belong to the same Google Cloud Console project. Therefore, the missing material facts are the customer's details_completion and debouncing settings, which are necessary to determine how sessions are billed and how keystrokes are converted into billable requests.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1641,
+    "completion_tokens": 198,
+    "total_tokens": 1839
+  },
+  "latency_ms": 4648,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

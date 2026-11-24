@@ -1,0 +1,29 @@
+{
+  "cases": 80,
+  "fresh_model_completion_calls": 239,
+  "model_call_errors": 0,
+  "schema_valid": 80,
+  "current_pending_replies": 0,
+  "followup_replies_executed": 0,
+  "no_question_selection_statuses": {
+    "no_qualification_required": 17,
+    "no_follow_up": 8,
+    "declined": 2
+  },
+  "newly_covered_facts": 16,
+  "retained_previously_covered_facts": 2,
+  "previously_covered_facts_now_missed": [
+    [
+      "GT-LBS-AC-231",
+      1,
+      1
+    ],
+    [
+      "GT-LBS-DM-226",
+      3,
+      1
+    ]
+  ],
+  "assigned_owners_preserved": 80,
+  "historical_comparison_caveat": "The prior frozen outputs were saved earlier. Differences include model-execution variation and cannot all be attributed causally to one change."
+}

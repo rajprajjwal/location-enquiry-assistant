@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The ZERO_RESULTS error may be due to the use of waypoints without the 'via:' prefix, which can cause the API to interpret them as stopovers. The documentation suggests using 'via:' to route through waypoints without stopping, which could resolve the issue.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The ZERO_RESULTS error may be due to the use of waypoints without the 'via:' prefix, which can cause the API to interpret them as stopovers. The documentation suggests using 'via:' to route through waypoints without stopping, which could resolve the issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2207,
+    "completion_tokens": 60,
+    "total_tokens": 2267
+  },
+  "latency_ms": 1654,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

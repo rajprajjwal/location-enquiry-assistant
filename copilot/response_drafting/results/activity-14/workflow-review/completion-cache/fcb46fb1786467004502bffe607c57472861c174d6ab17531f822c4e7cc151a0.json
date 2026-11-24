@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"discovery_qualification\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"government client\",\"evidence\":\"government client\"},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":\"100M\",\"evidence\":\"100M reverse geocodes a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"on-prem\",\"evidence\":\"on-prem\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "raw": "{\"intent\":\"sales_qualification\",\"sub_intent\":\"discovery_qualification\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"government client\",\"evidence\":\"government client\"},\"region\":{\"value\":null,\"evidence\":null},\"monthly_volume\":{\"value\":\"100M\",\"evidence\":\"100M reverse geocodes a month\"},\"current_provider\":{\"value\":null,\"evidence\":null},\"timeline\":{\"value\":null,\"evidence\":null},\"budget\":{\"value\":null,\"evidence\":null},\"technical_constraints\":{\"value\":\"on-prem\",\"evidence\":\"on-prem\"},\"decision_maker\":{\"value\":null,\"evidence\":null}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1354,
+    "completion_tokens": 162,
+    "total_tokens": 1516
+  },
+  "latency_ms": 3757,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

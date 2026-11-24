@@ -1,0 +1,271 @@
+{
+  "source": "/Users/shahidkamal/Documents/IIT-Kharagpur/Capston/annotation-2-members.xlsx",
+  "source_sha256": "cd9e134186b229b3ee8dfaca3a3ae60e12dc9540e34fb5ba164a8a960c35fbf9",
+  "sheets": [
+    "Update_A",
+    "Update_P"
+  ],
+  "pilot_cases": 10,
+  "scored_fields": [
+    "intent",
+    "api",
+    "team"
+  ],
+  "input_differences": [],
+  "missing_or_unpaired_cases": [],
+  "formatting_normalizations": [
+    {
+      "sheet": "Update_A",
+      "pilot_id": "P01",
+      "field": "team",
+      "cell": "I2",
+      "submitted": "sales",
+      "scored": "Sales",
+      "reason": "Controlled-vocabulary casing and surrounding whitespace only"
+    },
+    {
+      "sheet": "Update_P",
+      "pilot_id": "P10",
+      "field": "intent",
+      "cell": "G11",
+      "submitted": "pricing_quote ",
+      "scored": "pricing_quote",
+      "reason": "Controlled-vocabulary casing and surrounding whitespace only"
+    }
+  ],
+  "scores": [
+    {
+      "field": "intent",
+      "pairs": 10,
+      "matches": 8,
+      "observed_agreement": 0.8,
+      "chance_agreement": 0.13,
+      "kappa": 0.7701149425287356,
+      "kappa_exact": "67/87",
+      "threshold": 0.7,
+      "passed": true,
+      "left_counts": {
+        "coverage_limits": 2,
+        "pricing_comparison": 2,
+        "troubleshooting": 1,
+        "capability_match": 2,
+        "docs_how_to": 1,
+        "sales_qualification": 1,
+        "human_handoff": 1
+      },
+      "right_counts": {
+        "coverage_limits": 2,
+        "pricing_comparison": 1,
+        "troubleshooting": 1,
+        "capability_match": 1,
+        "docs_how_to": 1,
+        "sales_qualification": 2,
+        "human_handoff": 1,
+        "pricing_quote": 1
+      },
+      "raw_exact_matches": 8,
+      "raw_exact_kappa": 0.7701149425287356,
+      "confusion_matrix": {
+        "capability_match": {
+          "capability_match": 1,
+          "coverage_limits": 0,
+          "docs_how_to": 0,
+          "human_handoff": 0,
+          "pricing_comparison": 0,
+          "pricing_quote": 0,
+          "sales_qualification": 1,
+          "troubleshooting": 0
+        },
+        "coverage_limits": {
+          "capability_match": 0,
+          "coverage_limits": 2,
+          "docs_how_to": 0,
+          "human_handoff": 0,
+          "pricing_comparison": 0,
+          "pricing_quote": 0,
+          "sales_qualification": 0,
+          "troubleshooting": 0
+        },
+        "docs_how_to": {
+          "capability_match": 0,
+          "coverage_limits": 0,
+          "docs_how_to": 1,
+          "human_handoff": 0,
+          "pricing_comparison": 0,
+          "pricing_quote": 0,
+          "sales_qualification": 0,
+          "troubleshooting": 0
+        },
+        "human_handoff": {
+          "capability_match": 0,
+          "coverage_limits": 0,
+          "docs_how_to": 0,
+          "human_handoff": 1,
+          "pricing_comparison": 0,
+          "pricing_quote": 0,
+          "sales_qualification": 0,
+          "troubleshooting": 0
+        },
+        "pricing_comparison": {
+          "capability_match": 0,
+          "coverage_limits": 0,
+          "docs_how_to": 0,
+          "human_handoff": 0,
+          "pricing_comparison": 1,
+          "pricing_quote": 1,
+          "sales_qualification": 0,
+          "troubleshooting": 0
+        },
+        "pricing_quote": {
+          "capability_match": 0,
+          "coverage_limits": 0,
+          "docs_how_to": 0,
+          "human_handoff": 0,
+          "pricing_comparison": 0,
+          "pricing_quote": 0,
+          "sales_qualification": 0,
+          "troubleshooting": 0
+        },
+        "sales_qualification": {
+          "capability_match": 0,
+          "coverage_limits": 0,
+          "docs_how_to": 0,
+          "human_handoff": 0,
+          "pricing_comparison": 0,
+          "pricing_quote": 0,
+          "sales_qualification": 1,
+          "troubleshooting": 0
+        },
+        "troubleshooting": {
+          "capability_match": 0,
+          "coverage_limits": 0,
+          "docs_how_to": 0,
+          "human_handoff": 0,
+          "pricing_comparison": 0,
+          "pricing_quote": 0,
+          "sales_qualification": 0,
+          "troubleshooting": 1
+        }
+      }
+    },
+    {
+      "field": "api",
+      "pairs": 10,
+      "matches": 9,
+      "observed_agreement": 0.9,
+      "chance_agreement": 0.25,
+      "kappa": 0.8666666666666667,
+      "kappa_exact": "13/15",
+      "threshold": 0.7,
+      "passed": true,
+      "left_counts": {
+        "distance_matrix": 3,
+        "autocomplete": 3,
+        "reverse_geocode": 2,
+        "directions": 2
+      },
+      "right_counts": {
+        "distance_matrix": 3,
+        "autocomplete": 2,
+        "reverse_geocode": 2,
+        "directions": 3
+      },
+      "raw_exact_matches": 9,
+      "raw_exact_kappa": 0.8666666666666667,
+      "confusion_matrix": {
+        "autocomplete": {
+          "autocomplete": 2,
+          "directions": 1,
+          "distance_matrix": 0,
+          "reverse_geocode": 0
+        },
+        "directions": {
+          "autocomplete": 0,
+          "directions": 2,
+          "distance_matrix": 0,
+          "reverse_geocode": 0
+        },
+        "distance_matrix": {
+          "autocomplete": 0,
+          "directions": 0,
+          "distance_matrix": 3,
+          "reverse_geocode": 0
+        },
+        "reverse_geocode": {
+          "autocomplete": 0,
+          "directions": 0,
+          "distance_matrix": 0,
+          "reverse_geocode": 2
+        }
+      }
+    },
+    {
+      "field": "team",
+      "pairs": 10,
+      "matches": 10,
+      "observed_agreement": 1.0,
+      "chance_agreement": 0.52,
+      "kappa": 1.0,
+      "kappa_exact": "1",
+      "threshold": 0.7,
+      "passed": true,
+      "left_counts": {
+        "Sales": 6,
+        "Support": 4
+      },
+      "right_counts": {
+        "Sales": 6,
+        "Support": 4
+      },
+      "raw_exact_matches": 9,
+      "raw_exact_kappa": 0.8148148148148148,
+      "confusion_matrix": {
+        "Sales": {
+          "Sales": 6,
+          "Support": 0
+        },
+        "Support": {
+          "Sales": 0,
+          "Support": 4
+        }
+      }
+    }
+  ],
+  "agreement_criterion_passed": true,
+  "disagreements": [
+    {
+      "pilot_id": "P08",
+      "field": "intent",
+      "Update_A": "capability_match",
+      "Update_P": "sales_qualification",
+      "agree": false
+    },
+    {
+      "pilot_id": "P10",
+      "field": "intent",
+      "Update_A": "pricing_comparison",
+      "Update_P": "pricing_quote",
+      "agree": false
+    },
+    {
+      "pilot_id": "P10",
+      "field": "api",
+      "Update_A": "autocomplete",
+      "Update_P": "directions",
+      "agree": false
+    }
+  ],
+  "other_field_issues": [
+    {
+      "sheet": "Update_A",
+      "pilot_id": "P01",
+      "field": "bucket",
+      "value": "capability_question",
+      "issue": "Outside the permitted bucket vocabulary; not scored"
+    }
+  ],
+  "gold_changed": false,
+  "adjudication_applied": false,
+  "method": "Unweighted Cohen kappa per field; (observed - chance)/(1 - chance)",
+  "scope": "The labeling guide specifies intent, API and team for the agreement pilot. Other columns are not scored."
+}

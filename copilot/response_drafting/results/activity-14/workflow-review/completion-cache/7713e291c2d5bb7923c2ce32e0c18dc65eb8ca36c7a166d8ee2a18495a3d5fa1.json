@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"debouncing\",\n      \"value\": false,\n      \"evidence\": \"Ola vs Mapbox autocomplete for 100,000 sessions × 8 keystrokes a month?\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing Ola and Mapbox Autocomplete services for 100,000 sessions with 8 keystrokes per session. The missing facts are whether Place Details are called after a selection and whether keystrokes are debounced, both of which affect billing and request counting.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"debouncing\",\n      \"value\": false,\n      \"evidence\": \"Ola vs Mapbox autocomplete for 100,000 sessions × 8 keystrokes a month?\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The customer is comparing Ola and Mapbox Autocomplete services for 100,000 sessions with 8 keystrokes per session. The missing facts are whether Place Details are called after a selection and whether keystrokes are debounced, both of which affect billing and request counting.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 903,
+    "completion_tokens": 192,
+    "total_tokens": 1095
+  },
+  "latency_ms": 4392,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

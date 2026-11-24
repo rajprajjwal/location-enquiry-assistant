@@ -1,0 +1,12 @@
+{
+  "runtime_files_unchanged": true,
+  "production_code_matches_lock": true,
+  "frozen_inputs_unchanged": true,
+  "frozen_gt_unchanged": true,
+  "original_question_text_unchanged": true,
+  "prior_derived_atomic_facts_unchanged": true,
+  "local_gt_workbook_unchanged": true,
+  "prelocked_alignment_plan_unchanged": true,
+  "all80_selected_once": true,
+  "holdout_cases_selected_or_scored": 0
+}

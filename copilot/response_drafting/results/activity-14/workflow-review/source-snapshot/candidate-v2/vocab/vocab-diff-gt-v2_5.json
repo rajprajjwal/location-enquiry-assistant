@@ -1,0 +1,103 @@
+{
+  "matches": {
+    "intent": [
+      "capability_match",
+      "coverage_limits",
+      "docs_how_to",
+      "human_handoff",
+      "pricing_comparison",
+      "pricing_quote",
+      "sales_qualification",
+      "troubleshooting"
+    ],
+    "sub_intent": [
+      "accuracy_question",
+      "accuracy_regression",
+      "billing_dispute",
+      "billing_incident",
+      "billing_question",
+      "capability_fit",
+      "capability_matching",
+      "capability_question",
+      "competitive_comparison",
+      "contract_request",
+      "coverage_error",
+      "coverage_question",
+      "data_quality",
+      "discovery_qualification",
+      "error_resolution",
+      "free_tier_question",
+      "integration_question",
+      "licensing_fit",
+      "limits_question",
+      "migration_question",
+      "parameter_question",
+      "parameter_troubleshooting",
+      "performance_question",
+      "policy_question",
+      "pricing_comparison",
+      "pricing_estimate",
+      "pricing_quote",
+      "production_incident",
+      "response_fields",
+      "security_incident",
+      "solution_design"
+    ],
+    "bucket": [
+      "capabilitycompare",
+      "coveragecompare",
+      "docs",
+      "history",
+      "interpretation",
+      "limitscompare",
+      "ownership",
+      "pricecompare",
+      "qualification",
+      "updates"
+    ],
+    "api": [
+      "autocomplete",
+      "directions",
+      "distance_matrix",
+      "reverse_geocode"
+    ],
+    "primary_team": [
+      "Sales",
+      "Support"
+    ],
+    "providers": [
+      "Google Maps Platform",
+      "Mapbox",
+      "Mappls (MapmyIndia)",
+      "OSM Nominatim",
+      "OSRM",
+      "Ola Maps"
+    ],
+    "tools": [
+      "calculator",
+      "doc_search",
+      "escalate_ticket",
+      "update_record"
+    ],
+    "owners": [
+      "Account team (Sales)",
+      "Maps engineering",
+      "Support L1",
+      "Support L2"
+    ],
+    "severities": [
+      "SEV1",
+      "SEV2",
+      "SEV3",
+      "SEV4"
+    ]
+  },
+  "merges": {
+    "providers": {}
+  },
+  "dropped": {
+    "tools": []
+  },
+  "new_in_gt": {},
+  "notes": []
+}

@@ -1,0 +1,2229 @@
+[
+  {
+    "record_id": "GT-LBS-AC-031",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-75396. Customer wrote: \"What is the estimated monthly cost on Ola versus Google for autocomplete plus one Place Details call per session? Assume 200,000 sessions a month and 8 keystrokes each.\" Draft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether you call Place Details after a selection?",
+      "Could you confirm whether you debounce keystrokes?",
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 3 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-032",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-94066. Customer wrote: \"What is the estimated monthly cost on Ola versus Google for autocomplete plus one Place Details call per session? Assume 600,000 sessions a month and 10 keystrokes each.\" Draft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether you call Place Details after a selection?",
+      "Could you confirm whether you debounce keystrokes?",
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 3 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-033",
+    "bucket": "ownership",
+    "query": "Customer message: \"What is the estimated monthly cost on Ola versus Google for autocomplete plus one Place Details call per session? Assume 1,500,000 sessions a month and 6 keystrokes each.\" Who should own this (Support L1, Support L2, Maps engineering, or the Account team), does it need escalating, and what should we reply?",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether you call Place Details after a selection?",
+      "Could you confirm whether you debounce keystrokes?",
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 3 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-045",
+    "bucket": "interpretation",
+    "query": "Autocomplete (New) returns an error when we send both locationBias and locationRestriction.",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-051",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-86989. Customer wrote:\n\"Can we cache Google place IDs from autocomplete for later Details calls?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-068",
+    "bucket": "pricecompare",
+    "query": "For Mapbox Search Box autocomplete, how does billing count sessions, when does a session end, and how can one user generate more than one billable session?",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether you debounce keystrokes?",
+      "Could you confirm whether you call Place Details after a selection?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 2 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-073",
+    "bucket": "capabilitycompare",
+    "query": "We use Mapbox Geocoding v6 forward for POI autocomplete and get no POIs.",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-081",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-35203. Customer wrote:\n\"Can we use nominatim.openstreetmap.org for type-ahead search in our app?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether self-hosting is acceptable or a managed API is required?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-086",
+    "bucket": "capabilitycompare",
+    "query": "Our address autocomplete needs exceed the public Nominatim limits. Which alternatives provide address suggestions as users type?",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether self-hosting is acceptable or a managed API is required?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-089",
+    "bucket": "ownership",
+    "query": "We want Ola autocomplete for 50M requests a month with an SLA and India-only data residency.",
+    "gold_questions": [
+      {
+        "question": "Target go-live?",
+        "facts": [
+          "target go-live date"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "target go-live date"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question. The frozen question and its atomic fact are not covered; an input fact or draft statement is not a clarifying-question match."
+  },
+  {
+    "record_id": "GT-LBS-AC-205",
+    "bucket": "coveragecompare",
+    "query": "Our users type addresses in Hindi. Which autocomplete providers can return Hindi suggestions?",
+    "gold_questions": [
+      {
+        "question": "Do users type in the native script or in transliterated Latin text?",
+        "facts": [
+          "native-script versus transliterated-Latin typing"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "native-script versus transliterated-Latin typing"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question. The frozen question and its atomic fact are not covered; an input fact or draft statement is not a clarifying-question match."
+  },
+  {
+    "record_id": "GT-LBS-AC-210",
+    "bucket": "coveragecompare",
+    "query": "For address autocomplete in Bhutan, which providers document geographic coverage there? We're considering Nominatim and other options for search-as-you-type.",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether self-hosting is acceptable or a managed API is required?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-215",
+    "bucket": "limitscompare",
+    "query": "How many Search Box /suggest calls per second can one Mapbox token handle by default?",
+    "gold_questions": [
+      {
+        "question": "How many keystrokes per user per second do you send?",
+        "facts": [
+          "keystrokes sent per user per second"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "keystrokes sent per user per second"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question. The frozen question and its atomic fact are not covered; an input fact or draft statement is not a clarifying-question match."
+  },
+  {
+    "record_id": "GT-LBS-AC-222",
+    "bucket": "limitscompare",
+    "query": "Google Autocomplete (New) rejects our request when we pass eight includedPrimaryTypes. Is there a cap?",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-229",
+    "bucket": "qualification",
+    "query": "A no-code platform vendor wants to wire public Nominatim into generated apps for address autocomplete. What should we ask this prospect about their use case, deployment and licensing before recommending a provider?",
+    "gold_questions": [
+      {
+        "question": "Who owns each generated app's provider account and deployment?",
+        "facts": [
+          "owner of each generated app provider account",
+          "owner of each generated app deployment"
+        ]
+      },
+      {
+        "question": "What are the expected monthly volumes, peak request rates and target regions?",
+        "facts": [
+          "expected monthly volume",
+          "peak request rate",
+          "target regions"
+        ]
+      },
+      {
+        "question": "Will the generated apps store, export, or redistribute results?",
+        "facts": [
+          "whether results will be stored",
+          "whether results will be exported",
+          "whether results will be redistributed"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm peak requests per second and target countries or regions?",
+      "Could you confirm who will operate the API backend, whether results must be stored, whether results will be redistributed and whether results will be resold?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        2,
+        3,
+        3
+      ]
+    ],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "owner of each generated app provider account"
+      },
+      {
+        "question": 1,
+        "fact": 2,
+        "text": "owner of each generated app deployment"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "expected monthly volume"
+      },
+      {
+        "question": 3,
+        "fact": 2,
+        "text": "whether results will be exported"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [
+      1,
+      2
+    ],
+    "notes": "Question1 asks peak request rate and target regions, but omits monthly volume. Question2 asks storage and redistribution, but not export. Operating a backend is not owning each generated app provider account/deployment; resale is not export. No complete equivalent-granularity gold group is present."
+  },
+  {
+    "record_id": "GT-LBS-AC-230",
+    "bucket": "qualification",
+    "query": "We need type-ahead place suggestions that we can bias to a search area and filter by place type. Which of Google Places Autocomplete (New), Ola Places Autocomplete, and Mapbox Search Box document those capabilities?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-231",
+    "bucket": "qualification",
+    "query": "A checkout-form vendor in India wants address autocomplete and may store the chosen coordinates. What should we ask before recommending Google, Ola, Mapbox Search Box, or public Nominatim?",
+    "gold_questions": [
+      {
+        "question": "What monthly volume do they expect, and will they bill Google Autocomplete as Requests or Session Usage?",
+        "facts": [
+          "expected monthly volume",
+          "Google Autocomplete Requests versus Session Usage billing"
+        ]
+      },
+      {
+        "question": "Will they store the selected coordinates or only use them ephemerally?",
+        "facts": [
+          "selected coordinates stored versus ephemeral use"
+        ]
+      },
+      {
+        "question": "Are they proposing the public Nominatim server as the autocomplete backend?",
+        "facts": [
+          "whether public Nominatim is the proposed autocomplete backend"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm peak requests per second?",
+      "Could you confirm who will operate the API backend, whether results must be stored, whether results will be redistributed and whether results will be resold?",
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "expected monthly volume"
+      },
+      {
+        "question": 1,
+        "fact": 2,
+        "text": "Google Autocomplete Requests versus Session Usage billing"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "whether public Nominatim is the proposed autocomplete backend"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [
+      2
+    ],
+    "predictions_with_partial_but_no_whole_match": [
+      2
+    ],
+    "notes": "Question2 asks whether results must be stored; the customer context makes those results the selected coordinates, so it covers the stored-versus-ephemeral atom. It bundles unrelated backend/redistribution/resale decisions, so does not have the granularity of the standalone gold storage question. No monthly volume, named Google billing alternatives, or proposed public Nominatim backend question is asked."
+  },
+  {
+    "record_id": "GT-LBS-AC-234",
+    "bucket": "ownership",
+    "query": "We are a standard self-service Ola Maps customer using Autocomplete with automatic card billing. Official pricing is changing in September 2026. Please prepare a handoff for a human billing reviewer to confirm what we need to do about prepaid credits for Autocomplete.",
+    "gold_questions": [
+      {
+        "question": "Are they on a standard self-service plan with automatic card payments, or a contractual customer whose current contract is unaffected?",
+        "facts": [
+          "standard self-service automatic-card plan versus unaffected contractual customer"
+        ]
+      },
+      {
+        "question": "Is expected Autocomplete usage within the documented 100,000 free calls per API, or above it?",
+        "facts": [
+          "Autocomplete usage within or above 100000 free calls per API"
+        ]
+      },
+      {
+        "question": "Have they already received the official instructions for adding credits?",
+        "facts": [
+          "whether official add-credits instructions were received"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "standard self-service automatic-card plan versus unaffected contractual customer"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "Autocomplete usage within or above 100000 free calls per API"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "whether official add-credits instructions were received"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions. Customer-supplied plan/card facts do not count as generated clarification matches; all three frozen gold questions remain scored and unmatched."
+  },
+  {
+    "record_id": "GT-LBS-AC-235",
+    "bucket": "docs",
+    "query": "In Google Places Autocomplete, should our place picker use locationBias or locationRestriction if users may choose a nearby place outside the preferred area?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-AC-236",
+    "bucket": "history",
+    "query": "New Places API SKU, please. Just show USD.",
+    "gold_questions": [
+      {
+        "question": "Is the usage estimate for one billing account or multiple billing accounts?",
+        "facts": [
+          "one billing account versus multiple billing accounts"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "one billing account versus multiple billing accounts"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-011",
+    "bucket": "pricecompare",
+    "query": "We're a Kolkata two-wheeler rental company and expect about 6,000,000 route (directions) requests a month, all in India. Which routing APIs could we use, and what would each cost per month in rupees?",
+    "gold_questions": [
+      {
+        "question": "Do you need live-traffic ETAs or are static routes enough?",
+        "facts": [
+          "live-traffic ETA versus static-route requirement"
+        ]
+      },
+      {
+        "question": "What vehicle types (car, bike, auto, truck) do you route?",
+        "facts": [
+          "vehicle types routed"
+        ]
+      },
+      {
+        "question": "Is your Google Cloud project new or existing?",
+        "facts": [
+          "new versus existing Google Cloud project"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "live-traffic ETA versus static-route requirement"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "vehicle types routed"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "new versus existing Google Cloud project"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-012",
+    "bucket": "pricecompare",
+    "query": "We're a Ahmedabad pharma distributor and expect about 8,000,000 route (directions) requests a month, all in India. Which routing APIs could we use, and what would each cost per month in rupees?",
+    "gold_questions": [
+      {
+        "question": "Do you need live-traffic ETAs or are static routes enough?",
+        "facts": [
+          "live-traffic ETA versus static-route requirement"
+        ]
+      },
+      {
+        "question": "What vehicle types (car, bike, auto, truck) do you route?",
+        "facts": [
+          "vehicle types routed"
+        ]
+      },
+      {
+        "question": "Is your Google Cloud project new or existing?",
+        "facts": [
+          "new versus existing Google Cloud project"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "live-traffic ETA versus static-route requirement"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "vehicle types routed"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "new versus existing Google Cloud project"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-020",
+    "bucket": "history",
+    "query": "Not sure. Answer with the details from my first message and note where that choice would change things.",
+    "gold_questions": [
+      {
+        "question": "How many intermediate waypoints per route at most?",
+        "facts": [
+          "maximum intermediate waypoints per route"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "maximum intermediate waypoints per route"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-021",
+    "bucket": "history",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "gold_questions": [
+      {
+        "question": "How many intermediate waypoints per route at most?",
+        "facts": [
+          "maximum intermediate waypoints per route"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "maximum intermediate waypoints per route"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-039",
+    "bucket": "qualification",
+    "query": "Which Directions APIs can return a driving route that avoids ferries, and how can we tell whether that capability is documented?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-DIR-043",
+    "bucket": "qualification",
+    "query": "If we self-host OSRM on OpenStreetMap data for routing, what licensing obligations do we have?",
+    "gold_questions": [
+      {
+        "question": "Will you redistribute derived data, or only display routes?",
+        "facts": [
+          "derived-data redistribution versus routes-only display"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "derived-data redistribution versus routes-only display"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-084",
+    "bucket": "ownership",
+    "query": "Our whole dispatch system is down: Ola Directions returns 429 for 80% of calls since the start of the evening peak.",
+    "gold_questions": [
+      {
+        "question": "Requests per minute at peak?",
+        "facts": [
+          "peak requests per minute"
+        ]
+      },
+      {
+        "question": "Contract or prepaid?",
+        "facts": [
+          "contract versus prepaid account"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "peak requests per minute"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "contract versus prepaid account"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "A redacted failing-request example does not ask for peak requests per minute or contract-versus-prepaid account terms. Neither frozen gold question or atom is matched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-085",
+    "bucket": "ownership",
+    "query": "We've committed to 40M Ola Directions calls a month and want negotiated pricing and an SLA. Who do we talk to?",
+    "gold_questions": [
+      {
+        "question": "Target start date?",
+        "facts": [
+          "target start date"
+        ]
+      },
+      {
+        "question": "Required SLA?",
+        "facts": [
+          "required SLA"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "target start date"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "required SLA"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-100",
+    "bucket": "capabilitycompare",
+    "query": "Can Google Directions give alternative routes from A to B through C, D and E?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-DIR-108",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-58732. Customer wrote:\n\"Our Google Directions request with departure_time set to yesterday fails with INVALID_REQUEST. Can we get historical traffic durations?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-DIR-113",
+    "bucket": "capabilitycompare",
+    "query": "Which Directions APIs can return a multi-stop driving route with separate distances and travel times for every leg, while visiting the stops in the order we supply?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-DIR-201",
+    "bucket": "coveragecompare",
+    "query": "We run a bike-taxi app in India and want to launch in Nepal. Which routing providers can give us two-wheeler routes in Nepal, and do they also cover India?",
+    "gold_questions": [
+      {
+        "question": "Do you need motorcycle/scooter routing specifically, or would car routing do in the new country?",
+        "facts": [
+          "motorcycle or scooter routing specifically versus acceptable car routing"
+        ]
+      },
+      {
+        "question": "Roughly how many route requests a month do you expect in the new country?",
+        "facts": [
+          "monthly route requests in the new country"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "motorcycle or scooter routing specifically versus acceptable car routing"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "monthly route requests in the new country"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-210",
+    "bucket": "limitscompare",
+    "query": "Our route planner sends one request with 40 stops (origin, destination and 38 intermediate points). Which providers accept that in a single directions request?",
+    "gold_questions": [
+      {
+        "question": "Must the stops be visited in a fixed order, or can they be optimised?",
+        "facts": [
+          "fixed stop order versus optimizable order"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "fixed stop order versus optimizable order"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-216",
+    "bucket": "capabilitycompare",
+    "query": "Our drivers prefer Tamil. Can the directions API return turn-by-turn instructions in Tamil?",
+    "gold_questions": [
+      {
+        "question": "Do you also need the map labels in that language, or only the instructions?",
+        "facts": [
+          "whether translated map labels are needed in addition to instructions"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm whether instructions must be voice or text?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "whether translated map labels are needed in addition to instructions"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Voice-versus-text instructions is a different requirement from whether translated map labels are needed in addition to instructions. The frozen gold question/atom is unmatched."
+  },
+  {
+    "record_id": "GT-LBS-DIR-221",
+    "bucket": "capabilitycompare",
+    "query": "How do I get alternative routes from Ola Maps Directions and from a self-hosted OSRM?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-DIR-222",
+    "bucket": "ownership",
+    "query": "A customer on a newly created Google Cloud project cannot enable the Directions API. Please prepare a handoff to a human support owner. What should we include in the handoff and which initial checks should we record?",
+    "gold_questions": [
+      {
+        "question": "Was Directions (Legacy) ever enabled on this project?",
+        "facts": [
+          "whether Directions Legacy was ever enabled on the project"
+        ]
+      },
+      {
+        "question": "What exact enablement error and Cloud Console checks should the support owner record?",
+        "facts": [
+          "exact enablement error",
+          "Cloud Console checks to record"
+        ]
+      },
+      {
+        "question": "Which route features and rollout constraints should the migration preserve?",
+        "facts": [
+          "route features migration must preserve",
+          "rollout constraints migration must preserve"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "whether Directions Legacy was ever enabled on the project"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "exact enablement error"
+      },
+      {
+        "question": 2,
+        "fact": 2,
+        "text": "Cloud Console checks to record"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "route features migration must preserve"
+      },
+      {
+        "question": 3,
+        "fact": 2,
+        "text": "rollout constraints migration must preserve"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+  },
+  {
+    "record_id": "GT-LBS-DIR-223",
+    "bucket": "docs",
+    "query": "In Google Routes API Compute Routes for a single trip, how do I set the field mask to request duration, distance and encoded polyline?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-DIR-224",
+    "bucket": "docs",
+    "query": "Which Mapbox Directions profile should I set for a bicycle route, and how should I pass intermediate stops along that route in one request?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-DIR-225",
+    "bucket": "interpretation",
+    "query": "Mapbox Directions returns `NoRoute` with HTTP 200 for a pair of coordinates. Is this a server failure, and what should we check?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-DIR-226",
+    "bucket": "interpretation",
+    "query": "One of our Mapbox Directions requests returns `NoSegment`. The coordinate is near a road on the map. What should we investigate?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-DM-026",
+    "bucket": "qualification",
+    "query": "Google Maps Platform quote: 20,000 matrix requests per month in India, each a 25×4 traffic-aware matrix, on an existing project.",
+    "gold_questions": [
+      {
+        "question": "Are inputs coordinates or addresses?",
+        "facts": [
+          "coordinates versus address inputs"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "coordinates versus address inputs"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question. The gold input-representation question is unmatched; supplied query facts do not earn question credit."
+  },
+  {
+    "record_id": "GT-LBS-DM-027",
+    "bucket": "qualification",
+    "query": "Google Maps Platform quote: 3,000 matrix requests per month in India, each a 20×20 matrix, on a brand-new GCP project.",
+    "gold_questions": [
+      {
+        "question": "Are inputs coordinates or addresses?",
+        "facts": [
+          "coordinates versus address inputs"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm whether inputs are coordinates, addresses or place IDs?"
+    ],
+    "whole_matches": [
+      [
+        1,
+        1
+      ]
+    ],
+    "partial_fact_matches": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "The single question asks the same input-representation decision. Adding place IDs as an available representation does not introduce an independent decision; whole group and its one atom match."
+  },
+  {
+    "record_id": "GT-LBS-DM-059",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-89608. Customer wrote:\n\"Distances from Google Distance Matrix show '5.2 mi' for some users. Are the values in miles?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  },
+  {
+    "record_id": "GT-LBS-DM-085",
+    "bucket": "ownership",
+    "query": "Ola Distance Matrix durations for Bengaluru have been about 40% lower than actual for three days after previously being accurate. Please prepare a handoff to a human owner to investigate the regression.",
+    "gold_questions": [
+      {
+        "question": "Which endpoint?",
+        "facts": [
+          "endpoint used"
+        ]
+      },
+      {
+        "question": "Sample pairs?",
+        "facts": [
+          "sample origin-destination pairs"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "endpoint used"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "sample origin-destination pairs"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question requests the endpoint or sample origin-destination pairs; handoff output is not a question match."
+  },
+  {
+    "record_id": "GT-LBS-DM-087",
+    "bucket": "ownership",
+    "query": "Our Google Distance Matrix bill jumped 5× overnight and we suspect a leaked unrestricted key.",
+    "gold_questions": [
+      {
+        "question": "When did usage spike?",
+        "facts": [
+          "time the usage spike began"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "time the usage spike began"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question requests when the usage spike began."
+  },
+  {
+    "record_id": "GT-LBS-DM-094",
+    "bucket": "qualification",
+    "query": "For a ride-hailing ETA screen, a prospect wants to compare travel times from many drivers to one pickup. What should we clarify before recommending an Ola Distance Matrix solution, and when would single-route Directions be useful?",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?",
+      "Could you confirm whether Mapbox driving-traffic is required?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen gold has no questions. Both generated qualification questions remain unmatched and count as questions on an empty-gold case."
+  },
+  {
+    "record_id": "GT-LBS-DM-097",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-48403. Customer wrote:\n\"Google Distance Matrix with 1 origin and 14 destinations hits OVER_QUERY_LIMIT in a loop.\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you share one failing request with credentials redacted, and tell us whether the same request still returns OVER_QUERY_LIMIT when sent on its own?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen gold has no questions. The generated failing-request/isolation question remains unmatched."
+  },
+  {
+    "record_id": "GT-LBS-DM-117",
+    "bucket": "pricecompare",
+    "query": "Mapbox vs Google matrix cost for 400,000 elements a month, no traffic?",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen gold has no questions. The generated billing-country and usage-geography question remains unmatched."
+  },
+  {
+    "record_id": "GT-LBS-DM-118",
+    "bucket": "pricecompare",
+    "query": "Mapbox vs Google matrix cost for 1,000,000 elements a month, no traffic?",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm billing account country and where most requests will be used?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen gold has no questions. The generated billing-country and usage-geography question remains unmatched."
+  },
+  {
+    "record_id": "GT-LBS-DM-201",
+    "bucket": "coveragecompare",
+    "query": "We're a logistics firm in Lucknow adding Kathmandu. Which distance-matrix providers can cover Nepal as well as India?",
+    "gold_questions": [
+      {
+        "question": "Do you need traffic-aware durations in the new country?",
+        "facts": [
+          "traffic-aware durations needed in the new country"
+        ]
+      },
+      {
+        "question": "How many origin×destination pairs a month?",
+        "facts": [
+          "monthly origin-destination pairs"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "traffic-aware durations needed in the new country"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "monthly origin-destination pairs"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question asks about traffic in the new country or monthly origin-destination pairs."
+  },
+  {
+    "record_id": "GT-LBS-DM-214",
+    "bucket": "limitscompare",
+    "query": "We need a 30×30 matrix (900 elements) per request. Which providers accept that in one call?",
+    "gold_questions": [
+      {
+        "question": "Are origins/destinations given as coordinates, or as addresses/place IDs?",
+        "facts": [
+          "coordinates versus addresses or place IDs as inputs"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "coordinates versus addresses or place IDs as inputs"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question asks for coordinate versus address/place-ID inputs."
+  },
+  {
+    "record_id": "GT-LBS-DM-218",
+    "bucket": "limitscompare",
+    "query": "Our self-hosted OSRM /table call returns code TooBig. What does that mean?",
+    "gold_questions": [
+      {
+        "question": "How many coordinates are in the failing request?",
+        "facts": [
+          "coordinate count in the failing request"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "coordinate count in the failing request"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question asks for the coordinate count in the failing request."
+  },
+  {
+    "record_id": "GT-LBS-DM-221",
+    "bucket": "capabilitycompare",
+    "query": "For a grocery dispatcher, what's the practical difference between Ola Distance Matrix and Distance Matrix Basic?",
+    "gold_questions": [
+      {
+        "question": "Do you need live traffic in the ETAs?",
+        "facts": [
+          "live traffic required in ETAs"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [
+      1
+    ],
+    "predictions_with_partial_but_no_whole_match": [
+      1
+    ],
+    "notes": "The generated bundle requests live traffic plus an independent vehicle/travel-mode decision. It covers the traffic atom but is not equivalent to the single-decision gold question in granularity."
+  },
+  {
+    "record_id": "GT-LBS-DM-222",
+    "bucket": "capabilitycompare",
+    "query": "For a field-service scheduler, what's the practical difference between Ola Distance Matrix and Distance Matrix Basic?",
+    "gold_questions": [
+      {
+        "question": "Do you need live traffic in the ETAs?",
+        "facts": [
+          "live traffic required in ETAs"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm whether live-traffic ETAs are required and required vehicle or travel modes?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [
+      1
+    ],
+    "predictions_with_partial_but_no_whole_match": [
+      1
+    ],
+    "notes": "The generated bundle requests live traffic plus an independent vehicle/travel-mode decision. It covers the traffic atom but is not equivalent to the single-decision gold question in granularity."
+  },
+  {
+    "record_id": "GT-LBS-DM-224",
+    "bucket": "capabilitycompare",
+    "query": "Are the distances from OSRM's table service the shortest road distances?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  },
+  {
+    "record_id": "GT-LBS-DM-226",
+    "bucket": "qualification",
+    "query": "A prospect is evaluating Google Distance Matrix for an India-only app. What should we confirm about their intended use and licensing before recommending it, including which published price list would apply?",
+    "gold_questions": [
+      {
+        "question": "Is the billing account in India, and where will most requests be billed?",
+        "facts": [
+          "billing account country",
+          "where most requests will be billed"
+        ]
+      },
+      {
+        "question": "Is Distance Matrix (Legacy) already enabled on the project?",
+        "facts": [
+          "whether Distance Matrix Legacy is enabled on the project"
+        ]
+      },
+      {
+        "question": "What volume, traffic capability, display needs, and retention or redistribution rights are required?",
+        "facts": [
+          "required volume",
+          "required traffic capability",
+          "display needs",
+          "retention rights needed",
+          "redistribution rights needed"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?",
+      "Could you confirm whether Mapbox driving-traffic is required?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [
+      [
+        1,
+        3,
+        2
+      ]
+    ],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "billing account country"
+      },
+      {
+        "question": 1,
+        "fact": 2,
+        "text": "where most requests will be billed"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "whether Distance Matrix Legacy is enabled on the project"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "required volume"
+      },
+      {
+        "question": 3,
+        "fact": 3,
+        "text": "display needs"
+      },
+      {
+        "question": 3,
+        "fact": 4,
+        "text": "retention rights needed"
+      },
+      {
+        "question": 3,
+        "fact": 5,
+        "text": "redistribution rights needed"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [
+      1
+    ],
+    "notes": "The first bundle explicitly asks whether live-traffic ETAs are required, covering required traffic capability only. It does not request volume, display, retention, redistribution, billing country/billing location, or Legacy enablement. The Mapbox-profile question does not match those Google-specific requirements. No whole gold group is covered."
+  },
+  {
+    "record_id": "GT-LBS-DM-227",
+    "bucket": "qualification",
+    "query": "A prospect needs a many-to-many travel-time matrix that can include traffic. What volume, matrix-size and traffic requirements should we clarify before recommending Ola Distance Matrix, Google Distance Matrix or Route Matrix, or Mapbox Matrix?",
+    "gold_questions": [
+      {
+        "question": "What are the typical and maximum origin and destination counts?",
+        "facts": [
+          "typical origin count",
+          "maximum origin count",
+          "typical destination count",
+          "maximum destination count"
+        ]
+      },
+      {
+        "question": "How many matrices are computed per hour and month, and what is the peak concurrency?",
+        "facts": [
+          "matrices per hour",
+          "matrices per month",
+          "peak concurrency"
+        ]
+      },
+      {
+        "question": "Which traffic and departure-time conditions are required, and can requests be split?",
+        "facts": [
+          "traffic conditions required",
+          "departure-time conditions required",
+          "whether requests can be split"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm number of origins per matrix, number of destinations per matrix and whether live-traffic ETAs are required?",
+      "Could you confirm whether Mapbox driving-traffic is required?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "typical origin count"
+      },
+      {
+        "question": 1,
+        "fact": 2,
+        "text": "maximum origin count"
+      },
+      {
+        "question": 1,
+        "fact": 3,
+        "text": "typical destination count"
+      },
+      {
+        "question": 1,
+        "fact": 4,
+        "text": "maximum destination count"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "matrices per hour"
+      },
+      {
+        "question": 2,
+        "fact": 2,
+        "text": "matrices per month"
+      },
+      {
+        "question": 2,
+        "fact": 3,
+        "text": "peak concurrency"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "traffic conditions required"
+      },
+      {
+        "question": 3,
+        "fact": 2,
+        "text": "departure-time conditions required"
+      },
+      {
+        "question": 3,
+        "fact": 3,
+        "text": "whether requests can be split"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Generic origin/destination counts do not distinguish typical from maximum counts. Neither bundle requests hourly/monthly matrix frequency, peak concurrency, departure-time conditions or request splitting. Live-traffic yes/no and a Mapbox-profile yes/no are narrower than the requested traffic-condition profile; no whole group or exact original atom is credited because the frozen traffic-condition proposition requires the condition profile rather than a single live-traffic or provider-profile yes/no. This actual-text adjudication was checked against the prelocked criterion."
+  },
+  {
+    "record_id": "GT-LBS-DM-231",
+    "bucket": "docs",
+    "query": "How do I set origins and destinations in Google Compute Route Matrix and calculate the element count before choosing a non-transit request size?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  },
+  {
+    "record_id": "GT-LBS-DM-232",
+    "bucket": "interpretation",
+    "query": "OSRM Table service returns `NoTable` for a matrix request. What does the code tell us?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  },
+  {
+    "record_id": "GT-LBS-DM-233",
+    "bucket": "history",
+    "query": "Legacy Distance Matrix API. Please use list prices and show USD.",
+    "gold_questions": [
+      {
+        "question": "Confirm whether the monthly total already includes all projects on the billing account.",
+        "facts": [
+          "whether monthly total includes all projects on the billing account"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "whether monthly total includes all projects on the billing account"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question asks whether the monthly total includes all billing-account projects."
+  },
+  {
+    "record_id": "GT-LBS-RG-001",
+    "bucket": "history",
+    "query": "Let's leave that open for now; answer based on my earlier message.",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions; the user explicitly declines further clarification."
+  },
+  {
+    "record_id": "GT-LBS-RG-005",
+    "bucket": "qualification",
+    "query": "Our Chennai field-service SaaS company needs about 80,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "gold_questions": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "whether results must be stored"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "user-triggered versus periodic tracking lookups"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm whether results must be stored?",
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "whole_matches": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "partial_fact_matches": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Two separate questions request exactly storage necessity and user-triggered versus periodic lookup use. Each matches the corresponding gold question and atom."
+  },
+  {
+    "record_id": "GT-LBS-RG-006",
+    "bucket": "qualification",
+    "query": "Our Kolkata two-wheeler rental company needs about 250,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?",
+    "gold_questions": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "whether results must be stored"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "user-triggered versus periodic tracking lookups"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm whether results must be stored?",
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "whole_matches": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "partial_fact_matches": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Two separate questions request exactly storage necessity and user-triggered versus periodic lookup use. Each matches the corresponding gold question and atom."
+  },
+  {
+    "record_id": "GT-LBS-RG-007",
+    "bucket": "qualification",
+    "query": "Our Ahmedabad pharma distributor needs about 600,000 reverse-geocoding lookups a month in India and we must store the addresses. Options and monthly cost in INR?",
+    "gold_questions": [
+      {
+        "question": "Do you need to store results?",
+        "facts": [
+          "whether results must be stored"
+        ]
+      },
+      {
+        "question": "Are lookups user-triggered or periodic tracking?",
+        "facts": [
+          "user-triggered versus periodic tracking lookups"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm whether lookups are user-triggered or periodic tracking?"
+    ],
+    "whole_matches": [
+      [
+        1,
+        2
+      ]
+    ],
+    "partial_fact_matches": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "whether results must be stored"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "The lookup-trigger question exactly matches gold question2 and its atom. Storage is supplied in the query and is not asked again; under the unchanged frozen reference that supplied fact does not earn question1 credit."
+  },
+  {
+    "record_id": "GT-LBS-RG-015",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-18025. Customer wrote:\n\"Ola Maps Reverse Geocoding for 120,000 lookups a month. Cost?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether results must be stored?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen gold has no questions. The generated storage question remains unmatched."
+  },
+  {
+    "record_id": "GT-LBS-RG-016",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-84635. Customer wrote:\n\"Ola Maps Reverse Geocoding for 500,000 lookups a month. Cost?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether results must be stored?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen gold has no questions. The generated storage question remains unmatched."
+  },
+  {
+    "record_id": "GT-LBS-RG-021",
+    "bucket": "updates",
+    "query": "Sandbox CRM opportunity OPP-26210. Customer wrote:\n\"Google reverse geocoding in India: 100,000 requests a month. Cost?\"\nDraft the reply and propose the opportunity field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [
+      "Could you confirm whether results must be stored?"
+    ],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Frozen gold has no questions. The generated storage question remains unmatched."
+  },
+  {
+    "record_id": "GT-LBS-RG-082",
+    "bucket": "updates",
+    "query": "Sandbox CRM ticket TKT-38973. Customer wrote:\n\"Our mobile app calls Nominatim reverse every 30 seconds per user. OK?\"\nDraft the reply and propose the ticket field updates. Don't apply anything until I approve.",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  },
+  {
+    "record_id": "GT-LBS-RG-084",
+    "bucket": "capabilitycompare",
+    "query": "Can OSRM do reverse geocoding instead of Nominatim?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  },
+  {
+    "record_id": "GT-LBS-RG-201",
+    "bucket": "coveragecompare",
+    "query": "We need reverse geocoding for riders in India and Nepal. Who covers both?",
+    "gold_questions": [
+      {
+        "question": "What volume per month, and do you need to store results?",
+        "facts": [
+          "monthly volume",
+          "whether results must be stored"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "monthly volume"
+      },
+      {
+        "question": 1,
+        "fact": 2,
+        "text": "whether results must be stored"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question asks for monthly volume or result-storage needs; no whole/atomic credit."
+  },
+  {
+    "record_id": "GT-LBS-RG-212",
+    "bucket": "limitscompare",
+    "query": "We reverse geocode about 40 driver pings a second with Mapbox. Will we be throttled?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  },
+  {
+    "record_id": "GT-LBS-RG-213",
+    "bucket": "limitscompare",
+    "query": "We're planning for the evening peak on Mapbox Reverse Geocoding. What's the default request-rate limit and at what rate should we expect throttling?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  },
+  {
+    "record_id": "GT-LBS-RG-225",
+    "bucket": "qualification",
+    "query": "A prospect says: 'We need reverse geocoding for a delivery app in India and Nepal.' What should we ask before recommending a provider?",
+    "gold_questions": [
+      {
+        "question": "What monthly volume and peak rate?",
+        "facts": [
+          "monthly volume",
+          "peak request rate"
+        ]
+      },
+      {
+        "question": "Which countries?",
+        "facts": [
+          "countries"
+        ]
+      },
+      {
+        "question": "Will results be stored?",
+        "facts": [
+          "whether results will be stored"
+        ]
+      },
+      {
+        "question": "Which languages?",
+        "facts": [
+          "languages"
+        ]
+      },
+      {
+        "question": "Is self-hosting acceptable?",
+        "facts": [
+          "whether self-hosting is acceptable"
+        ]
+      }
+    ],
+    "actual_questions": [
+      "Could you confirm peak requests per second and expected monthly API workload?",
+      "Could you confirm required output languages?",
+      "Could you confirm whether results must be stored, whether a public community endpoint is acceptable and whether temporary-only geocoding results are acceptable?"
+    ],
+    "whole_matches": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "partial_fact_matches": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        4,
+        1
+      ],
+      [
+        3,
+        3,
+        1
+      ]
+    ],
+    "missed_facts": [
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "countries"
+      },
+      {
+        "question": 5,
+        "fact": 1,
+        "text": "whether self-hosting is acceptable"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [
+      3
+    ],
+    "predictions_with_partial_but_no_whole_match": [
+      3
+    ],
+    "notes": "Predicted1 exactly covers gold1 monthly volume plus peak rate, and predicted2 exactly covers gold4 languages. Predicted3 covers the gold3 storage atom but bundles separate public-endpoint and temporary-results decisions, so no whole gold3 match at the frozen granularity. Those alternatives do not ask whether self-hosting is acceptable. Countries are already supplied but not asked; unchanged gold2 receives no question credit."
+  },
+  {
+    "record_id": "GT-LBS-RG-226",
+    "bucket": "qualification",
+    "query": "Can we store Mapbox reverse-geocoding results in our own database for later reuse, and does the public Nominatim policy allow us to resell those geocoding results?",
+    "gold_questions": [
+      {
+        "question": "For Mapbox, can they set the permanent parameter and do they have a credit card or enterprise contract?",
+        "facts": [
+          "whether Mapbox permanent parameter can be set",
+          "whether a credit card or enterprise contract is available"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "whether Mapbox permanent parameter can be set"
+      },
+      {
+        "question": 1,
+        "fact": 2,
+        "text": "whether a credit card or enterprise contract is available"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question asks about the permanent parameter or payment/enterprise eligibility."
+  },
+  {
+    "record_id": "GT-LBS-RG-231",
+    "bucket": "ownership",
+    "query": "A Mapbox access token used by our reverse-geocoding service may have been exposed to a client application. What do official Mapbox token docs say we should do now, and when should this be handed to a human?",
+    "gold_questions": [
+      {
+        "question": "Is the exposed token a default public token, a token with secret scopes, or a token with URL restrictions?",
+        "facts": [
+          "exposed token type: default public, secret scopes, or URL-restricted"
+        ]
+      },
+      {
+        "question": "Has the token already been deleted or rotated on the Access Tokens page?",
+        "facts": [
+          "whether token was already deleted or rotated on Access Tokens page"
+        ]
+      },
+      {
+        "question": "Is the account still on a trial with no payment method, which blocks create, rotate, or delete?",
+        "facts": [
+          "whether trial without payment method blocks token create rotate or delete"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "exposed token type: default public, secret scopes, or URL-restricted"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "whether token was already deleted or rotated on Access Tokens page"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "whether trial without payment method blocks token create rotate or delete"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question requests exposed-token type, prior rotation/deletion, or trial/payment-method restrictions."
+  },
+  {
+    "record_id": "GT-LBS-RG-232",
+    "bucket": "ownership",
+    "query": "Customers report that Google reverse geocoding returns a road-interpolated address that does not match the building they selected. Please prepare a handoff to a human to review these quality reports. What should we check and include in the handoff?",
+    "gold_questions": [
+      {
+        "question": "Was location_type in the response RANGE_INTERPOLATED, ROOFTOP, or something else?",
+        "facts": [
+          "returned location_type value"
+        ]
+      },
+      {
+        "question": "Does the customer have Enhanced Support, which official docs require for map data quality assistance?",
+        "facts": [
+          "whether customer has Enhanced Support"
+        ]
+      },
+      {
+        "question": "Has anyone already opened a Technical support case or used Send feedback on Google Maps?",
+        "facts": [
+          "whether a Technical support case was already opened",
+          "whether Send feedback on Google Maps was already used"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "returned location_type value"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "whether customer has Enhanced Support"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "whether a Technical support case was already opened"
+      },
+      {
+        "question": 3,
+        "fact": 2,
+        "text": "whether Send feedback on Google Maps was already used"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question requests returned location_type, Enhanced Support, prior technical support case, or prior Maps feedback."
+  },
+  {
+    "record_id": "GT-LBS-RG-233",
+    "bucket": "ownership",
+    "query": "Our legal team wants to store full Google reverse-geocode payloads in our CRM and plot those addresses on a non-Google internal map. Please prepare a handoff to a human policy or contract owner before we proceed. What should they review?",
+    "gold_questions": [
+      {
+        "question": "Would the stored payload include only place IDs, or full address content?",
+        "facts": [
+          "stored payload is only place IDs versus full address content"
+        ]
+      },
+      {
+        "question": "Would the results be shown on a Google Map, on a non-Google map, or with no map?",
+        "facts": [
+          "Google Map versus non-Google map versus no-map display"
+        ]
+      },
+      {
+        "question": "Has legal already asked about custom licensing from Google Sales?",
+        "facts": [
+          "whether legal already asked Google Sales about custom licensing"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "stored payload is only place IDs versus full address content"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "Google Map versus non-Google map versus no-map display"
+      },
+      {
+        "question": 3,
+        "fact": 1,
+        "text": "whether legal already asked Google Sales about custom licensing"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question asks about stored payload scope, display-map context, or prior custom-license contact. The query already specifies full payloads and non-Google display, but those supplied facts do not earn question credit under the unchanged frozen reference."
+  },
+  {
+    "record_id": "GT-LBS-RG-234",
+    "bucket": "capabilitycompare",
+    "query": "Which reverse geocoders document a way to look up many coordinates in a single batch request?",
+    "gold_questions": [
+      {
+        "question": "How many coordinates would you need to send in one request?",
+        "facts": [
+          "coordinates needed per request"
+        ]
+      },
+      {
+        "question": "Are you asking about a documented batch endpoint, or only about looping over a single-coordinate API?",
+        "facts": [
+          "documented batch endpoint versus looping single-coordinate API"
+        ]
+      }
+    ],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [
+      {
+        "question": 1,
+        "fact": 1,
+        "text": "coordinates needed per request"
+      },
+      {
+        "question": 2,
+        "fact": 1,
+        "text": "documented batch endpoint versus looping single-coordinate API"
+      }
+    ],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "No generated question asks for coordinates per request or batch-endpoint versus looping scope. The existing customer request itself does not earn generated-question credit."
+  },
+  {
+    "record_id": "GT-LBS-RG-235",
+    "bucket": "docs",
+    "query": "How do I reverse geocode coordinates with Mapbox and restrict the result to address features?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  },
+  {
+    "record_id": "GT-LBS-RG-236",
+    "bucket": "interpretation",
+    "query": "Mapbox reverse geocoding returns a region and country but not the street address we expected. How can we ask for address features?",
+    "gold_questions": [],
+    "actual_questions": [],
+    "whole_matches": [],
+    "partial_fact_matches": [],
+    "missed_facts": [],
+    "gold_groups_fully_covered_without_whole_match": [],
+    "predictions_with_partial_but_no_whole_match": [],
+    "notes": "Empty gold list and no generated questions."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"display_result\",\"reason\":\"The language parameter is set to 'hi' (Hindi), but the turn-by-turn instructions are returning in English. This suggests that the language parameter may not be correctly applied or there might be an issue with how the result is being displayed. Inspect the raw API result to confirm the language setting and ensure the response is being rendered correctly.\"}",
+  "raw": "{\"decision\":\"display_result\",\"reason\":\"The language parameter is set to 'hi' (Hindi), but the turn-by-turn instructions are returning in English. This suggests that the language parameter may not be correctly applied or there might be an issue with how the result is being displayed. Inspect the raw API result to confirm the language setting and ensure the response is being rendered correctly.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1789,
+    "completion_tokens": 79,
+    "total_tokens": 1868
+  },
+  "latency_ms": 2066,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

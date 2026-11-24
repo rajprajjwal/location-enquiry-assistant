@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The issue might be due to the region code not being correctly specified for the United Kingdom, which uses 'gb' as the ISO 3166-1 code instead of 'uk'.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The issue might be due to the region code not being correctly specified for the United Kingdom, which uses 'gb' as the ISO 3166-1 code instead of 'uk'.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1302,
+    "completion_tokens": 50,
+    "total_tokens": 1352
+  },
+  "latency_ms": 1357,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

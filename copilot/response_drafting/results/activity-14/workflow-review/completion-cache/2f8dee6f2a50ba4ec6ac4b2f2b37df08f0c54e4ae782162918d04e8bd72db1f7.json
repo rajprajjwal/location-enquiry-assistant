@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"monthly_volume\":{\"value\":\"20,000 times a month\",\"evidence\":\"20,000 times a month\"},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps\"}}}",
+  "raw": "{\"intent\":\"pricing_quote\",\"sub_intent\":\"pricing_estimate\",\"api\":\"distance_matrix\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.9,\"team\":0.85},\"qualification\":{\"monthly_volume\":{\"value\":\"20,000 times a month\",\"evidence\":\"20,000 times a month\"},\"current_provider\":{\"value\":\"Ola Maps\",\"evidence\":\"Ola Maps\"}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1383,
+    "completion_tokens": 91,
+    "total_tokens": 1474
+  },
+  "latency_ms": 2199,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

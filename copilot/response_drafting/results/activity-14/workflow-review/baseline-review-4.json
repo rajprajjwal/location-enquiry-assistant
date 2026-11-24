@@ -1,0 +1,217 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-219",
+    "questions_sha256": "7127f2a4786e61f59387e40fd3670b30fd5ac0a4975b936bf35d48b351d20e5d",
+    "gold_sha256": "5e1095f6443991defb8b71d8f6326878785b989b7d870a221eebfe220a5debe1",
+    "whole": [],
+    "facts": [],
+    "reason": "Current versus future-departure traffic timing does not ask whether live traffic is essential or typical/static ETAs are acceptable. It also does not ask whether the Google Cloud project is new."
+  },
+  {
+    "record_id": "GT-LBS-DM-018",
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ]
+    ],
+    "reason": "The combined question asks whether traffic is required and which vehicle or travel modes are needed, covering whether a mode other than driving is required within the same matrix-feature decision."
+  },
+  {
+    "record_id": "GT-LBS-DM-020",
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "b379302d3ea950ce83f9645f518ee94296ec1d5d6081fec6385e13ea4fe83c60",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ]
+    ],
+    "reason": "The combined question covers traffic requirements and the required travel mode, including whether that mode differs from driving. No additional independent decision is added."
+  },
+  {
+    "record_id": "GT-LBS-DM-030",
+    "questions_sha256": "487a558bab41910406858076f0cb5846824b9d80eb562de5cb8c43af6c7e0f8a",
+    "gold_sha256": "f210c2f3761ed1c22adca7017b8957987ec2921f6a622679558738725c3efba1",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "The question asks the same input-representation decision as gold. Place IDs add an alternative within that decision, rather than an independent requirement, while coordinates and addresses remain explicitly covered."
+  },
+  {
+    "record_id": "GT-LBS-DM-086",
+    "questions_sha256": "14dc9d8747a6385e95e5e49eeb0ef9df7f3c92970e39b5e73e69c521670c1de5",
+    "gold_sha256": "c0dc8549533404db021936eaf9e2b349b056a1731e4ee8cee0e1bc16a1af35a5",
+    "whole": [],
+    "facts": [],
+    "reason": "Traffic and vehicle-mode requirements do not establish a start date or SLA requirements; neither gold decision is asked."
+  },
+  {
+    "record_id": "GT-LBS-DM-228",
+    "questions_sha256": "2548b8ad034e185ff1388733cdb05e0941397e3c9fef421b32905b2959ffb079",
+    "gold_sha256": "2a3aa9fa7b93a57f54738d3ff5f8195163c0c1a0b49ea96f0b3b6df0179912b8",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "reason": "The first question covers origins, destinations and traffic-aware ETAs; the second asks whether Mapbox driving-traffic is required. No question requests the cost-comparison basis, so gold group two remains unmatched."
+  },
+  {
+    "record_id": "GT-LBS-RG-008",
+    "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "reason": "Both questions directly match the storage requirement and user-triggered versus periodic lookup decisions."
+  },
+  {
+    "record_id": "GT-LBS-RG-010",
+    "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+    "whole": [
+      [
+        1,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "reason": "The predicted question exactly covers user-triggered versus periodic lookups. Storage is supplied in the enquiry but not asked in a predicted question, so it receives no question-level or atomic-question credit under the unchanged reference."
+  },
+  {
+    "record_id": "GT-LBS-RG-012",
+    "questions_sha256": "e099c5793b14cc239876cac80707c61163a3146ab61581778dfce1b34403181e",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "reason": "The two predicted questions are semantic equivalents of the two gold questions, without additional independent requested information."
+  },
+  {
+    "record_id": "GT-LBS-RG-014",
+    "questions_sha256": "3281ebe0573f33e6658b31988a602c3e9bbf66129a912081067eab570e96ce22",
+    "gold_sha256": "1dc862ade96d9ab1db1403c063dd7fefda46b4fa305270aaaa194b620179f45e",
+    "whole": [
+      [
+        1,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "reason": "The prediction covers lookup trigger versus periodic tracking. The query-supplied storage requirement is not a generated question and is therefore not counted as a match to gold group one."
+  }
+]

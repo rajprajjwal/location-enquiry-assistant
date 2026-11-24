@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's question relates to the unit system used in Google Directions API results. The documentation indicates that the unit system defaults to the origin's country or region. Since the customer's app is Indian, the unit system should default to metric (kilometers). However, the customer is seeing '12.4 mi' which suggests the unit system might be set to imperial. The issue does not require further diagnostic steps as the customer's question is about understanding the behavior, not a failure to reproduce or a configuration issue.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's question relates to the unit system used in Google Directions API results. The documentation indicates that the unit system defaults to the origin's country or region. Since the customer's app is Indian, the unit system should default to metric (kilometers). However, the customer is seeing '12.4 mi' which suggests the unit system might be set to imperial. The issue does not require further diagnostic steps as the customer's question is about understanding the behavior, not a failure to reproduce or a configuration issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1420,
+    "completion_tokens": 113,
+    "total_tokens": 1533
+  },
+  "latency_ms": 2732,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,12 @@
+............................................F......                      [100%]
+=================================== FAILURES ===================================
+_ test_provider_discovery_respects_status_and_limits[Which providers accept a 40 by 20 matrix in one call?-coverage_limits-Support L1] _
+tests/enquiry_workflow/test_customer_routing.py:45: in test_provider_discovery_respects_status_and_limits
+    assert result["owner"] == owner
+E   AssertionError: assert 'Account team (Sales)' == 'Support L1'
+E     
+E     - Support L1
+E     + Account team (Sales)
+=========================== short test summary info ============================
+FAILED tests/enquiry_workflow/test_customer_routing.py::test_provider_discovery_respects_status_and_limits[Which providers accept a 40 by 20 matrix in one call?-coverage_limits-Support L1]
+1 failed, 50 passed in 1.71s

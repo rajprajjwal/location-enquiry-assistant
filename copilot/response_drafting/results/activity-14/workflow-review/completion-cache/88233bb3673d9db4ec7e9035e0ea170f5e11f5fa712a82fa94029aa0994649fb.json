@@ -1,0 +1,14 @@
+{
+  "text": "{\"category\": null, \"reason\": \"The customer is asking about service continuity when prepaid credits expire, which is a routine billing question and does not require a formal handoff.\"}",
+  "raw": "{\"category\": null, \"reason\": \"The customer is asking about service continuity when prepaid credits expire, which is a routine billing question and does not require a formal handoff.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 288,
+    "completion_tokens": 38,
+    "total_tokens": 326
+  },
+  "latency_ms": 1027,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

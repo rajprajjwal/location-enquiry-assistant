@@ -26,8 +26,8 @@ The repository root is `/workspace/capstone-trackb/repo/`, not `/workspace/capst
 - `vocab/vocab-diff-gt-v2_4.*` and `vocab/vocab-diff-gt-v2_3.*` — kept as history (the v2.4 and v2.3 diffs)
 - `mapping/` — mapper, mapping notes, and generated gold envelopes (all 532 and the 80 frozen records)
 - `eval/freeze-manifest.json` — Activity 4 freeze manifest (GT v2.5 hashes, frozen IDs, counts vs thresholds); tagged `eval-freeze-v2` (supersedes `eval-freeze-v1`)
-- `validator/validate_spec.py` — schema, vocabulary, approval, required-field and token-budget checks
-- `validator/validator-report.md` — last validator run
+- `copilot/validation/specification_checks/validate_spec.py` — schema, vocabulary, approval, required-field and token-budget checks
+- `copilot/validation/specification_checks/validator-report.md` — last validator run
 - `gt-change-list-v2_3.md` — the v2.3 change list, marked APPLIED and kept as history
 - `review-log.md` — reviewer policy and pending sign-off
 
@@ -35,13 +35,13 @@ The repository root is `/workspace/capstone-trackb/repo/`, not `/workspace/capst
 
 ```bash
 cd /workspace/capstone-trackb/repo
-.venv/bin/python validator/validate_spec.py
+.venv/bin/python -m copilot.validation.specification_checks.validate_spec
 ```
 
 The default run reads GT v2.5 and writes the report, gold outputs and vocabulary diff inside this repository, which is the layout that gets committed. To run without writing inside the repo:
 
 ```bash
-.venv/bin/python validator/validate_spec.py --out-dir /tmp/c1-validate-out
+.venv/bin/python -m copilot.validation.specification_checks.validate_spec --out-dir /tmp/c1-validate-out
 ```
 
 The virtualenv is not committed. Recreate it with:

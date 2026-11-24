@@ -1,0 +1,175 @@
+{
+  "decision": "rejected",
+  "changes": [
+    {
+      "record_id": "GT-LBS-AC-012",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-007",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-028",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DIR-030",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-017",
+      "before": "Support L1",
+      "proposed": "Account team (Sales)",
+      "expected": "Support L1",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-018",
+      "before": "Support L1",
+      "proposed": "Account team (Sales)",
+      "expected": "Support L1",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-019",
+      "before": "Support L1",
+      "proposed": "Account team (Sales)",
+      "expected": "Support L1",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-020",
+      "before": "Support L1",
+      "proposed": "Account team (Sales)",
+      "expected": "Support L1",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-035",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-036",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-209",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-210",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-206",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-207",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-208",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-AC-011",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Account team (Sales)",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-089",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Support L1",
+      "fix": true,
+      "regression": false
+    },
+    {
+      "record_id": "GT-LBS-AC-096",
+      "before": "Account team (Sales)",
+      "proposed": "Support L1",
+      "expected": "Support L1",
+      "fix": true,
+      "regression": false
+    },
+    {
+      "record_id": "GT-LBS-DM-114",
+      "before": "Support L1",
+      "proposed": "Account team (Sales)",
+      "expected": "Support L1",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-115",
+      "before": "Support L1",
+      "proposed": "Account team (Sales)",
+      "expected": "Support L1",
+      "fix": false,
+      "regression": true
+    },
+    {
+      "record_id": "GT-LBS-DM-116",
+      "before": "Support L1",
+      "proposed": "Account team (Sales)",
+      "expected": "Support L1",
+      "fix": false,
+      "regression": true
+    }
+  ],
+  "fixes": 2,
+  "regressions": 19
+}

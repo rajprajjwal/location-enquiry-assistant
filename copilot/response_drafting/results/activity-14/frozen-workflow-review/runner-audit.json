@@ -1,0 +1,33 @@
+{
+  "scope": "Read-only monitor of the user-authorized run; no application/reference edits or model requests.",
+  "runner_sha256": "726dd3bad2698d92915751734ce3b1dc06e7c746aa9bb4a278940613c6c7cb35",
+  "implementation_lock_sha256": "2e0cc65620a10ad9c7b4852da973e7a4357e38b1865fad8802b908cdbdc77e3a",
+  "checks": {
+    "implementation_lock_unchanged": true,
+    "runner_unchanged": true,
+    "runtime_source_hashes_match": true,
+    "production_matches_locked_runtime": true,
+    "locked_inputs_and_references_match": true,
+    "canonical_inputs_match": true,
+    "canonical_manifest_match": true,
+    "canonical_frozen_gt_match": true,
+    "workbook_unchanged": true,
+    "all_80_unique_original_input_ids": true,
+    "prediction_ids_are_ordered_frozen_prefix": true,
+    "prediction_input_binding": true,
+    "model_call_record_ids_from_frozen_only": true,
+    "no_cached_completions": true
+  },
+  "latest_progress": {
+    "at_utc": "2026-11-24T19:52:35.897320+00:00",
+    "records": 80,
+    "calls": 244,
+    "execution_errors": 0,
+    "logical_model_errors": 0,
+    "all_integrity_checks_passed": true,
+    "failed_checks": []
+  },
+  "source_hashes_verified": 179,
+  "holdout_inputs": 0,
+  "note": "Fresh client calls are logical complete() calls; bounded transport attempts inside the model client are not individual rows in model-calls.jsonl."
+}

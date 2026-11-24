@@ -1,0 +1,14 @@
+{
+  "text": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"ambulance dispatch service\",\"evidence\":\"Our Bhubaneswar ambulance dispatch service needs about 12,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"},\"region\":{\"value\":\"India\",\"evidence\":\"Our Bhubaneswar ambulance dispatch service needs about 12,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"},\"monthly_volume\":{\"value\":\"12,000,000 reverse-geocoding lookups a month\",\"evidence\":\"Our Bhubaneswar ambulance dispatch service needs about 12,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"}}}",
+  "raw": "{\"intent\":\"pricing_comparison\",\"sub_intent\":\"pricing_comparison\",\"api\":\"reverse_geocode\",\"team\":\"Sales\",\"confidence\":{\"intent\":0.95,\"api\":0.95,\"team\":0.95},\"qualification\":{\"use_case\":{\"value\":\"ambulance dispatch service\",\"evidence\":\"Our Bhubaneswar ambulance dispatch service needs about 12,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"},\"region\":{\"value\":\"India\",\"evidence\":\"Our Bhubaneswar ambulance dispatch service needs about 12,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"},\"monthly_volume\":{\"value\":\"12,000,000 reverse-geocoding lookups a month\",\"evidence\":\"Our Bhubaneswar ambulance dispatch service needs about 12,000,000 reverse-geocoding lookups a month in India. Options and monthly cost in INR?\"}}}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1430,
+    "completion_tokens": 224,
+    "total_tokens": 1654
+  },
+  "latency_ms": 5137,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

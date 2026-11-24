@@ -1,0 +1,199 @@
+[
+  {
+    "record_id": "GT-LBS-AC-008",
+    "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+    "gold_sha256": "1c295b15a48c8c447499686078d2aeb430294530a92ef981cb8e575d427fa911",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "reason": "Both questions ask the same decisions as gold: Place Details after selection and keystroke debouncing, without additional independent requirements."
+  },
+  {
+    "record_id": "GT-LBS-AC-010",
+    "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+    "gold_sha256": "1c295b15a48c8c447499686078d2aeb430294530a92ef981cb8e575d427fa911",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "reason": "Both questions are semantic equivalents of the two gold questions and cover each complete atomic requirement."
+  },
+  {
+    "record_id": "GT-LBS-DIR-037",
+    "questions_sha256": "7127f2a4786e61f59387e40fd3670b30fd5ac0a4975b936bf35d48b351d20e5d",
+    "gold_sha256": "041680e73f101906159d49d856f6917928f14c7ade7e3d1f3b10ff91df454b0f",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "reason": "Traffic needed now versus for future departures is equivalent to traffic at request time versus future-departure requirements."
+  },
+  {
+    "record_id": "GT-LBS-DIR-040",
+    "questions_sha256": "84128aff16cf9d645a2d368f9f232100e736402b379e955c62a3fb0fce740a98",
+    "gold_sha256": "06f90749e6238e079cb158e0089c87fb7411b4117289f6d0d0f057fc73ab96bc",
+    "whole": [
+      [
+        1,
+        1
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ]
+    ],
+    "reason": "The combined question explicitly asks hazardous-goods, vehicle-height and vehicle-weight restrictions, covering all three gold atoms within the same vehicle-restrictions decision."
+  },
+  {
+    "record_id": "GT-LBS-DIR-048",
+    "questions_sha256": "4c613b58b407724288266b3161051e52fdd36bf14218301410c0234172384535",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        4,
+        4,
+        1
+      ],
+      [
+        5,
+        5,
+        1
+      ]
+    ],
+    "reason": "Monthly API workload is route-request workload in this Directions context; live traffic, vehicle modes and route-stop requirements match the corresponding gold decisions. The final question covers an existing Google project, but a generic provider contract or prepaid plan does not specifically ask whether an Ola contract is available, so that whole group and its Ola atom do not match."
+  },
+  {
+    "record_id": "GT-LBS-DIR-050",
+    "questions_sha256": "761b325b8decb3055d88263ec8c91469319f0662c0c6d890152c6d89eaf5f8f6",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d",
+    "whole": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "facts": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ]
+    ],
+    "reason": "Monthly Directions workload, vehicle modes and stops match three gold decisions. Existing Google project is covered partially by the final combined question; generic provider contract/prepaid-plan wording does not specifically establish Ola-contract availability. No predicted question asks the gold live-traffic requirement; although the query already supplies it, supplied query information is not counted as a predicted-question match."
+  }
+]

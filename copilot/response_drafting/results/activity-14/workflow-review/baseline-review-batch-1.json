@@ -1,0 +1,204 @@
+[
+  {
+    "record_id": "GT-LBS-AC-003",
+    "query": "To save money, can our mobile app call the public Nominatim server directly for type-ahead address search? We have about 20 searches per second at peak.",
+    "history": [],
+    "questions": [
+      "Could you confirm whether self-hosting is acceptable or a managed API is required?"
+    ],
+    "gold": [
+      {
+        "question": "Are you open to self-hosting, or do you want a managed API?",
+        "facts": [
+          "Whether self-hosting is acceptable or a managed API is required."
+        ]
+      }
+    ],
+    "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+    "gold_sha256": "baa980c044653547dcd9b6727ec34d0c02d177316d5612698ef4c3001d648b6f"
+  },
+  {
+    "record_id": "GT-LBS-AC-009",
+    "query": "Our Chennai field-service SaaS company app expects 300,000 address-search sessions a month, averaging 9 keystrokes each. What would autocomplete cost on each provider, in INR?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether you call Place Details after a selection?",
+      "Could you confirm whether you debounce keystrokes?"
+    ],
+    "gold": [
+      {
+        "question": "Do you call Place Details after selection?",
+        "facts": [
+          "Whether Place Details is called after selecting a suggestion."
+        ]
+      },
+      {
+        "question": "Do you debounce keystrokes?",
+        "facts": [
+          "Whether keystrokes are debounced."
+        ]
+      }
+    ],
+    "questions_sha256": "53aea2b3bf71377f1aac3760851650e8622c3f3fe7a8e7cd45d8244d3d6726ad",
+    "gold_sha256": "1c295b15a48c8c447499686078d2aeb430294530a92ef981cb8e575d427fa911"
+  },
+  {
+    "record_id": "GT-LBS-AC-233",
+    "query": "Our product team is evaluating providers for address autocomplete. They want an LLM assistant to generate client code for public Nominatim and might resell the resulting geocoding data. What should we ask the team about its use case and licensing needs before recommending a provider?",
+    "history": [],
+    "questions": [
+      "Could you confirm peak requests per second and target countries or regions?",
+      "Could you confirm who will operate the API backend, whether results must be stored, whether results will be redistributed and whether results will be resold?"
+    ],
+    "gold": [
+      {
+        "question": "What peak rate and geographic coverage does type-ahead need?",
+        "facts": [
+          "The required peak type-ahead request rate.",
+          "The required type-ahead geographic coverage."
+        ]
+      },
+      {
+        "question": "Who operates the API backend and what result retention, redistribution, or resale rights are required?",
+        "facts": [
+          "Who operates the API backend.",
+          "The result retention rights required.",
+          "The result redistribution rights required.",
+          "The result resale rights required."
+        ]
+      }
+    ],
+    "questions_sha256": "b4cdc0b52f64f857ba2235f16525c9c845e2b2a8b34ce2aaa37b4987ffccb929",
+    "gold_sha256": "b386fc8f6363ce0a5d72790028a63067d0e8a19616d5d85ca003f681e6f7c7dc"
+  },
+  {
+    "record_id": "GT-LBS-DIR-038",
+    "query": "Our drivers need turn-by-turn instructions in Hindi, Tamil and Kannada. Which directions APIs can do that?",
+    "history": [],
+    "questions": [
+      "Could you confirm whether instructions must be voice or text?"
+    ],
+    "gold": [
+      {
+        "question": "Voice or text instructions?",
+        "facts": [
+          "Whether instructions must be voice or text."
+        ]
+      }
+    ],
+    "questions_sha256": "b0ac1e3f3bd821847efc0a0a702964d1426c555d8fd83bb022db71650eedc332",
+    "gold_sha256": "7ca65a8565b2f74a241a55933df49fee159219de42ecec1cf16db38471a0cddc"
+  },
+  {
+    "record_id": "GT-LBS-DIR-047",
+    "query": "Hi, we're a hyperlocal grocery app in Bengaluru and want a directions/routing API for rider ETAs at checkout. What do you recommend?",
+    "history": [],
+    "questions": [
+      "Could you confirm expected monthly API workload?",
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm maximum stops or waypoints per route?",
+      "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?"
+    ],
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "The number of route requests per month."
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "Whether live-traffic ETAs are required."
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "The vehicle types."
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "The number of stops per route."
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "Whether an existing Google project is available.",
+          "Whether an Ola contract is available."
+        ]
+      }
+    ],
+    "questions_sha256": "4c613b58b407724288266b3161051e52fdd36bf14218301410c0234172384535",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d"
+  },
+  {
+    "record_id": "GT-LBS-DIR-049",
+    "query": "Hi, we're a field-sales app for FMCG reps in UP and want a directions/routing API for daily beat plans with 15–20 outlets. What do you recommend?",
+    "history": [],
+    "questions": [
+      "Could you confirm expected monthly API workload?",
+      "Could you confirm whether live-traffic ETAs are required?",
+      "Could you confirm required vehicle or travel modes?",
+      "Could you confirm maximum stops or waypoints per route?",
+      "Could you confirm whether you already have an enabled Google project and whether you have a provider contract or prepaid plan?"
+    ],
+    "gold": [
+      {
+        "question": "How many route requests per month?",
+        "facts": [
+          "The number of route requests per month."
+        ]
+      },
+      {
+        "question": "Do you need live-traffic ETAs?",
+        "facts": [
+          "Whether live-traffic ETAs are required."
+        ]
+      },
+      {
+        "question": "Which vehicle types?",
+        "facts": [
+          "The vehicle types."
+        ]
+      },
+      {
+        "question": "How many stops per route?",
+        "facts": [
+          "The number of stops per route."
+        ]
+      },
+      {
+        "question": "Existing Google project or Ola contract?",
+        "facts": [
+          "Whether an existing Google project is available.",
+          "Whether an Ola contract is available."
+        ]
+      }
+    ],
+    "questions_sha256": "4c613b58b407724288266b3161051e52fdd36bf14218301410c0234172384535",
+    "gold_sha256": "b118351034cf3e471778e2eb372319a2d5682992edda4cd1f8f97e4310a2684d"
+  },
+  {
+    "record_id": "GT-LBS-DIR-087",
+    "query": "Google Directions calls from our backend fail with REQUEST_DENIED since this morning, and our card expired yesterday.",
+    "history": [],
+    "questions": [
+      "Could you share an example of the failing request as sent, with tokens and credentials redacted?"
+    ],
+    "gold": [
+      {
+        "question": "Which status string exactly?",
+        "facts": [
+          "The exact returned status string."
+        ]
+      }
+    ],
+    "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+    "gold_sha256": "547bb8268bda2c866c016bd2a3750d72262324a14244d3103a7784263454bb2e"
+  }
+]

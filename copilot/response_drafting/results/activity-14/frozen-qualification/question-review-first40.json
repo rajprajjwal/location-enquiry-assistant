@@ -1,0 +1,313 @@
+{
+  "reviewer_type": "assistant",
+  "source_gold_sha256": "7c5c44fb2f1d216957585b7edaf765406b791da2c13decd6c05cd0e4d63000fb",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-031",
+      "questions_sha256": "d7398b7c9dfed90c1ee27d56db619565ccc9e6aa354efe4e62c4015f067e5fc2",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 3 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-032",
+      "questions_sha256": "d7398b7c9dfed90c1ee27d56db619565ccc9e6aa354efe4e62c4015f067e5fc2",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 3 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-033",
+      "questions_sha256": "d7398b7c9dfed90c1ee27d56db619565ccc9e6aa354efe4e62c4015f067e5fc2",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 3 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-045",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-051",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-068",
+      "questions_sha256": "19eadcb05e03ba0b3a46a20171cc0a53dd27d4fe3ff64d856167986002043886",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 2 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-073",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-081",
+      "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-086",
+      "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-089",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. The frozen question and its atomic fact are not covered; an input fact or draft statement is not a clarifying-question match."
+    },
+    {
+      "record_id": "GT-LBS-AC-205",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. The frozen question and its atomic fact are not covered; an input fact or draft statement is not a clarifying-question match."
+    },
+    {
+      "record_id": "GT-LBS-AC-210",
+      "questions_sha256": "97cf23f1639235368a0db17c6a54d692a9685925fe248ab470ab1167b1c03e39",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-215",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated question. The frozen question and its atomic fact are not covered; an input fact or draft statement is not a clarifying-question match."
+    },
+    {
+      "record_id": "GT-LBS-AC-222",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 1 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-229",
+      "questions_sha256": "b4cdc0b52f64f857ba2235f16525c9c845e2b2a8b34ce2aaa37b4987ffccb929",
+      "whole": [],
+      "facts": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          3,
+          3
+        ]
+      ],
+      "notes": "Question1 asks peak request rate and target regions, but omits monthly volume. Question2 asks storage and redistribution, but not export. Operating a backend is not owning each generated app provider account/deployment; resale is not export. No complete equivalent-granularity gold group is present."
+    },
+    {
+      "record_id": "GT-LBS-AC-230",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-231",
+      "questions_sha256": "833e54f4d332cfe3b255fe5626589499da87c729dd19d17774acddd6ea39d887",
+      "whole": [],
+      "facts": [
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "notes": "Question2 asks whether results must be stored; the customer context makes those results the selected coordinates, so it covers the stored-versus-ephemeral atom. It bundles unrelated backend/redistribution/resale decisions, so does not have the granularity of the standalone gold storage question. No monthly volume, named Google billing alternatives, or proposed public Nominatim backend question is asked."
+    },
+    {
+      "record_id": "GT-LBS-AC-234",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions. Customer-supplied plan/card facts do not count as generated clarification matches; all three frozen gold questions remain scored and unmatched."
+    },
+    {
+      "record_id": "GT-LBS-AC-235",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-AC-236",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-011",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-012",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-020",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-021",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-084",
+      "questions_sha256": "3483f33735b59b1efa94eebb2318fc80e2801ba107574b49486a4dbc5eaff5d7",
+      "whole": [],
+      "facts": [],
+      "notes": "A redacted failing-request example does not ask for peak requests per minute or contract-versus-prepaid account terms. Neither frozen gold question or atom is matched."
+    },
+    {
+      "record_id": "GT-LBS-DIR-085",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-100",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-DIR-108",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-DIR-201",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-210",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "questions_sha256": "b0ac1e3f3bd821847efc0a0a702964d1426c555d8fd83bb022db71650eedc332",
+      "whole": [],
+      "facts": [],
+      "notes": "Voice-versus-text instructions is a different requirement from whether translated map labels are needed in addition to instructions. The frozen gold question/atom is unmatched."
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-DIR-222",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "No generated questions; the frozen gold questions and atomic facts are unmatched. Facts mentioned in the query, history or draft are not generated-question matches."
+    },
+    {
+      "record_id": "GT-LBS-DIR-223",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-DIR-224",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-DIR-225",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    },
+    {
+      "record_id": "GT-LBS-DIR-226",
+      "questions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "whole": [],
+      "facts": [],
+      "notes": "Frozen GT has an empty question list; all 0 generated question(s) remain unmatched under the unchanged reference."
+    }
+  ]
+}

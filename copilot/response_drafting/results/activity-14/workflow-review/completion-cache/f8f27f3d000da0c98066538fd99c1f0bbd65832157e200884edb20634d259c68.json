@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"details_completion\",\n      \"value\": true,\n      \"evidence\": \"ends with Place Details Pro\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Pro\",\n      \"evidence\": \"ends with Place Details Pro\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Determine if the session ends with a Place Details Pro request, which affects billing for Autocomplete (New) requests.\"\n    }\n  ],\n  \"reason\": \"The customer is asking if they still pay for the 12 Autocomplete (New) requests if the session ends with a Place Details Pro request. The provided evidence indicates that if the session ends with a Place Details Essentials request, the first 12 Autocomplete requests are billed, but if it ends with a non-Essentials request like Place Details Pro, all Autocomplete requests are billed at the SKU: Autocomplete Session Usage, meaning no charge for those requests.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"details_completion\",\n      \"value\": true,\n      \"evidence\": \"ends with Place Details Pro\"\n    },\n    {\n      \"field\": \"details_sku\",\n      \"value\": \"Place Details Pro\",\n      \"evidence\": \"ends with Place Details Pro\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_sku\"],\n      \"decision_impact\": \"Determine if the session ends with a Place Details Pro request, which affects billing for Autocomplete (New) requests.\"\n    }\n  ],\n  \"reason\": \"The customer is asking if they still pay for the 12 Autocomplete (New) requests if the session ends with a Place Details Pro request. The provided evidence indicates that if the session ends with a Place Details Essentials request, the first 12 Autocomplete requests are billed, but if it ends with a non-Essentials request like Place Details Pro, all Autocomplete requests are billed at the SKU: Autocomplete Session Usage, meaning no charge for those requests.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2107,
+    "completion_tokens": 226,
+    "total_tokens": 2333
+  },
+  "latency_ms": 6993,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,29 @@
+{
+  "cases": 317,
+  "counts": {
+    "empty_side": 273,
+    "identical_questions": 28,
+    "reordered_identical_questions": 3,
+    "fresh_semantic_review": 13
+  },
+  "review_batches": [
+    {
+      "path": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/workflow-review/candidate-review-batch-1.json",
+      "cases": 7,
+      "sha256": "a131bdb8636a5e743a4a641676c630258812ce688a5df586693ca9cf3b7819ea"
+    },
+    {
+      "path": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/workflow-review/candidate-review-batch-2.json",
+      "cases": 6,
+      "sha256": "37d2655c9c505fd596d89e419e3a99bd4a2aa800dd2c523a80175764a908f869"
+    }
+  ],
+  "candidate_predictions_sha256": "4e0cb1ac057c37653a7b385e49b9d580f50e9179dbf500f35f17abd93b20b875",
+  "baseline_predictions_sha256": "45170d5060db7a10c89ba8bc0cb125959e818339e90b59a20f36003ff75ffe62",
+  "gold_sha256": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089",
+  "baseline_bound_review_sha256": "c7700f979b1c639b4e47c01bdb03ecafed4f0e1935e82cfce8bf70f48f1a78bb",
+  "review_policy": "Reuse only exact text with unchanged enquiry/history and gold; remap unique question order. Changed positive nonempty questions require fresh semantic review.",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "fresh_semantic_review_complete": false
+}

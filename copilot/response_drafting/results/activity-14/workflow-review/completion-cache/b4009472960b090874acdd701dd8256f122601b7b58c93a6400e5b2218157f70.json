@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"300,000 address-search sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The provided facts include the monthly volume and region, but the decisions related to details completion and debouncing are missing, which are essential for accurate cost calculation and billing.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"monthly_volume\",\n      \"value\": true,\n      \"evidence\": \"300,000 address-search sessions a month\"\n    },\n    {\n      \"field\": \"region\",\n      \"value\": true,\n      \"evidence\": \"qualification_details.region\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"details_completion\"],\n      \"decision_impact\": \"Determine how autocomplete sessions end for billing.\"\n    },\n    {\n      \"fields\": [\"debouncing\"],\n      \"decision_impact\": \"Convert user keystrokes into the number of billable API requests.\"\n    }\n  ],\n  \"reason\": \"The provided facts include the monthly volume and region, but the decisions related to details completion and debouncing are missing, which are essential for accurate cost calculation and billing.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1296,
+    "completion_tokens": 182,
+    "total_tokens": 1478
+  },
+  "latency_ms": 4251,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

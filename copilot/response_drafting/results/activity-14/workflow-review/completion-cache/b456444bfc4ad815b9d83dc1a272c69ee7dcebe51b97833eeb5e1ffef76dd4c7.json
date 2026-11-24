@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"input_type\",\"value\":false,\"evidence\":\"\"}],\"groups\":[{\"fields\":[\"input_type\"],\"decision_impact\":\"Choose the correct request representation and applicable processing constraints.\"}],\"reason\":\"The input_type is required to determine the correct request representation and applicable processing constraints, but it has not been supplied.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"input_type\",\"value\":false,\"evidence\":\"\"}],\"groups\":[{\"fields\":[\"input_type\"],\"decision_impact\":\"Choose the correct request representation and applicable processing constraints.\"}],\"reason\":\"The input_type is required to determine the correct request representation and applicable processing constraints, but it has not been supplied.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2005,
+    "completion_tokens": 70,
+    "total_tokens": 2075
+  },
+  "latency_ms": 1842,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

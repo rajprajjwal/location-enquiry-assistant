@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"credential_exposure\", \"reason\":\"The API key has been exposed in a public repository, which is a security risk. The exposure timing and unusual-usage observations are needed as separate questions.\"}",
+  "raw": "{\"decision\":\"credential_exposure\", \"reason\":\"The API key has been exposed in a public repository, which is a security risk. The exposure timing and unusual-usage observations are needed as separate questions.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1453,
+    "completion_tokens": 43,
+    "total_tokens": 1496
+  },
+  "latency_ms": 1259,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

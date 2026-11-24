@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"geographic_matching\",\n      \"value\": \"hard_restriction\",\n      \"evidence\": \"strictly restrict\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"geographic_matching\"],\n      \"decision_impact\": \"Distinguish exclusion of out-of-area results from geographic ranking preferences.\"\n    }\n  ],\n  \"reason\": \"The customer is asking if Ola Autocomplete can strictly restrict results to a circle around a city centre, which indicates a need for a hard geographic restriction. The provided evidence shows that the 'geographic_matching' field is set to 'hard_restriction', but the specific parameters for defining the circle (like radius and location) are not provided.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"geographic_matching\",\n      \"value\": \"hard_restriction\",\n      \"evidence\": \"strictly restrict\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"geographic_matching\"],\n      \"decision_impact\": \"Distinguish exclusion of out-of-area results from geographic ranking preferences.\"\n    }\n  ],\n  \"reason\": \"The customer is asking if Ola Autocomplete can strictly restrict results to a circle around a city centre, which indicates a need for a hard geographic restriction. The provided evidence shows that the 'geographic_matching' field is set to 'hard_restriction', but the specific parameters for defining the circle (like radius and location) are not provided.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2009,
+    "completion_tokens": 159,
+    "total_tokens": 2168
+  },
+  "latency_ms": 3818,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

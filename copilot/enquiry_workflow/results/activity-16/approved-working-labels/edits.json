@@ -1,0 +1,212 @@
+[
+  {
+    "record_id": "GT-LBS-DIR-025",
+    "sheet": "Data",
+    "cell": "Q20",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitor reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitor reference"
+  },
+  {
+    "record_id": "GT-LBS-DIR-026",
+    "sheet": "Data",
+    "cell": "Q21",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitor reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitor reference"
+  },
+  {
+    "record_id": "GT-LBS-DIR-027",
+    "sheet": "Data",
+    "cell": "Q22",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitor reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitor reference"
+  },
+  {
+    "record_id": "GT-LBS-DIR-117",
+    "sheet": "Data",
+    "cell": "Q99",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Answer from documented product behavior",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Answer from documented product behavior"
+  },
+  {
+    "record_id": "GT-LBS-DM-017",
+    "sheet": "Data",
+    "cell": "Q140",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-DM-018",
+    "sheet": "Data",
+    "cell": "Q141",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-DM-019",
+    "sheet": "Data",
+    "cell": "Q142",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-DM-020",
+    "sheet": "Data",
+    "cell": "Q143",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-DM-025",
+    "sheet": "Data",
+    "cell": "Q144",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitive reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitive reference"
+  },
+  {
+    "record_id": "GT-LBS-DM-030",
+    "sheet": "Data",
+    "cell": "Q149",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitive reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitive reference"
+  },
+  {
+    "record_id": "GT-LBS-AC-015",
+    "sheet": "Data",
+    "cell": "Q264",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-AC-016",
+    "sheet": "Data",
+    "cell": "Q265",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-AC-017",
+    "sheet": "Data",
+    "cell": "Q266",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-AC-018",
+    "sheet": "Data",
+    "cell": "Q267",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-AC-019",
+    "sheet": "Data",
+    "cell": "Q268",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-AC-020",
+    "sheet": "Data",
+    "cell": "Q269",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Standard quote",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Standard quote"
+  },
+  {
+    "record_id": "GT-LBS-AC-021",
+    "sheet": "Data",
+    "cell": "Q270",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitive reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitive reference"
+  },
+  {
+    "record_id": "GT-LBS-AC-022",
+    "sheet": "Data",
+    "cell": "Q271",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitive reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitive reference"
+  },
+  {
+    "record_id": "GT-LBS-AC-023",
+    "sheet": "Data",
+    "cell": "Q272",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitive reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitive reference"
+  },
+  {
+    "record_id": "GT-LBS-AC-024",
+    "sheet": "Data",
+    "cell": "Q273",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Competitive reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Competitive reference"
+  },
+  {
+    "record_id": "GT-LBS-AC-026",
+    "sheet": "Data",
+    "cell": "Q274",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Reference"
+  },
+  {
+    "record_id": "GT-LBS-AC-027",
+    "sheet": "Data",
+    "cell": "Q275",
+    "old": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Reference",
+    "new": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Reference"
+  },
+  {
+    "record_id": "GT-LBS-AC-122",
+    "sheet": "Data",
+    "cell": "Q346",
+    "old": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Documented behaviour; resolve in L1",
+    "new": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Documented behaviour; resolve in L1"
+  },
+  {
+    "record_id": "GT-LBS-AC-123",
+    "sheet": "Data",
+    "cell": "Q347",
+    "old": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Documented behaviour; resolve in L1",
+    "new": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Documented behaviour; resolve in L1"
+  },
+  {
+    "record_id": "GT-LBS-AC-125",
+    "sheet": "Data",
+    "cell": "Q348",
+    "old": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Documented behaviour; resolve in L1",
+    "new": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Documented behaviour; resolve in L1"
+  },
+  {
+    "record_id": "GT-LBS-RG-117",
+    "sheet": "Data",
+    "cell": "Q468",
+    "old": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Documented behaviour; resolve in L1",
+    "new": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Documented behaviour; resolve in L1"
+  },
+  {
+    "record_id": "GT-LBS-RG-118",
+    "sheet": "Data",
+    "cell": "Q469",
+    "old": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Documented behaviour; resolve in L1",
+    "new": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Documented behaviour; resolve in L1"
+  },
+  {
+    "record_id": "GT-LBS-RG-119",
+    "sheet": "Data",
+    "cell": "Q470",
+    "old": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Documented behaviour; resolve in L1",
+    "new": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Documented behaviour; resolve in L1"
+  },
+  {
+    "record_id": "GT-LBS-RG-120",
+    "sheet": "Data",
+    "cell": "Q471",
+    "old": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Documented behaviour; resolve in L1",
+    "new": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Documented behaviour; resolve in L1"
+  },
+  {
+    "record_id": "GT-LBS-RG-121",
+    "sheet": "Data",
+    "cell": "Q472",
+    "old": "should_escalate=False; severity=SEV4; owner=Support L1; reason=Documented behaviour; resolve in L1",
+    "new": "should_escalate=False; severity=SEV4; owner=Account team (Sales); reason=Documented behaviour; resolve in L1"
+  }
+]

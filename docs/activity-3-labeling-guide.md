@@ -148,3 +148,7 @@ Once both submissions are ready, run the scorer from the Git checkout.
 ```bash
 python3 eval/score_activity3_pilot.py annotator-a.csv annotator-b.csv
 ```
+
+## Completed pilot agreement
+
+The supplied two-annotator pilot has been scored for intent, API and team. All three agreement targets pass. Original submissions, formatting-only scoring exports and unresolved decisions are preserved in the [agreement report](../eval/activity-3-pilot/results/annotation-agreement/report.md). Record consensus decisions separately in the adjudication template before promoting final labels.

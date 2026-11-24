@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer is asking about a specific error code, MAX_ROUTE_LENGTH_EXCEEDED, which is documented as indicating the requested route is too long and cannot be processed. The error does not relate to a configuration fix or a need for additional inputs. The customer's question is about the limit and whether it can be raised, which is a policy or service limitation question, not a technical configuration issue.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer is asking about a specific error code, MAX_ROUTE_LENGTH_EXCEEDED, which is documented as indicating the requested route is too long and cannot be processed. The error does not relate to a configuration fix or a need for additional inputs. The customer's question is about the limit and whether it can be raised, which is a policy or service limitation question, not a technical configuration issue.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1413,
+    "completion_tokens": 87,
+    "total_tokens": 1500
+  },
+  "latency_ms": 2177,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,417 @@
+{
+  "scope": "13 targeted supplied/unknown decisions in 11 working cases; not general extraction accuracy.",
+  "summary": {
+    "baseline": {
+      "checks": 13,
+      "correct": 8
+    },
+    "integrated": {
+      "checks": 13,
+      "correct": 13
+    }
+  },
+  "checks": [
+    {
+      "record_id": "GT-LBS-AC-021",
+      "method": "baseline",
+      "field": "details_sku",
+      "expected": "Place Details Essentials",
+      "actual": "Place Details Essentials",
+      "correct": true,
+      "fact": {
+        "field": "details_sku",
+        "status": "supplied",
+        "value": "Place Details Essentials",
+        "source": "query",
+        "evidence": "ending in Place Details Essentials",
+        "start": 86,
+        "end": 120
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-021",
+      "method": "integrated",
+      "field": "details_sku",
+      "expected": "Place Details Essentials",
+      "actual": "Place Details Essentials",
+      "correct": true,
+      "fact": {
+        "field": "details_sku",
+        "status": "supplied",
+        "value": "Place Details Essentials",
+        "source": "query",
+        "evidence": "ending in Place Details Essentials",
+        "start": 86,
+        "end": 120
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "method": "baseline",
+      "field": "details_sku",
+      "expected": "Place Details Essentials",
+      "actual": "Place Details Essentials",
+      "correct": true,
+      "fact": {
+        "field": "details_sku",
+        "status": "supplied",
+        "value": "Place Details Essentials",
+        "source": "query",
+        "evidence": "ending in Place Details Essentials",
+        "start": 88,
+        "end": 122
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-022",
+      "method": "integrated",
+      "field": "details_sku",
+      "expected": "Place Details Essentials",
+      "actual": "Place Details Essentials",
+      "correct": true,
+      "fact": {
+        "field": "details_sku",
+        "status": "supplied",
+        "value": "Place Details Essentials",
+        "source": "query",
+        "evidence": "ending in Place Details Essentials",
+        "start": 88,
+        "end": 122
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "method": "baseline",
+      "field": "details_sku",
+      "expected": "Place Details Essentials",
+      "actual": "Place Details Essentials",
+      "correct": true,
+      "fact": {
+        "field": "details_sku",
+        "status": "supplied",
+        "value": "Place Details Essentials",
+        "source": "query",
+        "evidence": "ending in Place Details Essentials",
+        "start": 90,
+        "end": 124
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-023",
+      "method": "integrated",
+      "field": "details_sku",
+      "expected": "Place Details Essentials",
+      "actual": "Place Details Essentials",
+      "correct": true,
+      "fact": {
+        "field": "details_sku",
+        "status": "supplied",
+        "value": "Place Details Essentials",
+        "source": "query",
+        "evidence": "ending in Place Details Essentials",
+        "start": 90,
+        "end": 124
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "method": "baseline",
+      "field": "details_sku",
+      "expected": "Place Details Essentials",
+      "actual": "Place Details Essentials",
+      "correct": true,
+      "fact": {
+        "field": "details_sku",
+        "status": "supplied",
+        "value": "Place Details Essentials",
+        "source": "query",
+        "evidence": "ending in Place Details Essentials",
+        "start": 87,
+        "end": 121
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-024",
+      "method": "integrated",
+      "field": "details_sku",
+      "expected": "Place Details Essentials",
+      "actual": "Place Details Essentials",
+      "correct": true,
+      "fact": {
+        "field": "details_sku",
+        "status": "supplied",
+        "value": "Place Details Essentials",
+        "source": "query",
+        "evidence": "ending in Place Details Essentials",
+        "start": 87,
+        "end": 121
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "method": "baseline",
+      "field": "max_stops",
+      "expected": null,
+      "actual": "15–20",
+      "correct": false,
+      "fact": {
+        "field": "max_stops",
+        "status": "supplied",
+        "value": "15–20",
+        "source": "query",
+        "evidence": "15–20 outlets",
+        "start": 108,
+        "end": 121
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-049",
+      "method": "integrated",
+      "field": "max_stops",
+      "expected": null,
+      "actual": null,
+      "correct": true,
+      "fact": null
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "method": "baseline",
+      "field": "traffic_required",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "fact": {
+        "field": "traffic_required",
+        "status": "supplied",
+        "value": true,
+        "source": "query",
+        "evidence": "under live traffic",
+        "start": 104,
+        "end": 122
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-050",
+      "method": "integrated",
+      "field": "traffic_required",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "fact": {
+        "field": "traffic_required",
+        "status": "supplied",
+        "value": true,
+        "source": "query",
+        "evidence": "under live traffic",
+        "start": 104,
+        "end": 122
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "method": "baseline",
+      "field": "usage_geography",
+      "expected": "India",
+      "actual": null,
+      "correct": false,
+      "fact": null
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "method": "baseline",
+      "field": "traffic_scope",
+      "expected": "with_and_without",
+      "actual": null,
+      "correct": false,
+      "fact": null
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "method": "integrated",
+      "field": "usage_geography",
+      "expected": "India",
+      "actual": "India",
+      "correct": true,
+      "fact": {
+        "field": "usage_geography",
+        "status": "supplied",
+        "value": "India",
+        "source": "query",
+        "evidence": "matrices, 10,000 a month in India",
+        "start": 29,
+        "end": 62
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-034",
+      "method": "integrated",
+      "field": "traffic_scope",
+      "expected": "with_and_without",
+      "actual": "with_and_without",
+      "correct": true,
+      "fact": {
+        "field": "traffic_scope",
+        "status": "supplied",
+        "value": "with_and_without",
+        "source": "query",
+        "evidence": "with and without traffic",
+        "start": 64,
+        "end": 88
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "method": "baseline",
+      "field": "storage_required",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "fact": {
+        "field": "storage_required",
+        "status": "supplied",
+        "value": true,
+        "source": "query",
+        "evidence": "must store the addresses",
+        "start": 112,
+        "end": 136
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-010",
+      "method": "integrated",
+      "field": "storage_required",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "fact": {
+        "field": "storage_required",
+        "status": "supplied",
+        "value": true,
+        "source": "query",
+        "evidence": "must store the addresses",
+        "start": 112,
+        "end": 136
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "method": "baseline",
+      "field": "storage_required",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "fact": {
+        "field": "storage_required",
+        "status": "supplied",
+        "value": true,
+        "source": "query",
+        "evidence": "must store the addresses",
+        "start": 104,
+        "end": 128
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-014",
+      "method": "integrated",
+      "field": "storage_required",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "fact": {
+        "field": "storage_required",
+        "status": "supplied",
+        "value": true,
+        "source": "query",
+        "evidence": "must store the addresses",
+        "start": 104,
+        "end": 128
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "method": "baseline",
+      "field": "languages",
+      "expected": "Hindi",
+      "actual": "Hindi",
+      "correct": true,
+      "fact": {
+        "field": "languages",
+        "status": "supplied",
+        "value": "Hindi",
+        "source": "query",
+        "evidence": "shown in Hindi",
+        "start": 78,
+        "end": 92
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-228",
+      "method": "integrated",
+      "field": "languages",
+      "expected": "Hindi",
+      "actual": "Hindi",
+      "correct": true,
+      "fact": {
+        "field": "languages",
+        "status": "supplied",
+        "value": "Hindi",
+        "source": "query",
+        "evidence": "shown in Hindi",
+        "start": 78,
+        "end": 92
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "method": "baseline",
+      "field": "rooftop_hard_filter",
+      "expected": true,
+      "actual": null,
+      "correct": false,
+      "fact": null
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "method": "baseline",
+      "field": "address_elements_required",
+      "expected": true,
+      "actual": null,
+      "correct": false,
+      "fact": null
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "method": "integrated",
+      "field": "rooftop_hard_filter",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "fact": {
+        "field": "rooftop_hard_filter",
+        "status": "supplied",
+        "value": true,
+        "source": "query",
+        "evidence": "only want reverse-geocoded addresses when the location is known to street-address (rooftop) precision",
+        "start": 21,
+        "end": 122
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-230",
+      "method": "integrated",
+      "field": "address_elements_required",
+      "expected": true,
+      "actual": true,
+      "correct": true,
+      "fact": {
+        "field": "address_elements_required",
+        "status": "supplied",
+        "value": true,
+        "source": "query",
+        "evidence": "need an address broken into elements",
+        "start": 133,
+        "end": 169
+      }
+    }
+  ]
+}

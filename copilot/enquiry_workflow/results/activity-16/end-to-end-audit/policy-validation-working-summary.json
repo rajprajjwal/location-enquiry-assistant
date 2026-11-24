@@ -1,0 +1,305 @@
+{
+  "baseline": {
+    "cases": 286,
+    "owner_correct": 276,
+    "owner_accuracy": 0.965034965034965,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 1,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.9,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "candidate": {
+    "cases": 286,
+    "owner_correct": 263,
+    "owner_accuracy": 0.9195804195804196,
+    "escalation_true_positives": 9,
+    "escalation_false_positives": 1,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 0.9,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "changes": [
+    {
+      "record_id": "GT-LBS-DM-092",
+      "query": "We need a 500\u00d7500 matrix nightly for depot planning. Which provider handles that in fewest calls?",
+      "history": [],
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "task": {
+        "task": "product_selection",
+        "evidence": "Which provider handles that in fewest calls?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-037",
+      "query": "Which directions APIs give traffic-aware ETAs in Indian cities, and what do we have to set to get them?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Which directions APIs give traffic-aware ETAs in Indian cities, and what do we have to set to get them?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-210",
+      "query": "Will Mappls reverse geocoding give us the same detailed response in Nepal as in India?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Will Mappls reverse geocoding give us the same detailed response in Nepal as in India?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-211",
+      "query": "Will Mappls reverse geocoding give us the same detailed response in Bangladesh as in India?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Will Mappls reverse geocoding give us the same detailed response in Bangladesh as in India?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-220",
+      "query": "Do any of these routing APIs plan EV routes with charging stops?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Do any of these routing APIs plan EV routes with charging stops?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-227",
+      "query": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-226",
+      "query": "Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Can Mapbox's Geocoding API suggest shops and restaurants (POIs) as users type?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-003",
+      "query": "To save money, can our mobile app call the public Nominatim server directly for type-ahead address search? We have about 20 searches per second at peak.",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "To save money, can our mobile app call the public Nominatim server directly for type-ahead address search? We have about 20 searches per second at peak."
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-211",
+      "query": "Would a self-hosted OSRM distance matrix backed by OpenStreetMap cover routes within Bhutan? What geographic coverage limitations are documented for that setup?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "What geographic coverage limitations are documented for that setup?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-212",
+      "query": "For a self-hosted OSRM distance matrix, can OpenStreetMap provide route coverage in Nepal? Which geographic coverage limits should we plan for?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Which geographic coverage limits should we plan for?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-040",
+      "query": "We run 16-tonne trucks between Indian warehouses. Which routing APIs support truck routing?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Which routing APIs support truck routing?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-223",
+      "query": "Does Mappls' distance matrix let us choose shortest vs optimal routes, and use live traffic?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Does Mappls' distance matrix let us choose shortest vs optimal routes, and use live traffic?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-225",
+      "query": "Can Google's Routes API give us a transit matrix for 15 stations \u00d7 10 offices?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Account team (Sales)",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Can Google's Routes API give us a transit matrix for 15 stations \u00d7 10 offices?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-205",
+      "query": "Our map shows disputed borders for Indian users. Can Mapbox reverse geocoding return India's view of boundaries?",
+      "history": [],
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "task": {
+        "task": "billing_policy",
+        "evidence": "disputed"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-093",
+      "query": "Does Ola Maps cover a Distance Matrix between Indian cities and Kathmandu?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Does Ola Maps cover a Distance Matrix between Indian cities and Kathmandu?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-089",
+      "query": "Which matrix APIs give traffic-aware durations, and what's the catch for each?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Which matrix APIs give traffic-aware durations, and what's the catch for each?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-096",
+      "query": "Free reverse geocoding options for a hobby app with 20,000 lookups a month?",
+      "history": [],
+      "before": "Account team (Sales)",
+      "after": "Support L1",
+      "expected": "Support L1",
+      "task": {
+        "task": "api_documentation",
+        "evidence": "Free reverse geocoding options for a hobby app with 20,000 lookups a month?"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-124",
+      "query": "How do we self-host OSRM for a matrix service, and what licence applies to the data?",
+      "history": [],
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "task": {
+        "task": "licensing_decision",
+        "evidence": "what licence applies to the data"
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-080",
+      "query": "Can we use router.project-osrm.org table service for our commercial fleet ETA matrix?",
+      "history": [],
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Support L1",
+      "task": {
+        "task": "licensing_decision",
+        "evidence": "Can we use router.project-osrm.org table service for our commercial fleet ETA matrix?"
+      }
+    }
+  ],
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "validation": "All 286 working cases; 42 development cases and 244 remaining validation cases. Saved interpretations and handoffs; task classifications live or exactly cached.",
+  "development": {
+    "baseline": {
+      "cases": 42,
+      "owner_correct": 40,
+      "owner_accuracy": 0.9523809523809523,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 0,
+      "escalation_false_negatives": 0,
+      "escalation_precision": null,
+      "escalation_recall": null,
+      "escalation_reason_coverage": null
+    },
+    "candidate": {
+      "cases": 42,
+      "owner_correct": 41,
+      "owner_accuracy": 0.9761904761904762,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 0,
+      "escalation_false_negatives": 0,
+      "escalation_precision": null,
+      "escalation_recall": null,
+      "escalation_reason_coverage": null
+    }
+  },
+  "remaining": {
+    "baseline": {
+      "cases": 244,
+      "owner_correct": 236,
+      "owner_accuracy": 0.9672131147540983,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalation_reason_coverage": 1.0
+    },
+    "candidate": {
+      "cases": 244,
+      "owner_correct": 222,
+      "owner_accuracy": 0.9098360655737705,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalation_reason_coverage": 1.0
+    }
+  }
+}

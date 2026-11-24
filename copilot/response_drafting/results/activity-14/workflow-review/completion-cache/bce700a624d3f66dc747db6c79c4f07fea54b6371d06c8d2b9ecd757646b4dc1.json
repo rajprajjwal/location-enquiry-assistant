@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue is about the Mapbox Directions API's driving-traffic ETA being identical to the plain driving profile in a tier-3 town. The retrieved evidence indicates that traffic coverage for the driving-traffic profile is available in supported geographies and that requests to this profile revert to driving profile results for areas without traffic coverage. Since the customer is experiencing this behavior, it suggests that the area in question may not have real-time traffic data available, and the API is defaulting to the driving profile. The diagnostic plan does not require further action as the issue is explained by the available documentation.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue is about the Mapbox Directions API's driving-traffic ETA being identical to the plain driving profile in a tier-3 town. The retrieved evidence indicates that traffic coverage for the driving-traffic profile is available in supported geographies and that requests to this profile revert to driving profile results for areas without traffic coverage. Since the customer is experiencing this behavior, it suggests that the area in question may not have real-time traffic data available, and the API is defaulting to the driving profile. The diagnostic plan does not require further action as the issue is explained by the available documentation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2044,
+    "completion_tokens": 128,
+    "total_tokens": 2172
+  },
+  "latency_ms": 3138,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

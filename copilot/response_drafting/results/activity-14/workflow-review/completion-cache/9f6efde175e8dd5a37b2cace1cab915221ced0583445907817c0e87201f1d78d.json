@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The enquiry identifies the issue of an API key being exposed, which is a security concern rather than a diagnostic decision requiring further action based on the provided evidence.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The enquiry identifies the issue of an API key being exposed, which is a security concern rather than a diagnostic decision requiring further action based on the provided evidence.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1397,
+    "completion_tokens": 40,
+    "total_tokens": 1437
+  },
+  "latency_ms": 1129,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

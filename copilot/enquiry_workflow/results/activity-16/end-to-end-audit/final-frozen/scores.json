@@ -1,0 +1,85 @@
+{
+  "baseline": {
+    "cases": 80,
+    "owner_correct": 64,
+    "owner_accuracy": 0.8,
+    "escalation_true_positives": 10,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "candidate": {
+    "cases": 80,
+    "owner_correct": 72,
+    "owner_accuracy": 0.9,
+    "escalation_true_positives": 10,
+    "escalation_false_positives": 0,
+    "escalation_false_negatives": 0,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalation_reason_coverage": 1.0
+  },
+  "owner_changes": [
+    {
+      "record_id": "GT-LBS-AC-230",
+      "query": "We need type-ahead place suggestions that we can bias to a search area and filter by place type. Which of Google Places Autocomplete (New), Ola Places Autocomplete, and Mapbox Search Box document those capabilities?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Account team (Sales)"
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "query": "Which Directions APIs can return a driving route that avoids ferries, and how can we tell whether that capability is documented?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Account team (Sales)"
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "query": "If we self-host OSRM on OpenStreetMap data for routing, what licensing obligations do we have?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Account team (Sales)"
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "query": "Which Directions APIs can return a multi-stop driving route with separate distances and travel times for every leg, while visiting the stops in the order we supply?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Account team (Sales)"
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "query": "Our drivers prefer Tamil. Can the directions API return turn-by-turn instructions in Tamil?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Account team (Sales)"
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "query": "Google Maps Platform quote: 3,000 matrix requests per month in India, each a 20\u00d720 matrix, on a brand-new GCP project.",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Account team (Sales)"
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "query": "Can we store Mapbox reverse-geocoding results in our own database for later reuse, and does the public Nominatim policy allow us to resell those geocoding results?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Account team (Sales)"
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "query": "Which reverse geocoders document a way to look up many coordinates in a single batch request?",
+      "before": "Support L1",
+      "after": "Account team (Sales)",
+      "expected": "Account team (Sales)"
+    }
+  ],
+  "escalations_preserved": true,
+  "model_calls": 0,
+  "method": "Deterministic routing replay; fresh handoff classifications preserved because the policy does not enter that path."
+}

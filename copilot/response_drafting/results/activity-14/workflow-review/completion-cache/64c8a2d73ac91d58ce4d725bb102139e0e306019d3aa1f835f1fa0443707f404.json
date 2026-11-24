@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"pricing\": true,\n  \"items\": [\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"reverse_geocode\",\n      \"requests\": 4000000,\n      \"sessions\": null,\n      \"keystrokes_per_session\": null,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Mapbox\",\n      \"api\": \"reverse_geocode\",\n      \"requests\": 4000000,\n      \"sessions\": null,\n      \"keystrokes_per_session\": null,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    }\n  ]\n}",
+  "raw": "{\n  \"pricing\": true,\n  \"items\": [\n    {\n      \"provider\": \"Google Maps Platform\",\n      \"api\": \"reverse_geocode\",\n      \"requests\": 4000000,\n      \"sessions\": null,\n      \"keystrokes_per_session\": null,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    },\n    {\n      \"provider\": \"Mapbox\",\n      \"api\": \"reverse_geocode\",\n      \"requests\": 4000000,\n      \"sessions\": null,\n      \"keystrokes_per_session\": null,\n      \"origins\": null,\n      \"destinations\": null,\n      \"calls\": null,\n      \"traffic\": null,\n      \"basic\": false\n    }\n  ]\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 181,
+    "total_tokens": 583
+  },
+  "latency_ms": 4108,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

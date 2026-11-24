@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The customer's issue relates to the format of coordinates in a Google Distance Matrix request, which is a configuration or usage question. The diagnostic state and retrieved evidence do not indicate a need for escalation or a specific team ownership. The issue can be addressed by verifying the correct format for coordinates as specified in the documentation.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The customer's issue relates to the format of coordinates in a Google Distance Matrix request, which is a configuration or usage question. The diagnostic state and retrieved evidence do not indicate a need for escalation or a specific team ownership. The issue can be addressed by verifying the correct format for coordinates as specified in the documentation.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1673,
+    "completion_tokens": 71,
+    "total_tokens": 1744
+  },
+  "latency_ms": 1847,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

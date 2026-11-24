@@ -1,0 +1,79 @@
+{
+  "development": {
+    "before": {
+      "cases": 147,
+      "owner_matches": 135,
+      "owner_accuracy": 0.9183673469387755,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 137,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": true
+    },
+    "after": {
+      "cases": 147,
+      "owner_matches": 135,
+      "owner_accuracy": 0.9183673469387755,
+      "escalation_true_positives": 9,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 137,
+      "escalation_precision": 0.9,
+      "escalation_recall": 1.0,
+      "escalations_with_reason": 10,
+      "escalation_reason_coverage": 1.0,
+      "passes": true
+    },
+    "routine_routing_replayed": 137,
+    "saved_handoffs_retained": 10,
+    "changed_owners": []
+  },
+  "fresh": {
+    "before": {
+      "cases": 12,
+      "owner_matches": 8,
+      "owner_accuracy": 0.6666666666666666,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 11,
+      "escalation_precision": 0.0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 1,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "after": {
+      "cases": 12,
+      "owner_matches": 8,
+      "owner_accuracy": 0.6666666666666666,
+      "escalation_true_positives": 0,
+      "escalation_false_positives": 1,
+      "escalation_false_negatives": 0,
+      "escalation_true_negatives": 11,
+      "escalation_precision": 0.0,
+      "escalation_recall": 0,
+      "escalations_with_reason": 1,
+      "escalation_reason_coverage": 1.0,
+      "passes": false
+    },
+    "routine_routing_replayed": 11,
+    "saved_handoffs_retained": 1,
+    "changed_owners": []
+  },
+  "workbook_sha256": "b0ad6e415cf093ecaefff73b6a0fa0811f8f1d783ba7414a770f44a1c692f4fb",
+  "method": "Replay routine routing using saved interpretations and approved working labels. Retain saved model handoff decisions.",
+  "status_unknown_in_saved_routine_mismatches": 21,
+  "tests": {
+    "workflow_real_validator_passed": 102
+  },
+  "source_digests": {
+    "copilot/config/escalation_policy.yaml": "d6c66c8d3168a5b53b718ab26e4e14cea5957bb501f44fd69d55293c9b98849b",
+    "copilot/safety/escalation_policy.py": "ce565f26562bdc17436823b7095c2c26887ae648f851e6c9844cab71cbf93733",
+    "copilot/enquiry_workflow/escalation.py": "7f40fb9a20fd29b1e7f8332cd4dadb33d86ef2706e115c22921f61a2fe111861"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The enquiry suggests a possible distance cap issue with the Mapbox Directions API for a specific route. To diagnose this, we need to reproduce the failure by inspecting the actual request and response, as the documentation does not confirm a distance cap or provide enough details about the specific error encountered.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The enquiry suggests a possible distance cap issue with the Mapbox Directions API for a specific route. To diagnose this, we need to reproduce the failure by inspecting the actual request and response, as the documentation does not confirm a distance cap or provide enough details about the specific error encountered.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1886,
+    "completion_tokens": 69,
+    "total_tokens": 1955
+  },
+  "latency_ms": 1834,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

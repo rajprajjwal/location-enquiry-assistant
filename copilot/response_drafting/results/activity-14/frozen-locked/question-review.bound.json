@@ -1,0 +1,1256 @@
+{
+  "version": "1.0",
+  "predictions_sha256": "8cf92814786785f9dfe4a8c84e048b28e857e59b8ab7b026e8b7f74218402677",
+  "gold_sha256": "7c5c44fb2f1d216957585b7edaf765406b791da2c13decd6c05cd0e4d63000fb",
+  "reviewer": "Assistant semantic review of exact saved frozen outputs; atomic decomposition locked before prediction",
+  "cases": [
+    {
+      "record_id": "GT-LBS-AC-031",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-032",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-033",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-045",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-051",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-068",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-073",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-081",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-086",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-089",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-205",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-210",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-215",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-222",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-229",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "notes": "The operating-location question covers target regions, but not monthly volume or peak rate."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "notes": "The operating-location question covers target regions, but not monthly volume or peak rate."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-230",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-231",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Monthly volume is requested; Requests versus Session Usage billing is not."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Monthly volume is requested; Requests versus Session Usage billing is not."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-234",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-235",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-AC-236",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-011",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-012",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-020",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-021",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-043",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-084",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-085",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-100",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-108",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-113",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-201",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-210",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-216",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-221",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-222",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-223",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-224",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-225",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DIR-226",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-026",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-027",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-059",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-085",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-087",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-094",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-097",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-117",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-118",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-201",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-214",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-218",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-221",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-222",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-224",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-226",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              3,
+              1
+            ]
+          ],
+          "notes": "Volume is requested; traffic, display and retention or redistribution needs are not."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              3,
+              1
+            ]
+          ],
+          "notes": "Volume is requested; traffic, display and retention or redistribution needs are not."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-227",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-231",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-232",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-DM-233",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-001",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-005",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-006",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-007",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-015",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-016",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-021",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-082",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-084",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-201",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-212",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-213",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-225",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Monthly volume is requested, but peak rate is not. The other four gold questions are absent."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "notes": "Monthly volume is requested, but peak rate is not. The other four gold questions are absent."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-226",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-231",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-232",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-233",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-234",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No gold question or atomic fact is semantically matched."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-235",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    },
+    {
+      "record_id": "GT-LBS-RG-236",
+      "methods": {
+        "baseline": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        },
+        "integrated": {
+          "whole": [],
+          "facts": [],
+          "notes": "No question recorded in the frozen GT."
+        }
+      }
+    }
+  ]
+}

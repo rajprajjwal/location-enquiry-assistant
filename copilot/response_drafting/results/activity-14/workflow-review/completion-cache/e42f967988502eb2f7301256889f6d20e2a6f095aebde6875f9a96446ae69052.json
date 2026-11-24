@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"request_reproduction\", \"reason\":\"The HTTP 429 status indicates a rate limit has been exceeded. To diagnose this, we need to inspect the actual request that triggered the 429 response, as the customer's batch job may be hitting the rate limit due to the number of queries or the frequency of requests.\"}",
+  "raw": "{\"decision\":\"request_reproduction\", \"reason\":\"The HTTP 429 status indicates a rate limit has been exceeded. To diagnose this, we need to inspect the actual request that triggered the 429 response, as the customer's batch job may be hitting the rate limit due to the number of queries or the frequency of requests.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1767,
+    "completion_tokens": 71,
+    "total_tokens": 1838
+  },
+  "latency_ms": 1881,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"geographic_matching\"],\n      \"decision_impact\": \"Distinguish exclusion of out-of-area results from geographic ranking preferences.\"\n    }\n  ],\n  \"reason\": \"The customer is asking how to restrict Autocomplete results to a 5 km radius, which indicates a need for a hard geographic restriction. The provided field 'geographic_matching' is required to determine if this restriction is needed or if a location bias is acceptable.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [],\n  \"groups\": [\n    {\n      \"fields\": [\"geographic_matching\"],\n      \"decision_impact\": \"Distinguish exclusion of out-of-area results from geographic ranking preferences.\"\n    }\n  ],\n  \"reason\": \"The customer is asking how to restrict Autocomplete results to a 5 km radius, which indicates a need for a hard geographic restriction. The provided field 'geographic_matching' is required to determine if this restriction is needed or if a location bias is acceptable.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1956,
+    "completion_tokens": 108,
+    "total_tokens": 2064
+  },
+  "latency_ms": 2661,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,160 @@
+{
+  "time_utc": "2026-11-21T13:30:51.207985+00:00",
+  "retrieval": "BM25",
+  "model": "Qwen/Qwen3-8B",
+  "inputs": "Synthetic test cases",
+  "database": "Temporary SQLite",
+  "passed": true,
+  "checks": [
+    {
+      "check": "general Directions definition",
+      "expected": "final",
+      "status": "final",
+      "steps": 3,
+      "critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "provider support",
+      "expected": "final",
+      "status": "final",
+      "steps": 4,
+      "critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "provider clarification",
+      "expected": "clarification_needed",
+      "status": "clarification_needed",
+      "steps": 1,
+      "critic": {
+        "verdict": "not_run",
+        "reason": "Provider clarification needed.",
+        "reviews": []
+      },
+      "passed": true
+    },
+    {
+      "check": "provider follow-up",
+      "expected": "final",
+      "status": "final",
+      "steps": 8,
+      "critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "revise",
+            "reason": "The model found no passage that answered the enquiry."
+          },
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "deterministic price comparison",
+      "expected": "final",
+      "status": "final",
+      "steps": 3,
+      "critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "missing monthly volume",
+      "expected": "clarification_needed",
+      "status": "clarification_needed",
+      "steps": 1,
+      "critic": {
+        "verdict": "not_run",
+        "reason": "Clarification needed for monthly volume.",
+        "reviews": []
+      },
+      "passed": true
+    },
+    {
+      "check": "documentation limits comparison",
+      "expected": "final",
+      "status": "final",
+      "steps": 4,
+      "critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "sandbox proposal",
+      "expected": "final",
+      "status": "final",
+      "steps": 3,
+      "critic": {
+        "verdict": "pass",
+        "reason": null,
+        "reviews": [
+          {
+            "verdict": "pass",
+            "reason": null
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "sandbox approval and decision log",
+      "passed": true
+    },
+    {
+      "check": "incident handoff",
+      "expected": "escalated",
+      "status": "escalated",
+      "steps": 1,
+      "critic": {
+        "verdict": "not_run",
+        "reason": "Escalation rule matched production incident.",
+        "reviews": []
+      },
+      "passed": true
+    },
+    {
+      "check": "incident approval held",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "supplied_facts": [
+    {
+      "field": "region",
+      "value": "India",
+      "evidence": ""
+    },
+    {
+      "field": "languages",
+      "value": "Hindi",
+      "evidence": "shown in Hindi"
+    },
+    {
+      "field": "monthly_volume",
+      "value": true,
+      "evidence": "500,000 requests per month"
+    }
+  ],
+  "groups": [
+    {
+      "fields": [
+        "peak_rate"
+      ],
+      "decision_impact": "Check throughput and recurring usage before recommending a service."
+    },
+    {
+      "fields": [
+        "storage_required",
+        "public_service_acceptable",
+        "temporary_results_acceptable"
+      ],
+      "decision_impact": "Select a deployment and licensing model compatible with the customer use."
+    }
+  ],
+  "reason": "The customer has provided the monthly volume but not the peak rate, which is essential for assessing throughput and recurring usage. Additionally, the storage requirements, acceptability of public service endpoints, and temporary results are missing, which are critical for selecting the appropriate deployment and licensing model."
+}

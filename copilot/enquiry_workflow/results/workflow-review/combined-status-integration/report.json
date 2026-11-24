@@ -1,0 +1,307 @@
+{
+  "checked_at_utc": "2026-11-24T16:27:45.358115+00:00",
+  "status": "verified_local_combined_integration",
+  "changes": [
+    "Bind recognized actual pending customer-status replies before interpretation and routing.",
+    "Resolve yes/no only against a single unnegated existing-customer/already-using question.",
+    "Separate positive relationship binding from broad deferral detection, rejecting project/key/account-setup eligibility questions even with a mismatched pending field.",
+    "Keep choice-only yes/no, multi-question, unrelated and deferred short replies unconfirmed.",
+    "Use the raw current status reply for ownership review while preserving the restored task for interpretation, retrieval and escalation.",
+    "A current bound new/existing reply overrides the opposite relationship in the restored old task on the same turn.",
+    "Persist original reply evidence so reopening and source deletion retain their existing replay semantics.",
+    "Persist fresh recognized pending-field replies even when assistant question text is unavailable, recording pending_customer_status binding provenance."
+  ],
+  "tests": {
+    "focused_command": ".venv/bin/python -B -m pytest -q tests/enquiry_workflow/test_pending_customer_status.py tests/enquiry_workflow/test_customer_status_e2e.py tests/enquiry_workflow/test_ownership_status.py tests/enquiry_workflow/test_provider_binding.py tests/enquiry_workflow/test_task_scope.py tests/enquiry_workflow/test_requirement_plan.py tests/enquiry_workflow/test_escalation.py -p no:cacheprovider",
+    "focused_passed": 154,
+    "failed": 0,
+    "coverage": [
+      "actual pending field",
+      "missing assistant question persistence",
+      "new/existing",
+      "unambiguous yes/no",
+      "ambiguity and deferral",
+      "old existing to new and old new to existing",
+      "project/key/account-setup binding guards",
+      "case reopening",
+      "source deletion",
+      "case isolation",
+      "production incident retains Maps engineering approval route"
+    ],
+    "prior_full_validation_before_final_boundary_edge_fix": {
+      "passed": 882,
+      "subtests_passed": 4
+    },
+    "final_full_validation": "Run separately by the main workflow review after these sources are stable."
+  },
+  "probes": {
+    "status_replies": [
+      {
+        "question": "Are you an existing customer?",
+        "answer": "yes",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you an existing customer?",
+        "answer": "no",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you an existing customer?",
+        "answer": "existing",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you an existing customer?",
+        "answer": "new",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you an existing customer?",
+        "answer": "Let's leave that open for now.",
+        "status": "unknown",
+        "deferred": true
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "yes",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "no",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "existing",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "new",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you already using this service?",
+        "answer": "Let's leave that open for now.",
+        "status": "unknown",
+        "deferred": true
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "yes",
+        "status": "unknown",
+        "deferred": false
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "no",
+        "status": "unknown",
+        "deferred": false
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "existing",
+        "status": "existing",
+        "deferred": false
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "new",
+        "status": "new",
+        "deferred": false
+      },
+      {
+        "question": "Are you a new or existing customer?",
+        "answer": "Let's leave that open for now.",
+        "status": "unknown",
+        "deferred": true
+      }
+    ],
+    "pending_status_reply": [
+      {
+        "restored_task": "How do I set waypoints in Mapbox Directions?",
+        "raw_reply": "existing",
+        "assistant_question_saved": true,
+        "returned_status": "existing",
+        "persisted_status": "existing",
+        "owner": "Support L1",
+        "provisional": false,
+        "route": "final",
+        "pending_reply": null,
+        "approval_statuses": []
+      },
+      {
+        "restored_task": "How do I set waypoints in Mapbox Directions?",
+        "raw_reply": "new",
+        "assistant_question_saved": true,
+        "returned_status": "new",
+        "persisted_status": "new",
+        "owner": "Account team (Sales)",
+        "provisional": false,
+        "route": "final",
+        "pending_reply": null,
+        "approval_statuses": []
+      },
+      {
+        "restored_task": "How do I set waypoints in Mapbox Directions?",
+        "raw_reply": "new",
+        "assistant_question_saved": false,
+        "returned_status": "new",
+        "persisted_status": "new",
+        "owner": "Account team (Sales)",
+        "provisional": false,
+        "route": "final",
+        "pending_reply": null,
+        "approval_statuses": []
+      },
+      {
+        "restored_task": "How do I set waypoints in Mapbox Directions?",
+        "raw_reply": "existing",
+        "assistant_question_saved": false,
+        "returned_status": "existing",
+        "persisted_status": "existing",
+        "owner": "Support L1",
+        "provisional": false,
+        "route": "final",
+        "pending_reply": null,
+        "approval_statuses": []
+      },
+      {
+        "restored_task": "We are an existing customer. How do I set waypoints in Mapbox Directions?",
+        "raw_reply": "new",
+        "assistant_question_saved": true,
+        "returned_status": "new",
+        "persisted_status": "new",
+        "owner": "Account team (Sales)",
+        "provisional": false,
+        "route": "final",
+        "pending_reply": null,
+        "approval_statuses": []
+      },
+      {
+        "restored_task": "We are a new customer. How do I set waypoints in Mapbox Directions?",
+        "raw_reply": "existing",
+        "assistant_question_saved": true,
+        "returned_status": "existing",
+        "persisted_status": "existing",
+        "owner": "Support L1",
+        "provisional": false,
+        "route": "final",
+        "pending_reply": null,
+        "approval_statuses": []
+      },
+      {
+        "restored_task": "Production is down. Directions returns HTTP 503 for every request.",
+        "raw_reply": "new",
+        "assistant_question_saved": true,
+        "returned_status": "new",
+        "persisted_status": "new",
+        "owner": "Maps engineering",
+        "provisional": false,
+        "route": "escalated",
+        "pending_reply": null,
+        "approval_statuses": [
+          "pending"
+        ]
+      }
+    ],
+    "setup_question_guards": [
+      {
+        "question": "Is this a new or existing Google Cloud project?",
+        "answer": "new",
+        "bound": false,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing Google Cloud project?",
+        "answer": "new",
+        "bound": true,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing Google Cloud project?",
+        "answer": "existing",
+        "bound": false,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing Google Cloud project?",
+        "answer": "existing",
+        "bound": true,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing API key?",
+        "answer": "new",
+        "bound": false,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing API key?",
+        "answer": "new",
+        "bound": true,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing API key?",
+        "answer": "existing",
+        "bound": false,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing API key?",
+        "answer": "existing",
+        "bound": true,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing account setup?",
+        "answer": "new",
+        "bound": false,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing account setup?",
+        "answer": "new",
+        "bound": true,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing account setup?",
+        "answer": "existing",
+        "bound": false,
+        "result": null
+      },
+      {
+        "question": "Is this a new or existing account setup?",
+        "answer": "existing",
+        "bound": true,
+        "result": null
+      }
+    ],
+    "live_model_calls": 0
+  },
+  "approved_policy_and_finalizer_byte_unchanged": {
+    "copilot/enquiry_workflow/case_memory.py": true,
+    "copilot/config/escalation_policy.yaml": true,
+    "copilot/qualification/finalization.py": true
+  },
+  "routing_boundary_change": "escalation.py accepts a separate raw status reply only for ownership review; its restored enquiry, escalation rules and approval decisions retain the original task.",
+  "frozen_cases": 0,
+  "holdout_cases": 0,
+  "live_model_calls": 0,
+  "score_claim": "No new owner-accuracy or Activity14 acceptance score is claimed for this production integration fix. Existing Activity16 locked acceptance scores are preserved; controlled working-eval benchmarks hold ownership code fixed.",
+  "manifest": "manifest.json",
+  "reproduction": "probes.py",
+  "test_evidence": "tests.txt"
+}

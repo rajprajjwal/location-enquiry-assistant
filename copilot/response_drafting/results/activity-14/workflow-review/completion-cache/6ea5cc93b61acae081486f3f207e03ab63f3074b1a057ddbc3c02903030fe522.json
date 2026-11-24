@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocode might not be returning the exact known address because the geocoder is estimating the closest addressable location within a certain tolerance. If no match is found, it returns zero results. To investigate, check if the coordinates are accurate and if there are any filters or parameters affecting the results.\"}",
+  "raw": "{\"decision\":\"missing_results\",\"reason\":\"The reverse geocode might not be returning the exact known address because the geocoder is estimating the closest addressable location within a certain tolerance. If no match is found, it returns zero results. To investigate, check if the coordinates are accurate and if there are any filters or parameters affecting the results.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2101,
+    "completion_tokens": 70,
+    "total_tokens": 2171
+  },
+  "latency_ms": 1886,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

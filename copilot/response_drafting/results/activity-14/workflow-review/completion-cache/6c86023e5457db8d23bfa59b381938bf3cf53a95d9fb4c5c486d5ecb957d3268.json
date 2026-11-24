@@ -1,0 +1,14 @@
+{
+  "text": "{\"pricing\": true, \"items\": [{\"provider\": \"Ola Maps\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"Google Maps Platform\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"Mapbox\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"HERE\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"Mappls (MapmyIndia)\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"OSM Nominatim\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}]}",
+  "raw": "{\"pricing\": true, \"items\": [{\"provider\": \"Ola Maps\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"Google Maps Platform\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"Mapbox\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"HERE\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"Mappls (MapmyIndia)\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}, {\"provider\": \"OSM Nominatim\", \"api\": \"autocomplete\", \"requests\": 5600000, \"sessions\": 800000, \"keystrokes_per_session\": 7, \"traffic\": null, \"basic\": false}]}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 431,
+    "completion_tokens": 355,
+    "total_tokens": 786
+  },
+  "latency_ms": 7955,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

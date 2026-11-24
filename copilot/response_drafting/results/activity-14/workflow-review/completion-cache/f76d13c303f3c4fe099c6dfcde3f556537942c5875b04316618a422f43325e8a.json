@@ -1,0 +1,14 @@
+{
+  "text": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"languages\",\n      \"value\": \"Hindi, Tamil and Kannada\",\n      \"evidence\": \"instructions in Hindi, Tamil and Kannada\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"instruction_modality\"],\n      \"decision_impact\": \"Distinguish text directions from voice navigation requirements.\"\n    }\n  ],\n  \"reason\": \"The customer has specified the need for turn-by-turn instructions in specific languages, but the requirement for text or voice instructions is not explicitly stated. This distinction is crucial for selecting the appropriate API that supports the required modality.\"\n}",
+  "raw": "{\n  \"supplied_facts\": [\n    {\n      \"field\": \"languages\",\n      \"value\": \"Hindi, Tamil and Kannada\",\n      \"evidence\": \"instructions in Hindi, Tamil and Kannada\"\n    }\n  ],\n  \"groups\": [\n    {\n      \"fields\": [\"instruction_modality\"],\n      \"decision_impact\": \"Distinguish text directions from voice navigation requirements.\"\n    }\n  ],\n  \"reason\": \"The customer has specified the need for turn-by-turn instructions in specific languages, but the requirement for text or voice instructions is not explicitly stated. This distinction is crucial for selecting the appropriate API that supports the required modality.\"\n}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2856,
+    "completion_tokens": 137,
+    "total_tokens": 2993
+  },
+  "latency_ms": 3418,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

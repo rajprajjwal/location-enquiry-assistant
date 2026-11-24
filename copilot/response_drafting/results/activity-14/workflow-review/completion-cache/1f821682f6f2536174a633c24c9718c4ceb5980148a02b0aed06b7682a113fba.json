@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":false,\"evidence\":\"\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The monthly volume is not provided as a numerical value, and the required matrix features such as traffic and travel mode are missing, which are essential for determining the pricing and API limits.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"monthly_volume\",\"value\":false,\"evidence\":\"\"}],\"groups\":[{\"fields\":[\"traffic_required\",\"travel_mode\"],\"decision_impact\":\"Check the required matrix features before applying the documented price and limits.\"}],\"reason\":\"The monthly volume is not provided as a numerical value, and the required matrix features such as traffic and travel mode are missing, which are essential for determining the pricing and API limits.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1747,
+    "completion_tokens": 89,
+    "total_tokens": 1836
+  },
+  "latency_ms": 2248,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"none\",\"reason\":\"The documentation indicates that the traffic_model parameter is used to calculate time in traffic and that the duration_in_traffic field is affected by this parameter. However, the customer's issue is not clearly identified as a configuration fix, and the diagnostic plan does not provide enough evidence to confirm the exact cause. Therefore, no specific decision is made.\"}",
+  "raw": "{\"decision\":\"none\",\"reason\":\"The documentation indicates that the traffic_model parameter is used to calculate time in traffic and that the duration_in_traffic field is affected by this parameter. However, the customer's issue is not clearly identified as a configuration fix, and the diagnostic plan does not provide enough evidence to confirm the exact cause. Therefore, no specific decision is made.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2143,
+    "completion_tokens": 75,
+    "total_tokens": 2218
+  },
+  "latency_ms": 1989,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

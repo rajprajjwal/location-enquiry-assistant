@@ -1,0 +1,96 @@
+{
+  "cases": 36,
+  "preserved": {
+    "route": 36,
+    "next_action": 36,
+    "owner": 36,
+    "approvals": 36,
+    "proposed_actions": 36,
+    "active_questions": 36,
+    "pending_reply": 36,
+    "asked": 36,
+    "answered": 36,
+    "awaiting": 36,
+    "clarification_messages": 36
+  },
+  "initial_changes": [],
+  "reopened_cases": 4,
+  "reopened_unchanged": 3,
+  "reopened_changes": [
+    {
+      "record_id": "GT-LBS-RG-227",
+      "changes": {
+        "route": {
+          "before": "clarification_needed",
+          "after": "escalated"
+        },
+        "next_action": {
+          "before": {
+            "action_type": "ask_clarifying_questions",
+            "description": "Which map provider are you using?",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          },
+          "after": {
+            "action_type": "refuse",
+            "description": "The model chose a passage ID outside the returned list of 6.",
+            "requires_human_approval": false,
+            "approval_status": "not_applicable",
+            "executed": false
+          }
+        },
+        "owner": {
+          "before": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement."
+          },
+          "after": {
+            "owner": "Account team (Sales)",
+            "team": "Sales",
+            "should_escalate": false,
+            "severity": "SEV4",
+            "reason": "Customer status is unknown. Provisional owner: Account team (Sales). The customer is comparing providers against a specific product or deployment requirement. The model chose a passage ID outside the returned list of 6."
+          }
+        },
+        "active_questions": {
+          "before": {
+            "needed": true,
+            "questions": [
+              {
+                "field": "provider",
+                "text": "Which map provider are you using?"
+              }
+            ]
+          },
+          "after": {
+            "needed": false,
+            "questions": []
+          }
+        },
+        "pending_reply": {
+          "before": {
+            "field": "provider",
+            "task": "We need to turn GPS coordinates into a human-readable address, optionally filtered to rooftop precision, with a language preference and a controllable level of address detail. What do Google Reverse Geocoding, Nominatim Reverse, Ola Reverse Geocode, and Mapbox Geocoding document? Provider: Mapbox."
+          },
+          "after": null
+        },
+        "clarification_messages": {
+          "before": [
+            "Which map provider are you using?",
+            "Which map provider are you using?"
+          ],
+          "after": [
+            "Which map provider are you using?"
+          ]
+        }
+      }
+    }
+  ],
+  "endpoint_calls": 147,
+  "endpoint_errors": [],
+  "excluded_attempts": []
+}

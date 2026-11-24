@@ -1,0 +1,14 @@
+{
+  "text": "{\"decision\":\"credit_restoration\",\"reason\":\"The enquiry indicates that prepaid Ola credits ran out, which likely caused the autocomplete feature to stop for paying users. The decision to restore the service would require the affected account reference to initiate credit restoration.\"}",
+  "raw": "{\"decision\":\"credit_restoration\",\"reason\":\"The enquiry indicates that prepaid Ola credits ran out, which likely caused the autocomplete feature to stop for paying users. The decision to restore the service would require the affected account reference to initiate credit restoration.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 1166,
+    "completion_tokens": 51,
+    "total_tokens": 1217
+  },
+  "latency_ms": 1360,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}

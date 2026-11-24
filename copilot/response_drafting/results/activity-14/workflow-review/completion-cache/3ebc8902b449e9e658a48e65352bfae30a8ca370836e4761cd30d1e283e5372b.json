@@ -1,0 +1,14 @@
+{
+  "text": "{\"supplied_facts\":[{\"field\":\"traffic_required\",\"value\":true,\"evidence\":\"under live traffic\"},{\"field\":\"traffic_conditions\",\"value\":\"live\",\"evidence\":\"under live traffic\"},{\"field\":\"region\",\"value\":\"Hyderabad\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"travel_mode\"],\"decision_impact\":\"Determine vehicle-specific routing support.\"},{\"fields\":[\"monthly_volume\"],\"decision_impact\":\"Estimate the recurring workload and cost.\"},{\"fields\":[\"max_stops\"],\"decision_impact\":\"Check route shape against waypoint limits.\"},{\"fields\":[\"existing_project\",\"ola_contract\"],\"decision_impact\":\"Establish product eligibility and applicable commercial terms.\"}],\"reason\":\"The customer requires a directions/routing API for the fastest route under live traffic in Hyderabad. The missing material decisions include determining the travel mode, estimating the monthly workload, checking the maximum stops per route, and establishing product eligibility and commercial terms.\"}",
+  "raw": "{\"supplied_facts\":[{\"field\":\"traffic_required\",\"value\":true,\"evidence\":\"under live traffic\"},{\"field\":\"traffic_conditions\",\"value\":\"live\",\"evidence\":\"under live traffic\"},{\"field\":\"region\",\"value\":\"Hyderabad\",\"evidence\":\"qualification_details.region\"}],\"groups\":[{\"fields\":[\"travel_mode\"],\"decision_impact\":\"Determine vehicle-specific routing support.\"},{\"fields\":[\"monthly_volume\"],\"decision_impact\":\"Estimate the recurring workload and cost.\"},{\"fields\":[\"max_stops\"],\"decision_impact\":\"Check route shape against waypoint limits.\"},{\"fields\":[\"existing_project\",\"ola_contract\"],\"decision_impact\":\"Establish product eligibility and applicable commercial terms.\"}],\"reason\":\"The customer requires a directions/routing API for the fastest route under live traffic in Hyderabad. The missing material decisions include determining the travel mode, estimating the monthly workload, checking the maximum stops per route, and establishing product eligibility and commercial terms.\"}",
+  "model": "Qwen/Qwen3-8B",
+  "usage": {
+    "prompt_tokens": 2221,
+    "completion_tokens": 184,
+    "total_tokens": 2405
+  },
+  "latency_ms": 4384,
+  "think_seen": false,
+  "tool_calls": [],
+  "finish_reason": "stop"
+}
