@@ -51,3 +51,7 @@ Live model calls require `TRACKB_API_KEY` and `TRACKB_CA_CERT`. Keep credentials
 The model gateway uses the institute-provided endpoint. Its frozen run checks completion reliability and latency, not answer correctness or interpretation accuracy. Original frozen manifests and historical reports retain their original provenance; references in those snapshots to data outside Git describe the layout when those snapshots were produced. The current workbook is `data/ground-truth.xlsx`.
 
 [Historical C1 README](docs/legacy-c1-readme.md) preserves the original task-specification documentation. It describes an earlier workspace layout.
+
+## Prompt-engineering baseline
+
+The isolated [prompt comparison module](prompt-engineering-baseline/README.md) contains three prompting strategies, a shared-model-client adapter and an optional standalone demo. Its evaluation status and separate setup are documented in that folder.

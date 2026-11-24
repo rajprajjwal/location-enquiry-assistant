@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "python_files_parsed": 26,
+  "source_commit": "a3ef3a62738ebb9ad45c542bd09df3f56f2a57a7",
+  "configured_secret_scan": "passed",
+  "model_calls": 0,
+  "frozen_cases_run": 0,
+  "holdout_cases_run": 0,
+  "temporary_test_dependency_path": "/private/tmp/prompt-baseline-merge-test-deps",
+  "initial_collection_issue": "Missing BeautifulSoup test dependency; supplied temporarily without modifying the project environment.",
+  "temporary_test_dependencies": [
+    "beautifulsoup4==4.15.0",
+    "transformers==5.22.2",
+    "lxml==6.1.1",
+    "regex",
+    "safetensors"
+  ],
+  "project_environment_modified": false
+}

@@ -31,3 +31,9 @@ copilot/model_gateway/assets/
 copilot/**/results/**/*.db
 copilot/**/results/**/*.db-*
 copilot/**/results/**/data/chroma/
+
+# Isolated baseline demo runtime files.
+prompt-engineering-baseline/*.db*
+prompt-engineering-baseline/*.log
+prompt-engineering-baseline/data/kb_index/
+prompt-engineering-baseline/data/bm25_index.pkl
