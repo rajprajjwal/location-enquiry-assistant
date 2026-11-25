@@ -1,0 +1,19 @@
+{
+  "case_id": "666f1591fb",
+  "trace_id": "9635916e57f44336bd63749dc0e6ead3",
+  "status": "final",
+  "customer_response": {
+    "format_version": "1.0",
+    "sections": [
+      {
+        "heading": "Answer",
+        "content": "A Directions API calculates a route between locations. Depending on the provider and travel mode, it can also return turn-by-turn instructions. [1](https://docs.mapbox.com/api/navigation/directions/)"
+      },
+      {
+        "heading": "Sources",
+        "content": "- [1](https://docs.mapbox.com/api/navigation/directions/) docs.mapbox.com"
+      }
+    ],
+    "markdown": "### Answer\n\nA Directions API calculates a route between locations. Depending on the provider and travel mode, it can also return turn-by-turn instructions. [1](https://docs.mapbox.com/api/navigation/directions/)\n\n### Sources\n\n- [1](https://docs.mapbox.com/api/navigation/directions/) docs.mapbox.com"
+  }
+}

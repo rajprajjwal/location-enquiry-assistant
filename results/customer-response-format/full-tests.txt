@@ -1,0 +1,438 @@
+.................................................................... [  5%]
+........................................................................ [ 12%]
+........................................................................ [ 18%]
+........................................................................ [ 24%]
+........................................................................ [ 31%]
+........................................................................ [ 37%]
+........................................................................ [ 43%]
+........................................................................ [ 49%]
+........................................................................ [ 56%]
+........................................................................ [ 62%]
+........................................................................ [ 68%]
+........................................................................ [ 75%]
+........................................................................ [ 81%]
+........................................................................ [ 87%]
+...........FFFFF...................s.................................... [ 93%]
+............................................................. [ 99%]
+.........                                                                [100%]
+=================================== FAILURES ===================================
+_____ test_no_chunk_exceeds_the_endpoint_limit_even_for_number_heavy_text ______
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:800: in from_pretrained
+    config = AutoConfig.from_pretrained(
+.venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py:405: in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+
+During handling of the above exception, another exception occurred:
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+tests/rag/test_chunk_limit.py:20: in test_no_chunk_exceeds_the_endpoint_limit_even_for_number_heavy_text
+    chunks = C.chunk_document(META, "T", sec(nasty))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+copilot/rag/document_ingestion/chunk.py:103: in chunk_document
+    budget = max(64, EMBED_TOKENS - SPECIAL - ntok(header + "\n\n"))
+                                              ^^^^^^^^^^^^^^^^^^^^^
+copilot/rag/document_ingestion/chunk.py:38: in ntok
+    return len(_tok()(s, add_special_tokens=False)["input_ids"])
+               ^^^^^^
+copilot/rag/document_ingestion/chunk.py:31: in _tok
+    t = AutoTokenizer.from_pretrained(TOKENIZER_NAME, **options)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:807: in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:883: in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+_____________________ test_header_is_counted_in_the_budget _____________________
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:800: in from_pretrained
+    config = AutoConfig.from_pretrained(
+.venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py:405: in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+
+During handling of the above exception, another exception occurred:
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+tests/rag/test_chunk_limit.py:26: in test_header_is_counted_in_the_budget
+    chunks = C.chunk_document(META, long_title, sec("word " * 900, name="Long section heading " * 5))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+copilot/rag/document_ingestion/chunk.py:103: in chunk_document
+    budget = max(64, EMBED_TOKENS - SPECIAL - ntok(header + "\n\n"))
+                                              ^^^^^^^^^^^^^^^^^^^^^
+copilot/rag/document_ingestion/chunk.py:38: in ntok
+    return len(_tok()(s, add_special_tokens=False)["input_ids"])
+               ^^^^^^
+copilot/rag/document_ingestion/chunk.py:31: in _tok
+    t = AutoTokenizer.from_pretrained(TOKENIZER_NAME, **options)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:807: in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:883: in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+_______ test_hard_split_never_alters_the_text_and_keeps_quotes_findable ________
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:800: in from_pretrained
+    config = AutoConfig.from_pretrained(
+.venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py:405: in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+
+During handling of the above exception, another exception occurred:
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+tests/rag/test_chunk_limit.py:32: in test_hard_split_never_alters_the_text_and_keeps_quotes_findable
+    pieces = C._hard_split(p, 120)
+             ^^^^^^^^^^^^^^^^^^^^^
+copilot/rag/document_ingestion/chunk.py:48: in _hard_split
+    enc = _tok()(p, add_special_tokens=False, return_offsets_mapping=True)
+          ^^^^^^
+copilot/rag/document_ingestion/chunk.py:31: in _tok
+    t = AutoTokenizer.from_pretrained(TOKENIZER_NAME, **options)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:807: in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:883: in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+____________________ test_small_sections_are_a_single_chunk ____________________
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:800: in from_pretrained
+    config = AutoConfig.from_pretrained(
+.venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py:405: in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+
+During handling of the above exception, another exception occurred:
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+tests/rag/test_chunk_limit.py:39: in test_small_sections_are_a_single_chunk
+    chunks = C.chunk_document(META, "T", sec("Short callout text that fits easily in one chunk of text for the test."))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+copilot/rag/document_ingestion/chunk.py:103: in chunk_document
+    budget = max(64, EMBED_TOKENS - SPECIAL - ntok(header + "\n\n"))
+                                              ^^^^^^^^^^^^^^^^^^^^^
+copilot/rag/document_ingestion/chunk.py:38: in ntok
+    return len(_tok()(s, add_special_tokens=False)["input_ids"])
+               ^^^^^^
+copilot/rag/document_ingestion/chunk.py:31: in _tok
+    t = AutoTokenizer.from_pretrained(TOKENIZER_NAME, **options)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:807: in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:883: in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+__________________ test_every_chunk_in_the_current_index_fits __________________
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:800: in from_pretrained
+    config = AutoConfig.from_pretrained(
+.venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py:405: in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+
+During handling of the above exception, another exception occurred:
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:537: in cached_files
+    hf_hub_download(
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:89: in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py:276: in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1047: in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1194: in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py:1945: in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+E   huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+tests/rag/test_chunk_limit.py:49: in test_every_chunk_in_the_current_index_fits
+    if C.model_tokens(c["text"]) > LIMIT:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+copilot/rag/document_ingestion/chunk.py:43: in model_tokens
+    return ntok(text) + SPECIAL
+           ^^^^^^^^^^
+copilot/rag/document_ingestion/chunk.py:38: in ntok
+    return len(_tok()(s, add_special_tokens=False)["input_ids"])
+               ^^^^^^
+copilot/rag/document_ingestion/chunk.py:31: in _tok
+    t = AutoTokenizer.from_pretrained(TOKENIZER_NAME, **options)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:807: in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:883: in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:933: in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:985: in _get_config_dict
+    resolved_config_file = cached_file(
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:370: in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/hub.py:620: in cached_files
+    raise OSError(
+E   OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+E   Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+=========================== short test summary info ============================
+SKIPPED [1] tests/rag/test_freshness.py:77: no local snapshot
+5 failed, 1140 passed, 1 skipped, 15 subtests passed in 38.62s

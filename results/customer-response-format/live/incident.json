@@ -1,0 +1,19 @@
+{
+  "case_id": "cfb9ded90f",
+  "trace_id": "c6caa7064f5547fc845ff2f336159763",
+  "status": "escalated",
+  "customer_response": {
+    "format_version": "1.0",
+    "sections": [
+      {
+        "heading": "Answer",
+        "content": "Your enquiry needs specialist review."
+      },
+      {
+        "heading": "Next step",
+        "content": "The proposed handoff is awaiting review. It has not been carried out."
+      }
+    ],
+    "markdown": "### Answer\n\nYour enquiry needs specialist review.\n\n### Next step\n\nThe proposed handoff is awaiting review. It has not been carried out."
+  }
+}

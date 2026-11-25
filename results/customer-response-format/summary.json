@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "format_version": "1.0",
+  "tests": {
+    "passed": 1147,
+    "skipped": 1,
+    "subtests_passed": 15
+  },
+  "live_checks": [
+    {
+      "scenario": "definition",
+      "status": "final",
+      "format_version": "1.0"
+    },
+    {
+      "scenario": "provider-question",
+      "status": "clarification_needed",
+      "format_version": "1.0"
+    },
+    {
+      "scenario": "provider-reply",
+      "status": "final",
+      "format_version": "1.0"
+    },
+    {
+      "scenario": "record-proposal",
+      "status": "final",
+      "format_version": "1.0"
+    },
+    {
+      "scenario": "incident",
+      "status": "escalated",
+      "format_version": "1.0"
+    },
+    {
+      "scenario": "pricing",
+      "status": "final",
+      "format_version": "1.0"
+    },
+    {
+      "scenario": "hybrid-guidance",
+      "status": "final",
+      "format_version": "1.0"
+    }
+  ],
+  "hybrid_latency_ms": 70682,
+  "hybrid_search_retries": {
+    "document_search:2": 2
+  },
+  "additional_formatting_model_calls": 0,
+  "seven_output_contracts_changed": false,
+  "frozen_or_holdout_used": false,
+  "production_record_writes": 0,
+  "external_messages": 0,
+  "source_sha256": {
+    "copilot/response_drafting/customer_response.py": "e80d7ce51e94f434997252c7d152cc3496f06677d803351eed6945788d675d0e",
+    "copilot/enquiry_workflow/console.py": "4a652391d40fcb082d8084e82595fa43cfa99fb5a80f95f65e79207f2e7005ab",
+    "copilot/enquiry_workflow/cases.py": "71c5de9de1d06e56fe14e7785697d019c725ebaa341c2ee10ff8190f66d5356a",
+    "copilot/enquiry_workflow/retrieval.py": "4d71cce0f85b9a85172cddd342b400734a4e856247fd6fc967b41337955e5667",
+    "copilot/streamlit_ui/streamlit_app.py": "6044d83e140df141cca831986364e77132cfc97a19ccadb62631ed1a4f1e8f90",
+    "copilot/rag/document_retrieval/rerank.py": "ad0aaa2e2e8537c893576ae31c3b548f8dacae87277d850c1ce6210c99d2191c"
+  }
+}

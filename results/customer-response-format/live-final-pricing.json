@@ -1,0 +1,27 @@
+{
+  "case_id": "512d182cd1",
+  "trace_id": "919d2c17c19340ddb40c76014fdb4cc6",
+  "status": "final",
+  "customer_response": {
+    "format_version": "1.0",
+    "sections": [
+      {
+        "heading": "Answer",
+        "content": "Estimated monthly costs:\n- Ola Maps | Directions Basic (no traffic): INR 0.00 [1](https://maps.olakrutrim.com/pricing/details)\n- Google Maps Platform | Directions: USD 0.00 [2](https://developers.google.com/maps/billing-and-pricing/pricing-india) [3](https://www.rbi.org.in/home.aspx/Scripts/Webservice/Home.aspx/scripts/scripts/scripts/scripts/FS_PressRelease.aspx?fn=2757)"
+      },
+      {
+        "heading": "Key details",
+        "content": "Price summary (calculated from the verified list prices; FX 94.1402 INR/USD, 2026-11-06):\n\n| Provider / scenario | Estimated monthly cost and calculation |\n| --- | --- |\n| Ola Maps \\| Directions Basic (no traffic) | INR 0.00 [1](https://maps.olakrutrim.com/pricing/details) |\n| Google Maps Platform \\| Directions | USD 0.00 (about INR 0.00 at 94.1402/USD) [2](https://developers.google.com/maps/billing-and-pricing/pricing-india) [3](https://www.rbi.org.in/home.aspx/Scripts/Webservice/Home.aspx/scripts/scripts/scripts/scripts/FS_PressRelease.aspx?fn=2757) |"
+      },
+      {
+        "heading": "Assumptions / missing information",
+        "content": "- Estimates use the bundled vendor list-price snapshot, excluding taxes and negotiated discounts."
+      },
+      {
+        "heading": "Sources",
+        "content": "- [1](https://maps.olakrutrim.com/pricing/details) maps.olakrutrim.com\n- [2](https://developers.google.com/maps/billing-and-pricing/pricing-india) developers.google.com\n- [3](https://www.rbi.org.in/home.aspx/Scripts/Webservice/Home.aspx/scripts/scripts/scripts/scripts/FS_PressRelease.aspx?fn=2757) www.rbi.org.in"
+      }
+    ],
+    "markdown": "### Answer\n\nEstimated monthly costs:\n- Ola Maps | Directions Basic (no traffic): INR 0.00 [1](https://maps.olakrutrim.com/pricing/details)\n- Google Maps Platform | Directions: USD 0.00 [2](https://developers.google.com/maps/billing-and-pricing/pricing-india) [3](https://www.rbi.org.in/home.aspx/Scripts/Webservice/Home.aspx/scripts/scripts/scripts/scripts/FS_PressRelease.aspx?fn=2757)\n\n### Key details\n\nPrice summary (calculated from the verified list prices; FX 94.1402 INR/USD, 2026-11-06):\n\n| Provider / scenario | Estimated monthly cost and calculation |\n| --- | --- |\n| Ola Maps \\| Directions Basic (no traffic) | INR 0.00 [1](https://maps.olakrutrim.com/pricing/details) |\n| Google Maps Platform \\| Directions | USD 0.00 (about INR 0.00 at 94.1402/USD) [2](https://developers.google.com/maps/billing-and-pricing/pricing-india) [3](https://www.rbi.org.in/home.aspx/Scripts/Webservice/Home.aspx/scripts/scripts/scripts/scripts/FS_PressRelease.aspx?fn=2757) |\n\n### Assumptions / missing information\n\n- Estimates use the bundled vendor list-price snapshot, excluding taxes and negotiated discounts.\n\n### Sources\n\n- [1](https://maps.olakrutrim.com/pricing/details) maps.olakrutrim.com\n- [2](https://developers.google.com/maps/billing-and-pricing/pricing-india) developers.google.com\n- [3](https://www.rbi.org.in/home.aspx/Scripts/Webservice/Home.aspx/scripts/scripts/scripts/scripts/FS_PressRelease.aspx?fn=2757) www.rbi.org.in"
+  }
+}

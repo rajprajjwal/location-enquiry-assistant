@@ -124,3 +124,37 @@ Model and tool calls share retry, deadline and token limits. Before running the 
 See the [ownership routing guide](../../docs/ownership-routing.md) for customer evidence, provisional owners, first-line assessment and saved replay commands. The latest Activity 16 results are in `results/activity-16/ownership-refinement/`; the owner-accuracy target remains open.
 
 The latest ownership iteration is in `results/activity-16/request-checks/`. It preserves the preceding `ownership-refinement/` evidence and retains the open frozen owner-accuracy target.
+
+## Customer-facing responses
+
+The case service adds `customer_response` after the workflow and qualification checks finish. It contains a format version, ordered sections and Markdown. The UI and local query runner display the same response:
+
+- **Answer**: the accepted answer or a clear clarification/review message.
+- **Key details**: supporting content and comparison tables where structured results are available.
+- **Assumptions / missing information**: stated assumptions and active questions.
+- **Next step**: the customer action or the actual approval/execution state of a proposal.
+- **Sources**: documentation links from the accepted citations.
+
+Empty sections are omitted. The formatter does not call the model, change the seven structured outputs, add diagnostic questions, or execute proposals. Staff-only ownership, severity, tool details and suggested follow-ups remain outside the customer response. A pending proposal is never described as completed. The formatted snapshot is saved with the case and restored on reopening.
+
+### Local chat testing
+
+The query runner uses the same case service and database as the UI. With the existing model environment configured, submit a JSON file containing `query` and optional `case_id`, `customer`, `customer_status` (`existing` or `new`) and `retrieval` (`bm25` or `hybrid`):
+
+```bash
+python -m copilot.enquiry_workflow.console --request /tmp/enquiry.json --output /tmp/response.json
+```
+
+```bash
+python3 -m copilot.enquiry_workflow.console --request /tmp/enquiry.json --output /tmp/response.json
+```
+
+Omit `case_id` for a new customer case. Reuse the returned `case_id` for a follow-up; never infer a relationship that the customer has not confirmed. The result contains `case_id`, `trace_id`, `status` and `customer_response`. The JSON also can be read from stdin. Hybrid mode warms its local runtime before starting the enquiry deadline.
+
+Live synthetic verification uses a temporary case database:
+
+```bash
+python -m copilot.enquiry_workflow.verification.verify_customer_response --output /tmp/customer-response-check
+```
+
+Use `python3` for the equivalent command. No frozen or holdout cases are used.

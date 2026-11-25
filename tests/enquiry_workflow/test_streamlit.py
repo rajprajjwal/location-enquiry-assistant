@@ -70,7 +70,7 @@ def test_streamlit_draft_escalation_and_approval(tmp_path, monkeypatch):
 
     app.text_input[0].set_value("Customer A")
     submit("How do I set waypoints in the Directions API?")
-    assert any("Which map provider are you using?" == info.value for info in app.info)
+    assert any("Which map provider are you using?" in item.value for item in app.markdown)
     assert app.text_area[0].value == ""
     first_case = app.selectbox(key="selected_case").value
     assert first_case is not None
