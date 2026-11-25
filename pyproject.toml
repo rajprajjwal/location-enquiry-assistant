@@ -37,3 +37,4 @@ dependencies = {file = ["requirements-app.txt"]}
 [tool.setuptools.dynamic.optional-dependencies]
 retrieval = {file = ["copilot/rag/requirements-retrieval.txt"]}
 observability = {file = ["copilot/observability/requirements-export.txt"]}
+evaluation = {file = ["copilot/evaluation/requirements.txt"]}

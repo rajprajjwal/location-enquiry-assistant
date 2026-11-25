@@ -2,7 +2,7 @@
 
 Read the evaluation harness artifacts and compare baseline with agent by bucket, API and team. Every metric in the harness catalog appears with its unit and scored denominator. Citation and tool success use citation/call weights; other quality scores are case averages. Missing or inapplicable metrics remain unscored.
 
-From the activated project environment:
+Install the evaluation extra described in the [harness guide](../evaluation/README.md). From the activated project environment:
 
 ```sh
 python -m streamlit run copilot/metrics_dashboard/streamlit_app.py --server.address 127.0.0.1 --server.port 8503 --server.headless true --browser.gatherUsageStats false

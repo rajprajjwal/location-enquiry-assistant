@@ -53,3 +53,6 @@ results/evaluation/**/inflight.json
 
 results/evaluation/**/.run.lock
 results/evaluation/**/*.tmp
+
+# Local package build output.
+/build/

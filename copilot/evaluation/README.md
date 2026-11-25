@@ -6,6 +6,16 @@ Compare a plain-model prompting baseline with the existing agent using the same 
 
 Follow [deployment setup](../../docs/deployment.md) and [tracing setup](../observability/README.md). Activate Python 3.12, configure the shared chat client and embedding endpoint, prepare the pinned model assets and build the hybrid index. The corpus, GT and illustrative reporting rates are bound by hash. Runtime databases are isolated from staff cases.
 
+Install evaluation and hybrid/export support using either command:
+
+```sh
+python -m pip install -e '.[evaluation,retrieval,observability]'
+```
+
+```sh
+python3 -m pip install -e '.[evaluation,retrieval,observability]'
+```
+
 One command produces both arms and all metrics on a working-eval sample:
 
 ```sh

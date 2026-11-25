@@ -1,0 +1,24 @@
+name: evaluation-and-dashboard
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  evaluation-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install development dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Prepare pinned chat tokenizer
+        run: python -m copilot.model_gateway.prepare_tokenizer
+      - name: Verify evaluation and dashboard without live endpoints
+        env:
+          INTERPRET_VALIDATION: real
+          COPILOT_TRACE_EXPORT: local
+        run: python -m pytest -q tests/evaluation
