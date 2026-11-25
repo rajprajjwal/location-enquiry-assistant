@@ -92,10 +92,11 @@ python -m streamlit run copilot/streamlit_ui/streamlit_app.py --server.address 1
 
 Open http://127.0.0.1:8501. Choose BM25 or Hybrid with reranking. Start with a synthetic question such as “What coordinate order does Mapbox Directions use?” Check the cited draft and structured output. For “How do I set waypoints in the Directions API?”, answer the provider clarification in the same case. Reopen the case to confirm saved history. Submit a synthetic production incident and confirm that its handoff stays pending until a reviewer decides it.
 
-A separate automated UI check uses synthetic inputs, BM25 and a temporary database:
+A separate automated UI check uses synthetic inputs and a temporary database. Run both modes after full hybrid setup:
 
 ```bash
-python -m copilot.enquiry_workflow.verification.verify_ui
+python -m copilot.enquiry_workflow.verification.verify_ui --retrieval bm25
+python -m copilot.enquiry_workflow.verification.verify_ui --retrieval hybrid
 ```
 
 ## Development tests and persistence

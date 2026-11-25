@@ -1,5 +1,6 @@
 """Exercise the local UI with synthetic enquiries and a temporary database."""
 
+import argparse
 from contextlib import closing
 import json
 from pathlib import Path
@@ -13,13 +14,15 @@ from copilot.paths import PACKAGE_ROOT
 from streamlit.testing.v1 import AppTest
 
 
-def verify():
+def verify(*, retrieval="BM25"):
     records = []
     with TemporaryDirectory() as temp:
         db = Path(temp) / "e2e.db"
         with patch("copilot.case_storage.db.DB_PATH", db):
             app_path = PACKAGE_ROOT / "streamlit_ui/streamlit_app.py"
-            ui = AppTest.from_file(str(app_path), default_timeout=45).run()
+            ui = AppTest.from_file(str(app_path), default_timeout=150).run()
+            ui.radio[0].set_value(retrieval).run()
+            assert not ui.exception, ui.exception
             assert not ui.exception, ui.exception
 
             def button(label):
@@ -82,6 +85,9 @@ def verify():
 
 
 if __name__ == "__main__":
-    evidence = verify()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--retrieval", choices=("bm25", "hybrid"), default="bm25")
+    args = parser.parse_args()
+    evidence = verify(retrieval="Hybrid with reranking" if args.retrieval == "hybrid" else "BM25")
     print(json.dumps({"passed": all(row["passed"] for row in evidence), "checks": evidence}, indent=2))
     raise SystemExit(not all(row["passed"] for row in evidence))
