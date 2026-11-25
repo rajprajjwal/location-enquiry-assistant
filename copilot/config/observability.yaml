@@ -1,0 +1,8 @@
+# Illustrative USD rates per one million tokens for reporting, not billing.
+input_usd_per_million: 0.10
+output_usd_per_million: 0.20
+embedding_usd_per_million: 0.02
+usd_to_inr: 94
+cost_basis: illustrative
+endpoint_access_free: true
+source: Illustrative reporting assumptions; institute endpoint access is free

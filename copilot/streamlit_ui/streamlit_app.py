@@ -13,6 +13,7 @@ from copilot.enquiry_workflow.retrieval import (
 )
 from copilot.case_storage import cases, handlers, traces
 from copilot.case_storage.db import DB_PATH, connect
+from copilot.observability.viewer import render as render_trace_explorer
 
 @st.cache_resource(show_spinner=False)
 def load_hybrid_runtime():
@@ -177,10 +178,22 @@ with closing(connect(DB_PATH)) as con:
 
     with trace_tab:
         if st.session_state.pop("enquiry_deleted", False):
-            st.success("Enquiry and its traces deleted.")
+            st.success("Enquiry and local traces deleted. Any Langfuse copy is submitted for deletion separately.")
+        from copilot.observability.storage import initialize as initialize_observability
+        initialize_observability(con)
+        deletion_count = con.execute("SELECT COUNT(*) FROM observability_trace_deletions WHERE status='pending'").fetchone()[0]
+        if deletion_count:
+            st.info(f"{deletion_count} Langfuse trace deletion requests need retrying.")
+            if st.button("Retry Langfuse trace deletions"):
+                from copilot.observability.sync_deletions import process_pending_deletions
+                process_pending_deletions(con)
+                st.rerun()
+        has_observability, selected_trace = render_trace_explorer(con)
         rows = traces.list_traces(con, limit=-1)
+        if has_observability:
+            rows = [row for row in rows if row["id"] == selected_trace]
         if rows:
-            row = st.selectbox(
+            row = rows[0] if has_observability else st.selectbox(
                 "Run", rows, format_func=lambda value: f"{value['ts']} · {value['case_id']}",
             )
             trace = traces.get_trace(con, row["id"])
@@ -206,5 +219,5 @@ with closing(connect(DB_PATH)) as con:
                         else:
                             st.session_state["enquiry_deleted"] = True
                             st.rerun()
-        else:
+        elif not has_observability:
             st.info("Run an enquiry to see its trace.")

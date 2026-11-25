@@ -1,6 +1,6 @@
 """Shared enquiry limits, retry credits and execution deadlines."""
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeout
-from contextlib import contextmanager
+from contextlib import contextmanager, nullcontext
 from contextvars import ContextVar, copy_context
 from dataclasses import dataclass, field
 from functools import lru_cache, wraps
@@ -166,8 +166,10 @@ def query_scope(phase=None, *, attach=False):
         @wraps(function)
         def run(*args, **kwargs):
             with query_session() as session:
+                from copilot.observability.tracing import observed_span
                 with step_scope(phase or _PHASE.get()):
-                    result = function(*args, **kwargs)
+                    with observed_span(phase) if phase else nullcontext():
+                        result = function(*args, **kwargs)
                 if attach:
                     result["reliability"] = session.snapshot()
                 return result

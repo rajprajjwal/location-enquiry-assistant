@@ -6,6 +6,7 @@ Rules enforced here (not left to callers):
 - A decision is final; an approved action is applied AT MOST ONCE (apply_approved claims it atomically).
 - Every state change writes a case event (who, what, when) for traceability.
 """
+from copilot.observability.tracing import phase
 from copilot.paths import CONFIG_DIR
 import json
 import time
@@ -119,6 +120,7 @@ def summarize_history(con, case_id: str, max_chars: int = 1500) -> str:
     return "\n".join(parts)[:max_chars]
 
 
+@phase("conversation.save")
 def save_state(con, case_id: str, state: dict) -> None:
     """Checkpoint for pause/resume: the agent saves where it stopped when it reaches an approval gate."""
     con.execute("UPDATE cases SET state_json=?, updated_at=? WHERE id=?", (json.dumps(state, ensure_ascii=False, default=str), _now(), case_id))

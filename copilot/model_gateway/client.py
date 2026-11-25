@@ -24,6 +24,7 @@ import time
 from tenacity import Retrying, retry_if_exception, stop_after_attempt, wait_exponential
 from .reliability import active_query, query_scope, ReliabilityError
 from .token_counting import count_prompt, count_metadata
+from copilot.observability.tracing import observed_span, set_usage, phase
 from dataclasses import dataclass, field
 
 DEFAULT_BASE_URL = "https://103.42.50.41:1031/v1"
@@ -152,6 +153,7 @@ class LLMClient:
         )
 
     @query_scope()
+    @phase("llm.complete")
     def complete(
         self,
         messages: list[dict],
@@ -267,8 +269,15 @@ class LLMClient:
                         session.retry()
                     session.reserve(tokens)
                     try:
-                        response = self._once(messages, max_tokens, temperature, extra)
-                        usage = self._usage(response)
+                        with observed_span("llm.request", kind="llm_attempt", attributes={
+                            "gen_ai.operation.name": "chat", "gen_ai.request.model": _scrub(self._api_key, self._model),
+                            "langfuse.observation.type": "generation",
+                            "langfuse.observation.model.name": "institute/" + _scrub(self._api_key, self._model),
+                            "copilot.attempt": attempt.retry_state.attempt_number,
+                        }) as observation:
+                            response = self._once(messages, max_tokens, temperature, extra)
+                            usage = self._usage(response)
+                            set_usage(observation, usage)
                         if usage and isinstance(usage.get("total_tokens"), int):
                             with session.lock:
                                 session.observed_tokens += usage["total_tokens"]

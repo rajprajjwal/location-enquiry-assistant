@@ -11,6 +11,7 @@ from jsonschema import Draft202012Validator
 from jsonschema.exceptions import ValidationError
 from langgraph.graph import END, START, StateGraph
 from langgraph.runtime import Runtime
+from copilot.observability.tracing import observed_span
 from copilot.model_gateway.reliability import (
     active_query, query_scope, step_scope, bind_query, QuerySession, ReliabilityError,
 )
@@ -616,11 +617,16 @@ def _propose_after_manual_review(result, query, context):
         return result
     started = perf_counter()
     status = "completed"
-    try:
-        proposal = _propose_sandbox_update(query, result["outputs"], context, answer_ready=False)
-    except (RuntimeError, ValidationError, ValueError):
-        proposal = None
-        status = "failed"
+    with observed_span("workflow.sandbox_proposal", kind="workflow_step", attributes={
+        "copilot.step.index": result["step_count"] + 1,
+    }) as observation:
+        try:
+            proposal = _propose_sandbox_update(query, result["outputs"], context, answer_ready=False)
+        except (RuntimeError, ValidationError, ValueError):
+            proposal = None
+            status = "failed"
+        if observation is not None:
+            observation.set_attribute("copilot.step.status", status)
     step = {"step": result["step_count"] + 1, "action": "sandbox_proposal", "status": status,
             "latency_ms": round((perf_counter() - started) * 1000)}
     return {**result, **(proposal or {}), "step_count": step["step"], "steps": [*result["steps"], step],
@@ -633,7 +639,9 @@ def _counted(name, action):
         started = perf_counter()
         entry = {"step": number, "action": name, "status": "failed"}
         try:
-            with bind_query(runtime.context.reliability), step_scope(f"{name}:{number}"):
+            with bind_query(runtime.context.reliability), step_scope(f"{name}:{number}"), observed_span(
+                f"workflow.{name}", kind="workflow_step", attributes={"copilot.step.index": number},
+            ):
                 active_query().check()
                 update = action(state, runtime.context)
         except (BudgetExceeded, ConfigError, LLMError, RuntimeError, ValidationError, ValueError) as exc:

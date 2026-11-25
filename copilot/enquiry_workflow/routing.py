@@ -1,6 +1,7 @@
 """Resolve answerable questions before asking for sales qualification fields."""
 import re
 
+from copilot.observability.tracing import phase
 from copilot.rag.document_retrieval.query_analyzer import detect
 
 from .document_guidance import guidance_kind

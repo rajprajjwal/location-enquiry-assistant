@@ -40,3 +40,9 @@ prompt-engineering-baseline/data/bm25_index.pkl
 
 # Downloaded model cache.
 .model-cache/
+
+# Private tracing configuration and local run databases.
+copilot/observability/runtime/
+
+# Local trace databases; JSON evidence is versioned.
+results/observability/**/*.db*

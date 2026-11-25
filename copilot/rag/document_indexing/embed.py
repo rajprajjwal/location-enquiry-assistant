@@ -15,6 +15,8 @@ from functools import lru_cache
 
 from copilot.settings import settings
 from copilot.model_gateway.reliability import active_query
+from copilot.observability.tracing import observed_span, set_usage
+from opentelemetry.trace import Status, StatusCode
 
 QUERY_PREFIX = "Represent this sentence for searching relevant passages: "  # bge convention
 ENDPOINT_BATCH = 16
@@ -53,6 +55,22 @@ def _normalise(v: list[float]) -> list[float]:
     return [x / n for x in v]
 
 
+def _request_batch(texts, options):
+    with observed_span("embedding.request", kind="embedding_attempt", attributes={
+        "gen_ai.operation.name": "embeddings", "gen_ai.request.model": settings.embed_model_endpoint,
+        "langfuse.observation.type": "embedding", "langfuse.observation.model.name": "institute/" + settings.embed_model_endpoint,
+        "copilot.batch_size": len(texts),
+    }) as observation:
+        response = _http().post("/embeddings", json={"model": settings.embed_model_endpoint, "input": texts}, **options)
+        if observation is not None:
+            observation.set_attribute("http.response.status_code", response.status_code)
+            if response.status_code == 200:
+                set_usage(observation, response.json().get("usage"), embedding=True)
+            else:
+                observation.set_status(Status(StatusCode.ERROR, f"HTTP {response.status_code}"))
+        return response
+
+
 def _post_batch(texts: list[str], *, retries: int = 6, sleep=time.sleep) -> list[list[float]]:
     """One request of up to 16 texts. Returns vectors in input order. Capacity errors are retried with back-off; anything else raises."""
     import httpx
@@ -68,7 +86,7 @@ def _post_batch(texts: list[str], *, retries: int = 6, sleep=time.sleep) -> list
                 session.retry()
             options["timeout"] = min(session.remaining(), session.limits.tool_timeout_seconds)
         try:
-            r = _http().post("/embeddings", json={"model": settings.embed_model_endpoint, "input": texts}, **options)
+            r = _request_batch(texts, options)
         except (httpx.TransportError, httpx.TimeoutException) as e:      # dropped connection, timeout
             last = f"{type(e).__name__}: {e}"
         else:
