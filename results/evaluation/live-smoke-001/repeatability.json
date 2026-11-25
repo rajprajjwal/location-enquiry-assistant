@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "metric_delta": 0,
+  "endpoint_calls": 0,
+  "scope": "Deterministic saved-artifact aggregation; not fresh-inference stability."
+}

@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "branch": "feat/evaluation-observability",
+  "base_commit": "4f74e30bebf1a2d22aae9e9cd5a96acbc29c4484",
+  "activity": 21,
+  "acceptance_complete": true,
+  "completed": [
+    "Local Langfuse 4.86.0 Docker stack prepared and started successfully; persistent volumes retained.",
+    "OpenTelemetry tracing module, physical LLM and embedding attempts, workflow/tool phases, local SQLite storage and viewer implemented.",
+    "Langfuse smoke: 3 of 3 span IDs received.",
+    "Fixed 10-case working-eval sample: all 10 traced locally and in Langfuse; 100% workflow-step coverage; 0 replay business-output changes.",
+    "Latest focused tests: 14 passed.",
+    "Resumed existing Langfuse containers without recreating volumes or credentials.",
+    "Full test suite: 1141 passed, 1 skipped; real-validator plus observability checks: 181 passed and 4 subtests.",
+    "Final working-eval verification: 10/10 with full local and Langfuse span coverage, complete illustrative costs, and zero replay business changes.",
+    "Read-only trace viewer verified on live working results: bucket, latency-ms and INR-cost filters pass.",
+    "Live embedding trace: 384 dimensions, 17 reported tokens, complete reporting estimate, both span IDs received.",
+    "Synthetic trace deletion confirmed remotely: zero remaining Langfuse observations.",
+    "Frozen tracing acceptance: 80/80; portable traces and final bucket report saved."
+  ],
+  "cost_policy": {
+    "actual_endpoint_access": "Chat and embedding endpoints confirmed free by user.",
+    "actual_endpoint_charge_inr": 0,
+    "usd_to_inr": 94,
+    "reporting_basis": "Illustrative assumptions, not institute prices or real charges.",
+    "input_usd_per_million": 0.1,
+    "output_usd_per_million": 0.2,
+    "embedding_usd_per_million": 0.02
+  },
+  "important_binding": "The 10-case working-live run predates the illustrative rate card and final late-worker/deletion synchronization changes. Its stored unpriced costs are historical; do not relabel them as final-rate measurements.",
+  "pending": [],
+  "runtime": {
+    "langfuse_url": "http://localhost:3000",
+    "project_id": "location-enquiry-copilot",
+    "private_credentials_file": "copilot/observability/runtime/langfuse.env",
+    "langfuse_admin_email": "local-admin@localhost.test",
+    "password_location": "LANGFUSE_ADMIN_PASSWORD in the private file; never print or commit credentials.",
+    "working_trace_database": "results/observability/working-verified/traces.db",
+    "docker_volumes": "Retained; existing containers resumed and running.",
+    "verification_python": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/bin/python",
+    "scratch_logs": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/activity21"
+  },
+  "resume": [
+    "Activity 21 acceptance is complete. Read results/observability/README.md for final evidence.",
+    "Start existing containers with python -m copilot.observability.langfuse_local start if needed; do not recreate credentials or volumes."
+  ],
+  "data_integrity": {
+    "gt_unchanged": true,
+    "frozen_scoring_started": true,
+    "holdout_used": false,
+    "scope": "Frozen tracing acceptance only; answer quality is not scored."
+  }
+}

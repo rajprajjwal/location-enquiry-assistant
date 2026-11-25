@@ -1,0 +1,10 @@
+{
+  "database": "results/observability/working-verified/traces.db",
+  "runs": 10,
+  "bucket_filter": true,
+  "latency_ms_filter": true,
+  "inr_cost_filter": true,
+  "illustrative_label": true,
+  "read_only_viewer": true,
+  "passed": true
+}

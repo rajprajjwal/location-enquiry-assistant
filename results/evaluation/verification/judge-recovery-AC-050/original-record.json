@@ -1,0 +1,132 @@
+{
+  "record_id": "GT-LBS-AC-050",
+  "bucket": "pricecompare",
+  "api": "autocomplete",
+  "team": "Sales",
+  "split": "holdout",
+  "arm": "baseline",
+  "strategy": "self_consistency",
+  "prediction": {
+    "answer": "Google's billing for address search sessions is based on the number of requests made, not the number of users. Sessions where users abandon the search without selecting an address do not count toward billing. This is because billing is triggered by the use of the API, not by user interactions.",
+    "citations": [
+      {
+        "url": "https://developers.google.com/maps/documentation/geocoding/usage-and-billing",
+        "span": "Billing is based on the number of requests made, not the number of users.",
+        "supports_claim": "Google bills based on API requests, not user sessions."
+      }
+    ],
+    "clarifying_questions": [],
+    "qualification": {
+      "use_case_api": {
+        "api": "reverse_geocode",
+        "use_case": "Address search abandonment tracking"
+      },
+      "region": "Global",
+      "monthly_volume": {
+        "raw": "Not specified",
+        "requests_per_month": 0,
+        "unit": "requests"
+      },
+      "current_provider": "Google Maps API",
+      "timeline": "Not specified",
+      "budget": "Not specified",
+      "technical_constraints": "Not specified",
+      "decision_maker": "Not specified",
+      "missing_required_fields": [
+        "monthly_volume",
+        "timeline",
+        "budget",
+        "technical_constraints",
+        "decision_maker"
+      ],
+      "complete": false
+    },
+    "comparison": {
+      "applicable": false,
+      "providers": [],
+      "dimensions": [],
+      "assumptions": [],
+      "source_urls": []
+    },
+    "owner": "Support L1",
+    "next_action": "answer_directly",
+    "should_escalate": false,
+    "record_update": null,
+    "intent": "billing",
+    "api": "reverse_geocode",
+    "team": "Support"
+  },
+  "tool_calls": [],
+  "retrieved_evidence": [],
+  "has_draft": true,
+  "trace_id": "708576a1a08ee743f4f35ee646ee6adc",
+  "usage": {
+    "model_attempts": 3,
+    "embedding_attempts": 0,
+    "input_tokens": 1386,
+    "output_tokens": 1105,
+    "embedding_tokens": 0,
+    "missing_usage_attempts": 0,
+    "usage_complete": true,
+    "cost_usd": "0.0003596",
+    "known_cost_usd": "0.0003596",
+    "cost_status": "complete",
+    "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+    "cost_inr": "0.0338024",
+    "known_cost_inr": "0.0338024",
+    "usd_to_inr": "94",
+    "currency": "INR",
+    "cost_basis": "illustrative",
+    "actual_endpoint_charge_inr": "0",
+    "actual_endpoint_charge_usd": "0",
+    "export_mode": "langfuse-local"
+  },
+  "latency_ms": 24508.465,
+  "judge_error": "ValueError",
+  "judge_latency_ms": 5048.603,
+  "qualification_checks": {
+    "use_case_api": false,
+    "region": false,
+    "monthly_volume": false,
+    "current_provider": false,
+    "timeline": false,
+    "budget": false,
+    "technical_constraints": false,
+    "decision_maker": false,
+    "missing_required_fields": false
+  },
+  "citation_source_binding": [
+    false
+  ],
+  "metrics": {
+    "answer_accuracy": null,
+    "grounding": null,
+    "citation_coverage": null,
+    "citation_precision": null,
+    "comparison_completeness": null,
+    "qualification_completeness": 0.0,
+    "history_use": null,
+    "owner_accuracy": 1,
+    "next_action_correctness": 1,
+    "tool_execution_success": null,
+    "expected_tool_coverage": null,
+    "schema_validity": 1,
+    "draft_yield": 1,
+    "span_recall_at_1": null,
+    "span_recall_at_5": null,
+    "span_recall_at_10": null,
+    "source_recall_at_1": null,
+    "source_recall_at_5": null,
+    "source_recall_at_10": null,
+    "span_mrr": null,
+    "latency_ms": 24508.465,
+    "cost_inr": 0.0338024,
+    "input_tokens": 1386,
+    "output_tokens": 1105,
+    "embedding_tokens": 0,
+    "judge_latency_ms": 5048.603,
+    "judge_cost_inr": null,
+    "retrieval_probe_latency_ms": null,
+    "retrieval_probe_cost_inr": null
+  }
+}

@@ -10,6 +10,8 @@ from typing import Any, Callable, Dict, List, Mapping, Optional, Sequence
 from pydantic import BaseModel, ValidationError
 from copilot.model_gateway.reliability import active_query, query_scope, bounded_tool, ReliabilityError
 
+from copilot.observability.tracing import observed_span
+
 from .tool_contracts import (
     AppComparisonInput, AppComparisonOutput, CalculatorInput, CalculatorOutput,
     FieldUpdateInput, FieldUpdateOutput, OpenAIFunctionCall, RecordUpdateInput, RecordUpdateOutput,
@@ -76,6 +78,21 @@ class ToolRegistry:
         return {"role": "tool", "tool_call_id": payload.id, "content": json.dumps(result, ensure_ascii=False)}
 
     def _execute(self, tool_name, arguments, *, from_json=False):
+        tool = self._tools.get(tool_name)
+        name = tool.name if tool else "unregistered"
+        with observed_span(f"tool.{name}", kind="tool", attributes={
+            "tool.name": name, "langfuse.observation.type": "tool",
+        }) as observation:
+            try:
+                return self._execute_inner(tool_name, arguments, from_json=from_json)
+            finally:
+                if observation is not None and self.execution_log:
+                    entry = self.execution_log[-1]
+                    for key in ("input_validation", "output_validation", "execution_status", "attempts"):
+                        if key in entry:
+                            observation.set_attribute(f"tool.{key}", entry[key])
+
+    def _execute_inner(self, tool_name, arguments, *, from_json=False):
         started_at = time.perf_counter()
         tool = self._tools.get(tool_name)
         entry = {

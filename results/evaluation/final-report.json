@@ -1,0 +1,127 @@
+{
+  "baseline_selection": {
+    "strategy": "self_consistency",
+    "selection_split": "working_eval",
+    "case_ids": [
+      "GT-LBS-AC-092",
+      "GT-LBS-DIR-106",
+      "GT-LBS-DM-065",
+      "GT-LBS-AC-011",
+      "GT-LBS-RG-061",
+      "GT-LBS-DIR-097",
+      "GT-LBS-DM-050",
+      "GT-LBS-RG-096",
+      "GT-LBS-AC-003",
+      "GT-LBS-DIR-032"
+    ],
+    "excluded_validation_groups": [
+      "GT-LBS-AC-092",
+      "GT-LBS-DIR-106",
+      "GT-LBS-DM-065",
+      "GT-LBS-AC-008",
+      "GT-LBS-RG-061",
+      "GT-LBS-DIR-097",
+      "GT-LBS-DM-050",
+      "GT-LBS-RG-096",
+      "GT-LBS-AC-003",
+      "GT-LBS-DIR-032"
+    ],
+    "candidates": [
+      {
+        "strategy": "zero_shot",
+        "accuracy": 0.32999999999999996,
+        "scored": 10,
+        "errors": 0,
+        "metrics_sha256": "c492879924c840fbd3cc2c2a8742df32961c7d4b0e1f52426b8ce93f62ffd2cd"
+      },
+      {
+        "strategy": "few_shot",
+        "accuracy": 0.38,
+        "scored": 10,
+        "errors": 0,
+        "metrics_sha256": "16a044eb1e806489ee357bd01479f9d7c7891b99609845a752b117d3202dc51b"
+      },
+      {
+        "strategy": "self_consistency",
+        "accuracy": 0.385,
+        "scored": 10,
+        "errors": 0,
+        "metrics_sha256": "e4ea8b9b88da701b9c69d25167ed89fb1e77641f73955824cc8894161994f33b"
+      },
+      {
+        "strategy": "decomposition",
+        "accuracy": 0.38,
+        "scored": 10,
+        "errors": 0,
+        "metrics_sha256": "0a63e66515c097bc16975d6fa6f7e9af01fe7ec9fc3f949b6a6718cb074929a2"
+      }
+    ],
+    "implementation_sha256": "f69faaed6d9b4cf55e7ab2fcff36d61200baac4237f48cabb30af02e4a1c8563",
+    "retrieval": "hybrid",
+    "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+    "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+    "locked": false,
+    "repeatability_passed": true,
+    "selection_rule": "Highest automatic rubric accuracy; ties use declared strategy order. Frozen and holdout excluded."
+  },
+  "runs": {
+    "working-contract-validation": {
+      "cases": 10,
+      "paired_cases": 10,
+      "errors": 0,
+      "metrics_sha256": "ded473048c2e79b87418a533a63ac6ea94c805edf38be6a35638f05f60b2e0c8"
+    },
+    "frozen-paired": {
+      "cases": 80,
+      "paired_cases": 80,
+      "errors": 0,
+      "metrics_sha256": "9cec60d86a5481fde7227215bcffb8ed9bcf07e1c088e2f68d3e4eb78700c155"
+    },
+    "holdout-final": {
+      "cases": 96,
+      "paired_cases": 96,
+      "errors": 0,
+      "metrics_sha256": "7f8bf1ea8d153ea71f2bfb8ed05ccd11a584eb1558ce4c95c52b6834a54bc9f6",
+      "adjudicated_judgements": 1
+    }
+  },
+  "activity_23_implementation_verified": true,
+  "activity_22_final_evaluation_complete": true,
+  "approval_status": "provisional owner approval; independent review not claimed",
+  "gt_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "final_campaign_executed": true,
+  "activity_22_status": "Final evaluation complete with one explicitly approved citation-format adjudication; holdout gold approval remains provisional.",
+  "activity_23_status": "Complete: both final runs and all 29 metrics verified in dashboard",
+  "final_artifact_audit": "verification/artifact-audit.json",
+  "dashboard_final_verification": "verification/dashboard-final-runs.json",
+  "holdout_common_case_accuracy": {
+    "scored_pairs": 96,
+    "baseline": 0.40427083333333336,
+    "agent": 0.6079864583333333
+  },
+  "remaining_limitations": [
+    "Holdout approval remains provisional owner authorization; independent gold review is not claimed.",
+    "One frozen agent generation has incomplete usage; its full illustrative monetary estimate is unavailable.",
+    "AC-050 uses an approved citation-format adjudication; failed automatic attempts are preserved. Its judge overhead omits unavailable retry usage and latency."
+  ],
+  "final_errors": [],
+  "resolved_errors": [
+    {
+      "record_id": "GT-LBS-AC-050",
+      "arm": "baseline",
+      "generation_error": null,
+      "judge_error": "ValueError",
+      "retrieval_error": null
+    }
+  ],
+  "adjudications": [
+    {
+      "record_id": "GT-LBS-AC-050",
+      "arm": "baseline",
+      "citation_supported": [
+        false
+      ],
+      "audit": "verification/judge-recovery-AC-050/adjudication.json"
+    }
+  ]
+}

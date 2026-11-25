@@ -1,0 +1,21 @@
+{
+  "records": 80,
+  "passed": 80,
+  "all_passed": true,
+  "retrieval": "bm25",
+  "inputs_sha256": "919e8001538ba6c98c04a7c8e45525fbc984c44004a44191d4c0381b83d136f1",
+  "local_step_span_coverage": 1.0,
+  "langfuse_span_coverage": 1.0,
+  "statuses": {
+    "final": 66,
+    "escalated": 14
+  },
+  "cost_statuses": {
+    "complete": 80
+  },
+  "business_changes": 0,
+  "holdout_selected": 0,
+  "answer_quality_scored": false,
+  "currency": "INR",
+  "usd_to_inr": "94"
+}

@@ -1,0 +1,2163 @@
+{
+  "schema_version": "1.0",
+  "run_id": "live-smoke-001",
+  "manifest": {
+    "binding": {
+      "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+      "cases_sha256": "84e7372ebc299db2987d18300089a6de175c788f1141528c0056f80a188a336a",
+      "implementation_sha256": "0f4b7aacacda3d4781c7d8086f999de744730fb0ffc725e984c6dff568dcd733",
+      "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+      "rates_sha256": "50d36128bbdffc28a43ecd79fb92cdc848c19d8c34741208c9bb32ce76cddb37",
+      "strategy": "zero_shot",
+      "retrieval": "hybrid",
+      "arms": [
+        "baseline",
+        "agent"
+      ],
+      "case_ids": [
+        "GT-LBS-AC-092"
+      ]
+    },
+    "started_at": "2026-11-25T11:02:49.687399+00:00",
+    "split": "working_eval",
+    "holdout_cases": 0,
+    "gold_status": "Project GT; automatic judge scores require human interpretation.",
+    "judge_model": "Qwen/Qwen3-8B",
+    "judge_type": "same-endpoint automatic reference-based review",
+    "cost_basis": "illustrative reporting estimates; actual institute endpoints free",
+    "retrieval_scope": "Independent top-10 probe; verbatim span and source URL diagnostics. Summary labels excluded from strict span denominator."
+  },
+  "records": 2,
+  "paired_cases": 1,
+  "errors": 0,
+  "metric_catalog": {
+    "answer_accuracy": {
+      "label": "Rubric answer accuracy",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "grounding": {
+      "label": "Supported factual claims",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "citation_coverage": {
+      "label": "Drafts with verified citations",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "citation_precision": {
+      "label": "Supported citations",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "comparison_completeness": {
+      "label": "Comparison completeness",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "qualification_completeness": {
+      "label": "Qualification completeness",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "history_use": {
+      "label": "History use",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "owner_accuracy": {
+      "label": "Owner correctness",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "next_action_correctness": {
+      "label": "Next-action correctness",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "tool_execution_success": {
+      "label": "Successful registered tool calls",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "expected_tool_coverage": {
+      "label": "Expected tool coverage",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "schema_validity": {
+      "label": "Prediction schema validity",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "draft_yield": {
+      "label": "Nonempty drafts",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "span_recall_at_1": {
+      "label": "Verbatim span Recall@1",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "span_recall_at_5": {
+      "label": "Verbatim span Recall@5",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "span_recall_at_10": {
+      "label": "Verbatim span Recall@10",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "source_recall_at_1": {
+      "label": "Source URL Recall@1",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "source_recall_at_5": {
+      "label": "Source URL Recall@5",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "source_recall_at_10": {
+      "label": "Source URL Recall@10",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "span_mrr": {
+      "label": "Verbatim span MRR",
+      "unit": "ratio",
+      "higher_is_better": true
+    },
+    "latency_ms": {
+      "label": "Generation latency",
+      "unit": "ms",
+      "higher_is_better": false
+    },
+    "cost_inr": {
+      "label": "Estimated generation cost",
+      "unit": "INR",
+      "higher_is_better": false
+    },
+    "input_tokens": {
+      "label": "Reported input tokens",
+      "unit": "tokens",
+      "higher_is_better": false
+    },
+    "output_tokens": {
+      "label": "Reported output tokens",
+      "unit": "tokens",
+      "higher_is_better": false
+    },
+    "embedding_tokens": {
+      "label": "Reported embedding tokens",
+      "unit": "tokens",
+      "higher_is_better": false
+    }
+  },
+  "metrics": [
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "answer_accuracy",
+      "score": 0.5,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.5
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "grounding",
+      "score": 0.5,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.5
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "citation_coverage",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "citation_precision",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "comparison_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "qualification_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "history_use",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "owner_accuracy",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "next_action_correctness",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "tool_execution_success",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "expected_tool_coverage",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "schema_validity",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "draft_yield",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "span_recall_at_1",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "span_recall_at_5",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "span_recall_at_10",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "source_recall_at_1",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "source_recall_at_5",
+      "score": 0.2,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.2
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "source_recall_at_10",
+      "score": 0.2,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.2
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "span_mrr",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "latency_ms",
+      "score": 9438.048,
+      "scored": 1,
+      "cases": 1,
+      "sum": 9438.048
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "cost_inr",
+      "score": 0.04990084,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.04990084
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "input_tokens",
+      "score": 5164,
+      "scored": 1,
+      "cases": 1,
+      "sum": 5164
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "output_tokens",
+      "score": 70,
+      "scored": 1,
+      "cases": 1,
+      "sum": 70
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "embedding_tokens",
+      "score": 23,
+      "scored": 1,
+      "cases": 1,
+      "sum": 23
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "answer_accuracy",
+      "score": 0.5,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.5
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "grounding",
+      "score": 0.5,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.5
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "citation_coverage",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "citation_precision",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "comparison_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "qualification_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "history_use",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "owner_accuracy",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "next_action_correctness",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "tool_execution_success",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "expected_tool_coverage",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "schema_validity",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "draft_yield",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "span_recall_at_1",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "span_recall_at_5",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "span_recall_at_10",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "source_recall_at_1",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "source_recall_at_5",
+      "score": 0.2,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.2
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "source_recall_at_10",
+      "score": 0.2,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.2
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "span_mrr",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "latency_ms",
+      "score": 9438.048,
+      "scored": 1,
+      "cases": 1,
+      "sum": 9438.048
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "cost_inr",
+      "score": 0.04990084,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.04990084
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "input_tokens",
+      "score": 5164,
+      "scored": 1,
+      "cases": 1,
+      "sum": 5164
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "output_tokens",
+      "score": 70,
+      "scored": 1,
+      "cases": 1,
+      "sum": 70
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "embedding_tokens",
+      "score": 23,
+      "scored": 1,
+      "cases": 1,
+      "sum": 23
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "answer_accuracy",
+      "score": 0.5,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.5
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "grounding",
+      "score": 0.5,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.5
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "citation_coverage",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "citation_precision",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "comparison_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "qualification_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "history_use",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "owner_accuracy",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "next_action_correctness",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "tool_execution_success",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "expected_tool_coverage",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "schema_validity",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "draft_yield",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "span_recall_at_1",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "span_recall_at_5",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "span_recall_at_10",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "source_recall_at_1",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "source_recall_at_5",
+      "score": 0.2,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.2
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "source_recall_at_10",
+      "score": 0.2,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.2
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "span_mrr",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "latency_ms",
+      "score": 9438.048,
+      "scored": 1,
+      "cases": 1,
+      "sum": 9438.048
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "cost_inr",
+      "score": 0.04990084,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.04990084
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "input_tokens",
+      "score": 5164,
+      "scored": 1,
+      "cases": 1,
+      "sum": 5164
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "output_tokens",
+      "score": 70,
+      "scored": 1,
+      "cases": 1,
+      "sum": 70
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "embedding_tokens",
+      "score": 23,
+      "scored": 1,
+      "cases": 1,
+      "sum": 23
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "answer_accuracy",
+      "score": 0.5,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.5
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "grounding",
+      "score": 0.5,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.5
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "citation_coverage",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "citation_precision",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "comparison_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "qualification_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "history_use",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "owner_accuracy",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "next_action_correctness",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "tool_execution_success",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "expected_tool_coverage",
+      "score": 1.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "schema_validity",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "draft_yield",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "span_recall_at_1",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "span_recall_at_5",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "span_recall_at_10",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "source_recall_at_1",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "source_recall_at_5",
+      "score": 0.2,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.2
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "source_recall_at_10",
+      "score": 0.2,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.2
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "span_mrr",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "latency_ms",
+      "score": 9438.048,
+      "scored": 1,
+      "cases": 1,
+      "sum": 9438.048
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "cost_inr",
+      "score": 0.04990084,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.04990084
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "input_tokens",
+      "score": 5164,
+      "scored": 1,
+      "cases": 1,
+      "sum": 5164
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "output_tokens",
+      "score": 70,
+      "scored": 1,
+      "cases": 1,
+      "sum": 70
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "embedding_tokens",
+      "score": 23,
+      "scored": 1,
+      "cases": 1,
+      "sum": 23
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "answer_accuracy",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "grounding",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "citation_coverage",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "citation_precision",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "comparison_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "qualification_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "history_use",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "owner_accuracy",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "next_action_correctness",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "tool_execution_success",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "expected_tool_coverage",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "schema_validity",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "draft_yield",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "span_recall_at_1",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "span_recall_at_5",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "span_recall_at_10",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "source_recall_at_1",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "source_recall_at_5",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "source_recall_at_10",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "span_mrr",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "latency_ms",
+      "score": 6645.706,
+      "scored": 1,
+      "cases": 1,
+      "sum": 6645.706
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "cost_inr",
+      "score": 0.008037,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.008037
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "input_tokens",
+      "score": 343,
+      "scored": 1,
+      "cases": 1,
+      "sum": 343
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "output_tokens",
+      "score": 256,
+      "scored": 1,
+      "cases": 1,
+      "sum": 256
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "embedding_tokens",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "answer_accuracy",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "grounding",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "citation_coverage",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "citation_precision",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "comparison_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "qualification_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "history_use",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "owner_accuracy",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "next_action_correctness",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "tool_execution_success",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "expected_tool_coverage",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "schema_validity",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "draft_yield",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "span_recall_at_1",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "span_recall_at_5",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "span_recall_at_10",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "source_recall_at_1",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "source_recall_at_5",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "source_recall_at_10",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "span_mrr",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "latency_ms",
+      "score": 6645.706,
+      "scored": 1,
+      "cases": 1,
+      "sum": 6645.706
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "cost_inr",
+      "score": 0.008037,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.008037
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "input_tokens",
+      "score": 343,
+      "scored": 1,
+      "cases": 1,
+      "sum": 343
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "output_tokens",
+      "score": 256,
+      "scored": 1,
+      "cases": 1,
+      "sum": 256
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "embedding_tokens",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "answer_accuracy",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "grounding",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "citation_coverage",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "citation_precision",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "comparison_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "qualification_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "history_use",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "owner_accuracy",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "next_action_correctness",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "tool_execution_success",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "expected_tool_coverage",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "schema_validity",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "draft_yield",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "span_recall_at_1",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "span_recall_at_5",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "span_recall_at_10",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "source_recall_at_1",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "source_recall_at_5",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "source_recall_at_10",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "span_mrr",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "latency_ms",
+      "score": 6645.706,
+      "scored": 1,
+      "cases": 1,
+      "sum": 6645.706
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "cost_inr",
+      "score": 0.008037,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.008037
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "input_tokens",
+      "score": 343,
+      "scored": 1,
+      "cases": 1,
+      "sum": 343
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "output_tokens",
+      "score": 256,
+      "scored": 1,
+      "cases": 1,
+      "sum": 256
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "embedding_tokens",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "answer_accuracy",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "grounding",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "citation_coverage",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "citation_precision",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "comparison_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "qualification_completeness",
+      "score": 0.0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "history_use",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "owner_accuracy",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "next_action_correctness",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "tool_execution_success",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "expected_tool_coverage",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "schema_validity",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "draft_yield",
+      "score": 1,
+      "scored": 1,
+      "cases": 1,
+      "sum": 1
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "span_recall_at_1",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "span_recall_at_5",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "span_recall_at_10",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "source_recall_at_1",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "source_recall_at_5",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "source_recall_at_10",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "span_mrr",
+      "score": null,
+      "scored": 0,
+      "cases": 1,
+      "sum": null
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "latency_ms",
+      "score": 6645.706,
+      "scored": 1,
+      "cases": 1,
+      "sum": 6645.706
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "cost_inr",
+      "score": 0.008037,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0.008037
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "input_tokens",
+      "score": 343,
+      "scored": 1,
+      "cases": 1,
+      "sum": 343
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "output_tokens",
+      "score": 256,
+      "scored": 1,
+      "cases": 1,
+      "sum": 256
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "embedding_tokens",
+      "score": 0,
+      "scored": 1,
+      "cases": 1,
+      "sum": 0
+    }
+  ],
+  "metrics_sha256": "3ac6e5da58e4b854ee9afca069bce8f5427bc60050850d48805ebf3388852a84"
+}

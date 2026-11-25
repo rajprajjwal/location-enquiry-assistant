@@ -1,0 +1,39 @@
+{
+  "selection": "One case per bucket, preferring the least-represented API, then sorted ID; one per established group.",
+  "working_pool_size": 317,
+  "selected": 10,
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "allowlist_sha256": "83b7129650dae991f7e67bd6d90b595e40f02837007633e86b42ab97b8ffa089",
+  "inputs_sha256": "b2c81d21c9e6d0269656dc1a13748907389fba170735e4e39e6fdaa7e2c2dd73",
+  "frozen_or_holdout_selected": 0,
+  "buckets": {
+    "capabilitycompare": 1,
+    "coveragecompare": 1,
+    "docs": 1,
+    "history": 1,
+    "interpretation": 1,
+    "limitscompare": 1,
+    "ownership": 1,
+    "pricecompare": 1,
+    "qualification": 1,
+    "updates": 1
+  },
+  "apis": {
+    "autocomplete": 3,
+    "directions": 3,
+    "distance_matrix": 2,
+    "reverse_geocode": 2
+  },
+  "record_ids": [
+    "GT-LBS-AC-092",
+    "GT-LBS-DIR-106",
+    "GT-LBS-DM-065",
+    "GT-LBS-AC-011",
+    "GT-LBS-RG-061",
+    "GT-LBS-DIR-097",
+    "GT-LBS-DM-050",
+    "GT-LBS-RG-096",
+    "GT-LBS-AC-003",
+    "GT-LBS-DIR-032"
+  ]
+}

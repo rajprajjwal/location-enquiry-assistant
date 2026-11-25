@@ -1,0 +1,44 @@
+W1125 17:18:05.147000 16335 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  24%|██▍       | 49/201 [00:00<00:00, 489.19it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 1565.88it/s]
+1/10 GT-LBS-AC-092 baseline: scored
+2/10 GT-LBS-DIR-106 baseline: scored
+3/10 GT-LBS-DM-065 baseline: scored
+4/10 GT-LBS-AC-011 baseline: scored
+5/10 GT-LBS-RG-061 baseline: scored
+6/10 GT-LBS-DIR-097 baseline: scored
+7/10 GT-LBS-DM-050 baseline: scored
+8/10 GT-LBS-RG-096 baseline: scored
+9/10 GT-LBS-AC-003 baseline: scored
+10/10 GT-LBS-DIR-032 baseline: scored
+1/10 GT-LBS-AC-092 baseline: scored
+2/10 GT-LBS-DIR-106 baseline: scored
+3/10 GT-LBS-DM-065 baseline: scored
+4/10 GT-LBS-AC-011 baseline: scored
+5/10 GT-LBS-RG-061 baseline: scored
+6/10 GT-LBS-DIR-097 baseline: scored
+7/10 GT-LBS-DM-050 baseline: scored
+8/10 GT-LBS-RG-096 baseline: scored
+9/10 GT-LBS-AC-003 baseline: scored
+10/10 GT-LBS-DIR-032 baseline: scored
+1/10 GT-LBS-AC-092 baseline: scored
+2/10 GT-LBS-DIR-106 baseline: scored
+3/10 GT-LBS-DM-065 baseline: scored
+4/10 GT-LBS-AC-011 baseline: scored
+5/10 GT-LBS-RG-061 baseline: scored
+6/10 GT-LBS-DIR-097 baseline: scored
+7/10 GT-LBS-DM-050 baseline: scored
+8/10 GT-LBS-RG-096 baseline: scored
+9/10 GT-LBS-AC-003 baseline: scored
+10/10 GT-LBS-DIR-032 baseline: scored
+1/10 GT-LBS-AC-092 baseline: scored
+2/10 GT-LBS-DIR-106 baseline: scored
+3/10 GT-LBS-DM-065 baseline: scored
+4/10 GT-LBS-AC-011 baseline: scored
+5/10 GT-LBS-RG-061 baseline: scored
+6/10 GT-LBS-DIR-097 baseline: scored
+7/10 GT-LBS-DM-050 baseline: scored
+8/10 GT-LBS-RG-096 baseline: scored
+9/10 GT-LBS-AC-003 baseline: scored
+10/10 GT-LBS-DIR-032 baseline: scored
+{'strategy': 'self_consistency', 'selection_split': 'working_eval', 'case_ids': ['GT-LBS-AC-092', 'GT-LBS-DIR-106', 'GT-LBS-DM-065', 'GT-LBS-AC-011', 'GT-LBS-RG-061', 'GT-LBS-DIR-097', 'GT-LBS-DM-050', 'GT-LBS-RG-096', 'GT-LBS-AC-003', 'GT-LBS-DIR-032'], 'excluded_validation_groups': ['GT-LBS-AC-092', 'GT-LBS-DIR-106', 'GT-LBS-DM-065', 'GT-LBS-AC-008', 'GT-LBS-RG-061', 'GT-LBS-DIR-097', 'GT-LBS-DM-050', 'GT-LBS-RG-096', 'GT-LBS-AC-003', 'GT-LBS-DIR-032'], 'candidates': [{'strategy': 'zero_shot', 'accuracy': 0.32999999999999996, 'scored': 10, 'errors': 0, 'metrics_sha256': 'c492879924c840fbd3cc2c2a8742df32961c7d4b0e1f52426b8ce93f62ffd2cd'}, {'strategy': 'few_shot', 'accuracy': 0.38, 'scored': 10, 'errors': 0, 'metrics_sha256': '16a044eb1e806489ee357bd01479f9d7c7891b99609845a752b117d3202dc51b'}, {'strategy': 'self_consistency', 'accuracy': 0.385, 'scored': 10, 'errors': 0, 'metrics_sha256': 'e4ea8b9b88da701b9c69d25167ed89fb1e77641f73955824cc8894161994f33b'}, {'strategy': 'decomposition', 'accuracy': 0.38, 'scored': 10, 'errors': 0, 'metrics_sha256': '0a63e66515c097bc16975d6fa6f7e9af01fe7ec9fc3f949b6a6718cb074929a2'}], 'implementation_sha256': 'f69faaed6d9b4cf55e7ab2fcff36d61200baac4237f48cabb30af02e4a1c8563', 'retrieval': 'hybrid', 'workbook_sha256': '13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68', 'corpus_sha256': 'e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa', 'locked': False, 'repeatability_passed': True, 'selection_rule': 'Highest automatic rubric accuracy; ties use declared strategy order. Frozen and holdout excluded.'}

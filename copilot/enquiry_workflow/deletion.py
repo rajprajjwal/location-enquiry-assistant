@@ -23,6 +23,8 @@ def delete_enquiry(con, trace_id: str) -> None:
         con.executemany(
             "DELETE FROM messages WHERE id = ? AND case_id = ?", [(i, case_id) for i in message_ids]
         )
+        from copilot.observability.storage import delete_run
+        delete_run(con, trace_id)
         con.execute("DELETE FROM trace_steps WHERE trace_id = ?", (trace_id,))
         con.execute("DELETE FROM traces WHERE id = ?", (trace_id,))
 
@@ -32,6 +34,9 @@ def delete_enquiry(con, trace_id: str) -> None:
             for key in ("last_trace_id", "last_result", "interpretation", "pending_provider_question", "pending_clarification"):
                 state.pop(key, None)
             con.execute("UPDATE cases SET state_json = ? WHERE id = ?", (json.dumps(state), case_id))
+
+    from copilot.observability.sync_deletions import process_pending_deletions
+    process_pending_deletions(con, limit=1)
 
 
 def _legacy_messages(con, trace) -> list[int]:

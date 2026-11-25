@@ -1,0 +1,28 @@
+{
+  "trace_id": "f04453a7147c9c700621fce610d8b73c",
+  "vector_dimension": 384,
+  "local_span_count": 2,
+  "all_span_ids_received": true,
+  "usage": {
+    "model_attempts": 0,
+    "embedding_attempts": 1,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "embedding_tokens": 17,
+    "missing_usage_attempts": 0,
+    "usage_complete": true,
+    "cost_usd": "3.4E-7",
+    "known_cost_usd": "3.4E-7",
+    "cost_status": "complete",
+    "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+    "cost_inr": "0.00003196",
+    "known_cost_inr": "0.00003196",
+    "usd_to_inr": "94",
+    "currency": "INR",
+    "cost_basis": "illustrative",
+    "actual_endpoint_charge_inr": "0",
+    "actual_endpoint_charge_usd": "0",
+    "export_mode": "langfuse-local"
+  },
+  "synthetic_query": true
+}

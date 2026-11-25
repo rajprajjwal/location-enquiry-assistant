@@ -109,7 +109,7 @@ def test_streamlit_draft_escalation_and_approval(tmp_path, monkeypatch):
     next(box for box in app.checkbox if box.label.startswith("Permanently delete")).check().run()
     next(button for button in app.button if button.label == "Delete enquiry and traces").click().run()
     assert not app.exception
-    assert any("Enquiry and its traces deleted." == item.value for item in app.success)
+    assert any("Enquiry and local traces deleted. Langfuse deletion is tracked separately." == item.value for item in app.success)
     assert not any(message.value == "Customer: Mapbox" for message in app.text)
     assert any("Customer: How do I set waypoints" in message.value for message in app.text)
     assert any("approved" in item.value for item in app.json)

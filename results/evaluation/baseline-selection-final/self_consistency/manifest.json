@@ -1,0 +1,37 @@
+{
+  "binding": {
+    "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+    "cases_sha256": "947904cddf7d228835c70898bedc19df54debe7aeb938c7e76a3c98efdc68ee9",
+    "implementation_sha256": "becb2a56ff16c73397a91fe5e3ec5e94e230f5ae182e6bba289ab57f6419c730",
+    "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+    "rates_sha256": "50d36128bbdffc28a43ecd79fb92cdc848c19d8c34741208c9bb32ce76cddb37",
+    "strategy": "self_consistency",
+    "retrieval": "hybrid",
+    "arms": [
+      "baseline"
+    ],
+    "case_ids": [
+      "GT-LBS-AC-092",
+      "GT-LBS-DIR-106",
+      "GT-LBS-DM-065",
+      "GT-LBS-AC-011",
+      "GT-LBS-RG-061",
+      "GT-LBS-DIR-097",
+      "GT-LBS-DM-050",
+      "GT-LBS-RG-096",
+      "GT-LBS-AC-003",
+      "GT-LBS-DIR-032"
+    ]
+  },
+  "started_at": "2026-11-25T11:15:02.350262+00:00",
+  "split": "working_eval",
+  "holdout_cases": 0,
+  "gold_status": "Project GT; automatic judge scores require human interpretation.",
+  "judge_model": "Qwen/Qwen3-8B",
+  "judge_type": "same-endpoint automatic reference-based review",
+  "cost_basis": "illustrative reporting estimates; actual institute endpoints free",
+  "retrieval_scope": "Independent top-10 probe using query and user history; verbatim span and source URL diagnostics. Summary labels excluded from strict span denominator.",
+  "generation_source": "results/evaluation/baseline-selection-v2/self_consistency",
+  "generation_implementation_sha256": "3311282506fb968214c907d5552833d081a595a537842729703087d0f4940492",
+  "new_generation_calls": 0
+}

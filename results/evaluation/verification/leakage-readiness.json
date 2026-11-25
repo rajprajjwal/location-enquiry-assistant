@@ -1,0 +1,19 @@
+{
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "excluded_holdout_ids": [
+    "GT-LBS-AC-005",
+    "GT-LBS-AC-006",
+    "GT-LBS-AC-007",
+    "GT-LBS-DIR-010",
+    "GT-LBS-DM-001",
+    "GT-LBS-DM-005",
+    "GT-LBS-DM-006"
+  ],
+  "excluded_holdout_count": 7,
+  "eligible_holdout_cases": 96,
+  "cross_split_template_families": 0,
+  "normalized_exact_cross_split_matches": 0,
+  "passed": true,
+  "cosine_screening": "Existing 17 flagged pairs; conservatively excluded every holdout member. No fresh cosine threshold claim.",
+  "holdout_queries_used_for_generation_or_tuning": false
+}

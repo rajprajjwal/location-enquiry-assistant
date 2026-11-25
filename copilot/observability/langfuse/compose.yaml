@@ -1,0 +1,132 @@
+# Adapted from Langfuse's official Docker Compose configuration, commit
+# 338753d1521709c3cd0c79fe589f09aa487d498a. AI gateway omitted: chat keeps using the shared client.
+name: location-enquiry-langfuse
+x-common: &common
+  DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:?Run local preparation}@postgres:5432/postgres
+  NEXTAUTH_URL: http://localhost:${LANGFUSE_PORT:-3000}
+  SALT: ${SALT:?Run local preparation}
+  ENCRYPTION_KEY: ${ENCRYPTION_KEY:?Run local preparation}
+  TELEMETRY_ENABLED: 'false'
+  CLICKHOUSE_MIGRATION_URL: clickhouse://clickhouse:9000
+  CLICKHOUSE_URL: http://clickhouse:8123
+  CLICKHOUSE_USER: clickhouse
+  CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD:?Run local preparation}
+  CLICKHOUSE_CLUSTER_ENABLED: 'false'
+  REDIS_HOST: redis
+  REDIS_PORT: '6379'
+  REDIS_AUTH: ${REDIS_AUTH:?Run local preparation}
+  LANGFUSE_S3_EVENT_UPLOAD_BUCKET: langfuse
+  LANGFUSE_S3_EVENT_UPLOAD_REGION: auto
+  LANGFUSE_S3_EVENT_UPLOAD_ACCESS_KEY_ID: local-langfuse
+  LANGFUSE_S3_EVENT_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD:?Run local preparation}
+  LANGFUSE_S3_EVENT_UPLOAD_ENDPOINT: http://minio:9000
+  LANGFUSE_S3_EVENT_UPLOAD_FORCE_PATH_STYLE: 'true'
+  LANGFUSE_S3_EVENT_UPLOAD_PREFIX: events/
+  LANGFUSE_S3_MEDIA_UPLOAD_BUCKET: langfuse
+  LANGFUSE_S3_MEDIA_UPLOAD_REGION: auto
+  LANGFUSE_S3_MEDIA_UPLOAD_ACCESS_KEY_ID: local-langfuse
+  LANGFUSE_S3_MEDIA_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD:?Run local preparation}
+  LANGFUSE_S3_MEDIA_UPLOAD_ENDPOINT: http://minio:9000
+  LANGFUSE_S3_MEDIA_UPLOAD_FORCE_PATH_STYLE: 'true'
+  LANGFUSE_S3_MEDIA_UPLOAD_PREFIX: media/
+x-dependencies: &dependencies
+  postgres:
+    condition: service_healthy
+  redis:
+    condition: service_healthy
+  minio:
+    condition: service_healthy
+  clickhouse:
+    condition: service_healthy
+services:
+  langfuse-web:
+    image: docker.langfuse.com/langfuse/langfuse:4.86.0
+    restart: unless-stopped
+    depends_on: *dependencies
+    ports:
+      - 127.0.0.1:${LANGFUSE_PORT:-3000}:3000
+    environment:
+      <<: *common
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET:?Run local preparation}
+      LANGFUSE_S3_MEDIA_UPLOAD_ENDPOINT: http://localhost:${LANGFUSE_BLOB_PORT:-9090}
+      LANGFUSE_S3_MEDIA_UPLOAD_INTERNAL_ENDPOINT: http://minio:9000
+      LANGFUSE_INIT_ORG_ID: local-location-enquiry
+      LANGFUSE_INIT_ORG_NAME: Location Enquiry Assistant
+      LANGFUSE_INIT_PROJECT_ID: location-enquiry-copilot
+      LANGFUSE_INIT_PROJECT_NAME: Location Enquiry Copilot
+      LANGFUSE_INIT_PROJECT_PUBLIC_KEY: ${LANGFUSE_PUBLIC_KEY:?Run local preparation}
+      LANGFUSE_INIT_PROJECT_SECRET_KEY: ${LANGFUSE_SECRET_KEY:?Run local preparation}
+      LANGFUSE_INIT_USER_EMAIL: local-admin@localhost.test
+      LANGFUSE_INIT_USER_NAME: Local administrator
+      LANGFUSE_INIT_USER_PASSWORD: ${LANGFUSE_ADMIN_PASSWORD:?Run local preparation}
+  langfuse-worker:
+    image: docker.langfuse.com/langfuse/langfuse-worker:4.86.0
+    restart: unless-stopped
+    depends_on: *dependencies
+    environment: *common
+  postgres:
+    image: postgres:17.7
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run local preparation}
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD, pg_isready, -U, postgres]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  redis:
+    image: redis:7.4.8
+    restart: unless-stopped
+    environment:
+      REDIS_PASSWORD: ${REDIS_AUTH:?Run local preparation}
+    command: [sh, -c, 'exec redis-server --requirepass "$$REDIS_PASSWORD" --maxmemory-policy noeviction']
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: [CMD-SHELL, 'redis-cli --no-auth-warning -a "$$REDIS_PASSWORD" ping | grep -q PONG']
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  clickhouse:
+    image: clickhouse/clickhouse-server:26.3.62.3
+    restart: unless-stopped
+    user: '101:101'
+    environment:
+      CLICKHOUSE_DB: default
+      CLICKHOUSE_USER: clickhouse
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD:?Run local preparation}
+    volumes:
+      - clickhouse-data:/var/lib/clickhouse
+      - clickhouse-logs:/var/log/clickhouse-server
+    healthcheck:
+      test: [CMD, wget, --no-verbose, --tries=1, --spider, http://localhost:8123/ping]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  minio:
+    image: cgr.dev/chainguard/minio@sha256:f6243be11aaaa2fe654d260558e2b3fcef50135e78a3abfd0db802b13444f059
+    restart: unless-stopped
+    entrypoint: sh
+    command: -c 'mkdir -p /data/langfuse && minio server --address ":9000" --console-address ":9001" /data'
+    environment:
+      MINIO_ROOT_USER: local-langfuse
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?Run local preparation}
+    volumes:
+      - minio-data:/data
+    ports:
+      - 127.0.0.1:${LANGFUSE_BLOB_PORT:-9090}:9000
+    healthcheck:
+      test: [CMD, mc, ready, local]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+volumes:
+  postgres-data:
+  redis-data:
+  clickhouse-data:
+  clickhouse-logs:
+  minio-data:

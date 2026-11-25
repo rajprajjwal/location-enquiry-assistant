@@ -1,0 +1,122 @@
+SELECTED {"strategy": "self_consistency", "selection_split": "working_eval", "case_ids": ["GT-LBS-AC-092", "GT-LBS-DIR-106", "GT-LBS-DM-065", "GT-LBS-AC-011", "GT-LBS-RG-061", "GT-LBS-DIR-097", "GT-LBS-DM-050", "GT-LBS-RG-096", "GT-LBS-AC-003", "GT-LBS-DIR-032"], "excluded_validation_groups": ["GT-LBS-AC-092", "GT-LBS-DIR-106", "GT-LBS-DM-065", "GT-LBS-AC-008", "GT-LBS-RG-061", "GT-LBS-DIR-097", "GT-LBS-DM-050", "GT-LBS-RG-096", "GT-LBS-AC-003", "GT-LBS-DIR-032"], "candidates": [{"strategy": "zero_shot", "accuracy": 0.32999999999999996, "scored": 10, "errors": 0, "metrics_sha256": "c492879924c840fbd3cc2c2a8742df32961c7d4b0e1f52426b8ce93f62ffd2cd"}, {"strategy": "few_shot", "accuracy": 0.38, "scored": 10, "errors": 0, "metrics_sha256": "16a044eb1e806489ee357bd01479f9d7c7891b99609845a752b117d3202dc51b"}, {"strategy": "self_consistency", "accuracy": 0.385, "scored": 10, "errors": 0, "metrics_sha256": "e4ea8b9b88da701b9c69d25167ed89fb1e77641f73955824cc8894161994f33b"}, {"strategy": "decomposition", "accuracy": 0.38, "scored": 10, "errors": 0, "metrics_sha256": "0a63e66515c097bc16975d6fa6f7e9af01fe7ec9fc3f949b6a6718cb074929a2"}], "implementation_sha256": "f69faaed6d9b4cf55e7ab2fcff36d61200baac4237f48cabb30af02e4a1c8563", "retrieval": "hybrid", "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68", "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa", "locked": false, "repeatability_passed": true, "selection_rule": "Highest automatic rubric accuracy; ties use declared strategy order. Frozen and holdout excluded."}
+W1125 17:37:10.229000 16972 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+python(18470) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 5508.36it/s]
+python(18481) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+python(18483) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+1/10 GT-LBS-AC-093 baseline: scored
+few-shot: TRACKB_GT_CSV unset or missing; running zero-shot (12 ids skipped)
+1/10 GT-LBS-AC-093 agent: scored
+2/10 GT-LBS-DIR-205 baseline: scored
+2/10 GT-LBS-DIR-205 agent: scored
+3/10 GT-LBS-DM-068 baseline: scored
+3/10 GT-LBS-DM-068 agent: scored
+4/10 GT-LBS-AC-012 baseline: scored
+4/10 GT-LBS-AC-012 agent: scored
+5/10 GT-LBS-RG-062 baseline: scored
+5/10 GT-LBS-RG-062 agent: scored
+6/10 GT-LBS-DIR-107 baseline: scored
+6/10 GT-LBS-DIR-107 agent: scored
+7/10 GT-LBS-DM-051 baseline: scored
+7/10 GT-LBS-DM-051 agent: scored
+8/10 GT-LBS-RG-117 baseline: scored
+8/10 GT-LBS-RG-117 agent: scored
+9/10 GT-LBS-AC-010 baseline: scored
+9/10 GT-LBS-AC-010 agent: scored
+10/10 GT-LBS-DIR-033 baseline: scored
+10/10 GT-LBS-DIR-033 agent: scored
+GT-LBS-AC-093 baseline reviewed again
+GT-LBS-AC-093 agent reviewed again
+GT-LBS-DIR-205 baseline reviewed again
+GT-LBS-DIR-205 agent reviewed again
+GT-LBS-DM-068 baseline reviewed again
+GT-LBS-DM-068 agent reviewed again
+GT-LBS-AC-012 baseline reviewed again
+GT-LBS-AC-012 agent reviewed again
+GT-LBS-RG-062 baseline reviewed again
+GT-LBS-RG-062 agent reviewed again
+GT-LBS-DIR-107 baseline reviewed again
+GT-LBS-DIR-107 agent reviewed again
+GT-LBS-DM-051 baseline reviewed again
+GT-LBS-DM-051 agent reviewed again
+GT-LBS-RG-117 baseline reviewed again
+GT-LBS-RG-117 agent reviewed again
+GT-LBS-AC-010 baseline reviewed again
+GT-LBS-AC-010 agent reviewed again
+GT-LBS-DIR-033 baseline reviewed again
+GT-LBS-DIR-033 agent reviewed again
+STABILITY {"split": "working_eval", "records": 20, "maximum_delta": 0.0, "overall_maximum_delta": 0.0, "tolerance": 0.01, "passed": true, "scope": "Fresh automatic judgement on identical saved predictions and evidence; generation not repeated."}
+LOCKED: starting 80 frozen pairs.
+1/80 GT-LBS-AC-031 baseline: scored
+1/80 GT-LBS-AC-031 agent: scored
+2/80 GT-LBS-AC-032 baseline: scored
+2/80 GT-LBS-AC-032 agent: scored
+3/80 GT-LBS-AC-033 baseline: scored
+3/80 GT-LBS-AC-033 agent: scored
+4/80 GT-LBS-AC-045 baseline: scored
+4/80 GT-LBS-AC-045 agent: scored
+5/80 GT-LBS-AC-051 baseline: scored
+5/80 GT-LBS-AC-051 agent: scored
+6/80 GT-LBS-AC-068 baseline: scored
+6/80 GT-LBS-AC-068 agent: scored
+7/80 GT-LBS-AC-073 baseline: scored
+7/80 GT-LBS-AC-073 agent: scored
+8/80 GT-LBS-AC-081 baseline: scored
+8/80 GT-LBS-AC-081 agent: scored
+9/80 GT-LBS-AC-086 baseline: scored
+9/80 GT-LBS-AC-086 agent: scored
+10/80 GT-LBS-AC-089 baseline: scored
+10/80 GT-LBS-AC-089 agent: scored
+11/80 GT-LBS-AC-205 baseline: scored
+11/80 GT-LBS-AC-205 agent: scored
+12/80 GT-LBS-AC-210 baseline: scored
+12/80 GT-LBS-AC-210 agent: scored
+13/80 GT-LBS-AC-215 baseline: scored
+13/80 GT-LBS-AC-215 agent: scored
+14/80 GT-LBS-AC-222 baseline: scored
+14/80 GT-LBS-AC-222 agent: scored
+15/80 GT-LBS-AC-229 baseline: scored
+15/80 GT-LBS-AC-229 agent: scored
+16/80 GT-LBS-AC-230 baseline: scored
+16/80 GT-LBS-AC-230 agent: scored
+17/80 GT-LBS-AC-231 baseline: scored
+17/80 GT-LBS-AC-231 agent: scored
+18/80 GT-LBS-AC-234 baseline: scored
+18/80 GT-LBS-AC-234 agent: scored
+19/80 GT-LBS-AC-235 baseline: scored
+19/80 GT-LBS-AC-235 agent: scored
+20/80 GT-LBS-AC-236 baseline: scored
+20/80 GT-LBS-AC-236 agent: scored
+21/80 GT-LBS-DIR-011 baseline: scored
+21/80 GT-LBS-DIR-011 agent: scored
+22/80 GT-LBS-DIR-012 baseline: scored
+22/80 GT-LBS-DIR-012 agent: scored
+23/80 GT-LBS-DIR-020 baseline: scored
+23/80 GT-LBS-DIR-020 agent: scored
+24/80 GT-LBS-DIR-021 baseline: scored
+24/80 GT-LBS-DIR-021 agent: scored
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/activity21/contract_acceptance.py", line 28, in <module>
+    summary=run(root/'frozen-paired',read_cases('frozen'),strategy=selection['strategy'],mode='hybrid')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/runner.py", line 168, in run
+    return _run(folder,cases,**options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/runner.py", line 129, in _run
+    judgement=judge.evaluate(case,prediction,evidence,client)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/judge.py", line 31, in evaluate
+    while count_prompt(messages)>6900 and payload['source_evidence']:
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/model_gateway/token_counting.py", line 60, in count_prompt
+    return native_prompt_tokens(messages, tools=tools, thinking=thinking) + PROVIDER_FRAMING_TOKENS
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/model_gateway/token_counting.py", line 44, in native_prompt_tokens
+    return len(tokenizer.encode(text, add_special_tokens=False).ids)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

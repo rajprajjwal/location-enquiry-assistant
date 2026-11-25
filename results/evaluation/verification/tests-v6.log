@@ -1,0 +1,57 @@
+.........F....                                                           [100%]
+=================================== FAILURES ===================================
+___________ test_citation_precision_cannot_credit_an_unbound_source ____________
+
+    def test_citation_precision_cannot_credit_an_unbound_source():
+        from copilot.evaluation.scoring import metrics
+        from copilot.evaluation.contracts import Judgement
+        case={'input':{'history':[]},'gold':{'tools_expected':[],
+            'outputs':{'comparison':{'applicable':False},'responsible_role':{'owner':'Support L1'},
+                       'next_action':{'action_type':'answer_directly'}}}}
+        row={'arm':'baseline','prediction':{'owner':'Support L1','next_action':'answer_directly'},
+             'has_draft':True,'usage':{}}
+        judged=Judgement(answer_accuracy=1,grounding=1,comparison_completeness=1,
+                         qualification_completeness=1,history_use=1,citation_supported=[True],reasons={})
+>       result=metrics(case,row,judged,[False])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/evaluation/test_metrics.py:123: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+case = {'input': {'history': []}, 'gold': {'tools_expected': [], 'outputs': {'comparison': {'applicable': False}, 'responsible_role': {'owner': 'Support L1'}, 'next_action': {'action_type': 'answer_directly'}}}}
+record = {'arm': 'baseline', 'prediction': {'owner': 'Support L1', 'next_action': 'answer_directly'}, 'has_draft': True, 'usage': {}}
+judgement = Judgement(answer_accuracy=1.0, grounding=1.0, comparison_completeness=1.0, qualification_completeness=1.0, history_use=1.0, citation_supported=[True], reasons={})
+bound = [False]
+
+    def metrics(case,record,judgement=None,bound=()):
+        prediction = record.get('prediction')
+        expected = case['gold']['outputs']
+        comparison = expected['comparison']['applicable']
+        history = bool(case['input']['history'])
+        if not prediction:
+            result = {k:None for k in METRICS}
+            result.update(answer_accuracy=0,grounding=0,qualification_completeness=0,owner_accuracy=0,
+                          next_action_correctness=0,schema_validity=0,draft_yield=0,
+                          comparison_completeness=0 if comparison else None,history_use=0 if history else None)
+        else:
+            supported = [valid and yes for valid,yes in zip(bound,judgement.citation_supported)] if judgement else []
+            has_draft = record['has_draft']
+            result = {k:None for k in METRICS}
+            result.update(schema_validity=1,draft_yield=int(has_draft),
+                          owner_accuracy=int(prediction['owner']==expected['responsible_role']['owner']),
+                          next_action_correctness=int(prediction['next_action']==expected['next_action']['action_type']),
+                          citation_coverage=int(any(supported)) if has_draft and judgement else None,
+                          citation_precision=sum(supported)/len(bound) if bound and judgement else None)
+            if judgement:
+                result.update({k:getattr(judgement,k) for k in ('answer_accuracy','grounding')})
+                result.update(comparison_completeness=judgement.comparison_completeness if comparison else None,
+                              history_use=judgement.history_use if history else None)
+        if prediction:
+>           checks=qualification_checks(prediction['qualification'],expected['qualification_details'])
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           KeyError: 'qualification'
+
+copilot/evaluation/scoring.py:89: KeyError
+=========================== short test summary info ============================
+FAILED tests/evaluation/test_metrics.py::test_citation_precision_cannot_credit_an_unbound_source
+1 failed, 13 passed in 3.48s

@@ -1,0 +1,166 @@
+{
+  "records": 20,
+  "checks": [
+    {
+      "record_id": "GT-LBS-AC-093",
+      "arm": "baseline",
+      "qualification_matches": 0,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-093",
+      "arm": "agent",
+      "qualification_matches": 9,
+      "qualification_fields": 9,
+      "source_bound_citations": 2,
+      "predicted_citations": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-205",
+      "arm": "baseline",
+      "qualification_matches": 6,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 0
+    },
+    {
+      "record_id": "GT-LBS-DIR-205",
+      "arm": "agent",
+      "qualification_matches": 7,
+      "qualification_fields": 9,
+      "source_bound_citations": 2,
+      "predicted_citations": 2
+    },
+    {
+      "record_id": "GT-LBS-DM-068",
+      "arm": "baseline",
+      "qualification_matches": 0,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 0
+    },
+    {
+      "record_id": "GT-LBS-DM-068",
+      "arm": "agent",
+      "qualification_matches": 9,
+      "qualification_fields": 9,
+      "source_bound_citations": 1,
+      "predicted_citations": 1
+    },
+    {
+      "record_id": "GT-LBS-AC-012",
+      "arm": "baseline",
+      "qualification_matches": 0,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 0
+    },
+    {
+      "record_id": "GT-LBS-AC-012",
+      "arm": "agent",
+      "qualification_matches": 7,
+      "qualification_fields": 9,
+      "source_bound_citations": 6,
+      "predicted_citations": 6
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "arm": "baseline",
+      "qualification_matches": 0,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 0
+    },
+    {
+      "record_id": "GT-LBS-RG-062",
+      "arm": "agent",
+      "qualification_matches": 9,
+      "qualification_fields": 9,
+      "source_bound_citations": 2,
+      "predicted_citations": 2
+    },
+    {
+      "record_id": "GT-LBS-DIR-107",
+      "arm": "baseline",
+      "qualification_matches": 0,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 0
+    },
+    {
+      "record_id": "GT-LBS-DIR-107",
+      "arm": "agent",
+      "qualification_matches": 9,
+      "qualification_fields": 9,
+      "source_bound_citations": 3,
+      "predicted_citations": 3
+    },
+    {
+      "record_id": "GT-LBS-DM-051",
+      "arm": "baseline",
+      "qualification_matches": 0,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 0
+    },
+    {
+      "record_id": "GT-LBS-DM-051",
+      "arm": "agent",
+      "qualification_matches": 7,
+      "qualification_fields": 9,
+      "source_bound_citations": 3,
+      "predicted_citations": 3
+    },
+    {
+      "record_id": "GT-LBS-RG-117",
+      "arm": "baseline",
+      "qualification_matches": 0,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 0
+    },
+    {
+      "record_id": "GT-LBS-RG-117",
+      "arm": "agent",
+      "qualification_matches": 7,
+      "qualification_fields": 9,
+      "source_bound_citations": 8,
+      "predicted_citations": 8
+    },
+    {
+      "record_id": "GT-LBS-AC-010",
+      "arm": "baseline",
+      "qualification_matches": 0,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 0
+    },
+    {
+      "record_id": "GT-LBS-AC-010",
+      "arm": "agent",
+      "qualification_matches": 5,
+      "qualification_fields": 9,
+      "source_bound_citations": 6,
+      "predicted_citations": 6
+    },
+    {
+      "record_id": "GT-LBS-DIR-033",
+      "arm": "baseline",
+      "qualification_matches": 7,
+      "qualification_fields": 9,
+      "source_bound_citations": 0,
+      "predicted_citations": 0
+    },
+    {
+      "record_id": "GT-LBS-DIR-033",
+      "arm": "agent",
+      "qualification_matches": 9,
+      "qualification_fields": 9,
+      "source_bound_citations": 2,
+      "predicted_citations": 2
+    }
+  ],
+  "method": "Deterministic field checks and source membership; no inference or generation."
+}

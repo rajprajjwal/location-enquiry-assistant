@@ -1,0 +1,80 @@
+few-shot: TRACKB_GT_CSV unset or missing; running zero-shot (12 ids skipped)
+Failed to export spans batch due to timeout, max retries or shutdown.
+Failed to export spans batch due to timeout, max retries or shutdown.
+Failed to export spans batch due to timeout, max retries or shutdown.
+Traceback (most recent call last):
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 126, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/activity21/run_working_final.py", line 7, in <module>
+    raise SystemExit(not verify(Path('results/observability/working-inputs/inputs.jsonl'),Path('results/observability/working-final'),parity=True,retrieval='bm25'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/observability/verification/verify_runs.py", line 166, in verify
+    received = fetch_observations(remote, run.trace_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/observability/verification/langfuse_smoke.py", line 23, in fetch_observations
+    response = client.get("/api/public/v2/observations", params=params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: timed out

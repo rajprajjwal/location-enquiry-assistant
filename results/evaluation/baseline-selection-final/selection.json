@@ -1,0 +1,62 @@
+{
+  "strategy": "few_shot",
+  "selection_split": "working_eval",
+  "case_ids": [
+    "GT-LBS-AC-092",
+    "GT-LBS-DIR-106",
+    "GT-LBS-DM-065",
+    "GT-LBS-AC-011",
+    "GT-LBS-RG-061",
+    "GT-LBS-DIR-097",
+    "GT-LBS-DM-050",
+    "GT-LBS-RG-096",
+    "GT-LBS-AC-003",
+    "GT-LBS-DIR-032"
+  ],
+  "excluded_validation_groups": [
+    "GT-LBS-AC-092",
+    "GT-LBS-DIR-106",
+    "GT-LBS-DM-065",
+    "GT-LBS-AC-008",
+    "GT-LBS-RG-061",
+    "GT-LBS-DIR-097",
+    "GT-LBS-DM-050",
+    "GT-LBS-RG-096",
+    "GT-LBS-AC-003",
+    "GT-LBS-DIR-032"
+  ],
+  "candidates": [
+    {
+      "strategy": "zero_shot",
+      "accuracy": 0.39,
+      "scored": 10,
+      "errors": 0
+    },
+    {
+      "strategy": "few_shot",
+      "accuracy": 0.39967,
+      "scored": 10,
+      "errors": 0
+    },
+    {
+      "strategy": "self_consistency",
+      "accuracy": 0.31,
+      "scored": 10,
+      "errors": 0
+    },
+    {
+      "strategy": "decomposition",
+      "accuracy": 0.39,
+      "scored": 10,
+      "errors": 0
+    }
+  ],
+  "implementation_sha256": "becb2a56ff16c73397a91fe5e3ec5e94e230f5ae182e6bba289ab57f6419c730",
+  "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+  "retrieval": "hybrid",
+  "locked": false,
+  "repeatability_passed": true,
+  "generation_reuse": "Saved exploratory working predictions; baseline prompts and input contracts unchanged; final scorer applied equally to all candidates.",
+  "selection_rule": "Highest automatic rubric accuracy; stable strategy order breaks ties."
+}

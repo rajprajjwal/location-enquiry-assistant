@@ -6,6 +6,7 @@ from time import perf_counter
 from uuid import uuid4
 
 from copilot.enquiry_interpretation import interpret, rules
+from copilot.observability.tracing import traced_case, current_run, tag_run, observed_span
 from copilot.response_drafting.follow_up_questions import add_follow_up_questions
 
 from .approval_sources import backfill_approval_sources
@@ -17,6 +18,7 @@ from .workflow import run_enquiry
 from copilot.model_gateway.reliability import query_scope, active_query
 
 
+@traced_case
 @query_scope("case", attach=True)
 def run_case(con, query, *, case_id=None, customer=None, client=None, search=None, diagnostic_planning=True, confirmed_customer_status=None):
     """Run and record a case turn. Return pending actions for the review queue."""
@@ -89,6 +91,9 @@ def run_case(con, query, *, case_id=None, customer=None, client=None, search=Non
                       if shared is not None else interpret(enquiry, client=client))
     if confirmed_provider:
         interpretation = bind_confirmed_provider(interpretation, confirmed_provider)
+    capture = current_run()
+    if capture:
+        tag_run(api=capture.metadata.get("api") or interpretation.api, team=capture.metadata.get("team") or interpretation.team)
     target = record_target(task)
     result = run_enquiry(
         enquiry, interpretation, search=search, client=client,
@@ -124,7 +129,7 @@ def run_case(con, query, *, case_id=None, customer=None, client=None, search=Non
     if result["proposed_actions"]:
         with con:
             backfill_approval_sources(con, case_id)
-    trace_id = uuid4().hex
+    trace_id = current_run().trace_id if current_run() else uuid4().hex
     cases.add_message(con, case_id, "user", query, turn_trace_id=trace_id)
     for question in result["clarifying_questions"]["questions"]:
         cases.add_message(con, case_id, "clarification", question["text"], turn_trace_id=trace_id)

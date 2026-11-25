@@ -1,0 +1,9 @@
+{
+  "source_lock_matches": true,
+  "gt_and_frozen_inputs_match": true,
+  "chat_endpoint_smoke_passed": true,
+  "langfuse_health_passed": true,
+  "resume_scored_records": 48,
+  "resume_saved_generations": 49,
+  "holdout_started_at_resume": false
+}

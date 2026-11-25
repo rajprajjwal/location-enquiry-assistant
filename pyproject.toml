@@ -24,6 +24,8 @@ copilot = [
     "enquiry_interpretation/*.json",
     "enquiry_interpretation/prompts/*.txt",
     "rag/data/processed/chunks.jsonl",
+    "observability/langfuse/*.yaml",
+    "observability/langfuse/Caddyfile",
 ]
 contracts = ["interpretation/*.json", "evaluation/*.json", "diagnostics/*.json", "qualification/*.json"]
 mapping = ["label_overrides.json"]
@@ -35,3 +37,5 @@ dependencies = {file = ["requirements-app.txt"]}
 
 [tool.setuptools.dynamic.optional-dependencies]
 retrieval = {file = ["copilot/rag/requirements-retrieval.txt"]}
+observability = {file = ["copilot/observability/requirements-export.txt"]}
+evaluation = {file = ["copilot/evaluation/requirements.txt"]}

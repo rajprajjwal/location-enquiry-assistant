@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "trace_id": "6bbe963dd5812c7915aa1c2027bb5c4a",
+  "local_span_count": 3,
+  "langfuse_observation_count": 3,
+  "all_span_ids_received": true,
+  "synthetic_usage_only": true,
+  "live_model_calls": 0,
+  "currency": "INR",
+  "usd_to_inr": "94"
+}

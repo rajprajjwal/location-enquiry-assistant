@@ -1,0 +1,73 @@
+{
+  "activities": [
+    22,
+    23
+  ],
+  "status": "completed_with_adjudication",
+  "implemented": [
+    "Canonical paired prediction contract",
+    "Four plain-model prompting strategies through the shared client",
+    "Separate reference-based scoring and citation evidence binding",
+    "Independent span/source retrieval diagnostics",
+    "Registered-tool execution and expected-tool coverage",
+    "Usage-based INR cost with separate judge/probe overhead",
+    "Resume journal, source/data binding and final holdout ledger",
+    "Read-only automatically refreshing comparison dashboard"
+  ],
+  "verification": {
+    "automated_tests_passed": 1157,
+    "optional_freshness_skipped": 1,
+    "subtests_passed": 15,
+    "live_hybrid_smoke_pairs": 1,
+    "reference_calibration_cases": 3,
+    "reference_repeat_maximum_delta": 0
+  },
+  "active_results": "results/evaluation/verification/resumed-evaluation.log",
+  "pending": [
+    "Independent holdout gold review remains unconfirmed; the campaign used provisional owner approval."
+  ],
+  "gt_edited": false,
+  "holdout_approval": "provisional owner authorization",
+  "holdout_exclusions": 7,
+  "eligible_holdout_cases": 96,
+  "scorer_changes": [
+    "Strict qualification field agreement replaces subjective estimate",
+    "Verified pricing source snapshots join citation evidence"
+  ],
+  "baseline_contract_change": "Synthetic examples and prompt require all shared qualification fields with explicit unknowns",
+  "selected_baseline": "self_consistency",
+  "selection_cases": 10,
+  "validation_pairs": 10,
+  "validation_errors": 0,
+  "fresh_judge_maximum_delta": 0.0,
+  "configuration_locked": true,
+  "primary_eval_cases": 80,
+  "final_holdout_cases": 96,
+  "stages": {
+    "frozen-paired": {
+      "target_pairs": 80,
+      "completed_pairs": 80,
+      "arm_records": 160,
+      "generation_errors": 0,
+      "judge_errors": 0,
+      "retrieval_errors": 0
+    },
+    "holdout-final": {
+      "target_pairs": 96,
+      "completed_pairs": 96,
+      "arm_records": 192,
+      "generation_errors": 0,
+      "judge_errors": 0,
+      "retrieval_errors": 0,
+      "historical_judge_failure_records": 1,
+      "adjudicated_judgements": 1
+    }
+  },
+  "holdout_model_calls_started": true,
+  "frozen_model_calls_started": true,
+  "resume_checkpoint": "results/evaluation/resume-checkpoint.json",
+  "final_report": "results/evaluation/README.md",
+  "artifact_audit_passed": true,
+  "dashboard_final_runs_passed": true,
+  "adjudication_audit": "results/evaluation/verification/judge-recovery-AC-050/adjudication.json"
+}

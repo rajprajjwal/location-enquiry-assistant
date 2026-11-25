@@ -1,0 +1,26 @@
+{
+  "binding": {
+    "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+    "cases_sha256": "84e7372ebc299db2987d18300089a6de175c788f1141528c0056f80a188a336a",
+    "implementation_sha256": "0f4b7aacacda3d4781c7d8086f999de744730fb0ffc725e984c6dff568dcd733",
+    "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+    "rates_sha256": "50d36128bbdffc28a43ecd79fb92cdc848c19d8c34741208c9bb32ce76cddb37",
+    "strategy": "zero_shot",
+    "retrieval": "hybrid",
+    "arms": [
+      "baseline",
+      "agent"
+    ],
+    "case_ids": [
+      "GT-LBS-AC-092"
+    ]
+  },
+  "started_at": "2026-11-25T11:02:49.687399+00:00",
+  "split": "working_eval",
+  "holdout_cases": 0,
+  "gold_status": "Project GT; automatic judge scores require human interpretation.",
+  "judge_model": "Qwen/Qwen3-8B",
+  "judge_type": "same-endpoint automatic reference-based review",
+  "cost_basis": "illustrative reporting estimates; actual institute endpoints free",
+  "retrieval_scope": "Independent top-10 probe; verbatim span and source URL diagnostics. Summary labels excluded from strict span denominator."
+}

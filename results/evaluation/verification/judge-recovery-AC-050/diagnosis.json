@@ -1,0 +1,28 @@
+{
+  "status": "locked_rescore_attempt_rejected",
+  "record_id": "GT-LBS-AC-050",
+  "arm": "baseline",
+  "original_failure": "Only ValueError was retained; its exact message and judge trace ID are unavailable.",
+  "reproduced_failure": "Citation format repair did not bind to the prediction",
+  "predicted_citation_count": 1,
+  "citation_source_binding": [
+    false
+  ],
+  "source_evidence_count": 0,
+  "initial_judge_citation_flags": [],
+  "repair_citation_flags": [],
+  "finish_reasons": [
+    "stop",
+    "stop"
+  ],
+  "raw_retry_answer_accuracy": 0.0,
+  "raw_retry_score_accepted": false,
+  "judge_endpoint_calls": 2,
+  "new_answer_generation_calls": 0,
+  "new_retrieval_calls": 0,
+  "original_record_unchanged": true,
+  "published_summary_unchanged": true,
+  "implementation_unchanged": true,
+  "gt_unchanged": true,
+  "next_step": "An accepted result requires a separately approved citation-format adjudication or a versioned scorer change; neither was applied under the locked-configuration constraint."
+}

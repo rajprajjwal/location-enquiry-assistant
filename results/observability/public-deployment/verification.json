@@ -1,0 +1,54 @@
+{
+  "configuration_valid": true,
+  "proxy_config_valid": true,
+  "private_backends": true,
+  "separate_public_volumes": true,
+  "https_dashboard_health": true,
+  "https_media_route": true,
+  "signed_media_upload_download_delete": true,
+  "proxy_restart": true,
+  "http_redirect": true,
+  "synthetic_https_ingestion": {
+    "passed": true,
+    "trace_id": "cde241c7ae03204ad58639c0b1c7bcf6",
+    "local_span_count": 3,
+    "langfuse_observation_count": 3,
+    "all_span_ids_received": true,
+    "synthetic_usage_only": true,
+    "live_model_calls": 0,
+    "currency": "INR",
+    "usd_to_inr": "94"
+  },
+  "live_model_calls": 0,
+  "public_dns_acme_tested": false,
+  "verification_scope": "Local proxy with trusted internal CA and existing local backend; no public ports exposed",
+  "verified_at": "2026-11-25T18:36:10.700589+00:00",
+  "automated_tests": {
+    "passed": 1171,
+    "skipped": 1,
+    "subtests_passed": 15,
+    "skip_reason": "No local raw-corpus snapshot for the existing freshness test",
+    "mode": "INTERPRET_VALIDATION=real; prepared HF_HOME; HF_HUB_OFFLINE=1"
+  },
+  "local_ingestion": {
+    "passed": true,
+    "trace_id": "bed735c26458cdf900db2e2c5d9cb121",
+    "local_span_count": 3,
+    "langfuse_observation_count": 3,
+    "all_span_ids_received": true,
+    "synthetic_usage_only": true,
+    "live_model_calls": 0,
+    "currency": "INR",
+    "usd_to_inr": "94"
+  },
+  "wheel_required_assets_present": true,
+  "wheel_contains_runtime_secrets": false,
+  "base_compose_unchanged": true,
+  "public_login_tested": false,
+  "public_host_full_stack_restart_tested": false,
+  "notes": [
+    "Initial broad test run used the default empty Hugging Face cache and encountered tokenizer-download failures. The complete rerun with the prepared offline cache passed.",
+    "Local proxy verification used Docker copy because macOS blocked Docker bind mounts from Documents. The public guide targets a Linux Docker host.",
+    "No public DNS, ACME certificate issuance or destination-host browser session was available."
+  ]
+}

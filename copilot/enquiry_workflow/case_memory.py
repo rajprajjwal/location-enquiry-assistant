@@ -4,6 +4,7 @@ import re
 
 from copilot.enquiry_interpretation import rules
 from copilot.conversation_state import ConversationState
+from copilot.observability.tracing import phase
 
 
 _FIELDS = ("region", "monthly_volume", "current_provider", "timeline", "budget",
@@ -87,6 +88,7 @@ def _apply(state, event):
     ]
 
 
+@phase("conversation.load")
 def load_conversation(con, case_id):
     state = ConversationState(case_id)
     rows = con.execute(

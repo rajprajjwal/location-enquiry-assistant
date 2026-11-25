@@ -1,0 +1,35 @@
+{
+  "runs": {
+    "working-contract-validation": {
+      "cases": 10,
+      "arm_records": 20,
+      "unique_generations": 20,
+      "per_record_score_recomputation": "identical",
+      "aggregate_recomputation": "identical",
+      "duplicate_or_foreign_records": 0,
+      "endpoint_calls": 0
+    },
+    "frozen-paired": {
+      "cases": 80,
+      "arm_records": 160,
+      "unique_generations": 160,
+      "per_record_score_recomputation": "identical",
+      "aggregate_recomputation": "identical",
+      "duplicate_or_foreign_records": 0,
+      "endpoint_calls": 0
+    },
+    "holdout-final": {
+      "cases": 96,
+      "arm_records": 192,
+      "unique_generations": 192,
+      "per_record_score_recomputation": "identical",
+      "aggregate_recomputation": "identical",
+      "duplicate_or_foreign_records": 0,
+      "endpoint_calls": 0
+    }
+  },
+  "source_lock_unchanged": true,
+  "gt_unchanged": true,
+  "endpoint_calls": 0,
+  "holdout_exclusions_match_approval": true
+}

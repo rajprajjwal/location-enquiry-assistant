@@ -1,0 +1,406 @@
+{
+  "split": "working_eval",
+  "cases": 3,
+  "checks": [
+    {
+      "record_id": "GT-LBS-AC-092",
+      "reference_accuracy": 1.0,
+      "blank_accuracy": 0.0,
+      "max_fresh_judge_delta": 0.0,
+      "scores": [
+        {
+          "name": "reference",
+          "judgement": {
+            "answer_accuracy": 1.0,
+            "grounding": 1.0,
+            "comparison_completeness": 1.0,
+            "qualification_completeness": 1.0,
+            "history_use": 1.0,
+            "citation_supported": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "reasons": {
+              "answer_accuracy": "The answer correctly identifies which APIs support session-based pricing and provides accurate details about each, matching the reference answer.",
+              "grounding": "All factual assertions in the answer are supported by the provided citations, with each claim directly linked to the source evidence.",
+              "comparison_completeness": "The comparison includes all required providers, dimensions, equivalent requirements, and assumptions, as specified in the rubric.",
+              "qualification_completeness": "The qualification facts are preserved, and all missing required fields are identified, as expected.",
+              "history_use": "No historical facts were needed, so this score is not applicable."
+            }
+          },
+          "usage": {
+            "model_attempts": 1,
+            "embedding_attempts": 0,
+            "input_tokens": 1944,
+            "output_tokens": 202,
+            "embedding_tokens": 0,
+            "missing_usage_attempts": 0,
+            "usage_complete": true,
+            "cost_usd": "0.0002348",
+            "known_cost_usd": "0.0002348",
+            "cost_status": "complete",
+            "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+            "cost_inr": "0.0220712",
+            "known_cost_inr": "0.0220712",
+            "usd_to_inr": "94",
+            "currency": "INR",
+            "cost_basis": "illustrative",
+            "actual_endpoint_charge_inr": "0",
+            "actual_endpoint_charge_usd": "0",
+            "export_mode": "langfuse-local"
+          }
+        },
+        {
+          "name": "reference_repeat",
+          "judgement": {
+            "answer_accuracy": 1.0,
+            "grounding": 1.0,
+            "comparison_completeness": 1.0,
+            "qualification_completeness": 1.0,
+            "history_use": 1.0,
+            "citation_supported": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "reasons": {
+              "answer_accuracy": "The answer correctly identifies which APIs support session-based pricing and provides accurate details about each, matching the reference answer.",
+              "grounding": "All factual assertions in the answer are supported by the provided citations, with each citation directly supporting the claim it is attached to.",
+              "comparison_completeness": "The comparison includes all required providers, dimensions, equivalent requirements, and assumptions, as specified in the rubric.",
+              "qualification_completeness": "The qualification facts are preserved, and all missing required fields are identified, as expected.",
+              "history_use": "No historical facts were needed, so this score is not applicable."
+            }
+          },
+          "usage": {
+            "model_attempts": 1,
+            "embedding_attempts": 0,
+            "input_tokens": 1944,
+            "output_tokens": 204,
+            "embedding_tokens": 0,
+            "missing_usage_attempts": 0,
+            "usage_complete": true,
+            "cost_usd": "0.0002352",
+            "known_cost_usd": "0.0002352",
+            "cost_status": "complete",
+            "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+            "cost_inr": "0.0221088",
+            "known_cost_inr": "0.0221088",
+            "usd_to_inr": "94",
+            "currency": "INR",
+            "cost_basis": "illustrative",
+            "actual_endpoint_charge_inr": "0",
+            "actual_endpoint_charge_usd": "0",
+            "export_mode": "langfuse-local"
+          }
+        },
+        {
+          "name": "blank",
+          "judgement": {
+            "answer_accuracy": 0.0,
+            "grounding": 0.0,
+            "comparison_completeness": 0.0,
+            "qualification_completeness": 0.0,
+            "history_use": 0.0,
+            "citation_supported": [],
+            "reasons": {
+              "answer_accuracy": "The answer is empty, failing to address the query about which autocomplete APIs support session-based pricing.",
+              "grounding": "No factual assertions are made, so grounding is zero.",
+              "comparison_completeness": "The comparison section is empty, missing the required providers, dimensions, and assumptions.",
+              "qualification_completeness": "The qualification section is empty, missing required fields like region and monthly volume.",
+              "history_use": "The history is empty, so no historical facts are reused."
+            }
+          },
+          "usage": {
+            "model_attempts": 1,
+            "embedding_attempts": 0,
+            "input_tokens": 1212,
+            "output_tokens": 168,
+            "embedding_tokens": 0,
+            "missing_usage_attempts": 0,
+            "usage_complete": true,
+            "cost_usd": "0.0001548",
+            "known_cost_usd": "0.0001548",
+            "cost_status": "complete",
+            "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+            "cost_inr": "0.0145512",
+            "known_cost_inr": "0.0145512",
+            "usd_to_inr": "94",
+            "currency": "INR",
+            "cost_basis": "illustrative",
+            "actual_endpoint_charge_inr": "0",
+            "actual_endpoint_charge_usd": "0",
+            "export_mode": "langfuse-local"
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DIR-106",
+      "reference_accuracy": 1.0,
+      "blank_accuracy": 0.0,
+      "max_fresh_judge_delta": 0.0,
+      "scores": [
+        {
+          "name": "reference",
+          "judgement": {
+            "answer_accuracy": 1.0,
+            "grounding": 1.0,
+            "comparison_completeness": 1.0,
+            "qualification_completeness": 1.0,
+            "history_use": 1.0,
+            "citation_supported": [
+              true,
+              true
+            ],
+            "reasons": {
+              "answer_accuracy": "The answer correctly identifies the 422 error as related to out-of-coverage areas and cites the Ola documentation. It also provides a clear actionable solution.",
+              "grounding": "All factual assertions are supported by the provided citations from the Ola documentation.",
+              "comparison_completeness": "The comparison includes the required providers, dimensions, and assumptions, with the necessary source URLs.",
+              "qualification_completeness": "The qualification facts are preserved, and the missing required fields are identified.",
+              "history_use": "No historical data was needed, so this score is based on the absence of required data."
+            }
+          },
+          "usage": {
+            "model_attempts": 1,
+            "embedding_attempts": 0,
+            "input_tokens": 1244,
+            "output_tokens": 207,
+            "embedding_tokens": 0,
+            "missing_usage_attempts": 0,
+            "usage_complete": true,
+            "cost_usd": "0.0001658",
+            "known_cost_usd": "0.0001658",
+            "cost_status": "complete",
+            "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+            "cost_inr": "0.0155852",
+            "known_cost_inr": "0.0155852",
+            "usd_to_inr": "94",
+            "currency": "INR",
+            "cost_basis": "illustrative",
+            "actual_endpoint_charge_inr": "0",
+            "actual_endpoint_charge_usd": "0",
+            "export_mode": "langfuse-local"
+          }
+        },
+        {
+          "name": "reference_repeat",
+          "judgement": {
+            "answer_accuracy": 1.0,
+            "grounding": 1.0,
+            "comparison_completeness": 1.0,
+            "qualification_completeness": 1.0,
+            "history_use": 1.0,
+            "citation_supported": [
+              true,
+              true
+            ],
+            "reasons": {
+              "answer_accuracy": "The answer correctly identifies the 422 error as related to out-of-coverage areas and cites the Ola documentation. It also provides a clear actionable solution.",
+              "grounding": "All factual assertions are supported by the provided citations from the Ola documentation.",
+              "comparison_completeness": "The comparison includes the required providers, dimensions, and assumptions, with the necessary source URLs.",
+              "qualification_completeness": "The qualification facts are preserved, and the missing required fields are identified.",
+              "history_use": "No historical data was needed, so this score is based on the absence of required data."
+            }
+          },
+          "usage": {
+            "model_attempts": 1,
+            "embedding_attempts": 0,
+            "input_tokens": 1244,
+            "output_tokens": 207,
+            "embedding_tokens": 0,
+            "missing_usage_attempts": 0,
+            "usage_complete": true,
+            "cost_usd": "0.0001658",
+            "known_cost_usd": "0.0001658",
+            "cost_status": "complete",
+            "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+            "cost_inr": "0.0155852",
+            "known_cost_inr": "0.0155852",
+            "usd_to_inr": "94",
+            "currency": "INR",
+            "cost_basis": "illustrative",
+            "actual_endpoint_charge_inr": "0",
+            "actual_endpoint_charge_usd": "0",
+            "export_mode": "langfuse-local"
+          }
+        },
+        {
+          "name": "blank",
+          "judgement": {
+            "answer_accuracy": 0.0,
+            "grounding": 0.0,
+            "comparison_completeness": 0.0,
+            "qualification_completeness": 0.0,
+            "history_use": 0.0,
+            "citation_supported": [],
+            "reasons": {
+              "answer_accuracy": "The answer is empty and does not address the issue of the 422 error or provide a solution.",
+              "grounding": "No factual assertions are made, so grounding is zero.",
+              "comparison_completeness": "The comparison section is empty and does not include the required providers, dimensions, or assumptions.",
+              "qualification_completeness": "The qualification section is empty and does not include the required fields or identify missing information.",
+              "history_use": "The history section is empty, so no historical facts are used."
+            }
+          },
+          "usage": {
+            "model_attempts": 1,
+            "embedding_attempts": 0,
+            "input_tokens": 885,
+            "output_tokens": 176,
+            "embedding_tokens": 0,
+            "missing_usage_attempts": 0,
+            "usage_complete": true,
+            "cost_usd": "0.0001237",
+            "known_cost_usd": "0.0001237",
+            "cost_status": "complete",
+            "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+            "cost_inr": "0.0116278",
+            "known_cost_inr": "0.0116278",
+            "usd_to_inr": "94",
+            "currency": "INR",
+            "cost_basis": "illustrative",
+            "actual_endpoint_charge_inr": "0",
+            "actual_endpoint_charge_usd": "0",
+            "export_mode": "langfuse-local"
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "GT-LBS-DM-065",
+      "reference_accuracy": 1.0,
+      "blank_accuracy": 0.0,
+      "max_fresh_judge_delta": 0.0,
+      "scores": [
+        {
+          "name": "reference",
+          "judgement": {
+            "answer_accuracy": 1.0,
+            "grounding": 1.0,
+            "comparison_completeness": 0.0,
+            "qualification_completeness": 1.0,
+            "history_use": 1.0,
+            "citation_supported": [
+              true
+            ],
+            "reasons": {
+              "answer_accuracy": "The answer correctly states that Ola Distance Matrix distances are in meters and durations in seconds, matching the reference answer.",
+              "grounding": "The citation provided directly supports the claim about units, with the source text explicitly stating 'Units: distance (meters), duration (seconds).'",
+              "comparison_completeness": "No comparison was required as the question does not involve comparing providers or dimensions.",
+              "qualification_completeness": "All qualification fields are preserved, and the missing required fields are correctly identified.",
+              "history_use": "No historical data was needed, so the use of history is not applicable."
+            }
+          },
+          "usage": {
+            "model_attempts": 1,
+            "embedding_attempts": 0,
+            "input_tokens": 965,
+            "output_tokens": 194,
+            "embedding_tokens": 0,
+            "missing_usage_attempts": 0,
+            "usage_complete": true,
+            "cost_usd": "0.0001353",
+            "known_cost_usd": "0.0001353",
+            "cost_status": "complete",
+            "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+            "cost_inr": "0.0127182",
+            "known_cost_inr": "0.0127182",
+            "usd_to_inr": "94",
+            "currency": "INR",
+            "cost_basis": "illustrative",
+            "actual_endpoint_charge_inr": "0",
+            "actual_endpoint_charge_usd": "0",
+            "export_mode": "langfuse-local"
+          }
+        },
+        {
+          "name": "reference_repeat",
+          "judgement": {
+            "answer_accuracy": 1.0,
+            "grounding": 1.0,
+            "comparison_completeness": 0.0,
+            "qualification_completeness": 1.0,
+            "history_use": 1.0,
+            "citation_supported": [
+              true
+            ],
+            "reasons": {
+              "answer_accuracy": "The answer correctly states that Ola Distance Matrix distances are in meters and durations in seconds, matching the reference answer.",
+              "grounding": "The citation provided directly supports the claim about units, with the source text explicitly stating 'Units: distance (meters), duration (seconds).'",
+              "comparison_completeness": "No comparison was required as the question does not involve comparing providers or dimensions.",
+              "qualification_completeness": "All qualification fields are preserved, and the missing required fields are correctly identified.",
+              "history_use": "No historical data was needed, so the use of history is not applicable."
+            }
+          },
+          "usage": {
+            "model_attempts": 1,
+            "embedding_attempts": 0,
+            "input_tokens": 965,
+            "output_tokens": 194,
+            "embedding_tokens": 0,
+            "missing_usage_attempts": 0,
+            "usage_complete": true,
+            "cost_usd": "0.0001353",
+            "known_cost_usd": "0.0001353",
+            "cost_status": "complete",
+            "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+            "cost_inr": "0.0127182",
+            "known_cost_inr": "0.0127182",
+            "usd_to_inr": "94",
+            "currency": "INR",
+            "cost_basis": "illustrative",
+            "actual_endpoint_charge_inr": "0",
+            "actual_endpoint_charge_usd": "0",
+            "export_mode": "langfuse-local"
+          }
+        },
+        {
+          "name": "blank",
+          "judgement": {
+            "answer_accuracy": 0.0,
+            "grounding": 0.0,
+            "comparison_completeness": 0.0,
+            "qualification_completeness": 0.0,
+            "history_use": 0.0,
+            "citation_supported": [],
+            "reasons": {
+              "answer_accuracy": "The answer is empty, so it does not fulfill the rubric requirements.",
+              "grounding": "No factual assertions are made, so grounding is zero.",
+              "comparison_completeness": "No comparison data is provided, so completeness is zero.",
+              "qualification_completeness": "No qualification data is provided, so completeness is zero.",
+              "history_use": "No historical data is used, so completeness is zero."
+            }
+          },
+          "usage": {
+            "model_attempts": 1,
+            "embedding_attempts": 0,
+            "input_tokens": 741,
+            "output_tokens": 164,
+            "embedding_tokens": 0,
+            "missing_usage_attempts": 0,
+            "usage_complete": true,
+            "cost_usd": "0.0001069",
+            "known_cost_usd": "0.0001069",
+            "cost_status": "complete",
+            "rate_source": "Illustrative reporting assumptions; institute endpoint access is free",
+            "cost_inr": "0.0100486",
+            "known_cost_inr": "0.0100486",
+            "usd_to_inr": "94",
+            "currency": "INR",
+            "cost_basis": "illustrative",
+            "actual_endpoint_charge_inr": "0",
+            "actual_endpoint_charge_usd": "0",
+            "export_mode": "langfuse-local"
+          }
+        }
+      ]
+    }
+  ],
+  "calibration_passed": true,
+  "fresh_judge_repeatability_passed": true,
+  "scope": "Positive/empty controls using supplied reference citations. This does not establish human agreement or independent source verification."
+}

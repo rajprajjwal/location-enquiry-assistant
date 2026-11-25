@@ -5,6 +5,7 @@ import re
 
 from copilot.model_gateway.client import BudgetExceeded, ConfigError, LLMClient, LLMError
 from copilot.safety.pii import redact
+from copilot.observability.tracing import phase
 from copilot.rag.document_retrieval.query_analyzer import detect
 
 from .follow_up_decisions import OPEN_QUALIFICATION, staff_question
@@ -39,6 +40,7 @@ Return only {"questions":[{"field":"short_snake_case_name","facts":["missing_fac
 """
 
 
+@phase("follow_up_planning")
 def add_follow_up_questions(result, enquiry, *, client=None):
     """Enrich the staff-facing output while leaving the active reply unchanged."""
     if result.get("diagnostic_context") is not None:

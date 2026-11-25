@@ -1,0 +1,31 @@
+{
+  "type": "ValueError",
+  "message": "Citation format repair did not bind to the prediction",
+  "traceback": "Traceback (most recent call last):\n  File \"results/evaluation/verification/recover_saved_judgement.py\", line 68, in main\n    result=judge.evaluate(case,prediction,evidence,RecordingClient())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/judge.py\", line 52, in evaluate\n    raise ValueError('Citation format repair did not bind to the prediction')\nValueError: Citation format repair did not bind to the prediction\n",
+  "calls": [
+    {
+      "request_sha256": "242f9d64101bdb81f5708a1954e2339f24edd81c9495bcd22ab49647f3c3ae07",
+      "parameters": {
+        "max_tokens": 1024,
+        "temperature": 0,
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "finish_reason": "stop",
+      "response_text": "{\n  \"answer_accuracy\": 0.0,\n  \"grounding\": 0.0,\n  \"comparison_completeness\": 0.0,\n  \"qualification_completeness\": 0.0,\n  \"history_use\": 0.0,\n  \"citation_supported\": [],\n  \"reasons\": {\n    \"answer_accuracy\": \"The answer incorrectly states that abandoned sessions do not count toward billing, while the reference indicates that abandoned sessions revert to per-request pricing.\",\n    \"grounding\": \"No factual assertions in the answer are supported by the provided evidence. The citation does not support the claim that billing is based on API requests, not user sessions.\",\n    \"comparison_completeness\": \"The comparison is not applicable and lacks required providers, dimensions, and assumptions.\",\n    \"qualification_completeness\": \"The qualification includes incorrect API (reverse_geocode) and omits required fields like monthly_volume and timeline.\",\n    \"history_use\": \"No historical facts or checks are reused.\"\n  }\n}"
+    },
+    {
+      "request_sha256": "53d892dcd69b2c538b4a3e6269feb82a34a30bc9b005ebb7679a6645570bf935",
+      "parameters": {
+        "max_tokens": 256,
+        "temperature": 0,
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "finish_reason": "stop",
+      "response_text": "{\"citation_supported\":[]}"
+    }
+  ]
+}

@@ -1,6 +1,5 @@
 # Development and evaluation dependencies, including the application runtime.
 -r requirements-app.txt
-openpyxl>=3.0
-pandas>=2.0
+-r copilot/evaluation/requirements.txt
 datamodel-code-generator==0.96.0
 pytest==9.2.0

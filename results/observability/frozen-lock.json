@@ -1,0 +1,26 @@
+{
+  "purpose": "Locked before frozen tracing acceptance",
+  "retrieval": "bm25",
+  "working_validation": "results/observability/working-verified/summary.json",
+  "source_sha256": {
+    "copilot/observability/tracing.py": "8776671a7cdda832516c85c0a9bccd255cdfb57a7177b8c62890b4014f0355a3",
+    "copilot/observability/viewer.py": "24415db5ab26055512aef11acb2dbfc16c0ba6334a4ade96721ea1c2f975d4d0",
+    "copilot/observability/__init__.py": "9a62ad8530c88dde755839e41b62b496d71f843a56aee5f3d47061d82ecba646",
+    "copilot/observability/streamlit_app.py": "da3ab20c10ef06fc079ef1b3c03f62d776beea3e4a79448b74e3e2a08ad2bee6",
+    "copilot/observability/storage.py": "fe2650e28be496fcd883f835f584dd0da851c006005b0950573ae704207531e3",
+    "copilot/observability/costs.py": "2594a0bb7434533a5c1a5d6e9473d51ae59f89deef1c27d8d185a61e0168fda3",
+    "copilot/observability/langfuse_local.py": "bc9597f64cee2e769fa556d71c3cd3dc4c74288c3b47f5f7ecf3f1cc60daa3cd",
+    "copilot/observability/exporters.py": "08ebc2a557ee019946aa35d6823e524df46f056b00db0912c9aaf539d9c39b60",
+    "copilot/observability/sync_deletions.py": "ab742c96dd198b16704f2bd5f89871eb13a9492dce2de92d61e960b15313a3c9",
+    "copilot/observability/verification/prepare_inputs.py": "3d1273ac8eda3707e4498f9cc972e710e3ecf925c80f371a02f9459a8e5737c6",
+    "copilot/observability/verification/prepare_frozen.py": "84a95b17ce37f49295f8628c74960986d47d0eaa5178ef5859583a4f32e403b5",
+    "copilot/observability/verification/verify_runs.py": "487b41c5482d427be24a792a926dae0693d025a4d9917ed0126665ea670ac4bf",
+    "copilot/observability/verification/__init__.py": "23a63cd449cdcdce8ded798af107fde9944f0045412da2b0460f028630c5b234",
+    "copilot/observability/verification/langfuse_smoke.py": "7e99f15f0f1c56d53f707d72c41d9940dbc2f3a11f92cc57dc96e61204c496cf",
+    "copilot/observability/verification/delete_smoke.py": "38f27ea48b5caf7ce7421b5ce788bf4fa52632aeb0becfd3a729104e64522188",
+    "copilot/config/observability.yaml": "50d36128bbdffc28a43ecd79fb92cdc848c19d8c34741208c9bb32ce76cddb37"
+  },
+  "gt_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "frozen_inputs_sha256": "919e8001538ba6c98c04a7c8e45525fbc984c44004a44191d4c0381b83d136f1",
+  "holdout_selected": 0
+}

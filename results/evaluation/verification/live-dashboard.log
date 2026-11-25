@@ -1,0 +1,7 @@
+2026-11-25 16:53:29.990 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-25 16:53:31.800 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+{"passed": true, "metric_count": 29, "completed_runs_discovered": 6, "live_artifacts": true, "endpoint_calls": 0}

@@ -3,6 +3,7 @@ from hashlib import sha256
 import json
 
 from pydantic import ValidationError
+from copilot.observability.tracing import phase
 
 from copilot.enquiry_workflow.routing import asks_qualification
 from copilot.response_drafting.schemas import validate_outputs
@@ -10,6 +11,7 @@ from .decisions import RequirementPlan
 from .task import effective_customer_task
 
 
+@phase("output_validation")
 def finalize_requirements(result, enquiry):
     """Keep route and pending controls intact; validate the final assembled output."""
     if 'requirement_plan' not in result:
