@@ -8,9 +8,17 @@ import streamlit as st
 
 from copilot.enquiry_workflow.cases import run_case
 from copilot.enquiry_workflow.deletion import delete_enquiry
-from copilot.enquiry_workflow.retrieval import rag_document_search, retrieval_setup_issues
+from copilot.enquiry_workflow.retrieval import (
+    rag_document_search, retrieval_setup_issues, warm_retrieval_runtime, RetrievalUnavailable,
+)
 from copilot.case_storage import cases, handlers, traces
 from copilot.case_storage.db import DB_PATH, connect
+
+@st.cache_resource(show_spinner=False)
+def load_hybrid_runtime():
+    warm_retrieval_runtime()
+    return True
+
 
 st.set_page_config(page_title="Location Enquiry Assistant", layout="wide")
 st.title("Location Enquiry Assistant")
@@ -37,6 +45,14 @@ with closing(connect(DB_PATH)) as con:
 
         mode = st.radio("Retrieval", ["BM25", "Hybrid with reranking"], horizontal=True)
         hybrid_issues = retrieval_setup_issues() if mode == "Hybrid with reranking" else []
+        if mode == "Hybrid with reranking" and not hybrid_issues:
+            try:
+                with st.spinner("Loading the reranker before starting an enquiry…"):
+                    load_hybrid_runtime()
+            except RetrievalUnavailable as exc:
+                hybrid_issues = [str(exc)]
+            except Exception:
+                hybrid_issues = ["The reranker could not load. Run the hybrid preparation and setup check commands."]
         if hybrid_issues:
             st.warning("Hybrid retrieval is unavailable. " + " ".join(hybrid_issues))
             st.caption("Choose BM25 to run this enquiry now.")

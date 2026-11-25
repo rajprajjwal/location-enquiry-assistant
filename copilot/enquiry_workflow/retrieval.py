@@ -45,6 +45,20 @@ def retrieval_setup_issues(mode: str = "hybrid", *, rerank: bool = True) -> list
     return issues
 
 
+
+def warm_retrieval_runtime() -> None:
+    """Load and warm cached reranker weights before starting an enquiry deadline."""
+    from huggingface_hub import try_to_load_from_cache
+    from copilot.rag.model_assets import RERANK_MODEL, RERANK_REVISION
+    from copilot.rag.document_retrieval.rerank import _model
+
+    for filename in ("model.safetensors", "config.json", "tokenizer_config.json", "tokenizer.json"):
+        cached = try_to_load_from_cache(RERANK_MODEL, filename, revision=RERANK_REVISION)
+        if not isinstance(cached, str) or not Path(cached).is_file():
+            raise RetrievalUnavailable("Run python -m copilot.deployment.prepare --mode hybrid before using hybrid retrieval.")
+    _model().predict([("Location API documentation", "Directions API documentation")])
+
+
 def rag_document_search(
     *, mode: str = "hybrid", rerank: bool = True
 ) -> DocumentSearchTool:
