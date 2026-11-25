@@ -1,0 +1,16 @@
+{
+  "frozen-paired": {
+    "metric_count": 29,
+    "displayed_values_match_saved_summary": true,
+    "bucket_api_team_filters": "passed",
+    "exceptions": 0,
+    "endpoint_calls": 0
+  },
+  "holdout-final": {
+    "metric_count": 29,
+    "displayed_values_match_saved_summary": true,
+    "bucket_api_team_filters": "passed",
+    "exceptions": 0,
+    "endpoint_calls": 0
+  }
+}

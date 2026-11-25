@@ -1,6 +1,16 @@
 # Evaluation and dashboard results
 
-**Paused:** 24/80 frozen pairs are fully scored. The next baseline generation is cached; holdout is unstarted. Resume from `resume-checkpoint.json` without restarting selection or validation.
+## Final status
+
+- **Activity 22:** implementation and the final paired campaign have finished: 80 frozen cases and 96 eligible holdout cases. Frozen has zero generation/judge/retrieval errors. Holdout has one automatic-judge error, so error-free final acceptance remains pending.
+- **Activity 23:** complete. Both final runs display all 29 metrics, and bucket, API and team filters pass. Saved metric recomputation is exact with no endpoint calls.
+- **Data integrity:** GT, implementation and tracked resources are unchanged. All pre-pause saved generations and scores remain intact. Seven flagged holdout records remain excluded; holdout approval is provisional.
+
+The unscored holdout judgement is the baseline answer for **GT-LBS-AC-050** (`ValueError`). Generation succeeded and its output is saved. Automatic answer accuracy uses 95 baseline cases versus 96 agent cases. On the same 95 successfully judged pairs, baseline accuracy is **40.85%** and agent accuracy is **60.91%**. No judgement was replaced, and no frozen/holdout result was used to change the locked implementation.
+
+Frozen agent citation coverage is **95.71% across 70 drafts**; citation precision is **96.68%**. Holdout agent coverage is **98.73% across 79 drafts** and precision is **98.92%**. These citation metrics do not imply complete answers: automatic comparison completeness is only **34.04%** on frozen and **25.12%** on holdout. The tables retain these quality gaps.
+
+One frozen agent generation has incomplete provider usage; its full illustrative cost is unavailable, so the agent cost mean uses 79/80 frozen cases. Actual institute endpoint access remains free.
 
 The harness compares the existing agent with a plain-model baseline using identical enquiries and history. References and expected labels are isolated from generation. Scores for accuracy, grounding, comparison completeness and history use are automatic model judgements; qualification uses deterministic strict field agreement, not independent human ratings.
 
@@ -56,6 +66,82 @@ Cases: 10; paired cases: 10; generation/judge/retrieval errors: 0.
 | Estimated evaluation judge cost (INR) | 0.016024 | 0.046540 | 10/10 | 10/10 |
 | Independent retrieval probe latency (ms) | Not scored / N/A | 8271.71 | 0/10 | 10/10 |
 | Estimated retrieval probe cost (INR) | Not scored / N/A | 0.000055 | 0/10 | 10/10 |
+
+Saved metric reaggregation: **pass**, zero numerical change and zero endpoint calls.
+
+### frozen-paired
+
+Cases: 80; paired cases: 80; generation/judge/retrieval errors: 0.
+
+| Metric | Baseline | Agent | Baseline scored | Agent scored |
+|---|---:|---:|---:|---:|
+| Rubric answer accuracy (ratio) | 39.15% | 69.20% | 80/80 | 80/80 |
+| Supported factual claims (ratio) | 14.71% | 71.75% | 80/80 | 80/80 |
+| Drafts with verified citations (ratio) | 2.50% | 95.71% | 80/80 | 70/80 |
+| Supported citations (ratio) | 3.57% | 96.68% | 66/80 | 70/80 |
+| Comparison completeness (ratio) | 9.50% | 34.04% | 40/80 | 40/80 |
+| Qualification completeness (strict fields) (ratio) | 47.92% | 90.69% | 80/80 | 80/80 |
+| History use (ratio) | 0.00% | 88.00% | 5/80 | 5/80 |
+| Owner correctness (ratio) | 26.25% | 90.00% | 80/80 | 80/80 |
+| Next-action correctness (ratio) | 27.50% | 100.00% | 80/80 | 80/80 |
+| Successful registered tool calls (ratio) | Not scored / N/A | 100.00% | 0/80 | 80/80 |
+| Expected tool coverage (ratio) | Not scored / N/A | 98.12% | 0/80 | 80/80 |
+| Prediction schema validity (ratio) | 100.00% | 100.00% | 80/80 | 80/80 |
+| Nonempty drafts (ratio) | 100.00% | 87.50% | 80/80 | 80/80 |
+| Verbatim span Recall@1 (ratio) | Not scored / N/A | 10.15% | 0/80 | 73/80 |
+| Verbatim span Recall@5 (ratio) | Not scored / N/A | 21.87% | 0/80 | 73/80 |
+| Verbatim span Recall@10 (ratio) | Not scored / N/A | 25.44% | 0/80 | 73/80 |
+| Source URL Recall@1 (ratio) | Not scored / N/A | 24.67% | 0/80 | 80/80 |
+| Source URL Recall@5 (ratio) | Not scored / N/A | 56.60% | 0/80 | 80/80 |
+| Source URL Recall@10 (ratio) | Not scored / N/A | 69.98% | 0/80 | 80/80 |
+| Verbatim span MRR (ratio) | Not scored / N/A | 28.75% | 0/80 | 73/80 |
+| Generation latency (ms) | 27118.92 | 11632.63 | 80/80 | 80/80 |
+| Estimated generation cost (INR) | 0.036018 | 0.045868 | 80/80 | 79/80 |
+| Reported input tokens (tokens) | 1453.69 | 4329.89 | 80/80 | 79/80 |
+| Reported output tokens (tokens) | 1188.99 | 271.84 | 80/80 | 79/80 |
+| Reported embedding tokens (tokens) | 0.00 | 30.32 | 80/80 | 79/80 |
+| Evaluation judge latency (ms) | 5716.43 | 6369.40 | 80/80 | 80/80 |
+| Estimated evaluation judge cost (INR) | 0.015044 | 0.041217 | 80/80 | 80/80 |
+| Independent retrieval probe latency (ms) | Not scored / N/A | 3888.87 | 0/80 | 80/80 |
+| Estimated retrieval probe cost (INR) | Not scored / N/A | 0.000037 | 0/80 | 80/80 |
+
+Saved metric reaggregation: **pass**, zero numerical change and zero endpoint calls.
+
+### holdout-final
+
+Cases: 96; paired cases: 96; generation/judge/retrieval errors: 1.
+
+| Metric | Baseline | Agent | Baseline scored | Agent scored |
+|---|---:|---:|---:|---:|
+| Rubric answer accuracy (ratio) | 40.85% | 60.80% | 95/96 | 96/96 |
+| Supported factual claims (ratio) | 15.78% | 66.08% | 95/96 | 96/96 |
+| Drafts with verified citations (ratio) | 1.05% | 98.73% | 95/96 | 79/96 |
+| Supported citations (ratio) | 1.28% | 98.92% | 70/96 | 79/96 |
+| Comparison completeness (ratio) | 2.38% | 25.12% | 42/96 | 43/96 |
+| Qualification completeness (strict fields) (ratio) | 37.04% | 91.32% | 96/96 | 96/96 |
+| History use (ratio) | 13.64% | 84.55% | 11/96 | 11/96 |
+| Owner correctness (ratio) | 33.33% | 73.96% | 96/96 | 96/96 |
+| Next-action correctness (ratio) | 22.92% | 85.42% | 96/96 | 96/96 |
+| Successful registered tool calls (ratio) | Not scored / N/A | 100.00% | 0/96 | 94/96 |
+| Expected tool coverage (ratio) | Not scored / N/A | 86.70% | 0/96 | 94/96 |
+| Prediction schema validity (ratio) | 100.00% | 100.00% | 96/96 | 96/96 |
+| Nonempty drafts (ratio) | 100.00% | 82.29% | 96/96 | 96/96 |
+| Verbatim span Recall@1 (ratio) | Not scored / N/A | 3.39% | 0/96 | 73/96 |
+| Verbatim span Recall@5 (ratio) | Not scored / N/A | 9.36% | 0/96 | 73/96 |
+| Verbatim span Recall@10 (ratio) | Not scored / N/A | 9.36% | 0/96 | 73/96 |
+| Source URL Recall@1 (ratio) | Not scored / N/A | 33.99% | 0/96 | 96/96 |
+| Source URL Recall@5 (ratio) | Not scored / N/A | 61.85% | 0/96 | 96/96 |
+| Source URL Recall@10 (ratio) | Not scored / N/A | 67.64% | 0/96 | 96/96 |
+| Verbatim span MRR (ratio) | Not scored / N/A | 19.41% | 0/96 | 73/96 |
+| Generation latency (ms) | 26453.28 | 9429.75 | 96/96 | 96/96 |
+| Estimated generation cost (INR) | 0.035129 | 0.053931 | 96/96 | 96/96 |
+| Reported input tokens (tokens) | 1450.34 | 5325.62 | 96/96 | 96/96 |
+| Reported output tokens (tokens) | 1143.38 | 202.36 | 96/96 | 96/96 |
+| Reported embedding tokens (tokens) | 0.00 | 34.83 | 96/96 | 96/96 |
+| Evaluation judge latency (ms) | 5363.77 | 6249.70 | 96/96 | 96/96 |
+| Estimated evaluation judge cost (INR) | 0.014572 | 0.040293 | 95/96 | 96/96 |
+| Independent retrieval probe latency (ms) | Not scored / N/A | 3532.06 | 0/96 | 96/96 |
+| Estimated retrieval probe cost (INR) | Not scored / N/A | 0.000045 | 0/96 | 96/96 |
 
 Saved metric reaggregation: **pass**, zero numerical change and zero endpoint calls.
 

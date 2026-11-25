@@ -1,0 +1,19 @@
+{
+  "tracked_resource_hashes_unchanged": 33,
+  "pre_pause_frozen_journals_preserved": true,
+  "holdout_scored_pairs": 95,
+  "holdout_common_case_accuracy": {
+    "baseline": 0.4085263157894737,
+    "agent": 0.6091231578947366
+  },
+  "errors": [
+    {
+      "record_id": "GT-LBS-AC-050",
+      "arm": "baseline",
+      "generation_error": null,
+      "judge_error": "ValueError",
+      "retrieval_error": null
+    }
+  ],
+  "endpoint_calls_for_this_check": 0
+}

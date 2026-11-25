@@ -1,34 +1,36 @@
 {
-  "status": "paused_by_user",
-  "activity_22": "implementation and working validation complete; final evaluation paused",
-  "activity_23": "implemented and verified; server stopped for pause",
+  "status": "completed_with_limitations",
+  "activity_22": "Final campaign executed; one baseline judge result remains unscored",
+  "activity_23": "Complete; dashboard verified against both final runs",
   "branch": "feat/evaluation-observability",
   "implementation_commit": "388fb26",
   "packaging_commit": "e96b78f",
-  "frozen_completed_pairs": 24,
-  "frozen_scored_arm_records": 48,
-  "saved_generations": 49,
-  "cached_pending_scoring": [
-    {
-      "record_id": "GT-LBS-DIR-039",
-      "arm": "baseline"
-    }
-  ],
+  "frozen_completed_pairs": 80,
+  "frozen_scored_arm_records": 160,
   "ambiguous_generation": false,
-  "holdout_started": false,
+  "holdout_started": true,
   "selected_baseline": "self_consistency",
   "fresh_judge_delta": 0.0,
   "working_validation_pairs": 10,
   "gt_edited": false,
   "holdout_approval": "Provisional owner authorization; seven flagged holdout records excluded, leaving 96.",
-  "resume_commands": [
-    "python -m copilot.observability.langfuse_local start",
-    "Configure the existing shared chat/embedding credentials and certificates; use the existing verification environment.",
-    "python -m copilot.evaluation.runner --split frozen --selection results/evaluation/locked-selection.json --mode hybrid --out results/evaluation/frozen-paired",
-    "After frozen completion and inspection, run the protected final holdout command from copilot/evaluation/README.md once.",
-    "Restart the dashboard and report monitor after inference resumes."
-  ],
+  "resume_commands": [],
   "verification_python": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/bin/python",
   "private_environment_loader": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/activity21/evaluation_environment.py",
-  "important": "Do not restart baseline selection or completed working validation. The next frozen baseline is already generated; resume scores it from the journal without regeneration."
+  "important": "Final inference campaign has finished. Do not start another holdout run or tune from final scores. See README.md and final-report.json for limitations.",
+  "resumed_from_saved_generation": {
+    "record_id": "GT-LBS-DIR-039",
+    "arm": "baseline"
+  },
+  "active_log": "results/evaluation/verification/resumed-evaluation.log",
+  "saved_generations_at_pause": 49,
+  "cached_pending_scoring_at_pause": [
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "arm": "baseline"
+    }
+  ],
+  "holdout_completed_pairs": 96,
+  "holdout_scored_arm_records": 192,
+  "holdout_ledger_state": "completed_with_errors"
 }

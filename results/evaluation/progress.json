@@ -3,7 +3,7 @@
     22,
     23
   ],
-  "status": "paused_by_user",
+  "status": "completed_with_limitations",
   "implemented": [
     "Canonical paired prediction contract",
     "Four plain-model prompting strategies through the shared client",
@@ -22,13 +22,11 @@
     "reference_calibration_cases": 3,
     "reference_repeat_maximum_delta": 0
   },
-  "active_results": "results/evaluation/verification/contract-acceptance.log",
+  "active_results": "results/evaluation/verification/resumed-evaluation.log",
   "pending": [
-    "Finish locked 80-case frozen comparison",
-    "Run the 96-case provisional holdout once at the end",
-    "Publish final reports and saved dashboard verification"
+    "One holdout baseline judge failed; automatic quality metrics cover 95 baseline cases and 96 agent cases. The failed judgement was not replaced.",
+    "Holdout approval remains provisional owner authorization; independent gold review is not claimed."
   ],
-  "holdout_model_calls": 0,
   "gt_edited": false,
   "holdout_approval": "provisional owner authorization",
   "holdout_exclusions": 7,
@@ -38,7 +36,6 @@
     "Verified pricing source snapshots join citation evidence"
   ],
   "baseline_contract_change": "Synthetic examples and prompt require all shared qualification fields with explicit unknowns",
-  "frozen_model_calls": 0,
   "selected_baseline": "self_consistency",
   "selection_cases": 10,
   "validation_pairs": 10,
@@ -50,30 +47,25 @@
   "stages": {
     "frozen-paired": {
       "target_pairs": 80,
-      "completed_pairs": 23,
-      "arm_records": 47,
+      "completed_pairs": 80,
+      "arm_records": 160,
       "generation_errors": 0,
       "judge_errors": 0,
       "retrieval_errors": 0
     },
     "holdout-final": {
       "target_pairs": 96,
-      "completed_pairs": 0,
-      "arm_records": 0,
+      "completed_pairs": 96,
+      "arm_records": 192,
       "generation_errors": 0,
-      "judge_errors": 0,
+      "judge_errors": 1,
       "retrieval_errors": 0
     }
   },
-  "holdout_model_calls_started": false,
+  "holdout_model_calls_started": true,
   "frozen_model_calls_started": true,
-  "frozen_completed_pairs": 24,
-  "frozen_scored_arm_records": 48,
-  "saved_generations": 49,
-  "cached_pending_scoring": [
-    {
-      "record_id": "GT-LBS-DIR-039",
-      "arm": "baseline"
-    }
-  ]
+  "resume_checkpoint": "results/evaluation/resume-checkpoint.json",
+  "final_report": "results/evaluation/README.md",
+  "artifact_audit_passed": true,
+  "dashboard_final_runs_passed": true
 }
