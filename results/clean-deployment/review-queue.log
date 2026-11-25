@@ -1,0 +1,41 @@
+2026-11-25 12:46:45.770 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+few-shot: TRACKB_GT_CSV unset or missing; running zero-shot (12 ids skipped)
+1/20 record_update approve
+2/20 record_update edit
+3/20 record_update reject
+4/20 record_update approve
+5/20 record_update edit
+6/20 record_update reject
+7/20 record_update approve
+8/20 record_update edit
+9/20 record_update reject
+10/20 record_update approve
+11/20 escalation approve
+12/20 escalation edit
+13/20 escalation reject
+14/20 escalation approve
+15/20 escalation edit
+16/20 escalation reject
+17/20 escalation approve
+18/20 escalation edit
+19/20 escalation reject
+20/20 escalation approve
+2026-11-25 12:46:48.184 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+{
+  "scenario_count": 20,
+  "held_for_review": 20,
+  "complete_audit_records": 20,
+  "decisions": {
+    "approve": 8,
+    "edit": 6,
+    "reject": 6
+  },
+  "action_types": {
+    "record_update": 10,
+    "escalation": 10
+  },
+  "unauthorized_approval_blocked": 20,
+  "reviewer": "synthetic authorized acceptance reviewer in isolated configuration",
+  "scope": "Real workflow proposals and Streamlit review UI. Scripted model responses, controlled follow-up selector, diagnostic planning disabled.",
+  "passed": true
+}

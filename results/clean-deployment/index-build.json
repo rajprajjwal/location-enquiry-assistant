@@ -1,0 +1,35 @@
+{
+  "built_at_utc": "2026-11-25T07:12:04+00:00",
+  "input": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/copilot/rag/data/processed/chunks.jsonl",
+  "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+  "source_manifest_sha256": "98e5ff54e5903b18f45fc9312c2e1d9f37f59f21d2ee4d8b0d60ec4a966c36b3",
+  "documents": 509,
+  "chunks": 7576,
+  "chunk_budget": 480,
+  "max_tokens": 480,
+  "bm25_chunks_verified": 7576,
+  "dense_chunks_verified": 7576,
+  "dense_collection": "lbs_chunks_endpoint",
+  "previous_dense_collection": null,
+  "embedding": {
+    "backend": "endpoint",
+    "model": "bge-small-en-v1.5",
+    "dim": 384
+  },
+  "elapsed_ms": 536167,
+  "smoke_query": "Google Maps Platform Page Summary",
+  "bm25_source_urls": [
+    "https://developers.google.com/maps/coverage",
+    "https://developers.google.com/maps/billing-and-pricing/pricing-india",
+    "https://developers.google.com/maps/documentation/routes/coverage-two-wheeled",
+    "https://developers.google.com/maps/faq",
+    "https://developers.google.com/maps/documentation/routes/route-modifiers"
+  ],
+  "dense_source_urls": [
+    "https://developers.google.com/maps/faq",
+    "https://developers.google.com/maps/documentation/geocoding/policies",
+    "https://developers.google.com/maps/faq",
+    "https://developers.google.com/maps/support",
+    "https://developers.google.com/maps/billing-and-pricing/overview"
+  ]
+}

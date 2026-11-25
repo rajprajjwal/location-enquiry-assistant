@@ -1,0 +1,29 @@
+Verified BM25 for 509 documents and 7576 chunks. Building dense index.
+  embedded 16/256
+  embedded 176/256
+Indexed 256/7576 chunks.
+  embedded 16/256
+  embedded 176/256
+Indexed 512/7576 chunks.
+  embedded 16/256
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/copilot/rag/document_indexing/build_index.py", line 250, in <module>
+    main()
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/copilot/rag/document_indexing/build_index.py", line 246, in main
+    rebuild(args.raw_snapshot, args.report)
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/copilot/rag/document_indexing/build_index.py", line 188, in rebuild
+    embed_batches(candidate, chunks, model["dim"])
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/copilot/rag/document_indexing/build_index.py", line 114, in embed_batches
+    vectors = embed_docs([chunk["text"] for chunk in batch])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/copilot/rag/document_indexing/embed.py", line 117, in embed_docs
+    return _endpoint_embed(texts, progress=len(texts) > 64)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/copilot/rag/document_indexing/embed.py", line 101, in _endpoint_embed
+    out += _post_batch(texts[i:i + ENDPOINT_BATCH])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/copilot/rag/document_indexing/embed.py", line 95, in _post_batch
+    raise EmbeddingError(f"embedding endpoint unavailable after {retries + 1} attempts ({last})")
+copilot.rag.document_indexing.embed.EmbeddingError: embedding endpoint unavailable after 7 attempts (ConnectError: [Errno 51] Network is unreachable)

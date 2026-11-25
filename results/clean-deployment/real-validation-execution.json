@@ -1,0 +1,16 @@
+{
+  "step": "real-validation",
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/enquiry_interpretation",
+    "tests/model_gateway",
+    "tests/validation"
+  ],
+  "exit_code": 0,
+  "duration_ms": 7025,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

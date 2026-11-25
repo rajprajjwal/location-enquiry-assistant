@@ -1,0 +1,17 @@
+{
+  "step": "check-bm25",
+  "command": [
+    "python",
+    "-m",
+    "copilot.deployment.check",
+    "--mode",
+    "bm25",
+    "--live",
+    "--report",
+    "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/results/clean-deployment/setup-bm25.json"
+  ],
+  "exit_code": 0,
+  "duration_ms": 4310,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

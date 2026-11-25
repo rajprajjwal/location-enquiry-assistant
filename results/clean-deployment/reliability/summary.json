@@ -1,0 +1,16 @@
+{
+  "runs": 50,
+  "passed": 50,
+  "failures": 0,
+  "task_failure_rate": 0.0,
+  "recovered_answers": 15,
+  "expected_safe_fallbacks": 35,
+  "schema_valid": 50,
+  "max_retries_per_step": 2,
+  "budget_overruns": 0,
+  "unapproved_decisions": 0,
+  "evaluation_data_used": false,
+  "network_calls": 0,
+  "diagnostic_planning": false,
+  "acceptance_met": true
+}

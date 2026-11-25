@@ -1,0 +1,75 @@
+{
+  "status": "passed_with_one_documented_test_skip",
+  "tested_runtime_commit": "17654993b8024fa9dad00d3fb3ea4c6965989990",
+  "platform": "macOS ARM64, Python 3.12.14",
+  "clean_install": true,
+  "system_site_packages": false,
+  "extra_pythonpath": false,
+  "pip_check_exit_code": 0,
+  "compilation": {
+    "passed": true,
+    "files": 266,
+    "errors": []
+  },
+  "automated_tests": {
+    "passed": 1127,
+    "skipped": 1,
+    "subtests_passed": 15,
+    "exit_code": 0
+  },
+  "real_validator_tests": {
+    "passed": 167,
+    "subtests_passed": 4,
+    "exit_code": 0,
+    "overlaps_full_suite": true
+  },
+  "model_preparation_exit_code": 0,
+  "offline_reranker_passed": true,
+  "index": {
+    "documents": 509,
+    "chunks": 7576,
+    "chunk_budget": 480,
+    "max_tokens": 480,
+    "bm25_chunks_verified": 7576,
+    "dense_chunks_verified": 7576,
+    "previous_dense_collection": null,
+    "embedding": {
+      "backend": "endpoint",
+      "model": "bge-small-en-v1.5",
+      "dim": 384
+    }
+  },
+  "bm25_setup_passed": true,
+  "hybrid_setup_passed": true,
+  "ui_checks": {
+    "bm25": 11,
+    "hybrid": 11,
+    "both_passed": true
+  },
+  "review_queue": {
+    "scenarios": 20,
+    "passed": true
+  },
+  "reliability_faults": {
+    "scenarios": 50,
+    "passed": true
+  },
+  "startup_passed": true,
+  "wheel_check_passed": true,
+  "integrity": {
+    "gt_sha256_after": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+    "gt_unchanged": true,
+    "corpus_sha256_after": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+    "corpus_unchanged": true,
+    "clean_clone_gt_matches": true,
+    "clean_clone_corpus_matches": true,
+    "new_frozen_or_holdout_scoring": false,
+    "original_project_venv_modified": false
+  },
+  "limits": [
+    "Freshness integration test skipped because no dated raw-source snapshot is bundled.",
+    "Verified locally on macOS ARM64 with Python 3.12; other platforms were not tested.",
+    "Shared hosting still requires authenticated access; reviewer selection is not authentication.",
+    "Deployment verification does not close answer-quality criteria or complete Activities 21\u201323."
+  ]
+}

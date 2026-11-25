@@ -1,0 +1,15 @@
+{
+  "step": "install-dev",
+  "command": [
+    "python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "requirements.txt"
+  ],
+  "exit_code": 0,
+  "duration_ms": 19212,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

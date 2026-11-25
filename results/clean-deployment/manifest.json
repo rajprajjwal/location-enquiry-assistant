@@ -1,0 +1,14 @@
+{
+  "candidate_commit": "17654993b8024fa9dad00d3fb3ea4c6965989990",
+  "clean_checkout": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout",
+  "clean_venv": true,
+  "previous_dependencies_or_index_copied": false,
+  "new_model_cache": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.model-cache",
+  "pythonpath_required": false,
+  "platform": "macOS-14.6.1-arm64-arm-64bit",
+  "gt_sha256_before": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "corpus_sha256_before": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+  "scored_frozen_or_holdout_runs": false,
+  "tested_runtime_commit": "17654993b8024fa9dad00d3fb3ea4c6965989990",
+  "clean_checkout_status": ""
+}

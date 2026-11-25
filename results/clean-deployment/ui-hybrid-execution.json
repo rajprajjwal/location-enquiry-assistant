@@ -1,0 +1,14 @@
+{
+  "step": "ui-hybrid",
+  "command": [
+    "python",
+    "-m",
+    "copilot.enquiry_workflow.verification.verify_ui",
+    "--retrieval",
+    "hybrid"
+  ],
+  "exit_code": 0,
+  "duration_ms": 109633,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

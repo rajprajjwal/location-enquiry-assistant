@@ -1,0 +1,14 @@
+{
+  "step": "tests",
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/results/clean-deployment/pytest.xml"
+  ],
+  "exit_code": 0,
+  "duration_ms": 22923,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

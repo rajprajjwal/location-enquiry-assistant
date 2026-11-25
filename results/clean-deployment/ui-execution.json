@@ -1,0 +1,14 @@
+{
+  "step": "ui",
+  "command": [
+    "python",
+    "-m",
+    "copilot.enquiry_workflow.verification.verify_ui",
+    "--retrieval",
+    "bm25"
+  ],
+  "exit_code": 0,
+  "duration_ms": 67954,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

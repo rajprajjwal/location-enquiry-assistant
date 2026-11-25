@@ -1,0 +1,14 @@
+{
+  "step": "index",
+  "command": [
+    "python",
+    "-m",
+    "copilot.rag.document_indexing.build_index",
+    "--report",
+    "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/results/clean-deployment/index-build.json"
+  ],
+  "exit_code": 1,
+  "duration_ms": 264803,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

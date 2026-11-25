@@ -1,0 +1,14 @@
+WARNING: The directory '/Users/shahidkamal/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: location-enquiry-assistant
+  Building wheel for location-enquiry-assistant (pyproject.toml): started
+  Building wheel for location-enquiry-assistant (pyproject.toml): finished with status 'done'
+  Created wheel for location-enquiry-assistant: filename=location_enquiry_assistant-0.1.0-py3-none-any.whl size=2169915 sha256=6593d1c11e03dad595a05c8885abd114a042c074072245e975b71576167addcd
+  Stored in directory: /private/var/folders/nh/flbn7n492yn_n7xp0l3w0v7r0000gn/T/pip-ephem-wheel-cache-gr51jz0y/wheels/3e/80/11/8f4a0814c96bb9cadf83c4dd29a91b6c8a9c7f6bd86d563ead
+Successfully built location-enquiry-assistant

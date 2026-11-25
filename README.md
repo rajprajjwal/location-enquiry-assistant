@@ -15,6 +15,8 @@ Sales and support copilot for location API enquiries, built for the institute's 
 | `copilot/response_drafting/`, `copilot/pricing_tools/` | Structure responses and calculate sourced pricing. |
 | `copilot/case_storage/` | SQLite persistence for cases, approvals, sandbox records, and traces. |
 | `copilot/streamlit_ui/` | Staff interface for enquiries, approvals, and traces. |
+| `copilot/deployment/` | Prepare model assets and check installation, configuration and live access. |
+| `results/clean-deployment/` | Clean-checkout installation, index rebuild and end-to-end verification evidence. |
 | `copilot/enquiry_workflow/verification/` | Synthetic UI and frozen workflow verification scripts. |
 | `copilot/enquiry_workflow/results/` | Saved workflow verification results. |
 | `copilot/validation/specification_checks/` | Standalone C1 checker, guide, and saved report. |

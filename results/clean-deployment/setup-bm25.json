@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "mode": "bm25",
+  "live_requested": true,
+  "checks": [
+    {
+      "check": "dependencies",
+      "passed": true,
+      "detail": [
+        "streamlit",
+        "yaml",
+        "bs4",
+        "lxml",
+        "rank_bm25",
+        "openai",
+        "langgraph.graph"
+      ]
+    },
+    {
+      "check": "chat_tokenizer",
+      "passed": true,
+      "detail": "Pinned Qwen tokenizer verified"
+    },
+    {
+      "check": "chat_configuration",
+      "passed": true,
+      "detail": "Chat credentials and CA loaded; no request sent"
+    },
+    {
+      "check": "case_storage",
+      "passed": true,
+      "detail": "Local case database is writable and valid"
+    },
+    {
+      "check": "reviewers",
+      "passed": true,
+      "detail": "Reviewer list configured; selector does not authenticate identities"
+    },
+    {
+      "check": "bm25_corpus",
+      "passed": true,
+      "detail": {
+        "chunks": 7576,
+        "documents": 509
+      }
+    },
+    {
+      "check": "live_chat_json_tools",
+      "passed": true,
+      "detail": {
+        "chat": true,
+        "json": true,
+        "tool": true
+      }
+    }
+  ],
+  "frozen_or_holdout_used": false
+}

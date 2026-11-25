@@ -1,0 +1,10 @@
+{
+  "gt_sha256_after": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "gt_unchanged": true,
+  "corpus_sha256_after": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+  "corpus_unchanged": true,
+  "clean_clone_gt_matches": true,
+  "clean_clone_corpus_matches": true,
+  "new_frozen_or_holdout_scoring": false,
+  "original_project_venv_modified": false
+}

@@ -1,0 +1,12 @@
+{
+  "step": "probe-embedding",
+  "command": [
+    "python",
+    "-c",
+    "from copilot.rag.document_indexing.embed import _post_batch; v=_post_batch([\"Deployment connectivity check\"], retries=0); print({\"count\":len(v),\"dimensions\":len(v[0])})"
+  ],
+  "exit_code": 0,
+  "duration_ms": 1414,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

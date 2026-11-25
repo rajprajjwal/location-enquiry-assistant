@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "queries": [
+    {
+      "query": "What coordinate order does Mapbox Directions use?",
+      "passed": true,
+      "latency_ms": 31968
+    },
+    {
+      "query": "How does Google Distance Matrix bill elements?",
+      "passed": true,
+      "latency_ms": 4514
+    },
+    {
+      "query": "How do Google Autocomplete session tokens work?",
+      "passed": true,
+      "latency_ms": 3588
+    },
+    {
+      "query": "How do I reverse geocode coordinates using Ola Maps?",
+      "passed": true,
+      "latency_ms": 3316
+    }
+  ],
+  "total_ms": 43892,
+  "device": "cpu",
+  "offline_model_loading": true,
+  "frozen_or_holdout_used": false
+}

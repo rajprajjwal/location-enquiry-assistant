@@ -1,0 +1,14 @@
+{
+  "step": "prepare",
+  "command": [
+    "python",
+    "-m",
+    "copilot.deployment.prepare",
+    "--mode",
+    "hybrid"
+  ],
+  "exit_code": 0,
+  "duration_ms": 167431,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

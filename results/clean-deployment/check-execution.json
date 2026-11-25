@@ -1,0 +1,17 @@
+{
+  "step": "check",
+  "command": [
+    "python",
+    "-m",
+    "copilot.deployment.check",
+    "--mode",
+    "hybrid",
+    "--live",
+    "--report",
+    "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/results/clean-deployment/setup-check.json"
+  ],
+  "exit_code": 0,
+  "duration_ms": 31517,
+  "extra_pythonpath": false,
+  "system_site_packages": false
+}

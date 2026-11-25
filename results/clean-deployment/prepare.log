@@ -1,0 +1,4 @@
+Verified tokenizer assets: /Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/copilot/model_gateway/assets/qwen3-8b
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 6 files: 100%|██████████| 6/6 [02:42<00:00, 27.12s/it]Fetching 6 files: 100%|██████████| 6/6 [02:42<00:00, 27.12s/it]
+Verified chunk tokenizer and downloaded pinned reranker assets.
