@@ -76,3 +76,7 @@ python -m copilot.observability.sync_deletions --db copilot/case_storage/data/lb
 ```
 
 Pending approvals linked only to the deleted enquiry are cancelled. Decided approvals remain in the audit log with their source marked deleted. Runtime credentials, databases and Docker volumes are not committed; verification summaries and per-record trace checks are saved under `results/observability/`.
+
+## Public HTTPS deployment
+
+Use the separate [public deployment guide](langfuse/PUBLIC_DEPLOYMENT.md) to host Langfuse on a Docker server. It uses separate credentials, containers and volumes; the local commands above remain unchanged.

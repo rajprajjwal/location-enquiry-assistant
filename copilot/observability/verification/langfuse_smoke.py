@@ -30,9 +30,11 @@ def fetch_observations(client, trace_id):
         params["cursor"] = cursor
 
 
-def verify(output):
-    values = load_environment()
-    os.environ["COPILOT_TRACE_EXPORT"] = "langfuse-local"
+def verify(output, env_file=None):
+    values = load_environment(env_file) if env_file else load_environment()
+    if env_file:
+        os.environ.update({key: values[key] for key in ("LANGFUSE_BASE_URL", "LANGFUSE_PUBLIC_KEY", "LANGFUSE_SECRET_KEY")})
+    os.environ["COPILOT_TRACE_EXPORT"] = "langfuse" if env_file else "langfuse-local"
     output.mkdir(parents=True, exist_ok=False)
     with connect(output / "smoke.db") as con:
         with trace_run(connection=con, metadata={"record_id": "synthetic-trace-smoke", "bucket": "docs",
@@ -66,4 +68,6 @@ def verify(output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, required=True)
-    raise SystemExit(not verify(parser.parse_args().out))
+    parser.add_argument("--env-file", type=Path, help="Private configuration for a public endpoint")
+    args = parser.parse_args()
+    raise SystemExit(not verify(args.out, args.env_file))

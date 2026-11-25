@@ -25,6 +25,7 @@ copilot = [
     "enquiry_interpretation/prompts/*.txt",
     "rag/data/processed/chunks.jsonl",
     "observability/langfuse/*.yaml",
+    "observability/langfuse/Caddyfile",
 ]
 contracts = ["interpretation/*.json", "evaluation/*.json", "diagnostics/*.json", "qualification/*.json"]
 mapping = ["label_overrides.json"]

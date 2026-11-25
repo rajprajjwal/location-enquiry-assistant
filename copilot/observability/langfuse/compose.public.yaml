@@ -1,0 +1,33 @@
+# Apply after compose.yaml. The public stack uses its own project and volumes.
+name: location-enquiry-langfuse-public
+services:
+  langfuse-web:
+    environment:
+      NEXTAUTH_URL: https://${LANGFUSE_DOMAIN:?Set the dashboard domain}
+      LANGFUSE_S3_MEDIA_UPLOAD_ENDPOINT: https://${LANGFUSE_MEDIA_DOMAIN:?Set the media domain}
+      LANGFUSE_INIT_USER_EMAIL: ${LANGFUSE_ADMIN_EMAIL:?Set the administrator email}
+      LANGFUSE_INIT_USER_NAME: Administrator
+      AUTH_DISABLE_SIGNUP: 'true'
+  langfuse-worker:
+    environment:
+      NEXTAUTH_URL: https://${LANGFUSE_DOMAIN:?Set the dashboard domain}
+  proxy:
+    image: caddy:2.10.2-alpine
+    restart: unless-stopped
+    depends_on:
+      - langfuse-web
+      - minio
+    ports:
+      - '80:80'
+      - '443:443'
+    environment:
+      LANGFUSE_DOMAIN: ${LANGFUSE_DOMAIN:?Set the dashboard domain}
+      LANGFUSE_MEDIA_DOMAIN: ${LANGFUSE_MEDIA_DOMAIN:?Set the media domain}
+      ACME_EMAIL: ${ACME_EMAIL:?Set the certificate contact email}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+volumes:
+  caddy-data:
+  caddy-config:
