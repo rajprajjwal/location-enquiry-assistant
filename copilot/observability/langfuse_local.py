@@ -60,7 +60,7 @@ def docker_command():
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("action", choices=("prepare", "up", "status", "stop"))
+    parser.add_argument("action", choices=("prepare", "up", "start", "status", "stop"))
     args = parser.parse_args(argv)
     prepare()
     if args.action == "prepare":
@@ -91,7 +91,7 @@ def main(argv=None):
                            env=environment, check=True)
         with ThreadPoolExecutor(max_workers=3) as pool:
             list(pool.map(pull, images))
-    action = {"up": ["up", "-d", "--pull", "never"], "status": ["ps"], "stop": ["stop"]}[args.action]
+    action = {"up": ["up", "-d", "--pull", "never"], "start": ["start"], "status": ["ps"], "stop": ["stop"]}[args.action]
     subprocess.run([*command, *action], env=environment, check=True)
     if args.action == "up":
         print("Langfuse is starting at http://localhost:3000. Wait for its health check before exporting traces.")

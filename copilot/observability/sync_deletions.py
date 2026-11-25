@@ -17,7 +17,9 @@ def process_pending_deletions(con, *, limit=10):
     rows = list(con.execute("SELECT * FROM observability_trace_deletions WHERE status='pending' LIMIT ?", (limit,)))
     if not rows:
         return {"submitted": 0, "failed": 0}
-    provider().force_flush(timeout_millis=3000)
+    # Do not race queued exports against a remote deletion.
+    if not provider().force_flush(timeout_millis=3000):
+        return {"submitted": 0, "failed": len(rows)}
     submitted = failed = 0
     for row in rows:
         try:

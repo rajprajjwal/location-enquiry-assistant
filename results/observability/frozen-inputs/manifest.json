@@ -1,0 +1,17 @@
+{
+  "records": 80,
+  "inputs_sha256": "919e8001538ba6c98c04a7c8e45525fbc984c44004a44191d4c0381b83d136f1",
+  "source_hashes": {
+    "inputs.jsonl": "b8c26d867bca77364d7348957b22ea8b7cda85b7d918f7cefd398f8b1ad39d81",
+    "gold.jsonl": "bfe30735cf4cbb985e9618b868f58a00c61bce6b7866df2fb3433d83ed23c357",
+    "manifest.json": "3b206f943999b631f35c7549095bc7ebfd5d86905c7bb28299a4c6375cfe6060"
+  },
+  "apis": {
+    "autocomplete": 20,
+    "directions": 20,
+    "distance_matrix": 20,
+    "reverse_geocode": 20
+  },
+  "holdout_selected": 0,
+  "labels_usage": "Bucket, API and team are trace metadata only; no expected answer is passed to the workflow."
+}

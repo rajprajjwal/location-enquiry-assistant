@@ -46,7 +46,7 @@ def verify(output):
         expected = set(run.spans)
         observations = []
         with httpx.Client(base_url=values["LANGFUSE_BASE_URL"],
-                          auth=(values["LANGFUSE_PUBLIC_KEY"], values["LANGFUSE_SECRET_KEY"]), timeout=10) as client:
+                          auth=(values["LANGFUSE_PUBLIC_KEY"], values["LANGFUSE_SECRET_KEY"]), timeout=30) as client:
             for _ in range(12):
                 observations = fetch_observations(client, run.trace_id)
                 if expected <= {row["id"] for row in observations}:

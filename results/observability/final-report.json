@@ -1,0 +1,123 @@
+{
+  "activity": 21,
+  "acceptance_complete": true,
+  "overall": {
+    "records": 80,
+    "passed": 80,
+    "latency_p50_ms": 8334.82,
+    "latency_p95_ms": 24470.624,
+    "estimated_reporting_cost_inr": "3.7563904",
+    "complete_cost_records": 80,
+    "actual_endpoint_charge_inr": "0"
+  },
+  "by_bucket": {
+    "capabilitycompare": {
+      "records": 11,
+      "passed": 11,
+      "latency_p50_ms": 8155.283,
+      "latency_p95_ms": 12143.282,
+      "estimated_reporting_cost_inr": "0.5785512",
+      "complete_cost_records": 11,
+      "actual_endpoint_charge_inr": "0"
+    },
+    "coveragecompare": {
+      "records": 5,
+      "passed": 5,
+      "latency_p50_ms": 8574.872,
+      "latency_p95_ms": 11373.55,
+      "estimated_reporting_cost_inr": "0.1988288",
+      "complete_cost_records": 5,
+      "actual_endpoint_charge_inr": "0"
+    },
+    "docs": {
+      "records": 5,
+      "passed": 5,
+      "latency_p50_ms": 3273.136,
+      "latency_p95_ms": 6342.654,
+      "estimated_reporting_cost_inr": "0.2304034",
+      "complete_cost_records": 5,
+      "actual_endpoint_charge_inr": "0"
+    },
+    "history": {
+      "records": 5,
+      "passed": 5,
+      "latency_p50_ms": 10164.286,
+      "latency_p95_ms": 10434.282,
+      "estimated_reporting_cost_inr": "0.1858850",
+      "complete_cost_records": 5,
+      "actual_endpoint_charge_inr": "0"
+    },
+    "interpretation": {
+      "records": 5,
+      "passed": 5,
+      "latency_p50_ms": 11927.553,
+      "latency_p95_ms": 18147.071,
+      "estimated_reporting_cost_inr": "0.3687902",
+      "complete_cost_records": 5,
+      "actual_endpoint_charge_inr": "0"
+    },
+    "limitscompare": {
+      "records": 7,
+      "passed": 7,
+      "latency_p50_ms": 5318.213,
+      "latency_p95_ms": 7429.903,
+      "estimated_reporting_cost_inr": "0.3073894",
+      "complete_cost_records": 7,
+      "actual_endpoint_charge_inr": "0"
+    },
+    "ownership": {
+      "records": 11,
+      "passed": 11,
+      "latency_p50_ms": 6163.017,
+      "latency_p95_ms": 15689.995,
+      "estimated_reporting_cost_inr": "0.3422070",
+      "complete_cost_records": 11,
+      "actual_endpoint_charge_inr": "0"
+    },
+    "pricecompare": {
+      "records": 5,
+      "passed": 5,
+      "latency_p50_ms": 20755.285,
+      "latency_p95_ms": 29456.192,
+      "estimated_reporting_cost_inr": "0.2594776",
+      "complete_cost_records": 5,
+      "actual_endpoint_charge_inr": "0"
+    },
+    "qualification": {
+      "records": 15,
+      "passed": 15,
+      "latency_p50_ms": 11084.886,
+      "latency_p95_ms": 37477.026,
+      "estimated_reporting_cost_inr": "0.7252476",
+      "complete_cost_records": 15,
+      "actual_endpoint_charge_inr": "0"
+    },
+    "updates": {
+      "records": 11,
+      "passed": 11,
+      "latency_p50_ms": 9970.288,
+      "latency_p95_ms": 20702.937,
+      "estimated_reporting_cost_inr": "0.5596102",
+      "complete_cost_records": 11,
+      "actual_endpoint_charge_inr": "0"
+    }
+  },
+  "retrieval": "bm25",
+  "working_replay_business_changes": 0,
+  "holdout_selected": 0,
+  "gt_unchanged": true,
+  "source_lock_unchanged": true,
+  "currency": "INR",
+  "usd_to_inr": 94,
+  "cost_basis": "illustrative; actual institute endpoint access is free",
+  "tracing_only": "No answer-quality scores are inferred from tracing acceptance.",
+  "usage_totals": {
+    "input_tokens": 353384,
+    "output_tokens": 23116,
+    "embedding_tokens": 0,
+    "model_attempts": 245,
+    "embedding_attempts": 0,
+    "missing_usage_attempts": 0
+  },
+  "total_spans": 1630
+}

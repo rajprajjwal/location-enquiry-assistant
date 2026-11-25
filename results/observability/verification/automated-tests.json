@@ -1,0 +1,18 @@
+{
+  "full_suite": {
+    "passed": 1141,
+    "skipped": 1,
+    "subtests_passed": 15,
+    "skip_reason": "No local raw document snapshot for the optional real-snapshot freshness check."
+  },
+  "real_validator_and_observability": {
+    "passed": 181,
+    "subtests_passed": 4
+  },
+  "focused_lifecycle_and_cases": {
+    "passed": 19
+  },
+  "compilation": "passed",
+  "cache": "Existing writable verification HF_HOME; no project environment replacement.",
+  "initial_failures": "Five chunk-limit tests needed the writable cache; the UI deletion assertion needed its updated message. Rechecks passed."
+}

@@ -15,6 +15,7 @@ Sales and support copilot for location API enquiries, built for the institute's 
 | `copilot/response_drafting/`, `copilot/pricing_tools/` | Structure responses and calculate sourced pricing. |
 | `copilot/case_storage/` | SQLite persistence for cases, approvals, sandbox records, and traces. |
 | `copilot/streamlit_ui/` | Staff interface for enquiries, approvals, and traces. |
+| `copilot/observability/` | End-to-end OpenTelemetry tracing, local Langfuse export and INR cost reporting. |
 | `copilot/deployment/` | Prepare model assets and check installation, configuration and live access. |
 | `results/clean-deployment/` | Clean-checkout installation, index rebuild and end-to-end verification evidence. |
 | `copilot/enquiry_workflow/verification/` | Synthetic UI and frozen workflow verification scripts. |
@@ -58,3 +59,5 @@ The model gateway uses the institute-provided endpoint. Its frozen run checks co
 ## Prompt-engineering baseline
 
 The isolated [prompt comparison module](prompt-engineering-baseline/README.md) contains three prompting strategies, a shared-model-client adapter and an optional standalone demo. Its evaluation status and separate setup are documented in that folder.
+
+- [End-to-end tracing setup](copilot/observability/README.md)

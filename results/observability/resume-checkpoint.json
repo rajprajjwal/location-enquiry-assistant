@@ -1,15 +1,22 @@
 {
-  "status": "paused_by_user",
+  "status": "complete",
   "branch": "feat/evaluation-observability",
   "base_commit": "4f74e30bebf1a2d22aae9e9cd5a96acbc29c4484",
   "activity": 21,
-  "acceptance_complete": false,
+  "acceptance_complete": true,
   "completed": [
     "Local Langfuse 4.86.0 Docker stack prepared and started successfully; persistent volumes retained.",
     "OpenTelemetry tracing module, physical LLM and embedding attempts, workflow/tool phases, local SQLite storage and viewer implemented.",
     "Langfuse smoke: 3 of 3 span IDs received.",
     "Fixed 10-case working-eval sample: all 10 traced locally and in Langfuse; 100% workflow-step coverage; 0 replay business-output changes.",
-    "Latest focused tests: 14 passed."
+    "Latest focused tests: 14 passed.",
+    "Resumed existing Langfuse containers without recreating volumes or credentials.",
+    "Full test suite: 1141 passed, 1 skipped; real-validator plus observability checks: 181 passed and 4 subtests.",
+    "Final working-eval verification: 10/10 with full local and Langfuse span coverage, complete illustrative costs, and zero replay business changes.",
+    "Read-only trace viewer verified on live working results: bucket, latency-ms and INR-cost filters pass.",
+    "Live embedding trace: 384 dimensions, 17 reported tokens, complete reporting estimate, both span IDs received.",
+    "Synthetic trace deletion confirmed remotely: zero remaining Langfuse observations.",
+    "Frozen tracing acceptance: 80/80; portable traces and final bucket report saved."
   ],
   "cost_policy": {
     "actual_endpoint_access": "Chat and embedding endpoints confirmed free by user.",
@@ -21,34 +28,26 @@
     "embedding_usd_per_million": 0.02
   },
   "important_binding": "The 10-case working-live run predates the illustrative rate card and final late-worker/deletion synchronization changes. Its stored unpriced costs are historical; do not relabel them as final-rate measurements.",
-  "pending": [
-    "Verify latest pricing fields and cost captions end to end.",
-    "Verify Langfuse asynchronous deletion queue and late-worker handling; existing focused tests passed, live deletion still pending.",
-    "Run full automated suite and real-validator CI-equivalent checks on final code.",
-    "Repeat working verification on final locked implementation as needed; keep frozen and holdout out of development fixes.",
-    "Prepare and verify the same 80 pinned frozen inputs; no frozen or holdout run has been performed for Activity 21.",
-    "Run frozen tracing acceptance only after working checks pass; verify Langfuse span IDs and bucket filters.",
-    "Finish concise setup/usage guide and final report; commit/push final work after verification."
-  ],
+  "pending": [],
   "runtime": {
     "langfuse_url": "http://localhost:3000",
     "project_id": "location-enquiry-copilot",
     "private_credentials_file": "copilot/observability/runtime/langfuse.env",
     "langfuse_admin_email": "local-admin@localhost.test",
     "password_location": "LANGFUSE_ADMIN_PASSWORD in the private file; never print or commit credentials.",
-    "working_trace_database": "results/observability/working-live/traces.db",
-    "docker_volumes": "Retained; containers stopped for pause.",
+    "working_trace_database": "results/observability/working-verified/traces.db",
+    "docker_volumes": "Retained; existing containers resumed and running.",
     "verification_python": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/bin/python",
     "scratch_logs": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/activity21"
   },
   "resume": [
-    "Read this checkpoint and inspect the WIP code; do not recreate the project, Docker volumes or credentials.",
-    "Start Docker Desktop if necessary, then run python -m copilot.observability.langfuse_local up using the verification environment.",
-    "Read latest-trace-tests.log, working-live/summary.json, and the current cost configuration before deciding which verification to repeat."
+    "Activity 21 acceptance is complete. Read results/observability/README.md for final evidence.",
+    "Start existing containers with python -m copilot.observability.langfuse_local start if needed; do not recreate credentials or volumes."
   ],
   "data_integrity": {
     "gt_unchanged": true,
-    "frozen_scoring_started": false,
-    "holdout_used": false
+    "frozen_scoring_started": true,
+    "holdout_used": false,
+    "scope": "Frozen tracing acceptance only; answer quality is not scored."
   }
 }

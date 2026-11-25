@@ -36,7 +36,7 @@ def configure_remote(provider):
             raise ValueError("Trace endpoint requires HTTPS or localhost")
         if address.username or address.password or address.query:
             raise ValueError("Keep trace credentials in headers")
-        exporter = OTLPSpanExporter(endpoint=endpoint, headers=headers, timeout=3)
+        exporter = OTLPSpanExporter(endpoint=endpoint, headers=headers, timeout=30)
         batch = BatchSpanProcessor(exporter, schedule_delay_millis=1000)
         from opentelemetry.sdk.trace import SpanProcessor
         class ActiveRunProcessor(SpanProcessor):

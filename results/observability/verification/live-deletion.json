@@ -1,0 +1,13 @@
+{
+  "trace_id": "6bbe963dd5812c7915aa1c2027bb5c4a",
+  "local_removed": true,
+  "queue_status": "submitted",
+  "submission": {
+    "submitted": 0,
+    "failed": 0
+  },
+  "remote_removal_confirmed": true,
+  "remote_remaining_spans": 0,
+  "synthetic_only": true,
+  "live_model_calls": 0
+}

@@ -178,7 +178,7 @@ with closing(connect(DB_PATH)) as con:
 
     with trace_tab:
         if st.session_state.pop("enquiry_deleted", False):
-            st.success("Enquiry and local traces deleted. Any Langfuse copy is submitted for deletion separately.")
+            st.success("Enquiry and local traces deleted. Langfuse deletion is tracked separately.")
         from copilot.observability.storage import initialize as initialize_observability
         initialize_observability(con)
         deletion_count = con.execute("SELECT COUNT(*) FROM observability_trace_deletions WHERE status='pending'").fetchone()[0]

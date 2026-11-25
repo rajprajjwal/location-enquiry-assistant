@@ -109,3 +109,7 @@ python -m pytest -q
 The freshness integration test skips when no dated raw-source snapshot is present. A checkout includes processed documents, not the complete raw snapshot.
 
 Local state lives in `copilot/case_storage/data/lbs.db`; preserve this file and any SQLite sidecars during backup. Dense vectors are in `copilot/rag/data/chroma/`; rebuild after a corpus or embedding-model change. Model downloads live under `HF_HOME`, and the verified chat tokenizer lives under `copilot/model_gateway/assets/` unless `TRACKB_TOKENIZER_DIR` is set. Restart the app after changing configuration or rebuilding indexes. These runtime files are ignored by Git.
+
+## Optional tracing service
+
+Follow the [tracing setup guide](../copilot/observability/README.md) to run local Langfuse with Docker. Local traces work without this service. Reporting estimates use illustrative rates; institute endpoint access remains free.

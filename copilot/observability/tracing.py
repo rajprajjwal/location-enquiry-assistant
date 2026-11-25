@@ -128,8 +128,8 @@ def set_usage(span, usage, *, embedding=False):
             continue
         if type(value) is int and value >= 0:
             span.set_attribute(f"gen_ai.usage.{name}", value)
-    details = {"input": usage["prompt_tokens"]} if type(usage.get("prompt_tokens")) is int else {}
-    if not embedding and type(usage.get("completion_tokens")) is int:
+    details = {"input": usage["prompt_tokens"]} if type(usage.get("prompt_tokens")) is int and usage["prompt_tokens"] >= 0 else {}
+    if not embedding and type(usage.get("completion_tokens")) is int and usage["completion_tokens"] >= 0:
         details["output"] = usage["completion_tokens"]
     if details:
         span.set_attribute("langfuse.observation.usage_details", json.dumps(details))

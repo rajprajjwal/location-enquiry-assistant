@@ -111,6 +111,9 @@ def verify(inputs, output, *, parity=False, retrieval="bm25"):
         raise ValueError("Replay parity is restricted to working-eval")
     if not rows:
         raise ValueError("Empty trace verification inputs")
+    if any(row["split"] == "frozen" for row in rows):
+        from .prepare_frozen import validate
+        validate(rows)
     output.mkdir(parents=True, exist_ok=False)
     os.environ["COPILOT_TRACE_EXPORT"] = "langfuse-local"
     values = load_environment()
@@ -120,7 +123,7 @@ def verify(inputs, output, *, parity=False, retrieval="bm25"):
     results = []
     with closing(connect(output / "traces.db")) as con, httpx.Client(
         base_url=values["LANGFUSE_BASE_URL"], auth=(values["LANGFUSE_PUBLIC_KEY"], values["LANGFUSE_SECRET_KEY"]),
-        timeout=10,
+        timeout=30,
     ) as remote, (output / "per-record.jsonl").open("w") as record_file:
         for index, row in enumerate(rows, 1):
             case_id = seeded_case(con, row)

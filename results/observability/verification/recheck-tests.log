@@ -1,0 +1,120 @@
+F.....                                                                   [100%]
+=================================== FAILURES ===================================
+_________________ test_streamlit_draft_escalation_and_approval _________________
+
+tmp_path = PosixPath('/private/var/folders/nh/flbn7n492yn_n7xp0l3w0v7r0000gn/T/pytest-of-shahidkamal/pytest-274/test_streamlit_draft_escalatio0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b3f4f20>
+
+    def test_streamlit_draft_escalation_and_approval(tmp_path, monkeypatch):
+        testing = pytest.importorskip("streamlit.testing.v1")
+        client = create_autospec(LLMClient, instance=True)
+    
+        def reply(messages, **options):
+            if "response_format" in options:
+                payload = json.loads(messages[-1]["content"])
+                if payload.get("qualification_plan"):
+                    return completion(json.dumps({"supplied_facts": [], "groups": [],
+                        "reason": "The waypoint configuration question is answered by documentation."}))
+                if payload.get("diagnostic_plan"):
+                    return completion(json.dumps({
+                        "decision": "request_reproduction" if "503" in payload["enquiry"] else "none",
+                        "reason": "Inspect a failing request." if "503" in payload["enquiry"] else "Provider clarification is active.",
+                    }))
+                if "active_question" in payload:
+                    return completion(json.dumps({"questions": [
+                        {"field": "peak_request_rate", "text": "What was the peak request rate?",
+                         "facts": ["peak_request_rate"], "decision_impact": "Check for an overload.",
+                         "evidence": payload["enquiry"]}
+                    ]}))
+                if "candidate" in payload:
+                    return completion('{"answers_enquiry": true}')
+                passages = payload["passages"]
+                index = next(
+                    i for i, hit in enumerate(passages, 1) if "waypoint" in hit["relevant_passage"].lower()
+                )
+                return completion(json.dumps({"passage": index}))
+            incident = "503" in messages[-1]["content"]
+            return completion(model_json(
+                intent="troubleshooting" if incident else "docs_how_to",
+                sub_intent="production_incident" if incident else "parameter_question",
+                api="directions", team="Support",
+            ))
+    
+        client.complete.side_effect = reply
+        monkeypatch.setattr("copilot.case_storage.db.DB_PATH", tmp_path / "review.db")
+        monkeypatch.setattr(
+            "copilot.enquiry_workflow.cases.run_case",
+            lambda *args, **kwargs: run_case(*args, client=client, **kwargs),
+        )
+        monkeypatch.setattr(
+            "copilot.enquiry_workflow.retrieval.retrieval_setup_issues",
+            lambda *args, **kwargs: ["Build the dense index."],
+        )
+        app_path = Path(__file__).resolve().parents[2] / "copilot/streamlit_ui/streamlit_app.py"
+        app = testing.AppTest.from_file(str(app_path)).run()
+        assert not app.exception
+        app.radio[0].set_value("Hybrid with reranking").run()
+        assert any("Build the dense index." in item.value for item in app.warning)
+        assert next(button for button in app.button if button.label == "Run enquiry").disabled
+        client.complete.assert_not_called()
+        app.radio[0].set_value("BM25").run()
+    
+        def submit(query):
+            app.text_area[0].set_value(query)
+            next(button for button in app.button if button.label == "Run enquiry").click().run()
+            assert not app.exception
+    
+        app.text_input[0].set_value("Customer A")
+>       submit("How do I set waypoints in the Directions API?")
+
+tests/enquiry_workflow/test_streamlit.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/enquiry_workflow/test_streamlit.py:68: in submit
+    next(button for button in app.button if button.label == "Run enquiry").click().run()
+../../Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/streamlit/testing/v1/element_tree.py:486: in run
+    return self.root.run(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/streamlit/testing/v1/element_tree.py:4251: in run
+    result = self._runner._run(widget_states, timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/streamlit/testing/v1/app_test.py:698: in _run
+    self._tree = script_runner.run(
+../../Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/streamlit/testing/v1/local_script_runner.py:198: in run
+    require_widgets_deltas(self, timeout)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+runner = LocalScriptRunner(forward_msg_queue=<streamlit.runtime.forward_msg_queue.ForwardMsgQueue object at 0x10f79c0e0>, scrip...5-45dd-956f-952a4cbadeb2', fragment_ids=())}, {'client_state': page_script_hash: "4554f9a9e1779ba16e89b7ca44db58fc"
+}])
+timeout = 3
+
+    def require_widgets_deltas(runner: LocalScriptRunner, timeout: float = 3) -> None:
+        """Wait for the given ScriptRunner to emit a completion event. If the timeout
+        is reached, the runner will be shutdown and an error will be thrown.
+        """
+    
+        t0 = time.time()
+        while time.time() - t0 < timeout:
+            time.sleep(0.001)
+            if runner.script_stopped():
+                return
+    
+        # If we get here, the runner hasn't yet completed before our
+        # timeout. Create an error string for debugging.
+        err_string = f"AppTest script run timed out after {timeout}(s)"
+    
+        # Shutdown the runner before throwing an error, so that the script
+        # doesn't hang forever.
+        runner.request_stop()
+        runner.join()
+    
+>       raise RuntimeError(err_string)
+E       RuntimeError: AppTest script run timed out after 3(s)
+
+../../Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/streamlit/testing/v1/local_script_runner.py:266: RuntimeError
+----------------------------- Captured stderr call -----------------------------
+2026-11-25 15:45:58.335 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+------------------------------ Captured log call -------------------------------
+WARNING  copilot.enquiry_interpretation:fewshot.py:94 few-shot: TRACKB_GT_CSV unset or missing; running zero-shot (12 ids skipped)
+=========================== short test summary info ============================
+FAILED tests/enquiry_workflow/test_streamlit.py::test_streamlit_draft_escalation_and_approval
+1 failed, 5 passed in 35.35s
