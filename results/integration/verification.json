@@ -1,0 +1,14 @@
+{
+  "verified_at": "2026-11-25T18:44:59.633098+00:00",
+  "tested_commit": "0743ff25975dd1cf332e83d9ac5f015a502ac93e",
+  "tests": {
+    "passed": 1191,
+    "skipped": 1,
+    "subtests_passed": 15
+  },
+  "validation_mode": "real",
+  "offline_model_assets": true,
+  "public_compose_configuration_valid": true,
+  "skip_reason": "Existing raw-corpus freshness test has no local snapshot",
+  "notes": "Initial test attempt used a tokenizer path one level above the assets; complete rerun with the corrected path passed. Public DNS and certificate issuance remain destination-host checks."
+}
