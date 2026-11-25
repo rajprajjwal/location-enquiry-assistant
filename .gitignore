@@ -46,3 +46,10 @@ copilot/observability/runtime/
 
 # Local trace databases; JSON evidence is versioned.
 results/observability/**/*.db*
+
+# Isolated evaluation case state; portable scores and predictions stay versioned.
+results/evaluation/**/*.db*
+results/evaluation/**/inflight.json
+
+results/evaluation/**/.run.lock
+results/evaluation/**/*.tmp

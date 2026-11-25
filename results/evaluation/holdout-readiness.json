@@ -1,0 +1,16 @@
+{
+  "holdout_records": 103,
+  "review_statuses": {
+    "pending": 103
+  },
+  "cross_split_pairs": 17,
+  "decisions": {
+    "exclude_holdout_case": 1,
+    "": 16
+  },
+  "holdout_model_calls": 0,
+  "gate": "Reference/source/rubric approval and remaining cross-split dispositions required before final holdout.",
+  "approval_status": "provisional_owner_approval",
+  "independent_review_completed": false,
+  "decision": "Exclude all seven flagged holdout members; 96 final eligible cases."
+}
