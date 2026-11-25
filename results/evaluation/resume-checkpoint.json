@@ -1,6 +1,6 @@
 {
-  "status": "completed_with_limitations",
-  "activity_22": "Final campaign executed; one baseline judge result remains unscored",
+  "status": "completed_with_adjudication",
+  "activity_22": "Complete with one approved citation-format adjudication; all 96 holdout answers scored",
   "activity_23": "Complete; dashboard verified against both final runs",
   "branch": "feat/evaluation-observability",
   "implementation_commit": "388fb26",
@@ -32,5 +32,5 @@
   ],
   "holdout_completed_pairs": 96,
   "holdout_scored_arm_records": 192,
-  "holdout_ledger_state": "completed_with_errors"
+  "holdout_ledger_state": "completed_with_adjudication"
 }

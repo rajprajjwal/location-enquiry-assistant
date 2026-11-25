@@ -1,0 +1,10 @@
+{
+  "changed_holdout_scored_records": 1,
+  "other_holdout_records_byte_identical": 191,
+  "all_saved_generations_and_inputs_unchanged": true,
+  "frozen_scores_unchanged": true,
+  "accepted_judgement_matches_raw_scores_with_only_approved_flag_change": true,
+  "score_recomputation_passed": true,
+  "dashboard_verified": true,
+  "endpoint_calls": 0
+}

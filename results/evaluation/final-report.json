@@ -80,36 +80,48 @@
     "holdout-final": {
       "cases": 96,
       "paired_cases": 96,
-      "errors": 1,
-      "metrics_sha256": "3b6fb164554b30c2eeb6cee251a2711f8781b54431c3898e75e8a7318c1a3613"
+      "errors": 0,
+      "metrics_sha256": "7f8bf1ea8d153ea71f2bfb8ed05ccd11a584eb1558ce4c95c52b6834a54bc9f6",
+      "adjudicated_judgements": 1
     }
   },
   "activity_23_implementation_verified": true,
-  "activity_22_final_evaluation_complete": false,
+  "activity_22_final_evaluation_complete": true,
   "approval_status": "provisional owner approval; independent review not claimed",
   "gt_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
   "final_campaign_executed": true,
-  "activity_22_status": "Implemented; final runs executed with one unscored baseline judge result. Error-free final acceptance remains pending.",
+  "activity_22_status": "Final evaluation complete with one explicitly approved citation-format adjudication; holdout gold approval remains provisional.",
   "activity_23_status": "Complete: both final runs and all 29 metrics verified in dashboard",
   "final_artifact_audit": "verification/artifact-audit.json",
   "dashboard_final_verification": "verification/dashboard-final-runs.json",
   "holdout_common_case_accuracy": {
-    "scored_pairs": 95,
-    "baseline": 0.4085263157894737,
-    "agent": 0.6091231578947366
+    "scored_pairs": 96,
+    "baseline": 0.40427083333333336,
+    "agent": 0.6079864583333333
   },
   "remaining_limitations": [
-    "One holdout baseline judge failed; automatic quality metrics cover 95 baseline cases and 96 agent cases. The failed judgement was not replaced.",
     "Holdout approval remains provisional owner authorization; independent gold review is not claimed.",
-    "One frozen agent generation has incomplete usage; its full illustrative monetary estimate is unavailable."
+    "One frozen agent generation has incomplete usage; its full illustrative monetary estimate is unavailable.",
+    "AC-050 uses an approved citation-format adjudication; failed automatic attempts are preserved. Its judge overhead omits unavailable retry usage and latency."
   ],
-  "final_errors": [
+  "final_errors": [],
+  "resolved_errors": [
     {
       "record_id": "GT-LBS-AC-050",
       "arm": "baseline",
       "generation_error": null,
       "judge_error": "ValueError",
       "retrieval_error": null
+    }
+  ],
+  "adjudications": [
+    {
+      "record_id": "GT-LBS-AC-050",
+      "arm": "baseline",
+      "citation_supported": [
+        false
+      ],
+      "audit": "verification/judge-recovery-AC-050/adjudication.json"
     }
   ]
 }

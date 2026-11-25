@@ -103,6 +103,21 @@
     ],
     "output": "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/results/evaluation/holdout-final"
   },
-  "state": "completed_with_errors",
-  "paired_cases": 96
+  "state": "completed_with_adjudication",
+  "paired_cases": 96,
+  "previous_completion_state": "completed_with_errors",
+  "adjudications": [
+    {
+      "type": "explicit project-owner citation-format adjudication",
+      "authorization": "Okay, please record the audited [false] citation adjudication for AC-050, update the final scores and report, and keep the locked configuration and GT unchanged.",
+      "scope": "GT-LBS-AC-050 baseline citation_supported only",
+      "original_flags": [],
+      "adjudicated_flags": [
+        false
+      ],
+      "reason": "The single predicted citation has no verified supporting evidence.",
+      "audit_path": "results/evaluation/verification/judge-recovery-AC-050/adjudication.json"
+    }
+  ],
+  "unresolved_errors": 0
 }

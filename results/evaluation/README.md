@@ -2,15 +2,15 @@
 
 ## Final status
 
-- **Activity 22:** implementation and the final paired campaign have finished: 80 frozen cases and 96 eligible holdout cases. Frozen has zero generation/judge/retrieval errors. Holdout has one automatic-judge error, so error-free final acceptance remains pending.
-- **Activity 23:** complete. Both final runs display all 29 metrics, and bucket, API and team filters pass. Saved metric recomputation is exact with no endpoint calls.
-- **Data integrity:** GT, implementation and tracked resources are unchanged. All pre-pause saved generations and scores remain intact. Seven flagged holdout records remain excluded; holdout approval is provisional.
+- **Activity 22:** the final paired campaign is complete: 80 frozen cases and 96 eligible holdout cases. All cases now have accepted answer-quality scores, including one explicitly approved citation-format adjudication. There are zero unresolved generation, judgement or retrieval errors; the failed automatic attempts remain in the audit trail.
+- **Activity 23:** complete. Both final runs display all 29 metrics with bucket, API and team filters. Saved metric recomputation is exact with no endpoint calls.
+- **Data integrity:** GT, locked implementation, configuration and all generated answers are unchanged. Only the AC-050 baseline scored record was replaced. Seven flagged holdout records remain excluded; holdout approval remains provisional and independent review completion is not claimed.
 
-The unscored holdout judgement is the baseline answer for **GT-LBS-AC-050** (`ValueError`). Generation succeeded and its output is saved. Automatic answer accuracy uses 95 baseline cases versus 96 agent cases. On the same 95 successfully judged pairs, baseline accuracy is **40.85%** and agent accuracy is **60.91%**. No judgement was replaced, and no frozen/holdout result was used to change the locked implementation.
+For **GT-LBS-AC-050**, the automatic judge and its repair returned an empty citation list for one predicted citation. The project owner approved the audited `[false]` adjudication because no source evidence verifies that citation. The five numerical scores and reasons from the saved retry were retained exactly; only the citation flag was adjudicated. Its accepted answer accuracy is **0%**. Both holdout arms now use **96/96 cases**: baseline **40.43%**, agent **60.80%**. This is a disclosed single-record adjudication, not a change to the locked evaluator. See [adjudication](verification/judge-recovery-AC-050/adjudication.json) and [failed retry](verification/judge-recovery-AC-050/retry-failure.json).
 
-Frozen agent citation coverage is **95.71% across 70 drafts**; citation precision is **96.68%**. Holdout agent coverage is **98.73% across 79 drafts** and precision is **98.92%**. These citation metrics do not imply complete answers: automatic comparison completeness is only **34.04%** on frozen and **25.12%** on holdout. The tables retain these quality gaps.
+Frozen agent citation coverage remains **95.71% across 70 drafts**; citation precision remains **96.68%**. Holdout agent coverage remains **98.73% across 79 drafts** and precision **98.92%**. These citation metrics do not imply complete answers: automatic comparison completeness remains **34.04%** on frozen and **25.12%** on holdout.
 
-One frozen agent generation has incomplete provider usage; its full illustrative cost is unavailable, so the agent cost mean uses 79/80 frozen cases. Actual institute endpoint access remains free.
+One frozen agent generation has incomplete usage, so its cost mean uses 79/80 cases. The recovered judgement's overhead retains only the original failed attempt; retry usage and latency were not retained and have not been fabricated. Actual institute endpoint access is free; monetary figures remain illustrative.
 
 The harness compares the existing agent with a plain-model baseline using identical enquiries and history. References and expected labels are isolated from generation. Scores for accuracy, grounding, comparison completeness and history use are automatic model judgements; qualification uses deterministic strict field agreement, not independent human ratings.
 
@@ -109,15 +109,15 @@ Saved metric reaggregation: **pass**, zero numerical change and zero endpoint ca
 
 ### holdout-final
 
-Cases: 96; paired cases: 96; generation/judge/retrieval errors: 1.
+Cases: 96; paired cases: 96; unresolved generation/judge/retrieval errors: 0; approved citation adjudications: 1.
 
 | Metric | Baseline | Agent | Baseline scored | Agent scored |
 |---|---:|---:|---:|---:|
-| Rubric answer accuracy (ratio) | 40.85% | 60.80% | 95/96 | 96/96 |
-| Supported factual claims (ratio) | 15.78% | 66.08% | 95/96 | 96/96 |
-| Drafts with verified citations (ratio) | 1.05% | 98.73% | 95/96 | 79/96 |
-| Supported citations (ratio) | 1.28% | 98.92% | 70/96 | 79/96 |
-| Comparison completeness (ratio) | 2.38% | 25.12% | 42/96 | 43/96 |
+| Rubric answer accuracy (ratio) | 40.43% | 60.80% | 96/96 | 96/96 |
+| Supported factual claims (ratio) | 15.61% | 66.08% | 96/96 | 96/96 |
+| Drafts with verified citations (ratio) | 1.04% | 98.73% | 96/96 | 79/96 |
+| Supported citations (ratio) | 1.27% | 98.92% | 71/96 | 79/96 |
+| Comparison completeness (ratio) | 2.33% | 25.12% | 43/96 | 43/96 |
 | Qualification completeness (strict fields) (ratio) | 37.04% | 91.32% | 96/96 | 96/96 |
 | History use (ratio) | 13.64% | 84.55% | 11/96 | 11/96 |
 | Owner correctness (ratio) | 33.33% | 73.96% | 96/96 | 96/96 |

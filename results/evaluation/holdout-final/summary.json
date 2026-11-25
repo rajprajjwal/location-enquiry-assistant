@@ -125,7 +125,7 @@
   "records": 192,
   "cases": 96,
   "paired_cases": 96,
-  "errors": 1,
+  "errors": 0,
   "metric_catalog": {
     "answer_accuracy": {
       "label": "Rubric answer accuracy",
@@ -5702,10 +5702,10 @@
       "dimension": "api",
       "value": "autocomplete",
       "metric": "answer_accuracy",
-      "score": 0.4268181818181818,
-      "scored": 22,
+      "score": 0.4082608695652174,
+      "scored": 23,
       "cases": 23,
-      "unit_denominator": 22,
+      "unit_denominator": 23,
       "sum": 9.39
     },
     {
@@ -5713,10 +5713,10 @@
       "dimension": "api",
       "value": "autocomplete",
       "metric": "grounding",
-      "score": 0.16636363636363638,
-      "scored": 22,
+      "score": 0.15913043478260872,
+      "scored": 23,
       "cases": 23,
-      "unit_denominator": 22,
+      "unit_denominator": 23,
       "sum": 3.66
     },
     {
@@ -5725,9 +5725,9 @@
       "value": "autocomplete",
       "metric": "citation_coverage",
       "score": 0.0,
-      "scored": 22,
+      "scored": 23,
       "cases": 23,
-      "unit_denominator": 22,
+      "unit_denominator": 23,
       "sum": 0
     },
     {
@@ -5736,9 +5736,9 @@
       "value": "autocomplete",
       "metric": "citation_precision",
       "score": 0.0,
-      "scored": 16,
+      "scored": 17,
       "cases": 23,
-      "unit_denominator": 17,
+      "unit_denominator": 18,
       "sum": 0.0
     },
     {
@@ -5747,9 +5747,9 @@
       "value": "autocomplete",
       "metric": "comparison_completeness",
       "score": 0.0,
-      "scored": 7,
+      "scored": 8,
       "cases": 23,
-      "unit_denominator": 7,
+      "unit_denominator": 8,
       "sum": 0.0
     },
     {
@@ -9211,10 +9211,10 @@
       "dimension": "bucket",
       "value": "pricecompare",
       "metric": "answer_accuracy",
-      "score": 0.5,
-      "scored": 7,
+      "score": 0.4375,
+      "scored": 8,
       "cases": 8,
-      "unit_denominator": 7,
+      "unit_denominator": 8,
       "sum": 3.5
     },
     {
@@ -9222,10 +9222,10 @@
       "dimension": "bucket",
       "value": "pricecompare",
       "metric": "grounding",
-      "score": 0.07142857142857142,
-      "scored": 7,
+      "score": 0.0625,
+      "scored": 8,
       "cases": 8,
-      "unit_denominator": 7,
+      "unit_denominator": 8,
       "sum": 0.5
     },
     {
@@ -9234,9 +9234,9 @@
       "value": "pricecompare",
       "metric": "citation_coverage",
       "score": 0.0,
-      "scored": 7,
+      "scored": 8,
       "cases": 8,
-      "unit_denominator": 7,
+      "unit_denominator": 8,
       "sum": 0
     },
     {
@@ -9245,9 +9245,9 @@
       "value": "pricecompare",
       "metric": "citation_precision",
       "score": 0.0,
-      "scored": 5,
+      "scored": 6,
       "cases": 8,
-      "unit_denominator": 6,
+      "unit_denominator": 7,
       "sum": 0.0
     },
     {
@@ -9256,9 +9256,9 @@
       "value": "pricecompare",
       "metric": "comparison_completeness",
       "score": 0.0,
-      "scored": 7,
+      "scored": 8,
       "cases": 8,
-      "unit_denominator": 7,
+      "unit_denominator": 8,
       "sum": 0.0
     },
     {
@@ -10168,10 +10168,10 @@
       "dimension": "overall",
       "value": "all",
       "metric": "answer_accuracy",
-      "score": 0.4085263157894737,
-      "scored": 95,
+      "score": 0.40427083333333336,
+      "scored": 96,
       "cases": 96,
-      "unit_denominator": 95,
+      "unit_denominator": 96,
       "sum": 38.81
     },
     {
@@ -10179,10 +10179,10 @@
       "dimension": "overall",
       "value": "all",
       "metric": "grounding",
-      "score": 0.15778947368421053,
-      "scored": 95,
+      "score": 0.15614583333333334,
+      "scored": 96,
       "cases": 96,
-      "unit_denominator": 95,
+      "unit_denominator": 96,
       "sum": 14.99
     },
     {
@@ -10190,10 +10190,10 @@
       "dimension": "overall",
       "value": "all",
       "metric": "citation_coverage",
-      "score": 0.010526315789473684,
-      "scored": 95,
+      "score": 0.010416666666666666,
+      "scored": 96,
       "cases": 96,
-      "unit_denominator": 95,
+      "unit_denominator": 96,
       "sum": 1
     },
     {
@@ -10201,10 +10201,10 @@
       "dimension": "overall",
       "value": "all",
       "metric": "citation_precision",
-      "score": 0.01282051282051282,
-      "scored": 70,
+      "score": 0.012658227848101266,
+      "scored": 71,
       "cases": 96,
-      "unit_denominator": 78,
+      "unit_denominator": 79,
       "sum": 1.0
     },
     {
@@ -10212,10 +10212,10 @@
       "dimension": "overall",
       "value": "all",
       "metric": "comparison_completeness",
-      "score": 0.023809523809523808,
-      "scored": 42,
+      "score": 0.023255813953488372,
+      "scored": 43,
       "cases": 96,
-      "unit_denominator": 42,
+      "unit_denominator": 43,
       "sum": 1.0
     },
     {
@@ -10487,10 +10487,10 @@
       "dimension": "team",
       "value": "Sales",
       "metric": "answer_accuracy",
-      "score": 0.38476190476190475,
-      "scored": 42,
+      "score": 0.3758139534883721,
+      "scored": 43,
       "cases": 43,
-      "unit_denominator": 42,
+      "unit_denominator": 43,
       "sum": 16.16
     },
     {
@@ -10498,10 +10498,10 @@
       "dimension": "team",
       "value": "Sales",
       "metric": "grounding",
-      "score": 0.09523809523809523,
-      "scored": 42,
+      "score": 0.09302325581395349,
+      "scored": 43,
       "cases": 43,
-      "unit_denominator": 42,
+      "unit_denominator": 43,
       "sum": 4.0
     },
     {
@@ -10510,9 +10510,9 @@
       "value": "Sales",
       "metric": "citation_coverage",
       "score": 0.0,
-      "scored": 42,
+      "scored": 43,
       "cases": 43,
-      "unit_denominator": 42,
+      "unit_denominator": 43,
       "sum": 0
     },
     {
@@ -10521,9 +10521,9 @@
       "value": "Sales",
       "metric": "citation_precision",
       "score": 0.0,
-      "scored": 24,
+      "scored": 25,
       "cases": 43,
-      "unit_denominator": 30,
+      "unit_denominator": 31,
       "sum": 0.0
     },
     {
@@ -10531,10 +10531,10 @@
       "dimension": "team",
       "value": "Sales",
       "metric": "comparison_completeness",
-      "score": 0.034482758620689655,
-      "scored": 29,
+      "score": 0.03333333333333333,
+      "scored": 30,
       "cases": 43,
-      "unit_denominator": 29,
+      "unit_denominator": 30,
       "sum": 1.0
     },
     {
@@ -11121,5 +11121,19 @@
       "sum": null
     }
   ],
-  "metrics_sha256": "3b6fb164554b30c2eeb6cee251a2711f8781b54431c3898e75e8a7318c1a3613"
+  "metrics_sha256": "7f8bf1ea8d153ea71f2bfb8ed05ccd11a584eb1558ce4c95c52b6834a54bc9f6",
+  "adjudications": [
+    {
+      "type": "explicit project-owner citation-format adjudication",
+      "authorization": "Okay, please record the audited [false] citation adjudication for AC-050, update the final scores and report, and keep the locked configuration and GT unchanged.",
+      "scope": "GT-LBS-AC-050 baseline citation_supported only",
+      "original_flags": [],
+      "adjudicated_flags": [
+        false
+      ],
+      "reason": "The single predicted citation has no verified supporting evidence.",
+      "audit_path": "results/evaluation/verification/judge-recovery-AC-050/adjudication.json"
+    }
+  ],
+  "automatic_judge_failures_resolved_by_adjudication": 1
 }

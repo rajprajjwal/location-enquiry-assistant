@@ -3,7 +3,7 @@
     22,
     23
   ],
-  "status": "completed_with_limitations",
+  "status": "completed_with_adjudication",
   "implemented": [
     "Canonical paired prediction contract",
     "Four plain-model prompting strategies through the shared client",
@@ -24,8 +24,7 @@
   },
   "active_results": "results/evaluation/verification/resumed-evaluation.log",
   "pending": [
-    "One holdout baseline judge failed; automatic quality metrics cover 95 baseline cases and 96 agent cases. The failed judgement was not replaced.",
-    "Holdout approval remains provisional owner authorization; independent gold review is not claimed."
+    "Independent holdout gold review remains unconfirmed; the campaign used provisional owner approval."
   ],
   "gt_edited": false,
   "holdout_approval": "provisional owner authorization",
@@ -58,8 +57,10 @@
       "completed_pairs": 96,
       "arm_records": 192,
       "generation_errors": 0,
-      "judge_errors": 1,
-      "retrieval_errors": 0
+      "judge_errors": 0,
+      "retrieval_errors": 0,
+      "historical_judge_failure_records": 1,
+      "adjudicated_judgements": 1
     }
   },
   "holdout_model_calls_started": true,
@@ -67,5 +68,6 @@
   "resume_checkpoint": "results/evaluation/resume-checkpoint.json",
   "final_report": "results/evaluation/README.md",
   "artifact_audit_passed": true,
-  "dashboard_final_runs_passed": true
+  "dashboard_final_runs_passed": true,
+  "adjudication_audit": "results/evaluation/verification/judge-recovery-AC-050/adjudication.json"
 }
