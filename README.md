@@ -39,14 +39,15 @@ Sales and support copilot for location API enquiries, built for the institute's 
 
 ## Local setup
 
+Follow the [installation and deployment guide](docs/deployment.md) for the complete dependency install, service configuration, model preparation, index rebuild, setup check and launch commands. The tested interpreter is Python 3.12.
+
 ```bash
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
-python -m pytest -q
+python -m pip install -e '.[retrieval]'
 ```
 
-Live model calls require `TRACKB_API_KEY` and `TRACKB_CA_CERT`. Keep credentials and certificates outside Git; the existing ignore rules remain in place.
+Installation alone does not configure services or download the required model assets. Complete the guide before submitting a live enquiry. For development tests, also install `requirements.txt`.
 
 The model gateway uses the institute-provided endpoint. Its frozen run checks completion reliability and latency, not answer correctness or interpretation accuracy. Original frozen manifests and historical reports retain their original provenance; references in those snapshots to data outside Git describe the layout when those snapshots were produced. The current workbook is `data/ground-truth.xlsx`.
 

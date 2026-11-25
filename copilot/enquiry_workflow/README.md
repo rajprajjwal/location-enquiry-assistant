@@ -18,6 +18,8 @@ Planning, tool execution, drafting and critic review each count as one step, inc
 
 ## Run the local UI
 
+For a fresh checkout, use the complete [installation and deployment guide](../../docs/deployment.md). It includes pinned model preparation and a setup check. The commands below remain useful for an existing environment.
+
 Run these commands from the repository root. The tested setup uses **Python 3.12**. On macOS, check `python3 --version` and `command -v python3`. If they show Apple's Python 3.9 from Command Line Tools, use a separate Python 3.12 installation. If you use Homebrew, install it with `brew install python@3.12`.
 
 ### 1. Prepare the Python environment
@@ -28,7 +30,7 @@ Reuse an existing Python 3.12 environment if you have one. For a fresh checkout,
 source .venv/bin/activate
 python --version
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt "streamlit==1.67.0"
+python -m pip install -e . -r requirements.txt
 python -m pip check
 python -m streamlit --version
 export PYTHONPATH="$PWD"
@@ -78,7 +80,7 @@ Run these commands in the same virtual environment with the import path set abov
 
 BM25 builds its index in memory from the bundled chunks at `copilot/rag/data/processed/chunks.jsonl`. In Python, select it with `rag_document_search(mode="bm25", rerank=False)`. The default Python adapter combines BM25 and dense retrieval with reciprocal rank fusion. It keeps the highest-ranked passage per canonical URL in the fused top 30, then reranks those passages with the cross-encoder.
 
-For hybrid retrieval, first install the additional dependencies with `python -m pip install -r copilot/rag/requirements-retrieval.txt`. Set `EMBED_BASE_URL` to the embedding service base URL ending in `/v1`, set `EMBED_API_KEY`, and supply `EMBED_CA_BUNDLE` if the service requires a custom CA. The default embedding backend is `endpoint`. The reranker loads on first use. The UI lists missing local prerequisites and disables submission in hybrid mode until they are available. Use BM25 to test while you set up hybrid retrieval.
+For hybrid retrieval, first install the additional dependencies with `python -m pip install -r copilot/rag/requirements-retrieval.txt`. Set `EMBED_BASE_URL` to the embedding service base URL ending in `/v1`, set `EMBED_API_KEY`, and supply `EMBED_CA_BUNDLE` if the service requires a custom CA. The default embedding backend is `endpoint`. Run `python -m copilot.deployment.prepare --mode hybrid` to download the pinned reranker and chunk tokenizer before the first enquiry. The reranker then loads from that cache. The UI lists missing local prerequisites and disables submission in hybrid mode until they are available. Use BM25 to test while you set up hybrid retrieval.
 
 From the repository root, activate the virtual environment and run one command to rebuild BM25 and dense retrieval from the approved corpus. The default chunk budget is 480 tokens, including headers and special tokens.
 

@@ -37,3 +37,6 @@ prompt-engineering-baseline/*.db*
 prompt-engineering-baseline/*.log
 prompt-engineering-baseline/data/kb_index/
 prompt-engineering-baseline/data/bm25_index.pkl
+
+# Downloaded model cache.
+.model-cache/

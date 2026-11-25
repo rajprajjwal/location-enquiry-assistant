@@ -6,7 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "location-enquiry-assistant"
 version = "0.1.0"
 description = "Sales and support copilot for location API enquiries"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
+dynamic = ["dependencies", "optional-dependencies"]
 
 [tool.setuptools]
 include-package-data = false
@@ -28,3 +29,9 @@ contracts = ["interpretation/*.json", "evaluation/*.json", "diagnostics/*.json",
 mapping = ["label_overrides.json"]
 schemas = ["*.json"]
 vocab = ["controlled-vocabulary.json"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements-app.txt"]}
+
+[tool.setuptools.dynamic.optional-dependencies]
+retrieval = {file = ["copilot/rag/requirements-retrieval.txt"]}

@@ -15,7 +15,9 @@ import os
 import re
 from functools import lru_cache
 
-TOKENIZER_NAME = os.environ.get("LBS_TOKENIZER", "BAAI/bge-base-en-v1.5")      # same vocabulary as bge-small-en-v1.5
+from ..model_assets import CHUNK_TOKENIZER, CHUNK_TOKENIZER_REVISION
+
+TOKENIZER_NAME = os.environ.get("LBS_TOKENIZER", CHUNK_TOKENIZER)      # same vocabulary as bge-small-en-v1.5
 EMBED_TOKENS = int(os.environ.get("LBS_EMBED_TOKENS", "480"))                  # whole embedded text incl. header and [CLS]/[SEP]
 OVERLAP = int(os.environ.get("LBS_CHUNK_OVERLAP", "60"))
 MIN_TOKENS = 6      # keep short callouts ("As of October 2026 ... no longer ...") - they are often the answer
@@ -25,7 +27,8 @@ SPECIAL = 2         # [CLS] and [SEP]
 @lru_cache(maxsize=1)
 def _tok():
     from transformers import AutoTokenizer
-    t = AutoTokenizer.from_pretrained(TOKENIZER_NAME)
+    options = {"revision": CHUNK_TOKENIZER_REVISION} if TOKENIZER_NAME == CHUNK_TOKENIZER else {}
+    t = AutoTokenizer.from_pretrained(TOKENIZER_NAME, **options)
     t.model_max_length = 10**9                                                  # we count; we do not want truncation warnings
     return t
 

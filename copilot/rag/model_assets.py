@@ -1,0 +1,5 @@
+"""Pinned official models used by corpus validation and reranking."""
+CHUNK_TOKENIZER = "BAAI/bge-base-en-v1.5"
+CHUNK_TOKENIZER_REVISION = "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a"
+RERANK_MODEL = "BAAI/bge-reranker-base"
+RERANK_REVISION = "2cfc18c9415c912f9d8155881c133215df768a70"
