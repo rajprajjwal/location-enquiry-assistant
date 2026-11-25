@@ -13,6 +13,8 @@ def main(argv=None):
     from copilot.model_gateway import prepare_tokenizer
     prepare(Path(os.environ.get("TRACKB_TOKENIZER_DIR", Path(prepare_tokenizer.__file__).parent / "assets/qwen3-8b")))
     if args.mode == "hybrid":
+        # HTTP downloads avoid Xet transport failures on restricted networks.
+        os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
         from huggingface_hub import snapshot_download
         from transformers import AutoTokenizer
         from copilot.rag.model_assets import (

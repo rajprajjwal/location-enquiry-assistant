@@ -50,7 +50,7 @@ python -m copilot.deployment.prepare --mode hybrid
 python -m copilot.rag.document_indexing.build_index --report /tmp/copilot-index-build.json
 ```
 
-Preparation downloads the pinned chat tokenizer, chunk tokenizer and reranker weights. Allow disk space and time for the reranker download; keep `HF_HOME` the same at startup. Re-running preparation reuses valid cached files. The index rebuild uses the bundled 509-document corpus at 480 tokens; no GT records are used. It verifies every indexed chunk and its citation metadata before publishing.
+Preparation downloads the pinned chat tokenizer, chunk tokenizer and reranker weights. It defaults to HTTP downloads to avoid Xet transport failures on restricted networks. Allow disk space and time for the reranker download; keep `HF_HOME` the same at startup. Re-running preparation reuses valid cached files. The index rebuild uses the bundled 509-document corpus at 480 tokens; no GT records are used. It verifies every indexed chunk and its citation metadata before publishing.
 
 For BM25 only:
 
