@@ -8,6 +8,7 @@ import streamlit as st
 
 from copilot.enquiry_workflow.cases import run_case
 from copilot.enquiry_workflow.deletion import delete_enquiry
+from copilot.response_drafting.customer_response import format_customer_response
 from copilot.enquiry_workflow.retrieval import (
     rag_document_search, retrieval_setup_issues, warm_retrieval_runtime, RetrievalUnavailable,
 )
@@ -47,12 +48,12 @@ with closing(connect(DB_PATH)) as con:
         hybrid_issues = retrieval_setup_issues() if mode == "Hybrid with reranking" else []
         if mode == "Hybrid with reranking" and not hybrid_issues:
             try:
-                with st.spinner("Loading the reranker before starting an enquiry…"):
+                with st.spinner("Preparing hybrid retrieval before starting an enquiry…"):
                     load_hybrid_runtime()
             except RetrievalUnavailable as exc:
                 hybrid_issues = [str(exc)]
             except Exception:
-                hybrid_issues = ["The reranker could not load. Run the hybrid preparation and setup check commands."]
+                hybrid_issues = ["Hybrid retrieval could not initialize. Check the embedding service, local model assets and dense index with the setup check command."]
         if hybrid_issues:
             st.warning("Hybrid retrieval is unavailable. " + " ".join(hybrid_issues))
             st.caption("Choose BM25 to run this enquiry now.")
@@ -94,17 +95,15 @@ with closing(connect(DB_PATH)) as con:
                 st.info(ownership["reason"])
                 if ownership.get("suggested_question"):
                     st.caption(ownership["suggested_question"])
-            draft = result["response_draft"]
-            if draft:
-                st.subheader("Draft")
-                st.text(draft["draft_text"])
-                st.json(draft["citations"], expanded=False)
-            elif result["status"] == "clarification_needed":
-                for question in result["clarifying_questions"]["questions"]:
-                    st.info(question["text"])
+            response = result.get('customer_response') or format_customer_response(result)
+            st.subheader('Customer response')
+            st.markdown(response['markdown'])
+            if result["status"] == "clarification_needed":
                 st.caption("Enter the customer’s reply in the enquiry box above.")
-            elif result["critic"]["reason"]:
-                st.info(result["critic"]["reason"])
+            draft = result.get('response_draft') or {}
+            if draft.get('citations'):
+                with st.expander('Citation evidence'):
+                    st.json(result['response_draft']['citations'], expanded=False)
             staff_questions = result["outputs"].get("clarifying_questions", {}).get("questions", [])
             active_text = {question["text"] for question in result["clarifying_questions"]["questions"]}
             suggestions = [question["text"] for question in staff_questions if question["text"] not in active_text]

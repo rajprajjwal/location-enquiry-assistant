@@ -1,0 +1,23 @@
+{
+  "case_id": "a7a929f0c6",
+  "trace_id": "8dd3b9122c484f978d619aaa2b03ca5d",
+  "status": "final",
+  "customer_response": {
+    "format_version": "1.0",
+    "sections": [
+      {
+        "heading": "Answer",
+        "content": "Mapbox | Directions API | API Docs | Mapbox > Example requests: Retrieve directions \u200b"
+      },
+      {
+        "heading": "Key details",
+        "content": "43,52.51;13.42,52.5;13.43,52.5?layers=-1;;3&access_token=YOUR_MAPBOX_ACCESS_TOKEN\"# Request a route that approaches the destination on the curb of the driving side$curl \"https://api.mapbox.com/directions/v5/mapbox/driving/13.43,52.51;13.43,52.5?approaches=unrestricted;curb&access_token=YOUR_MAPBOX_ACCESS_TOKEN\"# Request directions with voice and banner instructions specifying waypoint_names$curl \"https://api.mapbox.com/directions/v5/mapbox/cycling/-122.42,37.78;-77.03,38.91?steps=true&voice_instructions=true&banner_instructions=true&voice_units=imperial&waypoint_names=Home;Work&access_token=YOUR_MAPBOX_ACCESS_TOKEN\"# Specify waypoints$curl \"https://api.mapbox.com/directions/v5/mapbox/driving/13.43,52.51;13.42,52.5;13.43,52.5?waypoints=0;2&access_token=YOUR_MAPBOX_ACCESS_TOKEN\"# Specify a departure time$curl \"https://api.mapbox.com/directions/v5/mapbox/driving/-122.396112,37.791399;-122.433904,37.757812?access_token=YOUR_MAPBOX_ACCESS_TOKEN&depart_at=2019-05-02T15:00\" [1](https://docs.mapbox.com/api/navigation/directions/)\n\nMapbox | Directions API | API Docs | Mapbox > OLD waypoints_per_route=false / default \u200b\n\n```\n{  \"routes\": [    {      ...    }  ],  \"waypoints\": [    {      \"name\": \"K\u00f6penicker Stra\u00dfe\",      \"location\": [ 13.426579, 52.508068 ]    },    {      \"name\": \"Engeldamm\",      \"location\": [ 13.427292, 52.506902 ]    }  ],  \"code\": \"Ok\",  \"uuid\": \"cjd51uqn5005447p8nte2zc4w\"}\n```"
+      },
+      {
+        "heading": "Sources",
+        "content": "- [1](https://docs.mapbox.com/api/navigation/directions/) docs.mapbox.com"
+      }
+    ],
+    "markdown": "### Answer\n\nMapbox | Directions API | API Docs | Mapbox > Example requests: Retrieve directions \u200b\n\n### Key details\n\n43,52.51;13.42,52.5;13.43,52.5?layers=-1;;3&access_token=YOUR_MAPBOX_ACCESS_TOKEN\"# Request a route that approaches the destination on the curb of the driving side$curl \"https://api.mapbox.com/directions/v5/mapbox/driving/13.43,52.51;13.43,52.5?approaches=unrestricted;curb&access_token=YOUR_MAPBOX_ACCESS_TOKEN\"# Request directions with voice and banner instructions specifying waypoint_names$curl \"https://api.mapbox.com/directions/v5/mapbox/cycling/-122.42,37.78;-77.03,38.91?steps=true&voice_instructions=true&banner_instructions=true&voice_units=imperial&waypoint_names=Home;Work&access_token=YOUR_MAPBOX_ACCESS_TOKEN\"# Specify waypoints$curl \"https://api.mapbox.com/directions/v5/mapbox/driving/13.43,52.51;13.42,52.5;13.43,52.5?waypoints=0;2&access_token=YOUR_MAPBOX_ACCESS_TOKEN\"# Specify a departure time$curl \"https://api.mapbox.com/directions/v5/mapbox/driving/-122.396112,37.791399;-122.433904,37.757812?access_token=YOUR_MAPBOX_ACCESS_TOKEN&depart_at=2019-05-02T15:00\" [1](https://docs.mapbox.com/api/navigation/directions/)\n\nMapbox | Directions API | API Docs | Mapbox > OLD waypoints_per_route=false / default \u200b\n\n```\n{  \"routes\": [    {      ...    }  ],  \"waypoints\": [    {      \"name\": \"K\u00f6penicker Stra\u00dfe\",      \"location\": [ 13.426579, 52.508068 ]    },    {      \"name\": \"Engeldamm\",      \"location\": [ 13.427292, 52.506902 ]    }  ],  \"code\": \"Ok\",  \"uuid\": \"cjd51uqn5005447p8nte2zc4w\"}\n```\n\n### Sources\n\n- [1](https://docs.mapbox.com/api/navigation/directions/) docs.mapbox.com"
+  }
+}

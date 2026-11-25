@@ -1,0 +1,23 @@
+{
+  "case_id": "a7a929f0c6",
+  "trace_id": "c94604e29a404648bd3e3e29eafe3575",
+  "status": "clarification_needed",
+  "customer_response": {
+    "format_version": "1.0",
+    "sections": [
+      {
+        "heading": "Answer",
+        "content": "The integration guidance depends on the map provider."
+      },
+      {
+        "heading": "Assumptions / missing information",
+        "content": "- Which map provider are you using?"
+      },
+      {
+        "heading": "Next step",
+        "content": "Share the requested information so I can continue with your enquiry."
+      }
+    ],
+    "markdown": "### Answer\n\nThe integration guidance depends on the map provider.\n\n### Assumptions / missing information\n\n- Which map provider are you using?\n\n### Next step\n\nShare the requested information so I can continue with your enquiry."
+  }
+}

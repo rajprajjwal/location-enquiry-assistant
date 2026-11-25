@@ -1,0 +1,23 @@
+{
+  "case_id": "37d30a2145",
+  "trace_id": "2df6e4007ab84a838e853cdc9d25ee6a",
+  "status": "final",
+  "customer_response": {
+    "format_version": "1.0",
+    "sections": [
+      {
+        "heading": "Answer",
+        "content": "A change has been proposed for your record."
+      },
+      {
+        "heading": "Key details",
+        "content": "Record: TKT-986\n- Status: Investigating"
+      },
+      {
+        "heading": "Next step",
+        "content": "The proposed record change is awaiting review. It has not been carried out."
+      }
+    ],
+    "markdown": "### Answer\n\nA change has been proposed for your record.\n\n### Key details\n\nRecord: TKT-986\n- Status: Investigating\n\n### Next step\n\nThe proposed record change is awaiting review. It has not been carried out."
+  }
+}

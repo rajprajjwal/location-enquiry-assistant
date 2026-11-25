@@ -1,0 +1,236 @@
+{
+  "case_id": "ec7bcb2b30",
+  "trace_id": "495545cee2be42c094682f7e2a226e9f",
+  "status": "escalated",
+  "pricing_requirements": {
+    "applicable": false,
+    "required_facts": []
+  },
+  "ownership_review": {
+    "customer_status": "unknown",
+    "owner": "Support L1",
+    "provisional": true,
+    "status_deferred": false,
+    "confirmation_needed": true,
+    "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting.",
+    "suggested_question": "Are you already using this service, or evaluating it as a new customer?"
+  },
+  "clarifying_questions": {
+    "needed": false,
+    "questions": []
+  },
+  "response_draft": null,
+  "outputs": {
+    "response_draft": {
+      "draft_text": "RuntimeError",
+      "citations": [],
+      "is_refusal": true,
+      "refusal": {
+        "policy_id": "manual_review_required",
+        "reason": "RuntimeError"
+      }
+    },
+    "clarifying_questions": {
+      "needed": false,
+      "questions": []
+    },
+    "qualification_details": {
+      "use_case_api": {
+        "api": "directions",
+        "use_case": null
+      },
+      "region": null,
+      "monthly_volume": null,
+      "current_provider": null,
+      "timeline": null,
+      "budget": null,
+      "technical_constraints": null,
+      "decision_maker": null,
+      "missing_required_fields": [
+        "region",
+        "monthly_volume",
+        "current_provider",
+        "timeline"
+      ],
+      "complete": false
+    },
+    "proposed_record_update": {
+      "applicable": false,
+      "requires_human_approval": false,
+      "approval_status": "not_applicable",
+      "executed": false,
+      "proposal": null
+    },
+    "comparison": {
+      "applicable": false,
+      "providers": [],
+      "dimensions": [],
+      "assumptions": [],
+      "source_urls": []
+    },
+    "responsible_role": {
+      "owner": "Support L1",
+      "team": "Support",
+      "should_escalate": false,
+      "severity": "SEV4",
+      "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting. RuntimeError"
+    },
+    "next_action": {
+      "action_type": "refuse",
+      "description": "RuntimeError",
+      "requires_human_approval": false,
+      "approval_status": "not_applicable",
+      "executed": false
+    }
+  },
+  "proposed_actions": [],
+  "step_count": 2,
+  "steps": [
+    {
+      "step": 1,
+      "action": "plan",
+      "status": "completed",
+      "latency_ms": 11
+    },
+    {
+      "step": 2,
+      "action": "document_search",
+      "status": "failed",
+      "latency_ms": 45646
+    }
+  ],
+  "tool_calls": [
+    {
+      "tool_name": "document_search",
+      "registered": true,
+      "invocation_timestamp": "2026-11-25T11:57:04.881217+00:00",
+      "input_metadata": {
+        "field_count": 2,
+        "collection_sizes": []
+      },
+      "input_validation": "passed",
+      "output_validation": "not_run",
+      "validation_result": "not_run",
+      "execution_status": "error",
+      "output_metadata": null,
+      "error_details": "ToolTimeout",
+      "attempts": 3,
+      "execution_duration_ms": 45598.18
+    }
+  ],
+  "critic": {
+    "verdict": "not_run",
+    "reason": "RuntimeError",
+    "reviews": []
+  },
+  "retrieved_evidence": [],
+  "reliability": {
+    "limits": {
+      "max_retries_per_step": 2,
+      "enquiry_timeout_seconds": 120.0,
+      "model_timeout_seconds": 30.0,
+      "tool_timeout_seconds": 15.0,
+      "token_budget": 32768
+    },
+    "reserved_tokens": 1909,
+    "observed_tokens": 1359,
+    "model_attempts": 1,
+    "retries_by_step": {
+      "document_search:2": 2
+    },
+    "events": [
+      {
+        "kind": "tool_timeout",
+        "step": "document_search:2"
+      },
+      {
+        "kind": "retry",
+        "step": "document_search:2",
+        "retry": 1
+      },
+      {
+        "kind": "tool_timeout",
+        "step": "document_search:2"
+      },
+      {
+        "kind": "retry",
+        "step": "document_search:2",
+        "retry": 2
+      },
+      {
+        "kind": "tool_timeout",
+        "step": "document_search:2"
+      }
+    ],
+    "elapsed_ms": 59517
+  },
+  "diagnostic_context": {
+    "state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 31,
+          "end": 37
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 31,
+          "end": 37
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "retrieved_evidence": [],
+    "interpretation": {
+      "api": "directions",
+      "intent": "docs_how_to"
+    },
+    "pricing_requirements": {
+      "applicable": false,
+      "required_facts": []
+    },
+    "qualification": {
+      "version": "1.0",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "facts": {},
+      "assumptions": {},
+      "blocked_fields": [],
+      "missing_interpretation_fields": [
+        "region",
+        "monthly_volume",
+        "current_provider",
+        "timeline"
+      ]
+    }
+  },
+  "follow_up_selection": {
+    "status": "no_qualification_required"
+  },
+  "customer_response": {
+    "format_version": "1.0",
+    "sections": [
+      {
+        "heading": "Answer",
+        "content": "I could not verify a complete answer from the available information."
+      },
+      {
+        "heading": "Next step",
+        "content": "Please have this enquiry reviewed before acting on an unverified answer."
+      }
+    ],
+    "markdown": "### Answer\n\nI could not verify a complete answer from the available information.\n\n### Next step\n\nPlease have this enquiry reviewed before acting on an unverified answer."
+  }
+}

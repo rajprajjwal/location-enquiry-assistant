@@ -1,0 +1,328 @@
+{
+  "case_id": "e1b45906bd",
+  "trace_id": "d6a95afc102f45728d4d4de138c6dfa0",
+  "status": "final",
+  "pricing_requirements": {
+    "applicable": false,
+    "required_facts": []
+  },
+  "ownership_review": {
+    "customer_status": "unknown",
+    "owner": "Support L1",
+    "provisional": true,
+    "status_deferred": false,
+    "confirmation_needed": true,
+    "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting.",
+    "suggested_question": "Are you already using this service, or evaluating it as a new customer?"
+  },
+  "clarifying_questions": {
+    "needed": false,
+    "questions": []
+  },
+  "response_draft": {
+    "draft_text": "Mapbox | API Docs | Mapbox > Coordinate format \u200b\n\nWhen you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering.\n\nMapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . |",
+    "citations": [
+      {
+        "url": "https://docs.mapbox.com/api/guides",
+        "span": "Mapbox | API Docs | Mapbox > Coordinate format \u200b\n\nWhen you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering.",
+        "supports_claim": "Mapbox | API Docs | Mapbox > Coordinate format \u200b\n\nWhen you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering.",
+        "quote_or_summary": "verbatim"
+      },
+      {
+        "url": "https://docs.mapbox.com/api/navigation/directions/",
+        "span": "Mapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . |",
+        "supports_claim": "Mapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . |",
+        "quote_or_summary": "verbatim"
+      }
+    ],
+    "is_refusal": false,
+    "refusal": null
+  },
+  "outputs": {
+    "response_draft": {
+      "draft_text": "Mapbox | API Docs | Mapbox > Coordinate format \u200b\n\nWhen you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering.\n\nMapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . |",
+      "citations": [
+        {
+          "url": "https://docs.mapbox.com/api/guides",
+          "span": "Mapbox | API Docs | Mapbox > Coordinate format \u200b\n\nWhen you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering.",
+          "supports_claim": "Mapbox | API Docs | Mapbox > Coordinate format \u200b\n\nWhen you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering.",
+          "quote_or_summary": "verbatim"
+        },
+        {
+          "url": "https://docs.mapbox.com/api/navigation/directions/",
+          "span": "Mapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . |",
+          "supports_claim": "Mapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . |",
+          "quote_or_summary": "verbatim"
+        }
+      ],
+      "is_refusal": false,
+      "refusal": null
+    },
+    "clarifying_questions": {
+      "needed": false,
+      "questions": []
+    },
+    "qualification_details": {
+      "use_case_api": {
+        "api": "directions",
+        "use_case": null
+      },
+      "region": null,
+      "monthly_volume": null,
+      "current_provider": null,
+      "timeline": null,
+      "budget": null,
+      "technical_constraints": null,
+      "decision_maker": null,
+      "missing_required_fields": [
+        "region",
+        "monthly_volume",
+        "current_provider",
+        "timeline"
+      ],
+      "complete": false
+    },
+    "proposed_record_update": {
+      "applicable": false,
+      "requires_human_approval": false,
+      "approval_status": "not_applicable",
+      "executed": false,
+      "proposal": null
+    },
+    "comparison": {
+      "applicable": false,
+      "providers": [],
+      "dimensions": [],
+      "assumptions": [],
+      "source_urls": []
+    },
+    "responsible_role": {
+      "owner": "Support L1",
+      "team": "Support",
+      "should_escalate": false,
+      "severity": "SEV4",
+      "reason": "Customer status is unknown. Provisional owner: Support L1. This enquiry asks for technical guidance or troubleshooting."
+    },
+    "next_action": {
+      "action_type": "answer_directly",
+      "description": "Review the drafted reply.",
+      "requires_human_approval": false,
+      "approval_status": "not_applicable",
+      "executed": false
+    }
+  },
+  "proposed_actions": [],
+  "step_count": 4,
+  "steps": [
+    {
+      "step": 1,
+      "action": "plan",
+      "status": "completed",
+      "latency_ms": 11
+    },
+    {
+      "step": 2,
+      "action": "document_search",
+      "status": "completed",
+      "latency_ms": 43133
+    },
+    {
+      "step": 3,
+      "action": "draft",
+      "status": "completed",
+      "latency_ms": 4911
+    },
+    {
+      "step": 4,
+      "action": "critic",
+      "status": "completed",
+      "latency_ms": 9833
+    }
+  ],
+  "tool_calls": [
+    {
+      "tool_name": "document_search",
+      "registered": true,
+      "invocation_timestamp": "2026-11-25T12:00:39.217257+00:00",
+      "input_metadata": {
+        "field_count": 2,
+        "collection_sizes": []
+      },
+      "input_validation": "passed",
+      "output_validation": "passed",
+      "validation_result": "passed",
+      "execution_status": "success",
+      "output_metadata": {
+        "field_count": 1,
+        "collection_sizes": [
+          5
+        ]
+      },
+      "error_details": null,
+      "attempts": 3,
+      "execution_duration_ms": 43117.43
+    }
+  ],
+  "critic": {
+    "verdict": "pass",
+    "reason": null,
+    "reviews": [
+      {
+        "verdict": "pass",
+        "reason": null
+      }
+    ]
+  },
+  "retrieved_evidence": [
+    {
+      "source_url": "https://docs.mapbox.com/api/guides",
+      "relevant_passage": "Mapbox | API Docs | Mapbox > Coordinate format \u200b\n\nWhen you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering."
+    },
+    {
+      "source_url": "https://docs.mapbox.com/api/navigation/directions/",
+      "relevant_passage": "Mapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . |"
+    },
+    {
+      "source_url": "https://docs.mapbox.com/api/search/search-box/",
+      "relevant_passage": "Mapbox | Search Box API | API Docs | Mapbox > Reverse lookup \u200b\n\nWith reverse lookup, you can get a list of addresses and POIs around a given coordinate (for example, what is around 33.9416\u00b0 N, 118.4085\u00b0 W).\n\nThe /reverse endpoint allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location."
+    },
+    {
+      "source_url": "https://docs.mapbox.com/api/navigation/matrix/",
+      "relevant_passage": "Mapbox | Matrix API | API Docs | Mapbox > Response: Retrieve a matrix \u200b\n\nThe response to a Matrix API request is a JSON object that contains the following properties:\n\n| Property | Type | Description |\n| code | string | A string indicating the state of the response. This is a separate code than the HTTP status code. On normal valid responses, the value will be Ok . See the errors section below for more information. |\n| durations | array | Durations as an array of arrays that represent the matrix in row-major order. durations[i][j] gives the travel time from the i th source to the j th destination. All values are in seconds. The duration between the same coordinate is always 0 . Finding no duration, the result will be null . |\n| distances | array | Distances as an array of arrays that represent the matrix in row-major order. distances[i][j] gives the travel distance from the i th source to the j th destination. All values are in meters. The distance between the same coordinate is always 0 . Finding no distance, the result will be null . |\n| sources | array | An array of waypoint objects . Each waypoint is an input coordinate snapped to the road and path network. The waypoints appear in the array in the order of the input coordinates, or in the order specified in the sources query parameter. |\n| destinations | array | An array of waypoint objects . Each waypoint is an input coordinate snapped to the road and path network. The waypoints appear in the array in the order of the input coordinates, or in the order specified in the destinations query parameter. |\n\nNote: When a route is not found between a source and a destination, the corresponding value in the durations or distances matrix will be null ."
+    },
+    {
+      "source_url": "https://docs.mapbox.com/api/search/geocoding/",
+      "relevant_passage": "Mapbox | Geocoding API | API Docs | Mapbox > Reverse geocoding \u200b\n\nget\n\nhttps://api.mapbox.com /search/geocode/v6/reverse?longitude= {longitude} &latitude= {latitude}\n\nThe reverse geocoding query type allows you to look up a pair of coordinates and returns the geographic features there, including a standardized address or place and full geographic context.\n\n| Required parameters | Type | Description |\n| longitude | number | The longitude decimal value from the geographic coordinate for the location being queried. |\n| latitude | number | The latitude decimal value from the geographic coordinate for the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:"
+    }
+  ],
+  "reliability": {
+    "limits": {
+      "max_retries_per_step": 2,
+      "enquiry_timeout_seconds": 120.0,
+      "model_timeout_seconds": 30.0,
+      "tool_timeout_seconds": 15.0,
+      "token_budget": 32768
+    },
+    "reserved_tokens": 4672,
+    "observed_tokens": 3577,
+    "model_attempts": 3,
+    "retries_by_step": {
+      "document_search:2": 2
+    },
+    "events": [
+      {
+        "kind": "tool_timeout",
+        "step": "document_search:2"
+      },
+      {
+        "kind": "retry",
+        "step": "document_search:2",
+        "retry": 1
+      },
+      {
+        "kind": "tool_timeout",
+        "step": "document_search:2"
+      },
+      {
+        "kind": "retry",
+        "step": "document_search:2",
+        "retry": 2
+      }
+    ],
+    "elapsed_ms": 70682
+  },
+  "diagnostic_context": {
+    "state": {
+      "version": "1.0",
+      "facts": {
+        "mentioned_providers": {
+          "field": "mentioned_providers",
+          "status": "supplied",
+          "value": [
+            "Mapbox"
+          ],
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 31,
+          "end": 37
+        },
+        "provider": {
+          "field": "provider",
+          "status": "supplied",
+          "value": "Mapbox",
+          "source": "query",
+          "evidence": "Mapbox",
+          "start": 31,
+          "end": 37
+        }
+      },
+      "questions": [],
+      "completed_checks": []
+    },
+    "retrieved_evidence": [
+      {
+        "source_url": "https://docs.mapbox.com/api/guides",
+        "relevant_passage": "Mapbox | API Docs | Mapbox > Coordinate format \u200b\n\nWhen you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering."
+      },
+      {
+        "source_url": "https://docs.mapbox.com/api/navigation/directions/",
+        "relevant_passage": "Mapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . |"
+      },
+      {
+        "source_url": "https://docs.mapbox.com/api/search/search-box/",
+        "relevant_passage": "Mapbox | Search Box API | API Docs | Mapbox > Reverse lookup \u200b\n\nWith reverse lookup, you can get a list of addresses and POIs around a given coordinate (for example, what is around 33.9416\u00b0 N, 118.4085\u00b0 W).\n\nThe /reverse endpoint allows you to look up a single pair of coordinates and returns the geographic feature or features that exist at that location."
+      },
+      {
+        "source_url": "https://docs.mapbox.com/api/navigation/matrix/",
+        "relevant_passage": "Mapbox | Matrix API | API Docs | Mapbox > Response: Retrieve a matrix \u200b\n\nThe response to a Matrix API request is a JSON object that contains the following properties:\n\n| Property | Type | Description |\n| code | string | A string indicating the state of the response. This is a separate code than the HTTP status code. On normal valid responses, the value will be Ok . See the errors section below for more information. |\n| durations | array | Durations as an array of arrays that represent the matrix in row-major order. durations[i][j] gives the travel time from the i th source to the j th destination. All values are in seconds. The duration between the same coordinate is always 0 . Finding no duration, the result will be null . |\n| distances | array | Distances as an array of arrays that represent the matrix in row-major order. distances[i][j] gives the travel distance from the i th source to the j th destination. All values are in meters. The distance between the same coordinate is always 0 . Finding no distance, the result will be null . |\n| sources | array | An array of waypoint objects . Each waypoint is an input coordinate snapped to the road and path network. The waypoints appear in the array in the order of the input coordinates, or in the order specified in the sources query parameter. |\n| destinations | array | An array of waypoint objects . Each waypoint is an input coordinate snapped to the road and path network. The waypoints appear in the array in the order of the input coordinates, or in the order specified in the destinations query parameter. |\n\nNote: When a route is not found between a source and a destination, the corresponding value in the durations or distances matrix will be null ."
+      },
+      {
+        "source_url": "https://docs.mapbox.com/api/search/geocoding/",
+        "relevant_passage": "Mapbox | Geocoding API | API Docs | Mapbox > Reverse geocoding \u200b\n\nget\n\nhttps://api.mapbox.com /search/geocode/v6/reverse?longitude= {longitude} &latitude= {latitude}\n\nThe reverse geocoding query type allows you to look up a pair of coordinates and returns the geographic features there, including a standardized address or place and full geographic context.\n\n| Required parameters | Type | Description |\n| longitude | number | The longitude decimal value from the geographic coordinate for the location being queried. |\n| latitude | number | The latitude decimal value from the geographic coordinate for the location being queried. |\n| access_token | string | A valid Mapbox access token . |\n\nYou can further refine the results of a reverse geocoding query with the following optional parameters:"
+      }
+    ],
+    "interpretation": {
+      "api": "directions",
+      "intent": "docs_how_to"
+    },
+    "pricing_requirements": {
+      "applicable": false,
+      "required_facts": []
+    },
+    "qualification": {
+      "version": "1.0",
+      "api": "directions",
+      "intent": "docs_how_to",
+      "facts": {},
+      "assumptions": {},
+      "blocked_fields": [],
+      "missing_interpretation_fields": [
+        "region",
+        "monthly_volume",
+        "current_provider",
+        "timeline"
+      ]
+    }
+  },
+  "follow_up_selection": {
+    "status": "no_qualification_required"
+  },
+  "customer_response": {
+    "format_version": "1.0",
+    "sections": [
+      {
+        "heading": "Answer",
+        "content": "Mapbox | API Docs | Mapbox > Coordinate format \u200b"
+      },
+      {
+        "heading": "Key details",
+        "content": "When you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering. [1](https://docs.mapbox.com/api/guides)\n\nMapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . | [2](https://docs.mapbox.com/api/navigation/directions/)"
+      },
+      {
+        "heading": "Sources",
+        "content": "- [1](https://docs.mapbox.com/api/guides) docs.mapbox.com\n- [2](https://docs.mapbox.com/api/navigation/directions/) docs.mapbox.com"
+      }
+    ],
+    "markdown": "### Answer\n\nMapbox | API Docs | Mapbox > Coordinate format \u200b\n\n### Key details\n\nWhen you provide geographic coordinates to a Mapbox API, they should be formatted in the order longitude, latitude and specified as decimal degrees in the WGS84 coordinate system . This pattern matches existing standards, including GeoJSON and KML. Mapbox APIs use GeoJSON formatting wherever possible to represent geospatial data.\n\nThe only exception to this longitude, latitude order is the polyline format , which is supported in Static Images API overlays and Directions API , Map Matching API , and Optimization API responses. When polyline input or output is specified, the polyline content should follow the Google Encoded Polyline format, which specifies latitude, longitude ordering. [1](https://docs.mapbox.com/api/guides)\n\nMapbox | Directions API | API Docs | Mapbox > Required parameters \u200b\n\nRetrieve directions between waypoints. Directions requests must specify at least two waypoints as starting and ending points.\n\n| Required parameters | Type | Description |\n| profile | string | The routing profile to use. Possible values are mapbox/driving-traffic , mapbox/driving , mapbox/walking , or mapbox/cycling . |\n| coordinates | number | A semicolon-separated list of between two and 25 {longitude},{latitude} coordinate pairs to visit in order. |\n| access_token | string | A valid Mapbox access token . | [2](https://docs.mapbox.com/api/navigation/directions/)\n\n### Sources\n\n- [1](https://docs.mapbox.com/api/guides) docs.mapbox.com\n- [2](https://docs.mapbox.com/api/navigation/directions/) docs.mapbox.com"
+  }
+}

@@ -106,6 +106,8 @@ def run_case(con, query, *, case_id=None, customer=None, client=None, search=Non
     result = add_follow_up_questions(result, enquiry, client=client)
     from copilot.qualification.finalization import finalize_requirements
     result = finalize_requirements(result, enquiry)
+    from copilot.response_drafting.customer_response import format_customer_response
+    result = {**result, 'customer_response': format_customer_response(result)}
     if shared is not None:
         from copilot.diagnostics.facts import DiagnosticQuestion, DiagnosticState
         shared = DiagnosticState.model_validate(result["diagnostic_context"]["state"])

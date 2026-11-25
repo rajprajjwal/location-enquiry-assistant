@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "scenario": "hybrid-guidance",
+      "passed": true,
+      "status": "final",
+      "retrieval": "hybrid"
+    }
+  ],
+  "frozen_or_holdout_used": false,
+  "production_record_writes": 0,
+  "external_messages": 0
+}

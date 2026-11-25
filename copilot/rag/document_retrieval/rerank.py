@@ -1,6 +1,7 @@
 # Source history: Deepshikha (7b89516), deepshikha/lbs-copilot. See copilot/enquiry_workflow/source-history.json.
 """Cross-encoder re-ranker (bge-reranker-base, local)."""
 from functools import lru_cache
+import os
 
 from ..model_assets import RERANK_MODEL, RERANK_REVISION
 
@@ -8,7 +9,8 @@ from ..model_assets import RERANK_MODEL, RERANK_REVISION
 @lru_cache(maxsize=1)
 def _model():
     from sentence_transformers import CrossEncoder
-    return CrossEncoder(RERANK_MODEL, revision=RERANK_REVISION, max_length=512)
+    return CrossEncoder(RERANK_MODEL, revision=RERANK_REVISION, max_length=512,
+                        device=os.environ.get("RERANK_DEVICE"))
 
 
 def rerank(query: str, hits: list[dict], top_k: int = 8) -> list[dict]:

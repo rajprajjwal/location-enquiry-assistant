@@ -1,0 +1,19 @@
+{
+  "case_id": "ec7bcb2b30",
+  "trace_id": "495545cee2be42c094682f7e2a226e9f",
+  "status": "escalated",
+  "customer_response": {
+    "format_version": "1.0",
+    "sections": [
+      {
+        "heading": "Answer",
+        "content": "I could not verify a complete answer from the available information."
+      },
+      {
+        "heading": "Next step",
+        "content": "Please have this enquiry reviewed before acting on an unverified answer."
+      }
+    ],
+    "markdown": "### Answer\n\nI could not verify a complete answer from the available information.\n\n### Next step\n\nPlease have this enquiry reviewed before acting on an unverified answer."
+  }
+}

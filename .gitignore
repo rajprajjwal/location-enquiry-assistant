@@ -2,6 +2,8 @@
 # Use case: blocks keys/certs (e.g. *.crt, *.pem, .env, TRACKB_API_KEY) and the .venv/.
 # Example: .venv/ and __pycache__/ below are never committed.
 .venv/
+/.venv
+/.model-cache
 __pycache__/
 *.py[cod]
 *.egg-info/

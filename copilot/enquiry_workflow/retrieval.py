@@ -2,6 +2,7 @@
 
 from importlib.util import find_spec
 from pathlib import Path
+from functools import lru_cache
 
 from copilot.registered_tools.tool_registry import DocumentSearchTool
 
@@ -46,8 +47,9 @@ def retrieval_setup_issues(mode: str = "hybrid", *, rerank: bool = True) -> list
 
 
 
+@lru_cache(maxsize=1)
 def warm_retrieval_runtime() -> None:
-    """Load and warm cached reranker weights before starting an enquiry deadline."""
+    """Initialize the full hybrid path before starting an enquiry deadline."""
     from huggingface_hub import try_to_load_from_cache
     from copilot.rag.model_assets import RERANK_MODEL, RERANK_REVISION
     from copilot.rag.document_retrieval.rerank import _model
@@ -57,6 +59,9 @@ def warm_retrieval_runtime() -> None:
         if not isinstance(cached, str) or not Path(cached).is_file():
             raise RetrievalUnavailable("Run python -m copilot.deployment.prepare --mode hybrid before using hybrid retrieval.")
     _model().predict([("Location API documentation", "Directions API documentation")])
+    from copilot.rag.document_retrieval.hybrid import retrieve
+
+    retrieve('Directions API documentation', mode='hybrid', rerank=True, k=1)
 
 
 def rag_document_search(
