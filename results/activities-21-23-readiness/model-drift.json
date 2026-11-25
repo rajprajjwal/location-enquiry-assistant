@@ -1,0 +1,22 @@
+{
+  "exit_code": 0,
+  "passed": true,
+  "differing_files": [],
+  "tracked_models_modified": false,
+  "expected": {
+    "turn.py": "b2d5829c4dfd7de45fe9f3bc3674cbace53badbdf8b375e6ff2371312e5d5ac1",
+    "interpretation_output.py": "e6d842e721a09e7d2bd1269e7ba4674511315d7d0c0bd9b3757e46f5d4ddf897",
+    "interpretation_input.py": "7ee8519138cd3d5ccc9bd812f6f4e2fcb1bbaf27557cb45284200c5e76173727",
+    "__init__.py": "07e4862404ebcb786f99a095b17bf621d316896dc3f766d3bece40133b6df785",
+    "qualification_details.py": "e33d3a8b209bac502b0e535b5740c6f90fda4684daabef85ce782259cb29a364",
+    "known_fact.py": "eea88690541096f3cfd6f9c6d1516639d809e752c95090e8114413cf549f9e67"
+  },
+  "generated": {
+    "turn.py": "b2d5829c4dfd7de45fe9f3bc3674cbace53badbdf8b375e6ff2371312e5d5ac1",
+    "interpretation_output.py": "e6d842e721a09e7d2bd1269e7ba4674511315d7d0c0bd9b3757e46f5d4ddf897",
+    "interpretation_input.py": "7ee8519138cd3d5ccc9bd812f6f4e2fcb1bbaf27557cb45284200c5e76173727",
+    "__init__.py": "07e4862404ebcb786f99a095b17bf621d316896dc3f766d3bece40133b6df785",
+    "qualification_details.py": "e33d3a8b209bac502b0e535b5740c6f90fda4684daabef85ce782259cb29a364",
+    "known_fact.py": "eea88690541096f3cfd6f9c6d1516639d809e752c95090e8114413cf549f9e67"
+  }
+}

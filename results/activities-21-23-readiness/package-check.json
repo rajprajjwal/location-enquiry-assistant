@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "wheel_sha256": "05fc4afc42d043e4f73ce59ea303b3db810bd15c3907331348acb4efbad09fdd",
+  "required_assets": 20,
+  "missing_assets": [],
+  "archived_runtime_files": 0,
+  "isolated_import_exit_code": 0,
+  "isolated_import_stdout": "Installed schemas and contracts load\n",
+  "isolated_import_stderr": "",
+  "normal_environment_changed": false
+}

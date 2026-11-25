@@ -1,0 +1,77 @@
+{
+  "embedding": {
+    "passed": true,
+    "count": 2,
+    "dimensions": [
+      384,
+      384
+    ],
+    "latency_ms": 687,
+    "tls_verified": true
+  },
+  "model": [
+    {
+      "probe": "chat",
+      "passed": true,
+      "response": {
+        "text": "pong",
+        "raw": "pong",
+        "model": "Qwen/Qwen3-8B",
+        "usage": {
+          "prompt_tokens": 19,
+          "completion_tokens": 2,
+          "total_tokens": 21
+        },
+        "latency_ms": 444,
+        "think_seen": false,
+        "tool_calls": [],
+        "finish_reason": "stop"
+      }
+    },
+    {
+      "probe": "json",
+      "passed": true,
+      "response": {
+        "text": "{\"status\": \"ok\"}",
+        "raw": "{\"status\": \"ok\"}",
+        "model": "Qwen/Qwen3-8B",
+        "usage": {
+          "prompt_tokens": 29,
+          "completion_tokens": 7,
+          "total_tokens": 36
+        },
+        "latency_ms": 392,
+        "think_seen": false,
+        "tool_calls": [],
+        "finish_reason": "stop"
+      }
+    },
+    {
+      "probe": "tool",
+      "passed": true,
+      "response": {
+        "text": "",
+        "raw": "",
+        "model": "Qwen/Qwen3-8B",
+        "usage": {
+          "prompt_tokens": 164,
+          "completion_tokens": 10,
+          "total_tokens": 174
+        },
+        "latency_ms": 607,
+        "think_seen": false,
+        "tool_calls": [
+          {
+            "id": "chatcmpl-tool-8b91ab5ce1a6cbb7",
+            "type": "function",
+            "function": {
+              "name": "echo_value",
+              "arguments": "{\n  \"value\": 7\n}"
+            }
+          }
+        ],
+        "finish_reason": "stop"
+      }
+    }
+  ]
+}

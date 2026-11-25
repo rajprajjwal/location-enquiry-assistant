@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "duration_seconds": 6.74,
+  "validation_mode": "real in-tree Pydantic rules"
+}

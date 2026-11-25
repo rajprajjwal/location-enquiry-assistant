@@ -1,0 +1,6 @@
+{
+  "branch": "feat/evaluation-observability",
+  "base_commit": "4701911531ad5ccd230c200d0fb424f43681be9a",
+  "gt_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "scope": "Compilation, automated tests, synthetic smoke and sandbox integration; no new frozen or holdout scoring."
+}

@@ -1,0 +1,2 @@
+{"embedding": {"passed": true, "count": 2, "dimensions": [384, 384], "latency_ms": 687, "tls_verified": true}}
+{"model_smoke_passed": true}

@@ -1,0 +1,2 @@
+W1125 10:44:40.233000 2500 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+{"available": false, "offline_only": true, "model": "BAAI/bge-reranker-base", "error_type": "OSError", "error": "We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.\nCheck your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'."}

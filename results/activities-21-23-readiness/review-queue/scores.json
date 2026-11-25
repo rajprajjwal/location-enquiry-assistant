@@ -1,0 +1,18 @@
+{
+  "scenario_count": 20,
+  "held_for_review": 20,
+  "complete_audit_records": 20,
+  "decisions": {
+    "approve": 8,
+    "edit": 6,
+    "reject": 6
+  },
+  "action_types": {
+    "record_update": 10,
+    "escalation": 10
+  },
+  "unauthorized_approval_blocked": 20,
+  "reviewer": "synthetic authorized acceptance reviewer in isolated configuration",
+  "scope": "Real workflow proposals and Streamlit review UI. Scripted model responses, controlled follow-up selector, diagnostic planning disabled.",
+  "passed": true
+}

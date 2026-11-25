@@ -1,0 +1,12 @@
+{
+  "gt_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+  "gt_unchanged": true,
+  "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+  "corpus_unchanged": true,
+  "new_frozen_scoring": false,
+  "holdout_used": false,
+  "credential_scan": {
+    "passed": true,
+    "matches": []
+  }
+}

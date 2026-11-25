@@ -1,0 +1,52 @@
+{
+  "project_environment_modified": false,
+  "checks": {
+    "pytest": {
+      "available": true
+    },
+    "pydantic": {
+      "available": true
+    },
+    "langgraph": {
+      "available": true
+    },
+    "streamlit": {
+      "available": true
+    },
+    "BM25": {
+      "available": true
+    },
+    "beautifulsoup4": {
+      "available": false,
+      "error_type": "ModuleNotFoundError"
+    },
+    "transformers": {
+      "available": false,
+      "error_type": "ModuleNotFoundError"
+    },
+    "chromadb": {
+      "available": false,
+      "error_type": "ModuleNotFoundError"
+    },
+    "sentence_transformers": {
+      "available": false,
+      "error_type": "ModuleNotFoundError"
+    },
+    "datasketch": {
+      "available": false,
+      "error_type": "ModuleNotFoundError"
+    },
+    "fastapi_optional_demo": {
+      "available": false,
+      "error_type": "ModuleNotFoundError"
+    },
+    "sqlalchemy_optional_demo": {
+      "available": false,
+      "error_type": "ModuleNotFoundError"
+    },
+    "faiss_optional_demo": {
+      "available": false,
+      "error_type": "ModuleNotFoundError"
+    }
+  }
+}

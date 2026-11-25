@@ -1,0 +1,77 @@
+{
+  "status": "passed_with_environment_gaps",
+  "base_commit": "4701911531ad5ccd230c200d0fb424f43681be9a",
+  "compilation": {
+    "passed": true,
+    "files": 260
+  },
+  "automated_suite": {
+    "passed": 1124,
+    "skipped": 1,
+    "subtests_passed": 15
+  },
+  "real_validator_suite": {
+    "passed": 167,
+    "subtests_passed": 4,
+    "overlaps_full_suite": true
+  },
+  "generated_models_drift": false,
+  "distribution_check_passed": true,
+  "live_model_smoke": {
+    "passed": 3,
+    "probes": [
+      "chat",
+      "json",
+      "tool"
+    ]
+  },
+  "embedding_smoke_passed": true,
+  "live_bm25_ui_checks_passed": 11,
+  "retrieval_smoke": {
+    "passed": 12,
+    "total": 12,
+    "modes": [
+      "bm25",
+      "dense",
+      "hybrid"
+    ],
+    "reranking": false
+  },
+  "review_queue_checks_passed": 20,
+  "fault_injection_scenarios_passed": 50,
+  "separate_snapshot_self_comparison": {
+    "passed": true,
+    "counts": {
+      "changed": 0,
+      "added": 0,
+      "removed": 0,
+      "unchanged": 180,
+      "unreadable": 0
+    },
+    "snapshot_files_verified": 180,
+    "scope": "Saved source-expansion snapshot compared with itself. Temporary filename mapping matches final URLs after trailing-slash normalization; original SHA256s checked. Does not verify current live websites.",
+    "source_snapshot_modified": false
+  },
+  "blocked_checks": [
+    {
+      "check": "live hybrid with reranking",
+      "reason": "BAAI/bge-reranker-base weights are absent from the configured local cache; offline load failed. A live reranking run was not completed."
+    }
+  ],
+  "normal_project_environment_modified": false,
+  "persistent_endpoint_configuration_modified": false,
+  "environment_gaps": "The normal .venv lacks retrieval dependencies, and embedding configuration is unset. Temporary dependencies and process-only credentials were used for these checks.",
+  "integrity": {
+    "gt_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68",
+    "gt_unchanged": true,
+    "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa",
+    "corpus_unchanged": true,
+    "new_frozen_scoring": false,
+    "holdout_used": false,
+    "credential_scan": {
+      "passed": true,
+      "matches": []
+    }
+  },
+  "activities_21_to_23_acceptance_completed": false
+}

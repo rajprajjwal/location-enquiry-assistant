@@ -13,6 +13,7 @@ include-package-data = false
 
 [tool.setuptools.packages.find]
 include = ["copilot*", "mapping", "contracts", "schemas", "vocab"]
+exclude = ["copilot.*.results*"]
 
 [tool.setuptools.package-data]
 copilot = [
@@ -23,7 +24,7 @@ copilot = [
     "enquiry_interpretation/prompts/*.txt",
     "rag/data/processed/chunks.jsonl",
 ]
-contracts = ["interpretation/*.json", "evaluation/*.json"]
+contracts = ["interpretation/*.json", "evaluation/*.json", "diagnostics/*.json", "qualification/*.json"]
 mapping = ["label_overrides.json"]
 schemas = ["*.json"]
 vocab = ["controlled-vocabulary.json"]

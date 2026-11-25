@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "counts": {
+    "changed": 0,
+    "added": 0,
+    "removed": 0,
+    "unchanged": 180,
+    "unreadable": 0
+  },
+  "snapshot_files_verified": 180,
+  "scope": "Saved source-expansion snapshot compared with itself. Temporary filename mapping matches final URLs after trailing-slash normalization; original SHA256s checked. Does not verify current live websites.",
+  "source_snapshot_modified": false
+}
