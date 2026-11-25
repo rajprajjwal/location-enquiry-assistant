@@ -9,3 +9,10 @@
 {$LANGFUSE_MEDIA_DOMAIN} {
     reverse_proxy minio:9000
 }
+
+{$REPORTS_DOMAIN} {
+    basic_auth {
+        {env.REPORTS_USER} {env.REPORTS_PASSWORD_HASH}
+    }
+    reverse_proxy evaluation-reports:8503
+}

@@ -1,0 +1,23 @@
+{
+  "focused_tests": {
+    "passed": 58,
+    "command": "python -m pytest -q tests/evaluation tests/observability tests/test_langfuse_public.py tests/test_langfuse_migration.py"
+  },
+  "public_compose_configuration_valid": true,
+  "report_bundle_files_verified": 2680,
+  "local_report_image_and_proxy_verified": true,
+  "synthetic_volume_copy_roundtrip_verified": true,
+  "historical_generation_traces_read_only_checked": 4,
+  "frozen_and_holdout_artifacts_unchanged": true,
+  "gt_unchanged": true,
+  "public_langfuse_deployed": false,
+  "existing_langfuse_data_migrated_or_modified": false,
+  "live_chat_or_embedding_calls": 0,
+  "pending_destination_checks": [
+    "Real DNS and ACME certificate issuance",
+    "Destination browser login and media checks",
+    "Full real-data restore and restart rehearsal"
+  ],
+  "migration_limit": "Cold-volume restore requires matching Docker CPU architecture and pinned base Compose/backend versions.",
+  "activity_tagging_added": false
+}

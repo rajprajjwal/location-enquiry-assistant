@@ -80,3 +80,5 @@ Pending approvals linked only to the deleted enquiry are cancelled. Decided appr
 ## Public HTTPS deployment
 
 Use the separate [public deployment guide](langfuse/PUBLIC_DEPLOYMENT.md) to host Langfuse on a Docker server. It uses separate credentials, containers and volumes; the local commands above remain unchanged.
+
+The public profile also hosts the read-only evaluation/report dashboard behind a separate HTTPS login. To keep existing traces, follow [historical migration](langfuse/HISTORICAL_MIGRATION.md) before starting the destination. The report bundle comes from saved files in the checkout; it does not repopulate Langfuse or rerun evaluations.

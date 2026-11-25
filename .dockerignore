@@ -1,0 +1,15 @@
+.git
+.venv
+.model-cache
+**/__pycache__
+**/runtime
+**/results
+**/*.db*
+**/*.env
+.env*
+**/*.key
+**/*.pem
+**/*.crt
+copilot/rag/data
+copilot/model_gateway/assets
+build

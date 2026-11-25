@@ -1,6 +1,28 @@
 # Apply after compose.yaml. The public stack uses its own project and volumes.
 name: location-enquiry-langfuse-public
 services:
+  evaluation-reports:
+    build:
+      context: ../../..
+      dockerfile: copilot/metrics_dashboard/Dockerfile
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=128m
+    environment:
+      COPILOT_EVAL_RESULTS: /published/results/evaluation
+      COPILOT_REPORTS_ROOT: /published
+      COPILOT_LANGFUSE_URL: https://${LANGFUSE_DOMAIN:?Set the dashboard domain}
+      STREAMLIT_BROWSER_SERVER_ADDRESS: ${REPORTS_DOMAIN:?Set the reports domain}
+      STREAMLIT_BROWSER_SERVER_PORT: '443'
+      HOME: /tmp
+    volumes:
+      - ../runtime/report-bundle:/published:ro
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8503/_stcore/health',timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
   langfuse-web:
     environment:
       NEXTAUTH_URL: https://${LANGFUSE_DOMAIN:?Set the dashboard domain}
@@ -17,6 +39,7 @@ services:
     depends_on:
       - langfuse-web
       - minio
+      - evaluation-reports
     ports:
       - '80:80'
       - '443:443'
@@ -24,6 +47,9 @@ services:
       LANGFUSE_DOMAIN: ${LANGFUSE_DOMAIN:?Set the dashboard domain}
       LANGFUSE_MEDIA_DOMAIN: ${LANGFUSE_MEDIA_DOMAIN:?Set the media domain}
       ACME_EMAIL: ${ACME_EMAIL:?Set the certificate contact email}
+      REPORTS_DOMAIN: ${REPORTS_DOMAIN:?Set the reports domain}
+      REPORTS_USER: ${REPORTS_USER:?Set the reports username}
+      REPORTS_PASSWORD_HASH: ${REPORTS_PASSWORD_HASH:?Set the reports password hash}
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data

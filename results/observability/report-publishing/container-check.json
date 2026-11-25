@@ -1,0 +1,17 @@
+{
+  "report_image_built": true,
+  "read_only_report_container": true,
+  "unauthenticated_root_health_and_websocket_rejected": true,
+  "incorrect_password_rejected": true,
+  "authenticated_proxy_access": true,
+  "report_restart_passed": true,
+  "frozen_and_holdout_summaries_loaded": true,
+  "metrics_per_run": 29,
+  "filtered_report_bundle_loaded": true,
+  "staged_reports": 2680,
+  "no_env_files_in_image": true,
+  "public_langfuse_started": false,
+  "existing_langfuse_data_modified": false,
+  "inference_calls": 0,
+  "scope": "Temporary reports/proxy containers on loopback HTTP; no public DNS or certificate issuance tested."
+}

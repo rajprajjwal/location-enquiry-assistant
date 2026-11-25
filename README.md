@@ -16,7 +16,7 @@ Sales and support copilot for location API enquiries, built for the institute's 
 | `copilot/case_storage/` | SQLite persistence for cases, approvals, sandbox records, and traces. |
 | `copilot/streamlit_ui/` | Staff interface for enquiries, approvals, and traces. |
 | `copilot/evaluation/` | Paired baseline/agent evaluation, independent retrieval diagnostics and protected holdout execution. |
-| `copilot/metrics_dashboard/` | Read-only metric comparisons by bucket, API and team. |
+| `copilot/metrics_dashboard/` | Read-only metric comparisons, saved activity-report browsing and filtered publication bundles. |
 | `copilot/observability/` | End-to-end OpenTelemetry tracing, local Langfuse export and INR cost reporting. |
 | `copilot/deployment/` | Prepare model assets and check installation, configuration and live access. |
 | `results/clean-deployment/` | Clean-checkout installation, index rebuild and end-to-end verification evidence. |
@@ -63,6 +63,8 @@ The model gateway uses the institute-provided endpoint. Its frozen run checks co
 The isolated [prompt comparison module](prompt-engineering-baseline/README.md) contains three prompting strategies, a shared-model-client adapter and an optional standalone demo. Its evaluation status and separate setup are documented in that folder.
 
 - [End-to-end tracing setup](copilot/observability/README.md)
+- [Public Langfuse and reports](copilot/observability/langfuse/PUBLIC_DEPLOYMENT.md)
+- [Historical trace migration](copilot/observability/langfuse/HISTORICAL_MIGRATION.md)
 
 - [Evaluation harness](copilot/evaluation/README.md)
 - [Metrics dashboard](copilot/metrics_dashboard/README.md)
