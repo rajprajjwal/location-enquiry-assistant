@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/calibration.py", line 36, in check
+    result=evaluate(case,prediction,list(evidence),client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/judge.py", line 40, in evaluate
+    raise ValueError('Judge citation decisions do not bind to the prediction')
+ValueError: Judge citation decisions do not bind to the prediction

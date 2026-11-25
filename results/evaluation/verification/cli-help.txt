@@ -1,0 +1,20 @@
+usage: runner.py [-h] --out OUT [--split {working_eval,frozen,holdout}]
+                 [--strategy {zero_shot,few_shot,self_consistency,decomposition}]
+                 [--mode {bm25,hybrid}]
+                 [--sample-per-bucket SAMPLE_PER_BUCKET]
+                 [--selection SELECTION] [--exclude-selection-groups]
+                 [--holdout-approval HOLDOUT_APPROVAL] [--final-holdout]
+
+One resumable command generates both arms, scores them and publishes metrics.
+
+options:
+  -h, --help            show this help message and exit
+  --out OUT
+  --split {working_eval,frozen,holdout}
+  --strategy {zero_shot,few_shot,self_consistency,decomposition}
+  --mode {bm25,hybrid}
+  --sample-per-bucket SAMPLE_PER_BUCKET
+  --selection SELECTION
+  --exclude-selection-groups
+  --holdout-approval HOLDOUT_APPROVAL
+  --final-holdout

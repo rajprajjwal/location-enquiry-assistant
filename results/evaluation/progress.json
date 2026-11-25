@@ -1,0 +1,79 @@
+{
+  "activities": [
+    22,
+    23
+  ],
+  "status": "paused_by_user",
+  "implemented": [
+    "Canonical paired prediction contract",
+    "Four plain-model prompting strategies through the shared client",
+    "Separate reference-based scoring and citation evidence binding",
+    "Independent span/source retrieval diagnostics",
+    "Registered-tool execution and expected-tool coverage",
+    "Usage-based INR cost with separate judge/probe overhead",
+    "Resume journal, source/data binding and final holdout ledger",
+    "Read-only automatically refreshing comparison dashboard"
+  ],
+  "verification": {
+    "automated_tests_passed": 1157,
+    "optional_freshness_skipped": 1,
+    "subtests_passed": 15,
+    "live_hybrid_smoke_pairs": 1,
+    "reference_calibration_cases": 3,
+    "reference_repeat_maximum_delta": 0
+  },
+  "active_results": "results/evaluation/verification/contract-acceptance.log",
+  "pending": [
+    "Finish locked 80-case frozen comparison",
+    "Run the 96-case provisional holdout once at the end",
+    "Publish final reports and saved dashboard verification"
+  ],
+  "holdout_model_calls": 0,
+  "gt_edited": false,
+  "holdout_approval": "provisional owner authorization",
+  "holdout_exclusions": 7,
+  "eligible_holdout_cases": 96,
+  "scorer_changes": [
+    "Strict qualification field agreement replaces subjective estimate",
+    "Verified pricing source snapshots join citation evidence"
+  ],
+  "baseline_contract_change": "Synthetic examples and prompt require all shared qualification fields with explicit unknowns",
+  "frozen_model_calls": 0,
+  "selected_baseline": "self_consistency",
+  "selection_cases": 10,
+  "validation_pairs": 10,
+  "validation_errors": 0,
+  "fresh_judge_maximum_delta": 0.0,
+  "configuration_locked": true,
+  "primary_eval_cases": 80,
+  "final_holdout_cases": 96,
+  "stages": {
+    "frozen-paired": {
+      "target_pairs": 80,
+      "completed_pairs": 23,
+      "arm_records": 47,
+      "generation_errors": 0,
+      "judge_errors": 0,
+      "retrieval_errors": 0
+    },
+    "holdout-final": {
+      "target_pairs": 96,
+      "completed_pairs": 0,
+      "arm_records": 0,
+      "generation_errors": 0,
+      "judge_errors": 0,
+      "retrieval_errors": 0
+    }
+  },
+  "holdout_model_calls_started": false,
+  "frozen_model_calls_started": true,
+  "frozen_completed_pairs": 24,
+  "frozen_scored_arm_records": 48,
+  "saved_generations": 49,
+  "cached_pending_scoring": [
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "arm": "baseline"
+    }
+  ]
+}

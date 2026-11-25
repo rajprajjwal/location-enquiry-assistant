@@ -1,0 +1,146 @@
+zero_shot GT-LBS-AC-092 rescored
+zero_shot GT-LBS-DIR-106 rescored
+zero_shot GT-LBS-DM-065 rescored
+zero_shot GT-LBS-AC-011 rescored
+zero_shot GT-LBS-RG-061 rescored
+zero_shot GT-LBS-DIR-097 rescored
+zero_shot GT-LBS-DM-050 rescored
+zero_shot GT-LBS-RG-096 rescored
+zero_shot GT-LBS-AC-003 rescored
+zero_shot GT-LBS-DIR-032 rescored
+few_shot GT-LBS-AC-092 rescored
+few_shot GT-LBS-DIR-106 rescored
+few_shot GT-LBS-DM-065 rescored
+few_shot GT-LBS-AC-011 rescored
+few_shot GT-LBS-RG-061 rescored
+few_shot GT-LBS-DIR-097 rescored
+few_shot GT-LBS-DM-050 rescored
+few_shot GT-LBS-RG-096 rescored
+few_shot GT-LBS-AC-003 rescored
+few_shot GT-LBS-DIR-032 rescored
+self_consistency GT-LBS-AC-092 rescored
+self_consistency GT-LBS-DIR-106 rescored
+self_consistency GT-LBS-DM-065 rescored
+self_consistency GT-LBS-AC-011 rescored
+self_consistency GT-LBS-RG-061 rescored
+self_consistency GT-LBS-DIR-097 rescored
+self_consistency GT-LBS-DM-050 rescored
+self_consistency GT-LBS-RG-096 rescored
+self_consistency GT-LBS-AC-003 rescored
+self_consistency GT-LBS-DIR-032 rescored
+decomposition GT-LBS-AC-092 rescored
+decomposition GT-LBS-DIR-106 rescored
+decomposition GT-LBS-DM-065 rescored
+decomposition GT-LBS-AC-011 rescored
+decomposition GT-LBS-RG-061 rescored
+decomposition GT-LBS-DIR-097 rescored
+decomposition GT-LBS-DM-050 rescored
+decomposition GT-LBS-RG-096 rescored
+decomposition GT-LBS-AC-003 rescored
+decomposition GT-LBS-DIR-032 rescored
+WINNER {"strategy": "few_shot", "selection_split": "working_eval", "case_ids": ["GT-LBS-AC-092", "GT-LBS-DIR-106", "GT-LBS-DM-065", "GT-LBS-AC-011", "GT-LBS-RG-061", "GT-LBS-DIR-097", "GT-LBS-DM-050", "GT-LBS-RG-096", "GT-LBS-AC-003", "GT-LBS-DIR-032"], "excluded_validation_groups": ["GT-LBS-AC-092", "GT-LBS-DIR-106", "GT-LBS-DM-065", "GT-LBS-AC-008", "GT-LBS-RG-061", "GT-LBS-DIR-097", "GT-LBS-DM-050", "GT-LBS-RG-096", "GT-LBS-AC-003", "GT-LBS-DIR-032"], "candidates": [{"strategy": "zero_shot", "accuracy": 0.39, "scored": 10, "errors": 0}, {"strategy": "few_shot", "accuracy": 0.39967, "scored": 10, "errors": 0}, {"strategy": "self_consistency", "accuracy": 0.31, "scored": 10, "errors": 0}, {"strategy": "decomposition", "accuracy": 0.39, "scored": 10, "errors": 0}], "implementation_sha256": "e026bf93ee991d161ce195dec8a44d9a3cab2f2c7babfe57b1771856840f5aa0", "workbook_sha256": "13c9018a7ecec44bc240e4c1f884aaf31965b55280050250c2cb59c967253d68", "corpus_sha256": "e665b39b31836121ecb221b31f7b859798a713cdc2ffbe2408df050dc8739aaa", "retrieval": "hybrid", "locked": false, "repeatability_passed": true, "generation_reuse": "Saved working predictions; generation unchanged; final scorer applied equally.", "selection_rule": "Highest automatic rubric accuracy; stable strategy order breaks ties."}
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/activity21/final_paired_evaluation.py", line 36, in <module>
+    summary=rejudge(root/'working-validation',validation)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/rejudge.py", line 48, in rejudge
+    judgement=judge.evaluate(case,prediction,evidence)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/judge.py", line 34, in evaluate
+    response = (client or LLMClient()).complete(messages,max_tokens=1024,temperature=0,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/model_gateway/reliability.py", line 172, in run
+    result = function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/observability/tracing.py", line 223, in call
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/model_gateway/client.py", line 200, in complete
+    response = self._call_with_backoff(outgoing, max_tokens, temperature, extra)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/model_gateway/client.py", line 266, in _call_with_backoff
+    for attempt in retries:
+                   ^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 514, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 440, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 462, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/model_gateway/client.py", line 278, in _call_with_backoff
+    response = self._once(messages, max_tokens, temperature, extra)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/model_gateway/client.py", line 322, in _once
+    return sdk.chat.completions.create(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/openai/_utils/_utils.py", line 275, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 859, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/openai/_base_client.py", line 1280, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/openai/_base_client.py", line 957, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/openai/_base_client.py", line 993, in _request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/ssl.py", line 1248, in recv
+    return self.read(buflen)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/ssl.py", line 1121, in read
+    return self._sslobj.read(len)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

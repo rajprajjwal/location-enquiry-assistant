@@ -1,0 +1,13 @@
+ Container location-enquiry-langfuse-langfuse-web-1 Stopping 
+ Container location-enquiry-langfuse-langfuse-worker-1 Stopping 
+ Container location-enquiry-langfuse-langfuse-web-1 Stopped 
+ Container location-enquiry-langfuse-langfuse-worker-1 Stopped 
+ Container location-enquiry-langfuse-clickhouse-1 Stopping 
+ Container location-enquiry-langfuse-minio-1 Stopping 
+ Container location-enquiry-langfuse-redis-1 Stopping 
+ Container location-enquiry-langfuse-postgres-1 Stopping 
+ Container location-enquiry-langfuse-minio-1 Stopped 
+ Container location-enquiry-langfuse-redis-1 Stopped 
+ Container location-enquiry-langfuse-postgres-1 Stopped 
+ Container location-enquiry-langfuse-clickhouse-1 Stopped 
+Using existing private configuration: /Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/observability/runtime/langfuse.env

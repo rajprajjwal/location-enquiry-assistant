@@ -1,0 +1,34 @@
+{
+  "status": "paused_by_user",
+  "activity_22": "implementation and working validation complete; final evaluation paused",
+  "activity_23": "implemented and verified; server stopped for pause",
+  "branch": "feat/evaluation-observability",
+  "implementation_commit": "388fb26",
+  "packaging_commit": "e96b78f",
+  "frozen_completed_pairs": 24,
+  "frozen_scored_arm_records": 48,
+  "saved_generations": 49,
+  "cached_pending_scoring": [
+    {
+      "record_id": "GT-LBS-DIR-039",
+      "arm": "baseline"
+    }
+  ],
+  "ambiguous_generation": false,
+  "holdout_started": false,
+  "selected_baseline": "self_consistency",
+  "fresh_judge_delta": 0.0,
+  "working_validation_pairs": 10,
+  "gt_edited": false,
+  "holdout_approval": "Provisional owner authorization; seven flagged holdout records excluded, leaving 96.",
+  "resume_commands": [
+    "python -m copilot.observability.langfuse_local start",
+    "Configure the existing shared chat/embedding credentials and certificates; use the existing verification environment.",
+    "python -m copilot.evaluation.runner --split frozen --selection results/evaluation/locked-selection.json --mode hybrid --out results/evaluation/frozen-paired",
+    "After frozen completion and inspection, run the protected final holdout command from copilot/evaluation/README.md once.",
+    "Restart the dashboard and report monitor after inference resumes."
+  ],
+  "verification_python": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/clean-deployment/checkout/.venv/bin/python",
+  "private_environment_loader": "/Users/shahidkamal/Documents/Codex/2026-11-17/i-ve-been-assigned-a-capstone/work/activity21/evaluation_environment.py",
+  "important": "Do not restart baseline selection or completed working validation. The next frozen baseline is already generated; resume scores it from the journal without regeneration."
+}

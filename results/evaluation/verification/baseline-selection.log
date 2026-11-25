@@ -1,0 +1,22 @@
+W1125 16:38:18.433000 13200 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 6497.73it/s]
+1/10 GT-LBS-AC-092 baseline: scored
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/select_baseline.py", line 15, in select
+    summary=run(output/strategy,cases,strategy=strategy,mode=mode,arms=('baseline',))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/runner.py", line 166, in run
+    return _run(folder,cases,**options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/runner.py", line 125, in _run
+    evidence,bound=citation_evidence(prediction,record['retrieved_evidence'])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/scoring.py", line 25, in citation_evidence
+    matches = [c for c in corpus_by_url().get(canonical(citation.url),())
+                          ^^^^^^^^^^^^^^^
+  File "/Users/shahidkamal/Documents/test-project/location-enquiry-assistant/copilot/evaluation/scoring.py", line 14, in corpus_by_url
+    result['judge_latency_ms']=record.get('judge_latency_ms')
+                               ^^^^^^
+NameError: name 'record' is not defined

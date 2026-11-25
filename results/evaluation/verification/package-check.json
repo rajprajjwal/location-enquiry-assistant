@@ -1,0 +1,8 @@
+{
+  "evaluation_runner_packaged": true,
+  "dashboard_packaged": true,
+  "evaluation_extra_declared": true,
+  "workbook_reader_declared": true,
+  "pandas_declared": true,
+  "private_credentials_packaged": false
+}

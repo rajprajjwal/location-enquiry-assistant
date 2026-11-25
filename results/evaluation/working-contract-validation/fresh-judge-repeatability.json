@@ -1,0 +1,1397 @@
+{
+  "split": "working_eval",
+  "records": 20,
+  "maximum_delta": 0.0,
+  "overall_maximum_delta": 0.0,
+  "tolerance": 0.01,
+  "passed": true,
+  "scope": "Fresh automatic judgement on identical saved predictions and evidence; generation not repeated.",
+  "differences": [
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "history_use",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "history_use",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "history_use",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "history_use",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "agent",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "autocomplete",
+      "metric": "history_use",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "directions",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "distance_matrix",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "api",
+      "value": "reverse_geocode",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "capabilitycompare",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "coveragecompare",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "docs",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "history",
+      "metric": "history_use",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "interpretation",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "limitscompare",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "ownership",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "pricecompare",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "qualification",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "bucket",
+      "value": "updates",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "overall",
+      "value": "all",
+      "metric": "history_use",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Sales",
+      "metric": "history_use",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "answer_accuracy",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "grounding",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "citation_coverage",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "citation_precision",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "comparison_completeness",
+      "absolute_delta": 0.0
+    },
+    {
+      "arm": "baseline",
+      "dimension": "team",
+      "value": "Support",
+      "metric": "qualification_completeness",
+      "absolute_delta": 0.0
+    }
+  ]
+}
