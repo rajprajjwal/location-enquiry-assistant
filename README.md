@@ -2,6 +2,8 @@
 
 Location Enquiry Assistant helps sales and support teams handle location API enquiries. Built for the institute's Track B capstone, it brings together enquiry interpretation, document retrieval, pricing comparisons, conversation history and human-reviewed sandbox actions. The repository also contains the task contracts, evaluation data, annotation materials, shared model gateway and verification evidence.
 
+**Start here:** the [project specification](docs/project-specification.md) explains the problem, goal, scope, solution, architecture, modules, enquiry flow, measured results and remaining work.
+
 ## Repository layout
 
 | Path | Purpose |
