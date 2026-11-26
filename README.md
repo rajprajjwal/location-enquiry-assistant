@@ -104,7 +104,7 @@ Preparation downloads the required pinned assets. The `--live` check sends synth
 
 Open **http://127.0.0.1:8501**, select **BM25**, and try “What coordinate order does Mapbox Directions use?” For “How do I set waypoints in the Directions API?”, answer the provider clarification in the same case. Reopen it to inspect the conversation, review proposals in **Approvals**, and inspect workflow details in **Traces**.
 
-For **Hybrid with reranking**, follow the [deployment guide](docs/deployment.md): install `.[retrieval]`, configure embedding access and its certificate, prepare hybrid assets and rebuild the dense index. Select hybrid only after its prerequisites pass. The bundled corpus contains 509 documents at a 480-token target chunk budget; its source-scope limitations are listed below.
+For **Hybrid + reranking (one passage per URL)**, follow the [deployment guide](docs/deployment.md): install `.[retrieval]`, configure embedding access and its certificate, prepare hybrid assets and rebuild the dense index. Select hybrid only after its prerequisites pass. The bundled corpus contains 509 documents at a 480-token target chunk budget; its source-scope limitations are listed below.
 
 For development tests, install `requirements.txt` and run `python -m pytest -q`. The existing freshness integration check requires a dated raw-source snapshot and skips when it is absent. Preserve the case database during updates; runtime databases, credentials, model caches and rebuildable indexes remain outside Git.
 

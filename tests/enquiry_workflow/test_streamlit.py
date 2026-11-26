@@ -57,7 +57,7 @@ def test_streamlit_draft_escalation_and_approval(tmp_path, monkeypatch):
     app_path = Path(__file__).resolve().parents[2] / "copilot/streamlit_ui/streamlit_app.py"
     app = testing.AppTest.from_file(str(app_path)).run()
     assert not app.exception
-    app.radio[0].set_value("Hybrid with reranking").run()
+    app.radio[0].set_value("Hybrid + reranking (one passage per URL)").run()
     assert any("Build the dense index." in item.value for item in app.warning)
     assert next(button for button in app.button if button.label == "Run enquiry").disabled
     client.complete.assert_not_called()

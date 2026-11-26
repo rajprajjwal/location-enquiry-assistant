@@ -56,7 +56,7 @@ test -n "$TRACKB_API_KEY" && test -r "$TRACKB_CA_CERT"
 
 Replace the example certificate path with your own. The last command succeeds silently when the key is set and the certificate is readable. Keep both outside Git. If Streamlit is already running, stop it and relaunch it from this configured terminal so it inherits the variables.
 
-Use **BM25** for the first live enquiry. It uses bundled documents and needs only the chat-model connection above. **Hybrid with reranking** also requires the embedding configuration and dense index described under [Retrieval setup](#retrieval-setup).
+Use **BM25** for the first live enquiry. It uses bundled documents and needs only the chat-model connection above. **Hybrid + reranking (one passage per URL)** also requires the embedding configuration and dense index described under [Retrieval setup](#retrieval-setup).
 
 ### 3. Start Streamlit
 

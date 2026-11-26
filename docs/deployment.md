@@ -90,7 +90,7 @@ If a check fails, resolve the named prerequisite before starting:
 python -m streamlit run copilot/streamlit_ui/streamlit_app.py --server.address 127.0.0.1 --server.port 8501 --server.headless true --browser.gatherUsageStats false
 ```
 
-Open http://127.0.0.1:8501. Choose BM25 or Hybrid with reranking. On first selecting hybrid mode, wait for the reranker loading indicator to finish; the UI warms the model before starting any enquiry deadline. Start with a synthetic question such as “What coordinate order does Mapbox Directions use?” Check the cited draft and structured output. For “How do I set waypoints in the Directions API?”, answer the provider clarification in the same case. Reopen the case to confirm saved history. Submit a synthetic production incident and confirm that its handoff stays pending until a reviewer decides it.
+Open http://127.0.0.1:8501. Choose BM25 or Hybrid + reranking (one passage per URL). On first selecting hybrid mode, wait for the reranker loading indicator to finish; the UI warms the model before starting any enquiry deadline. Start with a synthetic question such as “What coordinate order does Mapbox Directions use?” Check the cited draft and structured output. For “How do I set waypoints in the Directions API?”, answer the provider clarification in the same case. Reopen the case to confirm saved history. Submit a synthetic production incident and confirm that its handoff stays pending until a reviewer decides it.
 
 A separate automated UI check uses synthetic inputs and a temporary database. Run both modes after full hybrid setup:
 

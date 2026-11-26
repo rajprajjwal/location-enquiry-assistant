@@ -45,9 +45,9 @@ with closing(connect(DB_PATH)) as con:
                 for message in cases.get_case_history(con, case_id, limit=-1):
                     st.text(f"{labels.get(message['role'], message['role'])}: {message['content']}")
 
-        mode = st.radio("Retrieval", ["BM25", "Hybrid with reranking"], horizontal=True)
-        hybrid_issues = retrieval_setup_issues() if mode == "Hybrid with reranking" else []
-        if mode == "Hybrid with reranking" and not hybrid_issues:
+        mode = st.radio("Retrieval", ["BM25", "Hybrid + reranking (one passage per URL)"], horizontal=True)
+        hybrid_issues = retrieval_setup_issues() if mode == "Hybrid + reranking (one passage per URL)" else []
+        if mode == "Hybrid + reranking (one passage per URL)" and not hybrid_issues:
             try:
                 with st.spinner("Preparing hybrid retrieval before starting an enquiry…"):
                     load_hybrid_runtime()

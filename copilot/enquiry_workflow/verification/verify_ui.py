@@ -88,6 +88,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--retrieval", choices=("bm25", "hybrid"), default="bm25")
     args = parser.parse_args()
-    evidence = verify(retrieval="Hybrid with reranking" if args.retrieval == "hybrid" else "BM25")
+    evidence = verify(retrieval="Hybrid + reranking (one passage per URL)" if args.retrieval == "hybrid" else "BM25")
     print(json.dumps({"passed": all(row["passed"] for row in evidence), "checks": evidence}, indent=2))
     raise SystemExit(not all(row["passed"] for row in evidence))
