@@ -4,5 +4,5 @@
 -r copilot/evaluation/requirements.txt
 datamodel-code-generator==0.96.0
 pytest==9.2.0
-portalocker>=2.8.0
+portalocker>=2.8,<5
 
