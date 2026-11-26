@@ -1,6 +1,6 @@
 # Evaluation harness
 
-Compare a plain-model prompting baseline with the existing agent using the same enquiry and chronological history. Generation receives no reference answer, rubric or expected labels. The scorer receives those fields separately. Every run saves predictions, individual scores, judge explanations, tool execution and provenance.
+The harness compares a plain-model prompting baseline with the agent on the same enquiry and chronological history. Reference answers, rubrics and expected labels go only to the scorer. Each run saves predictions, case-level scores, judge explanations, tool execution and provenance.
 
 ## Setup and run
 
@@ -30,7 +30,7 @@ python3 -m copilot.evaluation.runner --split working_eval --sample-per-bucket 1 
 
 Omit `--sample-per-bucket` to evaluate the established 317-case working pool. Use `--mode bm25` only for explicitly labelled lexical comparisons. Final hybrid runs use the existing top-30 reranking configuration with one passage per URL; this harness does not change retrieval behavior.
 
-Reissue the same command to resume. Completed generations and scored records are reused, so a resume does not repeat them. Changed inputs, source code or configuration require a new output directory. An interrupted generation whose endpoint outcome is unknown stops for investigation rather than making a potentially duplicate holdout request.
+To resume an interrupted run, repeat the command. The harness reuses completed generations and scored records. Use a new output directory if inputs, source code or configuration have changed. If a generation was interrupted and its endpoint outcome is unknown, the run stops for investigation to avoid repeating a holdout request.
 
 ## Select and verify the baseline
 
@@ -82,7 +82,7 @@ All module commands work with `python3` in place of `python`.
 | Source Recall@1/5/10 | Independent probe against distinct canonical gold URLs. This does not imply passage relevance. |
 | Latency and cost | Generation elapsed time in milliseconds and endpoint-reported usage. Judge and retrieval-probe overhead are reported separately. |
 
-Most quality metrics are scored-case averages; citation precision and tool success use citation/call weights. Every metric exposes its scored-case count and unit denominator. Not applicable or unscored is `null`, not zero. Plain-model retrieval and tool metrics are not applicable. Judge errors remain visible as unscored dimensions and run errors.
+Most quality metrics average the scored cases. Citation precision and tool success are weighted by citations and calls. Each metric reports its scored-case count and unit denominator. Inapplicable or unscored values are `null`, not zero. Retrieval and tool metrics do not apply to the plain-model arm. Judge failures remain visible as run errors and unscored dimensions.
 
 Answer accuracy, grounding, comparison completeness and history scores are automatic model judgements; qualification is scored deterministically from typed fields. These automatic judgements are not independently verified human scores. Calibration checks reference and empty controls; fresh-judge repeatability checks numerical stability. These checks do not establish human agreement or resolve disputed gold labels. A 1% tolerance means **one percentage point** on a 0–1 metric. Saved-artifact reaggregation is exact; fresh generation latency and token counts naturally vary and are not claimed byte-identical.
 
@@ -94,7 +94,7 @@ Frozen inputs must still match the pinned 80-case export. Use a verified locked 
 
 A final holdout run additionally requires a complete hash-bound reference/rubric/source review, reasoned decisions for every flagged cross-split pair, and a locked working-eval selection. The previously approved frozen twin is always excluded. The global holdout ledger permits one final output directory; only an exact resume of that run is accepted. Holdout results must not be used to revise prompts, retrieval or scoring.
 
-The harness does not treat workbook rows marked `pending` as independently approved gold. A review form and unresolved-pair list must be completed before final holdout acceptance. Synthetic and working-eval checks can proceed without consuming holdout.
+Workbook rows marked `pending` are not independently approved gold. Final holdout acceptance requires a completed review form and decisions on unresolved pairs. Synthetic and working-eval checks can run without consuming holdout cases.
 
 ## Saved files
 

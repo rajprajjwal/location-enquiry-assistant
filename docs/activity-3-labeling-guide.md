@@ -2,7 +2,7 @@
 
 Version 0.2.0
 
-Use this guide with the [gold-record schema](../contracts/evaluation/gold_record.schema.json). Label the customer's current ask using the conversation up to that point. Use the controlled vocabulary in the [task specification](../spec/spec.md) for labels and the [qualification mapping rules](../mapping/gt-to-schema-mapping.md) for evidence boundaries.
+Use this guide and the [gold-record schema](../contracts/evaluation/gold_record.schema.json) to label the customer's current request in context. Read the conversation up to that turn. Choose labels from the [task specification](../spec/spec.md) and apply the evidence boundaries in the [qualification mapping rules](../mapping/gt-to-schema-mapping.md).
 
 ## Classifying the request
 
@@ -52,7 +52,7 @@ The qualification object has five required fields. Use the stated API and use ca
 
 ## Pilot
 
-Give both annotators this version of the guide, the [10 pilot enquiries](../eval/activity-3-pilot/cases.md), the [blank annotation template](../eval/activity-3-pilot/annotations.template.csv), and the [two completed examples](../eval/activity-3-pilot/annotations.examples.csv). Choose teammates who have not reviewed the labels of the pilot cases. Use the examples as a reference for the format. They come from different cases than the 10 pilot enquiries.
+Give both annotators this guide, the [10 pilot enquiries](../eval/activity-3-pilot/cases.md), the [blank annotation template](../eval/activity-3-pilot/annotations.template.csv), and the [two completed examples](../eval/activity-3-pilot/annotations.examples.csv). Annotators should not have seen the pilot labels. The examples illustrate the format using cases outside the 10 pilot enquiries.
 
 ### Completed examples
 

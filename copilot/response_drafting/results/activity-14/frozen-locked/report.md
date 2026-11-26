@@ -10,7 +10,7 @@ The implementation that passed the 52-case working-eval regression was locked by
 | Questions produced | 13 | 13 |
 | Questions on cases with empty gold lists | 8 | 8 |
 
-The question-F1 acceptance threshold is 0.80. It is not met. The earlier 1.000 working-eval score does not transfer to this frozen set, and Activity 14 cannot be marked complete on the basis of this run. Rubric accuracy against prompting baselines was not rerun as part of this requested question and behavior evaluation.
+Question F1 remains below the 0.80 acceptance threshold, so this run does not complete Activity 14. The earlier 1.000 working-eval score did not transfer to the frozen set. Rubric accuracy against prompting baselines was outside this question-and-behavior evaluation and was not rerun.
 
 The original frozen GT contains 75 questions across 40 cases. Another 40 cases have empty question lists. Fact coverage uses a separate assistant-derived decomposition into 99 atomic facts, locked before predictions. The original question text and GT are unchanged. Whole-question and partial-fact matches were assistant-reviewed against the exact saved outputs and bound to the prediction and label hashes. This is not an independent human spot-check.
 

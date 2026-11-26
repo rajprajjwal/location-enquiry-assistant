@@ -1,6 +1,6 @@
 # Provisional ownership verification
 
-Unknown customer status produces a provisional owner, a reason, a confirmation flag, and a suggested customer-status question. The workflow returns this information in ownership_review. The structured responsible-role reason also describes provisional ownership. The UI shows this information, and reopening the case restores it.
+When customer status is unknown, the workflow returns a provisional owner, reason, confirmation flag and suggested status question in ownership_review. The structured responsible-role reason also explains the provisional assignment. The UI displays it, and reopening the case restores it.
 
 Explicit status deferrals remain unresolved across later follow-ups. They suppress the suggested status question until the customer supplies explicit status. The two deferred reply patterns from the review were covered by regression tests. Pending provider or API questions and the answer route continue through the existing workflow.
 

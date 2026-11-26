@@ -13,7 +13,7 @@ All trials use the same 317 working-eval cases, 254 groups, 128 reference questi
 | Shared incident evidence and precise wording | 49.82% | 53.05% | 67 |
 | Provider, operation and supplied-fact corrections | **55.83%** | **52.44%** | **34** |
 
-The final trial matches 67 complete questions out of 112 predicted and 128 reference questions. Precision is 59.82%, recall 52.34%, and 86 of 164 required facts are covered. Whole-question matches require every reference fact; paraphrases receive semantic credit. One coverage question lost its match when a geographic-filter group displaced the points-of-interest group in AC-213. That regression remains visible.
+The final trial matched 67 complete questions against 112 predictions and 128 reference questions. Precision was 59.82% and recall 52.34%, with 86 of 164 required facts covered. A whole-question match requires every reference fact; equivalent paraphrases count. In AC-213, a geographic-filter group displaced the points-of-interest group and lost a coverage-question match. That regression remains in the results.
 
 Final API accuracy is 307/317 (96.85%); intent accuracy is 252/317 (79.50%). All 317 final output envelopes pass schema validation. Interpretation figures include deterministic postchecks, rather than measuring raw model output alone.
 

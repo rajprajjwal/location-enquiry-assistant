@@ -1,6 +1,6 @@
 # Ownership improvement verification
 
-The target has not been achieved. Owner accuracy improved by three cases, from 61/80 (76.25%) to 64/80 (80%). Eight additional correct assignments are needed to reach 72/80.
+Owner accuracy improved by three cases, from 61/80 (76.25%) to 64/80 (80%). The target is still unmet: eight more correct assignments are needed to reach 72/80.
 
 The promoted rules recognize business requirements during provider discovery and product-fit questions. They preserve the distinction between unknown customer status and provisional Sales ownership. Explicit existing-customer status retains Support, and per-call capacity exceptions are preserved.
 

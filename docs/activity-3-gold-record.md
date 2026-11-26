@@ -1,6 +1,6 @@
 # Activity 3 gold-record schema
 
-The evaluation contract is [GoldRecord v0.1.0](../contracts/evaluation/gold_record.schema.json). It describes the complete record used by reviewers. The committed [80-case handoff](../eval/frozen-interpretation/) supplies the input, expected interpretation and answer evidence. Join the CSV's `id` to `record_id` in the JSONL files.
+The [GoldRecord v0.1.0](../contracts/evaluation/gold_record.schema.json) contract defines the complete record reviewers work with. The committed [80-case handoff](../eval/frozen-interpretation/) provides the input, expected interpretation and answer evidence. Match the CSV `id` with `record_id` in the JSONL files.
 
 | Gold-record field | Source in the 80-case handoff | Meaning |
 |---|---|---|

@@ -1,10 +1,10 @@
 # Interpretation validation cross-check
 
-Read-only comparison of the 532 committed GT v2.5 gold envelopes
+We compared validation results for the 532 committed GT v2.5 gold envelopes
 (`mapping/gold_outputs_all.jsonl`, sha256 `a65fa071a74a0796fb7230f042b6713f10d0658315da091a97124746b586767e`).
-Holdout rows were read and not used to change rules, schemas, or tests.
-No provider API was called. The dataset validator and the gold files
-were not modified.
+The comparison was read-only. Holdout rows were inspected without using them to change
+rules, schemas or tests. No provider API was called, and the dataset validator and gold
+files were left unchanged.
 
 Dataset side: `copilot.validation.specification_checks.validate_spec.load_schemas`, `validator_for`,
 and `required_field_violations` on `outputs.qualification_details`.
@@ -17,12 +17,11 @@ New side: `copilot.validation.rules.validate_qualification`, plus
 The dataset validator does not have that rule; a record is a
 difference on this field only when the new check fails.
 
-Schema errors on both sides are formatted by the same pointer
-function. A schema difference is either a different pass/fail or
-a different error list. `missing_required_fields` is order-sensitive
-in the new check and sorted in the dataset check. `complete` must
-be the boolean `True` or `False` in the new check; the dataset
-check uses `bool(complete)`.
+Both checks use the same pointer function to format schema errors. A difference means
+either a different pass/fail result or a different error list. The interpretation check
+preserves the order of `missing_required_fields`, while the dataset check sorts it.
+The interpretation check requires `complete` to be the boolean `True` or `False`;
+the dataset check uses `bool(complete)`.
 
 ## Match count
 

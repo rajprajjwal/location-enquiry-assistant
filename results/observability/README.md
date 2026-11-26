@@ -1,8 +1,8 @@
 # End-to-end tracing results
 
-Frozen acceptance: **80/80 passed** with every workflow step recorded locally and every saved span ID received by local Langfuse. The fixed working-eval sample passed 10/10 with zero replay business-output changes.
+**80/80 frozen cases passed** the tracing acceptance check. Every workflow step was recorded locally, and local Langfuse received every saved span ID. The fixed working-eval sample passed 10/10, with no business-output changes in replay.
 
-The frozen run contains 1630 spans and 245 physical model attempts. It uses BM25 retrieval; a separate embedding smoke verified endpoint tracing and usage. This activity evaluates observability, not answer quality.
+The frozen run recorded 1630 spans and 245 physical model attempts using BM25 retrieval. A separate embedding smoke check verified endpoint tracing and usage. These checks measure observability, not answer quality.
 
 | Bucket | Runs passed | Median latency (ms) | P95 latency (ms) | Estimated reporting cost (INR) |
 |---|---:|---:|---:|---:|

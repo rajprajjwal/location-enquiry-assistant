@@ -1,6 +1,6 @@
 # Activity 16 ownership validation
 
-The owner accuracy target remains open. The locked router scored 58 of 80 on frozen evaluation, 14 below the 72 matches required.
+The locked router matched 58 of 80 frozen owners. The target remains open, with 14 more correct assignments needed to reach 72 matches.
 
 | Sample | Previous owner accuracy | Revised owner accuracy |
 |---|---:|---:|

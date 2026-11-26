@@ -1,6 +1,6 @@
 # Historical migration and public reports verification
 
-The public profile now includes an authenticated reports host alongside Langfuse and media storage. Saved reports are staged into a filtered, checksummed bundle and mounted read-only. Runtime/source snapshots, credentials, databases, model assets and raw input/generation journals are excluded. Updating the bundle forces only the report container to be recreated; normal Compose reconciliation handles the other services.
+The public profile hosts authenticated reports alongside Langfuse and media storage. Reports are collected into a filtered bundle, checked against source hashes and mounted read-only. The bundle excludes runtime and source snapshots, credentials, databases, model assets and raw input/generation journals. Updating it recreates only the report container; Compose reconciles the other services normally.
 
 - **58 focused tests passed** across evaluation, observability, public configuration, migration guards and report browsing.
 - The reports-only image builds. A temporary localhost proxy rejects unauthenticated and incorrect-password requests, accepts the synthetic reports login, and protects the health/websocket routes. The dashboard restarts with its read-only mount intact.

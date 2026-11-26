@@ -1,6 +1,6 @@
 Monthly-workload normalization — working-only verification
 
-The qualification layer no longer treats a non-null monthly_volume object as proof that monthly API usage is known. copilot/qualification/workload.py recognizes usable quantities with explicit monthly workload units. copilot/qualification/facts.py applies this check when merging interpretation and stored facts and when admitting model-proposed monthly facts.
+A non-null monthly_volume object no longer means monthly API usage is known. copilot/qualification/workload.py checks for usable quantities with explicit monthly workload units. copilot/qualification/facts.py applies that check when merging interpretation or stored facts and admitting model-proposed monthly facts.
 
 A saved value such as raw="15–20 outlets", requests_per_month=null and unit=null remains incomplete. It cannot suppress the monthly-workload question. The outlet count remains available separately as route-size information. If the enquiry separately states 20,000 requests per month, that API workload is recovered without confusing it with the outlet count.
 

@@ -10,9 +10,9 @@ For **GT-LBS-AC-050**, the automatic judge and its repair returned an empty cita
 
 Frozen agent citation coverage remains **95.71% across 70 drafts**; citation precision remains **96.68%**. Holdout agent coverage remains **98.73% across 79 drafts** and precision **98.92%**. These citation metrics do not imply complete answers: automatic comparison completeness remains **34.04%** on frozen and **25.12%** on holdout.
 
-One frozen agent generation has incomplete usage, so its cost mean uses 79/80 cases. The recovered judgement's overhead retains only the original failed attempt; retry usage and latency were not retained and have not been fabricated. Actual institute endpoint access is free; monetary figures remain illustrative.
+One frozen agent generation has incomplete usage, so the cost mean uses 79/80 cases. For the recovered judgement, overhead includes only the original failed attempt because retry usage and latency were not retained. Institute endpoint access is free; the monetary figures are illustrative estimates.
 
-The harness compares the existing agent with a plain-model baseline using identical enquiries and history. References and expected labels are isolated from generation. Scores for accuracy, grounding, comparison completeness and history use are automatic model judgements; qualification uses deterministic strict field agreement, not independent human ratings.
+The baseline and agent receive identical enquiries and history, with reference answers and expected labels kept separate from generation. Accuracy, grounding, comparison completeness and history use are judged automatically by the model. Qualification uses deterministic, strict field agreement. These are not independent human ratings.
 
 Only completed runs appear in the metric tables below. The locked final campaign uses 80 frozen cases, followed by 96 provisionally approved holdout cases. Progress is saved in `progress.json`.
 
@@ -27,7 +27,7 @@ Four strategies were compared on ten grouped working-eval cases, one per bucket.
 | self_consistency | 38.50% | 10/10 | 0 |
 | decomposition | 38.00% | 10/10 | 0 |
 
-Selected strategy: **self_consistency**. Ten separate working groups validate the paired flow; selection groups do not appear in validation.
+**self_consistency** was selected. The paired flow was then checked on ten separate working groups, with no overlap between selection and validation groups.
 
 ## Evaluation runs
 
@@ -165,4 +165,4 @@ The automated judge uses the institute model. Actual institute endpoint access i
 - `holdout-review.json`, `holdout-ledger.json`: approval basis, exclusions and final-run protection.
 - [Harness guide](../../copilot/evaluation/README.md) and [dashboard guide](../../copilot/metrics_dashboard/README.md).
 
-Working validation is a ten-case integration check, not a claim that all 317 working cases have been evaluated. The full working pool is supported by the same command without its sampling option.
+The working validation covers ten cases to check integration. It does not mean all 317 working cases were evaluated. To run the full working pool, use the same command without the sampling option.

@@ -1,8 +1,7 @@
 # GT v2.6 gold rules
 
-> **About this file.** Purpose: the qualification-extraction fixes, rule decisions and label overrides behind the GT v2.6 gold (freeze `eval-freeze-v3`, tag pending).
-> Use case: reference for `mapping/map_gt.py`, `mapping/label_overrides.json`, the scorer and reviewers.
-> Example: R7 turns "riders in India and Nepal" into `region = "India, Nepal"`.
+This guide records the qualification-extraction fixes, rule decisions and label overrides used for GT v2.6 gold (freeze `eval-freeze-v3`, tag pending). It is the reference for `mapping/map_gt.py`, `mapping/label_overrides.json`, the scorer and reviewers.
+For example, R7 maps "riders in India and Nepal" to `region = "India, Nepal"`.
 
 **Approval:** CF1–CF4, R1–R14, L1 and L2 **APPROVED by Shahid Kamal, 2026-11-16 14:03 IST**. L3 **NOT approved**; GT-LBS-AC-086 is unchanged.
 **Base:** `eval-freeze-v2` (22e7973), raw GT v2.5 (unchanged, bound by SHA-256 in `eval/freeze-manifest.json`).

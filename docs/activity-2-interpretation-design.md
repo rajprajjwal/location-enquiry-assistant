@@ -1,8 +1,7 @@
 # Activity 2 — Interpretation step: design contract
 
-> **About this file.** Purpose: the design contract for the Activity 2 interpretation step (query + history → intent, API, team, qualification, missing fields).
-> Use case: the implementers build and score against this; it is design only and adds no code.
-> Example: for `GT-LBS-DIR-011` the step must return `intent=pricing_comparison`, `api=directions`, `team=Sales`, `region="India"`.
+This design contract defines Activity 2 interpretation: query and history become intent, API, team, qualification details and missing fields. Implementers use it to build and score the step; this document contains no implementation code.
+For example, `GT-LBS-DIR-011` must return `intent=pricing_comparison`, `api=directions`, `team=Sales` and `region="India"`.
 
 **Status:** draft for Shahid's review; decisions in §6.2, §6.4 and §7 approved 2026-11-14 23:37 IST · **Date:** 2026-11-14 (IST) · **Frozen gold:** tag `eval-freeze-v2` (GT v2.5; supersedes `eval-freeze-v1` at `3b48db9`)
 **Author:** Capstone Architect · **Decisions in force (Shahid, 2026-11-14 23:21 IST):** the VM07 Qwen3-8B endpoint is approved for Activity 2 development and scoring by the implementers; code lives in this repo; hybrid design (model output + deterministic rule checks).

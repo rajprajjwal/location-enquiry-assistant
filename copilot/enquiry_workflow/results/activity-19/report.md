@@ -1,6 +1,6 @@
 # Activity 19 orchestration acceptance
 
-The pinned LangGraph planner–executor–critic workflow completed turn-level termination verification on the same 80 frozen enquiries. The run used live interpretation and model calls, BM25 retrieval, and the production run_enquiry entry point. Case storage, diagnostic planning and the downstream follow-up selector are outside this core orchestration run.
+We checked turn completion on the same 80 frozen enquiries using the pinned LangGraph planner–executor–critic workflow. The run used live interpretation and model calls, BM25 retrieval and the production run_enquiry entry point. Case storage, diagnostic planning and downstream follow-up selection were outside this core orchestration check.
 
 | Acceptance check | Result |
 |---|---:|
@@ -15,7 +15,7 @@ Activity 19 is complete under the acceptance wording approved on 23 November 202
 
 ## Clarification and critic conventions
 
-A delivered schema-valid clarification is counted as a final response for the current turn. It asks the customer for input and does not keep the agent running. The original clarification_needed status is retained in every saved result. This convention measures bounded completion of one turn and does not claim that the entire customer enquiry is resolved.
+A delivered, schema-valid clarification completes the current turn because the agent has stopped to await customer input. Saved results keep the original clarification_needed status. This convention measures bounded turn completion; it does not mean the whole enquiry is resolved.
 
 Raw statuses: final = 62, escalated = 14, clarification_needed = 4.
 

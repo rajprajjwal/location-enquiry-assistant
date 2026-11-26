@@ -2,7 +2,7 @@
 
 Capstone tracking: Activities 18 and 20.
 
-The shared implementation is `copilot/model_gateway/client.py`; endpoint verification is `copilot/model_gateway/endpoint_checks.py`. Tests are in `tests/model_gateway/`. Saved endpoint verification evidence lives in the `results/` subfolder.
+Use `copilot/model_gateway/client.py` for shared model access and `copilot/model_gateway/endpoint_checks.py` to verify the endpoint. Tests are in `tests/model_gateway/`; saved verification reports are in the `results/` subfolder.
 
 - [Reliability setup, limits and verification](../../docs/activity-20-reliability.md)
 - [Interface and configuration](../../docs/model-gateway.md)

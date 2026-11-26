@@ -1,6 +1,6 @@
 # Activity 20 — Enquiry reliability
 
-The reliability implementation meets the 50-scenario fault-injection acceptance criteria. These are controlled synthetic reliability results, separate from answer-quality evaluation and live latency measurements.
+The implementation passed the 50-scenario fault-injection acceptance check. These controlled synthetic tests measure reliability; answer quality and live latency are evaluated separately.
 
 | Acceptance measure | Result | Status |
 |---|---:|---|

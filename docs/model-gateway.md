@@ -2,7 +2,7 @@
 
 Capstone tracking: Activities 18 and 20.
 
-The shared client lives in `copilot/model_gateway/client.py`. Activity 2's existing call remains valid. Other components can supply optional `tools`, `tool_choice`, and `response_format` to `LLMClient.complete()`.
+All components use the shared client in `copilot/model_gateway/client.py`. Activity 2's existing call remains compatible. Components that need tool calls or JSON output can pass `tools`, `tool_choice`, and `response_format` to `LLMClient.complete()`.
 
 | Input | Meaning |
 |---|---|
@@ -37,7 +37,7 @@ Each run uses a new output directory and writes `report.json`. A frozen run also
 
 The institute endpoint is configured for `Qwen/Qwen3-8B`. Qwen's model card reports **8.2B total parameters** and **6.95B non-embedding parameters**. On 20 November 2026, the project owner accepted this model because it was supplied by the institute. The report retains the strict parameter-count check as false and records project model acceptance separately; the parameter counts have not been changed. [Official model card](https://huggingface.co/Qwen/Qwen3-8B)
 
-Live smoke results, frozen latency and overall acceptance are recorded only after their respective runs. The presence of the model name in config and passing offline tests provide integration evidence. The endpoint's returned model ID is checked during live probes.
+Smoke results, frozen latency and acceptance are recorded after the corresponding runs. Offline tests verify integration; live probes also check the model ID returned by the endpoint.
 
 ## Verified status
 

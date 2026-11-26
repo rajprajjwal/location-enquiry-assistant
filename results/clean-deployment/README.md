@@ -2,7 +2,7 @@
 
 The application was installed into a new Python 3.12.14 virtual environment on macOS ARM64. System site packages were disabled, `PYTHONPATH` was unset, and no dependencies, model files or dense index were copied from the existing application. The documented preparation command downloaded the official pinned model assets into a new cache. Service keys and CA paths were supplied only to test processes.
 
-Follow [the deployment guide](../../docs/deployment.md) to repeat setup. Installation requires service credentials and certificates supplied separately. This verification covers the capstone sandbox on localhost. A shared host still needs authenticated access; the local reviewer selector does not authenticate identities.
+Use [the deployment guide](../../docs/deployment.md) to repeat the installation, supplying service credentials and certificates separately. Verification covered the localhost capstone sandbox. Shared hosting still requires authenticated access; the local reviewer selector does not authenticate identities.
 
 ## Confirmed results
 

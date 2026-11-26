@@ -1,6 +1,6 @@
 # Standalone specification checks
 
-Use this checker to map a compatible ground-truth workbook to the output schemas and verify vocabulary, approval rules, required fields, and the output token budget. It reads the workbook and writes validation artifacts separately.
+The checker maps a compatible GT workbook to the output schemas, then checks vocabulary, approval rules, required fields and the output token budget. It reads the workbook and writes validation artifacts separately.
 
 From the repository root, run the historical C1 check with a compatible GT v2.5 workbook:
 

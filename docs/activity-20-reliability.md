@@ -1,6 +1,6 @@
 # Enquiry reliability
 
-Activity 20 adds shared limits around interpretation, model calls and registered tools. A failed dependency returns a schema-valid manual fallback; transient failures must recover to the expected draft.
+Activity 20 applies shared limits to interpretation, model calls and registered tools. Transient failures must recover to the expected draft. If a dependency cannot recover, the workflow returns a schema-valid manual fallback.
 
 ## Controls
 

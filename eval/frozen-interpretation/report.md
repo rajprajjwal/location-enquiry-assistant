@@ -2,7 +2,7 @@
 
 Cases scored: 80
 
-Intent accuracy improved from 71/80 to 72/80. The intent gate requires 72/80. 5/5 numeric gates passed.
+Intent accuracy rose from 71/80 to 72/80, reaching the required 72/80. The run passed 5/5 numeric gates.
 
 Evaluation mode: reviewed_workbook_frozen_core
 

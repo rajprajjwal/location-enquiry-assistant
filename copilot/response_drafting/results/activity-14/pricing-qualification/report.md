@@ -1,6 +1,6 @@
 Pricing qualification working-eval regression — 23 November 2026
 
-The comparison workflow now publishes missing regional pricing requirements to the shared diagnostic planner. Staff follow-ups ask for billing account country and primary usage geography when these affect the applicable price schedule. Supplied facts, explicit global or India pricing assumptions and declined follow-ups suppress unnecessary questions. Pricing arithmetic and tariffs are unchanged.
+The comparison workflow passes missing regional pricing requirements to the shared diagnostic planner. Staff follow-ups ask for billing account country and primary usage geography when they affect the price schedule. Supplied facts, explicit global or India pricing assumptions, and declined follow-ups suppress unnecessary questions. Tariffs and pricing arithmetic are unchanged.
 
 The baseline is the shared diagnostic implementation immediately before this pricing change. It already includes the earlier OVER_QUERY_LIMIT wording correction. Both methods use the same enquiries, BM25 retrieval, model endpoint and shared-state integration.
 

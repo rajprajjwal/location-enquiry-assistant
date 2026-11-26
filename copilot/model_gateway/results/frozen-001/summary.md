@@ -12,7 +12,7 @@ Run date: 20 November 2026 (Asia/Kolkata).
 - Generation: temperature 0, maximum 512 output tokens, thinking disabled via `chat_template_kwargs`.
 - Endpoint-reported batch usage: 5,721 prompt tokens, 10,476 completion tokens, 16,197 total tokens. Monetary cost has not been calculated.
 
-This run checks endpoint completion behavior and latency using a concise drafting prompt. It does not run the Activity 2 interpretation pipeline or measure answer accuracy, grounding, qualification or tool execution across the frozen set. The JSON and tool-call capabilities were tested by the synthetic probes.
+This run used a concise drafting prompt to measure endpoint completion and latency. It did not run the Activity 2 interpretation pipeline or score frozen-set answer accuracy, grounding, qualification or tool execution. Separate synthetic probes checked JSON and tool-call support.
 
 The model card reports Qwen3-8B as 8.2B total parameters and 6.95B non-embedding parameters. On 20 November 2026, the project owner accepted the institute-provided model for this project. The strict parameter-count check remains false as a factual record, while project model acceptance is recorded separately. The overall `activity18_passed` flag is now true based on that acceptance and the successful endpoint checks. No model calls were rerun and no responses or timings were changed.
 

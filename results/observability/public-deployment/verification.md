@@ -12,4 +12,4 @@ The initial broad test attempt used an empty default tokenizer cache and failed 
 
 Verification used an isolated loopback proxy with a trusted internal CA against the existing local backend. Docker file copying avoided the macOS restriction on mounting files from Documents. The proxy was removed after checks.
 
-Before rollout, verify real DNS and ACME issuance, browser login, media access, public ingestion and full-stack persistence on the destination Linux server. Public configuration is implemented; these destination-host checks have not been claimed as completed. Follow the public deployment guide for the commands.
+Destination-host checks remain before rollout: real DNS and ACME issuance, browser login, media access, public ingestion and full-stack persistence on Linux. The public configuration is implemented, but those checks are still pending. The public deployment guide provides the commands.

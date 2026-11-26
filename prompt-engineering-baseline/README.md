@@ -1,6 +1,6 @@
 # Prompt-engineering baseline
 
-This folder contains an isolated prompt-comparison implementation and its optional demonstration app. It keeps the existing copilot application, canonical data and retrieval indexes in their current locations.
+This folder contains the prompt-comparison implementation and an optional demonstration app. The main copilot application, canonical data and retrieval indexes stay in their existing locations.
 
 ## Available strategies
 
@@ -46,7 +46,7 @@ The API uses port **8001** and the UI uses **8502**. `BASELINE_API_PORT` and `BA
 
 ## Evaluation status
 
-This import does **not** complete Activity 6. The original prompt examples, built-in labels, demonstration corpus and heuristic scoring are retained for review. They include scenarios and illustrative product claims that require alignment with the approved project scope and verified documentation.
+Activity 6 was not completed by this import. The original prompt examples, labels, demonstration corpus and heuristic scores are retained for review. Some scenarios and illustrative product claims still need alignment with the approved scope and verified documentation.
 
 A zero-shot strategy, canonical frozen-input adapter, shared acceptance scorer and the complete frozen comparison still need verification or integration. The displayed winner is based on the original heuristic; it is not the project's accepted best prompting baseline. Reported cost is an assumed character-based proxy, not measured endpoint billing. The main GT remains `../data/ground-truth.xlsx`; no GT or holdout evaluation was run during this import.
 
