@@ -1,0 +1,11 @@
+{
+  "verified_at": "2026-11-26T07:44:19.333375+00:00",
+  "readme_sha256": "275034f96e721304f19eca597a50a37d55abfd459533e210c27cf89671900efc",
+  "relative_links_and_anchors_valid": true,
+  "links_checked": 25,
+  "final_metric_rows_matched": 6,
+  "shell_blocks_syntax_checked": 3,
+  "setup_entry_points_exist": true,
+  "no_setup_or_live_inference_executed": true,
+  "application_code_gt_scores_and_configuration_unchanged": true
+}
