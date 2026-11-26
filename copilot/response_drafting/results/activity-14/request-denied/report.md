@@ -2,7 +2,7 @@ Named-error diagnostic regression — 24 November 2026
 
 REQUEST_DENIED is now captured as a shared error-code fact with its source and evidence, including lowercase input. The diagnostic policy recognizes an observed unresolved denial and selects a redacted failing-request question. A possible documentation explanation no longer establishes that the customer has that configuration. Definition questions, explicit known causes, supplied requests and asked or declined request questions retain their suppression behavior.
 
-Implementation is contained in copilot/diagnostics/extraction.py, policy.py and planning.py. No routing or pending-reply implementation was changed. The change affects staff question suggestions while preserving active clarification behavior. Focused verification is in tests/enquiry_workflow/test_request_denied.py.
+The implementation is in copilot/diagnostics/extraction.py, policy.py and planning.py. It changes staff question suggestions while preserving active clarifications and the existing routing and pending-reply logic. Focused checks are in tests/enquiry_workflow/test_request_denied.py.
 
 All 52 working-eval cases were replayed before and after the change using the same current workflow snapshot, BM25 retrieval and institute endpoint. Both methods include pricing qualification and current reliability instrumentation. Only error extraction, diagnostic policy and its prompt differ. Existing reviewed questions and atomic facts were kept unchanged.
 

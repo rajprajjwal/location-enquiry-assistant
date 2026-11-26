@@ -1,6 +1,6 @@
 Shared qualification contract and planner — working-eval, 24 November 2026
 
-The implementation is in copilot/qualification. It adds a versioned Pydantic qualification context and planner contract, normalized shared facts, applicable API decision profiles and multiple question groups. The model extracts evidenced customer facts and proposes priorities. The profile catalogue checks the complete set of applicable requirements. Questions are rendered after the workflow has selected its route.
+copilot/qualification adds a versioned Pydantic context and planner contract, shared normalized facts, API decision profiles and multiple question groups. The model extracts customer facts with evidence and proposes priorities; the profile catalogue checks the full set of applicable requirements. Questions are rendered after the workflow chooses its route.
 
 Validated interpretation values, customer statements and history are merged into the existing diagnostic state. Exact excerpts, literal or controlled-alias grounding, Boolean polarity and field-type checks prevent unsupported supplied facts from suppressing questions. Explicit output languages and terminating Places SKUs are reused. The existing question filter now accepts trusted customer-requirement templates while retaining credential checks and its default documentation filtering.
 

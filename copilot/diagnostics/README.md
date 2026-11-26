@@ -1,8 +1,6 @@
 # Shared diagnostic facts
 
-The diagnostic contract carries customer-supplied facts, provenance, completed checks and question status.
-The same state is available during interpretation, case persistence and staff follow-up planning.
-The JSON Schema is available in `contracts/diagnostics/state.schema.json`.
+The diagnostic contract stores customer-supplied facts, their sources, completed checks and question status. Interpretation, case storage and follow-up planning share this state. Its JSON Schema is `contracts/diagnostics/state.schema.json`.
 
 Interpretation keeps its existing public input and output schemas. Its optional diagnostic context is
 validated and projected onto supported qualification fields. Operational facts retain their own identifiers,
@@ -21,9 +19,7 @@ The planner asks for billing country and primary usage geography only when neede
 the price schedule. Supplied facts, explicit pricing assumptions and declined questions are
 respected. This produces a staff suggestion while retaining the active clarification and pending reply.
 
-Staff suggestions remain suggestions until they are asked. Active clarification questions are tracked as
-asked, and their existing pending-reply mechanism continues to handle replies.
-Older cases rebuild diagnostic facts from their saved user messages when reopened.
+A staff suggestion is marked as asked only when it becomes an active clarification. Replies continue through the existing pending-reply mechanism. When an older case is reopened, diagnostic facts are rebuilt from its saved user messages.
 
 Provider names retain separate meanings. `mentioned_providers` preserves every named option;
 `provider` is an unambiguous documentation or diagnostic target; `current_provider` requires

@@ -1,0 +1,355 @@
+{
+  "verified_at": "2026-11-26T07:16:08.471154+00:00",
+  "base_commit": "699b7ac4b800dc20a6f4f54ee5e43145da905ba9",
+  "reviewed_project_guides_and_narratives": 96,
+  "edited_files": 62,
+  "unchanged_candidate_files": 34,
+  "checksum_referenced_documents_preserved": [
+    "copilot/enquiry_workflow/results/activity-16/end-to-end-audit/owner-context-review-guide.md",
+    "copilot/enquiry_workflow/results/activity-16/end-to-end-audit/report.md",
+    "copilot/enquiry_workflow/results/activity-16/ownership-refinement/report.md",
+    "copilot/enquiry_workflow/results/activity-16/request-checks/report.md",
+    "copilot/enquiry_workflow/results/activity-16/status-policy/report.md",
+    "copilot/response_drafting/results/activity-14/clarification-routing/report.md",
+    "copilot/response_drafting/results/activity-14/fact-binding/report.md",
+    "copilot/response_drafting/results/activity-14/fresh-validation/prepared-cases.txt",
+    "copilot/response_drafting/results/activity-14/fresh-validation/review-packet.txt",
+    "copilot/response_drafting/results/activity-14/frozen-qualification/report.md",
+    "copilot/response_drafting/results/activity-14/qualification-validation/report.md",
+    "copilot/response_drafting/results/activity-14/question-filter/report.txt",
+    "copilot/response_drafting/results/activity-14/selector-v2/report.txt",
+    "copilot/response_drafting/results/activity-14/shared-diagnostics/report.txt",
+    "copilot/response_drafting/results/activity-14/supplied-facts/report.txt",
+    "docs/ownership-routing.md",
+    "eval/activity-3-pilot/results/annotation-agreement/report.md",
+    "schemas/README.md",
+    "vocab/README.md",
+    "vocab/vocab-diff-gt-v2_3.md",
+    "vocab/vocab-diff-gt-v2_4.md",
+    "vocab/vocab-diff-gt-v2_5.md"
+  ],
+  "fenced_commands_and_examples_unchanged": true,
+  "metric_and_reference_tables_unchanged": true,
+  "reported_numeric_values_preserved": true,
+  "numeric_difference": "One occurrence of 16 added in the corrected ownership report path; no score changed.",
+  "existing_web_urls_preserved": true,
+  "new_broken_relative_links": [],
+  "code_data_prompts_and_machine_readable_results_unchanged": true,
+  "historical_snapshots_raw_logs_and_reference_materials_preserved": true,
+  "focused_tests": {
+    "passed": 19,
+    "log": "focused-tests.txt"
+  },
+  "files": [
+    {
+      "path": "INTERFACE.md",
+      "before_sha256": "37b81005afd0751d0f2243fd1f18edb463b121b591f1e90ccbbbc5375835c8d9",
+      "after_sha256": "b9b1048eb046ce2ea86e100707ba92df392ef637c2fd359d7d8e4fe2da6345d7"
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "c65465f8b43513829fffba378e977712ddfcec42bed6ae2d4fbc7c6ddba5f114",
+      "after_sha256": "31c571072e37b64457db388cedb014e77c2f2f3f3f80fafa95f4ba343ea28dbf"
+    },
+    {
+      "path": "copilot/diagnostics/README.md",
+      "before_sha256": "aef695a2c8b214588b22da10c47de4734e6c5ff61e3acf3413c2b58ca3a39011",
+      "after_sha256": "cbb2987c61b676f3a89c218f412657caef559c7866d2ffadfa091dfad1adbc94"
+    },
+    {
+      "path": "copilot/enquiry_interpretation/results/report.md",
+      "before_sha256": "f5ad7dc2184ba6c01089b2324192dd38eac1042bf0ce94433406ec0956c47fc2",
+      "after_sha256": "f372e8387a908a957dd84cd2bb0803960e5624b5aba1791c81d2fc629670d46d"
+    },
+    {
+      "path": "copilot/enquiry_workflow/README.md",
+      "before_sha256": "03c863d4778c59865e5f52ce5349320d65318bc8333ec242a6e8ca4fcd0924bf",
+      "after_sha256": "78278944ec171309066d6ec08c2f0e22d440a4efa0692ee2e8916cf30cc3da0e"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/actual-use-frozen/report.md",
+      "before_sha256": "66ce8dcd945be4762a00ad22eeeac56c49ffa9f49d00d8ce4f219dd62142a333",
+      "after_sha256": "e5de1358390c39c7933e407ab8b5ff4d241d20bcd148bdf95cb53771fa92efd0"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/approved-frozen-corrections/report.md",
+      "before_sha256": "48ffecb57f183e49dfa06e86f75578a664bb4399626af8bb368787d449596625",
+      "after_sha256": "ba604985c1d144e55e7907cdbf438007612769f4b51d77a884fab7c24c2a0062"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/approved-working-labels/report.md",
+      "before_sha256": "6736e6347dc261c6a3a2d49118e11f57e1161d1086ebf9e498517da21a6c1be4",
+      "after_sha256": "d833da8b630bbae859ca930b940da393ba16d7cabd39d97d7e1795932e9a09e0"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/customer-policy/customer-policy-review.md",
+      "before_sha256": "19d25505d40a0d401b61aec4d186b2748fb42fe8c1a2355ac7f60799d1d48928",
+      "after_sha256": "d58f7720b7b71eb0b859b6ecf98a44c3c472e63cda5d2129781249f2985c920a"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/customer-policy/delegated-review/customer-status-review.md",
+      "before_sha256": "0e112f774aab2ee4191d9bb0400d4cf27195f89e0253bf9aaf1f9d3ad8eead68",
+      "after_sha256": "e750a93924389eee19422a6e91a6f1e3ebfc922247b4350fb8fbfe5175a47a12"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/mismatch-audit/mismatch-audit.md",
+      "before_sha256": "3a3036bad77fe31f8bf6dd752ea211ed46a01477f5786a171532a6a7515defe8",
+      "after_sha256": "55a4fa199f61e75adf1cbde6797ffc9cb6126b904d77bac1778df4216cc6a61b"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/ownership-improvement/report.md",
+      "before_sha256": "4451f2495793175f0a3477cffd5e9557bd5db83dad3256c07238333996a9ec32",
+      "after_sha256": "cc95a273f6c2024a1d85840ccfc36a5d667ee14c5bc0d9058b672400f28da4f9"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/ownership-validation.md",
+      "before_sha256": "664584eebdad54871118323666df2817d5e3ccb9eb3116fb9cb99f8112dcb908",
+      "after_sha256": "ddaa7d0978dc9f143167438e67d50f33ef528d2a10c72da44951cc8c2ebaf324"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/pricing-label-review.md",
+      "before_sha256": "d6767fe12ea2843666309e0a0561bf9a08c9250330f272139a88a0474a59def7",
+      "after_sha256": "a6b756998cfdeeff8b1379a94393da0f7733c46eca6251f9442d9a192be923ae"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/pricing-ownership-validation.md",
+      "before_sha256": "c0b0a4ecc29b4404c93efcfda55e52432dc9e13e72978fd921835a3dd5a0aaf2",
+      "after_sha256": "5d4eb0576544f6d563d746c97309400d513e8d0ae64211717ffc74f88ce0d741"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/provisional-ownership/report.md",
+      "before_sha256": "90ea25f8236629ff6bc2102b8c99df9eb71209510dc3461c5abab80b600e84b8",
+      "after_sha256": "7f67a5f207f21acf7d84dc439ee82d04b457c67fa5bf3efc197ed6d3ba339103"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/remaining-mismatches/review.md",
+      "before_sha256": "ee6aa5994cc40d0fdddf2670fca2ad4befc4306e16541eab510bac30c1cf0640",
+      "after_sha256": "08ee70a00642c393b75bf5eb9ef29835daff96689bf1574f1926998b9b837f23"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-16/routing-experiments/report.md",
+      "before_sha256": "25918d8394cf294cc814be2918530c2b499830a3c38c95068056a88470edcae2",
+      "after_sha256": "7f367e6304c7c5cc7e43656783c2342fccdf395dbc90e067e5f58f080cc7c049"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-17/report.md",
+      "before_sha256": "bf9ff7e1fd684c128c2f12951c7fd64ae0c672a1324c52bc065632eda46ca5fd",
+      "after_sha256": "07d0983b1c158ba836149b3057d1a0c731f3cb349e4ea3c4f2a4a1511bc8e0b0"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-19/report.md",
+      "before_sha256": "1128edfae9ae79f703a7ac253ddca7c52b2e336c4614b0f6a58c60b8c9c23f31",
+      "after_sha256": "12fc5251b8d8799de9eea624be7f4e36baaf10b2e18b70ac04e8090b60e122a5"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/activity-20/report.md",
+      "before_sha256": "1c70f7341281c60d8adfa8046d66f00d05de2d37cb2704e294f697fad2b5e1c6",
+      "after_sha256": "9b4d4dcb6057bef5e4c84bdcf352181bc9613ca64d3a656f5fa7c519f431ace4"
+    },
+    {
+      "path": "copilot/enquiry_workflow/results/intake-review/README.md",
+      "before_sha256": "43829f3676e47d05add8de31b48dbe467cd105c95b0d7339302f0164425183e5",
+      "after_sha256": "df977c084d2a65d252cc2ca94994983d842e6d4f7225b4f192449cba25599c94"
+    },
+    {
+      "path": "copilot/evaluation/README.md",
+      "before_sha256": "25f570913589fb04e358e08a8048aaf58b669cd03fb8682f0437dedc385791f2",
+      "after_sha256": "e55901499773dad5b7f5d29af89bd50eb2dcc1107e5cdd6077ef79fdb840dc84"
+    },
+    {
+      "path": "copilot/metrics_dashboard/README.md",
+      "before_sha256": "549f29c41ce73afa898db4e472c1b515dc73fdeccb1cda760eb2ff15ec6fbc84",
+      "after_sha256": "b902784000cda9d3d24160600f5f8442146b3611ba346c793d6337f67b072b32"
+    },
+    {
+      "path": "copilot/model_gateway/README.md",
+      "before_sha256": "6bfbb61818d22b61624ab3890087ba3fbabcdf7c8260a1629a754bad242c84a3",
+      "after_sha256": "61d199820e9d23d0b817f900596f54858ada4170f597f781b506221a1e7d475e"
+    },
+    {
+      "path": "copilot/model_gateway/results/frozen-001/summary.md",
+      "before_sha256": "b01f442bf9e979ad4ec14da45d0b492cede8efe65be04d57539472ec477c4225",
+      "after_sha256": "60c7db889d0655cd2b927cbb1836ebfb2f39dfe82b6b0b5ffe4a661b29c7b261"
+    },
+    {
+      "path": "copilot/observability/README.md",
+      "before_sha256": "caad579c4969707ba1542e3ae1f7c7cef63ed0f76c8c652332727bc1b4b34677",
+      "after_sha256": "ed285fb07accf6132f5e09598c80c90f32bf5a4fccca3c0ee3876e8c2b18a7c8"
+    },
+    {
+      "path": "copilot/observability/langfuse/HISTORICAL_MIGRATION.md",
+      "before_sha256": "84b84cd7b2fc216b05d304f93a59ba75455a1f13eb87fc632c3f20a34cbc41ea",
+      "after_sha256": "724fd928608ee95c390048e754919ebe51e9890e6cc38db28824731b4db5be72"
+    },
+    {
+      "path": "copilot/observability/langfuse/PUBLIC_DEPLOYMENT.md",
+      "before_sha256": "00cbec34a4e34a88a512fc5f54c00ea721fcbc43d528317494c6ef009b0534cd",
+      "after_sha256": "af712f2601aa96b6722868825a0c6f5db473cbe59c2e3e949eb8039f15aa552b"
+    },
+    {
+      "path": "copilot/qualification/README.md",
+      "before_sha256": "6037f14fe4b2da5cf51792748686769f5c65b75e8d15ea98a1044696db4733f5",
+      "after_sha256": "f317ac3226046bb0477a0894ad4409b185118e4f717ebd77f78086ac60ac0d17"
+    },
+    {
+      "path": "copilot/response_drafting/results/activity-14/frozen-locked/report.md",
+      "before_sha256": "132e5bfe2ac516e576871125f18916552b5e70a7f85b09b74c9d757ad284a55a",
+      "after_sha256": "d35bac2cce63828767f510f8fa5f005271423d530f082bee15b2a54b3665e11b"
+    },
+    {
+      "path": "copilot/response_drafting/results/activity-14/frozen-workflow-review/report.md",
+      "before_sha256": "277de7b0fe34c5d76c6a749a165e89db1bc74c480627bf6138af8b2a3d59d6cb",
+      "after_sha256": "20b160f5eb933051e5831dc123b51d982fad9e41d3c890c187b834eb8b363dfb"
+    },
+    {
+      "path": "copilot/response_drafting/results/activity-14/monthly-workload/report.md",
+      "before_sha256": "b95e281c7a5caf5d215c041732b44be5e31bea9f0024ac449fa925c90a962f0d",
+      "after_sha256": "5a3848922fbae43b78d0ef2ee63877ce4cb8fc9698d3c29683eb8c86a726c5e8"
+    },
+    {
+      "path": "copilot/response_drafting/results/activity-14/pricing-qualification/report.md",
+      "before_sha256": "186758f78194c8718dc1e03b4132a89262e4f622e238ca51b455cdd2ae259139",
+      "after_sha256": "a4c130a2f99bc9ec206ab39af94101ee53281e1bd2db4d798673291bcd078e28"
+    },
+    {
+      "path": "copilot/response_drafting/results/activity-14/qualification-planner/report.md",
+      "before_sha256": "1050795047c24ba9bb3051927ecf62c7ea528d480604211d5b04b8f9e701834c",
+      "after_sha256": "64394e271ec1e50fdf87af1a6debc2a9697e64169176e25826d217219a5a3b73"
+    },
+    {
+      "path": "copilot/response_drafting/results/activity-14/request-denied/report.md",
+      "before_sha256": "c2ef2f931d0960ef1528742edf245bb42767bfb36dcec746418838f02feeae07",
+      "after_sha256": "48fa7ec0177b4b55510bc4d3c7aedf33690be983efd26bf38b3164677b0eb146"
+    },
+    {
+      "path": "copilot/response_drafting/results/activity-14/separate-working-validation/report.md",
+      "before_sha256": "41e39c8a940fca168b9b5fe410181b4d166147117a447102b3be493bc934d996",
+      "after_sha256": "38681d6fa43898082296fab2fe21afda465d423f68e489c08d75a59b1f675392"
+    },
+    {
+      "path": "copilot/response_drafting/results/activity-14/workflow-review/README.md",
+      "before_sha256": "ecc216e430027f00963f64968410e46037de9f4aff2446e1197538e234b83c6d",
+      "after_sha256": "14603e6e8c61f3c17ee48db8d932d1d8f18d4355bea2a5e1cd2fa9d2b9b7385b"
+    },
+    {
+      "path": "copilot/response_drafting/results/activity-14/workflow-review/failure-analysis.md",
+      "before_sha256": "0af89a947352301dad080d0dfee9b795a52c1d31634690a9bdd9e6fc6ad007b7",
+      "after_sha256": "379de1acf9514102fc8fea9ab3054e52edae8dd99f8afd4ee3af2740cf9092b6"
+    },
+    {
+      "path": "copilot/validation/specification_checks/README.md",
+      "before_sha256": "b58b1051ee2c334d5cad12474cbdb8be6f8a40b8ae256858ae332d12bdb89df2",
+      "after_sha256": "3f38d3767d80bb3a513722094c4b982d7ab5d00ea845d155c5c50d3f1e8acac2"
+    },
+    {
+      "path": "data/README.md",
+      "before_sha256": "52619f9fc0a3211f8fcadb560b323685607d8ca8049d89aebb9aa110cd6707a7",
+      "after_sha256": "6d04e2bd07ccb5fc3f74ff493827a2b5af03099d5137b120bcd2863331e3ac36"
+    },
+    {
+      "path": "docs/activity-2-interpretation-design.md",
+      "before_sha256": "2f4ca2b5f2e143e964493c563b8552e6d4ffd134e5d8031e762ab3e2fd9aacd0",
+      "after_sha256": "730db214e6cafa5b459be60bbea9c4af7740ad4f4c2e51cfebe166d00c010794"
+    },
+    {
+      "path": "docs/activity-20-reliability.md",
+      "before_sha256": "da11e57d9c80ac01cb50ea4bb0f5b13cb84e600b4b34fc4c8d91cd501f5a3bfc",
+      "after_sha256": "9aeb03a9a8a23ce69b9c3daffbefc273c4b158f2124f102f9339e4cc180dcad3"
+    },
+    {
+      "path": "docs/activity-3-gold-record.md",
+      "before_sha256": "1572102ef3d94cb0eca9494b1686f9cb793a4a3751f3cbf1524dde64da2a63b8",
+      "after_sha256": "25a3792e60c098c108842670fd1d5112507b1a959300b22716c9c9310985860c"
+    },
+    {
+      "path": "docs/activity-3-labeling-guide.md",
+      "before_sha256": "ef6f1822307ea6083d205d5d8cf755159c4adb3a951157a1c52c2b23c7504718",
+      "after_sha256": "1ca19cf67eae7c26a019b22dc975b88d8a2f395e6b93b0f43797d1f674476ece"
+    },
+    {
+      "path": "docs/deployment.md",
+      "before_sha256": "e8323645d8e0d7f145fe42584b9ec963cab90422b86bf4e35c85ba24a908e445",
+      "after_sha256": "65e80a62f2271235f8614ebb700509df9ba77affe0337a5f278c84aabafe8e63"
+    },
+    {
+      "path": "docs/enquiry-workflow-review.md",
+      "before_sha256": "fa2dac058d4413e626b11d1a0e460b7c59480b2176d1b8202ca056fb5dbd2704",
+      "after_sha256": "592ab94fe2ea704610fb5b760d5f2ba2d651bb9d3c9c6d7aa31219201451d903"
+    },
+    {
+      "path": "docs/gt-v2.6-errata.md",
+      "before_sha256": "0779d1cbffa3acf8f2ab6e12465938fc09f673af9a35b380c97993d34b080400",
+      "after_sha256": "636843ec985d9eaf9dbbf735be7d6d0ae759197e4d24639628d6e02d6ab1af82"
+    },
+    {
+      "path": "docs/gt-v2.6-rules.md",
+      "before_sha256": "65273535382f1f4392ac7d554a561a223cd6b708083c2f77676d3e7d1a227dca",
+      "after_sha256": "a1f093e25f9d4caeacf3f59444f41e9f41b7f4bf938cdecc7744937380b3613a"
+    },
+    {
+      "path": "docs/interpretation-validation-crosscheck.md",
+      "before_sha256": "3b181db9249b95b32fc826446769aa2d01007a649a7850ecff54866fe5eccd70",
+      "after_sha256": "dfd5cae80cb4e029c4ad197a471e36320ebcab8e443a32b21afbdb68a08c96a4"
+    },
+    {
+      "path": "docs/model-gateway.md",
+      "before_sha256": "6c516ac7f4fc803136f61dc8169f6a5d74872f295dc7d772be221ae6079e09e9",
+      "after_sha256": "6c8cd324d14fd5f91e94341c7ea7295c843e2bf7f57cf22b91d716cf4ae7773b"
+    },
+    {
+      "path": "eval/README.md",
+      "before_sha256": "a00b842c4cbbf22be46b889cf56706ab9ac3e8d2eb1a786db595b25fd9014874",
+      "after_sha256": "d7f3e5dd078474c168bdce9a9587a51573a9a41770ba07f0d06af8407e0af6d8"
+    },
+    {
+      "path": "eval/frozen-interpretation/report.md",
+      "before_sha256": "4377837273c6b40f3d76e910af45ecf5d5691c4194527f9d5a7ed7fbe5906513",
+      "after_sha256": "1f868557d106d17a81768d23519aa4aa8b4a22467446fcd417dd9123ac506a48"
+    },
+    {
+      "path": "mapping/README.md",
+      "before_sha256": "fec529354a646246cfd9f31646ebdda3a60fdee62c32533da448512680c85dc7",
+      "after_sha256": "256a5fbb52ab1b83da4dea3d9faa6f473b5a764d9e3a07e2a0ca13b2420a0268"
+    },
+    {
+      "path": "prompt-engineering-baseline/README.md",
+      "before_sha256": "ba66c7e7d99f2922733757a15afd002b1fac0758b65ef3458dca0e61df1420aa",
+      "after_sha256": "da3a289f999f2db54999ccb41b14d95d919d5b25b8253450fb17e79183b57753"
+    },
+    {
+      "path": "results/activities-21-23-readiness/README.md",
+      "before_sha256": "fe043989f71386a55cdcb36680e22e44ca1c5428f843ee218feedd090914c280",
+      "after_sha256": "e5e15523ba3533e9e4b6e7ae905972e4f85031672acd0f0e1d5abed5527a6b5f"
+    },
+    {
+      "path": "results/clean-deployment/README.md",
+      "before_sha256": "44d2e74b80c2acea77c2df1736db45c5b015bd0d87522a7d8b67ad0f1204eda0",
+      "after_sha256": "6fde1bc4e74d409ee1e747c52d4279bc0ca200cb779b9647d6b86a80c0a68b74"
+    },
+    {
+      "path": "results/customer-response-format/README.md",
+      "before_sha256": "2a6ba67a9a2deebd77359020934224e931e26c88ee5c7cfaf9e6b30fe923ac4b",
+      "after_sha256": "4ffdd70b9b45d604bb5d6bd9c696802c057880a4921e5fde52c668c01acf7682"
+    },
+    {
+      "path": "results/evaluation/README.md",
+      "before_sha256": "feb899b9a08bfbb4503fb068cf41bd0ce6ec06ce2f07c20af21442bfdd783114",
+      "after_sha256": "2e0ba244943a2908349d9eebbce0895a8cddee307e4a9898dfd6401cd0098f54"
+    },
+    {
+      "path": "results/observability/README.md",
+      "before_sha256": "35129675b472b0d0b15f474a6c7f32c7582cbbb662ff3793b000e0d568cdf7d5",
+      "after_sha256": "263eece720fec8bb10267f93b7e202083a0c04b433827cffa0a7ef27216a6377"
+    },
+    {
+      "path": "results/observability/public-deployment/verification.md",
+      "before_sha256": "692305ed47281842e8a930386d3c7fc26cbe5012037fcceaba1db14f7c12be93",
+      "after_sha256": "8ea2e2e5e03a9b19aff4180a3430e41aa027ce7d21adc32b8d44a0ee6fb3f4b4"
+    },
+    {
+      "path": "results/observability/report-publishing/README.md",
+      "before_sha256": "5007d89ea0d1ca05ef4184fffcbf8f3b7de32535fc204acaa42c8d85bac2937d",
+      "after_sha256": "ebf30b82f2cd8abbf51f46fa776c41d7b4e643b05ab489585792dad945112a1e"
+    }
+  ]
+}

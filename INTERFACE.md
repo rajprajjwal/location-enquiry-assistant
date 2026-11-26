@@ -1,9 +1,10 @@
 # Interpretation validation interface
 
-Shared checks for the interpretation step. Another module owns
-`copilot/enquiry_interpretation/` and `copilot/model_gateway/client.py` and imports this package.
-This package does not call a model, does not read provider APIs, and does
-not modify the dataset validator.
+This package provides shared interpretation validation. The implementation in
+`copilot/enquiry_interpretation/` uses it alongside the client in `copilot/model_gateway/client.py`.
+It makes no model or provider API calls and leaves the dataset validator unchanged.
+Generated models handle structure; shared rule functions serve both the Pydantic path
+and the post-check.
 
 Models are generated. Rule functions are written once and called from both
 the Pydantic path and the post-check.

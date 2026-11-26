@@ -18,6 +18,6 @@ All 11 pipeline handoffs have been reviewed. Activity 14 acceptance remains open
 
 The final production test suite passes 1,122 tests and 15 subtests. One freshness test is skipped because its expected local snapshot is absent; this is recorded rather than counted as a pass.
 
-The remaining work is to resolve answer-materiality and multi-decision coverage gaps on working-eval, reconcile the question-reference policy in a separately reviewed version, then lock the configuration before frozen rubric/F1 acceptance and the human spot-check. Existing GT and historical scores must remain visible.
+Next, address answer-materiality and multi-decision coverage gaps on working-eval, and reconcile the question-reference policy in a separately reviewed version. Lock the configuration before frozen rubric/F1 acceptance and the human spot-check. Retain the existing GT and historical scores for comparison.
 
 See the [full working-eval report](../copilot/response_drafting/results/activity-14/workflow-review/README.md), [control audit](../copilot/response_drafting/results/activity-14/workflow-review/final-control-verification.json), and [combined ownership integration](../copilot/enquiry_workflow/results/workflow-review/combined-status-integration/report.json). Earlier intake evidence remains in `copilot/enquiry_workflow/results/intake-review/README.md`.

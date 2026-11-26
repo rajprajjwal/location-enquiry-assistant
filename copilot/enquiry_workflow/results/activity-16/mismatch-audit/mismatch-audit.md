@@ -1,6 +1,6 @@
 # Activity 16 ownership mismatch audit
 
-This audit covers the 26 mismatches from the saved frozen run. The frozen data and predictions are preserved. No frozen cases were scored with the revised router.
+We reviewed the 26 mismatches from the saved frozen run without changing the data or predictions. The revised router was not scored on frozen cases in this audit.
 
 ## Working-eval validation
 

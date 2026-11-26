@@ -17,7 +17,7 @@ Of 66 unmatched gold groups, 23 clear supplied-fact/proceed-instruction conflict
 
 Genuine gaps include billing/account restoration context, offensive prediction examples, debounce intervals, Android SDK/REST and certificate context, via coordinates, traffic-metadata parameters, key-exposure impact, request-rate facts, commercial handoff details, usage exports, matrix shape and language-specific result granularity.
 
-The model sometimes proposes a useful decision, but policy permits only `none` or rejects the proposal as unsupported. This is a shared catalogue/dispatch problem rather than evidence that the model failed to understand every enquiry.
+In some misses, the model proposes a useful decision but the policy allows only `none` or rejects the proposal as unsupported. These cases point to gaps in the shared catalogue and dispatch rules; they do not show that the model misunderstood every enquiry.
 
 ## Reference-policy conflict
 

@@ -1,6 +1,6 @@
 # Activity 14: updated frozen evaluation
 
-The updated implementation was run once on the same **80 frozen GT cases**. Clarifying-question F1 is **28.57%** and required-fact coverage is **34.34%**. Both improve over the previous frozen run, but the **80% question-F1 target is not met**.
+We ran the updated implementation once on the same **80 frozen GT cases**. Clarifying-question F1 reached **28.57%** and required-fact coverage **34.34%**. Both improved over the previous frozen run, while question F1 remains below the **80% target**.
 
 | Metric | Previous frozen run | Updated frozen run |
 |---|---:|---:|

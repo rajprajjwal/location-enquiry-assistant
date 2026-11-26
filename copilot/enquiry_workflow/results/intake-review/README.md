@@ -1,8 +1,6 @@
 # Intake and fact-binding verification
 
-The first review covers enquiry validation, customer-only history, provider roles, workload
-assertions, explicit estimate assumptions and later customer corrections. It does not establish
-complete API/intent accuracy, answer F1 or equivalence of every live workflow route.
+This review checks enquiry validation, customer-only history, provider roles, workload assertions, estimate assumptions and later customer corrections. It does not establish complete API/intent accuracy, answer F1 or equivalence of every live route.
 
 | Check | Result |
 |---|---:|

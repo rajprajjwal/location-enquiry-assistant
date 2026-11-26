@@ -1,6 +1,6 @@
 # Working-eval routing experiments
 
-The comparison uses the same 159 working-eval records (147 development and 12 separate validation records), current approved labels, and saved interpretations. Routine routing was replayed, while 11 saved model handoff decisions were retained. The existing group and fold assignments were reused for reporting. This is a paired replay rather than a fresh generalization benchmark.
+We compared the same 159 working-eval records: 147 development cases and 12 separate validation cases. Both versions used the current approved labels and saved interpretations. Routine routing was replayed, retaining 11 saved model handoff decisions. Reports reuse the existing groups and folds. This is a paired replay, not a fresh generalization benchmark.
 
 | Configuration | Correct owners | Owner accuracy |
 |---|---:|---:|

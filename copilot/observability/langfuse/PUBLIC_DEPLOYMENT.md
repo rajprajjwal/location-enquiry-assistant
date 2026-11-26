@@ -1,6 +1,6 @@
 # Public Langfuse deployment
 
-Host Langfuse on one HTTPS domain, browser media on a second, and saved evaluation/activity reports on a third. Caddy obtains and renews certificates and forwards requests to private Docker services. This is a single-server deployment, without high availability. Local Langfuse uses its existing configuration independently.
+Use three HTTPS hostnames: one for Langfuse, one for browser media and one for saved evaluation/activity reports. Caddy manages certificates and forwards requests to private Docker services. This profile runs on a single server and does not provide high availability. The local Langfuse setup remains separate.
 
 **To preserve existing traces, follow [historical migration](HISTORICAL_MIGRATION.md) before starting a fresh stack.** Git contains saved report artifacts, but Langfuse history is stored in its database and object-storage volumes. Neither deployment nor report viewing reruns frozen or holdout evaluations.
 
@@ -37,7 +37,7 @@ python3 -m copilot.observability.langfuse_public prepare \
   --acme-email operations@example.com
 ```
 
-Replace the example values with real domains and emails. This creates ignored, mode-0600 `copilot/observability/runtime/langfuse-public.env`. It contains the generated administrator password, API keys, database passwords and encryption key. Keep an encrypted backup outside the server. Preparation refuses to overwrite it. Do not regenerate credentials against existing volumes: changing bootstrap values does not rotate existing users or project keys.
+Replace the example domains and emails with your own. Preparation creates the ignored, mode-0600 file `copilot/observability/runtime/langfuse-public.env` with generated administrator credentials, API keys, database passwords and the encryption key. Keep an encrypted backup off the server. The command refuses to overwrite an existing file. Changing bootstrap values does not rotate existing users or project keys, so do not regenerate credentials against existing volumes.
 
 The public project uses separate named volumes and loopback ports 3001 and 9091, leaving the local stack on 3000 and 9090. If those ports are occupied, edit `LANGFUSE_PORT` and `LANGFUSE_BLOB_PORT` in the public file before starting. Public clients use HTTPS on 443.
 
@@ -66,9 +66,9 @@ Open `https://reports.example.com`. The browser prompts for `REPORTS_USER` and `
 
 **Evaluation metrics** displays the saved baseline/agent comparisons, including 80 frozen and 96 holdout cases. **Saved activity reports** searches Markdown, JSON, CSV, JSONL and text report artifacts. It displays files up to 5 MB and offers downloads. Other activities retain their original formats and review status rather than being silently converted to the evaluation metric schema. Use the visible Langfuse link to inspect execution traces.
 
-Before startup, `up` builds a filtered copy in the ignored `copilot/observability/runtime/report-bundle/` directory. This includes root/component reports, annotation results and the selected data-review audits. Runtime snapshots, source snapshots, database files, model assets and raw gold/input/generation journals are excluded. Only this bundle is mounted read-only in the report service; no original runtime directories are mounted. The bundle manifest records file checksums. Commit intended report changes before publishing; the bundle reflects the current checkout, including allowed local artifacts, so inspect it before rollout. You can prepare it separately using `python -m copilot.metrics_dashboard.stage_reports` without starting any services.
+Before startup, `up` collects the allowed reports in `copilot/observability/runtime/report-bundle/`, which is ignored by Git. The bundle includes root/component reports, annotation results and selected data-review audits. It excludes runtime and source snapshots, databases, model assets and raw gold/input/generation journals. Only this filtered bundle is mounted read-only; original runtime directories are not mounted. Its manifest records file checksums. Commit the reports you intend to publish and inspect the bundle before rollout, since it can also include allowed local files. To prepare it without starting services, run `python -m copilot.metrics_dashboard.stage_reports`.
 
-Verify that unauthenticated access returns 401, then sign in and open both final runs and a saved component report. Refreshing or restarting this service reads saved artifacts only. After updating the checkout, run `langfuse_public up` again to rebuild the bundle and recreate the report container; the mounts refer to the generated bundle directories. This does not require inference. Do not run the protected holdout runner to populate the dashboard.
+Check that unauthenticated requests return 401. Then sign in and open both final runs and a component report. Refreshing or restarting the service reads saved files only. After updating the checkout, run `langfuse_public up` to rebuild the bundle and recreate the report container with its generated-directory mounts. No inference is needed, and the protected holdout runner must not be used to populate the dashboard.
 
 ## Verify trace ingestion
 
@@ -78,7 +78,7 @@ python -m copilot.observability.verification.langfuse_smoke \
   --out copilot/observability/runtime/public-smoke-01
 ```
 
-Use a new output folder each time. The check sends synthetic spans and verifies that all span IDs can be read back through the public API. It makes no model calls. Require `passed: true` in `report.json`, then confirm the synthetic trace appears in the dashboard. Also verify browser login and a media upload/download through the HTTPS media domain. A healthy web endpoint alone does not establish ingestion or media functionality.
+Choose a new output folder for each check. The smoke test sends synthetic spans and reads them back through the public API without making model calls. Require `passed: true` in `report.json` and confirm the trace in the dashboard. Also test browser login and media upload/download over the HTTPS media domain. Web health alone does not verify ingestion or media access.
 
 ## Connect the enquiry application
 

@@ -1,8 +1,7 @@
 # GT v2.6 errata (against eval-freeze-v2)
 
-> **About this file.** Purpose: every gold change between `eval-freeze-v2` (22e7973) and GT v2.6 (`eval-freeze-v3`, tag pending).
-> Use case: review and audit of the re-freeze; the full row-level table is `eval/v2.6-changes.csv` (record_id, frozen, field, old, new, source).
-> Example: GT-LBS-DIR-011 `qualification_details.monthly_volume` null → 6,000,000 requests_per_month (CF1).
+This errata records every gold change between `eval-freeze-v2` (22e7973) and GT v2.6 (`eval-freeze-v3`, tag pending) for review of the re-freeze. The row-level audit is `eval/v2.6-changes.csv`, with record_id, frozen, field, old, new and source.
+For example, GT-LBS-DIR-011 `qualification_details.monthly_volume` changes from null to 6,000,000 requests_per_month under CF1.
 
 Rules: `docs/gt-v2.6-rules.md` (approved by Shahid 2026-11-16 14:03 IST). Raw GT unchanged. Only `qualification_details`, the two derived `comparison.equivalent_requirements` fields (`region`, `monthly_volume_raw`) and, for L1/L2, `intent`, `sub_intent`, `team` and `responsible_role.team` changed.
 

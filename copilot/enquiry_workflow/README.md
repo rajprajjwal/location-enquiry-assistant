@@ -1,6 +1,6 @@
 # Activity 19 · Agent orchestration
 
-The goal is to handle a location API enquiry within **10 steps**. The workflow can return a sourced draft, ask for missing information, or propose a sandbox update or escalation for human review.
+The workflow handles a location API enquiry within **10 steps**. It returns a sourced draft, asks for missing information, or proposes a sandbox update or escalation for human review.
 
 ## Workflow
 
@@ -14,7 +14,7 @@ The goal is to handle a location API enquiry within **10 steps**. The workflow c
 - Passage selection validates list size, ID types and ranges. A contract error allows one repair against the same candidates within shared retry, token and deadline limits; citation and relevance checks still apply.
 - `run_case()` loads conversation history and records the result, steps and timing in SQLite. Escalations and sandbox field changes go to **Approvals**. A reviewer can edit, approve or reject the proposal. The decision and any applied sandbox diff appear in the audit log.
 
-Planning, tool execution, drafting and critic review each count as one step, including failed actions. When the budget runs out, the workflow escalates. If it ends before review, it records `not_run` and the reason.
+Each planning, tool-execution, drafting and critic-review action uses one step, including failed actions. The workflow escalates when the budget runs out. Routes that finish before review record `not_run` with a reason.
 
 ## Run the local UI
 
@@ -121,9 +121,9 @@ Model and tool calls share retry, deadline and token limits. Before running the 
 
 ## Ownership verification
 
-See the [ownership routing guide](../../docs/ownership-routing.md) for customer evidence, provisional owners, first-line assessment and saved replay commands. The latest Activity 16 results are in `results/activity-16/ownership-refinement/`; the owner-accuracy target remains open.
+See the [ownership routing guide](../../docs/ownership-routing.md) for customer evidence, provisional owners, first-line assessment and saved replay commands. The final Activity 16 acceptance result is documented there; earlier iteration reports remain available for comparison.
 
-The latest ownership iteration is in `results/activity-16/request-checks/`. It preserves the preceding `ownership-refinement/` evidence and retains the open frozen owner-accuracy target.
+Earlier ownership iterations are retained in `results/activity-16/request-checks/` and `results/activity-16/ownership-refinement/`. For the final acceptance result and its limitations, use the ownership routing guide linked above and `results/activity-16/end-to-end-audit/`.
 
 ## Customer-facing responses
 
@@ -135,7 +135,7 @@ The case service adds `customer_response` after the workflow and qualification c
 - **Next step**: the customer action or the actual approval/execution state of a proposal.
 - **Sources**: documentation links from the accepted citations.
 
-Empty sections are omitted. The formatter does not call the model, change the seven structured outputs, add diagnostic questions, or execute proposals. Staff-only ownership, severity, tool details and suggested follow-ups remain outside the customer response. A pending proposal is never described as completed. The formatted snapshot is saved with the case and restored on reopening.
+Empty sections are omitted. Formatting adds no model call and leaves the seven structured outputs, diagnostic questions and proposal execution unchanged. Ownership, severity, tool details and suggested follow-ups stay in the staff view. Pending proposals are shown as pending. The response snapshot is saved with the case and restored when it is reopened.
 
 ### Local chat testing
 

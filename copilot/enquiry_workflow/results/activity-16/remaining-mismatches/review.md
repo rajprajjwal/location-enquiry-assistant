@@ -1,6 +1,6 @@
 # Remaining frozen ownership mismatches
 
-Owner accuracy is 58/80 (72.50%) because exact owner scoring counts 22 different assignments as errors, including provisional assignments. All 22 have the correct non-escalation decision. Provisional metadata makes uncertainty visible but does not increase exact-match accuracy.
+Owner accuracy is 58/80 (72.50%), with 22 exact-owner mismatches, including provisional assignments. All 22 cases have the correct non-escalation decision. Provisional metadata explains the uncertainty but does not earn an exact-owner match.
 
 One mismatch exposes a concrete existing-use detection gap. Two align with the approved policy and merit a gold-policy review. The other 19 lack established customer status, including the two explicit deferrals. These groups describe the review findings rather than validated label corrections.
 

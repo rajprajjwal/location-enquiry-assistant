@@ -14,7 +14,7 @@ Both methods used the same fixed runtime, BM25 retrieval, model endpoint and sha
 | Questions generated | 0 | 0 |
 | Questions on the 18 empty-label cases | 0 | 0 |
 
-The 18 empty-label cases were handled correctly. Both positive authentication cases missed the request question. The earlier development score therefore does not establish that the follow-up implementation generalizes.
+The system handled all 18 empty-label cases correctly but missed the request question in both positive authentication cases. The earlier development score therefore does not establish generalization to these cases.
 
 GT-LBS-RG-034 reports REQUEST_DENIED after adding location_type=ROOFTOP. The reviewed expectation asks for the redacted failing request. The model treats a documented possible missing-key cause as sufficient to skip customer evidence. The shared extractor also misses REQUEST_DENIED, and the policy allows only none.
 

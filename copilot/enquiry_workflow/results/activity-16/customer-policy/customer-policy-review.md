@@ -2,7 +2,7 @@
 
 Existing customers receive routine pricing and technical guidance from Support. New customers receive Sales qualification. Billing-policy handoffs go to Sales. Reported address-quality issues start with Support L2 human triage. Explicit custom contract or pricing requirements continue through commercial routing.
 
-Customer status requires explicit wording. Provider names and workload numbers alone do not establish an existing account. Where no status evidence exists, the existing enquiry-specific routing rules remain the fallback.
+Customer status needs explicit evidence. A provider name or workload figure alone does not establish an existing account. Without that evidence, routing falls back to the enquiry-specific rules.
 
 ## Working-eval validation
 

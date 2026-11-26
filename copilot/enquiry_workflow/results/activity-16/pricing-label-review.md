@@ -2,7 +2,7 @@
 
 The pricing policy assigns published single-provider estimates to Support L1. Sales owns provider selection, custom pricing, and account decisions.
 
-These proposals cover changed owner assignments where the existing working-eval label conflicts with the approved policy. The benchmark scores use the original labels.
+These proposals identify working-eval owner labels that conflict with the approved policy. Benchmark scores still use the original labels.
 
 | Cases | Existing owner | Proposed owner | Evidence |
 |---|---|---|---|

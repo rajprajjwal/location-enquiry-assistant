@@ -1,6 +1,6 @@
 # Verification before evaluation and observability work
 
-This run checks the current application before further evaluation, tracing and dashboard work. Inputs are synthetic; it does not run a new frozen or holdout evaluation. Passing these checks does not close open answer-quality acceptance criteria.
+This run checked the application before further evaluation, tracing and dashboard work. It used synthetic inputs and ran no new frozen or holdout evaluation. The results verify readiness and execution, while answer-quality acceptance remains a separate check.
 
 ## Results
 

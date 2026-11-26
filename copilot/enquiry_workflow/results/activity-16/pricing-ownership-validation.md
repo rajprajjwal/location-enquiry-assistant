@@ -12,6 +12,6 @@ The initial 20-case fresh validation scored 8/20 against 16/20 for the prior rou
 
 The working-eval label review contains 30 proposed owner changes (22 to Support L1 and 8 to Sales). The workbook and frozen benchmark retain their original labels.
 
-The same 80 approved frozen cases were scored using their saved live interpretations. The evaluation excluded holdout cases. All ten expected escalations had reasons, and none were missed or incorrectly added. Escalation decisions and pending approval behavior were identical in the paired runs.
+We scored the same 80 approved frozen cases using their saved live interpretations, with holdout cases excluded. All ten expected escalations had reasons; none were missed or added incorrectly. Escalation decisions and pending approvals matched in the paired runs.
 
 The real-validator routing tests passed 21 cases. The full suite passed 287 tests and skipped one corpus freshness test because the raw snapshot was unavailable.

@@ -1,6 +1,6 @@
 # Move existing traces and reports
 
-This procedure copies the existing Langfuse databases and object storage. It does not call the chat or embedding endpoints, regenerate answers, rescore cases or publish new evaluation traces. Saved evaluation reports come from the checkout; Langfuse history comes from the private backup. Use a maintenance window because the source stack must be stopped during the copy.
+Use this procedure to move the existing Langfuse databases and object storage during a maintenance window. The source stack must be stopped for the copy. It makes no chat or embedding calls, regenerates no answers, rescores no cases and publishes no new evaluation traces. Saved evaluation reports come from the checkout; trace history comes from the private backup.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ python -m copilot.observability.langfuse_migration verify \
   --bundle copilot/observability/runtime/migration-001
 ```
 
-The helper refuses running containers and incomplete source volumes. It streams private archives of PostgreSQL, Redis, ClickHouse data/logs and MinIO through Docker, so no host bind mount is needed. The bundle contains `private.env` and a checksum manifest. An interrupted backup without a valid manifest is incomplete; create a new bundle after resolving the failure.
+The helper checks that source containers are stopped and source volumes are complete. It streams private archives of PostgreSQL, Redis, ClickHouse data/logs and MinIO through Docker, avoiding a host bind mount. The bundle contains `private.env` and a checksum manifest. If backup is interrupted before a valid manifest is written, resolve the failure and create a new bundle.
 
 The source can be restarted for read-only inspection after backup. Keep exporters paused to avoid diverging histories during cutover. If source writes resume, take a new consistent backup before the final cutover.
 
@@ -70,7 +70,7 @@ python -m copilot.observability.langfuse_migration restore \
 
 Preparation copies the original database/storage credentials, salt, encryption key, session secret and project API keys. It creates separate reports-login credentials. **Existing Langfuse accounts and passwords remain unchanged**; the administrator bootstrap settings do not rename or reset a restored account. Use the original account to sign in. Preparation refuses an existing destination configuration; do not regenerate credentials over restored databases.
 
-Restore validates all archive checksums, architecture and the base Compose fingerprint before creating unused destination volumes. A failed partial restore is not automatically retried or overwritten; inspect those new destination volumes before choosing another clean destination. Never remove source volumes as part of recovery.
+Before creating unused destination volumes, restore verifies every archive checksum, the CPU architecture and the base Compose fingerprint. A partial restore is not retried or overwritten automatically. Inspect any new destination volumes before choosing another clean destination. Keep source volumes intact for recovery.
 
 ## 4. Start and verify before cutover
 
@@ -83,7 +83,7 @@ python -m copilot.observability.verification.verify_history \
   --out copilot/observability/runtime/history-restored.json
 ```
 
-Require `passed: true`: the saved reports must be byte-identical, and the four sampled historical traces must have the same observation IDs. This is a sampled trace check, not a claim that every historical trace has been individually audited. Open older traces and attachments in Langfuse as well.
+Require `passed: true`. Saved reports must match their source bytes, and the four sampled historical traces must retain the same observation IDs. This verifies the sample, not every historical trace. Also open older traces and attachments in Langfuse.
 
 Open `https://reports.example.com`, sign in with `REPORTS_USER` and `REPORTS_PASSWORD` from the private destination file, and inspect **Evaluation metrics** and **Saved activity reports**. Confirm the frozen and holdout scores, the AC-050 adjudication and provisional holdout-review note. No chat/embedding credentials are needed for report viewing. A fresh checkout without the volume restore shows saved report files but does not recreate historical Langfuse traces.
 

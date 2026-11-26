@@ -1,6 +1,6 @@
 # Customer qualification
 
-This module selects missing customer requirements after the enquiry workflow has chosen its route. It changes staff-facing questions while preserving the active clarification, pending reply, owner, next action and approvals.
+After the workflow chooses a route, this module selects the customer requirements still needed. It updates staff-facing questions while preserving the active clarification, pending reply, owner, next action and approvals.
 
 - `checklist.py` renders requested checklist advice from applicable requirement groups and supplied facts. Documentation excerpts stay separate from the advice, and this helper does not create a pending customer reply.
 - `contract.py` defines the versioned qualification context, fact identifiers and validated multi-group planner output. JSON Schemas are in `contracts/qualification`.
@@ -20,7 +20,7 @@ answered question. It suppresses a redundant staff workload question while leavi
 clarifications and pending replies intact. Published allowances and uncertain amounts without
 an explicit estimate or comparison remain unknown.
 
-Observed diagnostic failures continue through the diagnostic planner. Qualification planning supports multiple independent requirements, such as monthly workload, traffic needs, vehicle mode, session completion, deployment responsibility and storage rights. A pure documentation question can produce an empty qualification plan.
+Observed failures go through the diagnostic planner. Qualification planning handles independent requirements such as monthly workload, traffic needs, vehicle mode, session completion, deployment responsibility and storage rights. A documentation question may need no qualification questions.
 
 For example, an autocomplete quote can require separate confirmation of session completion and debouncing. If the customer already states that sessions end in Place Details Essentials, the terminating SKU is preserved as supplied and is not requested again.
 

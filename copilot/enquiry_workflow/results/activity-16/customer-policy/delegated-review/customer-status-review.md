@@ -2,7 +2,7 @@
 
 Reviewed all 21 cases using the customer query and supplied conversation history. One case establishes current use. Twenty cases leave customer status unknown.
 
-For unknown cases, the suggested initial owner reflects the type of enquiry and is provisional. These suggestions do not establish a customer relationship or replace gold labels. Provider discovery is provisionally assigned to Sales; published behavior and billing guidance to Support L1. The two explicit deferrals retain unresolved ownership pending account evidence.
+For cases with unknown status, the suggested owner is provisional and follows the enquiry type. It does not confirm a customer relationship or replace a gold label. Provider discovery goes provisionally to Sales; published behavior and billing guidance go to Support L1. The two explicit deferrals remain unresolved pending account evidence.
 
 New projects, new SKUs, forecast volumes, business operations, and a named provider alone do not establish new or existing customer status.
 

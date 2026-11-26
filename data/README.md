@@ -6,4 +6,4 @@
 - `activity-4-freeze-audit.md`: frozen-data audit and provenance.
 - `activity-5-*`: validation and duplicate-review materials; outstanding review decisions are not implied complete by this move.
 
-These files were moved from the former external project data folder into this repository at the project owner's request. File contents and the frozen record membership were preserved. Original freeze manifests retain their historical hashes and source locations. Current paths are relative to this repository root.
+These files were moved into the repository from the former external data folder at the project owner's request. Their contents and frozen membership were preserved. Historical freeze manifests keep the hashes and source locations recorded at the time; current paths are relative to the repository root.

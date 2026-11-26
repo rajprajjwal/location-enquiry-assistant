@@ -1,6 +1,6 @@
 # End-to-end tracing
 
-Trace each enquiry from interpretation through workflow steps, model attempts, tools, validation and conversation-state updates. Each run records latency in milliseconds, endpoint-reported token usage and reporting cost. Bucket, API and team labels support filtering without storing prompts or completions in tracing metadata.
+Tracing follows each enquiry through interpretation, workflow steps, model attempts, tools, validation and conversation-state updates. Runs record latency in milliseconds, endpoint-reported token usage and reporting cost. You can filter by bucket, API and team without storing prompts or completions in tracing metadata.
 
 ## Setup
 
@@ -63,13 +63,13 @@ python -m streamlit run copilot/observability/streamlit_app.py --server.address 
 
 The institute endpoints are free: actual endpoint charge is **₹0**. Reporting estimates use explicit illustrative rates per million tokens: input $0.10, output $0.20 and embedding $0.02, converted at ₹94/USD. These are assumptions, not institute prices or billed charges. Edit `copilot/config/observability.yaml`, or set `COPILOT_TRACE_RATES_FILE` to another rate card.
 
-Usage is counted once per physical endpoint attempt, including retries when usage is returned. Missing usage remains explicit and yields an incomplete estimate; unknown rates remain unpriced. Parent spans are not added again. Root latency measures elapsed enquiry time; nested span durations must not be summed as total latency because they overlap.
+Usage is counted once for each physical endpoint attempt, including retries when usage is returned. Missing usage leaves the estimate incomplete, and unknown rates remain unpriced. Parent spans are not counted again. Root latency is the elapsed enquiry time; nested spans can overlap, so their durations should not be added to calculate a total.
 
 ## Verification and deletion
 
 Working-eval verification replays the same recorded model replies with tracing disabled and checks business outputs, routes, pending replies and approvals for changes. This replay makes no additional live model calls. Frozen verification checks tracing completeness only; it does not rescore answer quality. Frozen inputs are validated against the pinned 80-case export, and bucket/API/team labels are used only as trace metadata. Holdout cases are excluded.
 
-Deleting an enquiry removes its local trace in the same transaction. A separate queue submits deletion of any Langfuse copy after exports finish. Submission is distinct from confirmed removal: Langfuse deletes asynchronously. Failed submissions remain pending and can be retried from the UI or with:
+Deleting an enquiry removes its local trace in the same transaction. After exports finish, a separate queue submits the corresponding Langfuse deletion. Langfuse processes deletions asynchronously, so submission does not confirm removal. Failed submissions remain pending and can be retried from the UI or with:
 
 ```sh
 python -m copilot.observability.sync_deletions --db copilot/case_storage/data/lbs.db

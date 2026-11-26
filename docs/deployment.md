@@ -1,6 +1,6 @@
 # Install and run the application
 
-Use Python 3.12 on macOS or Linux. The clean-checkout verification used macOS ARM64 and Python 3.12.14; Linux has not been independently verified. Native Windows is not supported by the current POSIX file-lock implementation. This guide runs the capstone sandbox on localhost. Model credentials are provided separately; they are not part of a checkout. Keep the checkout, model cache, dense index and case database writable. Preserve the case database when updating the application.
+Run the local capstone sandbox with Python 3.12 on macOS or Linux. Clean-checkout verification used macOS ARM64 and Python 3.12.14; Linux has not been independently verified. Native Windows is unsupported because file locking currently uses POSIX. Model credentials must be supplied separately. Keep the checkout, model cache, dense index and case database writable, and preserve the case database during updates.
 
 ## 1. Install from the checkout
 
@@ -14,7 +14,7 @@ python -m pip install -e '.[retrieval]'
 python -m pip check
 ```
 
-After activation, `python` and `python3` are interchangeable; `command -v python` and `command -v python3` must point into `.venv`. For example, `python3 -m pip install -e '.[retrieval]'` is equivalent to the install command above. For BM25-only operation, install with `python -m pip install -e .` instead. The optional prompt comparison demo has its own setup and is not needed for this app.
+After activation, both `python` and `python3` must resolve inside `.venv`; check with `command -v python` and `command -v python3`. For example, `python3 -m pip install -e '.[retrieval]'` performs the same installation as the command above. For BM25 only, use `python -m pip install -e .`. The optional prompt-comparison demo has a separate setup and is not required for this app.
 
 ## 2. Configure services and reviewers
 

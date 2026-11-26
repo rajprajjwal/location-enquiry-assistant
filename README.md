@@ -1,6 +1,6 @@
 # Location Enquiry Assistant
 
-Sales and support copilot for location API enquiries, built for the institute's Track B capstone. This repository contains the task contracts, interpretation core, evaluation data and evidence, annotation materials, and shared model gateway.
+Location Enquiry Assistant helps sales and support teams handle location API enquiries. Built for the institute's Track B capstone, it brings together enquiry interpretation, document retrieval, pricing comparisons, conversation history and human-reviewed sandbox actions. The repository also contains the task contracts, evaluation data, annotation materials, shared model gateway and verification evidence.
 
 ## Repository layout
 
@@ -44,7 +44,7 @@ Sales and support copilot for location API enquiries, built for the institute's 
 
 ## Local setup
 
-Follow the [installation and deployment guide](docs/deployment.md) for the complete dependency install, service configuration, model preparation, index rebuild, setup check and launch commands. The tested interpreter is Python 3.12.
+Start with the [installation and deployment guide](docs/deployment.md). It covers dependencies, service configuration, model preparation, index rebuilding, setup checks and launch commands. The tested interpreter is Python 3.12.
 
 ```bash
 python3.12 -m venv .venv
@@ -54,7 +54,7 @@ python -m pip install -e '.[retrieval]'
 
 Installation alone does not configure services or download the required model assets. Complete the guide before submitting a live enquiry. For development tests, also install `requirements.txt`.
 
-The model gateway uses the institute-provided endpoint. Its frozen run checks completion reliability and latency, not answer correctness or interpretation accuracy. Original frozen manifests and historical reports retain their original provenance; references in those snapshots to data outside Git describe the layout when those snapshots were produced. The current workbook is `data/ground-truth.xlsx`.
+The model gateway connects to the institute-provided endpoint. Its frozen run measures completion reliability and latency; answer correctness and interpretation accuracy are evaluated separately. Historical manifests and reports retain their original hashes and source locations, including references to data that was outside Git at the time. The current workbook is `data/ground-truth.xlsx`.
 
 [Historical C1 README](docs/legacy-c1-readme.md) preserves the original task-specification documentation. It describes an earlier workspace layout.
 

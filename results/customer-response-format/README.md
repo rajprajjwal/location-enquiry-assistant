@@ -1,8 +1,8 @@
 # Customer response format verification
 
-The case service produces a separate `customer_response` containing versioned Markdown sections. Answers, supporting details, assumptions or active questions, next steps and source links use one presentation format in the UI and local query runner. Empty sections are omitted. Comparisons use tables when structured comparison or deterministic price rows are available. Source claims, code examples, pricing assumptions and unverified-evidence flags are preserved.
+The case service adds a separate `customer_response` with versioned Markdown sections. The UI and local query runner show the same answer, supporting details, assumptions or active questions, next steps and source links. Empty sections are omitted. Structured comparisons and deterministic price rows use tables. Source claims, code examples, pricing assumptions and unverified-evidence flags are retained.
 
-The formatter adds no model calls. The seven structured outputs, route, owner, active questions, pending-reply controls and approvals remain unchanged. Pending proposals are not described as completed. Invalid final output is presented as needing review; internal error details remain in the staff-facing data. The formatted response is a snapshot of the enquiry at processing time; subsequent approval decisions are recorded in the approval log.
+Formatting adds no model calls and leaves the seven structured outputs, route, owner, active questions, pending-reply controls and approvals unchanged. Pending proposals remain visibly pending. Invalid final output is shown as needing review, while internal error details stay in the staff view. The response is a snapshot at processing time; later approval decisions appear in the approval log.
 
 ## Verification
 

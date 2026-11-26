@@ -1,6 +1,6 @@
 # Activity 16 approved working labels
 
-Applied 30 approved owner changes to working-eval. All 80 frozen rows, holdout rows, other cells, formatting, and sheets were preserved.
+The working-eval labels include the 30 approved owner changes. All 80 frozen rows, holdout rows, other cells, formatting and sheets were preserved.
 
 The scores use the same saved router predictions and the approved owner labels.
 

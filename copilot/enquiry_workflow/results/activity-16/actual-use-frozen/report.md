@@ -1,6 +1,6 @@
 # Frozen routing verification
 
-The updated production router was scored on the same 80 approved frozen cases. The saved live interpretations were reused. Ambiguous handoffs were classified through the institute endpoint.
+We scored the updated production router on the same 80 approved frozen cases, reusing the saved live interpretations. Ambiguous handoffs were classified through the institute endpoint.
 
 | Metric | Result |
 |---|---:|
