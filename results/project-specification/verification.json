@@ -1,0 +1,33 @@
+{
+  "verified_at": "2026-11-26T07:30:38.606332+00:00",
+  "base_commit": "bd0d53d253ab061201e8539927ddca29fcf818f0",
+  "checks": {
+    "relative_links_valid": true,
+    "seven_final_metric_rows_match_source_reports": true,
+    "corpus_document_and_chunk_counts_verified": true,
+    "historical_task_specification_unchanged": true,
+    "application_code_schemas_gold_and_scores_unchanged": true
+  },
+  "corpus": {
+    "documents": 509,
+    "chunks": 7576,
+    "here_documents": 9,
+    "here_chunks": 50,
+    "source_policy": "HERE exclusion remains the intended scope; source snapshot discrepancy recorded without modifying it."
+  },
+  "evidence": [
+    "results/evaluation/README.md",
+    "results/evaluation/final-report.json",
+    "copilot/enquiry_interpretation/results/scores.json",
+    "copilot/enquiry_workflow/results/activity-16/end-to-end-audit/final-summary.json",
+    "copilot/enquiry_workflow/results/activity-20/summary.json",
+    "copilot/rag/data/processed/chunks.jsonl",
+    "copilot/config/sources.yaml",
+    "copilot/config/reliability.yaml"
+  ],
+  "documents": {
+    "README.md": "445e03781bfbb9ccc6cd2e4e53918497f0217b4ae3c980738a7a5f0bf3c9f9b9",
+    "docs/project-specification.md": "7839d8cdc1b78d687786659c82898aab626dd7bc60978b4ac6fdbdf7f30a501a",
+    "spec/README.md": "d90b1dbd8599b5d776894ddb9ce92ff705ad01c627b4d8db33a50bf5255c2e75"
+  }
+}
