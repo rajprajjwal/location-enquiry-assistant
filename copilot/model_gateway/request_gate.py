@@ -2,7 +2,8 @@
 from contextlib import contextmanager
 from hashlib import sha256
 from pathlib import Path
-import fcntl
+
+from copilot.file_lock import try_lock, unlock
 import os
 import tempfile
 import time
@@ -20,7 +21,7 @@ def request_gate(base_url, api_key, *, timeout):
     try:
         while not acquired:
             try:
-                fcntl.flock(descriptor, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                try_lock(descriptor)
                 acquired = True
             except BlockingIOError:
                 remaining = deadline - time.monotonic()
@@ -30,5 +31,5 @@ def request_gate(base_url, api_key, *, timeout):
         yield
     finally:
         if acquired:
-            fcntl.flock(descriptor, fcntl.LOCK_UN)
+            unlock(descriptor)
         os.close(descriptor)

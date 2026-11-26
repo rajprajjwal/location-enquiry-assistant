@@ -63,7 +63,7 @@ Holdout authorization remains provisional. Seven flagged holdout records were ex
 
 ## Quick start
 
-Use **Python 3.12** and a writable checkout. Clean installation was verified on macOS ARM64; Linux has not been independently verified. Native Windows is not supported by the current POSIX file-lock implementation. Run these commands from the repository root.
+Use **Python 3.12** and a writable checkout. Clean installation was verified on macOS ARM64; Linux has not been independently verified. The file locks now also have a Windows implementation (`copilot/file_lock.py`, checked with two competing processes); a full application run on native Windows has not yet been verified, so use the bash-style commands below from Git Bash or WSL until it is. Run these commands from the repository root.
 
 ### 1. Install the application
 

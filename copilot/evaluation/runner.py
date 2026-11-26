@@ -157,12 +157,12 @@ def _run(folder,cases,*,strategy='zero_shot',mode='hybrid',arms=('baseline','age
 
 
 def run(folder,cases,**options):
-    import fcntl
+    from copilot.file_lock import try_lock
     folder=Path(folder)
     folder.mkdir(parents=True,exist_ok=True)
     with (folder/'.run.lock').open('a') as lock:
         try:
-            fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+            try_lock(lock)
         except BlockingIOError as error:
             raise ValueError('This evaluation output is already in use') from error
         return _run(folder,cases,**options)
