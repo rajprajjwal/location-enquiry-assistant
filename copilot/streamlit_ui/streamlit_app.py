@@ -55,6 +55,22 @@ def _bootstrap_secrets() -> None:
 
 _bootstrap_secrets()
 
+# Force pydantic-settings to re-read env vars now that secrets are in os.environ.
+# EmbeddingSettings is instantiated at import time as a module-level singleton;
+# on Streamlit Cloud the module may already be cached with empty values from a
+# prior import triggered before _bootstrap_secrets ran.
+try:
+    import copilot.settings as _cs
+    from copilot.settings import EmbeddingSettings
+    _cs.settings = EmbeddingSettings()
+    # Also clear the lru_cache on the HTTP client in embed.py so it
+    # rebuilds with the correct EMBED_BASE_URL / EMBED_API_KEY.
+    from copilot.rag.document_indexing import embed as _embed
+    _embed._http.cache_clear()
+    _embed._cached_endpoint_query.cache_clear()
+except Exception:
+    pass
+
 # ---------------------------------------------------------------------------
 # Connectivity pre-check: test TCP reachability of the LLM endpoint before
 # loading the full app. The endpoint is a private campus IP (103.42.50.41)
