@@ -1,6 +1,11 @@
 # Purpose: keep local env, caches and secrets out of git.
 # Use case: blocks keys/certs (e.g. *.crt, *.pem, .env, TRACKB_API_KEY) and the .venv/.
 # Example: .venv/ and __pycache__/ below are never committed.
+
+# Streamlit Cloud secrets with real values must never be committed.
+# The placeholder .streamlit/secrets.toml (empty strings) is safe to track.
+# If you fill in real values locally, rename it or add to .env instead.
+.streamlit/secrets.toml
 .venv/
 /.venv
 /.model-cache
@@ -13,7 +18,10 @@ __pycache__/
 .env.*
 *.key
 *.pem
+# vm07-ca.crt is a public CA certificate and IS committed to the repo.
+# Other .crt files remain excluded.
 *.crt
+!vm07-ca.crt
 *API_KEY*
 *api_key*
 TRACKB_API_KEY
@@ -28,6 +36,12 @@ copilot/rag/data/raw/
 copilot/case_storage/data/lbs.db*
 
 copilot/model_gateway/assets/
+# Allow the pinned Qwen3 tokenizer assets needed for LLM token counting.
+# These are small public files (SHA-256 pinned in prepare_tokenizer.py).
+!copilot/model_gateway/assets/
+!copilot/model_gateway/assets/qwen3-8b/
+!copilot/model_gateway/assets/qwen3-8b/tokenizer.json
+!copilot/model_gateway/assets/qwen3-8b/tokenizer_config.json
 
 # Local databases and rebuildable indexes inside verification snapshots.
 copilot/**/results/**/*.db

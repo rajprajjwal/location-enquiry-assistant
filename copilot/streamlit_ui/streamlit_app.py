@@ -3,8 +3,57 @@
 
 from contextlib import closing
 import json
+import os
+import tempfile
 
 import streamlit as st
+
+# ---------------------------------------------------------------------------
+# Bootstrap: inject Streamlit Cloud secrets into the environment so that the
+# LLM client and embedding settings can find them without a .env file.
+# On local dev the env vars are set in the shell; st.secrets is ignored when
+# the keys are already present so local overrides are preserved.
+# ---------------------------------------------------------------------------
+def _bootstrap_secrets() -> None:
+    """Read st.secrets and push values into os.environ before any import that
+    needs them.  Handles the CA certificate specially: Streamlit Cloud cannot
+    mount files, so the PEM content is written to a temp file and
+    TRACKB_CA_CERT is set to that path.
+
+    Env var mapping (secrets key → os.environ key the code actually reads):
+      TRACKB_API_KEY       → TRACKB_API_KEY       (copilot/model_gateway/client.py)
+      EMBED_BASE_URL       → EMBED_BASE_URL        (copilot/settings.py via pydantic-settings)
+      EMBED_API_KEY        → EMBED_API_KEY         (copilot/settings.py via pydantic-settings)
+      EMBED_MODEL_ENDPOINT → EMBED_MODEL_ENDPOINT  (copilot/settings.py via pydantic-settings)
+      TRACKB_CA_CERT       → TRACKB_CA_CERT (path) (copilot/model_gateway/client.py)
+    """
+    try:
+        secrets = st.secrets  # raises FileNotFoundError locally when absent
+    except Exception:
+        return
+
+    # Simple string env-vars — names must match exactly what the code reads
+    for key in ("TRACKB_API_KEY", "EMBED_BASE_URL", "EMBED_API_KEY", "EMBED_MODEL_ENDPOINT"):
+        if key not in os.environ:
+            value = secrets.get(key, "")
+            if value:
+                os.environ[key] = value
+
+    # CA certificate: stored as PEM text in secrets, written to a temp file.
+    # On Streamlit Cloud the repo file is present but we prefer the explicit
+    # secret so the cert is always consistent with the deployed key.
+    if "TRACKB_CA_CERT" not in os.environ:
+        pem = secrets.get("TRACKB_CA_CERT", "")
+        if pem and pem.strip().startswith("-----BEGIN"):
+            tmp = tempfile.NamedTemporaryFile(
+                delete=False, suffix=".crt", prefix="trackb-ca-"
+            )
+            tmp.write(pem.strip().encode())
+            tmp.close()
+            os.environ["TRACKB_CA_CERT"] = tmp.name
+
+
+_bootstrap_secrets()
 
 from copilot.enquiry_workflow.cases import run_case
 from copilot.enquiry_workflow.deletion import delete_enquiry
@@ -22,10 +71,80 @@ def load_hybrid_runtime():
     return True
 
 
+@st.cache_resource(show_spinner=False)
+def _prepare_bm25() -> list[str]:
+    """Verify tokenizer assets are present; skip download if they already match the pinned hashes.
+    Returns a list of warning strings; empty means ready."""
+    import hashlib
+    from pathlib import Path
+
+    assets_dir = (
+        Path(os.environ.get("TRACKB_TOKENIZER_DIR", ""))
+        or Path(__file__).resolve().parents[2] / "copilot/model_gateway/assets/qwen3-8b"
+    )
+    expected = {
+        "tokenizer.json":        "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    }
+    missing = [
+        name for name, sha in expected.items()
+        if not (assets_dir / name).is_file()
+        or hashlib.sha256((assets_dir / name).read_bytes()).hexdigest() != sha
+    ]
+    if not missing:
+        return []  # already present and valid — nothing to do
+
+    # Assets are absent; try to download them (works locally, may time out on restricted networks)
+    try:
+        from copilot.model_gateway.prepare_tokenizer import prepare
+        prepare(assets_dir)
+        return []
+    except Exception as exc:
+        return [
+            f"Tokenizer assets could not be prepared ({type(exc).__name__}: {exc}). "
+            "LLM calls will fail. Commit the assets in "
+            "copilot/model_gateway/assets/qwen3-8b/ to fix this on Streamlit Cloud."
+        ]
+
+
 st.set_page_config(page_title="Location Enquiry Assistant", layout="wide")
 st.title("Location Enquiry Assistant")
 
+# ---------------------------------------------------------------------------
+# Configuration gate: surface a clear error when required secrets are missing
+# so the app doesn't silently produce no output.
+# ---------------------------------------------------------------------------
+_missing_secrets = [
+    key for key in ("TRACKB_API_KEY",)
+    if not os.environ.get(key)
+]
+if _missing_secrets:
+    st.error(
+        "**Missing configuration — the app cannot run enquiries.**\n\n"
+        "The following secrets are not set:\n"
+        + "\n".join(f"- `{k}`" for k in _missing_secrets)
+        + "\n\nOn **Streamlit Cloud**: open *App settings → Secrets* and add:\n"
+        "```toml\n"
+        'TRACKB_API_KEY = "sk-lm4-..."\n'
+        'EMBED_API_KEY  = "sk-ucwh-..."\n'
+        'TRACKB_CA_CERT = """\n'
+        "-----BEGIN CERTIFICATE-----\n"
+        "...\n"
+        "-----END CERTIFICATE-----\n"
+        '"""\n'
+        "```\n\n"
+        "On **local dev**: `export TRACKB_API_KEY=...`  (cert is auto-read from `vm07-ca.crt`)"
+    )
+    st.stop()
+
 query_tab, review_tab, trace_tab = st.tabs(["Enquiries", "Approvals", "Traces"])
+
+# Run BM25 preparation (tokenizer asset download) once at startup.
+with st.spinner("Preparing BM25 retrieval assets…"):
+    _prep_warnings = _prepare_bm25()
+if _prep_warnings:
+    st.warning("BM25 preparation issue: " + " ".join(_prep_warnings))
+
 
 with closing(connect(DB_PATH)) as con:
     with query_tab:
@@ -82,6 +201,12 @@ with closing(connect(DB_PATH)) as con:
                                       confirmed_customer_status=customer_status)
             except ValueError as exc:
                 st.error(str(exc))
+            except Exception as exc:  # surface LLM/endpoint/retrieval failures visibly
+                st.error(
+                    f"The enquiry could not be completed: {type(exc).__name__}: {exc}\n\n"
+                    "Check the model endpoint configuration (TRACKB_API_KEY, TRACKB_CA_CERT) "
+                    "and the retrieval mode."
+                )
             else:
                 # A fresh widget gives the next turn an empty input box.
                 st.session_state["enquiry_input_turn"] = turn + 1

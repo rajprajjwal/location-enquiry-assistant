@@ -15,6 +15,7 @@ import argparse
 import json
 import math
 import os
+from pathlib import Path
 import re
 import ssl
 import sys
@@ -114,6 +115,9 @@ def _scrub(secret: str, text: str) -> str:
 class LLMClient:
     """Chat client. ``base_url`` defaults to the VM07 endpoint and ignores ``OPENAI_*``."""
 
+    # Repository-root certificate fallback, used when TRACKB_CA_CERT is unset.
+    _DEFAULT_CA_CERT = Path(__file__).resolve().parents[2] / "vm07-ca.crt"
+
     def __init__(
         self,
         *,
@@ -129,12 +133,15 @@ class LLMClient:
             api_key = os.environ.get("TRACKB_API_KEY")
         if ca_cert is None:
             ca_cert = os.environ.get("TRACKB_CA_CERT")
+        if not ca_cert and self._DEFAULT_CA_CERT.is_file():
+            # Bundled repository certificate; no environment variable needed.
+            ca_cert = str(self._DEFAULT_CA_CERT)
         if not base_url:
             raise ConfigError("base_url is not configured")
         if not api_key:
             raise ConfigError("TRACKB_API_KEY is not set")
         if not ca_cert:
-            raise ConfigError("TRACKB_CA_CERT is not set")
+            raise ConfigError("TRACKB_CA_CERT is not set and no bundled vm07-ca.crt was found")
         if not os.path.isfile(ca_cert):
             raise ConfigError("TRACKB_CA_CERT path does not exist")
         if thinking not in THINKING_MODES:
