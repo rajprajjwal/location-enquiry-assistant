@@ -302,9 +302,17 @@ with closing(connect(DB_PATH)) as con:
             if result["outputs"]:
                 with st.expander("Structured output"):
                     st.json(result["outputs"], expanded=False)
-            with st.expander("Workflow steps (debug)", expanded=False):
-                st.json(result.get("steps", []), expanded=False)
-                st.json(result.get("reliability", {}).get("events", []), expanded=False)
+            with st.expander("Workflow steps (debug)", expanded=True):
+                for _step in result.get("steps", []):
+                    _status = _step.get('status')
+                    _icon = "✅" if _status == "completed" else "❌"
+                    st.text(f"{_icon} {_step.get('step')}. {_step.get('action')} — {_status}  {_step.get('latency_ms', 0)}ms")
+                _term = result.get("critic", {}).get("reason")
+                if _term:
+                    st.error(f"Terminal reason: {_term}")
+                _events = result.get("reliability", {}).get("events", [])
+                if _events:
+                    st.json(_events, expanded=True)
             if evidence := result.get("route_evidence"):
                 with st.expander("Supporting evidence"):
                     if price := evidence.get("list_price_baseline"):
@@ -317,6 +325,10 @@ with closing(connect(DB_PATH)) as con:
             st.caption(f"Critic verdict: {result['critic']['verdict']}")
             if result['critic'].get('reason'):
                 st.caption(f"Failure reason: {result['critic']['reason']}")
+            # Also show terminal_reason from outputs if present
+            _outputs_reason = result.get("outputs", {}).get("responsible_role", {}).get("reason", "")
+            if _outputs_reason and result['critic']['verdict'] != 'pass':
+                st.caption(f"Route reason: {_outputs_reason}")
 
     with review_tab:
         pending = [action for action in cases.list_pending(con) if action["type"] in {"escalation", "record_update"}]
