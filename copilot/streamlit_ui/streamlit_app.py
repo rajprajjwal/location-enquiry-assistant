@@ -164,6 +164,14 @@ if _missing_secrets:
     )
     st.stop()
 
+# Debug panel — shows which env vars are active (values redacted)
+with st.expander("⚙️ Active configuration (debug)", expanded=False):
+    for _k in ("TRACKB_API_KEY", "TRACKB_BASE_URL", "TRACKB_CA_CERT",
+               "EMBED_BASE_URL", "EMBED_API_KEY", "EMBED_MODEL_ENDPOINT"):
+        _v = os.environ.get(_k, "")
+        _display = (_v[:12] + "…") if len(_v) > 12 else (_v or "NOT SET")
+        st.text(f"{_k} = {_display}")
+
 query_tab, review_tab, trace_tab = st.tabs(["Enquiries", "Approvals", "Traces"])
 
 # Run BM25 preparation (tokenizer asset download) once at startup.
@@ -278,6 +286,9 @@ with closing(connect(DB_PATH)) as con:
             if result["outputs"]:
                 with st.expander("Structured output"):
                     st.json(result["outputs"], expanded=False)
+            with st.expander("Workflow steps (debug)", expanded=False):
+                st.json(result.get("steps", []), expanded=False)
+                st.json(result.get("reliability", {}).get("events", []), expanded=False)
             if evidence := result.get("route_evidence"):
                 with st.expander("Supporting evidence"):
                     if price := evidence.get("list_price_baseline"):
@@ -288,6 +299,8 @@ with closing(connect(DB_PATH)) as con:
             if result["proposed_actions"] and cases.list_pending(con, case_id):
                 st.info("A proposal is pending human review. See Approvals.")
             st.caption(f"Critic verdict: {result['critic']['verdict']}")
+            if result['critic'].get('reason'):
+                st.caption(f"Failure reason: {result['critic']['reason']}")
 
     with review_tab:
         pending = [action for action in cases.list_pending(con) if action["type"] in {"escalation", "record_update"}]
