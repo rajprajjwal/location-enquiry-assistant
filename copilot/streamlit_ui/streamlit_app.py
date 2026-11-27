@@ -33,7 +33,13 @@ def _bootstrap_secrets() -> None:
         return
 
     # Simple string env-vars — names must match exactly what the code reads
-    for key in ("TRACKB_API_KEY", "TRACKB_BASE_URL", "EMBED_BASE_URL", "EMBED_API_KEY", "EMBED_MODEL_ENDPOINT"):
+    for key in (
+        "TRACKB_API_KEY", "TRACKB_BASE_URL",
+        "EMBED_BASE_URL", "EMBED_API_KEY", "EMBED_MODEL_ENDPOINT",
+        # Langfuse Cloud trace export (optional)
+        "COPILOT_TRACE_EXPORT", "LANGFUSE_BASE_URL",
+        "LANGFUSE_PUBLIC_KEY", "LANGFUSE_SECRET_KEY",
+    ):
         if key not in os.environ:
             value = secrets.get(key, "")
             if value:
