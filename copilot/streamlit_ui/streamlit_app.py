@@ -33,7 +33,7 @@ def _bootstrap_secrets() -> None:
         return
 
     # Simple string env-vars — names must match exactly what the code reads
-    for key in ("TRACKB_API_KEY", "EMBED_BASE_URL", "EMBED_API_KEY", "EMBED_MODEL_ENDPOINT"):
+    for key in ("TRACKB_API_KEY", "TRACKB_BASE_URL", "EMBED_BASE_URL", "EMBED_API_KEY", "EMBED_MODEL_ENDPOINT"):
         if key not in os.environ:
             value = secrets.get(key, "")
             if value:
@@ -65,13 +65,22 @@ _bootstrap_secrets()
 def _check_endpoint_reachable() -> str | None:
     """Return None if reachable, or an error string if not."""
     import socket
-    host, port = "103.42.50.41", 1031
+    from urllib.parse import urlsplit
+
+    # If a public proxy URL is configured, check that instead of the private IP.
+    override = os.environ.get("TRACKB_BASE_URL", "").strip()
+    if override:
+        parsed = urlsplit(override)
+        host = parsed.hostname or "103.42.50.41"
+        port = parsed.port or (443 if parsed.scheme == "https" else 80)
+    else:
+        host, port = "103.42.50.41", 1031
     try:
         sock = socket.create_connection((host, port), timeout=5)
         sock.close()
         return None
     except (OSError, TimeoutError) as exc:
-        return str(exc)
+        return f"Cannot reach {host}:{port} — {exc}"
 
 from copilot.enquiry_workflow.cases import run_case
 from copilot.enquiry_workflow.deletion import delete_enquiry

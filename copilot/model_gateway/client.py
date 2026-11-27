@@ -136,6 +136,11 @@ class LLMClient:
         if not ca_cert and self._DEFAULT_CA_CERT.is_file():
             # Bundled repository certificate; no environment variable needed.
             ca_cert = str(self._DEFAULT_CA_CERT)
+        # Allow a public proxy URL (e.g. ngrok) to override the private campus IP.
+        # Set TRACKB_BASE_URL in env or Streamlit secrets to redirect all LLM calls.
+        env_base_url = os.environ.get("TRACKB_BASE_URL", "").strip()
+        if env_base_url:
+            base_url = env_base_url
         if not base_url:
             raise ConfigError("base_url is not configured")
         if not api_key:
@@ -306,10 +311,16 @@ class LLMClient:
         import openai
 
         try:
-            context = ssl.create_default_context(cafile=self._ca_cert)
+            # When a public proxy URL is used (e.g. ngrok), it presents a
+            # publicly-trusted certificate — use the system trust store.
+            # For the direct campus endpoint, use the custom CA bundle.
+            if os.environ.get("TRACKB_BASE_URL", "").strip():
+                verify: object = True  # system trust store for ngrok/public proxy
+            else:
+                verify = ssl.create_default_context(cafile=self._ca_cert)
             session = active_query()
             timeout = min(self._timeout, session.limits.model_timeout_seconds, session.remaining())
-            http_client = httpx.Client(verify=context, timeout=timeout)
+            http_client = httpx.Client(verify=verify, timeout=timeout)
         except (ssl.SSLError, OSError):
             raise ConfigError("TRACKB_CA_CERT could not be loaded") from None
         try:
