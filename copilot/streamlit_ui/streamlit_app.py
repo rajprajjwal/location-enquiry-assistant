@@ -55,6 +55,24 @@ def _bootstrap_secrets() -> None:
 
 _bootstrap_secrets()
 
+# ---------------------------------------------------------------------------
+# Connectivity pre-check: test TCP reachability of the LLM endpoint before
+# loading the full app. The endpoint is a private campus IP (103.42.50.41)
+# that is unreachable from Streamlit Cloud or off-campus networks.
+# This surfaces a clear error instead of a confusing "could not verify" later.
+# ---------------------------------------------------------------------------
+@st.cache_resource(show_spinner=False)
+def _check_endpoint_reachable() -> str | None:
+    """Return None if reachable, or an error string if not."""
+    import socket
+    host, port = "103.42.50.41", 1031
+    try:
+        sock = socket.create_connection((host, port), timeout=5)
+        sock.close()
+        return None
+    except (OSError, TimeoutError) as exc:
+        return str(exc)
+
 from copilot.enquiry_workflow.cases import run_case
 from copilot.enquiry_workflow.deletion import delete_enquiry
 from copilot.response_drafting.customer_response import format_customer_response
@@ -144,6 +162,17 @@ with st.spinner("Preparing BM25 retrieval assets…"):
     _prep_warnings = _prepare_bm25()
 if _prep_warnings:
     st.warning("BM25 preparation issue: " + " ".join(_prep_warnings))
+
+# Endpoint connectivity check
+_endpoint_error = _check_endpoint_reachable()
+if _endpoint_error:
+    st.error(
+        "⚠️ **The institute LLM endpoint is not reachable from this host.**\n\n"
+        f"Connection to `103.42.50.41:1031` failed: `{_endpoint_error}`\n\n"
+        "This endpoint is on a private campus network. "
+        "**The app must be run from campus or a machine with VPN access to reach it.** "
+        "Enquiries will return 'could not verify' until the endpoint is reachable."
+    )
 
 
 with closing(connect(DB_PATH)) as con:
