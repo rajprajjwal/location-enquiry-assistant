@@ -1,10 +1,10 @@
 # Source history: Deepshikha (7b89516), deepshikha/lbs-copilot. See copilot/enquiry_workflow/source-history.json.
 """Build and verify BM25 and Chroma using one source snapshot."""
 from copilot.paths import CONFIG_DIR
+from copilot.file_lock import try_lock
 import argparse
 from contextlib import contextmanager
 from datetime import datetime, timezone
-import fcntl
 from hashlib import sha256
 import json
 from math import isfinite
@@ -31,7 +31,7 @@ def rebuild_lock():
     LOCK.parent.mkdir(parents=True, exist_ok=True)
     with LOCK.open("a") as file:
         try:
-            fcntl.flock(file, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            try_lock(file)
         except BlockingIOError:
             raise RuntimeError("A retrieval index rebuild is already running.") from None
         yield
@@ -44,7 +44,8 @@ def stage_file(path, content):
         try:
             file.write(content)
             if path.exists():
-                os.fchmod(file.fileno(), path.stat().st_mode & 0o777)
+                if hasattr(os, "fchmod"):  # not available on Windows
+                    os.fchmod(file.fileno(), path.stat().st_mode & 0o777)
         except BaseException:
             temporary.unlink(missing_ok=True)
             raise
