@@ -161,6 +161,7 @@ def _call(client, messages: list[dict]) -> tuple[Completion | None, str | None]:
 
 
 from copilot.model_gateway.reliability import query_scope, active_query, ReliabilityError
+from copilot.observability.tracing import current_run, set_current_io
 
 
 @query_scope("interpretation")
@@ -171,6 +172,16 @@ def interpret(inp: Any, *, client=None, diagnostics=None):
     omitted, ``LLMClient`` reads ``TRACKB_API_KEY`` and ``TRACKB_CA_CERT`` and
     fails closed when they are missing.
     """
+    output = _interpret(inp, client=client, diagnostics=diagnostics)
+    # Every later routing decision depends on this result, so the trace records it.
+    if current_run() is not None:
+        summary = output.model_dump(mode="json")
+        summary.pop("trace", None)
+        set_current_io(output=summary)
+    return output
+
+
+def _interpret(inp: Any, *, client=None, diagnostics=None):
     data = _input_data(inp)
     if diagnostics is not None:
         from copilot.diagnostics.facts import DiagnosticState, qualification_facts

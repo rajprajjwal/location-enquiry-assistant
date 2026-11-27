@@ -39,6 +39,7 @@ def _bootstrap_secrets() -> None:
         # Langfuse Cloud trace export (optional)
         "COPILOT_TRACE_EXPORT", "LANGFUSE_BASE_URL",
         "LANGFUSE_PUBLIC_KEY", "LANGFUSE_SECRET_KEY",
+        "COPILOT_TRACE_ENVIRONMENT", "COPILOT_TRACE_CAPTURE_CONTENT",
     ):
         if key not in os.environ:
             value = secrets.get(key, "")

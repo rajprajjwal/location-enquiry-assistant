@@ -59,6 +59,14 @@ export COPILOT_TRACE_DB=results/observability/working-verified/traces.db
 python -m streamlit run copilot/observability/streamlit_app.py --server.address 127.0.0.1 --server.port 8502
 ```
 
+## Langfuse Cloud and trace content
+
+For Langfuse Cloud, set `COPILOT_TRACE_EXPORT=langfuse`, `LANGFUSE_PUBLIC_KEY`, `LANGFUSE_SECRET_KEY` and `LANGFUSE_BASE_URL` to your project's region (`https://cloud.langfuse.com` for EU, `https://us.cloud.langfuse.com` for US). Keys from one region return 401 in the other. On Streamlit Cloud, put these in the app's Secrets.
+
+Each enquiry turn is one trace and each case is one Langfuse session. The exporter holds a turn's spans until the root span ends, then copies `langfuse.session.id`, `langfuse.environment`, `langfuse.trace.name` and `langfuse.trace.metadata.{api,team,status,bucket,...}` to every span, so Langfuse v4 can filter and group observations directly. Set `COPILOT_TRACE_ENVIRONMENT` (default `development`; lowercase letters, digits, `-` and `_`) to keep test traffic out of production views.
+
+Exported traces include content: the redacted customer turn and reply on the root observation, the messages and reply on each generation (named by purpose, such as `generate-interpretation`, `generate-draft` and `generate-critic`), the interpretation result, retriever queries with their passages, tool payloads and each workflow step's routing decision. Set `COPILOT_TRACE_CAPTURE_CONTENT=0` to export structure, timing, usage and cost only. Content is never written to the local trace database.
+
 ## Cost interpretation
 
 The institute endpoints are free: actual endpoint charge is **₹0**. Reporting estimates use explicit illustrative rates per million tokens: input $0.10, output $0.20 and embedding $0.02, converted at ₹94/USD. These are assumptions, not institute prices or billed charges. Edit `copilot/config/observability.yaml`, or set `COPILOT_TRACE_RATES_FILE` to another rate card.

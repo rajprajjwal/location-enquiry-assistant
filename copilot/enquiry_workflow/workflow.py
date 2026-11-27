@@ -11,7 +11,7 @@ from jsonschema import Draft202012Validator
 from jsonschema.exceptions import ValidationError
 from langgraph.graph import END, START, StateGraph
 from langgraph.runtime import Runtime
-from copilot.observability.tracing import observed_span
+from copilot.observability.tracing import observed_span, set_io
 from copilot.model_gateway.reliability import (
     active_query, query_scope, step_scope, bind_query, QuerySession, ReliabilityError,
 )
@@ -641,9 +641,12 @@ def _counted(name, action):
         try:
             with bind_query(runtime.context.reliability), step_scope(f"{name}:{number}"), observed_span(
                 f"workflow.{name}", kind="workflow_step", attributes={"copilot.step.index": number},
-            ):
+            ) as observation:
                 active_query().check()
                 update = action(state, runtime.context)
+                # The routing decision explains why the workflow took the next step.
+                set_io(observation, output={key: update[key] for key in (
+                    "next_node", "route", "terminal_reason", "draft_issue", "feedback") if update.get(key)})
         except (BudgetExceeded, ConfigError, LLMError, RuntimeError, ValidationError, ValueError) as exc:
             cause = exc.__cause__ if isinstance(exc.__cause__, RetrievalUnavailable) else exc
             reason = str(cause) if isinstance(cause, RetrievalUnavailable) else type(exc).__name__

@@ -25,7 +25,7 @@ import time
 from tenacity import Retrying, retry_if_exception, stop_after_attempt, wait_exponential
 from .reliability import active_query, query_scope, ReliabilityError
 from .token_counting import count_prompt, count_metadata
-from copilot.observability.tracing import observed_span, set_usage, phase
+from copilot.observability.tracing import enclosing_span_name, observed_span, set_io, set_usage, phase
 from dataclasses import dataclass, field
 
 DEFAULT_BASE_URL = "https://103.42.50.41:1031/v1"
@@ -100,6 +100,25 @@ def estimate_input_tokens(messages: list[dict]) -> int:
         if metadata:
             chunks.append(json.dumps(metadata, ensure_ascii=False, sort_keys=True))
     return estimate_text_tokens("\n".join(chunks))
+
+
+def _generation_name() -> str:
+    """Stable, purpose-based generation name, e.g. ``generate-critic`` inside ``workflow.critic``.
+
+    Evaluators and dashboards target generations by name, so every call site must not share one name.
+    """
+    purpose = enclosing_span_name(skip={"llm.complete"}) or "response"
+    purpose = purpose.split(".")[-1].split(":")[0].replace("_", "-") or "response"
+    return f"generate-{purpose}"
+
+
+def _model_parameters(max_tokens, temperature, extra) -> dict:
+    parameters = {"max_tokens": max_tokens, "temperature": temperature}
+    if extra.get("response_format"):
+        parameters["response_format"] = extra["response_format"].get("type")
+    if extra.get("tools"):
+        parameters["tools"] = len(extra["tools"])
+    return parameters
 
 
 def _scrub(secret: str, text: str) -> str:
@@ -283,15 +302,19 @@ class LLMClient:
                         session.retry()
                     session.reserve(tokens)
                     try:
-                        with observed_span("llm.request", kind="llm_attempt", attributes={
+                        with observed_span(_generation_name(), kind="llm_attempt", attributes={
                             "gen_ai.operation.name": "chat", "gen_ai.request.model": _scrub(self._api_key, self._model),
                             "langfuse.observation.type": "generation",
                             "langfuse.observation.model.name": "institute/" + _scrub(self._api_key, self._model),
+                            "langfuse.observation.model.parameters": json.dumps(_model_parameters(
+                                max_tokens, temperature, extra), sort_keys=True),
                             "copilot.attempt": attempt.retry_state.attempt_number,
                         }) as observation:
+                            set_io(observation, input=messages)
                             response = self._once(messages, max_tokens, temperature, extra)
                             usage = self._usage(response)
                             set_usage(observation, usage)
+                            set_io(observation, output=self._assistant_message(response))
                         if usage and isinstance(usage.get("total_tokens"), int):
                             with session.lock:
                                 session.observed_tokens += usage["total_tokens"]
@@ -349,6 +372,20 @@ class LLMClient:
         if self._api_key and self._api_key in detail:
             detail = detail.replace(self._api_key, "[REDACTED]")
         raise LLMError(detail, status_code=status_code) from None
+
+    def _assistant_message(self, response: object) -> dict:
+        """The reply in OpenAI message format, so Langfuse renders text and tool calls."""
+        choices = getattr(response, "choices", None) or []
+        message = getattr(choices[0], "message", None) if choices else None
+        reply = {"role": "assistant", "content": _scrub(self._api_key, self._message_text(response))}
+        calls = [{
+            "id": getattr(call, "id", "") or "", "type": getattr(call, "type", "function") or "function",
+            "function": {"name": getattr(getattr(call, "function", None), "name", "") or "",
+                         "arguments": _scrub(self._api_key, getattr(getattr(call, "function", None), "arguments", "") or "")},
+        } for call in getattr(message, "tool_calls", None) or []]
+        if calls:
+            reply["tool_calls"] = calls
+        return reply
 
     @staticmethod
     def _message_text(response: object) -> str:

@@ -20,6 +20,9 @@ _CURRENT = ContextVar("copilot_trace_run", default=None)
 BUCKETS = ("qualification", "interpretation", "docs", "history", "updates", "pricecompare",
            "capabilitycompare", "coveragecompare", "limitscompare", "ownership")
 _ALLOWED_METADATA = {"record_id", "run_id", "bucket", "api", "team", "split", "case_id", "status", "step_count"}
+# Observation content goes to the remote exporter only; the local store keeps no prompt or reply text.
+CONTENT_ATTRIBUTES = frozenset({"langfuse.observation.input", "langfuse.observation.output"})
+_SPAN_NAMES = ContextVar("copilot_span_names", default=())
 
 
 @dataclass
@@ -32,6 +35,8 @@ class RunTrace:
     sealed: bool = False
     closing: bool = False
     summary: dict = field(default_factory=dict)
+    # Ended spans held until the root ends, so trace-wide attributes can be added before export.
+    export_buffer: list = field(default_factory=list)
 
     def tag(self, **metadata):
         values = {k: v for k, v in metadata.items() if k in _ALLOWED_METADATA and v is not None}
@@ -56,7 +61,7 @@ def _row(span, *, ended):
         "name": span.name, "start_ns": span.start_time, "end_ns": span.end_time if ended else None,
         "latency_ms": round((span.end_time - span.start_time) / 1_000_000, 3) if ended else None,
         "status": span.status.status_code.name if ended else "IN_PROGRESS",
-        "attributes": dict(span.attributes or {}),
+        "attributes": {key: value for key, value in (span.attributes or {}).items() if key not in CONTENT_ATTRIBUTES},
     }
 
 
@@ -99,18 +104,63 @@ def observed_span(name, *, kind="phase", attributes=None):
         yield None
         return
     attrs = {"copilot.span.kind": kind, **(attributes or {})}
-    with provider().get_tracer("copilot.observability").start_as_current_span(
-        name, attributes=attrs, record_exception=False, set_status_on_exception=False,
-    ) as span:
-        try:
-            yield span
-        except BaseException as error:
-            span.set_attribute("error.type", type(error).__name__)
-            span.set_status(Status(StatusCode.ERROR, type(error).__name__))
-            raise
-        else:
-            if span.status.status_code == StatusCode.UNSET:
-                span.set_status(Status(StatusCode.OK))
+    names = _SPAN_NAMES.set((*_SPAN_NAMES.get(), name))
+    try:
+        with provider().get_tracer("copilot.observability").start_as_current_span(
+            name, attributes=attrs, record_exception=False, set_status_on_exception=False,
+        ) as span:
+            try:
+                yield span
+            except BaseException as error:
+                span.set_attribute("error.type", type(error).__name__)
+                span.set_status(Status(StatusCode.ERROR, type(error).__name__))
+                raise
+            else:
+                if span.status.status_code == StatusCode.UNSET:
+                    span.set_status(Status(StatusCode.OK))
+    finally:
+        _SPAN_NAMES.reset(names)
+
+
+def enclosing_span_name(*, skip=()):
+    """Name of the innermost open observed span, ignoring names in ``skip``."""
+    return next((name for name in reversed(_SPAN_NAMES.get()) if name not in skip), None)
+
+
+def capture_content():
+    """Set COPILOT_TRACE_CAPTURE_CONTENT=0 to export traces without prompts, replies or tool payloads."""
+    return os.environ.get("COPILOT_TRACE_CAPTURE_CONTENT", "1") != "0"
+
+
+def _serialize(value):
+    return value if isinstance(value, str) else json.dumps(value, ensure_ascii=False, default=str)
+
+
+def set_io(span, *, input=None, output=None):
+    """Record observation input/output for Langfuse. Callers pass already-redacted content."""
+    if span is None or not capture_content():
+        return
+    if input is not None:
+        span.set_attribute("langfuse.observation.input", _serialize(input))
+    if output is not None:
+        span.set_attribute("langfuse.observation.output", _serialize(output))
+
+
+def set_current_io(*, input=None, output=None):
+    """Record input/output on the innermost open observed span, if a run is active."""
+    if current_run() is None:
+        return
+    from opentelemetry import trace as otel_trace
+    span = otel_trace.get_current_span()
+    if span.is_recording():
+        set_io(span, input=input, output=output)
+
+
+def record_trace_io(*, input=None, output=None):
+    """Set the overall request and response on the root observation of the active run."""
+    run = current_run()
+    if run is not None and run.root is not None:
+        set_io(run.root, input=input, output=output)
 
 
 def tag_run(**metadata):

@@ -6,7 +6,7 @@ from time import perf_counter
 from uuid import uuid4
 
 from copilot.enquiry_interpretation import interpret, rules
-from copilot.observability.tracing import traced_case, current_run, tag_run, observed_span
+from copilot.observability.tracing import traced_case, current_run, tag_run, observed_span, record_trace_io
 from copilot.response_drafting.follow_up_questions import add_follow_up_questions
 
 from .approval_sources import backfill_approval_sources
@@ -113,6 +113,8 @@ def run_case(con, query, *, case_id=None, customer=None, client=None, search=Non
     result = finalize_requirements(result, enquiry)
     from copilot.response_drafting.customer_response import format_customer_response
     result = {**result, 'customer_response': format_customer_response(result)}
+    # Root observation: the redacted customer turn in, the customer-facing reply out.
+    record_trace_io(input=query, output=result['customer_response']['markdown'])
     if shared is not None:
         from copilot.diagnostics.facts import DiagnosticQuestion, DiagnosticState
         shared = DiagnosticState.model_validate(result["diagnostic_context"]["state"])

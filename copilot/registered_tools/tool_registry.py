@@ -10,7 +10,17 @@ from typing import Any, Callable, Dict, List, Mapping, Optional, Sequence
 from pydantic import BaseModel, ValidationError
 from copilot.model_gateway.reliability import active_query, query_scope, bounded_tool, ReliabilityError
 
-from copilot.observability.tracing import observed_span
+from copilot.observability.tracing import observed_span, set_io
+
+
+def _trace_arguments(arguments, from_json):
+    """Tool arguments as a trace input; JSON-string calls are decoded when valid."""
+    if from_json and isinstance(arguments, str):
+        try:
+            return json.loads(arguments)
+        except ValueError:
+            return arguments
+    return dict(arguments) if isinstance(arguments, Mapping) else arguments
 
 from .tool_contracts import (
     AppComparisonInput, AppComparisonOutput, CalculatorInput, CalculatorOutput,
@@ -80,11 +90,16 @@ class ToolRegistry:
     def _execute(self, tool_name, arguments, *, from_json=False):
         tool = self._tools.get(tool_name)
         name = tool.name if tool else "unregistered"
+        # Document search is a lookup, so Langfuse types it as a retriever rather than a generic tool.
+        observation_type = "retriever" if name == "document_search" else "tool"
         with observed_span(f"tool.{name}", kind="tool", attributes={
-            "tool.name": name, "langfuse.observation.type": "tool",
+            "tool.name": name, "langfuse.observation.type": observation_type,
         }) as observation:
             try:
-                return self._execute_inner(tool_name, arguments, from_json=from_json)
+                set_io(observation, input=_trace_arguments(arguments, from_json))
+                result = self._execute_inner(tool_name, arguments, from_json=from_json)
+                set_io(observation, output=result)
+                return result
             finally:
                 if observation is not None and self.execution_log:
                     entry = self.execution_log[-1]
