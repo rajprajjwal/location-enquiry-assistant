@@ -134,10 +134,8 @@ class LLMClient:
         if ca_cert is None:
             ca_cert = os.environ.get("TRACKB_CA_CERT")
         if not ca_cert and self._DEFAULT_CA_CERT.is_file():
-            # Bundled repository certificate; no environment variable needed.
             ca_cert = str(self._DEFAULT_CA_CERT)
         # Allow a public proxy URL (e.g. ngrok) to override the private campus IP.
-        # Set TRACKB_BASE_URL in env or Streamlit secrets to redirect all LLM calls.
         env_base_url = os.environ.get("TRACKB_BASE_URL", "").strip()
         if env_base_url:
             base_url = env_base_url
@@ -145,10 +143,14 @@ class LLMClient:
             raise ConfigError("base_url is not configured")
         if not api_key:
             raise ConfigError("TRACKB_API_KEY is not set")
-        if not ca_cert:
-            raise ConfigError("TRACKB_CA_CERT is not set and no bundled vm07-ca.crt was found")
-        if not os.path.isfile(ca_cert):
-            raise ConfigError("TRACKB_CA_CERT path does not exist")
+        # When using a public proxy (ngrok), TLS is handled by the proxy's
+        # own certificate — the campus CA cert is not needed and must not block startup.
+        using_proxy = bool(env_base_url)
+        if not using_proxy:
+            if not ca_cert:
+                raise ConfigError("TRACKB_CA_CERT is not set and no bundled vm07-ca.crt was found")
+            if not os.path.isfile(ca_cert):
+                raise ConfigError("TRACKB_CA_CERT path does not exist")
         if thinking not in THINKING_MODES:
             raise ConfigError(f"unknown thinking mode: {thinking}")
         self._base_url = base_url
