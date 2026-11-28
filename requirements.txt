@@ -6,3 +6,10 @@ datamodel-code-generator==0.96.0
 pytest==9.2.0
 portalocker>=2.8,<5
 
+# Hybrid + reranking retrieval (dense Chroma index and bge-reranker-base).
+# The CPU index keeps PyTorch to the CPU build instead of the multi-GB CUDA build.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0
+chromadb==1.5.9
+sentence-transformers==6.2.0
+transformers==5.22.2

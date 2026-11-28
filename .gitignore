@@ -18,10 +18,11 @@ __pycache__/
 .env.*
 *.key
 *.pem
-# vm07-ca.crt is a public CA certificate and IS committed to the repo.
+# The institute CA certificates are public and ARE committed: vm07 (chat), vm02 (embeddings).
 # Other .crt files remain excluded.
 *.crt
 !vm07-ca.crt
+!vm02-ca.crt
 *API_KEY*
 *api_key*
 TRACKB_API_KEY
@@ -29,7 +30,10 @@ TRACKB_API_KEY
 .pytest_cache/
 
 # Rebuildable retrieval files.
-copilot/rag/data/chroma/
+# The dense index (institute bge-small-en-v1.5 embeddings) is committed so hosts without
+# embedding-endpoint access to rebuild it (e.g. Streamlit Cloud) can run hybrid retrieval.
+# Rebuild with: python -m copilot.rag.document_indexing.build_index
+copilot/rag/data/chroma/.rebuild.lock
 copilot/rag/data/raw/
 
 # Local review database.

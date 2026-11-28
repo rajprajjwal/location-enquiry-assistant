@@ -117,7 +117,15 @@ from copilot.observability.viewer import render as render_trace_explorer
 
 @st.cache_resource(show_spinner=False)
 def load_hybrid_runtime():
-    warm_retrieval_runtime()
+    # A fresh host (e.g. Streamlit Cloud) has no reranker in its model cache yet:
+    # download the pinned assets once, exactly as `copilot.deployment.prepare --mode hybrid` does.
+    try:
+        warm_retrieval_runtime()
+    except RetrievalUnavailable:
+        from copilot.deployment.prepare import main as prepare_assets
+        prepare_assets(["--mode", "hybrid"])
+        warm_retrieval_runtime.cache_clear()
+        warm_retrieval_runtime()
     return True
 
 
@@ -237,7 +245,8 @@ with closing(connect(DB_PATH)) as con:
         hybrid_issues = retrieval_setup_issues() if mode == "Hybrid + reranking (one passage per URL)" else []
         if mode == "Hybrid + reranking (one passage per URL)" and not hybrid_issues:
             try:
-                with st.spinner("Preparing hybrid retrieval before starting an enquiry…"):
+                with st.spinner("Preparing hybrid retrieval before starting an enquiry… On a new host the first "
+                                "run downloads the reranker model (about 1 GB) and can take several minutes."):
                     load_hybrid_runtime()
             except RetrievalUnavailable as exc:
                 hybrid_issues = [str(exc)]
