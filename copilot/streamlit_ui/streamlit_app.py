@@ -210,8 +210,38 @@ if _missing_secrets:
     )
     st.stop()
 
+@st.cache_resource(show_spinner=False)
+def _langfuse_access(base: str, public_key: str, secret_key: str):
+    from copilot.observability.exporters import check_langfuse_access
+    return check_langfuse_access(base, public_key, secret_key)
+
+
+# Trace export status: a failing exporter drops every trace without affecting replies,
+# so surface it here instead of leaving it in the server log.
+from copilot.observability.tracing import provider as _trace_provider
+from copilot.observability.exporters import EXPORT_STATUS as _export_status, langfuse_base_url
+
+_trace_provider()
+_trace_problem = None
+if _export_status["mode"] == "langfuse":
+    if _export_status["error"]:
+        _trace_problem = f"Langfuse export is not configured ({_export_status['error']})."
+    else:
+        _ok, _message = _langfuse_access(langfuse_base_url(os.environ.get("LANGFUSE_BASE_URL", "")),
+                                         os.environ.get("LANGFUSE_PUBLIC_KEY", ""),
+                                         os.environ.get("LANGFUSE_SECRET_KEY", ""))
+        if not _ok:
+            _trace_problem = f"Langfuse export is failing: {_message}. Enquiries still run, but no traces are saved."
+if _trace_problem:
+    st.warning("⚠️ " + _trace_problem)
+if _export_status.get("note"):
+    st.caption(_export_status["note"])
+
 # Debug panel — shows which env vars are active (values redacted)
 with st.expander("⚙️ Active configuration (debug)", expanded=False):
+    st.text(f"Trace export: mode={_export_status['mode']}  endpoint={_export_status['endpoint'] or '-'}")
+    st.text(f"Last export: {_export_status['last_export_utc'] or 'none yet'}  result={_export_status['last_result'] or '-'}"
+            f"  spans exported={_export_status['exported_spans']}")
     if os.environ.get("COPILOT_IGNORED_EMBED_CA_BUNDLE"):
         st.caption(f"EMBED_CA_BUNDLE ignored: {os.environ['COPILOT_IGNORED_EMBED_CA_BUNDLE']} "
                    "uses a public certificate; the institute CA only applies to 103.42.50.41.")

@@ -6,7 +6,10 @@ import os
 import re
 from urllib.parse import urlsplit
 
+from datetime import datetime, timezone
+
 from opentelemetry.sdk.trace import ReadableSpan, SpanProcessor
+from opentelemetry.sdk.trace.export import SpanExporter, SpanExportResult
 
 
 _LOG = logging.getLogger(__name__)
@@ -88,8 +91,61 @@ class RunExportProcessor(SpanProcessor):
         return self._downstream.force_flush(timeout_millis)
 
 
+# Remote export state, shown in the app so a misconfigured exporter is not silent.
+EXPORT_STATUS = {"mode": "local", "endpoint": None, "error": None, "note": None,
+                 "last_export_utc": None, "last_result": None, "exported_spans": 0}
+
+
+def langfuse_base_url(value):
+    """API host for a Langfuse base URL. A pasted dashboard link (``.../project/<id>/traces``) is reduced to its host."""
+    base = value.strip().rstrip("/")
+    for marker in ("/project/", "/api/public"):
+        if marker in base:
+            base = base.split(marker)[0]
+    return base
+
+
+class _RecordingExporter(SpanExporter):
+    """Delegates to the OTLP exporter and records each export's outcome in EXPORT_STATUS."""
+
+    def __init__(self, inner):
+        self._inner = inner
+
+    def export(self, spans):
+        result = self._inner.export(spans)
+        EXPORT_STATUS.update(last_export_utc=datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                             last_result=result.name)
+        if result == SpanExportResult.SUCCESS:
+            EXPORT_STATUS["exported_spans"] += len(spans)
+        return result
+
+    def shutdown(self):
+        self._inner.shutdown()
+
+    def force_flush(self, timeout_millis=30000):
+        return self._inner.force_flush(timeout_millis)
+
+
+def check_langfuse_access(base, public_key, secret_key):
+    """One authenticated read against the project. Returns (ok, message) without exposing keys."""
+    import httpx
+
+    try:
+        response = httpx.get(f"{base}/api/public/projects", timeout=15, auth=(public_key, secret_key))
+    except Exception as error:
+        return False, f"cannot reach {base} ({type(error).__name__})"
+    if response.status_code == 200:
+        projects = response.json().get("data") or [{}]
+        return True, f"connected to project '{projects[0].get('name', '?')}'"
+    if response.status_code == 401:
+        return False, ("keys rejected (HTTP 401): the keys belong to another region or project. "
+                       "EU is https://cloud.langfuse.com, US is https://us.cloud.langfuse.com")
+    return False, f"HTTP {response.status_code} from {base}: LANGFUSE_BASE_URL must be the API host, e.g. https://us.cloud.langfuse.com"
+
+
 def configure_remote(provider):
     mode = os.environ.get("COPILOT_TRACE_EXPORT", "local")
+    EXPORT_STATUS["mode"] = mode
     if mode == "local":
         return
     try:
@@ -101,7 +157,9 @@ def configure_remote(provider):
                 values = load_environment()
             else:
                 values = os.environ
-            base = values["LANGFUSE_BASE_URL"].rstrip("/")
+            base = langfuse_base_url(values["LANGFUSE_BASE_URL"])
+            if base != values["LANGFUSE_BASE_URL"].strip().rstrip("/"):
+                EXPORT_STATUS["note"] = f"LANGFUSE_BASE_URL contained a dashboard path; using {base}"
             endpoint = base + "/api/public/otel/v1/traces"
             credentials = values["LANGFUSE_PUBLIC_KEY"] + ":" + values["LANGFUSE_SECRET_KEY"]
             headers = {"Authorization": "Basic " + base64.b64encode(credentials.encode()).decode(),
@@ -116,7 +174,9 @@ def configure_remote(provider):
             raise ValueError("Trace endpoint requires HTTPS or localhost")
         if address.username or address.password or address.query:
             raise ValueError("Keep trace credentials in headers")
-        exporter = OTLPSpanExporter(endpoint=endpoint, headers=headers, timeout=30)
+        exporter = _RecordingExporter(OTLPSpanExporter(endpoint=endpoint, headers=headers, timeout=30))
         provider.add_span_processor(RunExportProcessor(BatchSpanProcessor(exporter, schedule_delay_millis=1000)))
+        EXPORT_STATUS["endpoint"] = endpoint
     except Exception as error:
+        EXPORT_STATUS["error"] = f"{type(error).__name__}: {error}" if isinstance(error, KeyError) else type(error).__name__
         _LOG.warning("Remote tracing unavailable (%s); local spans remain enabled", type(error).__name__)
