@@ -46,18 +46,33 @@ def _bootstrap_secrets() -> None:
             if value:
                 os.environ[key] = value
 
-    # CA certificate: stored as PEM text in secrets, written to a temp file.
-    # On Streamlit Cloud the repo file is present but we prefer the explicit
-    # secret so the cert is always consistent with the deployed key.
-    if "TRACKB_CA_CERT" not in os.environ:
-        pem = secrets.get("TRACKB_CA_CERT", "")
-        if pem and pem.strip().startswith("-----BEGIN"):
-            tmp = tempfile.NamedTemporaryFile(
-                delete=False, suffix=".crt", prefix="trackb-ca-"
-            )
-            tmp.write(pem.strip().encode())
+    # CA certificates may arrive as PEM text, either in st.secrets or already in os.environ
+    # (Streamlit Cloud exports top-level secrets as environment variables). The code expects
+    # file paths, so PEM text is written to a temp file and the variable points to it.
+    for key, prefix in (("TRACKB_CA_CERT", "trackb-ca-"), ("EMBED_CA_BUNDLE", "embed-ca-")):
+        value = os.environ.get(key) or str(secrets.get(key, "") or "")
+        if value.strip().startswith("-----BEGIN"):
+            tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".crt", prefix=prefix)
+            tmp.write(value.strip().encode() + b"\n")
             tmp.close()
-            os.environ["TRACKB_CA_CERT"] = tmp.name
+            os.environ[key] = tmp.name
+        elif value and key not in os.environ:
+            os.environ[key] = value
+
+    _drop_ca_for_public_embedding_url()
+
+
+def _drop_ca_for_public_embedding_url() -> None:
+    """The institute CA (vm02-ca.crt) only verifies the institute host itself.
+
+    Through a public proxy such as ngrok the embedding endpoint presents a publicly trusted
+    certificate, so a custom bundle would make every embedding call fail verification.
+    """
+    from urllib.parse import urlsplit
+
+    host = urlsplit(os.environ.get("EMBED_BASE_URL", "")).hostname
+    if host and host != "103.42.50.41" and os.environ.pop("EMBED_CA_BUNDLE", None):
+        os.environ["COPILOT_IGNORED_EMBED_CA_BUNDLE"] = host
 
 
 _bootstrap_secrets()
@@ -197,8 +212,12 @@ if _missing_secrets:
 
 # Debug panel — shows which env vars are active (values redacted)
 with st.expander("⚙️ Active configuration (debug)", expanded=False):
+    if os.environ.get("COPILOT_IGNORED_EMBED_CA_BUNDLE"):
+        st.caption(f"EMBED_CA_BUNDLE ignored: {os.environ['COPILOT_IGNORED_EMBED_CA_BUNDLE']} "
+                   "uses a public certificate; the institute CA only applies to 103.42.50.41.")
     for _k in ("TRACKB_API_KEY", "TRACKB_BASE_URL", "TRACKB_CA_CERT",
-               "EMBED_BASE_URL", "EMBED_API_KEY", "EMBED_MODEL_ENDPOINT"):
+               "EMBED_BASE_URL", "EMBED_API_KEY", "EMBED_CA_BUNDLE", "EMBED_MODEL_ENDPOINT",
+               "COPILOT_TRACE_EXPORT", "COPILOT_TRACE_ENVIRONMENT", "LANGFUSE_BASE_URL"):
         _v = os.environ.get(_k, "")
         _display = (_v[:12] + "…") if len(_v) > 12 else (_v or "NOT SET")
         st.text(f"{_k} = {_display}")
